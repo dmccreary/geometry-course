@@ -10,11 +10,11 @@ function drawGraph() {
         nodes.forEach(function (node) {
             if (node.group === "found") {
                 // placement can't be done in a group
-                node.x = -700;
+                node.x = -1200;
                 node.fixed = { x: true, y: false }; // Fix x, but let y be adjusted by physics
                 
             } else if (node.group === "goal") {
-                node.x = 700;
+                node.x = 1200;
                 node.fixed = { x: true, y: false }; // Fix x, but let y be adjusted by physics
             }
           });

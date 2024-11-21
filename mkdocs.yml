@@ -9,6 +9,13 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
+  - Prompts:
+    - Introduction: prompts/index.md
+    - Course Description: prompts/01-course-description.md
+    - Concept Enumerations: prompts/02-concept-enumerations.md
+    - Concept Dependencies: prompts/03-concept-dependency.md
+    - Concept Taxonomies: prompts/04-taxonomy.md
+    - Glossary: prompts/05-glossary.md
   - Sims:
     - Introduction: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
@@ -24,7 +31,7 @@ theme:
   extra_css:
     - styles/custom.css
   logo: img/logo.png
-  # favicon: img/my-icon.png
+  favicon: img/favicon.ico
   palette:
     primary: 'blue'
     accent: 'orange'

@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
+/* size of logo in the upper-left corner */
 .md-header__button.md-logo img, .md-header__button.md-logo svg {
     height: 50px;
-    width: 150px;
+    width: 70px;
 }
