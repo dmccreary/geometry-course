@@ -1,0 +1,887 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/prompts/03-concept-dependency/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Concept Dependency - AI Assisted Geometry</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#concept-dependency" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Assisted Geometry" class="md-header__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Assisted Geometry
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Concept Dependency
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Assisted Geometry" class="md-nav__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    AI Assisted Geometry
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/prompts/03-concept-dependency.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="concept-dependency">Concept Dependency</h1>
+<h2 id="prompt">Prompt</h2>
+<div class="highlight"><pre><span></span><code>That was very good.
+Let&#39;s call the number in front of each concept the ConceptID
+and the string after the number the &quot;ConceptLabel&quot;.
+
+Now our next step is to create a precise concept learning dependency
+graph.  For each concept, create a list of other concepts
+that must be understood before that concept can be mastered.
+
+Return a CSV file that has the following format:
+
+- Column 1 is the ConceptID from the list above
+- Column 2 is the ConceptLabel from the list above
+- Column 3 is the Dependencies.  It is a pipe-delimited list of the ConceptIDs that this concept depends on.
+
+Foundation concepts don&#39;t depend on any other concepts.  Their Dependencies is empty.  Some of  initial introductory concepts are foundation concepts.
+There must be at least one concept that depends on a foundation concept.
+Make sure each concept is connected to the graph in some way.
+</code></pre></div>
+<h2 id="sample-response">Sample Response</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span></pre></div></td><td class="code"><div><pre><span></span><code>ConceptID,ConceptLabel,Dependencies
+1,Point,
+2,Line,
+3,Plane,
+4,Angle,6
+5,Segment,1|2
+6,Ray,1|2
+7,Collinear points,1|2
+8,Coplanar points,1|3
+9,Intersection,2|3
+10,Parallel lines,2
+11,Perpendicular lines,2
+12,Midpoint,5
+13,Bisector,5
+14,Angle bisector,4|13
+15,Perp bisector,5|11
+16,Acute angle,4
+17,Right angle,4
+18,Obtuse angle,4
+19,Straight angle,4
+20,Reflex angle,4
+21,Adjacent angles,4
+22,Vertical angles,4
+23,Complementary angles,4|16|17
+24,Supplementary angles,4|17|18
+25,Linear pair,4|21
+26,Transversal,2|10
+27,Corresponding angles,26|4
+28,Alt int angles,26|4
+29,Alt ext angles,26|4
+30,Same-side int angles,26|4
+31,Same-side ext angles,26|4
+32,Triangle,5
+33,Scalene triangle,32
+34,Isosceles triangle,32
+35,Equilateral triangle,32
+36,Acute triangle,32|16
+37,Right triangle,32|17
+38,Obtuse triangle,32|18
+39,Triangle sum theorem,32
+40,Ext angle theorem,32|39
+41,Congruent triangles,32
+42,SSS congruence,41|5
+43,SAS congruence,41|5|4
+44,ASA congruence,41|4
+45,AAS congruence,41|4
+46,HL congruence,41|37|11
+47,Triangle inequality,32|5
+48,Similar triangles,32
+49,AA similarity,48|4
+50,SSS similarity,48|5
+51,SAS similarity,48|5|4
+52,Proportional sides,5
+53,Pythagorean theorem,37|5
+54,45-45-90 triangle,37|53
+55,30-60-90 triangle,37|53
+56,Quadrilateral,5
+57,Parallelogram,56|10
+58,Rectangle,57|11
+59,Square,58|60
+60,Rhombus,57
+61,Trapezoid,56|10
+62,Isosceles trapezoid,61
+63,Kite,56
+64,Properties of parallelogram,57
+65,Properties of rectangle,58
+66,Properties of rhombus,60
+67,Properties of square,59
+68,Properties of trapezoid,61
+69,Midsegment theorem,32|12
+70,Polygon interior angles,5|56
+71,Polygon exterior angles,5|56
+72,Circle,1
+73,Radius,72
+74,Diameter,72|73
+75,Chord,72
+76,Tangent,72|2
+77,Secant,72|2
+78,Arc,72
+79,Central angle,72|4
+80,Inscribed angle,72|4
+81,Arc length,72|78
+82,Sector area,72|79
+83,Circumference,72
+84,Equation of circle,72|85
+85,Distance formula,1
+86,Midpoint formula,85
+87,Slope,85
+88,Slope-intercept form,87
+89,Point-slope form,87
+90,Standard form (line),87
+91,Parallel lines (coord),87|10
+92,Perpendicular lines (coord),87|11
+93,Reflection,97
+94,Rotation,97
+95,Translation,97
+96,Dilation,97
+97,Transformation,
+98,Rigid motion,97
+99,Isometry,98
+100,Symmetry,97
+101,Line symmetry,100|2
+102,Rotational symmetry,100|94
+103,Tessellation,97|5
+104,Glide reflection,93|95
+105,Composite transformations,97
+106,Preimage,97
+107,Image,97
+108,Vector,95
+109,Directed line segment,5|108
+110,Component form,108
+111,Solid geometry,2|3
+112,Prism,111
+113,Cylinder,111
+114,Pyramid,111
+115,Cone,111
+116,Sphere,111
+117,Surface area (SA),111
+118,Volume (Vol),111
+119,SA of prism,117|112
+120,SA of cylinder,117|113
+121,SA of pyramid,117|114
+122,SA of cone,117|115
+123,SA of sphere,117|116
+124,Vol of prism,118|112
+125,Vol of cylinder,118|113
+126,Vol of pyramid,118|114
+127,Vol of cone,118|115
+128,Vol of sphere,118|116
+129,Nets,111
+130,Cross section,111
+131,Euler&#39;s formula,112|114|129
+132,Congruent figures,41
+133,Similar figures,48
+134,Scale factor,133
+135,Inductive reasoning,
+136,Deductive reasoning,
+137,Conditional statement,
+138,Converse,137
+139,Inverse,137
+140,Contrapositive,137
+141,Biconditional,137
+142,Proof,135|136|137
+143,Two-column proof,142
+144,Paragraph proof,142
+145,Flowchart proof,142
+146,Coordinate proof,85|142
+147,Geometric constructions,2|5
+148,Compass and straightedge,147
+149,Constructing bisectors,148
+150,Constructing parallels,148
+</code></pre></div></td></tr></table></div>
+<h2 id="workflow">Workflow</h2>
+<p><strong>Crafting the CSV file</strong></p>
+<p>I'm preparing to generate a CSV file with three crucial columns: ConceptID, ConceptLabel, and Dependencies. Foundation concepts have empty Dependencies, some initial concepts are foundations, and each concept links to the graph.</p>
+<p><strong>Mapping dependencies</strong></p>
+<p>I'm organizing 150 concepts into a CSV file, linking each concept to its ConceptID and listing dependencies using pipe-delimited ConceptIDs.</p>
+<p><strong>Ensuring logical progression</strong></p>
+<p>I'm making sure each cell in the CSV file aligns with geometric concepts. Dependencies must progress logically, forming a cohesive and connected graph.</p>
+<p><strong>Categorizing concepts</strong></p>
+<p>I'm mapping out the concepts and identifying how they link together. Next, I'll group them under broader topics for clarity and organization.</p>
+<p><strong>Mapping geometric concepts</strong></p>
+<p>I'm piecing together geometric terms like interior and exterior angles, triangles, congruence, similarity, polygon properties, and circle terms such as radius, diameter, chord, and tangent.</p>
+<p>Organizing geometry topics</p>
+<p><strong>Deciphering foundation concepts</strong></p>
+<p>I'm identifying foundational geometric concepts like point, line, plane, segment, ray, and collinear points. Understanding angles might require grasping rays first.</p>
+<p>I'm mapping out foundational concepts and their dependencies. Foundational concepts include Point, Line, and Plane. Segment and Ray might be foundational or dependent.</p>
+<p><strong>Shaping the structure</strong></p>
+<p>OK, let me see. I'm working through the CSV rows, pinpointing relationships and nurturing foundational concepts. Progress is steady, making it a rewarding journey.</p>
+<p><strong>Understanding geometric relationships</strong></p>
+<p>I'm mapping out how various geometric concepts depend on types of angles and lines. This exploration highlights the connections between angles, bisectors, and directional lines.</p>
+<p>Mapping connections</p>
+<p><strong>Identifying dependencies</strong></p>
+<p>I'm organizing various triangle types and geometric properties by pinpointing key dependencies, such as congruent triangles, segments, and angles, while tracking the progression towards specific geometric conclusions.</p>
+<p><strong>Analyzing geometric relationships</strong></p>
+<p>I'm examining various geometric shapes, including rectangles, squares, triangles, and quadrilaterals, and their relationships with parallel and perpendicular lines, focusing on properties and theorems.</p>
+<p><strong>Mapping relationships</strong></p>
+<p>I'm gathering info on how concepts like diameter and radius interact within circles, then linking them to elements such as chords, tangents, and secants.</p>
+<p><strong>Connecting geometric concepts</strong></p>
+<p>I'm linking the concepts of perpendicular lines, reflection, rotation, translation, dilation, and transformation to their respective formulas and symmetries, creating a cohesive understanding of geometric principles.</p>
+<p><strong>Mapping concepts</strong></p>
+<p>I'm piecing together how concepts like component form, solid geometry, and surface area or volume depend on each other and on prior concepts, creating a logical interconnected structure of knowledge.</p>
+<p>Incorporating foundational and specific concepts, the pyramid and cone volumes intrigue me, as do cross sections and Euler's formula. Properties of congruent and similar figures deepen the exploration of geometric principles.</p>
+<p><strong>Compiling dependencies</strong></p>
+<p>I'm working through organizing concepts in a CSV file, detailing each concept's dependencies with ConceptIDs. The goal is to create a structured, informative document for clarity and understanding.</p>
+<p><strong>Synthesizing geometric terms</strong></p>
+<p>Piecing together the geometric terms and concepts, I'm focusing on points, lines, planes, angles, and polygons. Each term is linked to corresponding properties and theorems, forming a comprehensive geometric glossary.</p>
+<p><strong>Revisiting transformations</strong></p>
+<p>I'm rethinking the role of Transformation as a foundational idea, given that it involves mapping figures to others, which requires prior knowledge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
