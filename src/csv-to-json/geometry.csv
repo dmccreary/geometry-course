@@ -1,0 +1,151 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Point,,1
+2,Line,,1
+3,Plane,,1
+4,Angle,6,2
+5,Segment,1|2,1
+6,Ray,1|2,1
+7,Collinear points,1|2,1
+8,Coplanar points,1|3,1
+9,Intersection,2|3,1
+10,Parallel lines,2,2
+11,Perpendicular lines,2,2
+12,Midpoint,5,2
+13,Bisector,5,2
+14,Angle bisector,4|13,2
+15,Perp bisector,5|11,2
+16,Acute angle,4,2
+17,Right angle,4,2
+18,Obtuse angle,4,2
+19,Straight angle,4,2
+20,Reflex angle,4,2
+21,Adjacent angles,4,2
+22,Vertical angles,4,2
+23,Complementary angles,4|16|17,2
+24,Supplementary angles,4|17|18,2
+25,Linear pair,4|21,2
+26,Transversal,2|10,2
+27,Corresponding angles,26|4,2
+28,Alt int angles,26|4,2
+29,Alt ext angles,26|4,2
+30,Same-side int angles,26|4,2
+31,Same-side ext angles,26|4,2
+32,Triangle,5,3
+33,Scalene triangle,32,3
+34,Isosceles triangle,32,3
+35,Equilateral triangle,32,3
+36,Acute triangle,32|16,3
+37,Right triangle,32|17,3
+38,Obtuse triangle,32|18,3
+39,Triangle sum theorem,32,3
+40,Ext angle theorem,32|39,3
+41,Congruent triangles,32,3
+42,SSS congruence,41|5,3
+43,SAS congruence,41|5|4,3
+44,ASA congruence,41|4,3
+45,AAS congruence,41|4,3
+46,HL congruence,41|37|11,3
+47,Triangle inequality,32|5,3
+48,Similar triangles,32,3
+49,AA similarity,48|4,3
+50,SSS similarity,48|5,3
+51,SAS similarity,48|5|4,3
+52,Proportional sides,5,3
+53,Pythagorean theorem,37|5,3
+54,45-45-90 triangle,37|53,3
+55,30-60-90 triangle,37|53,3
+56,Quadrilateral,5,4
+57,Parallelogram,56|10,4
+58,Rectangle,57|11,4
+59,Square,58|60,4
+60,Rhombus,57,4
+61,Trapezoid,56|10,4
+62,Isosceles trapezoid,61,4
+63,Kite,56,4
+64,Properties of parallelogram,57,4
+65,Properties of rectangle,58,4
+66,Properties of rhombus,60,4
+67,Properties of square,59,4
+68,Properties of trapezoid,61,4
+69,Midsegment theorem,32|12,3
+70,Polygon interior angles,5|56,4
+71,Polygon exterior angles,5|56,4
+72,Circle,1,5
+73,Radius,72,5
+74,Diameter,72|73,5
+75,Chord,72,5
+76,Tangent,72|2,5
+77,Secant,72|2,5
+78,Arc,72,5
+79,Central angle,72|4,5
+80,Inscribed angle,72|4,5
+81,Arc length,72|78,5
+82,Sector area,72|79,5
+83,Circumference,72,5
+84,Equation of circle,72|85,6
+85,Distance formula,1,6
+86,Midpoint formula,85,6
+87,Slope,85,6
+88,Slope-intercept form,87,6
+89,Point-slope form,87,6
+90,Standard form (line),87,6
+91,Parallel lines (coord),87|10,6
+92,Perpendicular lines (coord),87|11,6
+93,Reflection,97,7
+94,Rotation,97,7
+95,Translation,97,7
+96,Dilation,97,7
+97,Transformation,,7
+98,Rigid motion,97,7
+99,Isometry,98,7
+100,Symmetry,97,7
+101,Line symmetry,100|2,7
+102,Rotational symmetry,100|94,7
+103,Tessellation,97|5,7
+104,Glide reflection,93|95,7
+105,Composite transformations,97,7
+106,Preimage,97,7
+107,Image,97,7
+108,Vector,95,7
+109,Directed line segment,5|108,7
+110,Component form,108,7
+111,Solid geometry,2|3,8
+112,Prism,111,8
+113,Cylinder,111,8
+114,Pyramid,111,8
+115,Cone,111,8
+116,Sphere,111,8
+117,Surface area (SA),111,8
+118,Volume (Vol),111,8
+119,SA of prism,117|112,8
+120,SA of cylinder,117|113,8
+121,SA of pyramid,117|114,8
+122,SA of cone,117|115,8
+123,SA of sphere,117|116,8
+124,Vol of prism,118|112,8
+125,Vol of cylinder,118|113,8
+126,Vol of pyramid,118|114,8
+127,Vol of cone,118|115,8
+128,Vol of sphere,118|116,8
+129,Nets,111,8
+130,Cross section,111,8
+131,Euler's formula,112|114|129,8
+132,Congruent figures,41,3
+133,Similar figures,48,3
+134,Scale factor,133,3
+135,Inductive reasoning,,9
+136,Deductive reasoning,,9
+137,Conditional statement,,9
+138,Converse,137,9
+139,Inverse,137,9
+140,Contrapositive,137,9
+141,Biconditional,137,9
+142,Proof,135|136|137,9
+143,Two-column proof,142,9
+144,Paragraph proof,142,9
+145,Flowchart proof,142,9
+146,Coordinate proof,85|142,9
+147,Geometric constructions,2|5,10
+148,Compass and straightedge,147,10
+149,Constructing bisectors,148,10
+150,Constructing parallels,148,10

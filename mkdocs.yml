@@ -1,5 +1,5 @@
-site_name: Mkdocs Template Site
-site_description: 'DESCRIPTION All content licensed Creative Commons ShareAlike Attribution Noncommercial'
+site_name: AI Assisted Geometry
+site_description: 'An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial'
 site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
 site_url: 'https://dmccreary.github.io/geometry-course/'
@@ -8,8 +8,10 @@ edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
-  - Checklist: checklist.md
-  - Code Highlight Test: code-highlight-test.md
+  - About: about.md
+  - Sims:
+    - Introduction: sims/index.md
+    - Graph Viewer: sims/graph-viewer/index.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
