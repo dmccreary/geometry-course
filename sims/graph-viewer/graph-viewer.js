@@ -57,7 +57,7 @@ function drawGraph() {
         shape: 'dot',
         size: 20,
         font: {
-          size: 14,
+          size: 20,
           color: 'black'
         },
         borderWidth: 2,
