@@ -518,7 +518,7 @@
         {
             "id": 104,
             "label": "Glide reflection",
-            "group": 7
+            "group": "goal"
         },
         {
             "id": 105,
@@ -628,7 +628,7 @@
         {
             "id": 126,
             "label": "Vol of pyramid",
-            "group": 8
+            "group": "goal"
         },
         {
             "id": 127,
@@ -723,7 +723,7 @@
         {
             "id": 145,
             "label": "Flowchart proof",
-            "group": 9
+            "group": "goal"
         },
         {
             "id": 146,

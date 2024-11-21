@@ -16,6 +16,7 @@ nav:
     - Concept Dependencies: prompts/03-concept-dependency.md
     - Concept Taxonomies: prompts/04-taxonomy.md
     - Glossary: prompts/05-glossary.md
+    - Word Cloud: prompts/06-word-cloud.md
   - Sims:
     - Introduction: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
