@@ -1,0 +1,1587 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/prompts/06-word-cloud/">
+      
+      
+        <link rel="prev" href="../05-glossary/">
+      
+      
+        <link rel="next" href="../07-equations/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Word Cloud - AI Assisted Geometry</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#word-cloud-prompt" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Assisted Geometry" class="md-header__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Assisted Geometry
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Word Cloud
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Assisted Geometry" class="md-nav__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    AI Assisted Geometry
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sample Prompts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-concept-enumerations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept Enumerations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-concept-dependency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-taxonomy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept Taxonomies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Word Cloud
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Word Cloud
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing the Layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changing the Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-adjust-the-shape-of-the-word-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Adjust the Shape of the Word Cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-change-the-font-and-styling" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Change the Font and Styling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-customize-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Customize Colors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-adjust-word-orientation" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Adjust Word Orientation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-modify-the-grid-size-and-spacing" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Modify the Grid Size and Spacing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-set-the-background-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Set the Background Color
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-implement-interactive-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Implement Interactive Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-limit-the-number-of-words-displayed" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Limit the Number of Words Displayed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-adjust-the-weight-factor" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Adjust the Weight Factor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-change-the-canvas-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Change the Canvas Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-implementation-with-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Implementation with Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-modifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of Modifications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Equations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing the Layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changing the Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-adjust-the-shape-of-the-word-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Adjust the Shape of the Word Cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-change-the-font-and-styling" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Change the Font and Styling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-customize-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Customize Colors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-adjust-word-orientation" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Adjust Word Orientation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-modify-the-grid-size-and-spacing" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Modify the Grid Size and Spacing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-set-the-background-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Set the Background Color
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-implement-interactive-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Implement Interactive Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-limit-the-number-of-words-displayed" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Limit the Number of Words Displayed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-adjust-the-weight-factor" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Adjust the Weight Factor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-change-the-canvas-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Change the Canvas Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-implementation-with-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Implementation with Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-modifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of Modifications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/prompts/06-word-cloud.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="word-cloud-prompt">Word Cloud Prompt</h1>
+<h2 id="sample-prompt">Sample Prompt</h2>
+<div class="highlight"><pre><span></span><code>Create a JavaScript program within an HTML file
+using wordcloud2 JavaScript 
+library that generates a word cloud diagram for the 
+most 50 most important concepts in a geometry textbook.
+Rank the terms on a scale from 30 to 70 with the
+most commonly referenced terms getting a score of 70
+and the least commonly referenced term getting a 30.
+
+Generate a single HTML file that has the terms in the body 
+of the JavaScript.
+</code></pre></div>
+<h2 id="sample-response">Sample Response</h2>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Geometry Word Cloud<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="cm">&lt;!-- Load the WordCloud2.js library --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">#</span><span class="nn">word-cloud</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="w">            </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">            </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#ccc</span><span class="p">;</span>
+<span class="w">            </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<span class="w">            </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="w">            </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;text-align: center;&quot;</span><span class="p">&gt;</span>Geometry Word Cloud<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;word-cloud&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="c1">// Data for the top 50 geometry concepts with importance scores</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">geometryConcepts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Triangle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">70</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Circle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">68</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Angle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">67</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Line&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">65</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Quadrilateral&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">63</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Polygon&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">62</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Congruence&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">61</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Similarity&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">60</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Right Triangle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">59</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Pythagorean Theorem&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">58</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Parallel Lines&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">57</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Perpendicular Lines&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">56</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Transformations&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">55</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Symmetry&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">54</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Coordinate Geometry&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">53</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Tangent&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">52</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Chord&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">51</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Radius&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Diameter&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">49</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Arc&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">48</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Sector&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">47</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Surface Area&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">46</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Volume&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">45</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Midpoint&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">44</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Bisector&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">43</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Angle Bisector&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">42</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Complementary Angles&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">41</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Supplementary Angles&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Vertical Angles&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">39</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Adjacent Angles&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">38</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Linear Pair&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">37</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Transversal&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">36</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Alternate Interior Angles&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">35</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Alternate Exterior Angles&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">34</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Same-Side Interior Angles&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">33</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Reflection&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">32</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Rotation&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">31</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Translation&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Dilation&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Congruent Figures&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Similar Figures&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Scalene Triangle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Isosceles Triangle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Equilateral Triangle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Acute Angle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Right Angle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Obtuse Angle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Straight Angle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="s2">&quot;Reflex Angle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">]</span>
+<span class="w">        </span><span class="p">];</span>
+
+<span class="w">        </span><span class="c1">// Ensure the canvas is properly sized</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">wordCloudElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;word-cloud&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">wordCloudElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;100%&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">wordCloudElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;600px&quot;</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Generate the word cloud</span>
+<span class="w">        </span><span class="nx">WordCloud</span><span class="p">(</span><span class="nx">wordCloudElement</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">list</span><span class="o">:</span><span class="w"> </span><span class="nx">geometryConcepts</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">gridSize</span><span class="o">:</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mf">16</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">wordCloudElement</span><span class="p">.</span><span class="nx">offsetWidth</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1024</span><span class="p">),</span>
+<span class="w">            </span><span class="nx">weightFactor</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="nx">size</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.3</span><span class="p">;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nx">fontFamily</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Arial, Helvetica&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;#&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">16777215</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mf">16</span><span class="p">);</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nx">rotateRatio</span><span class="o">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">rotationSteps</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#ffffff&quot;</span>
+<span class="w">        </span><span class="p">});</span>
+
+<span class="w">        </span><span class="c1">// Debugging: Check if the library loaded correctly</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;WordCloud initialized:&quot;</span><span class="p">,</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">WordCloud</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;undefined&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="changing-the-layout">Changing the Layout</h2>
+<h3 id="prompt">Prompt</h3>
+<div class="highlight"><pre><span></span><code>Can you give me some tips on how to change the layout?
+</code></pre></div>
+<h3 id="response">Response</h3>
+<p>Certainly! Changing the layout of your word cloud can greatly enhance its visual appeal and make it better fit your needs or preferences. Here are some suggestions on how you can modify various aspects of the layout:</p>
+<h3 id="1-adjust-the-shape-of-the-word-cloud"><strong>1. Adjust the Shape of the Word Cloud</strong></h3>
+<p>By default, the word cloud fills the available rectangular space. You can change the shape to a circle, heart, star, or any custom shape using a mask image.</p>
+<p><strong>Using a Predefined Shape:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">WordCloud</span><span class="p">(</span><span class="nx">wordCloudElement</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// ... other options ...</span>
+<span class="w">    </span><span class="nx">shape</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;circle&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Options include &#39;circle&#39;, &#39;cardioid&#39;, &#39;diamond&#39;, &#39;square&#39;, &#39;triangle-forward&#39;, etc.</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><strong>Using a Custom Mask Image:</strong></p>
+<ol>
+<li>
+<p><strong>Add a Mask Image to Your HTML:</strong></p>
+<div class="highlight"><pre><span></span><code>html
+Copy code
+
+`&lt;img id=&quot;mask-image&quot; src=&quot;path-to-your-mask-image.png&quot; style=&quot;display: none;&quot;&gt;
+`
+</code></pre></div>
+</li>
+<li>
+<p><strong>Modify the WordCloud Options:</strong></p>
+<div class="highlight"><pre><span></span><code>javascript
+Copy code
+
+`WordCloud(wordCloudElement, {
+    // ... other options ...
+    maskImage: document.getElementById(&#39;mask-image&#39;),
+});
+`
+</code></pre></div>
+</li>
+</ol>
+<p><strong>Note:</strong> The mask image should be a transparent PNG where the non-transparent areas define the shape.</p>
+<h3 id="2-change-the-font-and-styling"><strong>2. Change the Font and Styling</strong></h3>
+<p><strong>Change Font Family and Weight:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">fontFamily</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Arial, sans-serif&#39;</span><span class="p">,</span>
+<span class="nx">fontWeight</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bold&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Options: &#39;normal&#39;, &#39;bold&#39;, &#39;bolder&#39;, &#39;lighter&#39;, or numeric value (100-900)</span>
+</code></pre></div>
+<p><strong>Use a Custom Font from Google Fonts:</strong></p>
+<ol>
+<li>
+<p><strong>Include the Font in Your HTML <code>&lt;head&gt;</code>:</strong></p>
+<div class="highlight"><pre><span></span><code>html
+Copy code
+
+`&lt;link href=&quot;https://fonts.googleapis.com/css?family=Roboto&quot; rel=&quot;stylesheet&quot;&gt;
+`
+</code></pre></div>
+</li>
+<li>
+<p><strong>Specify It in the WordCloud Options:</strong></p>
+<div class="highlight"><pre><span></span><code>javascript
+Copy code
+
+`fontFamily: &#39;Roboto, sans-serif&#39;,
+`
+</code></pre></div>
+</li>
+</ol>
+<h3 id="3-customize-colors"><strong>3. Customize Colors</strong></h3>
+<p><strong>Use a Fixed Color Palette:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;#e6194b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#3cb44b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#ffe119&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#4363d8&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#f58231&#39;</span><span class="p">];</span>
+<span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">word</span><span class="p">,</span><span class="w"> </span><span class="nx">weight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">colors</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">colors</span><span class="p">.</span><span class="nx">length</span><span class="p">)];</span>
+<span class="p">},</span>
+</code></pre></div>
+<p><strong>Color Based on Word Frequency (Weight):</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">word</span><span class="p">,</span><span class="w"> </span><span class="nx">weight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">weight</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">50</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">&#39;#ff0000&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#0000ff&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Red for high weights, blue for lower</span>
+<span class="p">},</span>
+</code></pre></div>
+<p><strong>Random Colors:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;rgb(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;,&#39;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                     </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;,&#39;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                     </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;)&#39;</span><span class="p">;</span>
+<span class="p">},</span>
+</code></pre></div>
+<h3 id="4-adjust-word-orientation"><strong>4. Adjust Word Orientation</strong></h3>
+<p><strong>Set Rotation Angles:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">rotateRatio</span><span class="o">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w"> </span><span class="c1">// 0 to 1, the probability the word will be rotated</span>
+<span class="nx">rotationSteps</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="c1">// Number of different rotation angles between minRotation and maxRotation</span>
+<span class="nx">minRotation</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span>
+<span class="nx">maxRotation</span><span class="o">:</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span>
+</code></pre></div>
+<p><strong>Fix Words to Horizontal or Vertical Only:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">rotateRatio</span><span class="o">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span>
+<span class="nx">rotationSteps</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span>
+<span class="nx">minRotation</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<span class="nx">maxRotation</span><span class="o">:</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span>
+</code></pre></div>
+<h3 id="5-modify-the-grid-size-and-spacing"><strong>5. Modify the Grid Size and Spacing</strong></h3>
+<p><strong>Adjust Grid Size:</strong></p>
+<p>Smaller grid sizes allow more precise placement but may increase rendering time.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">gridSize</span><span class="o">:</span><span class="w"> </span><span class="mf">12</span><span class="p">,</span><span class="w"> </span><span class="c1">// Default is 8</span>
+</code></pre></div>
+<p><strong>Adjust Ellipticity (Shape Stretching):</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nx">ellipticity</span><span class="o">:</span><span class="w"> </span><span class="mf">0.8</span><span class="p">,</span><span class="w"> </span><span class="c1">// 0.1 (very tall) to 2 (very wide)</span>
+</code></pre></div>
+<h3 id="6-set-the-background-color"><strong>6. Set the Background Color</strong></h3>
+<div class="highlight"><pre><span></span><code><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#f0f0f0&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Light gray background</span>
+</code></pre></div>
+<h3 id="7-implement-interactive-features"><strong>7. Implement Interactive Features</strong></h3>
+<p><strong>Add Tooltips on Hover:</strong></p>
+<ol>
+<li>
+<p><strong>Add a Tooltip Element to Your HTML:</strong></p>
+<div class="highlight"><pre><span></span><code>html
+Copy code
+
+`&lt;div id=&quot;tooltip&quot; style=&quot;position: absolute; display: none; background: #333; color: #fff; padding: 5px; border-radius: 3px; pointer-events: none;&quot;&gt;&lt;/div&gt;
+`
+</code></pre></div>
+</li>
+<li>
+<p><strong>Update the WordCloud Options:</strong></p>
+<div class="highlight"><pre><span></span><code>javascript
+Copy code
+
+`hover: function (item, dimension, event) {
+    if (item) {
+        tooltip.style.left = event.pageX + 10 + &#39;px&#39;;
+        tooltip.style.top = event.pageY + 10 + &#39;px&#39;;
+        tooltip.style.display = &#39;block&#39;;
+        tooltip.textContent = `${item[0]} (${item[1]})`;
+    } else {
+        tooltip.style.display = &#39;none&#39;;
+    }
+},
+`
+</code></pre></div>
+</li>
+</ol>
+<h3 id="8-limit-the-number-of-words-displayed"><strong>8. Limit the Number of Words Displayed</strong></h3>
+<p>If you want to focus on the most important concepts:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">topConcepts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">geometryConcepts</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span><span class="w"> </span><span class="c1">// Adjust the number as needed</span>
+<span class="nx">WordCloud</span><span class="p">(</span><span class="nx">wordCloudElement</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">list</span><span class="o">:</span><span class="w"> </span><span class="nx">topConcepts</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">// ... other options ...</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3 id="9-adjust-the-weight-factor"><strong>9. Adjust the Weight Factor</strong></h3>
+<p>Fine-tune how word weights affect their sizes.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">weightFactor</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">size</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// Increase the multiplier to make words larger</span>
+<span class="p">},</span>
+</code></pre></div>
+<h3 id="10-change-the-canvas-size"><strong>10. Change the Canvas Size</strong></h3>
+<p>Adjust the size of the container div to change the overall size of the word cloud.</p>
+<div class="highlight"><pre><span></span><code>html
+Copy code
+
+`&lt;div id=&quot;word-cloud&quot; style=&quot;width: 1000px; height: 500px;&quot;&gt;&lt;/div&gt;
+</code></pre></div>
+<h3 id="example-implementation-with-changes"><strong>Example Implementation with Changes</strong></h3>
+<p>Here is a revised version of your HTML file incorporating some of these suggestions:</p>
+<div class="highlight"><pre><span></span><code>html
+Copy code
+
+`&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Geometry Word Cloud&lt;/title&gt;
+    &lt;style&gt;
+        #word-cloud {
+            width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+        #tooltip {
+            position: absolute;
+            display: none;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 14px;
+            z-index: 1000;
+        }
+    &lt;/style&gt;
+
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Montserrat:400,700&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 style=&quot;text-align: center;&quot;&gt;Geometry Word Cloud&lt;/h1&gt;
+    &lt;div id=&quot;word-cloud&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;tooltip&quot;&gt;&lt;/div&gt;
+
+
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.min.js&quot;&gt;&lt;/script&gt;
+
+
+    &lt;script&gt;
+        window.onload = function() {
+            const geometryConcepts = [
+                [&quot;Triangle&quot;, 70],
+                [&quot;Circle&quot;, 68],
+                [&quot;Angle&quot;, 67],
+                [&quot;Line&quot;, 65],
+                [&quot;Quadrilateral&quot;, 63],
+                // ... rest of your data ...
+            ];
+
+            const wordCloudElement = document.getElementById(&quot;word-cloud&quot;);
+            const tooltip = document.getElementById(&#39;tooltip&#39;);
+
+            WordCloud(wordCloudElement, {
+                list: geometryConcepts,
+                gridSize: 12,
+                weightFactor: function (size) {
+                    return (size / 70) * 80; // Adjust the 80 to scale overall word sizes
+                },
+                fontFamily: &#39;Montserrat, sans-serif&#39;,
+                fontWeight: &#39;bold&#39;,
+                color: function (word, weight) {
+                    // Gradient from blue to red based on weight
+                    const maxWeight = 70;
+                    const minWeight = 30;
+                    const weightRatio = (weight - minWeight) / (maxWeight - minWeight);
+                    const r = Math.floor(255 * weightRatio);
+                    const b = Math.floor(255 * (1 - weightRatio));
+                    return `rgb(${r},0,${b})`;
+                },
+                rotateRatio: 0.5,
+                rotationSteps: 3,
+                minRotation: -Math.PI / 6,
+                maxRotation: Math.PI / 6,
+                backgroundColor: &quot;#f0f0f0&quot;,
+                shuffle: true,
+                minSize: 14,
+                ellipticity: 0.8,
+                hover: function(item, dimension, event) {
+                    if (item) {
+                        tooltip.style.left = event.pageX + 10 + &#39;px&#39;;
+                        tooltip.style.top = event.pageY + 10 + &#39;px&#39;;
+                        tooltip.style.display = &#39;block&#39;;
+                        tooltip.textContent = `${item[0]} (${item[1]})`;
+                    } else {
+                        tooltip.style.display = &#39;none&#39;;
+                    }
+                },
+            });
+        };
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+<h3 id="explanation-of-modifications"><strong>Explanation of Modifications</strong></h3>
+<ul>
+<li><strong>Container Size:</strong> Increased the <code>#word-cloud</code> div to 1000px by 500px for a wider layout.</li>
+<li><strong>Custom Font:</strong> Used 'Montserrat' from Google Fonts for a modern look.</li>
+<li><strong>Font Weight:</strong> Set to 'bold' to make words stand out.</li>
+<li><strong>Color Function:</strong> Implemented a gradient from blue to red based on the weight of each word.</li>
+<li><strong>Rotation Angles:</strong> Limited rotation to -30° to +30° for better readability.</li>
+<li><strong>Grid Size and Weight Factor:</strong> Adjusted to fine-tune word placement and size.</li>
+<li><strong>Ellipticity:</strong> Set to 0.8 to make the word cloud slightly wider than tall.</li>
+<li><strong>Minimum Word Size:</strong> Increased to 14 pixels to ensure all words are legible.</li>
+<li><strong>Tooltips:</strong> Enhanced tooltips to show when hovering over words, displaying the concept and its weight.</li>
+</ul>
+<h3 id="additional-tips"><strong>Additional Tips</strong></h3>
+<ul>
+<li><strong>Experiment with Different Fonts:</strong> Try different fonts to match the style you're aiming for. Google Fonts offers a wide variety of options.</li>
+<li><strong>Use High-Quality Mask Images:</strong> If you decide to use a mask image for a custom shape, ensure it's a high-contrast, black-and-white image for best results.</li>
+<li><strong>Optimize for Performance:</strong> Be cautious with grid sizes and the number of words. Smaller grid sizes and more words increase rendering time.</li>
+<li><strong>Test Across Browsers:</strong> Check how the word cloud displays in different browsers and devices to ensure compatibility.</li>
+<li><strong>Consider Accessibility:</strong> Ensure that the color contrasts are sufficient for readability, especially for users with visual impairments.</li>
+</ul>
+<h3 id="resources"><strong>Resources</strong></h3>
+<ul>
+<li><strong>WordCloud2.js Documentation:</strong> <a href="https://github.com/timdream/wordcloud2.js">GitHub Repository</a></li>
+<li><strong>Color Gradient Generators:</strong> Tools like <a href="https://colorbrewer2.org/">ColorBrewer</a> can help you choose color schemes.</li>
+<li><strong>Google Fonts:</strong> <a href="https://fonts.google.com/">fonts.google.com</a> for a variety of font choices.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../05-glossary/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Glossary">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Glossary
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../07-equations/" class="md-footer__link md-footer__link--next" aria-label="Next: Equations">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Equations
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
