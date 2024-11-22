@@ -52,6 +52,7 @@ where:
 - h is the height of the triangle
 ### 2. Pythagorean Theorem
 $c^2 = a^2 + b^2$
+
 where:
 
 - $c$ is the hypotenuse of the right triangle
@@ -59,6 +60,7 @@ where:
 
 ### 3. Area of a Circle
 $A = 2\pi r^2$
+
 where:
 
 - $A$ is the area of the circle
@@ -66,6 +68,7 @@ where:
 
 ### 4. Circumference of a Circle
 $C = 2 \pi r$
+
 where:
 
 - $C$ is the circumference
@@ -73,6 +76,7 @@ where:
 
 ### 5. Distance Formula
 $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
+
 where:
 
 - $d$ is the distance between two points
@@ -80,6 +84,7 @@ where:
 
 ### 6. Midpoint Formula
 $M = \left( \frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2} \right)$
+
 where:
 
 - M is the midpoint of the segment
@@ -87,15 +92,14 @@ where:
 
 ### 7. Slope Formula
 $m = \frac{y_2 - y_1}{x_2 - x_1}$
+
 where:
 
 - $m$ is the slope
 - $(x_1,y_1)$ and $(x_2,y_2)$ are the points
 
 ### 8. Area of a Rectangle
-$$
-A = l \cdot w
-$$
+$A = l \cdot w$
 where:
 
 - $A$ is the area
@@ -104,6 +108,7 @@ where:
 
 ### 9. Perimeter of a Rectangle
 $P = 2l + 2w$
+
 where:
 
 - $P$ is the perimeter
@@ -112,6 +117,7 @@ where:
 
 ### 10. Area of a Parallelogram
 $A = b h$
+
 where:
 
 - $A$ is the area
@@ -120,6 +126,7 @@ where:
 
 ### 11. Area of a Trapezoid
 $A = \frac{1}{2} (b_1 + b_2) h$
+
 where:
 
 - $A$ is the area
@@ -128,6 +135,7 @@ where:
 
 ### 12. Volume of a Rectangular Prism
 $V = l \cdot w \cdot h$
+
 where:
 
 - $V$ is the volume
@@ -146,6 +154,7 @@ where:
 
 ### 14. Volume of a Sphere
 $V = \frac{4}{3} \pi r^3$
+
 where:
 
 - $V$ is the volume
@@ -160,6 +169,7 @@ where:
 
 ### 16. Volume of a Cylinder
 $V = \pi r^2 h$
+
 where:
 
 - $V$ is the volume
@@ -168,6 +178,7 @@ where:
 
 ### 17. Surface Area of a Cylinder
 $SA = 2\pi r^2 + 2\pi r h$
+
 where:
 
 - $SA$ is the surface area
@@ -176,6 +187,7 @@ where:
 
 ### 18. Volume of a Cone
 $V = \frac{1}{3} \pi r^2 h$
+
 where:
 
 - $V$ is the volume
@@ -184,6 +196,7 @@ where:
 
 ### 19. Surface Area of a Cone
 $SA = \pi r (r + l)$
+
 where:
 
 - $SA$ is the surface area
@@ -192,6 +205,7 @@ where:
 
 ### 20. Area of a Regular Polygon
 $A = \frac{1}{2} a P$
+
 where:
 
 - $A$ is the area
@@ -200,6 +214,7 @@ where:
 
 ### 21. Sum of Interior Angles of a Polygon
 $S = 180(n - 2)$
+
 where:
 
 - $S$ is the sum of the interior angles
@@ -207,6 +222,7 @@ where:
 
 ### 22. Measure of Each Interior Angle of a Regular Polygon
 $Angle = \frac{180(n - 2)}{n}$
+
 where:
 
 - $Angle$ is the measure of each interior angle
@@ -214,6 +230,7 @@ where:
 
 ### 23. Law of Sines
 $\frac{a}{\sin ⁡A} = \frac{b}{\sin B} = \frac{c}{\sin C}$
+
 where:
 
 - $a,b,c$ are the sides of the triangle
@@ -221,13 +238,17 @@ where:
 
 ### 24. Law of Cosines
 $c^2 = a^2 + b^2 - 2ab\cos C$
+
 where:
+
 - $c$ is the side opposite angle C
 - $a$ and b are the other sides
 - $C$ is the included angle
 
 ### 25. Equation of a Circle
+
 $(x-h)2+(y-k)2 = r^2$
+
 where:
 
 - $(h,k)$ is the center of the circle
