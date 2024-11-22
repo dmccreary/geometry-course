@@ -9,7 +9,7 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
-  - Prompts:
+  - Sample Prompts:
     - Introduction: prompts/index.md
     - Course Description: prompts/01-course-description.md
     - Concept Enumerations: prompts/02-concept-enumerations.md
@@ -17,15 +17,18 @@ nav:
     - Concept Taxonomies: prompts/04-taxonomy.md
     - Glossary: prompts/05-glossary.md
     - Word Cloud: prompts/06-word-cloud.md
-  - Sims:
+    - Equations: prompts/07-equations.md
+  - MicroSims:
     - Introduction: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
+    - Word Cloud: sims/word-cloud/index.md
   - Glossary: glossary.md
+  - License: license.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
   - Contact: contact.md
  
-# CoderDojo Microsite Standards from here down
+# Dans Microsite Standards from here down
 
 theme:
   name: material
@@ -57,9 +60,16 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - pymdownx.highlight:
-      linenums: true
+      linenums: 
+  # enable LaTeX extensions
+  - pymdownx.arithmatex:
+      generic: true
+
 extra_css:
    - css/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 #extra:
 #  analytics:
 #    provider: google
