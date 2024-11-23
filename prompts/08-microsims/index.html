@@ -1,0 +1,1372 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/prompts/08-microsims/">
+      
+      
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>MicroSim Ideas - AI Assisted Geometry</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-CK8G27ZYZ2"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-CK8G27ZYZ2",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-CK8G27ZYZ2",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#microsim-ideas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Assisted Geometry" class="md-header__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Assisted Geometry
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MicroSim Ideas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Assisted Geometry" class="md-nav__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    AI Assisted Geometry
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample Prompt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transformation-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transformation Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-circle-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Circle Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pythagorean-theorem-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pythagorean Theorem Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triangle-similarity-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triangle Similarity Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circle-properties-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circle Properties Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circle-area-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circle Area Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectangle-area-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rectangle Area Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triangle-area-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triangle Area Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perimeter-vs-area-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perimeter vs. Area Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angle-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angle Identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fraction-circle-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fraction Circle Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polygon-shape-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polygon Shape Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symmetry-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetry Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordinate-plane-navigator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coordinate Plane Navigator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-of-a-rectangular-prism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume of a Rectangular Prism
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/prompts/08-microsims.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="microsim-ideas">MicroSim Ideas</h1>
+<h2 id="sample-prompt">Sample Prompt</h2>
+<div class="highlight"><pre><span></span><code>I am a high-school geometry teacher that has just taken a course in creating simulations and animations using p5.js.  What are some fun interactive animations (MicroSim)I can create to teach my students various topics in geometry.  I want to create a small animation or simulation that has controls such as buttons and sliders.  As the student change the controls they should see some geometry on the screen change.  For each MicroSim please provide:
+
+1. The name of the simulation in a level 4 markdown header.
+2. The topic or subjects that the students would learn.
+3. The list of. controls on the screen and their type (button, slider etc.).
+4. What they might learn from using the simulation.
+5. The level of difficulty (beginner, intermediate, advanced)
+</code></pre></div>
+<h4 id="transformation-explorer">Transformation Explorer</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Geometric transformations: translation, rotation, scaling, and reflection.</li>
+<li>Understanding how transformations affect shapes on the coordinate plane.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Translation Sliders</strong><ul>
+<li>Horizontal Translation (<code>x</code>): <em>Slider</em></li>
+<li>Vertical Translation (<code>y</code>): <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Rotation Slider</strong><ul>
+<li>Rotation Angle (0° to 360°): <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Scaling Sliders</strong><ul>
+<li>Horizontal Scaling Factor: <em>Slider</em></li>
+<li>Vertical Scaling Factor: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Reflection Buttons</strong><ul>
+<li>Reflect over X-axis: <em>Button</em></li>
+<li>Reflect over Y-axis: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets the shape to its original state: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How each type of transformation alters a shape's position, size, and orientation.</li>
+<li>The effects of combining multiple transformations.</li>
+<li>The difference between rigid motions (translations, rotations, reflections) and non-rigid transformations (scaling).</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Intermediate</strong></li>
+</ul>
+<hr />
+<h4 id="unit-circle-explorer">Unit Circle Explorer</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Trigonometric functions and their relationship to the unit circle.</li>
+<li>Understanding sine, cosine, and tangent in terms of circle coordinates.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Angle Slider</strong><ul>
+<li>Adjusts the angle from 0° to 360°: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Function Toggle Buttons</strong><ul>
+<li>Show/Hide Sine Value (opposite side length): <em>Button</em></li>
+<li>Show/Hide Cosine Value (adjacent side length): <em>Button</em></li>
+<li>Show/Hide Tangent Line (slope): <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Animation Button</strong><ul>
+<li>Starts/Stops automatic rotation around the circle: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets the angle to 0°: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How the sine and cosine values correspond to the y and x coordinates on the unit circle.</li>
+<li>The periodic nature of trigonometric functions.</li>
+<li>Visualizing how tangent relates to the slope of the angle line.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Intermediate</strong></li>
+</ul>
+<hr />
+<h4 id="pythagorean-theorem-visualizer">Pythagorean Theorem Visualizer</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>The Pythagorean theorem and right-angled triangles.</li>
+<li>Relationship between the lengths of sides in right triangles.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Side Length Sliders</strong><ul>
+<li>Adjust Length of Side <code>a</code> (base): <em>Slider</em></li>
+<li>Adjust Length of Side <code>b</code> (height): <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Show Squares Button</strong><ul>
+<li>Toggle display of squares on each side: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Calculate Hypotenuse Button</strong><ul>
+<li>Computes and displays the length of the hypotenuse <code>c</code>: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets side lengths to default values: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How changing side lengths affects the hypotenuse.</li>
+<li>Visual proof of a2+b2\=c2a^2 + b^2 = c^2a2+b2\=c2 through area comparison.</li>
+<li>Reinforcement of the relationship between side lengths in right triangles.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="triangle-similarity-simulator">Triangle Similarity Simulator</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Criteria for triangle similarity (AA, SAS, SSS).</li>
+<li>Proportional relationships in similar triangles.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Triangle Size Slider</strong><ul>
+<li>Scales one triangle while keeping its shape: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Angle Adjustment Slider</strong><ul>
+<li>Changes a specific angle to explore AA similarity: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Side Length Sliders</strong><ul>
+<li>Adjust lengths to explore SAS and SSS criteria: <em>Sliders</em></li>
+</ul>
+</li>
+<li><strong>Overlay Toggle Button</strong><ul>
+<li>Overlays triangles to compare corresponding parts: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Show Ratios Button</strong><ul>
+<li>Displays ratios of corresponding sides: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Restores default triangle configurations: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How altering angles and sides can create similar or non-similar triangles.</li>
+<li>The importance of proportionality in determining similarity.</li>
+<li>Application of similarity criteria in problem-solving.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Intermediate</strong></li>
+</ul>
+<hr />
+<h4 id="circle-properties-simulator">Circle Properties Simulator</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Properties of circles, including central and inscribed angles.</li>
+<li>Relationships between arcs, chords, and angles.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Point Movement Slider</strong><ul>
+<li>Moves a point along the circumference to change angles: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Radius Slider</strong><ul>
+<li>Adjusts the size of the circle: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Toggle Display Buttons</strong><ul>
+<li>Show/Hide Central Angle: <em>Button</em></li>
+<li>Show/Hide Inscribed Angle: <em>Button</em></li>
+<li>Show/Hide Chord: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Arc Length Display Button</strong><ul>
+<li>Calculates and shows arc lengths: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets the circle to its original state: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How central angles relate to their intercepted arcs.</li>
+<li>The relationship between inscribed angles and their intercepted arcs.</li>
+<li>Properties of chords and how they change with circle size and angle positions.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Advanced</strong></li>
+</ul>
+<h2 id="prompt">Prompt</h2>
+<div class="highlight"><pre><span></span><code>How about some very basic MicroSims for beginners?
+For example, how to find the area of a circle?
+A slider might change the radius and the student
+would see the area change and see a plot of the
+area as the radius changes.
+</code></pre></div>
+<h2 id="response">Response</h2>
+<h4 id="circle-area-explorer">Circle Area Explorer</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Calculating the area of a circle.</li>
+<li>Understanding the relationship between radius and area.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Radius Slider</strong><ul>
+<li>Adjusts the radius of the circle: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Area Display</strong><ul>
+<li>Shows the calculated area as the radius changes: <em>Readout</em></li>
+</ul>
+</li>
+<li><strong>Plot Toggle Button</strong><ul>
+<li>Shows/Hides a graph plotting radius versus area: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets the radius to its default value: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How the area of a circle changes with varying radius.</li>
+<li>The mathematical relationship A\=πr2A = \pi r^2A\=πr2.</li>
+<li>That the area increases quadratically as the radius increases linearly.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="rectangle-area-visualizer">Rectangle Area Visualizer</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Calculating the area of a rectangle.</li>
+<li>Understanding the relationship between length, width, and area.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Length Slider</strong><ul>
+<li>Adjusts the length of the rectangle: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Width Slider</strong><ul>
+<li>Adjusts the width of the rectangle: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Area Display</strong><ul>
+<li>Shows the calculated area: <em>Readout</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets length and width to default values: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How changing length and width affects the area.</li>
+<li>The formula A\=length×widthA = \text{length} \times \text{width}A\=length×width.</li>
+<li>The concept of area as a measure of two-dimensional space.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="triangle-area-explorer">Triangle Area Explorer</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Calculating the area of a triangle.</li>
+<li>Understanding base and height in relation to area.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Base Slider</strong><ul>
+<li>Adjusts the base length of the triangle: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Height Slider</strong><ul>
+<li>Adjusts the height of the triangle: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Area Display</strong><ul>
+<li>Shows the calculated area: <em>Readout</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets base and height to default values: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How the area depends on both base and height.</li>
+<li>The formula A\=12×base×heightA = \frac{1}{2} \times \text{base} \times \text{height}A\=21​×base×height.</li>
+<li>Visual understanding of how area changes with base and height.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="perimeter-vs-area-simulator">Perimeter vs. Area Simulator</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Difference between perimeter and area.</li>
+<li>How changing dimensions affects perimeter and area differently.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Shape Selector</strong><ul>
+<li>Choose between square and rectangle: <em>Dropdown Menu</em></li>
+</ul>
+</li>
+<li><strong>Dimension Sliders</strong><ul>
+<li>Adjust side lengths (for square) or length and width (for rectangle): <em>Sliders</em></li>
+</ul>
+</li>
+<li><strong>Perimeter and Area Display</strong><ul>
+<li>Shows calculated perimeter and area: <em>Readouts</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets dimensions to default values: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>The formulas for calculating perimeter and area.</li>
+<li>That increasing dimensions affects area more significantly than perimeter.</li>
+<li>The concept that perimeter is linear while area is two-dimensional.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="angle-identifier">Angle Identifier</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Types of angles: acute, right, obtuse, straight, and reflex angles.</li>
+<li>Measuring angles in degrees.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Angle Slider</strong><ul>
+<li>Adjusts the measure of the angle from 0° to 360°: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Angle Display</strong><ul>
+<li>Shows the current angle measurement: <em>Readout</em></li>
+</ul>
+</li>
+<li><strong>Type Display</strong><ul>
+<li>Identifies the type of angle based on its measurement: <em>Readout</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets the angle to default value (e.g., 90°): <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How to classify angles based on their measurements.</li>
+<li>Visual representation of different types of angles.</li>
+<li>Familiarity with degree measurements in a circle.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="fraction-circle-explorer">Fraction Circle Explorer</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Understanding fractions as parts of a whole.</li>
+<li>Visualizing fractions using a circle (pie chart).</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Fraction Slider</strong><ul>
+<li>Adjusts the numerator and denominator to change the fraction: <em>Two Sliders</em></li>
+</ul>
+</li>
+<li><strong>Circle Display</strong><ul>
+<li>Shows the circle divided according to the selected fraction: <em>Visual</em></li>
+</ul>
+</li>
+<li><strong>Equivalent Fraction Button</strong><ul>
+<li>Displays equivalent fractions for the selected value: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets numerator and denominator to default values: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How fractions represent parts of a whole.</li>
+<li>The concept of equivalent fractions.</li>
+<li>Visual understanding of fraction sizes.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="polygon-shape-builder">Polygon Shape Builder</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Identifying basic polygons: triangles, quadrilaterals, pentagons, etc.</li>
+<li>Understanding properties like the number of sides and angles.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Sides Slider</strong><ul>
+<li>Adjusts the number of sides from 3 to 10: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Regular/Irregular Toggle</strong><ul>
+<li>Switches between regular and irregular polygons: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Angle Display</strong><ul>
+<li>Shows internal angle measurements: <em>Readout</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets to the default polygon (e.g., triangle): <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>Different types of polygons based on the number of sides.</li>
+<li>Properties of regular polygons (equal sides and angles).</li>
+<li>How internal angles change with the number of sides.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="symmetry-explorer">Symmetry Explorer</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Understanding lines of symmetry.</li>
+<li>Identifying symmetrical shapes.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Shape Selector</strong><ul>
+<li>Choose from various shapes (circle, square, rectangle, etc.): <em>Dropdown Menu</em></li>
+</ul>
+</li>
+<li><strong>Symmetry Line Toggle</strong><ul>
+<li>Show/Hide lines of symmetry: <em>Button</em></li>
+</ul>
+</li>
+<li><strong>Rotate Shape Slider</strong><ul>
+<li>Rotates the shape to see symmetry from different angles: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets the shape and orientation: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>What symmetry means in geometry.</li>
+<li>How to identify lines of symmetry in different shapes.</li>
+<li>The difference between symmetrical and asymmetrical shapes.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="coordinate-plane-navigator">Coordinate Plane Navigator</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Plotting points on the Cartesian coordinate system.</li>
+<li>Understanding the x and y axes.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>X-Coordinate Slider</strong><ul>
+<li>Adjusts the x-value of a point: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Y-Coordinate Slider</strong><ul>
+<li>Adjusts the y-value of a point: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Quadrant Display</strong><ul>
+<li>Indicates which quadrant the point is in: <em>Readout</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets coordinates to (0,0): <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>How to plot and locate points on the coordinate plane.</li>
+<li>The significance of positive and negative values on axes.</li>
+<li>The concept of quadrants in the coordinate system.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<h4 id="volume-of-a-rectangular-prism">Volume of a Rectangular Prism</h4>
+<p><strong>Topic or Subjects</strong></p>
+<ul>
+<li>Calculating the volume of a rectangular prism.</li>
+<li>Understanding length, width, and height in three dimensions.</li>
+</ul>
+<p><strong>Controls</strong></p>
+<ul>
+<li><strong>Length Slider</strong><ul>
+<li>Adjusts the length of the prism: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Width Slider</strong><ul>
+<li>Adjusts the width of the prism: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Height Slider</strong><ul>
+<li>Adjusts the height of the prism: <em>Slider</em></li>
+</ul>
+</li>
+<li><strong>Volume Display</strong><ul>
+<li>Shows the calculated volume: <em>Readout</em></li>
+</ul>
+</li>
+<li><strong>Reset Button</strong><ul>
+<li>Resets dimensions to default values: <em>Button</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>What They Might Learn</strong></p>
+<ul>
+<li>The formula V\=length×width×heightV = \text{length} \times \text{width} \times \text{height}V\=length×width×height.</li>
+<li>How changing each dimension affects the overall volume.</li>
+<li>Visualization of three-dimensional space.</li>
+</ul>
+<p><strong>Level of Difficulty</strong></p>
+<ul>
+<li><strong>Beginner</strong></li>
+</ul>
+<hr />
+<p>These MicroSims are designed to introduce fundamental geometry concepts through interactive visualizations. They allow students to manipulate variables and observe real-time changes, reinforcing their understanding of basic geometric principles.</p>
+<p>o1</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
