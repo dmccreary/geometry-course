@@ -206,3 +206,7 @@ The common endpoint of two rays or segments in an angle, polygon, or polyhedron.
 
 #### Vertical angles
 Two angles formed by intersecting lines, sharing a common vertex but not a common side.
+
+## References
+
+[Illustrative Mathematics](https://curriculum.illustrativemathematics.org/HS/teachers/2/glossary.html)
