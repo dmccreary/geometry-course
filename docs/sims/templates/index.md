@@ -10,7 +10,7 @@ the left of the sliders.
 
 We also use a template that allows us to position
 the animation at any specific part of a web page
-with other content around the simulation.
+using a iFrame with other content around the simulation.
 
 We also prefer a minimalistic approach that allows
 a simulation to be placed directly in a web page
@@ -28,7 +28,7 @@ set to be
 
 # MicroSim Template
 
-![Image Name](./image.png){ width="400" }
+![Image Name](./template.png){ width="400" }
 
 [Run the MicroSim Template](./template.html){ .md-button .md-button--primary }
 [Edit this MicroSim](https://editor.p5js.org/dmccreary/sketches/dJq4nTXE4)
@@ -37,6 +37,10 @@ set to be
 
 This MicroSim teaches us how to
 specify the drawing of a static filled circle.
+
+## Example iFrame
+
+<iframe src="template.html" width="620" height="455" scrolling="no"></iframe>
 
 ## Sample Prompt
 
@@ -49,4 +53,4 @@ Draw a green circle on a 600x400 canvas with a radius of 200.
 
 ```javascript
 // canvas regions setup
-
+```
