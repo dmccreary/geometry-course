@@ -735,7 +735,7 @@ of the screen with the labels and values to
 the left of the sliders.</p>
 <p>We also use a template that allows us to position
 the animation at any specific part of a web page
-with other content around the simulation.</p>
+using a iFrame with other content around the simulation.</p>
 <p>We also prefer a minimalistic approach that allows
 a simulation to be placed directly in a web page
 with a single HTML iframe element where the user
@@ -748,19 +748,22 @@ a control region.  We place buttons and sliders only
 in the control region.  The width of the canvas is
 set to be </p>
 <h1 id="microsim-template">MicroSim Template</h1>
-<p><img alt="Image Name" src="./image.png" width="400" /></p>
+<p><img alt="Image Name" src="template.png" width="400" /></p>
 <p><a class="md-button md-button--primary" href="template.html">Run the MicroSim Template</a>
 <a href="https://editor.p5js.org/dmccreary/sketches/dJq4nTXE4">Edit this MicroSim</a></p>
 <h2 id="about-this-microsim">About this MicroSim</h2>
 <p>This MicroSim teaches us how to
 specify the drawing of a static filled circle.</p>
+<h2 id="example-iframe">Example iFrame</h2>
+<iframe src="template.html" width="620" height="455" scrolling="no"></iframe>
+
 <h2 id="sample-prompt">Sample Prompt</h2>
 <div class="highlight"><pre><span></span><code>Create a single file p5.js sketch.
 Draw a green circle on a 600x400 canvas with a radius of 200.
 </code></pre></div>
 <h2 id="sample-response">Sample Response</h2>
-<p>```javascript
-// canvas regions setup</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// canvas regions setup</span>
+</code></pre></div>
 
 
 
@@ -859,8 +862,6 @@ Draw a green circle on a 600x400 canvas with a radius of 200.
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

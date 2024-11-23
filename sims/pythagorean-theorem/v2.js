@@ -66,6 +66,14 @@ function draw() {
     fill('white')
     rect(0, drawHeight, canvasWidth, controlHeight);
 
+    // Show the equation c² = a² + b² at the top center
+    // note that ² is unicode with a value of : U+00B2
+    fill('black');
+    noStroke();
+    textSize(24); // Increase text size for the title
+    textAlign(CENTER); // Center the text
+    text("c² = a² + b²", canvasWidth / 2 + 70, 30);
+
     // get the updated slider values
     aLength = aSlider.value();
     bLength = bSlider.value();
@@ -136,12 +144,12 @@ function draw() {
     fill(0);
     noStroke();
     textSize(defaultTextSize);
-    text("a: " + nf(aLength, 0, 2), margin, 20);
-    text("b: " + nf(bLength, 0, 2), margin, 40);
-    text("c: " + nf(cLength, 0, 2), margin, 60);
-    text("a*a: " + nf(aLength*aLength, 0, 2), margin+100, 20);
-    text("b*b: " + nf(bLength*bLength, 0, 2), margin+100, 40);
-    text("c*c: " + nf(cLength*cLength, 0, 2), margin+100, 60);
+    text("a: " + nf(aLength, 0, 0), margin, 20);
+    text("b: " + nf(bLength, 0, 0), margin, 40);
+    text("c: " + nf(cLength, 0, 0), margin, 60);
+    text("a²: " + nf(aLength*aLength, 0, 0), margin+100, 20);
+    text("b²: " + nf(bLength*bLength, 0, 0), margin+100, 40);
+    text("c²: " + nf(cLength*cLength, 0, 0), margin+100, 60);
 
     // Label sides on the triangle
     // Label side a

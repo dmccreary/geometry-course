@@ -37,11 +37,11 @@ function setup() {
     // bSlider adjusts length of side b (height)
     let sliderLeftMargin = margin;
 
-    aSlider = createSlider(50, 130, defaultA, 1); // min, max, default, step
+    aSlider = createSlider(50, 140, defaultA, 1); // min, max, default, step
     aSlider.position(sliderLeftMargin, drawHeight + 15);
     aSlider.size((canvasWidth - 2*margin)/2 - 10);
 
-    bSlider = createSlider(50, 132, defaultB, 1);
+    bSlider = createSlider(50, 200, defaultB, 1);
     bSlider.position(sliderLeftMargin + (canvasWidth - 2*margin)/2 + 20, drawHeight + 15);
     bSlider.size((canvasWidth - 2*margin)/2 - 10);
 
@@ -72,7 +72,7 @@ function draw() {
     noStroke();
     textSize(24); // Increase text size for the title
     textAlign(CENTER); // Center the text
-    text("c² = a² + b²", canvasWidth / 2 + 70, 30);
+    text("c² = a² + b²", canvasWidth / 2, 30);
 
     // get the updated slider values
     aLength = aSlider.value();
@@ -94,7 +94,7 @@ function draw() {
     fill('lightgray');
     triangle(x0, y0, x1, y1, x2, y2);
 
-    // If showSquares is true, draw squares on sides a, b, and c
+    // If showSquares is true, draw squares on sides a and b
     if (showSquares) {
         // Draw square on side a
         fill('lightgreen');
@@ -113,43 +113,15 @@ function draw() {
             x2 - bLength, y2,
             x0 - bLength, y0
         );
-
-        // Draw square on side c
-        fill('pink');
-        // Calculate the vector along the hypotenuse
-        let dx = x2 - x1;
-        let dy = y2 - y1;
-        // Calculate the unit vector perpendicular to the hypotenuse
-        let length = sqrt(dx*dx + dy*dy);
-        let ux = -dy / length;
-        let uy = dx / length;
-        // Scale it to the length of the hypotenuse
-        let px = ux * cLength;
-        let py = uy * cLength;
-        // Coordinates of the other two points of the square
-        let x3 = x2 + px;
-        let y3 = y2 + py;
-        let x4 = x1 + px;
-        let y4 = y1 + py;
-        // Draw the square on side c
-        quad(
-            x1, y1,
-            x2, y2,
-            x3, y3,
-            x4, y4
-        );
     }
 
     // Show the lengths of a, b, and c
     fill(0);
     noStroke();
     textSize(defaultTextSize);
-    text("a: " + nf(aLength, 0, 0), margin, 20);
-    text("b: " + nf(bLength, 0, 0), margin, 40);
-    text("c: " + nf(cLength, 0, 0), margin, 60);
-    text("a²: " + nf(aLength*aLength, 0, 0), margin+100, 20);
-    text("b²: " + nf(bLength*bLength, 0, 0), margin+100, 40);
-    text("c²: " + nf(cLength*cLength, 0, 0), margin+100, 60);
+    text("a: " + nf(aLength, 0, 2), margin, 20);
+    text("b: " + nf(bLength, 0, 2), margin, 40);
+    text("c: " + nf(cLength, 0, 2), margin, 60);
 
     // Label sides on the triangle
     // Label side a

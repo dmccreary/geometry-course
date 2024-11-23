@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pythagorean-theorem" class="md-skip">
+        <a href="#pythagorean-theorem-microsim" class="md-skip">
           Skip to content
         </a>
       
@@ -522,6 +522,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#description-of-the-pythagorean-theorem-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description of the Pythagorean Theorem MicroSim
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prompt" class="md-nav__link">
     <span class="md-ellipsis">
       Prompt
@@ -694,6 +703,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#description-of-the-pythagorean-theorem-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description of the Pythagorean Theorem MicroSim
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prompt" class="md-nav__link">
     <span class="md-ellipsis">
       Prompt
@@ -725,15 +743,15 @@
   
 
 
-<h1 id="pythagorean-theorem">Pythagorean Theorem</h1>
-<p><a href="v2.html">Run the Demo V2</a></p>
-<p><a href="pythagorean-theorem.html">Run the Demo</a></p>
-<p><strong>Topic or Subjects</strong></p>
-<ul>
-<li>The Pythagorean theorem and right-angled triangles.</li>
-<li>Relationship between the lengths of sides in right triangles.</li>
-</ul>
-<p><strong>Controls</strong></p>
+<h1 id="pythagorean-theorem-microsim">Pythagorean Theorem MicroSim</h1>
+<p><img alt="" src="pythagorean-theorem.png" /></p>
+<p><a class="md-button md-button--primary" href="pythagorean-theorem.html">Run the Pythagorean Theorem MicroSim</a>
+<a href="https://editor.p5js.org/dmccreary/sketches/vmutQF9Qi">Edit the MicroSim</a></p>
+<p><a href="v1.html">Version 1 of Pythagorean Theorem MicroSim</a></p>
+<p>This MicroSim demonstrates the Pythagorean Theorem, one of the most famous theorems in geometry.
+Using the ChatGPT o1-preview and a good MicroSim template it was easy for us
+to generate this demo.</p>
+<h2 id="description-of-the-pythagorean-theorem-microsim">Description of the Pythagorean Theorem MicroSim</h2>
 <ul>
 <li><strong>Side Length Sliders</strong><ul>
 <li>Adjust Length of Side <code>a</code> (base): <em>Slider</em></li>
@@ -757,15 +775,213 @@
 </li>
 </ul>
 <p>```linenums"0"
-    Create a p5.js sketch of showing a visualization of the Pythagorean theorem.</p>
-<div class="highlight"><pre><span></span><code>1. Draw a right triangle in the center of the sketch canvas.
-2. Create two sliders that adjust the length of side a (base) and height (b)
-3. Create a toggle button that shows squares made of up sides a and b
-4. Show the length of a, b and the length of the hypotenuse C
-5. Add a reset button that resets the lengths to the default button.
-6. Use the template below for the layout.
-</code></pre></div>
-<p>```</p>
+Create a p5.js sketch of showing a visualization of the Pythagorean theorem.</p>
+<ol>
+<li>Draw a right triangle in the center of the sketch canvas.</li>
+<li>Create two sliders that adjust the length of side a (base) and height (b)</li>
+<li>Create a toggle button that shows squares made of up sides a and b</li>
+<li>Show the length of a, b and the length of the hypotenuse C</li>
+<li>Add a reset button that resets the lengths to the default button.</li>
+<li>Use the MicroSIm template below for the layout.</li>
+<li>Place the equation c² = a² + b² as a title in the upper right</li>
+<li>Display the lengths of a, b and c and their squares in the upper left
+<div class="highlight"><pre><span></span><code>Here is the MicroSim template I gave it:
+
+[MicroSim Template File](../templates/microsim-2d-geometry.js)
+## Sample Code
+
+```javascript
+// MicroSim Template with region drawing parameters
+// the width of the entire canvas
+let canvasWidth = 400;
+// The top drawing region above the interactive controls
+let drawHeight = 400;
+// control region height
+let controlHeight = 50;
+// The total height of both the drawing region height + the control region height
+let canvasHeight = drawHeight + controlHeight;
+// margin around the active plotting region
+let margin = 25;
+// larger text so students in the back of the room can read the labels
+let defaultTextSize = 16;
+
+// variables for sliders
+let aSlider, bSlider;
+// variables for toggle button
+let toggleButton;
+let showSquares = false;
+// variable for reset button
+let resetButton;
+// default values for a and b
+let defaultA = 100;
+let defaultB = 100;
+// variables for the lengths of sides
+let aLength, bLength, cLength;
+
+function setup() {
+    const canvas = createCanvas(canvasWidth, canvasHeight);
+    // canvas.parent(&#39;canvas-container&#39;);
+    var mainElement = document.querySelector(&#39;main&#39;);
+    canvas.parent(mainElement);
+    textSize(defaultTextSize);
+
+    // create sliders
+    // aSlider adjusts length of side a (base)
+    // bSlider adjusts length of side b (height)
+    let sliderLeftMargin = margin;
+
+    aSlider = createSlider(50, 130, defaultA, 1); // min, max, default, step
+    aSlider.position(sliderLeftMargin, drawHeight + 15);
+    aSlider.size((canvasWidth - 2*margin)/2 - 10);
+
+    bSlider = createSlider(50, 132, defaultB, 1);
+    bSlider.position(sliderLeftMargin + (canvasWidth - 2*margin)/2 + 20, drawHeight + 15);
+    bSlider.size((canvasWidth - 2*margin)/2 - 10);
+
+    // create toggle button
+    toggleButton = createButton(&#39;Show Squares&#39;);
+    toggleButton.position(margin, drawHeight + 40);
+    toggleButton.mousePressed(toggleSquares);
+
+    // create reset button
+    resetButton = createButton(&#39;Reset&#39;);
+    resetButton.position(canvasWidth - margin - 50, drawHeight + 40);
+    resetButton.mousePressed(resetValues);
+}
+
+function draw() {
+    // make the background drawing region a very light blue
+    background(&#39;white&#39;); // reset background
+    fill(&#39;aliceblue&#39;);
+    noStroke();
+    rect(0, 0, canvasWidth, drawHeight);
+    // make the background of the controls area white
+    fill(&#39;white&#39;)
+    rect(0, drawHeight, canvasWidth, controlHeight);
+
+    // Show the equation c² = a² + b² at the top center
+    // note that ² is unicode with a value of : U+00B2
+    fill(&#39;black&#39;);
+    noStroke();
+    textSize(24); // Increase text size for the title
+    textAlign(CENTER); // Center the text
+    text(&quot;c² = a² + b²&quot;, canvasWidth / 2 + 70, 30);
+
+    // get the updated slider values
+    aLength = aSlider.value();
+    bLength = bSlider.value();
+    cLength = sqrt(aLength*aLength + bLength*bLength);
+
+    // draw the right triangle in the center of the sketch canvas
+    // Right angle at (x0, y0)
+    let x0 = canvasWidth/2 - aLength/2;
+    let y0 = drawHeight/2 + bLength/2;
+
+    let x1 = x0 + aLength;
+    let y1 = y0;
+
+    let x2 = x0;
+    let y2 = y0 - bLength;
+
+    stroke(0);
+    fill(&#39;lightgray&#39;);
+    triangle(x0, y0, x1, y1, x2, y2);
+
+    // If showSquares is true, draw squares on sides a, b, and c
+    if (showSquares) {
+        // Draw square on side a
+        fill(&#39;lightgreen&#39;);
+        quad(
+            x0, y0,
+            x1, y1,
+            x1, y1 + aLength,
+            x0, y0 + aLength
+        );
+
+        // Draw square on side b
+        fill(&#39;lightblue&#39;);
+        quad(
+            x0, y0,
+            x2, y2,
+            x2 - bLength, y2,
+            x0 - bLength, y0
+        );
+
+        // Draw square on side c
+        fill(&#39;pink&#39;);
+        // Calculate the vector along the hypotenuse
+        let dx = x2 - x1;
+        let dy = y2 - y1;
+        // Calculate the unit vector perpendicular to the hypotenuse
+        let length = sqrt(dx*dx + dy*dy);
+        let ux = -dy / length;
+        let uy = dx / length;
+        // Scale it to the length of the hypotenuse
+        let px = ux * cLength;
+        let py = uy * cLength;
+        // Coordinates of the other two points of the square
+        let x3 = x2 + px;
+        let y3 = y2 + py;
+        let x4 = x1 + px;
+        let y4 = y1 + py;
+        // Draw the square on side c
+        quad(
+            x1, y1,
+            x2, y2,
+            x3, y3,
+            x4, y4
+        );
+    }
+
+    // Show the lengths of a, b, and c
+    fill(0);
+    noStroke();
+    textSize(defaultTextSize);
+    text(&quot;a: &quot; + nf(aLength, 0, 0), margin, 20);
+    text(&quot;b: &quot; + nf(bLength, 0, 0), margin, 40);
+    text(&quot;c: &quot; + nf(cLength, 0, 0), margin, 60);
+    text(&quot;a²: &quot; + nf(aLength*aLength, 0, 0), margin+100, 20);
+    text(&quot;b²: &quot; + nf(bLength*bLength, 0, 0), margin+100, 40);
+    text(&quot;c²: &quot; + nf(cLength*cLength, 0, 0), margin+100, 60);
+
+    // Label sides on the triangle
+    // Label side a
+    let midA_x = (x0 + x1)/2;
+    let midA_y = y0 + 15;
+    text(&quot;a&quot;, midA_x, midA_y);
+
+    // Label side b
+    let midB_x = x0 - 15;
+    let midB_y = (y0 + y2)/2;
+    text(&quot;b&quot;, midB_x, midB_y);
+
+    // Label side c
+    let midC_x = (x1 + x2)/2 + 10;
+    let midC_y = (y1 + y2)/2;
+    text(&quot;c&quot;, midC_x, midC_y);
+
+    // Draw labels for sliders
+    fill(0);
+    noStroke();
+    text(&quot;Side a:&quot;, aSlider.x * 1 + aSlider.width / 2 - 30, aSlider.y - 5);
+    text(&quot;Side b:&quot;, bSlider.x * 1 + bSlider.width / 2 - 30, bSlider.y - 5);
+}
+
+function toggleSquares() {
+    showSquares = !showSquares;
+    if (showSquares) {
+        toggleButton.html(&#39;Hide Squares&#39;);
+    } else {
+        toggleButton.html(&#39;Show Squares&#39;);
+    }
+}
+
+function resetValues() {
+    aSlider.value(defaultA);
+    bSlider.value(defaultB);
+}
+</code></pre></div></li>
+</ol>
 
 
 
@@ -864,8 +1080,6 @@
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
