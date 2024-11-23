@@ -25,7 +25,7 @@ to generate this demo.
     
     ## Prompt
 
-```linenums"0"
+```linenums="0"
 Create a p5.js sketch of showing a visualization of the Pythagorean theorem.
 
 1. Draw a right triangle in the center of the sketch canvas.
