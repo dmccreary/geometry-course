@@ -234,3 +234,7 @@ function resetValues() {
     bSlider.value(defaultB);
 }
 ```
+
+## References
+
+[My full ChatGPT Diaglog to Generate The MicroSim](https://chatgpt.com/share/67421143-1d78-8001-9749-ab5d3a190c3a)
