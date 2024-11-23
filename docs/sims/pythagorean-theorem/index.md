@@ -30,7 +30,7 @@ Create a p5.js sketch of showing a visualization of the Pythagorean theorem.
 
 1. Draw a right triangle in the center of the sketch canvas.
 2. Create two sliders that adjust the length of side a (base) and height (b)
-3. Create a toggle button that shows squares made of up sides a and b
+3. Create a toggle button that shows squares made of up sides a, b and c
 4. Show the length of a, b and the length of the hypotenuse C
 5. Add a reset button that resets the lengths to the default button.
 6. Use the MicroSIm template below for the layout.
