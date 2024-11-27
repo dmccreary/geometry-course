@@ -17,9 +17,11 @@ nav:
       - Introduction: chapters/proofs/index.md
     - Lines:
       - Introduction: chapters/lines/index.md
-    - Triangles:
-      - Introduction: chapters/triangles/index.md
-      - Pythagorean Theorem: chapters/triangles/pythagorean-theorem/index.md
+    - Congruent Triangles:
+      - Introduction: chapters/congruent-triangles/index.md
+    - Properties of Triangles:
+      - Introduction: chapters/properties-of-triangles/index.md
+      - Pythagorean Theorem: chapters/properties-of-triangles/pythagorean-theorem/index.md
     - Polygons:
         - Introduction: chapters/polygons/index.md
     - Circles:
