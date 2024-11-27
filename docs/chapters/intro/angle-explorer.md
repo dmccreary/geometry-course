@@ -1,6 +1,13 @@
 # Exploring Angles with the Angle Explorer MicroSim
 
-[Run the Angle Explorer MicroSim](../../sims/angle-explorer/angle-explorer.html)
+<!--
+![Angle Explorer Image](../../sims/angle-explorer/angle-explorer.png)
+-->
+
+<iframe src="/geometry-course/sims/angle-explorer/angle-explorer.html" 
+   width="630" height="309"></iframe>
+
+[Run the Angle Explorer MicroSim](../../sims/angle-explorer/angle-explorer.html){ .md-button .md-button--primary }
 
 **Grade Level:** 9th - 12th Grade Geometry
 

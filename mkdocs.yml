@@ -13,7 +13,7 @@ nav:
     - Table of Contents: chapters/index.md
     - 1. Introduction to Geometry: 
       - Introduction: chapters/intro/index.md
-      - Angle Explorer: chapters/intro/angle-explorer.md
+      - Angle Explorer MicroSim: chapters/intro/angle-explorer.md
     - 2. Reasoning and Proofs:
       - Introduction: chapters/proofs/index.md
     - 3. Lines:
@@ -30,6 +30,7 @@ nav:
       - Introduction: chapters/similarity/index.md
     - 8. Right Triangles and Trigonometry:
       - Introduction: chapters/trigonometry/index.md
+      - Pythagorean Theorem MicroSim: chapters/trigonometry/pythagorean-theorem/index.md
     - 9. Circles:
       - Introduction: chapters/circles/index.md
       - Cords: chapters/circles/cords/index.md
@@ -91,6 +92,8 @@ theme:
     - content.action.edit
 plugins:
   - search
+  # - site-urls
+  # - relative-paths
 #  - social
 markdown_extensions:
   - admonition

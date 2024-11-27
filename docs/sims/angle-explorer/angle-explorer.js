@@ -7,10 +7,10 @@
 // This template puts a control region below the active drawing region of the canvas
 // the width of the entire canvas
 // No HTML should be placed above the drawing region so the MicroSim can be placed on a page with an iFrame
-let canvasWidth = 600;
+let canvasWidth = 667;
 // The top drawing region above the interactive controls
 let drawWidth = canvasWidth;
-let drawHeight = 400;
+let drawHeight = 250;
 // the control region is where we place sliders and buttons
 // height of the region that contains all the controls
 let controlHeight = 40;
@@ -19,7 +19,7 @@ let canvasHeight = drawHeight + controlHeight;
 // margin around the active plotting region
 let margin = 25;
 // the left margin area needs to hold the width of the text label and value
-let sliderLeftMargin = 130;
+let sliderLeftMargin = 110;
 // larger text so students in the back of the room can read the labels
 let defaultTextSize = 16;
 
@@ -33,9 +33,9 @@ function setup() {
     // create a new slider at the bottom of the canvas in the control region
     mySlider = createSlider(0, 180, 45, 1);
     // position the slider below the drawing region
-    mySlider.position(sliderLeftMargin, drawHeight + 20);
+    mySlider.position(sliderLeftMargin, drawHeight + 19);
     // make the slider width fill the area to the right of the label and value of the slider
-    mySlider.size(canvasWidth - sliderLeftMargin - 30);
+    mySlider.size(canvasWidth - sliderLeftMargin - 10);
 }
 
 function draw() {
@@ -56,8 +56,8 @@ function draw() {
     strokeWeight(2);
 
     let centerX = canvasWidth / 2;
-    let centerY = drawHeight / 2;
-    let length = 150;
+    let centerY = drawHeight - 40;
+    let length = 170;
 
     // First ray (fixed)
     line(centerX, centerY, centerX + length, centerY);
@@ -91,7 +91,8 @@ function draw() {
     // Display the angle type
     fill('black');
     textSize(24);
-    text(angleType, centerX - 70, 50);
+    // Draw the angle type in the title area
+    text(angleType, centerX - 70, 30);
 
     // draw label and value in control area
     fill('black');

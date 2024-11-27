@@ -9,7 +9,7 @@ This chapter introduces the fundamental elements of geometry, including:
 
 Students will learn basic definitions and postulates that form the foundation for all geometric concepts.
 
-**MicroSims:**
+## MicroSims
 
 - **Point-Line-Plane Explorer**: Interactively plot points, lines, and planes to see how they relate.
-- **Angle Creator**: Adjust rays to form different angles and measure them dynamically.
+- [Angle Explorer](./angle-explorer.md) Adjust rays to form different angles and measure them dynamically.

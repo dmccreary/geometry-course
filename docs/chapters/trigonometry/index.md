@@ -5,5 +5,8 @@ Learn about sine, cosine, and tangent ratios and how to apply them to find missi
 
 **MicroSims:**
 
-- **Trigonometric Ratio Explorer**: Adjust triangle sides to see changes in trig ratios.
 - **Right Triangle Solver**: Input known values to calculate unknown sides or angles.
+
+- [Pythagorean Theorem MicroSim](./pythagorean-theorem.md)
+
+- **Trigonometric Ratio Explorer**: Adjust triangle sides to see changes in trig ratios.

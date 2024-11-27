@@ -1,6 +1,6 @@
 // MicroSim Template with region drawing parameters
 // the width of the entire canvas
-let canvasWidth = 400;
+let canvasWidth = 667;
 // The top drawing region above the interactive controls
 let drawHeight = 400;
 // control region height
@@ -72,7 +72,7 @@ function draw() {
     noStroke();
     textSize(24); // Increase text size for the title
     textAlign(CENTER); // Center the text
-    text("c² = a² + b²", canvasWidth / 2 + 70, 30);
+    text("c² = a² + b²", canvasWidth - 70, 30);
 
     // get the updated slider values
     aLength = aSlider.value();
