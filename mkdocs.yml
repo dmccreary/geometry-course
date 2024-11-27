@@ -13,6 +13,7 @@ nav:
     - Table of Contents: chapters/index.md
     - 1. Introduction to Geometry: 
       - Introduction: chapters/intro/index.md
+      - Angle Explorer: chapters/intro/angle-explorer.md
     - 2. Reasoning and Proofs:
       - Introduction: chapters/proofs/index.md
     - 3. Lines:
@@ -47,7 +48,8 @@ nav:
     - Glossary: prompts/05-glossary.md
     - Word Cloud: prompts/06-word-cloud.md
     - Equations: prompts/07-equations.md
-    - MicroSims: prompts/08-microsims.md
+    - MicroSims Ideas: prompts/08-microsims.md
+    - Individual MicroSim: prompts/06-individual-microsim.md
     - Chapter Design: prompts/10-chapter-design.md
   - MicroSims:
     - Introduction: sims/index.md
