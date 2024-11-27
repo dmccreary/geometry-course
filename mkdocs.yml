@@ -11,24 +11,31 @@ nav:
   - About: about.md
   - Chapters:
     - Table of Contents: chapters/index.md
-    - Introduction to Geometry: 
+    - 1. Introduction to Geometry: 
       - Introduction: chapters/intro/index.md
-    - Reasoning and Proofs:
+    - 2. Reasoning and Proofs:
       - Introduction: chapters/proofs/index.md
-    - Lines:
+    - 3. Lines:
       - Introduction: chapters/lines/index.md
-    - Congruent Triangles:
+    - 4. Congruent Triangles:
       - Introduction: chapters/congruent-triangles/index.md
-    - Properties of Triangles:
+    - 5. Properties of Triangles:
       - Introduction: chapters/properties-of-triangles/index.md
       - Pythagorean Theorem: chapters/properties-of-triangles/pythagorean-theorem/index.md
-    - Polygons:
+    - 6. Polygons:
         - Introduction: chapters/polygons/index.md
-    - Circles:
+    - 7. Similarity:
+      - Introduction: chapters/similarity/index.md
+    - 8. Right Triangles and Trigonometry:
+      - Introduction: chapters/trigonometry/index.md
+    - 9. Circles:
       - Introduction: chapters/circles/index.md
       - Cords: chapters/circles/cords/index.md
-
-    - Transformations:
+    - 10. Area and Perimeters:
+      - Introduction: chapters/area-and-perimeters/index.md
+    - 11. Surface Area and Volume:
+      - Introduction: chapters/surface-area-and-volume/index.md
+    - 12. Transformations:
       - Introduction: chapters/transformations/index.md
   - Sample Prompts:
     - Introduction: prompts/index.md
