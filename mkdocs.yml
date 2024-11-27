@@ -9,6 +9,25 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
+  - Chapters:
+    - Table of Contents: chapters/index.md
+    - Introduction to Geometry: 
+      - Introduction: chapters/intro/index.md
+    - Reasoning and Proofs:
+      - Introduction: chapters/proofs/index.md
+    - Lines:
+      - Introduction: chapters/lines/index.md
+    - Triangles:
+      - Introduction: chapters/triangles/index.md
+      - Pythagorean Theorem: chapters/triangles/pythagorean-theorem/index.md
+    - Polygons:
+        - Introduction: chapters/polygons/index.md
+    - Circles:
+      - Introduction: chapters/circles/index.md
+      - Cords: chapters/circles/cords/index.md
+
+    - Transformations:
+      - Introduction: chapters/transformations/index.md
   - Sample Prompts:
     - Introduction: prompts/index.md
     - Course Description: prompts/01-course-description.md
@@ -18,6 +37,8 @@ nav:
     - Glossary: prompts/05-glossary.md
     - Word Cloud: prompts/06-word-cloud.md
     - Equations: prompts/07-equations.md
+    - MicroSims: prompts/08-microsims.md
+    - Chapter Design: prompts/10-chapter-design.md
   - MicroSims:
     - Introduction: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
