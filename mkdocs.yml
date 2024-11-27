@@ -19,6 +19,7 @@ nav:
       - Introduction: chapters/lines/index.md
     - 4. Congruent Triangles:
       - Introduction: chapters/congruent-triangles/index.md
+      - Pythagorean Theorem: chapters/congruent-triangles/pythagorean-theorem/index.md
     - 5. Properties of Triangles:
       - Introduction: chapters/properties-of-triangles/index.md
       - Pythagorean Theorem: chapters/properties-of-triangles/pythagorean-theorem/index.md
@@ -32,7 +33,7 @@ nav:
       - Introduction: chapters/circles/index.md
       - Cords: chapters/circles/cords/index.md
     - 10. Area and Perimeters:
-      - Introduction: chapters/area-and-perimeters/index.md
+      - Introduction: chapters/areas-and-perimeters/index.md
     - 11. Surface Area and Volume:
       - Introduction: chapters/surface-area-and-volume/index.md
     - 12. Transformations:
@@ -52,6 +53,7 @@ nav:
     - Introduction: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
     - Word Cloud: sims/word-cloud/index.md
+    - Angle Explorer: sims/angle-explorer/index.md
     - Cords: sims/cords/index.md
     - Pythagorean Theorem: sims/pythagorean-theorem/index.md
     - Templates: sims/templates/index.md

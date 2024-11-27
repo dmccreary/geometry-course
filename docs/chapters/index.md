@@ -12,9 +12,13 @@ Students will learn basic definitions and postulates that form the foundation fo
 - **Point-Line-Plane Explorer**: Interactively plot points, lines, and planes to see how they relate.
 - **Angle Creator**: Adjust rays to form different angles and measure them dynamically.
 
+[Introduction to Geometry](./intro/index.md)
+
 ### Chapter 2: Reasoning and Proof
 
 Dive into the principles of logical reasoning, including inductive and deductive reasoning. Learn how to construct formal geometric proofs using definitions, postulates, and theorems.
+
+[Reasoning and Proofs](./proofs/index.md)
 
 **MicroSims:**
 
@@ -30,6 +34,8 @@ Explore the properties of parallel and perpendicular lines and the angles formed
 - **Parallel Lines with Transversal**: Manipulate lines to observe angle relationships.
 - **Perpendicular Line Constructor**: Create perpendicular lines and examine right angles.
 
+[Parallel and Perpendicular Lines](./lines/index.md)
+
 ### Chapter 4: Congruent Triangles
 
 Learn the criteria for triangle congruence, such as SSS, SAS, ASA, AAS, and HL. Apply these criteria to prove triangles are congruent in various geometric scenarios.
@@ -38,6 +44,8 @@ Learn the criteria for triangle congruence, such as SSS, SAS, ASA, AAS, and HL. 
 
 - **Triangle Congruence Tester**: Adjust side lengths and angles to test for congruence.
 - **SSS and SAS Simulator**: Visualize how different congruence postulates work.
+
+[Congruent Triangles](./congruent-triangles/index.md)
 
 ### Chapter 5: Properties of Triangles
 
@@ -48,13 +56,15 @@ Investigate special segments in triangles, including medians, altitudes, and ang
 - **Triangle Centers Explorer**: Locate and explore different centers within a triangle.
 - **Median and Altitude Interactive**: Visualize how medians and altitudes intersect.
 
+[Properties of Triangles](./properties-of-triangles/index.md)
+
 ### Chapter 6: Quadrilaterals and Polygons
 
 Examine the properties of various quadrilaterals such as parallelograms, 
 rectangles, squares, rhombuses, and trapezoids. Extend these concepts
 to other polygons and understand their angle sums.
 
-[Polygons](./polygons/index.md)
+[Quadrilaterals and Polygons](./polygons/index.md)
 
 **MicroSims:**
 
@@ -70,11 +80,13 @@ Understand the concept of similar figures and the criteria for triangle similari
 - **Similarity Transformer**: Apply dilations to shapes to explore similarity.
 - **Proportionality Simulator**: Visualize and manipulate proportional segments.
 
+[Similarity](./similarity/index.md)
+
 ### Chapter 8: Right Triangles and Trigonometry
 
 Introduce the properties of right triangles and the basics of trigonometry. Learn about sine, cosine, and tangent ratios and how to apply them to find missing sides and angles.
 
-[Triangles](./triangles/index.md)
+[Right Triangles and Trigonometry](./trigonometry/index.md)
 
 **MicroSims:**
 
@@ -102,6 +114,8 @@ Learn how to calculate the area and perimeter of various two-dimensional figures
 - **Shape Area Calculator**: Modify dimensions to see real-time area and perimeter calculations.
 - **Composite Figure Builder**: Combine shapes to understand how total area is determined.
 
+[Areas and Perimeters](./areas-and-perimeters/index.md)
+
 ### Chapter 11: Surface Area and Volume
 
 Expand your knowledge to three-dimensional figures by calculating surface area and volume. Explore prisms, cylinders, pyramids, cones, and spheres.
@@ -110,6 +124,8 @@ Expand your knowledge to three-dimensional figures by calculating surface area a
 
 - **3D Solid Visualizer**: Rotate and manipulate solids to understand their properties.
 - **Surface Area and Volume Simulator**: Change dimensions to see effects on measurements.
+
+[Surface Area and Volume](./surface-area-and-volume/index.md)
 
 ### Chapter 12: Transformations
 
@@ -120,7 +136,7 @@ Investigate geometric transformations, including translations, reflections, rota
 -  **Transformation Playground**: Apply different transformations to shapes and observe outcomes.
 -  **Coordinate Mapping Tool**: See how points move under various transformations.
 
-[Introduction](./intro/index.md)
+[Transformations](./transformations/index.md)
 
 
 

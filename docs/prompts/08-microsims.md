@@ -1,7 +1,7 @@
 # MicroSim Ideas
 
 
-## Sample Prompt
+## Sample Prompt for Generating Ideas for MicroSims
 
 ```linenums="0"
 I am a high-school geometry teacher that has just taken a course in creating simulations and animations using p5.js.  What are some fun interactive animations (MicroSim)I can create to teach my students various topics in geometry.  I want to create a small animation or simulation that has controls such as buttons and sliders.  As the student change the controls they should see some geometry on the screen change.  For each MicroSim please provide:
