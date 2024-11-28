@@ -14,14 +14,13 @@ nav:
     - 1. Introduction to Geometry: 
       - Introduction: chapters/intro/index.md
       - Angle Explorer MicroSim: chapters/intro/angle-explorer.md
-      - chapters/intro/comp-and-sup-angles.md
+      - Complementary and Supplementary Angles: chapters/intro/comp-and-sup-angles.md
     - 2. Reasoning and Proofs:
       - Introduction: chapters/proofs/index.md
     - 3. Lines:
       - Introduction: chapters/lines/index.md
     - 4. Congruent Triangles:
       - Introduction: chapters/congruent-triangles/index.md
-      - Pythagorean Theorem: chapters/congruent-triangles/pythagorean-theorem/index.md
     - 5. Properties of Triangles:
       - Introduction: chapters/properties-of-triangles/index.md
     - 6. Polygons:
@@ -57,7 +56,7 @@ nav:
     - Graph Viewer: sims/graph-viewer/index.md
     - Word Cloud: sims/word-cloud/index.md
     - Angle Explorer: sims/angle-explorer/index.md
-    - Comp and Sup Angles: sims/comp-and-sup-angles/index.md
+    - Complementary and Supplementary Angles: sims/comp-and-sup-angles/index.md
     - Cords: sims/cords/index.md
     - Pythagorean Theorem: sims/pythagorean-theorem/index.md
     - Templates: sims/templates/index.md

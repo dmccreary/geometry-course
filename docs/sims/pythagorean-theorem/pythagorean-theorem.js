@@ -4,7 +4,7 @@ let canvasWidth = 667;
 // The top drawing region above the interactive controls
 let drawHeight = 400;
 // control region height
-let controlHeight = 50;
+let controlHeight = 60;
 // The total height of both the drawing region height + the control region height
 let canvasHeight = drawHeight + controlHeight;
 // margin around the active plotting region
@@ -38,11 +38,11 @@ function setup() {
     let sliderLeftMargin = margin;
 
     aSlider = createSlider(50, 130, defaultA, 1); // min, max, default, step
-    aSlider.position(sliderLeftMargin, drawHeight + 15);
+    aSlider.position(sliderLeftMargin, drawHeight + 20);
     aSlider.size((canvasWidth - 2*margin)/2 - 10);
 
     bSlider = createSlider(50, 132, defaultB, 1);
-    bSlider.position(sliderLeftMargin + (canvasWidth - 2*margin)/2 + 20, drawHeight + 15);
+    bSlider.position(sliderLeftMargin + (canvasWidth - 2*margin)/2 + 20, drawHeight + 20);
     bSlider.size((canvasWidth - 2*margin)/2 - 10);
 
     // create toggle button
@@ -60,7 +60,8 @@ function draw() {
     // make the background drawing region a very light blue
     background('white'); // reset background
     fill('aliceblue');
-    noStroke();
+    // draw a thin light gray outline for the region borders
+    stroke('silver');
     rect(0, 0, canvasWidth, drawHeight);
     // make the background of the controls area white
     fill('white')
@@ -170,6 +171,7 @@ function draw() {
     // Draw labels for sliders
     fill(0);
     noStroke();
+    // place text above sliders
     text("Side a:", aSlider.x * 1 + aSlider.width / 2 - 30, aSlider.y - 5);
     text("Side b:", bSlider.x * 1 + bSlider.width / 2 - 30, bSlider.y - 5);
 }
