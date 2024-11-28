@@ -13,3 +13,4 @@ Students will learn basic definitions and postulates that form the foundation fo
 
 - **Point-Line-Plane Explorer**: Interactively plot points, lines, and planes to see how they relate.
 - [Angle Explorer](./angle-explorer.md) Adjust rays to form different angles and measure them dynamically.
+- [Complementary and Supplementary Angles](./comp-and-sup-angles.md)
