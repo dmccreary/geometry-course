@@ -2,7 +2,9 @@
 
 ![](./circle-area-explorer.png)
 
-[Run the Circle Area Explorer MicroSim](circle-area-explorer.html)
+[Run the Circle Area Explorer MicroSim](circle-area-explorer.html){ .md-button .md-button--primary }
+
+[Edit theCircle Area Explorer MicroSim with the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/yoCpStC96)
 
 ### Features:
 

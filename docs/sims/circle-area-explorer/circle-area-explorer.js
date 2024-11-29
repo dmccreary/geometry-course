@@ -72,7 +72,7 @@ function draw() {
   let area = PI * radius * radius;
 
   // Draw circle
-  fill('Cornsilk');
+  fill('cornsilk');
   stroke('black');
   strokeWeight(2);
   circle(circleX, circleY, 2 * radius);
