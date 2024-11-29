@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Workflow Diagram with vis.js</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-network.min.css" rel="stylesheet" type="text/css" />
   <style>
     #mynetwork {
       width: 100%;
@@ -57,10 +56,23 @@
         arrows: {
           to: { enabled: true }
         },
-        color: "#000"
+        color: "black",
+        width: 3
       },
       nodes: {
-        margin: 5 // Global margin for text inside nodes
+        shape: "box",
+        margin: 5, // Global margin for text inside nodes
+        widthConstraint: {
+          minimum: 150,  // Set the minimum width (in pixels)
+          maximum: 200   // Set the maximum width (in pixels) for fixed width
+        },
+        heightConstraint: {
+          minimum: 100,  // Set the minimum height (in pixels)
+          maximum: 100   // Set the maximum height (in pixels) for fixed height
+        },
+        font: {
+          size: 24       // Set the font size (in pixels)
+        }
       },
       physics: false // Disable animation for fixed layout
     };
