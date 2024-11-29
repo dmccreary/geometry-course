@@ -33,7 +33,8 @@ function setup() {
   circleY = drawHeight / 2;
 
   // Create slider for radius control
-  radiusSlider = createSlider(10, 150, 75, 1);
+  // range from 10 to 150 with a default of 100 and a step of 1
+  radiusSlider = createSlider(10, 150, 100, 1);
   radiusSlider.position(sliderLeftMargin, drawHeight + 20);
   radiusSlider.size(canvasWidth - sliderLeftMargin - 120);
 
@@ -81,8 +82,18 @@ function draw() {
   fill('black');
   textSize(defaultTextSize);
   textAlign(LEFT);
+
   // text(`Radius: ${radius} units`, 10, 20);
-  text(`Area: ${area.toFixed(2)} square units`, 10, 20);
+  // Format without fraction digits
+  const formattedArea = area.toLocaleString('en-US', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0
+  });
+  text(`Area: ${formattedArea} square units`, 10, 20);
+
+  // Add the Formula
+  textSize(24);
+  text("A = π r²", 10, 50)
 
   // Draw graph if toggled on
   if (showGraph) {
@@ -110,11 +121,13 @@ function drawGraph(radius) {
 
   // Labels
   fill('black');
+  textSize(16);
   noStroke();
   textAlign(CENTER);
   text("Radius", graphOriginX + graphWidth / 2, graphOriginY + 20);
   textAlign(RIGHT);
   text("Area", graphOriginX - 10, graphOriginY - graphHeight + 50);
+  
 
   // Plot radius vs area
   stroke('blue');
