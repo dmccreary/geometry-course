@@ -178,3 +178,7 @@ Investigate geometric transformations, including translations, reflections, rota
 
 -  **Transformation Playground**: Apply different transformations to shapes and observe outcomes.
 -  **Coordinate Mapping Tool**: See how points move under various transformations.
+
+## References
+
+[ChatGPT Transcript](https://chatgpt.com/share/67493848-f21c-8001-854e-2fe7ef08b0d0)

@@ -1,3 +1,37 @@
+# Workflow
+
+![](workflow.png)
+
+[Workflow in vis.js](workflow.html)
+
+## Prompt
+
+```linenums="0"
+I have a workflow diagram with the following steps:
+
+1. Course Description
+2. Concept Enumeration
+3. Concept Dependency
+4. Concept Taxonomy
+5. Concept Graph
+6. Content Generation
+7. Assessment Generation
+
+Step 2 depends on step 1
+Step 3 depends on step 2
+Step 4 depends on step 2
+Step 5 depends on step 3 and 4
+Step 6 depends on step 5
+Step 7 depends on step 6
+
+Use (p5.js, vis.js, mermaid) to create a diagram for this workflow using a left-to-right layout. 
+Use a rectangle to render each step.
+Use different colors as a background for each step.
+```
+
+## Response for vis.js
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,3 +114,8 @@
   </script>
 </body>
 </html>
+```
+
+## References
+
+[ChatGPT Transcript](https://chatgpt.com/share/67494ab4-ef4c-8001-91b4-1746b056f2c5)

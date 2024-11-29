@@ -1,5 +1,7 @@
 # Complementary and Supplementary Angles
 
+![](comp-and-sup-angles.png)
+
 [Run the Complementary and Supplementary MicroSim](./comp-and-sup-angles.html){ .md-button .md-button--primary }
 
 [Edit the MicroSim on the p5.js editor website](https://editor.p5js.org/dmccreary/sketches/NnFw96a9w)

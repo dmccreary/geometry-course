@@ -73,7 +73,7 @@ function draw() {
     stroke('red');
     strokeWeight(2);
     let arcRadius = 50;
-    arc(centerX, centerY, arcRadius, arcRadius, 0, -angleRadians, OPEN);
+    arc(centerX, centerY, arcRadius, arcRadius, -angleRadians, 0, OPEN);
 
     // Display the angle value near the arc
     fill('black');
