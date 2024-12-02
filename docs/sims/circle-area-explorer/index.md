@@ -10,14 +10,12 @@
 
 ### Features:
 
-1.  **Interactive Radius Slider**:
+1.  **Interactive Radius Slider and Direct Manipulation**:
 
--   Adjusts the circle radius dynamically.
--   Updates the area calculation and display.
-
-3.  **Toggle Graph Button**:
-
-Toggles the visibility of the graph plotting the relationship between radius and area.4.  **Graph**:
+- Adjusts the circle radius dynamically by allowing you to drag the radius or change the slider
+- As you change the radius, the labels for radius and the area calculations are displayed
+- You can turn on a graph to the right of the circle to display the relationship between the radius and the area
+- You can show the quadratic shape of the curve
 
 Illustrates how the area of the circle grows quadratically with increasing radius.
 
@@ -25,3 +23,8 @@ Illustrates how the area of the circle grows quadratically with increasing radiu
 
 -   Students visualize the quadratic relationship $A = \pi r^2$
 -   Observe that area increases faster than the radius due to the quadratic term.
+
+## References
+
+* [Sample ChatGPT Dialog to generate the first version of the MicroSim](https://chatgpt.com/share/674dd14f-2834-8001-9b6b-a380dc79ae10)
+* [Sample ChatGPT Dialog to add direct manipulation of the radius within the circle](https://chatgpt.com/share/674dd03a-7454-8001-af93-87f29e31f42c)
