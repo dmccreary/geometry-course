@@ -1,7 +1,6 @@
 // Circle Area Explorer
 // Author: Dan McCreary
 // Version: geometry-1
-// Modified to add radius line and draggable small circle
 
 let canvasWidth = 667;
 // The top drawing region above the interactive controls
@@ -18,13 +17,9 @@ let sliderLeftMargin = 120;
 // Larger text so students in the back of the room can read the labels
 let defaultTextSize = 16;
 
-let radiusSlider, toggleGraphButton;
+let radiusSlider, resetButton, toggleGraphButton;
 let showGraph = false;
 let circleX, circleY;
-
-let dragging = false;
-let angle = 0; // in radians
-let radius = 100;
 
 function setup() {
   const canvas = createCanvas(canvasWidth, canvasHeight);
@@ -43,6 +38,15 @@ function setup() {
   radiusSlider.position(sliderLeftMargin, drawHeight + 20);
   radiusSlider.size(canvasWidth - sliderLeftMargin - 120);
 
+  // Create reset button
+  /*
+  resetButton = createButton("Reset Radius");
+  resetButton.position(sliderLeftMargin + 220, drawHeight + 10);
+  resetButton.mousePressed(() => {
+    radiusSlider.value(75);
+  });
+  */
+
   // Create toggle graph button
   toggleGraphButton = createButton("Toggle Plot");
   toggleGraphButton.position(canvasWidth - 90, drawHeight + 18);
@@ -52,18 +56,19 @@ function setup() {
 }
 
 function draw() {
-  // Make the background drawing region a very light blue
-  fill('aliceblue');
-  // Draw a thin light gray outline for the region borders
-  stroke('silver');
-  rect(0, 0, canvasWidth, drawHeight);
+    // make the background drawing region a very light blue
+    fill('aliceblue');
+    // draw a thin light gray outline for the region borders
+    stroke('silver');
+    rect(0, 0, canvasWidth, drawHeight);
 
-  // Make the background of the controls area white
-  fill('white');
-  stroke('silver');
-  rect(0, drawHeight, canvasWidth, controlHeight);
+    // make the background of the controls area white
+    fill('white');
+    stroke('silver');
+    rect(0, drawHeight, canvasWidth, controlHeight);
 
-  radius = radiusSlider.value();
+
+  let radius = radiusSlider.value();
   let area = PI * radius * radius;
 
   // Draw circle
@@ -72,42 +77,23 @@ function draw() {
   strokeWeight(2);
   circle(circleX, circleY, 2 * radius);
 
-  // Draw radius line
-  let endX = circleX + radius * cos(angle);
-  let endY = circleY + radius * sin(angle);
-
-  stroke('black');
-  line(circleX, circleY, endX, endY);
-
-  // Draw small orange circle at the end
-  fill('orange');
-  noStroke();
-  circle(endX, endY, 16); // Radius of 8 pixels
-
-  // Display radius value at midpoint
-  let midX = (circleX + endX) / 2;
-  let midY = (circleY + endY) / 2;
-  fill('black');
-  textAlign(CENTER, CENTER);
-  textSize(defaultTextSize);
-  text(`r = ${radius.toFixed(1)}`, midX, midY - 10);
-
-  // Display area
+  // Display radius and area
   noStroke();
   fill('black');
   textSize(defaultTextSize);
   textAlign(LEFT);
 
-  // Format area without fraction digits
+  // text(`Radius: ${radius} units`, 10, 20);
+  // Format without fraction digits
   const formattedArea = area.toLocaleString('en-US', {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0
   });
   text(`Area: ${formattedArea} square units`, 10, 20);
 
-  // Add the formula
+  // Add the Formula
   textSize(24);
-  text("A = π r²", 10, 50);
+  text("A = π r²", 10, 50)
 
   // Draw graph if toggled on
   if (showGraph) {
@@ -118,7 +104,7 @@ function draw() {
   fill('black');
   textAlign(LEFT);
   textSize(defaultTextSize);
-  text("Radius: " + radius.toFixed(1), 10, drawHeight + 25);
+  text("Radius: " + radius, 10, drawHeight + 25);
 }
 
 function drawGraph(radius) {
@@ -141,6 +127,7 @@ function drawGraph(radius) {
   text("Radius", graphOriginX + graphWidth / 2, graphOriginY + 20);
   textAlign(RIGHT);
   text("Area", graphOriginX - 10, graphOriginY - graphHeight + 50);
+  
 
   // Plot radius vs area
   stroke('blue');
@@ -159,28 +146,4 @@ function drawGraph(radius) {
   fill('red');
   noStroke();
   circle(currentX, currentY, 8);
-}
-
-function mousePressed() {
-  let endX = circleX + radius * cos(angle);
-  let endY = circleY + radius * sin(angle);
-  if (dist(mouseX, mouseY, endX, endY) < 8) {
-    dragging = true;
-  }
-}
-
-function mouseDragged() {
-  if (dragging) {
-    // Compute new angle and radius
-    angle = atan2(mouseY - circleY, mouseX - circleX);
-    radius = dist(mouseX, mouseY, circleX, circleY);
-    // Constrain radius
-    radius = constrain(radius, 10, 150);
-    // Update the slider
-    radiusSlider.value(radius);
-  }
-}
-
-function mouseReleased() {
-  dragging = false;
 }
