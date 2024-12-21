@@ -54,3 +54,10 @@ Draw a green circle on a 600x400 canvas with a radius of 200.
 ```javascript
 // canvas regions setup
 ```
+
+## Checklists
+
+### Basic
+
+1. Link to the MicroSim html in the index.md file
+2. Image of the MicroSim in the index.md file

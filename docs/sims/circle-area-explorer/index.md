@@ -28,3 +28,8 @@ Illustrates how the area of the circle grows quadratically with increasing radiu
 
 * [Sample ChatGPT Dialog to generate the first version of the MicroSim](https://chatgpt.com/share/674dd14f-2834-8001-9b6b-a380dc79ae10)
 * [Sample ChatGPT Dialog to add direct manipulation of the radius within the circle](https://chatgpt.com/share/674dd03a-7454-8001-af93-87f29e31f42c)
+
+## Enhancements
+
+Place a radius horizontal line in the circle and add the text of the radius at the midpoint of that line.
+Allow the user to drag any point on the circle to change the radius.
