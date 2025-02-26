@@ -1,7 +1,7 @@
-// Sample MicroSim Template for 2D Geometry
+// Sample MicroSim Sketch Template for 2D Geometry
 
 // MicroSim Template for 2D geometry with region drawing parameters
-// Use for an instructor standing in front of a "smart white board" with conrols on the bottom
+// Use for an instructor standing in front of a "smart white board" with controls on the bottom
 // Author: Dan McCreary
 // Version geometry-1
 // This template puts a control region below the active drawing region of the canvas
