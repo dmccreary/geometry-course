@@ -1,17 +1,45 @@
 # MicroSim Ideas
 
-
 ## Sample Prompt for Generating Ideas for MicroSims
 
-```linenums="0"
-I am a high-school geometry teacher that has just taken a course in creating simulations and animations using p5.js.  What are some fun interactive animations (MicroSim)I can create to teach my students various topics in geometry.  I want to create a small animation or simulation that has controls such as buttons and sliders.  As the student change the controls they should see some geometry on the screen change.  For each MicroSim please provide:
+!!! prompt
+    I am a high-school geometry teacher that has just taken a course in creating 
+    interactive simulations and animations using p5.js.  
+    
+    Please create a list of the top 100 interactive animations (MicroSims) I can create to teach my students various topics in geometry?
 
-1. The name of the simulation in a level 4 markdown header.
-2. The topic or subjects that the students would learn.
-3. The list of. controls on the screen and their type (button, slider etc.).
-4. What they might learn from using the simulation.
-5. The level of difficulty (beginner, intermediate, advanced)
-```
+    Here is what I want for each of the 100 MicroSim ideas:
+    
+    I want to you to create a set of ideas for animations or simulations that have controls such as buttons and sliders.  As the student will change the controls so they can interact 
+    with illustrative geometry example on the screen change.  For each MicroSim please provide:
+
+    1. The name of the simulation in a level 3 markdown header.
+    2. The topics that the students will learn about.
+    3. Detailed description of MicroSim
+    3. The list of the input controls on the screen and their type (button, slider etc.).
+    4. Learning objective of the simulation.
+    5. The level of difficulty (beginner, intermediate, advanced)
+
+    For example to illustrate the difference between degrees and radians you might suggest the following example:
+
+    ### Degrees vs. Radians
+
+    Topics: Measuring angles, degrees, radians
+
+    Students will learn how we can use both degrees and radians to measure an angle.  A circle will be place in the center of a drawing region.  As the student moves a slider in the controls
+    area a line from the center of the circle will move around the edge of the circle.
+    The slider will range from 0 to 360 and move in a clockwise direction.  Arcs of alternating
+    colors will appear on the circle circumference to for radian of length 1.
+
+    Input Control: Slider for degree from 0 to 360 with a default value of 45 and an increment of 1 degree.
+
+    Learning Objectives: 
+        1. How many degrees are there in a complete circle?  
+        2. How many radians are there in a complete circle?
+        3. How many degrees are there in 1 radian?
+
+    Difficulty: beginner
+
 
 #### Transformation Explorer
 
