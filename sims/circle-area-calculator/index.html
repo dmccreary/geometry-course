@@ -12,13 +12,13 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/sims/cosine/">
+        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/sims/circle-area-calculator/">
       
       
-        <link rel="prev" href="../triangle-congruence/">
+        <link rel="prev" href="../comp-and-sup-angles/">
       
       
-        <link rel="next" href="../sine-and-cosine-circle/">
+        <link rel="next" href="../circle-area-explorer/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Cosine - AI Assisted Geometry</title>
+        <title>Circle Area Calculator - AI Assisted Geometry</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cosine-at-the-ratio-of-two-sides-of-a-triangle" class="md-skip">
+        <a href="#circle-area-calculator-microsim" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cosine
+              Circle Area Calculator
             
           </span>
         </div>
@@ -625,10 +625,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../circle-area-calculator/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Circle Area Calculator
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -639,6 +661,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      About this MicroSim
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="About this MicroSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discussion-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussion Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mathematical-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-prompt-used-to-generate-this-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt Used to Generate This MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Concepts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -740,32 +869,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Cosine
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../cosine/" class="md-nav__link">
         
   
   
@@ -776,35 +883,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cosine-with-plot" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cosine With Plot
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1023,9 +1101,87 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cosine-with-plot" class="md-nav__link">
+  <a href="#about-this-microsim" class="md-nav__link">
     <span class="md-ellipsis">
-      Cosine With Plot
+      About this MicroSim
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="About this MicroSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discussion-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussion Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mathematical-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-prompt-used-to-generate-this-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt Used to Generate This MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Concepts
     </span>
   </a>
   
@@ -1047,7 +1203,7 @@
 
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/cosine/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/circle-area-calculator/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1055,15 +1211,77 @@
   
 
 
-<h1 id="cosine-at-the-ratio-of-two-sides-of-a-triangle">Cosine at the Ratio of Two Sides of a Triangle</h1>
-<p><img alt="" src="cosine.png" /></p>
-<p><a class="md-button md-button--primary" href="cosine.html">Run the Cosine MicroSim</a>
-<a href="https://editor.p5js.org/dmccreary/sketches/4u1wiQds8">Edit the Cosine MicroSim on P5.js</a></p>
-<p>This MicroSim demonstrates how the Cosine can be visualized as the ratio of two
-sides of a triangle.</p>
-<h2 id="cosine-with-plot">Cosine With Plot</h2>
-<p><a class="md-button md-button--primary" href="cosine-with-plot.html">Run the Cosine With Plot MicroSim</a>
-<a href="https://editor.p5js.org/dmccreary/sketches/-fGcn6AxM">Edit the Cosine MicroSim on P5.js</a></p>
+<h1 id="circle-area-calculator-microsim">Circle Area Calculator MicroSim</h1>
+<p><img alt="Circle Area Calculator" src="./circle-area-calculator.png" width="400" /></p>
+<p><a class="md-button md-button--primary" href="circle-area-calculator.html">Run the MicroSim</a></p>
+<h2 id="about-this-microsim">About this MicroSim</h2>
+<p>This interactive MicroSim helps students understand the relationship between a circle's radius, area, and circumference. By adjusting the radius slider, students can see real-time calculations of both the area (πr²) and circumference (2πr) of the circle.</p>
+<h3 id="key-concepts">Key Concepts</h3>
+<ul>
+<li><strong>Circle</strong>: A set of points equidistant from a center point</li>
+<li><strong>Radius (r)</strong>: The distance from the center to any point on the circle</li>
+<li><strong>Area</strong>: The space enclosed by the circle, calculated using A = πr²</li>
+<li><strong>Circumference</strong>: The distance around the circle, calculated using C = 2πr</li>
+<li><strong>Pi (π)</strong>: The mathematical constant approximately equal to 3.14159</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>Students will:
+1. Understand how changing the radius affects both area and circumference
+2. Observe that area increases quadratically (r²) while circumference increases linearly (r)
+3. See the visual relationship between the radius line and the circle's size
+4. Practice using the formulas for area and circumference</p>
+<h3 id="how-to-use">How to Use</h3>
+<ol>
+<li>Move the <strong>Radius slider</strong> to change the circle's size</li>
+<li>Observe how the circle grows or shrinks in the display area</li>
+<li>Watch the <strong>Area</strong> calculation update (notice it changes faster than circumference)</li>
+<li>Watch the <strong>Circumference</strong> calculation update</li>
+<li>Compare how area grows much faster than circumference as radius increases</li>
+</ol>
+<h3 id="discussion-questions">Discussion Questions</h3>
+<ol>
+<li>What happens to the area when you double the radius? (Hint: It quadruples!)</li>
+<li>What happens to the circumference when you double the radius?</li>
+<li>At what radius does the area equal the circumference numerically?</li>
+<li>Why does the area formula use r² while circumference uses r?</li>
+</ol>
+<h3 id="mathematical-formulas">Mathematical Formulas</h3>
+<p><strong>Area of a Circle:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(A = \pi r^2\)</span>\)</span></p>
+<p>Where:
+- A = Area
+- π ≈ 3.14159
+- r = radius</p>
+<p><strong>Circumference of a Circle:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(C = 2\pi r\)</span>\)</span></p>
+<p>Where:
+- C = Circumference
+- π ≈ 3.14159
+- r = radius</p>
+<h3 id="sample-prompt-used-to-generate-this-microsim">Sample Prompt Used to Generate This MicroSim</h3>
+<div class="highlight"><pre><span></span><code>Create a p5.js MicroSim for teaching circle area and circumference.
+
+Requirements:
+- Canvas size: 600x500 pixels with 100px control area at bottom
+- Include a slider to adjust the circle&#39;s radius (10-150 units)
+- Display a circle with visible radius line
+- Show real-time calculations for both area and circumference
+- Display the formulas: A = πr² and C = 2πr
+- Show step-by-step calculations with current values
+- Use aliceblue background for drawing area
+- Place controls at the bottom with white background
+- Mark the center point in red
+- Draw the radius line in red
+</code></pre></div>
+<h2 id="interactive-example">Interactive Example</h2>
+<iframe src="./circle-area-calculator.html" width="620" height="520" scrolling="no" style="border: 1px solid #ccc;"></iframe>
+
+<h2 id="related-concepts">Related Concepts</h2>
+<ul>
+<li><a href="../circle-area-explorer/">Circle Area Explorer</a> - Explore circle area in different ways</li>
+<li><a href="../../chapters/circles/">Circles Chapter</a> - Learn more about circle properties</li>
+<li><a href="../../chapters/areas-and-perimeters/">Area and Perimeters</a> - Other shapes and calculations</li>
+</ul>
 
 
 
@@ -1101,7 +1319,7 @@ sides of a triangle.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../triangle-congruence/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Triangle Congruence">
+          <a href="../comp-and-sup-angles/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Complementary and Supplementary Angles">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1111,20 +1329,20 @@ sides of a triangle.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Triangle Congruence
+                Complementary and Supplementary Angles
               </div>
             </div>
           </a>
         
         
           
-          <a href="../sine-and-cosine-circle/" class="md-footer__link md-footer__link--next" aria-label="Next: Sine and Cosine Circle">
+          <a href="../circle-area-explorer/" class="md-footer__link md-footer__link--next" aria-label="Next: Circle Area Explorer">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Sine and Cosine Circle
+                Circle Area Explorer
               </div>
             </div>
             <div class="md-footer__button md-icon">

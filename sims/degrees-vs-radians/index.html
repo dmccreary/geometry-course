@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+        <meta name="description" content="Interactive MicroSim comparing degrees and radians.">
       
       
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/sims/cosine/">
+        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/sims/degrees-vs-radians/">
       
       
-        <link rel="prev" href="../triangle-congruence/">
+        <link rel="prev" href="../angle-explorer/">
       
       
-        <link rel="next" href="../sine-and-cosine-circle/">
+        <link rel="next" href="../comp-and-sup-angles/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Cosine - AI Assisted Geometry</title>
+        <title>Degrees to Radians MicroSim - AI Assisted Geometry</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cosine-at-the-ratio-of-two-sides-of-a-triangle" class="md-skip">
+        <a href="#degrees-vs-radians" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cosine
+              Degrees to Radians MicroSim
             
           </span>
         </div>
@@ -203,6 +203,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -579,10 +581,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../degrees-vs-radians/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Degrees vs Radians
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -593,6 +617,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -740,32 +793,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Cosine
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../cosine/" class="md-nav__link">
         
   
   
@@ -776,35 +807,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cosine-with-plot" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cosine With Plot
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1004,7 +1006,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1023,9 +1027,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cosine-with-plot" class="md-nav__link">
+  <a href="#sample-prompt" class="md-nav__link">
     <span class="md-ellipsis">
-      Cosine With Plot
+      Sample Prompt
     </span>
   </a>
   
@@ -1044,10 +1048,12 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/cosine/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/degrees-vs-radians/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1055,17 +1061,24 @@
   
 
 
-<h1 id="cosine-at-the-ratio-of-two-sides-of-a-triangle">Cosine at the Ratio of Two Sides of a Triangle</h1>
-<p><img alt="" src="cosine.png" /></p>
-<p><a class="md-button md-button--primary" href="cosine.html">Run the Cosine MicroSim</a>
-<a href="https://editor.p5js.org/dmccreary/sketches/4u1wiQds8">Edit the Cosine MicroSim on P5.js</a></p>
-<p>This MicroSim demonstrates how the Cosine can be visualized as the ratio of two
-sides of a triangle.</p>
-<h2 id="cosine-with-plot">Cosine With Plot</h2>
-<p><a class="md-button md-button--primary" href="cosine-with-plot.html">Run the Cosine With Plot MicroSim</a>
-<a href="https://editor.p5js.org/dmccreary/sketches/-fGcn6AxM">Edit the Cosine MicroSim on P5.js</a></p>
+<h1 id="degrees-vs-radians">Degrees vs Radians</h1>
+<iframe src="./main.html" height="480px" scrolling="no"
+  style="overflow: hidden;"></iframe>
 
-
+<p>You can include this MicroSim in your course by pasting the following HTML directly into your web page.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/signal-processing/sims/SIM_NAME/main.html&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;480px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span>
+  <span class="na">style</span><span class="o">=</span><span class="s">&quot;overflow: hidden;&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><a class="md-button md-button--primary" href="main.html">Run the MicroSim</a></p>
+<p><a href="">Edit the MicroSim</a>
+<a href="main.html">Run the MicroSim</a></p>
+<h2 id="sample-prompt">Sample Prompt</h2>
+<p>This prompt was given to GPT-5.</p>
+<div class="admonition prompt">
+<p class="admonition-title">Prompt</p>
+<p>Please generate a new p5.js MicroSim that will be used in our high-school geometry textbook.  This MicroSim illustrates the different ways we measure angles comparing both degrees and radians.  There is a single slider that changes the angle of a line in a circle at the center of the drawing area.  As the slider moves, the line rotates around the circle.  The angle starts at 0 degrees and ends at 360 degrees.  Place alternating blue and orange segments arcs along the circumference are of distance 1 radian.  The diagram illustrates the fact that there are 2 pi radians in a circle.  The title is "Comparing Degrees and Radians".</p>
+</div>
+<p><a href="https://editor.p5js.org/dmccreary/sketches/wVpFITKAE">Edit the MicroSim on p5.js editor</a></p>
 
 
 
@@ -1074,7 +1087,14 @@ sides of a triangle.</p>
 
 
   
+  
 
+
+
+  
+
+
+  
 
 
 
@@ -1098,10 +1118,12 @@ sides of a triangle.</p>
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../triangle-congruence/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Triangle Congruence">
+          <a href="../angle-explorer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Angle Explorer">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1111,20 +1133,20 @@ sides of a triangle.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Triangle Congruence
+                Angle Explorer
               </div>
             </div>
           </a>
         
         
           
-          <a href="../sine-and-cosine-circle/" class="md-footer__link md-footer__link--next" aria-label="Next: Sine and Cosine Circle">
+          <a href="../comp-and-sup-angles/" class="md-footer__link md-footer__link--next" aria-label="Next: Complementary and Supplementary Angles">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Sine and Cosine Circle
+                Complementary and Supplementary Angles
               </div>
             </div>
             <div class="md-footer__button md-icon">
