@@ -1,3 +1,17 @@
+---
+title: Artificial Intelligence Assisted Geometry
+description: Introduction to Geometry for junior high or high school students with extensive interactive MicroSims.
+image: /img/cover-art.png
+og:image: /img/cover-art.png
+twitter:image: /img/cover-art.png
+social:
+   cards: false
+hide:
+    toc
+---
+<style>
+.md-content__inner h1 {display: none !important;}
+</style>
 # Artificial Intelligence Assisted Geometry
 
 ![Cover Art](./img/cover-art.png)
