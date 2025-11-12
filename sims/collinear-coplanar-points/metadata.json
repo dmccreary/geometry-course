@@ -1,0 +1,52 @@
+{
+  "title": "Collinear and Coplanar Points",
+  "description": "A four-panel diagram showing examples and non-examples of collinear and coplanar point arrangements for geometry education.",
+  "creator": "Dan McCreary",
+  "subject": "Mathematics - Geometry",
+  "date": "2025-01-11",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "subjectArea": "Mathematics",
+  "topic": "Foundations of Geometry - Points, Lines, and Planes",
+  "learningObjectives": [
+    "Analyze point arrangements to determine whether sets of points are collinear or coplanar",
+    "Distinguish between examples and non-examples of collinear points",
+    "Identify coplanar points in 2D and 3D representations",
+    "Understand that three or more points lying on the same line are always collinear",
+    "Recognize that four or more points may or may not be coplanar"
+  ],
+  "bloomsTaxonomyLevels": [
+    "Understanding",
+    "Analyzing"
+  ],
+  "duration": "15-20 minutes",
+  "prerequisites": [
+    "Understanding of basic geometric terms (point, line, plane)"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": "900×600 (initial, width-responsive)",
+  "responsive": true,
+  "dependencies": [
+    "p5.js CDN v1.11.10"
+  ],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "description": "Four-panel diagram showing examples and non-examples of collinear and coplanar points"
+  },
+  "controls": [],
+  "parameters": [],
+  "modelType": "Static Diagram",
+  "variables": [],
+  "equations": [],
+  "assumptions": [
+    "2D representation of 3D concepts for panels 3 and 4",
+    "Grid lines help visualize planes in 2D space"
+  ],
+  "limitations": [
+    "Panel 4 uses perspective projection to represent 3D space in 2D",
+    "Static diagram without interactivity"
+  ]
+}
