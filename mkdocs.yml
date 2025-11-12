@@ -89,14 +89,13 @@ theme:
     - content.action.edit
 plugins:
   - search
-  # - site-urls
-  # - relative-paths
-#  - social
+  - social
 markdown_extensions:
+  - md_in_html
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - attr_list
   - pymdownx.highlight:
       linenums: 
   # enable LaTeX extensions

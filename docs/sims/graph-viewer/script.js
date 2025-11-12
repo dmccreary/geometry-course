@@ -2,6 +2,9 @@
 var nodes, edges, network;
 
 // ========== UTILITY FUNCTIONS ==========
+function toLowerSafe(v) {
+  return (typeof v === 'string') ? v.toLowerCase() : '';
+}
 
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
@@ -99,14 +102,14 @@ function getColorName(color) {
     'brown': 'Brown',
     'teal': 'Teal'
   };
-  return colorNames[color.toLowerCase()] || color;
+  return colorNames[color.toLowerSafe()] || color;
 }
 
 // Helper function to determine if text should be white or black
 function getTextColorForBackground(backgroundColor) {
   // Colors that need white text
   const darkColors = ['red', 'green', 'blue', 'indigo', 'violet', 'gray', 'brown'];
-  return darkColors.includes(backgroundColor.toLowerCase()) ? 'white' : 'black';
+  return darkColors.includes(backgroundColor.toLowerSafe()) ? 'white' : 'black';
 }
 
 // Function to generate legend table from groups data
@@ -223,7 +226,7 @@ function initializeSearch() {
   var searchContainer = document.getElementById('search-container');
 
   searchInput.addEventListener('input', function() {
-    var query = this.value.toLowerCase();
+    var query = this.value.toLowerSafe();
     if (query === '') {
       searchResults.style.display = 'none';
       searchResults.innerHTML = '';
@@ -233,7 +236,7 @@ function initializeSearch() {
     // Only search visible nodes
     var matches = nodes.get({
       filter: function (item) {
-        return !item.hidden && item.label.toLowerCase().includes(query);
+        return !item.hidden && item.label.toLowerSafe().includes(query);
       }
     });
 
