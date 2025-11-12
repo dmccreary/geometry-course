@@ -1,0 +1,3811 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/chapters/12-area-volume-applications/">
+      
+      
+        <link rel="prev" href="../11-circles/">
+      
+      
+        <link rel="next" href="../../prompts/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>12. Area, Volume, and Applications - AI Assisted Geometry</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-CK8G27ZYZ2"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-CK8G27ZYZ2",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-CK8G27ZYZ2",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#area-volume-and-applications" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Assisted Geometry" class="md-header__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Assisted Geometry
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              12. Area, Volume, and Applications
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Assisted Geometry" class="md-nav__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    AI Assisted Geometry
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-foundations-of-geometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Foundations of Geometry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-logic-and-proof/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Logic and Proof
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-angles-and-relationships/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Angles and Angle Relationships
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-geometric-constructions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Geometric Constructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-coordinate-geometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. Coordinate Geometry and Lines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-transformations-congruence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Transformations and Congruence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-triangle-congruence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Triangle Congruence and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-triangle-centers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. Triangle Centers and Advanced Topics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-polygons-quadrilaterals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9. Polygons and Quadrilaterals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-similarity-trigonometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. Similarity and Right Triangle Trigonometry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-circles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Circles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    12. Area, Volume, and Applications
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    12. Area, Volume, and Applications
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-area-of-polygons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1: Area of Polygons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1: Area of Polygons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Area
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-area-formulas-for-quadrilaterals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Area Formulas for Quadrilaterals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-of-triangles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area of Triangles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Area of Triangles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-triangle-area-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Triangle Area Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-of-regular-polygons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area of Regular Polygons
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-circles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2: Circles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: Circles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circle-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circle Measurements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Circle Measurements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-circle-anatomy-and-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Circle Anatomy and Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsim-circle-area-and-circumference-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Circle Area and Circumference Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-three-dimensional-solids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3: Three-Dimensional Solids
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 3: Three-Dimensional Solids">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-3d-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to 3D Geometry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-solids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Solids
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Solids">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-dimensional-solids-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three-Dimensional Solids Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nets-of-solids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nets of Solids
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nets of Solids">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-net-to-solid-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Net to Solid Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-surface-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 4: Surface Area
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 4: Surface Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-surface-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Surface Area
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-area-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surface Area Formulas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Surface Area Formulas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-surface-area-formulas-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Surface Area Formulas Reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsim-surface-area-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Surface Area Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 5: Volume
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 5: Volume">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cavalieris-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cavalieri's Principle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cavalieri&#39;s Principle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-volume-formulas-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Volume Formulas Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsim-volume-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Volume Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-applications-and-problem-solving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 6: Applications and Problem-Solving
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 6: Applications and Problem-Solving">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scale-drawings-and-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale Drawings and Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scale Drawings and Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-scale-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Scale Relationships
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-optimization-challenge-maximum-volume-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Optimization Challenge - Maximum Volume Box
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-modeling-and-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Modeling and Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Geometric Modeling and Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-challenge-example-efficient-packaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Challenge Example: Efficient Packaging
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#area-of-polygons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area of Polygons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surface Area
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale-and-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale and Applications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization-and-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization and Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extension-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extension Activities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extension Activities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activity-1-build-physical-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 1: Build Physical Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-2-real-world-measurement-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 2: Real-World Measurement Project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-3-packaging-design-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 3: Packaging Design Challenge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-4-architecture-and-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 4: Architecture and Construction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-5-scale-model-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 5: Scale Model Project
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connections-to-other-mathematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connections to Other Mathematics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interactive-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#career-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Career Connections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-area-of-polygons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1: Area of Polygons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1: Area of Polygons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Area
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-area-formulas-for-quadrilaterals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Area Formulas for Quadrilaterals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-of-triangles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area of Triangles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Area of Triangles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-triangle-area-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Triangle Area Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-of-regular-polygons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area of Regular Polygons
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-circles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2: Circles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: Circles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circle-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circle Measurements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Circle Measurements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-circle-anatomy-and-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Circle Anatomy and Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsim-circle-area-and-circumference-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Circle Area and Circumference Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-three-dimensional-solids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3: Three-Dimensional Solids
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 3: Three-Dimensional Solids">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-3d-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to 3D Geometry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-solids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Solids
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Solids">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-dimensional-solids-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three-Dimensional Solids Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nets-of-solids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nets of Solids
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nets of Solids">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-net-to-solid-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Net to Solid Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-surface-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 4: Surface Area
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 4: Surface Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-surface-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Surface Area
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-area-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surface Area Formulas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Surface Area Formulas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-surface-area-formulas-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Surface Area Formulas Reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsim-surface-area-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Surface Area Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 5: Volume
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 5: Volume">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cavalieris-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cavalieri's Principle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cavalieri&#39;s Principle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-volume-formulas-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Volume Formulas Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsim-volume-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Volume Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-applications-and-problem-solving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 6: Applications and Problem-Solving
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 6: Applications and Problem-Solving">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scale-drawings-and-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale Drawings and Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scale Drawings and Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-scale-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Scale Relationships
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-optimization-challenge-maximum-volume-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Optimization Challenge - Maximum Volume Box
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-modeling-and-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Modeling and Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Geometric Modeling and Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-challenge-example-efficient-packaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Challenge Example: Efficient Packaging
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#area-of-polygons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area of Polygons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surface Area
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale-and-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale and Applications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization-and-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization and Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extension-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extension Activities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extension Activities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activity-1-build-physical-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 1: Build Physical Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-2-real-world-measurement-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 2: Real-World Measurement Project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-3-packaging-design-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 3: Packaging Design Challenge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-4-architecture-and-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 4: Architecture and Construction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-5-scale-model-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 5: Scale Model Project
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connections-to-other-mathematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connections to Other Mathematics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interactive-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#career-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Career Connections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/chapters/12-area-volume-applications/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="area-volume-and-applications">Area, Volume, and Applications</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter applies geometric principles to measurement of two-dimensional and three-dimensional figures, culminating in real-world modeling and design challenges. You'll learn area formulas for polygons and circles, explore three-dimensional solids including prisms, pyramids, cylinders, cones, and spheres, and calculate surface areas and volumes. The chapter concludes with practical applications including scale models, optimization problems, and design projects that integrate concepts from throughout the course.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 39 concepts from the learning graph:</p>
+<ol>
+<li>Area of Rectangle</li>
+<li>Area of Square</li>
+<li>Area of Parallelogram</li>
+<li>Area of Triangle</li>
+<li>Area of Trapezoid</li>
+<li>Area of Rhombus</li>
+<li>Area of Kite</li>
+<li>Area of Regular Polygon</li>
+<li>Area of Circle</li>
+<li>Circumference</li>
+<li>Pi</li>
+<li>Perimeter</li>
+<li>Prism</li>
+<li>Pyramid</li>
+<li>Cylinder</li>
+<li>Cone</li>
+<li>Sphere</li>
+<li>Polyhedron</li>
+<li>Face</li>
+<li>Edge</li>
+<li>Lateral Face</li>
+<li>Lateral Edge</li>
+<li>Base of Solid</li>
+<li>Height of Solid</li>
+<li>Surface Area</li>
+<li>Lateral Surface Area</li>
+<li>Volume of Prism</li>
+<li>Volume of Pyramid</li>
+<li>Volume of Cylinder</li>
+<li>Volume of Cone</li>
+<li>Volume of Sphere</li>
+<li>Cross-Section</li>
+<li>Cavalieri's Principle</li>
+<li>Net of Solid</li>
+<li>Scale Drawing</li>
+<li>Scale Model</li>
+<li>Optimization Problem</li>
+<li>Modeling with Geometry</li>
+<li>Design Challenge</li>
+<li>Geometric Proof Portfolio</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-foundations-of-geometry/">Chapter 1: Foundations of Geometry</a></li>
+<li><a href="../07-triangle-congruence/">Chapter 7: Triangle Congruence and Properties</a></li>
+<li><a href="../09-polygons-quadrilaterals/">Chapter 9: Polygons and Quadrilaterals</a></li>
+<li><a href="../10-similarity-trigonometry/">Chapter 10: Similarity and Right Triangle Trigonometry</a></li>
+<li><a href="../11-circles/">Chapter 11: Circles</a></li>
+</ul>
+<hr />
+<h2 id="introduction">Introduction</h2>
+<p>Welcome to the culminating chapter of your geometry journey! In this chapter, you'll bring together everything you've learned about shapes, measurements, and reasoning to solve real-world problems involving area and volume. From designing packaging to planning construction projects, the formulas and techniques you'll master here have countless practical applications.</p>
+<p>We'll start by reviewing and expanding your knowledge of two-dimensional area calculations, then venture into the fascinating world of three-dimensional geometry. You'll learn to calculate surface areas and volumes of prisms, pyramids, cylinders, cones, and spheres. Finally, you'll apply these skills to authentic challenges involving scale models, optimization, and geometric design.</p>
+<p>By the end of this chapter, you'll be able to:</p>
+<ul>
+<li>Calculate areas of rectangles, triangles, parallelograms, trapezoids, rhombuses, kites, regular polygons, and circles</li>
+<li>Identify and describe properties of three-dimensional solids</li>
+<li>Calculate surface areas and volumes of prisms, pyramids, cylinders, cones, and spheres</li>
+<li>Apply Cavalieri's Principle to understand volume relationships</li>
+<li>Create and interpret scale drawings and scale models</li>
+<li>Solve optimization problems using geometric principles</li>
+<li>Design solutions to real-world challenges using geometric modeling</li>
+</ul>
+<hr />
+<h2 id="part-1-area-of-polygons">Part 1: Area of Polygons</h2>
+<h3 id="understanding-area">Understanding Area</h3>
+<p><strong>Area</strong> measures the amount of two-dimensional space inside a closed figure. We measure area in square units such as square centimeters (<span class="arithmatex">\(\text{cm}^2\)</span>), square meters (<span class="arithmatex">\(\text{m}^2\)</span>), or square feet (<span class="arithmatex">\(\text{ft}^2\)</span>).</p>
+<p>The concept of area builds on a simple foundation: the <strong>area of a rectangle</strong> is found by multiplying its length and width:</p>
+<div class="arithmatex">\[A = lw\]</div>
+<p>From this basic formula, we can derive formulas for all other polygons.</p>
+<h4 id="diagram-area-formulas-for-quadrilaterals">Diagram: Area Formulas for Quadrilaterals</h4>
+<details markdown="1">
+<summary>Visual guide to quadrilateral area formulas</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **remember** area formulas for rectangles, squares, parallelograms, trapezoids, rhombuses, and kites, and **understand** how these formulas relate to the base rectangle formula. (Bloom's Taxonomy: Remembering, Understanding)
+
+**Specification:**
+
+Create a colorful diagram showing six quadrilaterals with their area formulas in a 2×3 grid layout.
+
+**Layout:** 2 rows × 3 columns, each cell 350px wide × 300px tall
+
+**Row 1:**
+
+**Cell 1: Rectangle**
+- Background: Light yellow (#FFF9C4)
+- Draw rectangle (200px × 120px) in navy blue (#1A237E), filled with semi-transparent blue (#64B5F6, 30% opacity)
+- Label dimensions: "l" on top edge, "w" on right edge (red text)
+- Formula below: $A = lw$ (bold, 18pt)
+
+**Cell 2: Square**
+- Background: Light pink (#FCE4EC)
+- Draw square (150px × 150px) in deep purple (#4A148C), filled with semi-transparent purple (#BA68C8, 30% opacity)
+- Label one side: "s" (red text)
+- Formula below: $A = s^2$ (bold, 18pt)
+
+**Cell 3: Parallelogram**
+- Background: Light green (#E8F5E9)
+- Draw parallelogram (220px base × 100px height, slanted) in dark green (#1B5E20), filled with semi-transparent green (#81C784, 30% opacity)
+- Draw dashed height line perpendicular to base (red)
+- Label base "b" and height "h" (red text)
+- Formula below: $A = bh$ (bold, 18pt)
+
+**Row 2:**
+
+**Cell 4: Trapezoid**
+- Background: Light orange (#FFF3E0)
+- Draw trapezoid (top base 120px, bottom base 200px, height 100px) in dark orange (#E65100), filled with semi-transparent orange (#FFB74D, 30% opacity)
+- Draw dashed height line (red)
+- Label top base "$b_1$", bottom base "$b_2$", height "h" (red text)
+- Formula below: $A = \frac{1}{2}(b_1 + b_2)h$ (bold, 18pt)
+
+**Cell 5: Rhombus**
+- Background: Light cyan (#E0F7FA)
+- Draw rhombus (diagonals 180px and 120px) in dark cyan (#006064), filled with semi-transparent cyan (#4DD0E1, 30% opacity)
+- Draw both diagonals as dashed lines (red)
+- Label diagonals "$d_1$" and "$d_2$" (red text)
+- Formula below: $A = \frac{1}{2}d_1d_2$ (bold, 18pt)
+
+**Cell 6: Kite**
+- Background: Light lavender (#F3E5F5)
+- Draw kite (vertical diagonal 160px, horizontal diagonal 100px) in dark purple (#6A1B9A), filled with semi-transparent purple (#BA68C8, 30% opacity)
+- Draw both diagonals as dashed lines (red)
+- Label diagonals "$d_1$" and "$d_2$" (red text)
+- Formula below: $A = \frac{1}{2}d_1d_2$ (bold, 18pt)
+
+**Title above grid:** "Area Formulas for Quadrilaterals" (bold, 24pt)
+
+</details>
+
+<h3 id="area-of-triangles">Area of Triangles</h3>
+<p>Since any triangle can be viewed as half of a parallelogram, the <strong>area of a triangle</strong> is:</p>
+<div class="arithmatex">\[A = \frac{1}{2}bh\]</div>
+<p>where <span class="arithmatex">\(b\)</span> is the base and <span class="arithmatex">\(h\)</span> is the height (perpendicular distance from the base to the opposite vertex).</p>
+<h4 id="microsim-triangle-area-explorer">MicroSim: Triangle Area Explorer</h4>
+<details markdown="1">
+<summary>Interactive exploration of triangle area formula</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **apply** the triangle area formula to various triangles and **analyze** how changing the base or height affects the area. (Bloom's Taxonomy: Applying, Analyzing)
+
+**Specification:**
+
+Create an interactive p5.js simulation for exploring triangle area.
+
+**Canvas:** 800px × 650px, background: white
+
+**Main Display:**
+- Draw a scalable triangle with adjustable base and height
+- Base lies on horizontal line near middle of canvas (y = 300)
+- Vertex adjustable vertically to change height
+- Fill triangle with semi-transparent blue (#2196F3, 40% opacity)
+- Outline in dark blue (#0D47A1, 3px stroke)
+
+**Height Visualization:**
+- Draw dashed red line from vertex perpendicular to base
+- Label height value next to the line
+
+**Measurements Display (upper left):**
+- Box with light gray background (#F5F5F5)
+- Display: "Base: [value] units" (16pt, black)
+- Display: "Height: [value] units" (16pt, black)
+- Display: "Area: [calculated] square units" (18pt bold, blue)
+
+**Controls (bottom panel, y = 550):**
+- Slider: "Base Length" (5 - 30 units), position (50, 560), width 280px
+- Slider: "Height" (3 - 25 units), position (400, 560), width 280px
+- Button: "Reset to Default" at (350, 600)
+- Display current formula: $A = \frac{1}{2}bh$ (centered, below controls)
+
+**Interactive Features:**
+- Real-time area calculation as sliders move
+- Smooth animation when adjusting dimensions
+- Highlight formula components as corresponding sliders move
+
+**Color Scheme:**
+- Background: White
+- Triangle fill: Blue (#2196F3, 40% opacity)
+- Triangle outline: Dark blue (#0D47A1)
+- Height line: Red dashed
+- Sliders: Blue thumbs
+- Text: Black for labels, blue for calculated area
+
+</details>
+
+<h3 id="area-of-regular-polygons">Area of Regular Polygons</h3>
+<p>A <strong>regular polygon</strong> has all sides congruent and all angles congruent. To find the area of a regular polygon, we can divide it into congruent triangles from the center.</p>
+<p>The <strong>area of a regular polygon</strong> is:</p>
+<div class="arithmatex">\[A = \frac{1}{2}aP\]</div>
+<p>where <span class="arithmatex">\(a\)</span> is the <strong>apothem</strong> (perpendicular distance from center to any side) and <span class="arithmatex">\(P\)</span> is the <strong>perimeter</strong>.</p>
+<p>Alternatively:</p>
+<div class="arithmatex">\[A = \frac{1}{2}a(ns)\]</div>
+<p>where <span class="arithmatex">\(n\)</span> is the number of sides and <span class="arithmatex">\(s\)</span> is the side length.</p>
+<hr />
+<h2 id="part-2-circles">Part 2: Circles</h2>
+<h3 id="circle-measurements">Circle Measurements</h3>
+<p>A <strong>circle</strong> is the set of all points in a plane equidistant from a center point. Two fundamental measurements for circles are:</p>
+<ul>
+<li><strong>Circumference</strong> (<span class="arithmatex">\(C\)</span>): The distance around the circle</li>
+<li><strong>Area</strong> (<span class="arithmatex">\(A\)</span>): The space enclosed by the circle</li>
+</ul>
+<p>Both formulas involve the special constant <strong>pi</strong> (<span class="arithmatex">\(\pi \approx 3.14159...\)</span>), which represents the ratio of any circle's circumference to its diameter.</p>
+<p><strong>Circumference formulas:</strong></p>
+<div class="arithmatex">\[C = \pi d = 2\pi r\]</div>
+<p>where <span class="arithmatex">\(d\)</span> is diameter and <span class="arithmatex">\(r\)</span> is radius.</p>
+<p><strong>Area formula:</strong></p>
+<div class="arithmatex">\[A = \pi r^2\]</div>
+<h4 id="diagram-circle-anatomy-and-formulas">Diagram: Circle Anatomy and Formulas</h4>
+<details markdown="1">
+<summary>Visual guide to circle measurements</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **understand** the relationship between radius, diameter, circumference, and area of a circle, and **remember** the formulas for circumference and area. (Bloom's Taxonomy: Understanding, Remembering)
+
+**Specification:**
+
+Create a colorful diagram showing circle components and formulas.
+
+**Layout:** Single panel 700px wide × 500px tall
+
+**Main Circle:**
+- Background: Light blue gradient (#E3F2FD to #BBDEFB)
+- Draw large circle (radius 150px) centered at (300, 250)
+- Circle outline: Navy blue (#0D47A1, 4px stroke)
+- Circle fill: Semi-transparent cyan (#4DD0E1, 25% opacity)
+
+**Circle Components:**
+- Draw radius from center to right edge (thick red line, 3px)
+- Label: "radius (r)" in red, positioned along the line
+- Draw diameter from left to right through center (thick green line, 3px, dashed)
+- Label: "diameter (d)" in green, positioned above the line
+- Mark center with solid navy dot (8px diameter)
+- Label: "Center" in navy
+
+**Circumference Visualization:**
+- Draw arc arrows around circle perimeter (orange, 3px)
+- Label: "Circumference (C)" in orange, positioned outside circle at top
+
+**Formula Box (right side, x = 520):**
+- Light yellow background (#FFF9C4) with border
+- Title: "Circle Formulas" (bold, 20pt)
+- List formulas (18pt):
+  - $C = \pi d$ (orange text)
+  - $C = 2\pi r$ (orange text)
+  - $A = \pi r^2$ (blue text)
+  - $d = 2r$ (green text)
+
+**Pi Symbol Box (bottom left):**
+- Light purple background (#F3E5F5)
+- Large pi symbol: $\pi$ (36pt, purple)
+- Text: "$\pi \approx 3.14159...$" (14pt)
+
+</details>
+
+<h4 id="microsim-circle-area-and-circumference-calculator">MicroSim: Circle Area and Circumference Calculator</h4>
+<details markdown="1">
+<summary>Interactive circle measurement tool</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **apply** circle formulas to calculate circumference and area for circles of varying sizes, and **analyze** how radius changes affect these measurements. (Bloom's Taxonomy: Applying, Analyzing)
+
+**Specification:**
+
+Create an interactive p5.js simulation for calculating circle measurements.
+
+**Canvas:** 800px × 700px, background: white
+
+**Main Display:**
+- Draw circle with adjustable radius centered at (400, 300)
+- Circle outline: Blue (#1976D2, 3px stroke)
+- Circle fill: Semi-transparent blue (#64B5F6, 20% opacity)
+
+**Visual Measurements:**
+- Draw radius line from center to edge (red, 2px, with arrowhead)
+- Label: "r = [value] cm" in red
+- Draw diameter line across circle (green dashed, 2px)
+- Label: "d = [value] cm" in green
+
+**Results Display (upper right, x = 580):**
+- Box with light blue background (#E3F2FD), rounded corners
+- Title: "Measurements" (bold, 18pt)
+- Display (16pt):
+  - Radius: [value] cm
+  - Diameter: [value] cm (calculated as 2r)
+  - Circumference: [value] cm (calculated, 2 decimals)
+  - Area: [value] cm² (calculated, 2 decimals)
+
+**Formulas Display (upper left, x = 20):**
+- Box with light yellow background (#FFF9C4)
+- Title: "Formulas" (bold, 18pt)
+- Show (16pt):
+  - $C = 2\pi r$
+  - $A = \pi r^2$
+
+**Controls (bottom panel, y = 580):**
+- Slider: "Radius" (2 - 20 cm), position (100, 600), width 400px
+- Number display next to slider: "[value] cm"
+- Button: "Reset to r = 10" at (550, 600)
+- Buttons for common values: "r = 5", "r = 10", "r = 15" (at y = 650)
+
+**Interactive Features:**
+- Real-time calculation as slider moves
+- Highlight radius line when slider is being adjusted
+- Show pi symbol ($\pi$) prominently in formulas
+- Smooth circle scaling animation
+
+**Color Scheme:**
+- Circle: Blue (#1976D2) outline, light blue fill
+- Radius: Red
+- Diameter: Green dashed
+- Background: White
+- UI elements: Material Design blue palette
+
+</details>
+
+<hr />
+<h2 id="part-3-three-dimensional-solids">Part 3: Three-Dimensional Solids</h2>
+<h3 id="introduction-to-3d-geometry">Introduction to 3D Geometry</h3>
+<p>Moving from two dimensions to three dimensions opens up a whole new world of geometric exploration. <strong>Three-dimensional solids</strong> have length, width, and height. Understanding these solids is essential for fields ranging from architecture to engineering to product design.</p>
+<h3 id="types-of-solids">Types of Solids</h3>
+<p>A <strong>polyhedron</strong> is a solid bounded by polygons called <strong>faces</strong>. The intersection of two faces is called an <strong>edge</strong>, and the intersection of three or more faces is called a <strong>vertex</strong>.</p>
+<p>Common polyhedra include:</p>
+<ul>
+<li><strong>Prism</strong>: A polyhedron with two parallel, congruent bases connected by rectangular lateral faces</li>
+<li><strong>Pyramid</strong>: A polyhedron with one base and triangular lateral faces that meet at a point called the apex</li>
+</ul>
+<p>Other important three-dimensional solids include:</p>
+<ul>
+<li><strong>Cylinder</strong>: A solid with two parallel, congruent circular bases</li>
+<li><strong>Cone</strong>: A solid with one circular base and a curved surface that tapers to a point (apex)</li>
+<li><strong>Sphere</strong>: The set of all points in space equidistant from a center point</li>
+</ul>
+<h4 id="diagram-three-dimensional-solids-gallery">Diagram: Three-Dimensional Solids Gallery</h4>
+<details markdown="1">
+<summary>Visual catalog of common 3D solids</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **remember** the names and visual characteristics of common three-dimensional solids and **understand** the distinction between polyhedra and non-polyhedra. (Bloom's Taxonomy: Remembering, Understanding)
+
+**Specification:**
+
+Create a colorful diagram showing seven common 3D solids in a gallery format.
+
+**Layout:** Two rows, total dimensions 900px wide × 700px tall
+
+**Row 1: Polyhedra (y = 0-320)**
+
+**Solid 1: Rectangular Prism (x = 50)**
+- Background: Light blue (#E3F2FD)
+- Draw 3D rectangular prism in isometric view
+- Visible faces: Top (light yellow), front (light green), right side (light orange)
+- Edges: Dark gray (2px)
+- Dimensions shown: length, width, height
+- Label below: "Rectangular Prism" (bold, 16pt)
+- Sublabel: "Polyhedron" (12pt, gray)
+
+**Solid 2: Triangular Prism (x = 250)**
+- Background: Light green (#E8F5E9)
+- Draw 3D triangular prism in isometric view
+- Triangle base visible at front
+- Visible faces colored differently (light blue, light yellow, light pink)
+- Edges: Dark gray (2px)
+- Label below: "Triangular Prism" (bold, 16pt)
+- Sublabel: "Polyhedron" (12pt, gray)
+
+**Solid 3: Square Pyramid (x = 450)**
+- Background: Light yellow (#FFF9C4)
+- Draw 3D square pyramid in isometric view
+- Square base at bottom, apex at top
+- Visible faces: Front (light orange), right (light pink), base (light blue)
+- Edges: Dark gray (2px)
+- Label below: "Square Pyramid" (bold, 16pt)
+- Sublabel: "Polyhedron" (12pt, gray)
+
+**Solid 4: Cube (x = 650)**
+- Background: Light purple (#F3E5F5)
+- Draw 3D cube in isometric view
+- Three visible faces colored differently (light blue, light green, light yellow)
+- Edges: Dark gray (2px)
+- All edges equal (mark with tick marks)
+- Label below: "Cube" (bold, 16pt)
+- Sublabel: "Polyhedron" (12pt, gray)
+
+**Row 2: Curved Solids (y = 380-700)**
+
+**Solid 5: Cylinder (x = 150)**
+- Background: Light cyan (#E0F7FA)
+- Draw 3D cylinder in oblique view
+- Top circular base (light blue with border)
+- Curved surface (light green gradient)
+- Bottom base partially visible
+- Height line marked with "h"
+- Radius marked with "r"
+- Label below: "Cylinder" (bold, 16pt)
+- Sublabel: "Not a polyhedron" (12pt, gray)
+
+**Solid 6: Cone (x = 400)**
+- Background: Light orange (#FFF3E0)
+- Draw 3D cone in oblique view
+- Circular base at bottom (light yellow with border)
+- Curved surface (light orange gradient) tapering to apex
+- Height line from apex to base center (dashed, red)
+- Radius marked with "r"
+- Label below: "Cone" (bold, 16pt)
+- Sublabel: "Not a polyhedron" (12pt, gray)
+
+**Solid 7: Sphere (x = 650)**
+- Background: Light pink (#FCE4EC)
+- Draw 3D sphere with shading
+- Gradient from light pink (left) to darker pink (right) for 3D effect
+- Great circle shown as dashed line (equator)
+- Radius line from center to surface (red)
+- Label radius with "r"
+- Label below: "Sphere" (bold, 16pt)
+- Sublabel: "Not a polyhedron" (12pt, gray)
+
+**Title above all:** "Common Three-Dimensional Solids" (bold, 28pt, centered)
+
+</details>
+
+<h3 id="nets-of-solids">Nets of Solids</h3>
+<p>A <strong>net</strong> is a two-dimensional pattern that can be folded to form a three-dimensional solid. Nets are useful for understanding surface area and for constructing physical models.</p>
+<h4 id="microsim-net-to-solid-explorer">MicroSim: Net to Solid Explorer</h4>
+<details markdown="1">
+<summary>Interactive exploration of 3D solid nets</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **understand** the relationship between 2D nets and 3D solids by **analyzing** how nets fold into various polyhedra. (Bloom's Taxonomy: Understanding, Analyzing)
+
+**Specification:**
+
+Create an interactive p5.js simulation showing nets and their corresponding 3D solids.
+
+**Canvas:** 900px × 650px, background: light gray (#FAFAFA)
+
+**Layout:** Two panels side by side
+
+**Left Panel (Net Display, x = 0-420):**
+- Background: White
+- Draw unfolded net of selected solid
+- Use different colors for different faces
+- Show fold lines as dashed lines (gray)
+- Label faces (Base, Lateral Face 1, etc.)
+
+**Right Panel (3D Solid Display, x = 480-900):**
+- Background: White with subtle grid
+- Draw corresponding 3D solid in isometric view
+- Color faces to match net
+- Smooth rotation animation (optional: user can enable/disable)
+
+**Solid Selection (top, y = 20):**
+- Dropdown menu or buttons to select solid type:
+  - Cube
+  - Rectangular Prism
+  - Triangular Prism
+  - Square Pyramid
+  - Triangular Pyramid
+- Currently selected solid highlighted
+
+**Animation Controls (bottom panel, y = 570):**
+- Button: "Fold Net" (animates folding from net to solid)
+- Button: "Unfold Solid" (animates unfolding from solid to net)
+- Checkbox: "Auto-rotate 3D view"
+- Slider: "Animation Speed" (slow to fast)
+
+**Info Display (bottom left):**
+- Box with light blue background
+- Show number of faces, edges, vertices
+- Show Euler's formula: $V - E + F = 2$
+
+**Interactive Features:**
+- Click faces on net to highlight corresponding faces on 3D solid
+- Smooth animation when folding/unfolding
+- Color-coded matching between net and solid
+- Optional: Allow user to drag net pieces to attempt assembly
+
+**Color Scheme:**
+- Each face gets distinct pastel color (blues, greens, yellows, pinks)
+- Matching colors between net and 3D solid
+- Fold lines: Gray dashed
+- Edges on 3D solid: Dark gray
+- Background: Light gray (#FAFAFA) with white panels
+
+</details>
+
+<hr />
+<h2 id="part-4-surface-area">Part 4: Surface Area</h2>
+<h3 id="understanding-surface-area">Understanding Surface Area</h3>
+<p><strong>Surface area</strong> is the total area of all faces of a three-dimensional solid. Think of it as the amount of material needed to cover the outside of the solid.</p>
+<p>For polyhedra, we find surface area by calculating the area of each face and adding them together. Often, we separate the calculation into:</p>
+<ul>
+<li><strong>Base area</strong>: The area of the base(s)</li>
+<li><strong>Lateral surface area</strong>: The area of the sides (excluding bases)</li>
+</ul>
+<p>Then: <span class="arithmatex">\(\text{Total Surface Area} = \text{Base Area(s)} + \text{Lateral Surface Area}\)</span></p>
+<h3 id="surface-area-formulas">Surface Area Formulas</h3>
+<p><strong>Rectangular Prism:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(SA = 2lw + 2lh + 2wh\)</span>\)</span></p>
+<p>Or equivalently:
+<span class="arithmatex">\(<span class="arithmatex">\(SA = 2(lw + lh + wh)\)</span>\)</span></p>
+<p><strong>Cylinder:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(SA = 2\pi r^2 + 2\pi rh = 2\pi r(r + h)\)</span>\)</span></p>
+<p><strong>Square Pyramid:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(SA = B + \frac{1}{2}Pl\)</span>\)</span></p>
+<p>where <span class="arithmatex">\(B\)</span> is base area, <span class="arithmatex">\(P\)</span> is base perimeter, and <span class="arithmatex">\(l\)</span> is slant height.</p>
+<p><strong>Cone:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(SA = \pi r^2 + \pi rl\)</span>\)</span></p>
+<p>where <span class="arithmatex">\(r\)</span> is radius and <span class="arithmatex">\(l\)</span> is slant height.</p>
+<p><strong>Sphere:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(SA = 4\pi r^2\)</span>\)</span></p>
+<h4 id="diagram-surface-area-formulas-reference">Diagram: Surface Area Formulas Reference</h4>
+<details markdown="1">
+<summary>Visual reference for surface area calculations</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **remember** surface area formulas for common solids and **understand** how these formulas account for all exterior surfaces. (Bloom's Taxonomy: Remembering, Understanding)
+
+**Specification:**
+
+Create a colorful reference sheet for surface area formulas.
+
+**Layout:** 5 solids arranged in grid, 900px wide × 800px tall
+
+**Grid Structure:** 2 rows (3 items in row 1, 2 items in row 2)
+
+**For each solid:**
+- Labeled 3D diagram (isometric view)
+- Important dimensions marked and labeled
+- Formula displayed prominently below
+- Color-coded components matching diagram
+
+**Row 1:**
+
+**Item 1: Rectangular Prism**
+- Position: (0, 0), size: 280px × 350px
+- Background: Light blue (#E3F2FD)
+- Draw prism with dimensions l, w, h clearly marked
+- Show three visible faces in different colors
+- Formula box (yellow background):
+  - $SA = 2lw + 2lh + 2wh$
+  - Alternative: $SA = 2(lw + lh + wh)$
+- Label: "Rectangular Prism" (bold, 18pt)
+
+**Item 2: Cylinder**
+- Position: (300, 0), size: 280px × 350px
+- Background: Light green (#E8F5E9)
+- Draw cylinder with radius r and height h marked
+- Show two circular bases (light blue) and curved surface (light green)
+- Annotations: "2 bases" pointing to circles, "lateral surface" pointing to curved part
+- Formula box (yellow background):
+  - $SA = 2\pi r^2 + 2\pi rh$
+  - Alternative: $SA = 2\pi r(r + h)$
+- Label: "Cylinder" (bold, 18pt)
+
+**Item 3: Cube**
+- Position: (600, 0), size: 280px × 350px
+- Background: Light purple (#F3E5F5)
+- Draw cube with side s marked
+- Show three visible faces in different shades of purple
+- Note: "6 congruent faces"
+- Formula box (yellow background):
+  - $SA = 6s^2$
+- Label: "Cube" (bold, 18pt)
+
+**Row 2:**
+
+**Item 4: Square Pyramid**
+- Position: (150, 430), size: 280px × 350px
+- Background: Light orange (#FFF3E0)
+- Draw pyramid with square base (side s) and slant height l marked
+- Show base (light blue) and triangular faces (light orange)
+- Annotations: "base", "4 triangular faces"
+- Formula box (yellow background):
+  - $SA = s^2 + 4(\frac{1}{2}sl)$
+  - Simplified: $SA = s^2 + 2sl$
+  - General: $SA = B + \frac{1}{2}Pl$
+- Label: "Square Pyramid" (bold, 18pt)
+
+**Item 5: Cone**
+- Position: (450, 430), size: 280px × 350px
+- Background: Light cyan (#E0F7FA)
+- Draw cone with radius r and slant height l marked
+- Show circular base (light blue) and curved surface (light cyan)
+- Annotations: "base", "lateral surface"
+- Formula box (yellow background):
+  - $SA = \pi r^2 + \pi rl$
+  - Alternative: $SA = \pi r(r + l)$
+- Label: "Cone" (bold, 18pt)
+
+**Title (top center):** "Surface Area Formulas" (bold, 32pt)
+
+**Note at bottom:** "Remember: Surface area is measured in square units (cm², m², etc.)" (14pt, gray)
+
+</details>
+
+<h4 id="microsim-surface-area-calculator">MicroSim: Surface Area Calculator</h4>
+<details markdown="1">
+<summary>Interactive surface area calculation tool</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **apply** surface area formulas to calculate the total surface area of various 3D solids and **analyze** how dimension changes affect surface area. (Bloom's Taxonomy: Applying, Analyzing)
+
+**Specification:**
+
+Create an interactive p5.js simulation for calculating surface areas.
+
+**Canvas:** 900px × 750px, background: white
+
+**Layout:** Three sections
+
+**Section 1: Solid Selection (top, y = 0-100):**
+- Background: Light gray (#F5F5F5)
+- Buttons to select solid type (arranged horizontally):
+  - Rectangular Prism
+  - Cube
+  - Cylinder
+  - Square Pyramid
+  - Cone
+  - Sphere
+- Currently selected button highlighted (blue background)
+
+**Section 2: Visualization (left panel, x = 0-500, y = 120-550):**
+- White background
+- Draw selected 3D solid in isometric view (centered)
+- Label all relevant dimensions on the diagram
+- Color faces differently for clarity
+- Show dimension values next to labels
+
+**Section 3: Controls and Results (right panel, x = 520-900, y = 120-550):**
+
+**Dimension Controls:**
+- Sliders for each dimension based on selected solid:
+  - Rectangular Prism: length (5-20), width (5-20), height (5-20)
+  - Cube: side (5-20)
+  - Cylinder: radius (3-15), height (5-25)
+  - Pyramid: base side (5-20), slant height (5-25)
+  - Cone: radius (3-15), slant height (5-25)
+  - Sphere: radius (3-20)
+- Each slider shows current value in real-time
+
+**Formula Display:**
+- Box with light blue background (#E3F2FD)
+- Title: "Formula" (bold, 16pt)
+- Show applicable formula with symbols (18pt)
+- Highlight which variables correspond to current sliders
+
+**Calculation Breakdown:**
+- Box with light yellow background (#FFF9C4)
+- Title: "Calculation Steps" (bold, 16pt)
+- Show step-by-step substitution (14pt):
+  - Original formula
+  - Substituted values
+  - Intermediate calculations
+  - Final result
+
+**Result Display:**
+- Large box with light green background (#E8F5E9)
+- Title: "Surface Area" (bold, 18pt)
+- Show final answer (bold, 24pt, blue):
+  - "[value] square units"
+  - Or "[value] cm²" if specific units chosen
+
+**Bottom Controls (y = 580-730):**
+- Button: "Reset to Default" (reset all dimensions)
+- Dropdown: "Unit System" (choose units or dimensionless)
+- Checkbox: "Show work" (toggle calculation breakdown)
+- Checkbox: "Use π ≈ 3.14" vs "Show exact π form"
+
+**Interactive Features:**
+- Real-time recalculation as sliders move
+- Smooth visual updates to 3D diagram
+- Highlight formula variables as corresponding sliders are adjusted
+- Option to compare two solids side-by-side (advanced feature)
+
+**Color Scheme:**
+- UI backgrounds: Grays and pastels
+- Selected solid: Blue theme (#2196F3)
+- Formula box: Light blue
+- Calculation box: Light yellow
+- Result box: Light green
+- 3D solid faces: Various pastels for distinction
+
+</details>
+
+<hr />
+<h2 id="part-5-volume">Part 5: Volume</h2>
+<h3 id="understanding-volume">Understanding Volume</h3>
+<p><strong>Volume</strong> measures the amount of three-dimensional space inside a solid. We measure volume in cubic units such as cubic centimeters (<span class="arithmatex">\(\text{cm}^3\)</span>), cubic meters (<span class="arithmatex">\(\text{m}^3\)</span>), or cubic feet (<span class="arithmatex">\(\text{ft}^3\)</span>).</p>
+<p>The concept of volume begins with the simple formula for a <strong>rectangular prism</strong>:</p>
+<div class="arithmatex">\[V = lwh\]</div>
+<p>This formula tells us that volume equals length × width × height, or equivalently, base area × height.</p>
+<h3 id="volume-formulas">Volume Formulas</h3>
+<p><strong>Prism (any base):</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(V = Bh\)</span>\)</span></p>
+<p>where <span class="arithmatex">\(B\)</span> is the area of the base and <span class="arithmatex">\(h\)</span> is the height.</p>
+<p><strong>Cylinder:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(V = \pi r^2h\)</span>\)</span></p>
+<p>(This is the same as <span class="arithmatex">\(V = Bh\)</span> where the base is a circle with area <span class="arithmatex">\(\pi r^2\)</span>)</p>
+<p><strong>Pyramid (any base):</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(V = \frac{1}{3}Bh\)</span>\)</span></p>
+<p>where <span class="arithmatex">\(B\)</span> is the area of the base and <span class="arithmatex">\(h\)</span> is the height.</p>
+<p><strong>Cone:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(V = \frac{1}{3}\pi r^2h\)</span>\)</span></p>
+<p>(This is the same as <span class="arithmatex">\(V = \frac{1}{3}Bh\)</span> where the base is a circle)</p>
+<p><strong>Sphere:</strong>
+<span class="arithmatex">\(<span class="arithmatex">\(V = \frac{4}{3}\pi r^3\)</span>\)</span></p>
+<h3 id="cavalieris-principle">Cavalieri's Principle</h3>
+<p><strong>Cavalieri's Principle</strong> states that if two solids have the same height and the same cross-sectional area at every level, then they have the same volume.</p>
+<p>This principle helps us understand why an oblique prism (tilted) has the same volume as a right prism with the same base and height—think of a stack of coins that can be pushed into a slanted position without changing the total volume.</p>
+<h4 id="diagram-volume-formulas-comparison">Diagram: Volume Formulas Comparison</h4>
+<details markdown="1">
+<summary>Visual comparison of volume formulas and relationships</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **understand** the relationships between volume formulas for different solids and **analyze** why pyramids and cones have volumes that are one-third of corresponding prisms and cylinders. (Bloom's Taxonomy: Understanding, Analyzing)
+
+**Specification:**
+
+Create a colorful diagram comparing prism/cylinder volumes with pyramid/cone volumes.
+
+**Layout:** 2×2 grid, total 800px wide × 700px tall
+
+**Grid Structure:**
+
+**Top Row: Prisms and Cylinders (y = 0-320)**
+
+**Cell 1: Rectangular Prism (x = 0-380)**
+- Background: Light blue (#E3F2FD)
+- Draw rectangular prism (isometric view)
+- Dimensions labeled: l = 6, w = 4, h = 5
+- Base outlined in red
+- Formula displayed:
+  - $V = lwh$
+  - $V = (6)(4)(5) = 120$ cubic units
+- Title: "Rectangular Prism" (bold, 18pt)
+
+**Cell 2: Cylinder (x = 420-800)**
+- Background: Light green (#E8F5E9)
+- Draw cylinder
+- Dimensions labeled: r = 3, h = 8
+- Circular base outlined in red
+- Formula displayed:
+  - $V = \pi r^2h$
+  - $V = \pi(3)^2(8) = 72\pi \approx 226.2$ cubic units
+- Title: "Cylinder" (bold, 18pt)
+
+**Middle Divider (y = 340):**
+- Horizontal line with text: "Pyramids and Cones have $\frac{1}{3}$ the volume" (bold, 16pt, centered)
+- Arrow pointing down
+
+**Bottom Row: Pyramids and Cones (y = 380-700)**
+
+**Cell 3: Rectangular Pyramid (x = 0-380)**
+- Background: Light orange (#FFF3E0)
+- Draw rectangular pyramid (same base dimensions as prism above)
+- Base dimensions labeled: l = 6, w = 4, h = 5
+- Base outlined in red
+- Dashed outline of corresponding prism shown faintly in background
+- Formula displayed:
+  - $V = \frac{1}{3}lwh$
+  - $V = \frac{1}{3}(6)(4)(5) = 40$ cubic units
+- Note: "= $\frac{1}{3}$ of prism above" (red text)
+- Title: "Rectangular Pyramid" (bold, 18pt)
+
+**Cell 4: Cone (x = 420-800)**
+- Background: Light yellow (#FFF9C4)
+- Draw cone (same base and height as cylinder above)
+- Dimensions labeled: r = 3, h = 8
+- Circular base outlined in red
+- Dashed outline of corresponding cylinder shown faintly in background
+- Formula displayed:
+  - $V = \frac{1}{3}\pi r^2h$
+  - $V = \frac{1}{3}\pi(3)^2(8) = 24\pi \approx 75.4$ cubic units
+- Note: "= $\frac{1}{3}$ of cylinder above" (red text)
+- Title: "Cone" (bold, 18pt)
+
+**Title (top):** "Volume Formulas: Prisms/Cylinders vs Pyramids/Cones" (bold, 24pt, centered)
+
+**Insight Box (bottom):**
+- Light purple background (#F3E5F5)
+- Text (14pt): "Key Insight: A pyramid or cone with the same base and height as a prism or cylinder has exactly one-third the volume. This relationship can be proven using calculus or demonstrated experimentally by filling a pyramid three times to fill a prism."
+
+</details>
+
+<h4 id="microsim-volume-explorer">MicroSim: Volume Explorer</h4>
+<details markdown="1">
+<summary>Interactive volume calculation and comparison tool</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **apply** volume formulas to various 3D solids, **analyze** how dimension changes affect volume, and **evaluate** volume relationships between related solids. (Bloom's Taxonomy: Applying, Analyzing, Evaluating)
+
+**Specification:**
+
+Create an interactive p5.js simulation for exploring volume.
+
+**Canvas:** 1000px × 750px, background: light gray (#FAFAFA)
+
+**Layout:** Two-panel design with comparison feature
+
+**Top Control Bar (y = 0-80):**
+- Background: Dark gray (#424242), text: white
+- Title: "Volume Explorer" (24pt, bold)
+- Mode toggle buttons:
+  - "Single Solid" mode
+  - "Compare Two Solids" mode
+- Currently selected mode highlighted
+
+**Main Display Area (y = 100-550):**
+
+**Single Solid Mode:**
+- One large visualization panel (centered)
+- 3D solid displayed in isometric view
+- Dimensions labeled on solid
+- Rotation controls (optional user interaction)
+
+**Compare Mode:**
+- Two visualization panels side by side
+- Left panel: Solid 1 (x = 50-450)
+- Right panel: Solid 2 (x = 550-950)
+- Comparison result displayed between panels
+
+**Solid Selection (for each panel in compare mode, or single in single mode):**
+- Dropdown menu to select solid type:
+  - Rectangular Prism
+  - Cube
+  - Cylinder
+  - Square Pyramid
+  - Cone
+  - Sphere
+
+**Dimension Controls Panel (y = 570-750):**
+
+Layout depends on mode:
+
+**Single Solid Mode:**
+- Sliders for dimensions (center-aligned)
+- Real-time value displays
+- Formula box showing applicable formula
+- Calculation breakdown (optional toggle)
+- Large volume result display
+
+**Compare Mode:**
+- Left column (x = 0-450): Controls for Solid 1
+- Right column (x = 550-1000): Controls for Solid 2
+- Center column (x = 450-550): Comparison results
+  - "Solid 1 Volume: [value]"
+  - "Solid 2 Volume: [value]"
+  - "Ratio: [value]" (bold, blue if Solid 1 larger, red if Solid 2 larger)
+  - "Difference: [value]"
+
+**Interactive Features:**
+- Real-time volume calculation
+- Smooth visual updates
+- Highlight dimensions being adjusted
+- Show volume as filling animation (optional advanced feature)
+- Preset comparison scenarios:
+  - Button: "Prism vs Pyramid (same base & height)"
+  - Button: "Cylinder vs Cone (same base & height)"
+  - Button: "Cube vs Sphere (same 'size')"
+
+**Special Features for Understanding:**
+- Cavalieri's Principle demonstration option
+- Visual representation of "1/3 relationship" for pyramid/cone vs prism/cylinder
+- Cross-section viewer (show 2D slice at any height)
+
+**Formulas Reference (collapsible panel):**
+- Button to show/hide formula reference
+- When visible, displays all volume formulas with diagrams
+
+**Result Display Styling:**
+- Volume results in large, bold text (24pt)
+- Color-coded by solid type
+- Option to display in exact form (e.g., "$24\pi$ cu. units") or decimal approximation
+
+**Color Scheme:**
+- Background: Light gray (#FAFAFA)
+- Panel backgrounds: White
+- Top bar: Dark gray (#424242)
+- Solid 1: Blue theme (#2196F3)
+- Solid 2: Orange theme (#FF9800)
+- Formulas: Light yellow background (#FFF9C4)
+- Results: Light green background (#E8F5E9)
+- 3D solids: Pastel fills with darker outlines
+
+**Educational Prompts:**
+- When comparing prism/pyramid or cylinder/cone with same base and height, show pop-up:
+  - "Notice: The pyramid/cone has exactly 1/3 the volume!"
+- When adjusting sphere radius, show:
+  - "Notice: Doubling the radius multiplies volume by 8 (since $2^3 = 8$)"
+
+</details>
+
+<hr />
+<h2 id="part-6-applications-and-problem-solving">Part 6: Applications and Problem-Solving</h2>
+<h3 id="scale-drawings-and-models">Scale Drawings and Models</h3>
+<p>A <strong>scale drawing</strong> or <strong>scale model</strong> represents a real object with all dimensions proportionally reduced or enlarged by the same factor.</p>
+<p>The <strong>scale</strong> is the ratio of a length in the drawing/model to the corresponding length in the actual object.</p>
+<p>For example, a scale of <span class="arithmatex">\(1:50\)</span> means that 1 cm in the model represents 50 cm in the actual object.</p>
+<p><strong>Important:</strong>
+- Lengths scale by the <strong>scale factor</strong> <span class="arithmatex">\(k\)</span>
+- Areas scale by <span class="arithmatex">\(k^2\)</span>
+- Volumes scale by <span class="arithmatex">\(k^3\)</span></p>
+<p>If a model is made at <span class="arithmatex">\(1:10\)</span> scale, then areas are reduced by <span class="arithmatex">\((1/10)^2 = 1/100\)</span>, and volumes are reduced by <span class="arithmatex">\((1/10)^3 = 1/1000\)</span>.</p>
+<h4 id="diagram-scale-relationships">Diagram: Scale Relationships</h4>
+<details markdown="1">
+<summary>Visual guide to how scale affects length, area, and volume</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **understand** how scale factors affect length, area, and volume differently, and **analyze** these relationships through visual and numerical examples. (Bloom's Taxonomy: Understanding, Analyzing)
+
+**Specification:**
+
+Create a colorful diagram showing scale effects on 1D, 2D, and 3D measurements.
+
+**Layout:** Three columns, 850px wide × 600px tall
+
+**Column 1: Length (1D) - x = 0-270**
+- Background: Light blue (#E3F2FD)
+- Title: "Length (1D)" (bold, 20pt)
+
+**Original:**
+- Draw line segment (200px long, 4px thick, blue)
+- Label: "10 units" below line
+
+**Scaled (Scale factor = 1/2):**
+- Draw line segment (100px long, 4px thick, red)
+- Label: "5 units" below line
+- Arrow with text: "× $\frac{1}{2}$"
+
+**Formula box:**
+- $\text{Scale factor} = k$
+- $\text{New length} = k \times \text{original}$
+- Example: $k = \frac{1}{2}$
+- $5 = \frac{1}{2} \times 10$ ✓
+
+**Column 2: Area (2D) - x = 290-560**
+- Background: Light green (#E8F5E9)
+- Title: "Area (2D)" (bold, 20pt)
+
+**Original:**
+- Draw square (160px × 160px, blue outline, light blue fill)
+- Label: "10 × 10 = 100 sq units"
+
+**Scaled (Scale factor = 1/2):**
+- Draw square (80px × 80px, red outline, light red fill)
+- Label: "5 × 5 = 25 sq units"
+- Arrow with text: "× $(\frac{1}{2})^2 = \frac{1}{4}$"
+
+**Formula box:**
+- $\text{Scale factor} = k$
+- $\text{New area} = k^2 \times \text{original}$
+- Example: $k = \frac{1}{2}$
+- $25 = (\frac{1}{2})^2 \times 100$ ✓
+
+**Column 3: Volume (3D) - x = 580-850**
+- Background: Light orange (#FFF3E0)
+- Title: "Volume (3D)" (bold, 20pt)
+
+**Original:**
+- Draw cube in isometric view (appears as 10×10×10)
+- Three visible faces in different blue shades
+- Label: "10 × 10 × 10 = 1000 cu units"
+
+**Scaled (Scale factor = 1/2):**
+- Draw smaller cube (appears as 5×5×5)
+- Three visible faces in different red shades
+- Label: "5 × 5 × 5 = 125 cu units"
+- Arrow with text: "× $(\frac{1}{2})^3 = \frac{1}{8}$"
+
+**Formula box:**
+- $\text{Scale factor} = k$
+- $\text{New volume} = k^3 \times \text{original}$
+- Example: $k = \frac{1}{2}$
+- $125 = (\frac{1}{2})^3 \times 1000$ ✓
+
+**Title (top center):** "How Scale Affects Measurements" (bold, 28pt)
+
+**Summary Box (bottom, spanning all columns):**
+- Light yellow background (#FFF9C4)
+- Border: 2px solid orange
+- Text (16pt): "Key Principle: When you scale by factor $k$:"
+  - "Lengths multiply by $k$"
+  - "Areas multiply by $k^2$"
+  - "Volumes multiply by $k^3$"
+
+</details>
+
+<h3 id="optimization-problems">Optimization Problems</h3>
+<p>An <strong>optimization problem</strong> asks you to find the maximum or minimum value of some quantity while satisfying certain constraints.</p>
+<p>Common geometric optimization problems include:
+- Finding the dimensions that maximize volume for a given surface area
+- Finding the dimensions that minimize surface area for a given volume
+- Finding the most efficient packaging design</p>
+<p>These problems often require:
+1. Setting up equations based on constraints
+2. Expressing the quantity to optimize as a function of one variable
+3. Using algebraic or calculus techniques to find the optimal value</p>
+<h4 id="microsim-optimization-challenge-maximum-volume-box">MicroSim: Optimization Challenge - Maximum Volume Box</h4>
+<details markdown="1">
+<summary>Interactive optimization problem solver</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **analyze** how dimension changes affect volume under constraints, **evaluate** different approaches to optimization, and **create** solutions to maximize volume. (Bloom's Taxonomy: Analyzing, Evaluating, Creating)
+
+**Specification:**
+
+Create an interactive p5.js simulation for exploring a classic optimization problem.
+
+**Canvas:** 1000px × 800px, background: white
+
+**Problem Setup (top panel, y = 0-150):**
+- Background: Light blue (#E3F2FD)
+- Title: "Optimization Challenge: Maximum Volume Box" (bold, 24pt)
+- Problem statement (16pt):
+  - "You have a square sheet of cardboard (30 cm × 30 cm)."
+  - "Cut equal squares from each corner and fold up the sides to make an open box."
+  - "What size cuts will produce the box with maximum volume?"
+
+**Visual Display (left panel, x = 0-550, y = 170-600):**
+
+**Flat Pattern View (top half):**
+- Draw square cardboard sheet (400px × 400px)
+- Show four corner squares cut out (shaded in red)
+- Label sheet dimensions: "30 cm"
+- Label cut size: "x cm" (adjustable via slider)
+- Show fold lines (dashed blue)
+- Remaining dimensions labeled: "(30 - 2x) cm"
+
+**3D Box View (bottom half):**
+- Draw resulting box in isometric view after folding
+- Dimensions labeled:
+  - Base: "(30 - 2x) × (30 - 2x) cm"
+  - Height: "x cm"
+- Box filled with semi-transparent blue
+- Volume calculation visible on box face
+
+**Controls and Analysis (right panel, x = 570-1000, y = 170-800):**
+
+**Cut Size Control:**
+- Slider: "Cut size (x)" (0 - 15 cm), position (600, 200)
+- Large current value display: "x = [value] cm" (20pt, bold)
+- Constraint warning if x > 15: "Invalid! (x must be less than 15 cm)"
+
+**Calculated Dimensions:**
+- Box with light gray background (#F5F5F5)
+- Display (16pt):
+  - "Base length: [30-2x] cm"
+  - "Base width: [30-2x] cm"
+  - "Height: [x] cm"
+
+**Volume Calculation:**
+- Box with light yellow background (#FFF9C4)
+- Title: "Volume Calculation" (bold, 18pt)
+- Show work (16pt):
+  - $V = l \times w \times h$
+  - $V = (30-2x)(30-2x)(x)$
+  - $V = [calculated]$ cm³
+- Current volume in large bold text (24pt, blue)
+
+**Graph Display:**
+- Plot of volume vs. cut size
+- X-axis: Cut size (0 to 15 cm)
+- Y-axis: Volume (0 to max + margin)
+- Curve: Volume function (blue line, 3px)
+- Current point marked (red dot, 8px)
+- Maximum point marked (green dot, 10px) with label
+- Grid background (light gray)
+
+**Optimization Analysis:**
+- Box with light green background (#E8F5E9)
+- Display:
+  - "Current volume: [value] cm³"
+  - "Maximum volume: [max value] cm³"
+  - "Optimal cut size: [x at max] cm"
+  - "Percent of maximum: [current/max × 100]%"
+
+**Challenge Buttons (bottom):**
+- Button: "Find Maximum" (reveals answer)
+- Button: "Reset" (clears answer, allows exploration)
+- Button: "New Challenge" (changes cardboard size)
+
+**Interactive Features:**
+- Real-time updates as slider moves
+- Point on graph tracks with slider
+- Highlight maximum point when found
+- Visual feedback when approaching maximum
+- Optional hint system:
+  - "Try x between 4 and 6 cm"
+  - "You're getting warmer!"
+  - "Maximum found!"
+
+**Educational Insights (collapsible panel):**
+- Button: "Why does this work?"
+- When opened, shows:
+  - "When x is too small, the box is very shallow (small height)"
+  - "When x is too large, the base becomes very small"
+  - "The maximum occurs at the optimal balance"
+  - "This can be solved exactly using calculus (taking the derivative)"
+
+**Extension Challenges (bottom):**
+- Checkbox options for advanced students:
+  - "Change to rectangular cardboard"
+  - "Add constraint: surface area ≤ [value]"
+  - "Maximize surface area instead of volume"
+
+**Color Scheme:**
+- Cardboard: Tan (#D7CCC8)
+- Cut corners: Red (#F44336, 40% opacity)
+- Fold lines: Blue dashed
+- 3D box: Blue (#2196F3, semi-transparent)
+- Graph curve: Dark blue (#1565C0)
+- Current point: Red (#F44336)
+- Maximum point: Green (#4CAF50)
+- Backgrounds: Light blue, yellow, green, gray as specified
+
+</details>
+
+<h3 id="geometric-modeling-and-design">Geometric Modeling and Design</h3>
+<p><strong>Geometric modeling</strong> uses shapes, measurements, and spatial reasoning to represent and solve real-world problems. Applications include:</p>
+<ul>
+<li>Architecture and construction</li>
+<li>Product design and packaging</li>
+<li>Urban planning and landscape design</li>
+<li>Computer graphics and animation</li>
+<li>Engineering and manufacturing</li>
+</ul>
+<p>A <strong>design challenge</strong> typically involves:
+1. Understanding the problem and constraints
+2. Brainstorming possible solutions
+3. Using geometric principles to model and analyze options
+4. Selecting and refining the best solution
+5. Communicating the design clearly</p>
+<h4 id="design-challenge-example-efficient-packaging">Design Challenge Example: Efficient Packaging</h4>
+<p><strong>Scenario:</strong> A company wants to package cylindrical candles. Each candle has a radius of 3 cm and a height of 15 cm. Design a rectangular box that holds 6 candles while minimizing the amount of cardboard used.</p>
+<p><strong>Approach:</strong>
+1. Consider different arrangements (2×3, 1×6, 3×2, circular packing, etc.)
+2. Calculate box dimensions for each arrangement
+3. Calculate surface area of each box design
+4. Compare and select the design with minimum surface area
+5. Consider practical constraints (ease of opening, display, etc.)</p>
+<hr />
+<h2 id="chapter-summary">Chapter Summary</h2>
+<p>In this chapter, you've learned to:</p>
+<ul>
+<li>Calculate areas of rectangles, parallelograms, triangles, trapezoids, rhombuses, kites, regular polygons, and circles</li>
+<li>Apply formulas for circumference and area of circles, understanding the role of pi</li>
+<li>Identify and classify three-dimensional solids including prisms, pyramids, cylinders, cones, and spheres</li>
+<li>Understand relationships between nets and three-dimensional solids</li>
+<li>Calculate surface areas of rectangular prisms, cylinders, pyramids, cones, and spheres</li>
+<li>Calculate volumes of prisms, cylinders, pyramids, cones, and spheres</li>
+<li>Apply Cavalieri's Principle to understand volume relationships</li>
+<li>Solve problems involving scale drawings and scale models, understanding how scale affects length, area, and volume</li>
+<li>Tackle optimization problems to find maximum or minimum values under constraints</li>
+<li>Apply geometric modeling to design challenges and real-world applications</li>
+</ul>
+<p>These measurement and application skills bring together all the geometric concepts you've studied throughout the course and prepare you to use geometry effectively in mathematics, science, engineering, and everyday problem-solving.</p>
+<hr />
+<h2 id="practice-problems">Practice Problems</h2>
+<h3 id="area-of-polygons">Area of Polygons</h3>
+<ol>
+<li>
+<p>A rectangular garden measures 12 m by 8 m. What is its area?</p>
+</li>
+<li>
+<p>A parallelogram has a base of 15 cm and a height of 9 cm. Find its area.</p>
+</li>
+<li>
+<p>An equilateral triangle has sides of length 10 cm. If the height is approximately 8.66 cm, what is the area?</p>
+</li>
+<li>
+<p>A trapezoid has bases of 7 in and 11 in, with a height of 5 in. Calculate its area.</p>
+</li>
+<li>
+<p>A rhombus has diagonals measuring 16 cm and 12 cm. What is its area?</p>
+</li>
+</ol>
+<h3 id="circles">Circles</h3>
+<ol>
+<li>
+<p>A circle has a radius of 7 cm. Find its circumference and area.</p>
+</li>
+<li>
+<p>The circumference of a circle is <span class="arithmatex">\(20\pi\)</span> inches. What is its radius and area?</p>
+</li>
+<li>
+<p>A circular pizza has a diameter of 14 inches. If one slice is cut with a central angle of 45°, what is the area of the slice?</p>
+</li>
+</ol>
+<h3 id="surface-area">Surface Area</h3>
+<ol>
+<li>
+<p>A rectangular prism has dimensions 6 cm × 4 cm × 10 cm. Find its surface area.</p>
+</li>
+<li>
+<p>A cylinder has a radius of 5 cm and a height of 12 cm. Calculate its surface area.</p>
+</li>
+<li>
+<p>A sphere has a radius of 9 inches. What is its surface area?</p>
+</li>
+<li>
+<p>A square pyramid has a base side of 8 m and a slant height of 10 m. Find its surface area.</p>
+</li>
+</ol>
+<h3 id="volume">Volume</h3>
+<ol>
+<li>
+<p>What is the volume of a rectangular prism with length 10 cm, width 6 cm, and height 8 cm?</p>
+</li>
+<li>
+<p>A cylinder has a radius of 4 inches and a height of 15 inches. Calculate its volume.</p>
+</li>
+<li>
+<p>A cone has a base radius of 6 cm and a height of 9 cm. Find its volume.</p>
+</li>
+<li>
+<p>A square pyramid has a base side of 12 m and a height of 20 m. What is its volume?</p>
+</li>
+<li>
+<p>Find the volume of a sphere with radius 6 cm.</p>
+</li>
+<li>
+<p>Which has greater volume: a cylinder with radius 4 cm and height 9 cm, or a cone with radius 6 cm and height 12 cm?</p>
+</li>
+</ol>
+<h3 id="scale-and-applications">Scale and Applications</h3>
+<ol>
+<li>
+<p>A model car is built at a scale of 1:24. If the model is 18 cm long, how long is the actual car?</p>
+</li>
+<li>
+<p>If a scale model is built at 1:50 scale, by what factor is the volume reduced?</p>
+</li>
+<li>
+<p>A rectangular box has dimensions 10 cm × 8 cm × 6 cm. If you want to double the volume by increasing only the height, what should the new height be?</p>
+</li>
+<li>
+<p>A cylindrical water tank has a radius of 3 m and a height of 8 m. How many liters of water can it hold? (1 m³ = 1000 liters)</p>
+</li>
+</ol>
+<h3 id="optimization-and-design">Optimization and Design</h3>
+<ol>
+<li>
+<p>You have 100 cm of wire to form a rectangle. What dimensions will maximize the area?</p>
+</li>
+<li>
+<p>A cylindrical can must hold 500 cm³ of liquid. What dimensions (radius and height) will minimize the surface area (and thus the amount of metal needed)?</p>
+</li>
+<li>
+<p>Design a rectangular box with a volume of 1000 cm³ that uses the least amount of material. What dimensions should it have?</p>
+</li>
+</ol>
+<hr />
+<h2 id="extension-activities">Extension Activities</h2>
+<h3 id="activity-1-build-physical-models">Activity 1: Build Physical Models</h3>
+<p>Use cardboard, paper, or other materials to create nets for various polyhedra. Fold them to form 3D solids and verify your surface area calculations by measuring the actual nets.</p>
+<h3 id="activity-2-real-world-measurement-project">Activity 2: Real-World Measurement Project</h3>
+<p>Measure dimensions of real objects (boxes, cans, balls, etc.) in your environment. Calculate their surface areas and volumes, then verify by measuring how much water they can hold or how much wrapping paper is needed to cover them.</p>
+<h3 id="activity-3-packaging-design-challenge">Activity 3: Packaging Design Challenge</h3>
+<p>Choose a product and design optimal packaging. Consider:
+- Protecting the product
+- Minimizing material (cost and environmental impact)
+- Ease of shipping (stacking, space efficiency)
+- Aesthetic appeal and marketing</p>
+<p>Create a presentation with drawings, calculations, and a physical prototype.</p>
+<h3 id="activity-4-architecture-and-construction">Activity 4: Architecture and Construction</h3>
+<p>Research a building or structure in your community. Estimate dimensions and calculate:
+- Floor area
+- Wall surface area (for painting estimation)
+- Volume (for heating/cooling calculations)
+- Roof surface area (for roofing materials)</p>
+<h3 id="activity-5-scale-model-project">Activity 5: Scale Model Project</h3>
+<p>Create a scale model of a room, building, or outdoor space. Choose an appropriate scale, accurately measure the original, calculate scaled dimensions, and build your model. Include furniture or landscaping to scale.</p>
+<hr />
+<h2 id="connections-to-other-mathematics">Connections to Other Mathematics</h2>
+<p>The measurement concepts in this chapter connect to many other areas of mathematics:</p>
+<ul>
+<li>
+<p><strong>Algebra</strong>: Many area and volume formulas involve quadratic or cubic expressions. Optimization problems often require solving equations or using calculus.</p>
+</li>
+<li>
+<p><strong>Trigonometry</strong>: Finding areas of regular polygons, working with pyramids and cones, and many real-world applications involve trigonometric ratios.</p>
+</li>
+<li>
+<p><strong>Calculus</strong>: The formulas for circles, cones, and spheres can be derived using integration. Optimization problems are often solved using derivatives.</p>
+</li>
+<li>
+<p><strong>Statistics</strong>: Surface area and volume calculations are important in analyzing 3D data representations and probability distributions.</p>
+</li>
+<li>
+<p><strong>Number Theory</strong>: The number π connects geometry to the fascinating world of irrational and transcendental numbers.</p>
+</li>
+</ul>
+<hr />
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>Congratulations on completing this geometry course! You've built a strong foundation in:</p>
+<ul>
+<li>Logical reasoning and proof</li>
+<li>Properties of angles, lines, and shapes</li>
+<li>Transformations and congruence</li>
+<li>Similarity and trigonometry</li>
+<li>Circle geometry</li>
+<li>Measurement and real-world applications</li>
+</ul>
+<p>These skills will serve you well in:</p>
+<ul>
+<li><strong>Advanced mathematics</strong>: Pre-calculus, calculus, linear algebra, and beyond</li>
+<li><strong>Sciences</strong>: Physics, chemistry, biology, and earth science all rely on geometric concepts</li>
+<li><strong>Engineering</strong>: Civil, mechanical, electrical, and software engineering use geometry extensively</li>
+<li><strong>Technology</strong>: Computer graphics, game design, robotics, and data visualization</li>
+<li><strong>Arts and design</strong>: Architecture, industrial design, visual arts, and digital media</li>
+<li><strong>Everyday problem-solving</strong>: Home improvement, crafts, navigation, and spatial reasoning</li>
+</ul>
+<p>Continue to look for geometric patterns and relationships in the world around you. The problem-solving skills and spatial reasoning you've developed will continue to grow as you apply them to new challenges.</p>
+<p>Your <strong>Geometric Proof Portfolio</strong> (developed throughout this course) showcases your growth as a mathematical thinker. Keep it as a reference and a reminder of what you've accomplished!</p>
+<hr />
+<h2 id="additional-resources">Additional Resources</h2>
+<h3 id="interactive-tools">Interactive Tools</h3>
+<ul>
+<li>GeoGebra: Free dynamic geometry software for exploring 2D and 3D shapes</li>
+<li>Desmos Geometry: Browser-based construction and measurement tools</li>
+<li>Tinkercad: 3D modeling tool for creating and measuring virtual objects</li>
+</ul>
+<h3 id="further-reading">Further Reading</h3>
+<ul>
+<li>"How to Solve It" by George Pólya (problem-solving strategies applicable to geometry)</li>
+<li>"The Elements" by Euclid (the foundation of geometry, still relevant today)</li>
+<li>"Flatland" by Edwin Abbott (a mathematical fiction exploring dimensions)</li>
+</ul>
+<h3 id="career-connections">Career Connections</h3>
+<p>Explore careers that use geometry extensively:
+- Architect
+- Civil engineer
+- Graphic designer
+- Game developer
+- Urban planner
+- Surveyor
+- Cartographer
+- Industrial designer
+- Computer graphics specialist
+- 3D animator</p>
+<p>Many of these professionals would be happy to speak with students about how they use geometric concepts in their daily work!</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../11-circles/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 11. Circles">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                11. Circles
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../prompts/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

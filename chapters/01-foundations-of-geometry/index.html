@@ -1,0 +1,2846 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/chapters/01-foundations-of-geometry/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02-logic-and-proof/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>1. Foundations of Geometry - AI Assisted Geometry</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-CK8G27ZYZ2"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-CK8G27ZYZ2",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-CK8G27ZYZ2",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#foundations-of-geometry" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Assisted Geometry" class="md-header__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Assisted Geometry
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Foundations of Geometry
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Assisted Geometry" class="md-nav__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    AI Assisted Geometry
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    1. Foundations of Geometry
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Foundations of Geometry
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-the-building-blocks-of-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: The Building Blocks of Geometry
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction: The Building Blocks of Geometry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-three-undefined-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: The Three Undefined Terms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-undefined-terms-point-line-and-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Undefined Terms: Point, Line, and Plane
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Undefined Terms: Point, Line, and Plane">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#point" class="md-nav__link">
+    <span class="md-ellipsis">
+      Point
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plane
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plane">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-point-line-plane-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Point, Line, Plane Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-with-basic-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building with Basic Objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building with Basic Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ray" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ray
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-segment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Line Segment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Line Segment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-rays-and-segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Rays and Segments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#midpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Midpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angles-and-vertices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angles and Vertices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Angles and Vertices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertex
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vertex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-angle-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Angle Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationships-between-points-and-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationships Between Points and Lines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relationships Between Points and Lines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collinear-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collinear Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coplanar-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coplanar Points
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Coplanar Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-collinear-and-coplanar-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Collinear and Coplanar Points
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intersection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intersection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-line-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Line Relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Special Line Relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parallel-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parallel Lines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perpendicular-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perpendicular Lines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skew-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skew Lines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Skew Lines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-line-relationships-in-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Line Relationships in 3D
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-reasoning-finding-patterns-and-proving-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Reasoning: Finding Patterns and Proving Ideas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematical Reasoning: Finding Patterns and Proving Ideas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inductive-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inductive Reasoning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deductive-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deductive Reasoning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conjecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conjecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#counterexample" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counterexample
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Counterexample">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-reasoning-detective" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Reasoning Detective
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-the-language-of-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: The Language of Geometry
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: The Language of Geometry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-concept-map-of-chapter-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Concept Map of Chapter 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-logic-and-proof/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Logic and Proof
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-angles-and-relationships/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Angles and Angle Relationships
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-geometric-constructions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Geometric Constructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-coordinate-geometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. Coordinate Geometry and Lines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-transformations-congruence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Transformations and Congruence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-triangle-congruence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Triangle Congruence and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-triangle-centers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. Triangle Centers and Advanced Topics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-polygons-quadrilaterals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9. Polygons and Quadrilaterals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-similarity-trigonometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. Similarity and Right Triangle Trigonometry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-circles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Circles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-area-volume-applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12. Area, Volume, and Applications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-the-building-blocks-of-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: The Building Blocks of Geometry
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction: The Building Blocks of Geometry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-three-undefined-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: The Three Undefined Terms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-undefined-terms-point-line-and-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Undefined Terms: Point, Line, and Plane
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Undefined Terms: Point, Line, and Plane">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#point" class="md-nav__link">
+    <span class="md-ellipsis">
+      Point
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plane
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plane">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-point-line-plane-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Point, Line, Plane Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-with-basic-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building with Basic Objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building with Basic Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ray" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ray
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-segment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Line Segment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Line Segment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-rays-and-segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Rays and Segments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#midpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Midpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angles-and-vertices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angles and Vertices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Angles and Vertices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertex
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vertex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-angle-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Angle Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationships-between-points-and-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationships Between Points and Lines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relationships Between Points and Lines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collinear-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collinear Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coplanar-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coplanar Points
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Coplanar Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-collinear-and-coplanar-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Collinear and Coplanar Points
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intersection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intersection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-line-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Line Relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Special Line Relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parallel-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parallel Lines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perpendicular-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perpendicular Lines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skew-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skew Lines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Skew Lines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-line-relationships-in-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Line Relationships in 3D
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-reasoning-finding-patterns-and-proving-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Reasoning: Finding Patterns and Proving Ideas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematical Reasoning: Finding Patterns and Proving Ideas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inductive-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inductive Reasoning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deductive-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deductive Reasoning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conjecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conjecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#counterexample" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counterexample
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Counterexample">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-reasoning-detective" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Reasoning Detective
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-the-language-of-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: The Language of Geometry
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: The Language of Geometry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-concept-map-of-chapter-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Concept Map of Chapter 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/chapters/01-foundations-of-geometry/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="foundations-of-geometry">Foundations of Geometry</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces the undefined terms (point, line, plane) and basic geometric objects that form the foundation of all geometry. You'll learn how to use precise mathematical language to describe spatial relationships and develop both inductive and deductive reasoning skills. By the end of this chapter, you'll understand how mathematicians build logical arguments from fundamental assumptions and be able to identify and classify basic geometric figures and their properties.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 18 concepts from the learning graph:</p>
+<ol>
+<li>Point</li>
+<li>Line</li>
+<li>Plane</li>
+<li>Ray</li>
+<li>Line Segment</li>
+<li>Line</li>
+<li>Angle</li>
+<li>Vertex</li>
+<li>Collinear Points</li>
+<li>Coplanar Points</li>
+<li>Intersection</li>
+<li>Parallel Lines</li>
+<li>Perpendicular Lines</li>
+<li>Skew Lines</li>
+<li>Inductive Reasoning</li>
+<li>Deductive Reasoning</li>
+<li>Conjecture</li>
+<li>Counterexample</li>
+<li>Midpoint</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>:</p>
+<ul>
+<li>Algebra I</li>
+<li>Comfort with basic equations, graphing, and logical reasoning</li>
+<li>Curiosity about shapes, patterns, and spatial relationships</li>
+</ul>
+<hr />
+<h2 id="introduction-the-building-blocks-of-geometry">Introduction: The Building Blocks of Geometry</h2>
+<p>Geometry is the study of shapes, sizes, and positions of objects in space. Just as a house needs a solid foundation, geometry is built upon fundamental ideas called <strong>undefined terms</strong>. These are concepts so basic that we accept them without formal definition—we understand them intuitively through our experience with the physical world.</p>
+<p>In this chapter, you'll discover how mathematicians construct an entire logical system from just three undefined terms: point, line, and plane. You'll also learn two powerful types of reasoning that allow you to make discoveries and prove your ideas with certainty.</p>
+<h4 id="diagram-the-three-undefined-terms">Diagram: The Three Undefined Terms</h4>
+<details markdown="1">
+<summary>Visual representation of point, line, and plane</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **remember** the three undefined terms of geometry (point, line, plane) and **understand** their visual representations and basic properties. (Bloom's Taxonomy: Remembering, Understanding)
+
+**Specification:**
+
+Create a colorful diagram showing the three undefined terms side by side:
+
+**Layout:** Three panels arranged horizontally, each 300px wide × 400px tall
+
+**Panel 1: Point**
+- Background: Light blue (#E3F2FD)
+- Show a single red dot (8px diameter) in the center
+- Label below: "Point A" in bold
+- Add callout text: "Has no size—only position"
+- Add 3-4 small red dots scattered in the background labeled B, C, D
+- Bottom annotation: "Named with capital letters"
+
+**Panel 2: Line**
+- Background: Light green (#E8F5E9)
+- Show a straight line extending across the full width with arrows on both ends
+- Line color: Blue, 3px thick
+- Place two points on the line labeled P and Q
+- Label below: "Line PQ" or "$\overleftrightarrow{PQ}$"
+- Add callout text: "Extends infinitely in both directions"
+- Add annotation: "Has no thickness—only length"
+- Bottom annotation: "Named by any two points on it"
+
+**Panel 3: Plane**
+- Background: Light yellow (#FFF9C4)
+- Show a parallelogram representing a tilted plane (to show 3D perspective)
+- Plane color: Semi-transparent purple with grid lines
+- Place 3 non-collinear points labeled X, Y, Z on the plane
+- Label below: "Plane XYZ"
+- Add callout text: "Extends infinitely in all directions"
+- Add annotation: "Has no thickness—only length and width"
+- Bottom annotation: "Named by any three non-collinear points"
+
+**Title above all panels:** "The Three Undefined Terms of Geometry" (24pt, bold)
+
+**Footer note:** "These terms are 'undefined' because they're so fundamental that we understand them through experience rather than formal definition."
+
+**Implementation:** HTML/CSS or p5.js canvas drawing with clear labels and color-coding
+
+</details>
+
+<h2 id="the-undefined-terms-point-line-and-plane">The Undefined Terms: Point, Line, and Plane</h2>
+<h3 id="point">Point</h3>
+<p>A <strong>point</strong> represents a specific location in space. It has no length, width, or thickness—it exists purely as a position. We name points with capital letters and represent them as small dots in drawings.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Has zero dimensions (no size)</li>
+<li>Represents exact location only</li>
+<li>Named with capital letters (Point A, Point B, etc.)</li>
+</ul>
+<p>Think of a point like a star in the night sky or a specific address on a map—it marks an exact location but doesn't take up any space itself.</p>
+<h3 id="line">Line</h3>
+<p>A <strong>line</strong> is a straight path that extends infinitely in both directions. Like a point, a line has no thickness—only length that continues forever. We use arrows on both ends to show that it never stops.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>One-dimensional (has length only)</li>
+<li>Extends infinitely in both directions</li>
+<li>Perfectly straight</li>
+<li>Named by any two points on it: line <span class="arithmatex">\(AB\)</span> or <span class="arithmatex">\(\overleftrightarrow{AB}\)</span></li>
+</ul>
+<p>You can think of a line as the path left by a moving point, or like the edge where two walls meet—perfectly straight and extending as far as you can imagine.</p>
+<h3 id="plane">Plane</h3>
+<p>A <strong>plane</strong> is a flat surface that extends infinitely in all directions. Like a perfectly smooth, endless tabletop or a calm ocean surface, a plane has length and width but no thickness.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Two-dimensional (has length and width)</li>
+<li>Extends infinitely in all directions</li>
+<li>Perfectly flat</li>
+<li>Named by any three non-collinear points or by a single capital letter (Plane M)</li>
+</ul>
+<p>The floor of your classroom, the surface of a mirror, or a perfectly calm lake all approximate planes in the physical world—though real planes extend infinitely in geometry.</p>
+<h4 id="microsim-point-line-plane-explorer">MicroSim: Point, Line, Plane Explorer</h4>
+<details markdown="1">
+<summary>Interactive visualization of undefined terms</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **apply** their understanding of points, lines, and planes by manipulating interactive geometric objects and observing their properties. (Bloom's Taxonomy: Applying)
+
+**Specification:**
+
+Create an interactive p5.js simulation allowing students to explore the three undefined terms.
+
+**Canvas:** 800px × 600px, background: white
+
+**Controls (bottom of canvas):**
+- Three mode buttons: "Points" | "Lines" | "Planes"
+- Slider: "Number of Objects" (1-10)
+- Button: "Clear Canvas"
+- Button: "Random Pattern"
+
+**Behaviors:**
+
+**Point Mode:**
+- Click anywhere to create a new point
+- Points appear as colored circles (6px diameter, random colors from palette)
+- Each point automatically labeled with consecutive letters (A, B, C, ...)
+- Hover over point to see coordinates
+
+**Line Mode:**
+- Click two points to create a line through them
+- Line extends across entire canvas with arrows on both ends
+- Line labeled as $\overleftrightarrow{AB}$ where A and B are the clicked points
+- Show equation of line in slope-intercept form when hovering
+
+**Plane Mode:**
+- Click three non-collinear points to create a plane
+- Plane appears as semi-transparent parallelogram with grid lines
+- Plane labeled with the three defining points
+- Hover to highlight the plane
+
+**Visual Feedback:**
+- Current mode highlighted in blue
+- Instruction text at top: "Point Mode: Click to add points" (changes with mode)
+- Counter showing number of each object type created
+
+**Color Palette:**
+- Points: Red (#E53935), Blue (#1E88E5), Green (#43A047), Purple (#8E24AA)
+- Lines: Blue (#1976D2), 2px thickness
+- Planes: Semi-transparent yellow (#FDD835 at 30% opacity)
+
+**Implementation:** p5.js with createCanvas(), mousePressed(), and DOM controls
+
+</details>
+
+<h2 id="building-with-basic-objects">Building with Basic Objects</h2>
+<p>Now that we understand points, lines, and planes, we can use them to create more specific geometric objects.</p>
+<h3 id="ray">Ray</h3>
+<p>A <strong>ray</strong> is like half of a line—it starts at a specific point (called the endpoint) and extends infinitely in one direction.</p>
+<p><strong>Notation:</strong> Ray <span class="arithmatex">\(AB\)</span> is written as <span class="arithmatex">\(\overrightarrow{AB}\)</span>, where <span class="arithmatex">\(A\)</span> is the endpoint and <span class="arithmatex">\(B\)</span> is any other point on the ray.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Starts at a specific endpoint</li>
+<li>Extends infinitely in one direction only</li>
+<li>Named by its endpoint first, then another point: <span class="arithmatex">\(\overrightarrow{AB}\)</span></li>
+</ul>
+<p>Think of a ray like a laser beam or a flashlight's beam—it starts at a source and continues forever in one direction.</p>
+<h3 id="line-segment">Line Segment</h3>
+<p>A <strong>line segment</strong> is the part of a line between two points, called endpoints. Unlike a line or ray, a segment has definite length.</p>
+<p><strong>Notation:</strong> Segment with endpoints <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> is written as <span class="arithmatex">\(\overline{AB}\)</span> or segment <span class="arithmatex">\(AB\)</span>.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Has two endpoints</li>
+<li>Has measurable length</li>
+<li>The shortest path between two points</li>
+<li>Named by its endpoints: <span class="arithmatex">\(\overline{AB}\)</span> or <span class="arithmatex">\(\overline{BA}\)</span> (order doesn't matter)</li>
+</ul>
+<p>The edge of your desk, the distance between two cities on a map, or the side of a triangle are all examples of line segments.</p>
+<h4 id="diagram-rays-and-segments">Diagram: Rays and Segments</h4>
+<details markdown="1">
+<summary>Comparison of rays and line segments</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **understand** the differences between rays and line segments by comparing their visual representations and properties. (Bloom's Taxonomy: Understanding)
+
+**Specification:**
+
+Create a side-by-side comparison diagram of rays and line segments.
+
+**Canvas:** 700px × 400px, background: #F5F5F5
+
+**Layout:** Two panels, side by side
+
+**Left Panel: Rays (350px × 400px)**
+- Background: Light blue gradient (#E3F2FD to #BBDEFB)
+- Title: "Rays" (bold, 20pt)
+- Show two rays:
+  - **Ray 1:** $\overrightarrow{AB}$ horizontal, pointing right
+    - Endpoint A (solid red dot, 8px)
+    - Point B (solid blue dot, 6px) midway along ray
+    - Arrow on right end only
+    - Label: $\overrightarrow{AB}$
+  - **Ray 2:** $\overrightarrow{CD}$ at 45° angle, pointing up-right
+    - Endpoint C (solid red dot, 8px)
+    - Point D (solid blue dot, 6px) midway along ray
+    - Arrow on up-right end only
+    - Label: $\overrightarrow{CD}$
+- Callout box: "Starts at an endpoint" (pointing to point A)
+- Callout box: "Extends infinitely" (pointing to arrow)
+- Bottom annotation: "One endpoint + infinite extension"
+
+**Right Panel: Line Segments (350px × 400px)**
+- Background: Light green gradient (#E8F5E9 to #C8E6C9)
+- Title: "Line Segments" (bold, 20pt)
+- Show two segments:
+  - **Segment 1:** $\overline{PQ}$ horizontal
+    - Endpoint P (solid purple dot, 8px)
+    - Endpoint Q (solid purple dot, 8px)
+    - No arrows on either end
+    - Label: $\overline{PQ}$
+    - Length measurement: "5 cm" above segment
+  - **Segment 2:** $\overline{RS}$ vertical
+    - Endpoint R (solid purple dot, 8px)
+    - Endpoint S (solid purple dot, 8px)
+    - No arrows on either end
+    - Label: $\overline{RS}$
+    - Length measurement: "3 cm" to the right
+- Callout box: "Has two endpoints" (pointing to endpoints)
+- Callout box: "Measurable length" (pointing to measurement)
+- Bottom annotation: "Two endpoints + finite length"
+
+**Middle Divider:**
+- Vertical dashed line (2px, gray) separating the panels
+- Label: "vs."
+
+**Implementation:** SVG or p5.js canvas with clear labels, endpoints, and measurements
+
+</details>
+
+<h3 id="midpoint">Midpoint</h3>
+<p>The <strong>midpoint</strong> of a line segment is the point that divides the segment into two equal parts. It's exactly halfway between the endpoints.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Located exactly at the center of a segment</li>
+<li>Divides the segment into two congruent (equal length) parts</li>
+<li>Every segment has exactly one midpoint</li>
+</ul>
+<p>If point <span class="arithmatex">\(M\)</span> is the midpoint of <span class="arithmatex">\(\overline{AB}\)</span>, then <span class="arithmatex">\(AM = MB\)</span> and <span class="arithmatex">\(AM + MB = AB\)</span>.</p>
+<p><strong>Finding the midpoint:</strong> If you know the coordinates of the endpoints, you can find the midpoint using the midpoint formula:</p>
+<p>For segment <span class="arithmatex">\(\overline{AB}\)</span> with endpoints <span class="arithmatex">\(A(x_1, y_1)\)</span> and <span class="arithmatex">\(B(x_2, y_2)\)</span>, the midpoint <span class="arithmatex">\(M\)</span> has coordinates:</p>
+<div class="arithmatex">\[M = \left(\frac{x_1 + x_2}{2}, \frac{x_1 + y_2}{2}\right)\]</div>
+<p>In other words, average the <span class="arithmatex">\(x\)</span>-coordinates and average the <span class="arithmatex">\(y\)</span>-coordinates!</p>
+<h2 id="angles-and-vertices">Angles and Vertices</h2>
+<h3 id="angle">Angle</h3>
+<p>An <strong>angle</strong> is formed by two rays that share a common endpoint. Angles measure the amount of rotation between the two rays.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Formed by two rays (called <strong>sides</strong> of the angle)</li>
+<li>The rays share a common endpoint (called the <strong>vertex</strong>)</li>
+<li>Measured in degrees (°) or radians</li>
+<li>Named by three points or by the vertex</li>
+</ul>
+<p><strong>Angle notation:</strong></p>
+<ul>
+<li>Three-point notation: <span class="arithmatex">\(\angle ABC\)</span> where <span class="arithmatex">\(B\)</span> is the vertex</li>
+<li>Vertex notation: <span class="arithmatex">\(\angle B\)</span> (when there's no confusion)</li>
+<li>Number notation: <span class="arithmatex">\(\angle 1\)</span>, <span class="arithmatex">\(\angle 2\)</span>, etc.</li>
+</ul>
+<h3 id="vertex">Vertex</h3>
+<p>The <strong>vertex</strong> of an angle is the common endpoint where the two rays meet. It's the "corner" of the angle and the point of rotation.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>The point where two rays meet</li>
+<li>The center point of the angle</li>
+<li>Always named as the middle letter in three-point angle notation</li>
+</ul>
+<p>Think of a vertex like the hinge of a door—it's the fixed point around which rotation occurs.</p>
+<h4 id="microsim-angle-builder">MicroSim: Angle Builder</h4>
+<details markdown="1">
+<summary>Interactive angle creation and measurement</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **create** angles of various measures and **analyze** the relationship between ray positions and angle measurements. (Bloom's Taxonomy: Creating, Analyzing)
+
+**Specification:**
+
+Create an interactive p5.js simulation for building and measuring angles.
+
+**Canvas:** 800px × 600px, background: white
+
+**Main Display:**
+- Fixed vertex at center of canvas (300, 300)
+- Vertex shown as large blue dot (10px diameter)
+- Label: "Vertex V" next to the vertex point
+
+**Ray 1 (Fixed):**
+- Starts at vertex, extends horizontally to the right
+- Color: Blue (#1976D2), 3px thickness
+- Arrow on end
+- Label: "Ray 1" near the arrow
+
+**Ray 2 (Rotatable):**
+- Starts at vertex, rotates around it
+- Color: Red (#E53935), 3px thickness
+- Arrow on end
+- Label: "Ray 2" near the arrow
+
+**Angle Display:**
+- Arc showing the angle between rays
+- Arc color: Green (#43A047), 2px thickness
+- Arc radius: 60px from vertex
+- Angle label: "$\angle 1 = $ [value]°" inside the arc
+
+**Controls (bottom panel):**
+- Slider: "Rotate Ray 2" (0° - 360°)
+  - Position: Bottom center
+  - Width: 400px
+  - Label above showing current angle value
+- Button: "Reset to 0°"
+- Button: "Random Angle"
+- Dropdown: "Snap to:" [15° | 30° | 45° | 90° | Custom]
+
+**Interactive Features:**
+- Drag Ray 2 to rotate (in addition to slider)
+- Angle value updates in real-time
+- Arc color changes based on angle type:
+  - 0°-89°: Green (acute)
+  - 90°: Purple (right)
+  - 91°-179°: Orange (obtuse)
+  - 180°: Red (straight)
+
+**Visual Feedback:**
+- Angle classification displayed: "Acute Angle", "Right Angle", "Obtuse Angle", or "Straight Angle"
+- Complementary angle shown in small text: "Complementary: [90-angle]°" (when angle < 90°)
+- Supplementary angle shown: "Supplementary: [180-angle]°"
+
+**Implementation:** p5.js with createSlider(), rotation transformations, and arc()
+
+</details>
+
+<h2 id="relationships-between-points-and-lines">Relationships Between Points and Lines</h2>
+<h3 id="collinear-points">Collinear Points</h3>
+<p>Points are <strong>collinear</strong> if they all lie on the same line. Any two points are always collinear (you can always draw a line through two points), but three or more points may or may not be collinear.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>The centers of three cities along a straight highway are collinear</li>
+<li>The corners of a triangle are NOT collinear (if they were, you couldn't make a triangle!)</li>
+<li>Points A, B, and C are collinear if A, B, and C all lie on line <span class="arithmatex">\(\overleftrightarrow{AC}\)</span></li>
+</ul>
+<h3 id="coplanar-points">Coplanar Points</h3>
+<p>Points are <strong>coplanar</strong> if they all lie on the same plane. Any three points are always coplanar (you can always fit a plane through three points), but four or more points may or may not be coplanar.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>The four corners of a rectangular table are coplanar</li>
+<li>The four corners of a pyramid are NOT all coplanar</li>
+<li>All points in a 2D drawing are coplanar (they're all on the paper)</li>
+</ul>
+<h4 id="diagram-collinear-and-coplanar-points">Diagram: Collinear and Coplanar Points</h4>
+<details markdown="1">
+<summary>Visual examples of collinear and coplanar arrangements</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **analyze** point arrangements to determine whether sets of points are collinear or coplanar. (Bloom's Taxonomy: Analyzing)
+
+**Specification:**
+
+Create a four-panel diagram showing examples and non-examples of collinear and coplanar points.
+
+**Canvas:** 900px × 600px, background: #FAFAFA
+
+**Layout:** 2×2 grid, each panel 450px × 300px
+
+**Panel 1: Collinear Points (Top Left)**
+- Background: Light green (#E8F5E9)
+- Title: "Collinear Points ✓"
+- Show a blue line extending horizontally
+- Place 4 points on the line: A, B, C, D (evenly spaced)
+- Points: Red circles, 8px diameter
+- Label each point
+- Annotation: "All points lie on the same line"
+- Bottom text: "Points A, B, C, D are collinear"
+
+**Panel 2: Non-Collinear Points (Top Right)**
+- Background: Light red (#FFEBEE)
+- Title: "Non-Collinear Points ✗"
+- Show 3 points: P, Q, R forming a triangle
+- Points: Red circles, 8px diameter
+- Dashed lines connecting all three points (forming triangle)
+- Label each point
+- Annotation: "Points do not all lie on same line"
+- Bottom text: "Points P, Q, R are NOT collinear"
+
+**Panel 3: Coplanar Points (Bottom Left)**
+- Background: Light blue (#E3F2FD)
+- Title: "Coplanar Points ✓"
+- Show a parallelogram representing a plane (semi-transparent purple with grid)
+- Place 5 points scattered on the plane: W, X, Y, Z, V
+- Points: Blue circles, 8px diameter
+- Label each point
+- Annotation: "All points lie on the same plane"
+- Bottom text: "Points W, X, Y, Z, V are coplanar"
+
+**Panel 4: Non-Coplanar Points (Bottom Right)**
+- Background: Light orange (#FFF3E0)
+- Title: "Non-Coplanar Points ✗"
+- 3D perspective view showing:
+  - A horizontal plane (semi-transparent blue)
+  - Three points on plane: M, N, O
+  - One point above plane: P (with dashed line to plane showing it's elevated)
+- Points: Blue circles, 8px diameter
+- Label each point
+- Annotation: "Point P is not on the same plane as M, N, O"
+- Bottom text: "Points M, N, O, P are NOT coplanar"
+
+**Implementation:** SVG or Canvas with 3D perspective for Panel 4
+
+</details>
+
+<h3 id="intersection">Intersection</h3>
+<p>An <strong>intersection</strong> is the set of points that two or more figures have in common. When geometric objects cross or overlap, their intersection is where they meet.</p>
+<p><strong>Common intersections:</strong></p>
+<ul>
+<li><strong>Two lines:</strong> Intersect at a point (or are parallel/same line)</li>
+<li><strong>Line and plane:</strong> Intersect at a point (or line is in plane/parallel to plane)</li>
+<li><strong>Two planes:</strong> Intersect at a line (or are parallel/same plane)</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Two roads crossing at an intersection point</li>
+<li>A pencil (line) touching paper (plane) at one point</li>
+<li>Two walls (planes) meeting at a corner (line)</li>
+</ul>
+<h2 id="special-line-relationships">Special Line Relationships</h2>
+<h3 id="parallel-lines">Parallel Lines</h3>
+<p>Two lines are <strong>parallel</strong> if they lie in the same plane and never intersect, no matter how far they're extended. Parallel lines are always the same distance apart.</p>
+<p><strong>Notation:</strong> Line <span class="arithmatex">\(AB\)</span> is parallel to line <span class="arithmatex">\(CD\)</span> is written as <span class="arithmatex">\(\overleftrightarrow{AB} \parallel \overleftrightarrow{CD}\)</span></p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Lie in the same plane (coplanar)</li>
+<li>Never intersect</li>
+<li>Always the same distance apart</li>
+<li>Have the same slope (in coordinate geometry)</li>
+</ul>
+<p><strong>Examples:</strong> Railroad tracks, opposite sides of a rectangle, lines of latitude on a globe (approximately)</p>
+<h3 id="perpendicular-lines">Perpendicular Lines</h3>
+<p>Two lines are <strong>perpendicular</strong> if they intersect at a right angle (90°). The symbol ⊥ means "is perpendicular to."</p>
+<p><strong>Notation:</strong> Line <span class="arithmatex">\(AB\)</span> is perpendicular to line <span class="arithmatex">\(CD\)</span> is written as <span class="arithmatex">\(\overleftrightarrow{AB} \perp \overleftrightarrow{CD}\)</span></p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Intersect at exactly one point</li>
+<li>Form four right angles at the intersection</li>
+<li>Their slopes are negative reciprocals (in coordinate geometry)</li>
+</ul>
+<p><strong>Examples:</strong> The corner of a room where two walls meet, the hands of a clock at 3:00 or 9:00, the x and y axes on a coordinate plane</p>
+<h3 id="skew-lines">Skew Lines</h3>
+<p>Two lines are <strong>skew</strong> if they don't lie in the same plane (non-coplanar) and never intersect. Skew lines are not parallel because parallel lines must be coplanar.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Do NOT lie in the same plane</li>
+<li>Never intersect</li>
+<li>Are NOT parallel (parallel requires being coplanar)</li>
+<li>Only exist in three-dimensional space</li>
+</ul>
+<p><strong>Examples:</strong> A highway overpass and the road beneath it (going in different directions), opposite edges of a rectangular box that don't share a corner</p>
+<h4 id="diagram-line-relationships-in-3d">Diagram: Line Relationships in 3D</h4>
+<details markdown="1">
+<summary>3D visualization of parallel, perpendicular, and skew lines</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **understand** the differences between parallel, perpendicular, and skew line relationships, especially in three-dimensional space. (Bloom's Taxonomy: Understanding)
+
+**Specification:**
+
+Create a 3D box diagram showing all three line relationships.
+
+**Canvas:** 800px × 600px, background: Linear gradient from #E3F2FD (top) to #F5F5F5 (bottom)
+
+**Main Element:**
+- Draw a rectangular prism (box) in 3D perspective
+- Dimensions: 300 × 200 × 150 (width × height × depth)
+- Box edges: Black, 2px
+- Box faces: Semi-transparent white (#FFFFFF at 40%)
+- Position: Slightly rotated to show 3 faces clearly
+
+**Parallel Lines (shown in blue):**
+- Highlight two vertical edges on opposite sides of box
+- Color: Blue (#1976D2), 4px thickness
+- Labels: "Line m" and "Line n"
+- Annotation box: "Parallel lines: Same plane, never intersect"
+- Add || symbol between the lines
+
+**Perpendicular Lines (shown in red):**
+- Highlight one vertical edge and one horizontal edge that meet at a corner
+- Color: Red (#E53935), 4px thickness
+- Labels: "Line p" and "Line q"
+- Small square symbol at the intersection (90° indicator)
+- Annotation box: "Perpendicular lines: Intersect at 90°"
+- Add ⊥ symbol at intersection
+
+**Skew Lines (shown in green):**
+- Highlight one edge on front face and one edge on back face that don't meet
+- Color: Green (#43A047), 4px thickness
+- Labels: "Line r" and "Line s"
+- Dashed line showing shortest distance between them
+- Annotation box: "Skew lines: Different planes, never intersect"
+
+**Legend (bottom right corner):**
+- Three colored bars with labels:
+  - Blue bar: "Parallel (coplanar, no intersection)"
+  - Red bar: "Perpendicular (intersect at 90°)"
+  - Green bar: "Skew (non-coplanar, no intersection)"
+
+**Title:** "Line Relationships in 3D Space" (top, 24pt bold)
+
+**Implementation:** SVG with 3D perspective transformations or p5.js with custom projection
+
+</details>
+
+<h2 id="mathematical-reasoning-finding-patterns-and-proving-ideas">Mathematical Reasoning: Finding Patterns and Proving Ideas</h2>
+<p>Geometry isn't just about shapes—it's about thinking logically and making convincing arguments. Mathematicians use two main types of reasoning to explore patterns and prove their discoveries.</p>
+<h3 id="inductive-reasoning">Inductive Reasoning</h3>
+<p><strong>Inductive reasoning</strong> is the process of reaching a general conclusion based on observing patterns in specific examples. You start with specific cases and look for a common pattern, then make a generalization.</p>
+<p><strong>Steps in inductive reasoning:</strong></p>
+<ol>
+<li>Observe specific examples</li>
+<li>Look for a pattern</li>
+<li>Make a general conclusion (conjecture)</li>
+</ol>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Observation 1:</strong> <span class="arithmatex">\(2 + 4 = 6\)</span> (even)</li>
+<li><strong>Observation 2:</strong> <span class="arithmatex">\(8 + 12 = 20\)</span> (even)</li>
+<li><strong>Observation 3:</strong> <span class="arithmatex">\(14 + 26 = 40\)</span> (even)</li>
+<li><strong>Pattern:</strong> When I add two even numbers, I always get an even number</li>
+<li><strong>Conjecture:</strong> The sum of any two even numbers is always even</li>
+</ul>
+<p><strong>Strength:</strong> Great for discovering patterns and making new conjectures</p>
+<p><strong>Limitation:</strong> Doesn't guarantee the conclusion is true—you might not have checked all cases!</p>
+<h3 id="deductive-reasoning">Deductive Reasoning</h3>
+<p><strong>Deductive reasoning</strong> is the process of using logic to draw conclusions from accepted facts, definitions, and previously proven statements. You start with general principles and apply them to specific situations.</p>
+<p><strong>Steps in deductive reasoning:</strong></p>
+<ol>
+<li>Start with accepted facts (postulates, definitions, proven theorems)</li>
+<li>Apply logical rules</li>
+<li>Reach a specific conclusion that must be true</li>
+</ol>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Given fact 1:</strong> All rectangles have four right angles</li>
+<li><strong>Given fact 2:</strong> Figure ABCD is a rectangle</li>
+<li><strong>Logical conclusion:</strong> Figure ABCD has four right angles (this MUST be true)</li>
+</ul>
+<p><strong>Strength:</strong> Guarantees that if your starting facts are true and your logic is correct, your conclusion is definitely true</p>
+<p><strong>Use in geometry:</strong> Deductive reasoning is used to write mathematical proofs</p>
+<h3 id="conjecture">Conjecture</h3>
+<p>A <strong>conjecture</strong> is an unproven statement that you believe to be true based on observations. Conjectures come from inductive reasoning and often become theorems once they're proven using deductive reasoning.</p>
+<p><strong>Famous conjectures:</strong></p>
+<ul>
+<li><strong>Goldbach's Conjecture:</strong> Every even number greater than 2 can be written as the sum of two prime numbers (unproven for over 250 years!)</li>
+<li><strong>Four Color Conjecture:</strong> Any map can be colored with just four colors so that neighboring regions have different colors (proven in 1976, now a theorem)</li>
+</ul>
+<h3 id="counterexample">Counterexample</h3>
+<p>A <strong>counterexample</strong> is a specific example that shows a conjecture is false. Finding just one counterexample is enough to disprove a conjecture—no matter how many examples supported it!</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Conjecture:</strong> All prime numbers are odd</li>
+<li><strong>Counterexample:</strong> 2 is prime and 2 is even</li>
+<li><strong>Conclusion:</strong> The conjecture is FALSE (disproven by one counterexample)</li>
+</ul>
+<p><strong>Power of counterexamples:</strong> You can test thousands of cases and a conjecture seems true, but one counterexample proves it's false!</p>
+<h4 id="microsim-reasoning-detective">MicroSim: Reasoning Detective</h4>
+<details markdown="1">
+<summary>Interactive reasoning challenge game</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **evaluate** mathematical statements by applying inductive and deductive reasoning, and **create** counterexamples to disprove false conjectures. (Bloom's Taxonomy: Evaluating, Creating)
+
+**Specification:**
+
+Create an interactive game where students practice inductive reasoning, deductive reasoning, and finding counterexamples.
+
+**Canvas:** 900px × 700px, background: #F5F5F5
+
+**Game Structure:**
+
+**Top Section: Problem Display (900px × 300px)**
+- Background: White with light blue border
+- Large text area showing current problem
+- Problem types rotate:
+  1. **Inductive Challenge:** "Look at these examples... What pattern do you see?"
+  2. **Deductive Challenge:** "Given these facts... What can you conclude?"
+  3. **Counterexample Hunt:** "Is this conjecture true? Find a counterexample!"
+
+**Middle Section: Interactive Area (900px × 250px)**
+- Background: Light yellow (#FFF9C4)
+- Content changes based on problem type:
+
+**For Inductive Challenges:**
+  - Show 3-4 visual examples (shapes, numbers, patterns)
+  - Multiple choice: "What's the pattern?" with 4 options
+  - Feedback when answer selected
+
+**For Deductive Challenges:**
+  - Display given facts in boxes
+  - Logical steps shown as flowchart
+  - Fill-in-the-blank for conclusion
+
+**For Counterexample Challenges:**
+  - Display a conjecture
+  - Interactive number pad or shape builder
+  - "Test this" button to check if input is a counterexample
+  - Feedback: "Not a counterexample" or "✓ You found one!"
+
+**Bottom Section: Score & Controls (900px × 150px)**
+- Score display: "Correct: X | Attempts: Y"
+- Progress bar showing current level
+- Buttons: "New Problem" | "Hint" | "Explain Answer"
+- Reasoning type indicator: "Current mode: Inductive Reasoning"
+
+**Sample Problems:**
+
+**Inductive Example 1:**
+- Show shapes: Triangle (3 sides, 180°), Square (4 sides, 360°), Pentagon (5 sides, 540°)
+- Question: "What's the pattern for interior angle sum?"
+- Options: "Add 180° for each side" | "Multiply sides by 90°" | "(n-2) × 180°" | "n × 180°"
+
+**Deductive Example 1:**
+- Fact 1: "All squares have four equal sides"
+- Fact 2: "Figure ABCD is a square"
+- Question: "What can you conclude?" → Answer: "ABCD has four equal sides"
+
+**Counterexample Example 1:**
+- Conjecture: "If a number ends in 5, it's divisible by 10"
+- Input: Number pad
+- Test: "15" → "✓ Counterexample! 15 ends in 5 but isn't divisible by 10"
+
+**Visual Feedback:**
+- Correct answers: Green checkmark animation, +10 points, encouraging message
+- Incorrect answers: Red X, explanation of why it's wrong, hint offered
+- Counterexample found: Gold star animation, "Great reasoning!"
+
+**Difficulty Progression:**
+- Levels 1-3: Simple patterns, basic logic
+- Levels 4-6: Multi-step reasoning
+- Levels 7-9: Complex patterns, tricky counterexamples
+- Level 10: Mixed challenge round
+
+**Implementation:** p5.js with problem bank (JSON), DOM input elements, and animation feedback
+
+</details>
+
+<h2 id="putting-it-all-together-the-language-of-geometry">Putting It All Together: The Language of Geometry</h2>
+<p>You've now learned the fundamental building blocks of geometry and how to reason about them. Let's summarize the key ideas:</p>
+<p><strong>The Undefined Terms:</strong> Point, Line, and Plane form the foundation—everything else is built from these three concepts.</p>
+<p><strong>Building Blocks:</strong> From points, lines, and planes, we create rays, segments, angles, and more complex figures.</p>
+<p><strong>Relationships:</strong></p>
+<ul>
+<li>Points can be collinear (on the same line) or coplanar (on the same plane)</li>
+<li>Lines can be parallel (never intersect, coplanar), perpendicular (intersect at 90°), or skew (non-coplanar, never intersect)</li>
+</ul>
+<p><strong>Mathematical Reasoning:</strong></p>
+<ul>
+<li><strong>Inductive reasoning:</strong> Observe patterns → Make conjectures (might be wrong!)</li>
+<li><strong>Deductive reasoning:</strong> Use logic and accepted facts → Prove conclusions (guaranteed correct if logic is sound)</li>
+<li><strong>Counterexamples:</strong> Find one case where a conjecture fails → Disprove the conjecture</li>
+</ul>
+<h4 id="diagram-concept-map-of-chapter-1">Diagram: Concept Map of Chapter 1</h4>
+<details markdown="1">
+<summary>Visual summary of all concepts and their relationships</summary>
+
+**Type:** Interactive Infographic
+
+**Learning Objective:** Students will **evaluate** their understanding of the chapter by exploring connections between concepts and **remember** key definitions and relationships. (Bloom's Taxonomy: Remembering, Evaluating)
+
+**Specification:**
+
+Create an interactive concept map showing all 18 concepts and their relationships.
+
+**Canvas:** 1000px × 800px, background: Radial gradient from white (center) to light blue (#E3F2FD)
+
+**Layout:** Hub-and-spoke with hierarchical organization
+
+**Center Hub:**
+- Large circle (80px diameter): "Foundations of Geometry"
+- Color: Dark blue (#1565C0)
+- Text: White, bold
+
+**First Ring - Undefined Terms (closest to center):**
+- Three circles around hub:
+  1. "Point" (red, 60px)
+  2. "Line" (blue, 60px)
+  3. "Plane" (green, 60px)
+- Lines connecting each to center hub
+
+**Second Ring - Basic Objects:**
+- Six circles:
+  - "Ray" (connects to Line)
+  - "Line Segment" (connects to Line)
+  - "Angle" (connects to Ray)
+  - "Vertex" (connects to Angle)
+  - "Midpoint" (connects to Line Segment)
+  - "Intersection" (connects to multiple: Line, Plane)
+- Each labeled with icon and text
+
+**Third Ring - Point Relationships:**
+- Two circles:
+  - "Collinear Points" (connects to Line)
+  - "Coplanar Points" (connects to Plane)
+
+**Third Ring - Line Relationships:**
+- Three circles:
+  - "Parallel Lines" (connects to Line)
+  - "Perpendicular Lines" (connects to Line, Angle)
+  - "Skew Lines" (connects to Line, Plane)
+
+**Fourth Ring (outer) - Reasoning:**
+- Four circles:
+  - "Inductive Reasoning" (orange)
+  - "Deductive Reasoning" (orange)
+  - "Conjecture" (connects to Inductive)
+  - "Counterexample" (connects to Conjecture)
+
+**Interactive Features:**
+- **Hover over any concept:**
+  - Circle enlarges slightly
+  - Tooltip appears with definition
+  - Connected concepts highlight in yellow
+- **Click on concept:**
+  - Full definition panel slides in from right
+  - Shows examples and non-examples
+  - "Related Concepts" section highlights connections
+- **Legend button:** Shows color coding:
+  - Red = Undefined Terms
+  - Blue = Objects
+  - Green = Relationships
+  - Orange = Reasoning
+
+**Visual Design:**
+- Connecting lines: Gray, 2px, with arrows showing dependency
+- Circle colors: As specified above
+- Labels: Black text, 12pt, positioned outside circles
+- Shadow effects on circles for depth
+
+**Implementation:** vis.js network or custom p5.js with node positioning and interaction handlers
+
+</details>
+
+<h2 id="practice-problems">Practice Problems</h2>
+<p>Now it's your turn! Try these problems to test your understanding:</p>
+<p><strong>Problem 1:</strong> Name three collinear points in this diagram:</p>
+<p><em>(Imagine a diagram showing points A, B, C on a line, and point D off the line)</em></p>
+<p><strong>Problem 2:</strong> If <span class="arithmatex">\(M\)</span> is the midpoint of <span class="arithmatex">\(\overline{AB}\)</span> and <span class="arithmatex">\(AM = 7\)</span> cm, what is the length of <span class="arithmatex">\(\overline{AB}\)</span>?</p>
+<p><strong>Problem 3:</strong> Use inductive reasoning to make a conjecture: What is the sum of the first <span class="arithmatex">\(n\)</span> odd numbers?</p>
+<ul>
+<li>First odd number: <span class="arithmatex">\(1 = 1\)</span></li>
+<li>First two odd numbers: <span class="arithmatex">\(1 + 3 = 4\)</span></li>
+<li>First three odd numbers: <span class="arithmatex">\(1 + 3 + 5 = 9\)</span></li>
+<li>First four odd numbers: <span class="arithmatex">\(1 + 3 + 5 + 7 = 16\)</span></li>
+</ul>
+<p><strong>Problem 4:</strong> Find a counterexample to disprove this conjecture: "If two angles are supplementary, then they are both acute."</p>
+<p><strong>Problem 5:</strong> Lines <span class="arithmatex">\(j\)</span> and <span class="arithmatex">\(k\)</span> are both perpendicular to line <span class="arithmatex">\(m\)</span>. What is the relationship between lines <span class="arithmatex">\(j\)</span> and <span class="arithmatex">\(k\)</span>? Use deductive reasoning to explain.</p>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In the next chapter, you'll learn about <strong>Logic and Proof</strong>—the formal system for using deductive reasoning to prove geometric statements with absolute certainty. You'll explore conditional statements, write mathematical proofs in multiple formats, and understand why mathematicians rely on logical arguments rather than just measurements and observations.</p>
+<p>The foundation you've built in this chapter—understanding undefined terms, recognizing geometric relationships, and distinguishing between inductive and deductive reasoning—will be essential as you learn to construct rigorous mathematical proofs!</p>
+<hr />
+<p><strong>Chapter 1 Summary</strong></p>
+<p>You've learned:</p>
+<ul>
+<li>The three <strong>undefined terms</strong> (point, line, plane) that form geometry's foundation</li>
+<li>How to build <strong>basic geometric objects</strong> (rays, segments, angles, vertices)</li>
+<li>How to identify <strong>point relationships</strong> (collinear, coplanar)</li>
+<li>How to classify <strong>line relationships</strong> (parallel, perpendicular, skew)</li>
+<li>The difference between <strong>inductive and deductive reasoning</strong></li>
+<li>How to make <strong>conjectures</strong> and find <strong>counterexamples</strong></li>
+<li>How to find the <strong>midpoint</strong> of a segment</li>
+</ul>
+<p>These fundamental concepts will appear throughout your geometry course. Every theorem you prove, every shape you analyze, and every problem you solve will rely on the precise language and reasoning skills you've developed in this chapter!</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02-logic-and-proof/" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Logic and Proof">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                2. Logic and Proof
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
