@@ -44,7 +44,10 @@ Geometry is the study of shapes, sizes, and positions of objects in space. Just 
 
 In this chapter, you'll discover how mathematicians construct an entire logical system from just three undefined terms: point, line, and plane. You'll also learn two powerful types of reasoning that allow you to make discoveries and prove your ideas with certainty.
 
-#### Diagram: The Three Undefined Terms
+#### Diagram: Point Line and Plane
+
+<iframe src="../../sims/point-line-plane/main.html" height="500px"><iframe>
+[Run Point Line Plane](../../sims/point-line-plane/main.html)
 
 <details markdown="1">
 <summary>Visual representation of point, line, and plane</summary>

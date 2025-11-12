@@ -1,0 +1,135 @@
+{
+  "title": "Point, Line, Plane - The Three Undefined Terms",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Undefined Terms",
+    "Foundational Concepts"
+  ],
+  "description": "A visual diagram MicroSim showing the three fundamental undefined terms of geometry (point, line, plane) with their properties, visual representations, and proper geometric notation. Features interactive toggle for annotations.",
+  "date": "2025-11-12",
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Mathematics",
+    "topic": "Geometry Foundations",
+    "learningObjectives": [
+      "Remember the three undefined terms of geometry (point, line, plane)",
+      "Understand visual representations and basic properties of undefined terms",
+      "Recognize proper geometric notation for naming points, lines, and planes",
+      "Distinguish between the three undefined terms based on their dimensional properties"
+    ],
+    "bloomsTaxonomy": [
+      "Remembering",
+      "Understanding"
+    ],
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Basic understanding of spatial relationships",
+      "Familiarity with coordinate systems (helpful but not required)"
+    ],
+    "standards": [
+      "CCSS.MATH.CONTENT.HSG.CO.A.1"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "900 (responsive, minimum)",
+      "height": "550"
+    },
+    "responsive": "Width-responsive with minimum width requirement",
+    "dependencies": [
+      "p5.js CDN"
+    ],
+    "accessibility": [
+      "describe() function for screen readers",
+      "High contrast color scheme",
+      "Clear labels and text"
+    ]
+  },
+  "userInterface": {
+    "controls": [
+      {
+        "type": "checkbox",
+        "name": "Show Annotations",
+        "description": "Toggle display of detailed property annotations for each undefined term",
+        "default": true
+      }
+    ],
+    "panels": [
+      {
+        "name": "Point",
+        "backgroundColor": "#E3F2FD",
+        "elements": [
+          "Main point labeled A",
+          "Additional example points (B, C, D, E)",
+          "Property annotations"
+        ]
+      },
+      {
+        "name": "Line",
+        "backgroundColor": "#E8F5E9",
+        "elements": [
+          "Line with directional arrows",
+          "Two labeled points (P, Q)",
+          "Proper line notation with symbol",
+          "Property annotations"
+        ]
+      },
+      {
+        "name": "Plane",
+        "backgroundColor": "#FFF9C4",
+        "elements": [
+          "3D perspective parallelogram with grid",
+          "Three non-collinear points (X, Y, Z)",
+          "Property annotations"
+        ]
+      }
+    ]
+  },
+  "simulationModel": {
+    "modelType": "Static visual diagram with interactive annotation toggle",
+    "concepts": [
+      "Point: 0-dimensional position with no size",
+      "Line: 1-dimensional infinite straight path with no thickness",
+      "Plane: 2-dimensional infinite flat surface with no thickness"
+    ],
+    "visualFeatures": [
+      "Color-coded panels for each term",
+      "Multiple examples of proper geometric notation",
+      "3D perspective representation for plane",
+      "Directional arrows showing infinite extension"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Visual representation with progressive disclosure",
+    "keyQuestions": [
+      "What are the three undefined terms of geometry?",
+      "How many dimensions does each undefined term have?",
+      "Why are these terms called 'undefined'?",
+      "How do we name each of these geometric objects?"
+    ],
+    "commonMisconceptions": [
+      "Points have size (they don't—they only have position)",
+      "Lines have endpoints (they extend infinitely)",
+      "Planes have edges (they extend infinitely in all directions)"
+    ],
+    "assessmentOpportunities": [
+      "Identify undefined terms in real-world contexts",
+      "Name geometric objects using proper notation",
+      "Explain dimensional properties of each term",
+      "Distinguish between defined and undefined terms"
+    ]
+  }
+}

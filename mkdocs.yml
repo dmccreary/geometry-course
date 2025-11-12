@@ -50,6 +50,7 @@ nav:
   
   - MicroSims:
     - Introduction: sims/index.md
+    - Point, Line, Plane: sims/point-line-plane/index.md
     - Graph Viewer: sims/graph-viewer/index.md
     - Word Cloud: sims/word-cloud/index.md
     - Angle Explorer: sims/angle-explorer/index.md
