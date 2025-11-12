@@ -231,6 +231,96 @@ $$A = \frac{1}{2}a(ns)$$
 
 where $n$ is the number of sides and $s$ is the side length.
 
+#### MicroSim: Regular Polygon Area Explorer
+
+<details markdown="1">
+<summary>Interactive exploration of regular polygon areas</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **apply** the regular polygon area formula to polygons with different numbers of sides, and **analyze** how the apothem, perimeter, and number of sides affect the total area. (Bloom's Taxonomy: Applying, Analyzing)
+
+**Specification:**
+
+Create an interactive p5.js simulation for exploring regular polygon areas.
+
+**Canvas:** 900px × 700px, background: white
+
+**Main Display (left panel, x = 0-550):**
+- Draw regular polygon centered at (275, 300)
+- Polygon size adjustable (radius from center to vertex: 100-200px)
+- Fill polygon with semi-transparent color that changes by number of sides
+- Outline in dark color (3px stroke)
+
+**Polygon Visualization:**
+- Draw all sides in bold outline
+- Draw apothem from center perpendicular to one side (red dashed line, 2px)
+- Draw radius from center to vertex (blue solid line, 2px)
+- Label apothem: "a = [value] units" in red
+- Label radius: "r = [value] units" in blue
+- Shade one triangle from center (to show subdivision)
+- Show all triangular subdivisions faintly
+
+**Measurements Display (upper right, x = 580-880):**
+- Box with light blue background (#E3F2FD)
+- Title: "Polygon Properties" (bold, 18pt)
+- Display (16pt):
+  - Number of sides (n): [value]
+  - Polygon name: [Triangle, Square, Pentagon, Hexagon, Heptagon, Octagon]
+  - Side length (s): [calculated] units
+  - Apothem (a): [value] units
+  - Perimeter (P): [n × s] units
+  - Area: [calculated] square units (bold, blue, 20pt)
+
+**Formula Box (middle right, x = 580-880):**
+- Light yellow background (#FFF9C4)
+- Title: "Area Formula" (bold, 18pt)
+- Show (16pt):
+  - $A = \frac{1}{2}aP$
+  - $A = \frac{1}{2}a(ns)$
+  - Substitution with current values
+  - Final calculation
+
+**Controls (bottom panel, y = 600-680):**
+- Slider: "Number of Sides (n)" (3-12, default 6, step 1)
+  - Position: (50, 620), width: 400px
+  - Display current n and polygon name below slider
+- Slider: "Polygon Size" (100-200, default 150, step 10)
+  - Position: (50, 660), width: 400px
+  - Label: "Radius from center"
+- Button: "Show Triangle Subdivision" (toggle) at (500, 620)
+- Button: "Rotate Polygon" (animate rotation) at (500, 660)
+
+**Interactive Features:**
+- Real-time area calculation as sliders move
+- Smooth polygon transformation when changing number of sides
+- Color changes with number of sides:
+  - Triangle: Red theme
+  - Square: Orange theme
+  - Pentagon: Yellow theme
+  - Hexagon: Green theme
+  - Heptagon: Cyan theme
+  - Octagon: Blue theme
+  - 9+: Purple theme
+- Highlight one triangular section to show subdivision method
+- Optional rotation animation
+
+**Educational Notes Panel (bottom right):**
+- Collapsible info box
+- Note: "As n increases, the polygon approaches a circle!"
+- Show comparison: "A regular 12-gon with radius r has area ≈ $0.866\pi r^2$, very close to a circle's $\pi r^2$"
+
+**Color Scheme:**
+- Background: White
+- Polygon fills: Theme colors (semi-transparent, 40% opacity)
+- Polygon outlines: Dark versions of theme colors
+- Apothem: Red dashed
+- Radius: Blue solid
+- UI backgrounds: Light blue, yellow, white
+- Text: Black for labels, blue for calculated area
+
+</details>
+
 ---
 
 ## Part 2: Circles
@@ -253,6 +343,89 @@ where $d$ is diameter and $r$ is radius.
 **Area formula:**
 
 $$A = \pi r^2$$
+
+#### Diagram: Comparing Perimeter and Circumference
+
+<details markdown="1">
+<summary>Visual comparison of polygon perimeters approaching circle circumference</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **understand** how regular polygon perimeters approach the circumference of a circle as the number of sides increases, and **analyze** this limiting relationship visually. (Bloom's Taxonomy: Understanding, Analyzing)
+
+**Specification:**
+
+Create a colorful diagram showing how polygons approximate circles.
+
+**Layout:** 1000px wide × 600px tall
+
+**Main Visualization (center):**
+- Draw four overlapping shapes, all with same "radius" (150px from center)
+- All centered at (500, 300)
+
+**Shape 1: Regular Hexagon (n=6)**
+- Outline: Red (#F44336), 3px stroke
+- Fill: Semi-transparent red (20% opacity)
+- Vertices marked with dots
+- Label: "Hexagon (6 sides)"
+
+**Shape 2: Regular Octagon (n=8)**
+- Outline: Orange (#FF9800), 3px stroke
+- Fill: Semi-transparent orange (15% opacity)
+- Vertices marked with dots
+- Label: "Octagon (8 sides)"
+
+**Shape 3: Regular Dodecagon (n=12)**
+- Outline: Green (#4CAF50), 3px stroke
+- Fill: Semi-transparent green (10% opacity)
+- Vertices marked with dots
+- Label: "Dodecagon (12 sides)"
+
+**Shape 4: Circle**
+- Outline: Blue (#2196F3), 4px stroke
+- Fill: Semi-transparent blue (5% opacity)
+- Label: "Circle (∞ sides)"
+
+**Radius Lines:**
+- Draw one radius line from center through all shapes (gray dashed)
+- Label: "r = 150 units"
+
+**Measurement Table (right side, x = 750-980):**
+- Box with light blue background (#E3F2FD)
+- Title: "Perimeter Comparison" (bold, 20pt)
+- Table (16pt):
+  | Shape | n | Perimeter |
+  |-------|---|-----------|
+  | Hexagon | 6 | ~519 units |
+  | Octagon | 8 | ~565 units |
+  | Dodecagon | 12 | ~589 units |
+  | Circle | ∞ | $2\pi r = 942$ units |
+
+**Formula Box (left side, x = 20-230):**
+- Light yellow background (#FFF9C4)
+- Title: "Formulas" (bold, 18pt)
+- Content (16pt):
+  - Polygon: $P = ns$
+  - Circle: $C = 2\pi r$
+  - As $n \to \infty$, $P \to C$
+
+**Insight Box (bottom, spanning width):**
+- Light green background (#E8F5E9)
+- Border: 2px solid green
+- Text (16pt): "Key Insight: As the number of sides increases, the regular polygon's perimeter gets closer and closer to the circle's circumference. This relationship was used by ancient mathematicians to approximate the value of π!"
+
+**Title (top):** "How Polygons Approximate Circles" (bold, 28pt, centered)
+
+**Annotations:**
+- Arrow pointing to gap between hexagon and circle: "Large gap"
+- Arrow pointing to gap between dodecagon and circle: "Small gap"
+- Note: "More sides → Better approximation"
+
+**Color Legend (bottom left):**
+- Small boxes showing each color
+- Labels for each shape type
+
+</details>
 
 #### Diagram: Circle Anatomy and Formulas
 
@@ -810,6 +983,275 @@ $$V = \frac{4}{3}\pi r^3$$
 
 This principle helps us understand why an oblique prism (tilted) has the same volume as a right prism with the same base and height—think of a stack of coins that can be pushed into a slanted position without changing the total volume.
 
+A **cross-section** is the 2D shape formed when a plane intersects a 3D solid. Understanding cross-sections helps visualize how solids are constructed and why volume formulas work.
+
+#### MicroSim: Cross-Section Explorer
+
+<details markdown="1">
+<summary>Interactive exploration of 3D solid cross-sections</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **analyze** how different planes intersect 3D solids to create various cross-sections, and **evaluate** how cross-sectional area changes at different heights to understand Cavalieri's Principle. (Bloom's Taxonomy: Analyzing, Evaluating)
+
+**Specification:**
+
+Create an interactive p5.js simulation showing cross-sections of 3D solids.
+
+**Canvas:** 1000px × 750px, background: light gray (#FAFAFA)
+
+**Layout:** Side-by-side comparison with cutting plane
+
+**Top Control Bar (y = 0-80):**
+- Background: Dark blue (#1565C0), text: white
+- Title: "Cross-Section Explorer" (24pt, bold)
+- Subtitle: "See inside 3D solids!" (16pt)
+
+**Solid Selection (y = 100-150):**
+- Buttons to select solid (arranged horizontally, centered):
+  - Rectangular Prism
+  - Cylinder
+  - Cone
+  - Sphere
+  - Square Pyramid
+  - Triangular Prism
+- Selected button highlighted (blue background, white text)
+- Unselected buttons (white background, blue text)
+
+**Main Display Area (y = 170-550):**
+
+**Left Panel: 3D View with Cutting Plane (x = 20-480)**
+- White background
+- Draw selected 3D solid in isometric view
+- Solid semi-transparent to see through
+- Horizontal cutting plane shown as semi-transparent orange rectangle
+- Cutting plane position adjustable with slider
+- Cross-section boundary highlighted in red (4px)
+- Below/above plane: Different opacity to show what's cut
+
+**Right Panel: Cross-Section Shape (x = 520-980)**
+- White background with grid
+- Draw the 2D cross-section shape (top view)
+- Fill with light blue (#64B5F6)
+- Outline in dark blue (#0D47A1, 3px)
+- Show dimensions on the shape
+- Label the shape type (e.g., "Rectangle", "Circle", "Triangle")
+
+**Height Control (y = 570-630):**
+- Large slider: "Cutting Plane Height" (0% to 100% of solid height)
+  - Position: (50, 590), width: 600px
+  - Real-time updates as slider moves
+- Display: "Height: [value] units ([percentage]% from bottom)" (18pt)
+- Visual indicator showing position on 3D solid
+
+**Cross-Section Information Panel (y = 650-730):**
+- Box with light yellow background (#FFF9C4)
+- Two columns:
+
+**Left Column (x = 50-480):**
+- Title: "Cross-Section Properties" (bold, 18pt)
+- Display (16pt):
+  - Shape type: [name]
+  - Dimensions: [measurements]
+  - Cross-sectional area: [calculated] sq units (bold, blue, 20pt)
+  - Perimeter: [calculated] units
+
+**Right Column (x = 520-950):**
+- Title: "Cavalieri's Principle Demo" (bold, 18pt)
+- Checkbox: "Compare with Oblique Solid"
+- When checked, show second solid (tilted) with same cross-sections
+- Display: "Both solids have equal volumes!" (green text)
+- Show volume calculation for both
+
+**Special Features by Solid Type:**
+
+**Rectangular Prism:**
+- Cross-section is always a rectangle
+- Show how area stays constant (demonstrates Cavalieri)
+- Dimensions labeled
+
+**Cylinder:**
+- Cross-section is always a circle
+- Show radius stays constant
+- Area formula: $A = \pi r^2$ displayed
+
+**Cone:**
+- Cross-section is a circle
+- Show radius decreases linearly with height
+- Graph showing how area changes: $A = \pi r^2(1 - h/H)^2$
+
+**Sphere:**
+- Cross-section is a circle
+- Show radius changes (largest at equator)
+- Graph showing area: $A = \pi(R^2 - h^2)$
+
+**Pyramid:**
+- Cross-section is a square (for square pyramid)
+- Show side length decreases linearly
+- Area decreases quadratically
+
+**Triangular Prism:**
+- Cross-section is a triangle
+- Show shape stays constant
+
+**Interactive Features:**
+- Smooth animation as slider moves
+- Real-time cross-section shape updates
+- 3D solid rotates slightly to show depth (optional toggle)
+- Highlight cross-section boundary in 3D view
+- Show "slicing" animation when slider first moves
+
+**Educational Insights:**
+- Pop-up when comparing prism/oblique: "Notice: Same cross-sections at every height = same volume!"
+- For sphere: "The cross-section area follows the Pythagorean theorem!"
+- For cone: "Area decreases quadratically, that's why volume has $\frac{1}{3}$ factor!"
+
+**Preset Positions:**
+- Buttons for quick navigation:
+  - "Bottom (0%)"
+  - "Quarter (25%)"
+  - "Middle (50%)"
+  - "Three-quarters (75%)"
+  - "Top (100%)"
+
+**Graph Display (optional toggle):**
+- Small graph showing cross-sectional area vs. height
+- X-axis: Height (0 to H)
+- Y-axis: Cross-sectional area
+- Plot the area function
+- Mark current position with red dot
+
+**Color Scheme:**
+- Background: Light gray (#FAFAFA)
+- 3D solid: Semi-transparent blue (#2196F3, 40% opacity)
+- Cutting plane: Semi-transparent orange (#FF9800, 30% opacity)
+- Cross-section outline in 3D: Red (#F44336, 4px)
+- Cross-section 2D view: Light blue fill (#64B5F6)
+- Panel backgrounds: White
+- Info boxes: Light yellow (#FFF9C4)
+- Text: Black for labels, blue for measurements
+
+</details>
+
+#### MicroSim: Cavalieri's Principle Demonstration
+
+<details markdown="1">
+<summary>Interactive demonstration of Cavalieri's Principle</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **understand** Cavalieri's Principle by comparing right and oblique solids with identical cross-sections, and **evaluate** why they have equal volumes despite different appearances. (Bloom's Taxonomy: Understanding, Evaluating)
+
+**Specification:**
+
+Create an interactive p5.js simulation demonstrating Cavalieri's Principle.
+
+**Canvas:** 1000px × 700px, background: white
+
+**Title Bar (y = 0-60):**
+- Background: Purple gradient (#9C27B0 to #7B1FA2)
+- Title: "Cavalieri's Principle: Why Shape Doesn't Matter!" (bold, 24pt, white)
+
+**Main Display (y = 80-500):**
+
+**Left Side: Right Prism (x = 50-450)**
+- Background: Light blue (#E3F2FD)
+- Label: "Right Prism" (20pt, bold)
+- Draw rectangular prism standing straight (not tilted)
+- Base: 120px × 80px
+- Height: 300px
+- Color: Blue theme with 3 visible faces in different shades
+- Show horizontal cutting lines at multiple heights (5-6 levels)
+- Each cross-section highlighted in yellow
+
+**Right Side: Oblique Prism (x = 550-950)**
+- Background: Light orange (#FFF3E0)
+- Label: "Oblique (Tilted) Prism" (20pt, bold)
+- Draw identical prism but tilted/slanted
+- Same base dimensions: 120px × 80px
+- Same height: 300px
+- Color: Orange theme with 3 visible faces in different shades
+- Show horizontal cutting lines at same heights
+- Each cross-section highlighted in yellow
+
+**Cross-Section Comparison (center, x = 460-540):**
+- Vertical stripe between the two prisms
+- Show cross-sections at same heights side-by-side
+- Arrows connecting matching cross-sections
+- Label: "Same area at every height!" (16pt, bold, green)
+
+**Height Slider (y = 520-560):**
+- Large slider: "Select Height Level" (0 to 100%, step 20%)
+  - Position: (100, 540), width: 800px
+- Current height marked on both prisms
+- Cross-section at this height highlighted brightly
+
+**Measurement Display (y = 580-680):**
+
+**Left Column (x = 50-450):**
+- Box with light blue background
+- Title: "Right Prism Measurements" (bold, 18pt)
+- Display (16pt):
+  - Base dimensions: 12 × 8 units
+  - Height: 30 units
+  - Cross-section area at h=[value]: [calculated] sq units
+  - Volume: $V = Bh = 2880$ cu units (bold, 20pt)
+
+**Right Column (x = 550-950):**
+- Box with light orange background
+- Title: "Oblique Prism Measurements" (bold, 18pt)
+- Display (16pt):
+  - Base dimensions: 12 × 8 units
+  - Height: 30 units (vertical)
+  - Cross-section area at h=[value]: [calculated] sq units
+  - Volume: $V = Bh = 2880$ cu units (bold, 20pt)
+
+**Central Comparison Box (spanning bottom):**
+- Light green background (#E8F5E9)
+- Large checkmark icon (green)
+- Text (18pt, bold): "Volumes are EQUAL!"
+- Explanation (16pt): "Cavalieri's Principle: If two solids have the same height and equal cross-sectional areas at every level, they have equal volumes—regardless of their shape or slant."
+
+**Interactive Features:**
+- Slider moves cutting plane up and down both solids simultaneously
+- Cross-sections always match at same height
+- Highlight matching cross-sections with connecting animation
+- Real-time area calculation at selected height
+- Optional: "Tilt Angle" slider to adjust oblique prism's slant (0° to 45°)
+
+**Animation Options:**
+- Button: "Animate Scan" - automatically moves slider from bottom to top
+- Button: "Show Stack of Coins Analogy"
+  - Changes prisms to stacks of circular coins
+  - Right stack: Straight
+  - Left stack: Pushed slanted
+  - Same coins = same volume!
+
+**Educational Notes Panel (collapsible):**
+- Button: "Why does this work?"
+- When expanded, shows:
+  - "Think of a stack of paper: whether straight or slanted, same number of sheets!"
+  - "Volume = Base × Height works for ANY prism, right or oblique"
+  - "This principle was discovered by Bonaventura Cavalieri in 1635"
+  - "It works for curved solids too! (cylinders, cones, etc.)"
+
+**Challenge Mode (advanced feature):**
+- Button: "Show Different Solids"
+- Options:
+  - Right Cylinder vs Oblique Cylinder
+  - Right Cone vs Oblique Cone
+  - Sphere vs Cone with same cross-sections (special case)
+
+**Color Scheme:**
+- Right prism: Blue theme (#2196F3)
+- Oblique prism: Orange theme (#FF9800)
+- Cross-sections: Yellow highlight (#FFEB3B, 60% opacity)
+- Backgrounds: Light blue, light orange, white
+- Comparison area: Green (#4CAF50)
+- Text: Black for labels, colored for measurements
+
+</details>
+
 #### Diagram: Volume Formulas Comparison
 
 <details markdown="1">
@@ -1015,6 +1457,164 @@ For example, a scale of $1:50$ means that 1 cm in the model represents 50 cm in 
 - Volumes scale by $k^3$
 
 If a model is made at $1:10$ scale, then areas are reduced by $(1/10)^2 = 1/100$, and volumes are reduced by $(1/10)^3 = 1/1000$.
+
+#### MicroSim: Scale Model Builder
+
+<details markdown="1">
+<summary>Interactive scale model creation and analysis</summary>
+
+**Type:** MicroSim (p5.js)
+
+**Learning Objective:** Students will **apply** scale factor relationships to create accurate scale models, **analyze** how scale affects different measurements, and **create** solutions to real-world scaling problems. (Bloom's Taxonomy: Applying, Analyzing, Creating)
+
+**Specification:**
+
+Create an interactive p5.js simulation for understanding scale models.
+
+**Canvas:** 1100px × 800px, background: light gray (#F5F5F5)
+
+**Title Bar (y = 0-70):**
+- Background: Teal gradient (#00897B to #00695C)
+- Title: "Scale Model Builder" (28pt, bold, white)
+- Subtitle: "Design miniature versions of real objects" (16pt, white)
+
+**Main Display Area (y = 90-520):**
+
+**Left Panel: Original Object (x = 50-520)**
+- Background: Light blue (#E1F5FE)
+- Title: "Original Object" (20pt, bold)
+- Draw selected object in realistic proportions
+- Dimensions clearly labeled
+- Grid background for reference
+
+**Right Panel: Scale Model (x = 580-1050)**
+- Background: Light green (#E8F5E9)
+- Title: "Scale Model" (20pt, bold)
+- Draw same object scaled down
+- Dimensions clearly labeled
+- Same grid background (but scaled)
+- Model shown at actual scaled size
+
+**Object Selection (y = 100-140):**
+- Dropdown menu: "Choose Object to Model"
+- Options:
+  - Classroom (10m × 8m × 3m)
+  - Car (4.5m × 1.8m × 1.5m)
+  - House (12m × 10m × 6m)
+  - Bicycle (1.8m × 0.5m × 1.1m)
+  - Basketball Court (28m × 15m)
+  - Custom dimensions (user input)
+
+**Scale Controls (y = 540-620):**
+
+**Scale Factor Selection:**
+- Slider: "Scale Factor" (1:5 to 1:100, logarithmic scale)
+  - Position: (100, 560), width: 500px
+  - Display: "1:[value]" (large, 24pt)
+  - Common presets as click buttons:
+    - 1:10
+    - 1:20
+    - 1:50
+    - 1:100
+
+**Measurements Comparison (y = 640-780):**
+
+Three columns showing how measurements scale:
+
+**Column 1: Linear (1D) - x = 50-350**
+- Light blue background (#E3F2FD)
+- Title: "Length Measurements" (bold, 18pt)
+- Icon: Ruler
+- Display (16pt):
+  - Original length: [value] m
+  - Scale factor: 1:[k]
+  - Model length: [value/k] cm
+  - Example: Width, height, circumference
+- Formula shown: $\text{Model} = \frac{\text{Original}}{k}$
+
+**Column 2: Area (2D) - x = 380-730**
+- Light green background (#E8F5E9)
+- Title: "Area Measurements" (bold, 18pt)
+- Icon: Square
+- Display (16pt):
+  - Original area: [value] m²
+  - Scale factor squared: $(1/k)^2$
+  - Model area: [value/k²] cm²
+  - Example: Floor area, wall surface
+- Formula shown: $\text{Model} = \frac{\text{Original}}{k^2}$
+- Visual comparison: Show how much smaller with color-filled squares
+
+**Column 3: Volume (3D) - x = 760-1050**
+- Light orange background (#FFF3E0)
+- Title: "Volume Measurements" (bold, 18pt)
+- Icon: Cube
+- Display (16pt):
+  - Original volume: [value] m³
+  - Scale factor cubed: $(1/k)^3$
+  - Model volume: [value/k³] cm³
+  - Example: Interior space, material volume
+- Formula shown: $\text{Model} = \frac{\text{Original}}{k^3}$
+- Visual comparison: Show how much smaller with color-filled cubes
+
+**Real-World Application Panel (collapsible, right side):**
+- Button: "See Real Applications"
+- When expanded:
+  - Architecture: "1:50 scale common for building models"
+  - Model trains: "HO scale = 1:87, N scale = 1:160"
+  - Model cars: "1:18 (large), 1:24, 1:43, 1:64 (Hot Wheels)"
+  - Maps: "1:25,000 (hiking), 1:100,000 (road maps)"
+  - Model airplanes: "1:48, 1:72, 1:144 scales"
+
+**Material Calculation (practical application):**
+- Box at bottom showing:
+  - "To build this model at 1:[k] scale:"
+  - Material needed (cardboard/wood): [calculated area] cm²
+  - Paint needed: [calculated area] cm² of coverage
+  - Build time estimate: [scaled time]
+
+**Interactive Features:**
+- Real-time updates as scale slider moves
+- Visual size comparison (overlay option)
+- Grid scales appropriately on both sides
+- Highlight corresponding dimensions when hovering
+- "Zoom to fit" button for very small models
+- Optional: Print template button (generates printable plans)
+
+**Challenge Problems:**
+- Button: "Try a Challenge!"
+- Random problems like:
+  - "A model car is 18 cm long. If the real car is 4.5 m, what's the scale?"
+  - "At 1:20 scale, how much cardboard to make walls of classroom model?"
+  - "A 1:50 model uses 200 cm² of material. How much for original?"
+- Check answer button with feedback
+
+**Conversion Helper:**
+- Toggle between units: meters ↔ centimeters ↔ feet ↔ inches
+- Automatic conversion as user selects
+
+**Preset Scenarios:**
+- Button: "Load Example"
+- Examples:
+  - "Dollhouse (1:12 scale)"
+  - "Model Railroad (1:87 scale)"
+  - "Architectural Model (1:50 scale)"
+  - "Model Ship (1:200 scale)"
+
+**Educational Insights:**
+- Pop-up tips:
+  - "Notice: Doubling all dimensions multiplies volume by 8!"
+  - "A 1:10 model uses only 1/1000 the material!"
+  - "Scale affects weight dramatically—that's why large animals need different proportions"
+
+**Color Scheme:**
+- Original object: Blue theme
+- Scale model: Green theme
+- Grid: Light gray (#E0E0E0)
+- Measurements: Color-coded by dimension (blue=1D, green=2D, orange=3D)
+- Buttons: Teal theme (#00897B)
+- Background: Light gray (#F5F5F5)
+
+</details>
 
 #### Diagram: Scale Relationships
 
@@ -1265,6 +1865,165 @@ A **design challenge** typically involves:
 3. Calculate surface area of each box design
 4. Compare and select the design with minimum surface area
 5. Consider practical constraints (ease of opening, display, etc.)
+
+#### Diagram: Packaging Efficiency Comparison
+
+<details markdown="1">
+<summary>Visual comparison of different packaging arrangements</summary>
+
+**Type:** Diagram
+
+**Learning Objective:** Students will **analyze** different packaging arrangements for efficiency, **evaluate** which designs minimize material use, and **create** optimal packaging solutions for real products. (Bloom's Taxonomy: Analyzing, Evaluating, Creating)
+
+**Specification:**
+
+Create a colorful diagram comparing different packaging arrangements for cylindrical candles.
+
+**Layout:** 1200px wide × 900px tall
+
+**Title (top):** "Packaging Design Challenge: Which Uses Least Material?" (bold, 28pt, centered)
+
+**Problem Statement Box (y = 60-140):**
+- Light yellow background (#FFF9C4)
+- Border: 3px solid orange (#FF9800)
+- Text (18pt):
+  - "Challenge: Package 6 cylindrical candles (radius 3 cm, height 15 cm)"
+  - "Goal: Minimize cardboard used (surface area of box)"
+  - "Constraint: Rectangular box only"
+
+**Main Comparison Grid (y = 160-750):**
+
+Four arrangements shown in 2×2 grid:
+
+**Arrangement 1: 1×6 (Linear) - Top Left (x = 20-580)**
+- Background: Light blue (#E3F2FD)
+- Label: "Arrangement 1: 1×6 (Single Row)" (bold, 18pt)
+
+**Top View:**
+- Draw 6 circles in a row
+- Each circle: 3 cm radius (scaled for display)
+- Circles touching, in a line
+- Rectangle outline around them
+- Dimensions labeled: 36 cm × 6 cm
+
+**3D View (isometric):**
+- Show rectangular box with 6 candles visible inside
+- Box dimensions: 36 cm × 6 cm × 15 cm
+- Color: Light blue with transparent walls
+
+**Calculations Box:**
+- Surface Area calculation shown:
+  - $SA = 2(36 \times 6) + 2(36 \times 15) + 2(6 \times 15)$
+  - $SA = 432 + 1080 + 180 = 1692$ cm²
+- Result in large text: **1692 cm²** (blue)
+
+**Arrangement 2: 2×3 (Two Rows) - Top Right (x = 620-1180)**
+- Background: Light green (#E8F5E9)
+- Label: "Arrangement 2: 2×3 (Two Rows)" (bold, 18pt)
+
+**Top View:**
+- Draw 6 circles in 2 rows of 3
+- Rectangle outline around them
+- Dimensions labeled: 18 cm × 12 cm
+
+**3D View (isometric):**
+- Show rectangular box
+- Box dimensions: 18 cm × 12 cm × 15 cm
+- Color: Light green with transparent walls
+
+**Calculations Box:**
+- Surface Area calculation:
+  - $SA = 2(18 \times 12) + 2(18 \times 15) + 2(12 \times 15)$
+  - $SA = 432 + 540 + 360 = 1332$ cm²
+- Result in large text: **1332 cm²** (green)
+- Star icon: "Most efficient!" ⭐
+
+**Arrangement 3: 3×2 (Three Rows) - Bottom Left (x = 20-580)**
+- Background: Light orange (#FFF3E0)
+- Label: "Arrangement 3: 3×2 (Three Columns)" (bold, 18pt)
+
+**Top View:**
+- Draw 6 circles in 3 columns of 2
+- Rectangle outline
+- Dimensions labeled: 12 cm × 18 cm
+
+**3D View (isometric):**
+- Show rectangular box
+- Box dimensions: 12 cm × 18 cm × 15 cm
+- Color: Light orange with transparent walls
+
+**Calculations Box:**
+- Surface Area calculation:
+  - $SA = 2(12 \times 18) + 2(12 \times 15) + 2(18 \times 15)$
+  - $SA = 432 + 360 + 540 = 1332$ cm²
+- Result in large text: **1332 cm²** (orange)
+- Note: "Same as 2×3!" (rotated)
+
+**Arrangement 4: 6×1 (Vertical Stack) - Bottom Right (x = 620-1180)**
+- Background: Light purple (#F3E5F5)
+- Label: "Arrangement 4: 6×1 (Vertical Stack)" (bold, 18pt)
+
+**Top View:**
+- Draw single circle
+- Rectangle outline
+- Dimensions labeled: 6 cm × 6 cm
+
+**3D View (isometric):**
+- Show tall, narrow rectangular box
+- Box dimensions: 6 cm × 6 cm × 90 cm (candles stacked end-to-end)
+- Color: Light purple with transparent walls
+- Very tall and narrow appearance
+
+**Calculations Box:**
+- Surface Area calculation:
+  - $SA = 2(6 \times 6) + 2(6 \times 90) + 2(6 \times 90)$
+  - $SA = 72 + 1080 + 1080 = 2232$ cm²
+- Result in large text: **2232 cm²** (purple)
+- Warning icon: "Least efficient!" ⚠️
+
+**Comparison Summary Table (y = 770-880):**
+- Background: Light cyan (#E0F7FA)
+- Border: 2px solid teal (#00897B)
+- Table (16pt):
+
+| Arrangement | Box Dimensions (L×W×H) | Surface Area | Material Efficiency | Ranking |
+|-------------|------------------------|--------------|---------------------|---------|
+| 1×6 Linear | 36×6×15 cm | 1692 cm² | Moderate | 3rd |
+| 2×3 Grid | 18×12×15 cm | **1332 cm²** | **Best** | **1st** 🏆 |
+| 3×2 Grid | 12×18×15 cm | **1332 cm²** | **Best** | **1st** 🏆 |
+| 6×1 Stack | 6×6×90 cm | 2232 cm² | Worst | 4th |
+
+**Key Insights Box (bottom, spanning width):**
+- Light green background (#E8F5E9)
+- Border: 3px solid green (#4CAF50)
+- Title: "Design Principles" (bold, 20pt)
+- Bullet points (16pt):
+  - ✓ **Cube-like shapes minimize surface area** for given volume
+  - ✓ The 2×3 and 3×2 arrangements are closest to cube proportions
+  - ✓ Long, thin boxes waste material (high surface area for volume)
+  - ✓ The 2×3 design saves **21% material** compared to 1×6 design!
+  - ✓ The 2×3 design saves **40% material** compared to 6×1 stack!
+
+**Additional Considerations Panel (right side):**
+- Light yellow background (#FFF9C4)
+- Title: "Other Factors" (bold, 16pt)
+- List (14pt):
+  - Shipping: Shorter boxes stack better
+  - Display: Wider boxes show product better
+  - Strength: Cube shapes are stronger
+  - Cost: Material cost dominates
+  - Environment: Less material = greener
+
+**Visual Enhancements:**
+- Color-code each arrangement consistently
+- Use checkmarks (✓) for efficient designs
+- Use warning symbols (⚠️) for inefficient designs
+- Trophy icon (🏆) for winners
+- Arrows showing dimensions
+- Semi-transparent box walls to see candles inside
+- Grid lines on top views for measurement reference
+
+</details>
 
 ---
 
