@@ -46,8 +46,8 @@ In this chapter, you'll discover how mathematicians construct an entire logical 
 
 #### Diagram: Point Line and Plane
 
-<iframe src="../../sims/point-line-plane/main.html" height="500px"><iframe>
-[Run Point Line Plane](../../sims/point-line-plane/main.html)
+<iframe src="../../sims/point-line-plane/main.html" height="522x"></iframe>
+[Run Point Line Plane Fullscreen](../../sims/point-line-plane/main.html)
 
 <details markdown="1">
 <summary>Visual representation of point, line, and plane</summary>
@@ -98,7 +98,7 @@ Create a colorful diagram showing the three undefined terms side by side:
 
 </details>
 
-## The Undefined Terms: Point, Line, and Plane
+## The Core Terms: Point, Line, and Plane
 
 ### Point
 
@@ -138,56 +138,61 @@ A **plane** is a flat surface that extends infinitely in all directions. Like a 
 
 The floor of your classroom, the surface of a mirror, or a perfectly calm lake all approximate planes in the physical world—though real planes extend infinitely in geometry.
 
-#### MicroSim: Point, Line, Plane Explorer
+#### MicroSim: Points and Lines Explorer
 
 <details markdown="1">
-<summary>Interactive visualization of undefined terms</summary>
+<summary>Points and Lines Explorer</summary>
+
+Directory name: point-line-explorer
 
 **Type:** MicroSim (p5.js)
 
-**Learning Objective:** Students will **apply** their understanding of points, lines, and planes by manipulating interactive geometric objects and observing their properties. (Bloom's Taxonomy: Applying)
+**Learning Objective:** Students will **apply** their understanding of points, lines, 
+by manipulating interactive geometric objects they create and observing their properties. 
+(Bloom's Taxonomy: Applying)
 
 **Specification:**
 
-Create an interactive p5.js simulation allowing students to explore the three undefined terms.
+Create an interactive p5.js simulation allowing students to add and edit points and lines.
+When setup() runs, it will generate 10 blue points with labels "A" to "J" and place
+them randomly on the screen.  
 
-**Canvas:** 800px × 600px, background: white
+Each point is a small blue circle radius 10 with a uppercase label under it.
+Users can do three things.  Move a point, create a new point and connect two points with a new line.
+
+1. Mode 1: *Create/Move*:* Move a point with their mouse by dragging the point or click on the background to create a new point
+2. Mode 2: *Connect Points* Allow the user to connect two points by dragging a line of one to another
+
+**Canvas:**  600px high, width 100% of container, drawing background: aliceblue, control background white
 
 **Controls (bottom of canvas):**
-- Three mode buttons: "Points" | "Lines" | "Planes"
-- Slider: "Number of Objects" (1-10)
-- Button: "Clear Canvas"
-- Button: "Random Pattern"
+- Three buttons
+  - "Regenerate Random Points" which will use the slider to get the number of points
+  - "Move Points/Connect Points" (Toggle)
+  - "Add Point" - adds a point on a random location
+- Slider: "Number of Objects" (1-20, default 10)
 
-**Behaviors:**
+## Behaviors
 
-**Point Mode:**
+### Create/Move Mode
 - Click anywhere to create a new point
-- Points appear as colored circles (6px diameter, random colors from palette)
+- Points appear as colored circles (10px diameter, random colors from palette)
 - Each point automatically labeled with consecutive letters (A, B, C, ...)
 - Hover over point to see coordinates
 
-**Line Mode:**
+### Connect Mode
 - Click two points to create a line through them
 - Line extends across entire canvas with arrows on both ends
 - Line labeled as $\overleftrightarrow{AB}$ where A and B are the clicked points
-- Show equation of line in slope-intercept form when hovering
-
-**Plane Mode:**
-- Click three non-collinear points to create a plane
-- Plane appears as semi-transparent parallelogram with grid lines
-- Plane labeled with the three defining points
-- Hover to highlight the plane
 
 **Visual Feedback:**
-- Current mode highlighted in blue
-- Instruction text at top: "Point Mode: Click to add points" (changes with mode)
-- Counter showing number of each object type created
+- Current mode highlighted by drawing a black circle around the point
+- Instruction text at bottom: "Point Mode: Click background to add points, drag points to move them" (changes with mode)
 
-**Color Palette:**
-- Points: Red (#E53935), Blue (#1E88E5), Green (#43A047), Purple (#8E24AA)
-- Lines: Blue (#1976D2), 2px thickness
-- Planes: Semi-transparent yellow (#FDD835 at 30% opacity)
+**Line Drawing:**
+- Navy Blue 4px thickness
+- Lines span the entire drawing region - not just between points
+
 
 **Implementation:** p5.js with createCanvas(), mousePressed(), and DOM controls
 

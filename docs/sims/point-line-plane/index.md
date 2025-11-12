@@ -10,14 +10,14 @@ social:
 
 # Point, Line, Plane - The Three Undefined Terms
 
-<iframe src="main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="522px" width="100%" scrolling="no"></iframe>
 
 [Run the Point, Line, Plane MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
 You can include this MicroSim on your website using the following `iframe`:
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/point-line-plane/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/point-line-plane/main.html" height="522px" width="100%" scrolling="no"></iframe>
 ```
 
 ## Description

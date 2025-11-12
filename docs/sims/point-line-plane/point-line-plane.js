@@ -3,14 +3,14 @@
 
 // Canvas dimensions
 let canvasWidth = 900;
-let drawHeight = 500;
+let drawHeight = 470;
 let controlHeight = 50;
 let canvasHeight = drawHeight + controlHeight;
 let defaultTextSize = 16;
 
-// Panel dimensions (calculated dynamically)
+// Panel width dimension are calculated dynamically based on container size and recalculated on resize events
 let panelWidth;
-let panelHeight = 380;
+let panelHeight = 340;
 let panelY = 60;
 let minCanvasWidth = 600;  // Minimum width for readability
 
@@ -39,7 +39,7 @@ function draw() {
   updateCanvasSize();
 
   // Calculate panel width dynamically (30% of canvas width each, with spacing)
-  let spacing = canvasWidth * 0.05;  // 5% spacing
+  let spacing = canvasWidth * 0.04;  // 5% spacing
   panelWidth = (canvasWidth - spacing * 4) / 3;  // Divide remaining space by 3 panels
 
   // Calculate panel positions based on canvas width
@@ -48,7 +48,7 @@ function draw() {
   let panel3X = spacing * 3 + panelWidth * 2;
 
   // Main drawing area background
-  fill('white');
+  fill('aliceblue');
   rect(0, 0, canvasWidth, drawHeight);
 
   // Control area background
@@ -59,7 +59,7 @@ function draw() {
   fill('black');
   textSize(28);
   textAlign(CENTER, TOP);
-  textStyle(BOLD);
+  // textStyle(BOLD);
   text('The Three Core Concepts of Geometry', canvasWidth / 2, 15);
   textStyle(NORMAL);
 
@@ -75,6 +75,7 @@ function draw() {
   // Footer note
   textSize(12);
   textAlign(CENTER, TOP);
+  noStroke();
   fill('black');
   let footerY = panelY + panelHeight + 20;
   text('These terms are "core" because they\'re so fundamental that we', canvasWidth / 2, footerY);
@@ -85,9 +86,38 @@ function draw() {
   textAlign(LEFT, CENTER);
 }
 
+function drawLineSegmentSymbol(x, y, length) {
+  // Draws a line segment symbol with arrows on both ends
+  // x, y: center position of the symbol
+  // length: length of the line segment
+  push();
+    stroke('black');
+    strokeWeight(1);
+
+    let halfLength = length / 2;
+    let leftX = x - halfLength;
+    let rightX = x + halfLength;
+
+    // Draw the line
+    line(leftX, y, rightX, y);
+
+    // Draw arrow heads
+    noStroke();
+    fill('black');
+    let arrowSize = 3;
+
+    // Left arrow
+    triangle(leftX, y, leftX - arrowSize, y - 2, leftX - arrowSize, y + 2);
+
+    // Right arrow
+    triangle(rightX, y, rightX + arrowSize, y - 2, rightX + arrowSize, y + 2);
+  pop();
+}
+
 function drawPointPanel(x, y) {
+  
   // Background
-  fill('#E3F2FD');
+  fill('#D0F0F0');
   stroke('silver');
   strokeWeight(2);
   rect(x, y, panelWidth, panelHeight);
@@ -96,10 +126,14 @@ function drawPointPanel(x, y) {
   fill('black');
   textSize(20);
   textAlign(CENTER, TOP);
-  textStyle(BOLD);
+  // textStyle(BOLD);
   text('Point', x + panelWidth / 2, y + 10);
   textStyle(NORMAL);
 
+  // all the content inside the panel
+  push();
+  // move up
+  translate(0,-35);
   // Main point A
   fill('red');
   noStroke();
@@ -140,13 +174,14 @@ function drawPointPanel(x, y) {
     // Bottom annotation
     textSize(12);
     textAlign(CENTER);
-    text('Named with', x + panelWidth / 2, y + panelHeight - 40);
-    text('capital letters', x + panelWidth / 2, y + panelHeight - 25);
+    text('Named with', x + panelWidth / 2, y + panelHeight - 30);
+    text('capital letters', x + panelWidth / 2, y + panelHeight - 15);
   }
 
   // Reset
   textAlign(LEFT, CENTER);
   textSize(defaultTextSize);
+  pop();
 }
 
 function drawLinePanel(x, y) {
@@ -160,10 +195,14 @@ function drawLinePanel(x, y) {
   fill('black');
   textSize(20);
   textAlign(CENTER, TOP);
-  textStyle(BOLD);
+  // textStyle(BOLD);
   text('Line', x + panelWidth / 2, y + 10);
   textStyle(NORMAL);
 
+  // all the content inside the panel
+  push();
+  // move up
+  translate(0,-35);
   // Line with arrows
   stroke('blue');
   strokeWeight(3);
@@ -210,16 +249,7 @@ function drawLinePanel(x, y) {
   text('Line PQ or PQ', x + panelWidth / 2, y + 145);
 
   // Draw line symbol above PQ
-  push();
-  stroke('black');
-  strokeWeight(1);
-  line(x + panelWidth / 2 + 55, y + 143, x + panelWidth / 2 + 80, y + 143);
-  // Small arrows on the line symbol
-  noStroke();
-  fill('black');
-  triangle(x + panelWidth / 2 + 55, y + 143, x + panelWidth / 2 + 52, y + 141, x + panelWidth / 2 + 52, y + 145);
-  triangle(x + panelWidth / 2 + 80, y + 143, x + panelWidth / 2 + 83, y + 141, x + panelWidth / 2 + 83, y + 145);
-  pop();
+  drawLineSegmentSymbol(x + panelWidth / 2 + 43, y + 143, 20);
 
   if (showAnnotations) {
     // Callout text
@@ -242,6 +272,7 @@ function drawLinePanel(x, y) {
   textSize(defaultTextSize);
   stroke('black');
   strokeWeight(1);
+  pop();
 }
 
 function drawPlanePanel(x, y) {
@@ -255,10 +286,14 @@ function drawPlanePanel(x, y) {
   fill('black');
   textSize(20);
   textAlign(CENTER, TOP);
-  textStyle(BOLD);
+  // textStyle(BOLD);
   text('Plane', x + panelWidth / 2, y + 10);
   textStyle(NORMAL);
 
+    // all the content inside the panel
+  push();
+  // move up
+  translate(0,-15);
   // Draw plane as parallelogram (3D perspective) - scaled to panel width
   let planeMargin = panelWidth * 0.14;
   let planeX1 = x + planeMargin;
@@ -324,20 +359,25 @@ function drawPlanePanel(x, y) {
   // Plane label
   textSize(16);
   text('Plane XYZ', x + panelWidth / 2, y + 210);
-
+  
+  let paragraphSpacing = 20;
+  let lineSpacing = 15;
   if (showAnnotations) {
     // Callout text
+    let yOffset = 240;
     textSize(13);
-    text('Extends infinitely in', x + panelWidth / 2, y + 240);
-    text('all directions', x + panelWidth / 2, y + 260);
+    text('Extends infinitely in', x + panelWidth / 2, y + yOffset);
+    text('all directions', x + panelWidth / 2, y + yOffset + lineSpacing);
 
-    text('Has no thickness—only', x + panelWidth / 2, y + 290);
-    text('length and width', x + panelWidth / 2, y + 310);
+    yOffset += paragraphSpacing + lineSpacing;
+    text('Has no thickness—only', x + panelWidth / 2, y + yOffset);
+    text('length and width', x + panelWidth / 2, y + yOffset + lineSpacing);
 
     // Bottom annotation
+    yOffset += paragraphSpacing + lineSpacing;
     textSize(12);
-    text('Named by any three', x + panelWidth / 2, y + panelHeight - 50);
-    text('non-collinear points', x + panelWidth / 2, y + panelHeight - 35);
+    text('Named by any three', x + panelWidth / 2, y + yOffset);
+    text('non-collinear points', x + panelWidth / 2, y + yOffset + lineSpacing);
   }
 
   // Reset
@@ -345,6 +385,7 @@ function drawPlanePanel(x, y) {
   textSize(defaultTextSize);
   stroke('black');
   strokeWeight(1);
+  pop();
 }
 
 function windowResized() {
