@@ -9,36 +9,31 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
+  - Course Description: course-description.md
+  
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+    - Concept List: learning-graph/concept-list.md
+    - Graph Quality Analysis: learning-graph/quality-metrics.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Diagrams: learning-graph/diagrams.md
+  
   - Chapters:
-    - Table of Contents: chapters/index.md
-    - 1. Introduction to Geometry: 
-      - Introduction: chapters/intro/index.md
-      - Angle Explorer MicroSim: chapters/intro/angle-explorer.md
-      - Complementary and Supplementary Angles: chapters/intro/comp-and-sup-angles.md
-    - 2. Reasoning and Proofs:
-      - Introduction: chapters/proofs/index.md
-    - 3. Lines:
-      - Introduction: chapters/lines/index.md
-    - 4. Congruent Triangles:
-      - Introduction: chapters/congruent-triangles/index.md
-    - 5. Properties of Triangles:
-      - Introduction: chapters/properties-of-triangles/index.md
-    - 6. Polygons:
-        - Introduction: chapters/polygons/index.md
-    - 7. Similarity:
-      - Introduction: chapters/similarity/index.md
-    - 8. Right Triangles and Trigonometry:
-      - Introduction: chapters/trigonometry/index.md
-      - Pythagorean Theorem MicroSim: chapters/trigonometry/pythagorean-theorem.md
-    - 9. Circles:
-      - Introduction: chapters/circles/index.md
-      - Cords: chapters/circles/cords/index.md
-    - 10. Area and Perimeters:
-      - Introduction: chapters/areas-and-perimeters/index.md
-    - 11. Surface Area and Volume:
-      - Introduction: chapters/surface-area-and-volume/index.md
-    - 12. Transformations:
-      - Introduction: chapters/transformations/index.md
+    - Overview: chapters/index.md
+    - 1. Foundations of Geometry: chapters/01-foundations-of-geometry/index.md
+    - 2. Logic and Proof: chapters/02-logic-and-proof/index.md
+    - 3. Angles and Angle Relationships: chapters/03-angles-and-relationships/index.md
+    - 4. Geometric Constructions: chapters/04-geometric-constructions/index.md
+    - 5. Coordinate Geometry and Lines: chapters/05-coordinate-geometry/index.md
+    - 6. Transformations and Congruence: chapters/06-transformations-congruence/index.md
+    - 7. Triangle Congruence and Properties: chapters/07-triangle-congruence/index.md
+    - 8. Triangle Centers and Advanced Topics: chapters/08-triangle-centers/index.md
+    - 9. Polygons and Quadrilaterals: chapters/09-polygons-quadrilaterals/index.md
+    - 10. Similarity and Right Triangle Trigonometry: chapters/10-similarity-trigonometry/index.md
+    - 11. Circles: chapters/11-circles/index.md
+    - 12. Area, Volume, and Applications: chapters/12-area-volume-applications/index.md
+  
   - Sample Prompts:
     - Introduction: prompts/index.md
     - Course Description: prompts/01-course-description.md
@@ -52,6 +47,7 @@ nav:
     - 100 MicroSims: prompts/09-100-microsims.md
     - Individual MicroSim: prompts/09-individual-microsim.md
     - Chapter Design: prompts/10-chapter-design.md
+  
   - MicroSims:
     - Introduction: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
@@ -59,6 +55,7 @@ nav:
     - Angle Explorer: sims/angle-explorer/index.md
     - Degrees vs Radians: sims/degrees-vs-radians/index.md
     - Complementary and Supplementary Angles: sims/comp-and-sup-angles/index.md
+    - Circle Area Calculator: sims/circle-area-calculator/index.md
     - Circle Area Explorer: sims/circle-area-explorer/index.md
     - Cords: sims/cords/index.md
     - Pythagorean Theorem: sims/pythagorean-theorem/index.md
@@ -67,6 +64,7 @@ nav:
     - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
     - Templates: sims/templates/index.md
     - Workflow: sims/workflow/index.md
+    - Colinear and Coplanar Points: sims/collinear-coplanar-points
   - Glossary: glossary.md
   - License: license.md
   - How We Built This Site: how-we-built-this-site.md
@@ -98,14 +96,13 @@ theme:
     - content.action.edit
 plugins:
   - search
-  # - site-urls
-  # - relative-paths
-#  - social
+  - social
 markdown_extensions:
+  - md_in_html
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - attr_list
   - pymdownx.highlight:
       linenums: 
   # enable LaTeX extensions

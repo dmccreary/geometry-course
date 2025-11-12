@@ -1,0 +1,86 @@
+{
+  "FOUND": {
+    "classifierName": "Foundation Concepts",
+    "color": "#e74c3c",
+    "font": {
+      "color": "white"
+    }
+  },
+  "LOGIC": {
+    "classifierName": "Logic and Reasoning",
+    "color": "#e67e22",
+    "font": {
+      "color": "white"
+    }
+  },
+  "ANGLE": {
+    "classifierName": "Angle Relationships",
+    "color": "#f39c12",
+    "font": {
+      "color": "black"
+    }
+  },
+  "CONST": {
+    "classifierName": "Constructions",
+    "color": "#f1c40f",
+    "font": {
+      "color": "black"
+    }
+  },
+  "TRANS": {
+    "classifierName": "Transformations",
+    "color": "#2ecc71",
+    "font": {
+      "color": "white"
+    }
+  },
+  "LINES": {
+    "classifierName": "Lines and Planes",
+    "color": "#1abc9c",
+    "font": {
+      "color": "white"
+    }
+  },
+  "TRI": {
+    "classifierName": "Triangles",
+    "color": "#3498db",
+    "font": {
+      "color": "white"
+    }
+  },
+  "POLY": {
+    "classifierName": "Polygons",
+    "color": "#9b59b6",
+    "font": {
+      "color": "white"
+    }
+  },
+  "SIM": {
+    "classifierName": "Similarity and Right Triangles",
+    "color": "#e91e63",
+    "font": {
+      "color": "white"
+    }
+  },
+  "CIRC": {
+    "classifierName": "Circles",
+    "color": "#00bcd4",
+    "font": {
+      "color": "white"
+    }
+  },
+  "AREA": {
+    "classifierName": "Area and Volume",
+    "color": "#607d8b",
+    "font": {
+      "color": "white"
+    }
+  },
+  "APP": {
+    "classifierName": "Applications",
+    "color": "#795548",
+    "font": {
+      "color": "white"
+    }
+  }
+}

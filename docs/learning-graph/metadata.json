@@ -1,0 +1,10 @@
+{
+  "title": "Geometry",
+  "description": "High school geometry course covering foundational concepts, transformations, triangles, circles, area, volume, and real-world applications through interactive MicroSims.",
+  "creator": "Dan McCreary",
+  "date": "2025-11-11",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}
