@@ -25,6 +25,18 @@ let boxDepth = 150;
 let rotX = -0.3;
 let rotY = 0;
 
+// 2D graphics buffer for text overlay
+let textLayer;
+
+// Font for WebGL text rendering
+let font;
+
+function preload() {
+  // Preload font for WebGL text rendering
+  // Using a Google Fonts CDN font
+  font = loadFont('https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/font/SourceCodePro-Bold.otf');
+}
+
 function setup() {
   const canvas = createCanvas(canvasWidth, canvasHeight, WEBGL);
   // Try to parent to main element, but work standalone too
@@ -32,6 +44,13 @@ function setup() {
   if (main) {
     canvas.parent(main);
   }
+
+  // Set the font for WebGL text rendering
+  textFont(font);
+
+  // Create a 2D graphics buffer for text overlays
+  textLayer = createGraphics(canvasWidth, canvasHeight);
+  textLayer.textFont(font);
 
   // Create rotation speed slider
   rotationSlider = createSlider(0, 2, 0.5, 0.1);
@@ -55,39 +74,13 @@ function draw() {
     if (main && main.offsetWidth !== canvasWidth) {
       canvasWidth = main.offsetWidth;
       resizeCanvas(canvasWidth, canvasHeight);
+      textLayer.resizeCanvas(canvasWidth, canvasHeight);
       rotationSlider.size(canvasWidth - sliderLeftMargin - margin);
     }
   }
 
-  // Drawing area with gradient-like effect (top: light blue, bottom: gray)
-  push();
-  translate(-width/2, -height/2);
-  // Top part - light blue
-  fill(227, 242, 253);
-  noStroke();
-  rect(0, 0, width, drawHeight/2);
-  // Bottom part - light gray
-  fill(245, 245, 245);
-  rect(0, drawHeight/2, width, drawHeight/2);
-  pop();
-
-  // Control area (white background)
-  push();
-  translate(-width/2, -height/2 + drawHeight);
-  fill('white');
-  noStroke();
-  rect(0, 0, width, controlHeight);
-  pop();
-
-  // Title at top
-  push();
-  translate(-width/2, -height/2 + margin);
-  fill('black');
-  textSize(24);
-  textAlign(CENTER, TOP);
-  noStroke();
-  text('Line Relationships in 3D Space', width/2, 0);
-  pop();
+  // Clear background
+  background(227, 242, 253);
 
   // Set up 3D view
   push();
@@ -116,18 +109,79 @@ function draw() {
 
   pop();
 
+  // Draw 2D overlay elements (title, legend, labels) on the text layer
+  draw2DOverlay();
+
+  // Draw the text layer on top of the 3D scene
+  push();
+  resetMatrix();
+  camera(0, 0, 800, 0, 0, 0, 0, 1, 0);
+  ortho(0, width, 0, height, -1000, 1000);
+  texture(textLayer);
+  noStroke();
+  plane(width, height);
+  pop();
+}
+
+function draw2DOverlay() {
+  // Clear the text layer
+  textLayer.clear();
+
+  // Title at top
+  textLayer.fill('black');
+  textLayer.textSize(24);
+  textLayer.textAlign(CENTER, TOP);
+  textLayer.noStroke();
+  textLayer.text('Line Relationships in 3D Space', canvasWidth/2, margin);
+
+  // Draw annotations for line relationships
+  drawAnnotations();
+
   // Draw legend
   drawLegend();
 
-  // Draw control labels
-  push();
-  translate(-width/2, -height/2);
-  fill('black');
-  textSize(defaultTextSize);
-  textAlign(LEFT, CENTER);
-  noStroke();
-  text('Rotation Speed: ' + rotationSpeed.toFixed(1), sliderLeftMargin + 10, drawHeight + 25);
-  pop();
+  // Control area white background
+  textLayer.fill('white');
+  textLayer.rect(0, drawHeight, canvasWidth, controlHeight);
+
+  // Control labels
+  textLayer.fill('black');
+  textLayer.textSize(defaultTextSize);
+  textLayer.textAlign(LEFT, CENTER);
+  textLayer.text('Rotation Speed: ' + rotationSpeed.toFixed(1), sliderLeftMargin + 10, drawHeight + 25);
+}
+
+function drawAnnotations() {
+  // Draw text annotations for the three line relationships
+  let leftX = 30;
+  let startY = 80;
+  let spacing = 60;
+
+  textLayer.textAlign(LEFT, TOP);
+  textLayer.textSize(14);
+
+  // Parallel lines annotation
+  textLayer.fill(25, 118, 210);
+  textLayer.noStroke();
+  textLayer.text('Parallel lines (m ∥ n):', leftX, startY);
+  textLayer.textSize(11);
+  textLayer.text('Same plane, never intersect', leftX, startY + 18);
+
+  // Perpendicular lines annotation
+  startY += spacing;
+  textLayer.textSize(14);
+  textLayer.fill(229, 57, 53);
+  textLayer.text('Perpendicular lines (p ⊥ q):', leftX, startY);
+  textLayer.textSize(11);
+  textLayer.text('Intersect at 90°', leftX, startY + 18);
+
+  // Skew lines annotation
+  startY += spacing;
+  textLayer.textSize(14);
+  textLayer.fill(67, 160, 71);
+  textLayer.text('Skew lines (r, s):', leftX, startY);
+  textLayer.textSize(11);
+  textLayer.text('Different planes, never intersect', leftX, startY + 18);
 }
 
 function drawBox() {
@@ -161,17 +215,6 @@ function drawParallelLines() {
   let z2 = -boxDepth/2;
   line(x2, -boxHeight/2, z2, x2, boxHeight/2, z2);
 
-  // Labels
-  fill(25, 118, 210);
-  noStroke();
-  textSize(16);
-  textAlign(CENTER);
-  text('m', x1, boxHeight/2 + 20, z1);
-  text('n', x2, boxHeight/2 + 20, z2);
-
-  // Parallel symbol
-  text('∥', 0, boxHeight/2 + 40, 0);
-
   pop();
 }
 
@@ -192,17 +235,6 @@ function drawPerpendicularLines() {
 
   // Draw right angle indicator at corner
   drawRightAngleIndicator(-boxWidth/2, boxHeight/2, boxDepth/2);
-
-  // Labels
-  fill(229, 57, 53);
-  noStroke();
-  textSize(16);
-  textAlign(CENTER);
-  text('p', x1 - 20, 0, z1);
-  text('q', 0, boxHeight/2 + 20, boxDepth/2);
-
-  // Perpendicular symbol
-  text('⊥', -boxWidth/2 - 25, boxHeight/2 - 25, boxDepth/2);
 
   pop();
 }
@@ -228,14 +260,6 @@ function drawSkewLines() {
     (x1a + x1b)/2, y1a, z1a,  // Midpoint of line r
     x2, 0, z2  // Midpoint of line s
   );
-
-  // Labels
-  fill(67, 160, 71);
-  noStroke();
-  textSize(16);
-  textAlign(CENTER);
-  text('r', 0, y1a - 20, z1a);
-  text('s', x2 + 20, 0, z2);
 
   pop();
 }
@@ -281,58 +305,52 @@ function drawDashedLine(x1, y1, z1, x2, y2, z2) {
 }
 
 function drawLegend() {
-  push();
-
-  // Position legend in bottom right
-  let legendX = width/2 - 280;
-  let legendY = -height/2 + drawHeight - 120;
-
-  translate(legendX, legendY);
+  // Position legend in lower right area (above control region)
+  let legendX = canvasWidth - 290;
+  let legendY = drawHeight - 130;
 
   // Semi-transparent background
-  fill(255, 255, 255, 230);
-  stroke(200);
-  strokeWeight(1);
-  rect(0, 0, 260, 110, 5);
+  textLayer.fill(255, 255, 255, 230);
+  textLayer.stroke(200);
+  textLayer.strokeWeight(1);
+  textLayer.rect(legendX, legendY, 260, 110, 5);
 
   // Legend title
-  fill(0);
-  noStroke();
-  textSize(14);
-  textAlign(LEFT, TOP);
-  text('Legend:', 10, 10);
+  textLayer.fill(0);
+  textLayer.noStroke();
+  textLayer.textSize(14);
+  textLayer.textAlign(LEFT, TOP);
+  textLayer.text('Legend:', legendX + 10, legendY + 10);
 
-  let yPos = 35;
+  let yPos = legendY + 35;
   let spacing = 25;
 
   // Parallel lines
-  stroke(25, 118, 210);
-  strokeWeight(4);
-  line(10, yPos, 40, yPos);
-  noStroke();
-  fill(25, 118, 210);
-  textSize(12);
-  text('Parallel (coplanar, no intersection)', 50, yPos - 7);
+  textLayer.stroke(25, 118, 210);
+  textLayer.strokeWeight(4);
+  textLayer.line(legendX + 10, yPos, legendX + 40, yPos);
+  textLayer.noStroke();
+  textLayer.fill(25, 118, 210);
+  textLayer.textSize(12);
+  textLayer.text('Parallel (coplanar, no intersection)', legendX + 50, yPos - 7);
 
   // Perpendicular lines
   yPos += spacing;
-  stroke(229, 57, 53);
-  strokeWeight(4);
-  line(10, yPos, 40, yPos);
-  noStroke();
-  fill(229, 57, 53);
-  text('Perpendicular (intersect at 90°)', 50, yPos - 7);
+  textLayer.stroke(229, 57, 53);
+  textLayer.strokeWeight(4);
+  textLayer.line(legendX + 10, yPos, legendX + 40, yPos);
+  textLayer.noStroke();
+  textLayer.fill(229, 57, 53);
+  textLayer.text('Perpendicular (intersect at 90°)', legendX + 50, yPos - 7);
 
   // Skew lines
   yPos += spacing;
-  stroke(67, 160, 71);
-  strokeWeight(4);
-  line(10, yPos, 40, yPos);
-  noStroke();
-  fill(67, 160, 71);
-  text('Skew (non-coplanar, no intersection)', 50, yPos - 7);
-
-  pop();
+  textLayer.stroke(67, 160, 71);
+  textLayer.strokeWeight(4);
+  textLayer.line(legendX + 10, yPos, legendX + 40, yPos);
+  textLayer.noStroke();
+  textLayer.fill(67, 160, 71);
+  textLayer.text('Skew (non-coplanar, no intersection)', legendX + 50, yPos - 7);
 }
 
 function windowResized() {
