@@ -70,6 +70,32 @@
 
     
     
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="1. Foundations of Geometry - AI Assisted Geometry" >
+      
+        <meta  property="og:description"  content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/geometry-course/assets/images/social/chapters/01-foundations-of-geometry/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/geometry-course/chapters/01-foundations-of-geometry/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="1. Foundations of Geometry - AI Assisted Geometry" >
+      
+        <meta  name="twitter:description"  content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/geometry-course/assets/images/social/chapters/01-foundations-of-geometry/index.png" >
+      
+    
     
   </head>
   
@@ -1978,38 +2004,30 @@
 <p>Geometry is the study of shapes, sizes, and positions of objects in space. Just as a house needs a solid foundation, geometry is built upon fundamental ideas called <strong>undefined terms</strong>. These are concepts so basic that we accept them without formal definition—we understand them intuitively through our experience with the physical world.</p>
 <p>In this chapter, you'll discover how mathematicians construct an entire logical system from just three undefined terms: point, line, and plane. You'll also learn two powerful types of reasoning that allow you to make discoveries and prove your ideas with certainty.</p>
 <h4 id="diagram-the-three-undefined-terms">Diagram: The Three Undefined Terms</h4>
-<details markdown="1">
+<details>
 <summary>Visual representation of point, line, and plane</summary>
-
-**Type:** Diagram
-
-**Learning Objective:** Students will **remember** the three undefined terms of geometry (point, line, plane) and **understand** their visual representations and basic properties. (Bloom's Taxonomy: Remembering, Understanding)
-
-**Specification:**
-
-Create a colorful diagram showing the three undefined terms side by side:
-
-**Layout:** Three panels arranged horizontally, each 300px wide × 400px tall
-
-**Panel 1: Point**
+<p><strong>Type:</strong> Diagram</p>
+<p><strong>Learning Objective:</strong> Students will <strong>remember</strong> the three undefined terms of geometry (point, line, plane) and <strong>understand</strong> their visual representations and basic properties. (Bloom's Taxonomy: Remembering, Understanding)</p>
+<p><strong>Specification:</strong></p>
+<p>Create a colorful diagram showing the three undefined terms side by side:</p>
+<p><strong>Layout:</strong> Three panels arranged horizontally, each 300px wide × 400px tall</p>
+<p><strong>Panel 1: Point</strong>
 - Background: Light blue (#E3F2FD)
 - Show a single red dot (8px diameter) in the center
 - Label below: "Point A" in bold
 - Add callout text: "Has no size—only position"
 - Add 3-4 small red dots scattered in the background labeled B, C, D
-- Bottom annotation: "Named with capital letters"
-
-**Panel 2: Line**
+- Bottom annotation: "Named with capital letters"</p>
+<p><strong>Panel 2: Line</strong>
 - Background: Light green (#E8F5E9)
 - Show a straight line extending across the full width with arrows on both ends
 - Line color: Blue, 3px thick
 - Place two points on the line labeled P and Q
-- Label below: "Line PQ" or "$\overleftrightarrow{PQ}$"
+- Label below: "Line PQ" or "<span class="arithmatex">\(\overleftrightarrow{PQ}\)</span>"
 - Add callout text: "Extends infinitely in both directions"
 - Add annotation: "Has no thickness—only length"
-- Bottom annotation: "Named by any two points on it"
-
-**Panel 3: Plane**
+- Bottom annotation: "Named by any two points on it"</p>
+<p><strong>Panel 3: Plane</strong>
 - Background: Light yellow (#FFF9C4)
 - Show a parallelogram representing a tilted plane (to show 3D perspective)
 - Plane color: Semi-transparent purple with grid lines
@@ -2017,16 +2035,11 @@ Create a colorful diagram showing the three undefined terms side by side:
 - Label below: "Plane XYZ"
 - Add callout text: "Extends infinitely in all directions"
 - Add annotation: "Has no thickness—only length and width"
-- Bottom annotation: "Named by any three non-collinear points"
-
-**Title above all panels:** "The Three Undefined Terms of Geometry" (24pt, bold)
-
-**Footer note:** "These terms are 'undefined' because they're so fundamental that we understand them through experience rather than formal definition."
-
-**Implementation:** HTML/CSS or p5.js canvas drawing with clear labels and color-coding
-
+- Bottom annotation: "Named by any three non-collinear points"</p>
+<p><strong>Title above all panels:</strong> "The Three Undefined Terms of Geometry" (24pt, bold)</p>
+<p><strong>Footer note:</strong> "These terms are 'undefined' because they're so fundamental that we understand them through experience rather than formal definition."</p>
+<p><strong>Implementation:</strong> HTML/CSS or p5.js canvas drawing with clear labels and color-coding</p>
 </details>
-
 <h2 id="the-undefined-terms-point-line-and-plane">The Undefined Terms: Point, Line, and Plane</h2>
 <h3 id="point">Point</h3>
 <p>A <strong>point</strong> represents a specific location in space. It has no length, width, or thickness—it exists purely as a position. We name points with capital letters and represent them as small dots in drawings.</p>
@@ -2058,59 +2071,44 @@ Create a colorful diagram showing the three undefined terms side by side:
 </ul>
 <p>The floor of your classroom, the surface of a mirror, or a perfectly calm lake all approximate planes in the physical world—though real planes extend infinitely in geometry.</p>
 <h4 id="microsim-point-line-plane-explorer">MicroSim: Point, Line, Plane Explorer</h4>
-<details markdown="1">
+<details>
 <summary>Interactive visualization of undefined terms</summary>
-
-**Type:** MicroSim (p5.js)
-
-**Learning Objective:** Students will **apply** their understanding of points, lines, and planes by manipulating interactive geometric objects and observing their properties. (Bloom's Taxonomy: Applying)
-
-**Specification:**
-
-Create an interactive p5.js simulation allowing students to explore the three undefined terms.
-
-**Canvas:** 800px × 600px, background: white
-
-**Controls (bottom of canvas):**
+<p><strong>Type:</strong> MicroSim (p5.js)</p>
+<p><strong>Learning Objective:</strong> Students will <strong>apply</strong> their understanding of points, lines, and planes by manipulating interactive geometric objects and observing their properties. (Bloom's Taxonomy: Applying)</p>
+<p><strong>Specification:</strong></p>
+<p>Create an interactive p5.js simulation allowing students to explore the three undefined terms.</p>
+<p><strong>Canvas:</strong> 800px × 600px, background: white</p>
+<p><strong>Controls (bottom of canvas):</strong>
 - Three mode buttons: "Points" | "Lines" | "Planes"
 - Slider: "Number of Objects" (1-10)
 - Button: "Clear Canvas"
-- Button: "Random Pattern"
-
-**Behaviors:**
-
-**Point Mode:**
+- Button: "Random Pattern"</p>
+<p><strong>Behaviors:</strong></p>
+<p><strong>Point Mode:</strong>
 - Click anywhere to create a new point
 - Points appear as colored circles (6px diameter, random colors from palette)
 - Each point automatically labeled with consecutive letters (A, B, C, ...)
-- Hover over point to see coordinates
-
-**Line Mode:**
+- Hover over point to see coordinates</p>
+<p><strong>Line Mode:</strong>
 - Click two points to create a line through them
 - Line extends across entire canvas with arrows on both ends
-- Line labeled as $\overleftrightarrow{AB}$ where A and B are the clicked points
-- Show equation of line in slope-intercept form when hovering
-
-**Plane Mode:**
+- Line labeled as <span class="arithmatex">\(\overleftrightarrow{AB}\)</span> where A and B are the clicked points
+- Show equation of line in slope-intercept form when hovering</p>
+<p><strong>Plane Mode:</strong>
 - Click three non-collinear points to create a plane
 - Plane appears as semi-transparent parallelogram with grid lines
 - Plane labeled with the three defining points
-- Hover to highlight the plane
-
-**Visual Feedback:**
+- Hover to highlight the plane</p>
+<p><strong>Visual Feedback:</strong>
 - Current mode highlighted in blue
 - Instruction text at top: "Point Mode: Click to add points" (changes with mode)
-- Counter showing number of each object type created
-
-**Color Palette:**
+- Counter showing number of each object type created</p>
+<p><strong>Color Palette:</strong>
 - Points: Red (#E53935), Blue (#1E88E5), Green (#43A047), Purple (#8E24AA)
 - Lines: Blue (#1976D2), 2px thickness
-- Planes: Semi-transparent yellow (#FDD835 at 30% opacity)
-
-**Implementation:** p5.js with createCanvas(), mousePressed(), and DOM controls
-
+- Planes: Semi-transparent yellow (#FDD835 at 30% opacity)</p>
+<p><strong>Implementation:</strong> p5.js with createCanvas(), mousePressed(), and DOM controls</p>
 </details>
-
 <h2 id="building-with-basic-objects">Building with Basic Objects</h2>
 <p>Now that we understand points, lines, and planes, we can use them to create more specific geometric objects.</p>
 <h3 id="ray">Ray</h3>
@@ -2135,67 +2133,55 @@ Create an interactive p5.js simulation allowing students to explore the three un
 </ul>
 <p>The edge of your desk, the distance between two cities on a map, or the side of a triangle are all examples of line segments.</p>
 <h4 id="diagram-rays-and-segments">Diagram: Rays and Segments</h4>
-<details markdown="1">
+<details>
 <summary>Comparison of rays and line segments</summary>
-
-**Type:** Diagram
-
-**Learning Objective:** Students will **understand** the differences between rays and line segments by comparing their visual representations and properties. (Bloom's Taxonomy: Understanding)
-
-**Specification:**
-
-Create a side-by-side comparison diagram of rays and line segments.
-
-**Canvas:** 700px × 400px, background: #F5F5F5
-
-**Layout:** Two panels, side by side
-
-**Left Panel: Rays (350px × 400px)**
+<p><strong>Type:</strong> Diagram</p>
+<p><strong>Learning Objective:</strong> Students will <strong>understand</strong> the differences between rays and line segments by comparing their visual representations and properties. (Bloom's Taxonomy: Understanding)</p>
+<p><strong>Specification:</strong></p>
+<p>Create a side-by-side comparison diagram of rays and line segments.</p>
+<p><strong>Canvas:</strong> 700px × 400px, background: #F5F5F5</p>
+<p><strong>Layout:</strong> Two panels, side by side</p>
+<p><strong>Left Panel: Rays (350px × 400px)</strong>
 - Background: Light blue gradient (#E3F2FD to #BBDEFB)
 - Title: "Rays" (bold, 20pt)
 - Show two rays:
-  - **Ray 1:** $\overrightarrow{AB}$ horizontal, pointing right
+  - <strong>Ray 1:</strong> <span class="arithmatex">\(\overrightarrow{AB}\)</span> horizontal, pointing right
     - Endpoint A (solid red dot, 8px)
     - Point B (solid blue dot, 6px) midway along ray
     - Arrow on right end only
-    - Label: $\overrightarrow{AB}$
-  - **Ray 2:** $\overrightarrow{CD}$ at 45° angle, pointing up-right
+    - Label: <span class="arithmatex">\(\overrightarrow{AB}\)</span>
+  - <strong>Ray 2:</strong> <span class="arithmatex">\(\overrightarrow{CD}\)</span> at 45° angle, pointing up-right
     - Endpoint C (solid red dot, 8px)
     - Point D (solid blue dot, 6px) midway along ray
     - Arrow on up-right end only
-    - Label: $\overrightarrow{CD}$
+    - Label: <span class="arithmatex">\(\overrightarrow{CD}\)</span>
 - Callout box: "Starts at an endpoint" (pointing to point A)
 - Callout box: "Extends infinitely" (pointing to arrow)
-- Bottom annotation: "One endpoint + infinite extension"
-
-**Right Panel: Line Segments (350px × 400px)**
+- Bottom annotation: "One endpoint + infinite extension"</p>
+<p><strong>Right Panel: Line Segments (350px × 400px)</strong>
 - Background: Light green gradient (#E8F5E9 to #C8E6C9)
 - Title: "Line Segments" (bold, 20pt)
 - Show two segments:
-  - **Segment 1:** $\overline{PQ}$ horizontal
+  - <strong>Segment 1:</strong> <span class="arithmatex">\(\overline{PQ}\)</span> horizontal
     - Endpoint P (solid purple dot, 8px)
     - Endpoint Q (solid purple dot, 8px)
     - No arrows on either end
-    - Label: $\overline{PQ}$
+    - Label: <span class="arithmatex">\(\overline{PQ}\)</span>
     - Length measurement: "5 cm" above segment
-  - **Segment 2:** $\overline{RS}$ vertical
+  - <strong>Segment 2:</strong> <span class="arithmatex">\(\overline{RS}\)</span> vertical
     - Endpoint R (solid purple dot, 8px)
     - Endpoint S (solid purple dot, 8px)
     - No arrows on either end
-    - Label: $\overline{RS}$
+    - Label: <span class="arithmatex">\(\overline{RS}\)</span>
     - Length measurement: "3 cm" to the right
 - Callout box: "Has two endpoints" (pointing to endpoints)
 - Callout box: "Measurable length" (pointing to measurement)
-- Bottom annotation: "Two endpoints + finite length"
-
-**Middle Divider:**
+- Bottom annotation: "Two endpoints + finite length"</p>
+<p><strong>Middle Divider:</strong>
 - Vertical dashed line (2px, gray) separating the panels
-- Label: "vs."
-
-**Implementation:** SVG or p5.js canvas with clear labels, endpoints, and measurements
-
+- Label: "vs."</p>
+<p><strong>Implementation:</strong> SVG or p5.js canvas with clear labels, endpoints, and measurements</p>
 </details>
-
 <h3 id="midpoint">Midpoint</h3>
 <p>The <strong>midpoint</strong> of a line segment is the point that divides the segment into two equal parts. It's exactly halfway between the endpoints.</p>
 <p><strong>Key characteristics:</strong></p>
@@ -2235,69 +2221,54 @@ Create a side-by-side comparison diagram of rays and line segments.
 </ul>
 <p>Think of a vertex like the hinge of a door—it's the fixed point around which rotation occurs.</p>
 <h4 id="microsim-angle-builder">MicroSim: Angle Builder</h4>
-<details markdown="1">
+<details>
 <summary>Interactive angle creation and measurement</summary>
-
-**Type:** MicroSim (p5.js)
-
-**Learning Objective:** Students will **create** angles of various measures and **analyze** the relationship between ray positions and angle measurements. (Bloom's Taxonomy: Creating, Analyzing)
-
-**Specification:**
-
-Create an interactive p5.js simulation for building and measuring angles.
-
-**Canvas:** 800px × 600px, background: white
-
-**Main Display:**
+<p><strong>Type:</strong> MicroSim (p5.js)</p>
+<p><strong>Learning Objective:</strong> Students will <strong>create</strong> angles of various measures and <strong>analyze</strong> the relationship between ray positions and angle measurements. (Bloom's Taxonomy: Creating, Analyzing)</p>
+<p><strong>Specification:</strong></p>
+<p>Create an interactive p5.js simulation for building and measuring angles.</p>
+<p><strong>Canvas:</strong> 800px × 600px, background: white</p>
+<p><strong>Main Display:</strong>
 - Fixed vertex at center of canvas (300, 300)
 - Vertex shown as large blue dot (10px diameter)
-- Label: "Vertex V" next to the vertex point
-
-**Ray 1 (Fixed):**
+- Label: "Vertex V" next to the vertex point</p>
+<p><strong>Ray 1 (Fixed):</strong>
 - Starts at vertex, extends horizontally to the right
 - Color: Blue (#1976D2), 3px thickness
 - Arrow on end
-- Label: "Ray 1" near the arrow
-
-**Ray 2 (Rotatable):**
+- Label: "Ray 1" near the arrow</p>
+<p><strong>Ray 2 (Rotatable):</strong>
 - Starts at vertex, rotates around it
 - Color: Red (#E53935), 3px thickness
 - Arrow on end
-- Label: "Ray 2" near the arrow
-
-**Angle Display:**
+- Label: "Ray 2" near the arrow</p>
+<p><strong>Angle Display:</strong>
 - Arc showing the angle between rays
 - Arc color: Green (#43A047), 2px thickness
 - Arc radius: 60px from vertex
-- Angle label: "$\angle 1 = $ [value]°" inside the arc
-
-**Controls (bottom panel):**
+- Angle label: "$\angle 1 = $ [value]°" inside the arc</p>
+<p><strong>Controls (bottom panel):</strong>
 - Slider: "Rotate Ray 2" (0° - 360°)
   - Position: Bottom center
   - Width: 400px
   - Label above showing current angle value
 - Button: "Reset to 0°"
 - Button: "Random Angle"
-- Dropdown: "Snap to:" [15° | 30° | 45° | 90° | Custom]
-
-**Interactive Features:**
+- Dropdown: "Snap to:" [15° | 30° | 45° | 90° | Custom]</p>
+<p><strong>Interactive Features:</strong>
 - Drag Ray 2 to rotate (in addition to slider)
 - Angle value updates in real-time
 - Arc color changes based on angle type:
   - 0°-89°: Green (acute)
   - 90°: Purple (right)
   - 91°-179°: Orange (obtuse)
-  - 180°: Red (straight)
-
-**Visual Feedback:**
+  - 180°: Red (straight)</p>
+<p><strong>Visual Feedback:</strong>
 - Angle classification displayed: "Acute Angle", "Right Angle", "Obtuse Angle", or "Straight Angle"
-- Complementary angle shown in small text: "Complementary: [90-angle]°" (when angle < 90°)
-- Supplementary angle shown: "Supplementary: [180-angle]°"
-
-**Implementation:** p5.js with createSlider(), rotation transformations, and arc()
-
+- Complementary angle shown in small text: "Complementary: [90-angle]°" (when angle &lt; 90°)
+- Supplementary angle shown: "Supplementary: [180-angle]°"</p>
+<p><strong>Implementation:</strong> p5.js with createSlider(), rotation transformations, and arc()</p>
 </details>
-
 <h2 id="relationships-between-points-and-lines">Relationships Between Points and Lines</h2>
 <h3 id="collinear-points">Collinear Points</h3>
 <p>Points are <strong>collinear</strong> if they all lie on the same line. Any two points are always collinear (you can always draw a line through two points), but three or more points may or may not be collinear.</p>
@@ -2316,22 +2287,15 @@ Create an interactive p5.js simulation for building and measuring angles.
 <li>All points in a 2D drawing are coplanar (they're all on the paper)</li>
 </ul>
 <h4 id="diagram-collinear-and-coplanar-points">Diagram: Collinear and Coplanar Points</h4>
-<details markdown="1">
+<details>
 <summary>Visual examples of collinear and coplanar arrangements</summary>
-
-**Type:** Diagram
-
-**Learning Objective:** Students will **analyze** point arrangements to determine whether sets of points are collinear or coplanar. (Bloom's Taxonomy: Analyzing)
-
-**Specification:**
-
-Create a four-panel diagram showing examples and non-examples of collinear and coplanar points.
-
-**Canvas:** 900px × 600px, background: #FAFAFA
-
-**Layout:** 2×2 grid, each panel 450px × 300px
-
-**Panel 1: Collinear Points (Top Left)**
+<p><strong>Type:</strong> Diagram</p>
+<p><strong>Learning Objective:</strong> Students will <strong>analyze</strong> point arrangements to determine whether sets of points are collinear or coplanar. (Bloom's Taxonomy: Analyzing)</p>
+<p><strong>Specification:</strong></p>
+<p>Create a four-panel diagram showing examples and non-examples of collinear and coplanar points.</p>
+<p><strong>Canvas:</strong> 900px × 600px, background: #FAFAFA</p>
+<p><strong>Layout:</strong> 2×2 grid, each panel 450px × 300px</p>
+<p><strong>Panel 1: Collinear Points (Top Left)</strong>
 - Background: Light green (#E8F5E9)
 - Title: "Collinear Points ✓"
 - Show a blue line extending horizontally
@@ -2339,9 +2303,8 @@ Create a four-panel diagram showing examples and non-examples of collinear and c
 - Points: Red circles, 8px diameter
 - Label each point
 - Annotation: "All points lie on the same line"
-- Bottom text: "Points A, B, C, D are collinear"
-
-**Panel 2: Non-Collinear Points (Top Right)**
+- Bottom text: "Points A, B, C, D are collinear"</p>
+<p><strong>Panel 2: Non-Collinear Points (Top Right)</strong>
 - Background: Light red (#FFEBEE)
 - Title: "Non-Collinear Points ✗"
 - Show 3 points: P, Q, R forming a triangle
@@ -2349,9 +2312,8 @@ Create a four-panel diagram showing examples and non-examples of collinear and c
 - Dashed lines connecting all three points (forming triangle)
 - Label each point
 - Annotation: "Points do not all lie on same line"
-- Bottom text: "Points P, Q, R are NOT collinear"
-
-**Panel 3: Coplanar Points (Bottom Left)**
+- Bottom text: "Points P, Q, R are NOT collinear"</p>
+<p><strong>Panel 3: Coplanar Points (Bottom Left)</strong>
 - Background: Light blue (#E3F2FD)
 - Title: "Coplanar Points ✓"
 - Show a parallelogram representing a plane (semi-transparent purple with grid)
@@ -2359,9 +2321,8 @@ Create a four-panel diagram showing examples and non-examples of collinear and c
 - Points: Blue circles, 8px diameter
 - Label each point
 - Annotation: "All points lie on the same plane"
-- Bottom text: "Points W, X, Y, Z, V are coplanar"
-
-**Panel 4: Non-Coplanar Points (Bottom Right)**
+- Bottom text: "Points W, X, Y, Z, V are coplanar"</p>
+<p><strong>Panel 4: Non-Coplanar Points (Bottom Right)</strong>
 - Background: Light orange (#FFF3E0)
 - Title: "Non-Coplanar Points ✗"
 - 3D perspective view showing:
@@ -2371,12 +2332,9 @@ Create a four-panel diagram showing examples and non-examples of collinear and c
 - Points: Blue circles, 8px diameter
 - Label each point
 - Annotation: "Point P is not on the same plane as M, N, O"
-- Bottom text: "Points M, N, O, P are NOT coplanar"
-
-**Implementation:** SVG or Canvas with 3D perspective for Panel 4
-
+- Bottom text: "Points M, N, O, P are NOT coplanar"</p>
+<p><strong>Implementation:</strong> SVG or Canvas with 3D perspective for Panel 4</p>
 </details>
-
 <h3 id="intersection">Intersection</h3>
 <p>An <strong>intersection</strong> is the set of points that two or more figures have in common. When geometric objects cross or overlap, their intersection is where they meet.</p>
 <p><strong>Common intersections:</strong></p>
@@ -2424,60 +2382,46 @@ Create a four-panel diagram showing examples and non-examples of collinear and c
 </ul>
 <p><strong>Examples:</strong> A highway overpass and the road beneath it (going in different directions), opposite edges of a rectangular box that don't share a corner</p>
 <h4 id="diagram-line-relationships-in-3d">Diagram: Line Relationships in 3D</h4>
-<details markdown="1">
+<details>
 <summary>3D visualization of parallel, perpendicular, and skew lines</summary>
-
-**Type:** Diagram
-
-**Learning Objective:** Students will **understand** the differences between parallel, perpendicular, and skew line relationships, especially in three-dimensional space. (Bloom's Taxonomy: Understanding)
-
-**Specification:**
-
-Create a 3D box diagram showing all three line relationships.
-
-**Canvas:** 800px × 600px, background: Linear gradient from #E3F2FD (top) to #F5F5F5 (bottom)
-
-**Main Element:**
+<p><strong>Type:</strong> Diagram</p>
+<p><strong>Learning Objective:</strong> Students will <strong>understand</strong> the differences between parallel, perpendicular, and skew line relationships, especially in three-dimensional space. (Bloom's Taxonomy: Understanding)</p>
+<p><strong>Specification:</strong></p>
+<p>Create a 3D box diagram showing all three line relationships.</p>
+<p><strong>Canvas:</strong> 800px × 600px, background: Linear gradient from #E3F2FD (top) to #F5F5F5 (bottom)</p>
+<p><strong>Main Element:</strong>
 - Draw a rectangular prism (box) in 3D perspective
 - Dimensions: 300 × 200 × 150 (width × height × depth)
 - Box edges: Black, 2px
 - Box faces: Semi-transparent white (#FFFFFF at 40%)
-- Position: Slightly rotated to show 3 faces clearly
-
-**Parallel Lines (shown in blue):**
+- Position: Slightly rotated to show 3 faces clearly</p>
+<p><strong>Parallel Lines (shown in blue):</strong>
 - Highlight two vertical edges on opposite sides of box
 - Color: Blue (#1976D2), 4px thickness
 - Labels: "Line m" and "Line n"
 - Annotation box: "Parallel lines: Same plane, never intersect"
-- Add || symbol between the lines
-
-**Perpendicular Lines (shown in red):**
+- Add || symbol between the lines</p>
+<p><strong>Perpendicular Lines (shown in red):</strong>
 - Highlight one vertical edge and one horizontal edge that meet at a corner
 - Color: Red (#E53935), 4px thickness
 - Labels: "Line p" and "Line q"
 - Small square symbol at the intersection (90° indicator)
 - Annotation box: "Perpendicular lines: Intersect at 90°"
-- Add ⊥ symbol at intersection
-
-**Skew Lines (shown in green):**
+- Add ⊥ symbol at intersection</p>
+<p><strong>Skew Lines (shown in green):</strong>
 - Highlight one edge on front face and one edge on back face that don't meet
 - Color: Green (#43A047), 4px thickness
 - Labels: "Line r" and "Line s"
 - Dashed line showing shortest distance between them
-- Annotation box: "Skew lines: Different planes, never intersect"
-
-**Legend (bottom right corner):**
+- Annotation box: "Skew lines: Different planes, never intersect"</p>
+<p><strong>Legend (bottom right corner):</strong>
 - Three colored bars with labels:
   - Blue bar: "Parallel (coplanar, no intersection)"
   - Red bar: "Perpendicular (intersect at 90°)"
-  - Green bar: "Skew (non-coplanar, no intersection)"
-
-**Title:** "Line Relationships in 3D Space" (top, 24pt bold)
-
-**Implementation:** SVG with 3D perspective transformations or p5.js with custom projection
-
+  - Green bar: "Skew (non-coplanar, no intersection)"</p>
+<p><strong>Title:</strong> "Line Relationships in 3D Space" (top, 24pt bold)</p>
+<p><strong>Implementation:</strong> SVG with 3D perspective transformations or p5.js with custom projection</p>
 </details>
-
 <h2 id="mathematical-reasoning-finding-patterns-and-proving-ideas">Mathematical Reasoning: Finding Patterns and Proving Ideas</h2>
 <p>Geometry isn't just about shapes—it's about thinking logically and making convincing arguments. Mathematicians use two main types of reasoning to explore patterns and prove their discoveries.</p>
 <h3 id="inductive-reasoning">Inductive Reasoning</h3>
@@ -2531,87 +2475,66 @@ Create a 3D box diagram showing all three line relationships.
 </ul>
 <p><strong>Power of counterexamples:</strong> You can test thousands of cases and a conjecture seems true, but one counterexample proves it's false!</p>
 <h4 id="microsim-reasoning-detective">MicroSim: Reasoning Detective</h4>
-<details markdown="1">
+<details>
 <summary>Interactive reasoning challenge game</summary>
-
-**Type:** MicroSim (p5.js)
-
-**Learning Objective:** Students will **evaluate** mathematical statements by applying inductive and deductive reasoning, and **create** counterexamples to disprove false conjectures. (Bloom's Taxonomy: Evaluating, Creating)
-
-**Specification:**
-
-Create an interactive game where students practice inductive reasoning, deductive reasoning, and finding counterexamples.
-
-**Canvas:** 900px × 700px, background: #F5F5F5
-
-**Game Structure:**
-
-**Top Section: Problem Display (900px × 300px)**
+<p><strong>Type:</strong> MicroSim (p5.js)</p>
+<p><strong>Learning Objective:</strong> Students will <strong>evaluate</strong> mathematical statements by applying inductive and deductive reasoning, and <strong>create</strong> counterexamples to disprove false conjectures. (Bloom's Taxonomy: Evaluating, Creating)</p>
+<p><strong>Specification:</strong></p>
+<p>Create an interactive game where students practice inductive reasoning, deductive reasoning, and finding counterexamples.</p>
+<p><strong>Canvas:</strong> 900px × 700px, background: #F5F5F5</p>
+<p><strong>Game Structure:</strong></p>
+<p><strong>Top Section: Problem Display (900px × 300px)</strong>
 - Background: White with light blue border
 - Large text area showing current problem
 - Problem types rotate:
-  1. **Inductive Challenge:** "Look at these examples... What pattern do you see?"
-  2. **Deductive Challenge:** "Given these facts... What can you conclude?"
-  3. **Counterexample Hunt:** "Is this conjecture true? Find a counterexample!"
-
-**Middle Section: Interactive Area (900px × 250px)**
+  1. <strong>Inductive Challenge:</strong> "Look at these examples... What pattern do you see?"
+  2. <strong>Deductive Challenge:</strong> "Given these facts... What can you conclude?"
+  3. <strong>Counterexample Hunt:</strong> "Is this conjecture true? Find a counterexample!"</p>
+<p><strong>Middle Section: Interactive Area (900px × 250px)</strong>
 - Background: Light yellow (#FFF9C4)
-- Content changes based on problem type:
-
-**For Inductive Challenges:**
+- Content changes based on problem type:</p>
+<p><strong>For Inductive Challenges:</strong>
   - Show 3-4 visual examples (shapes, numbers, patterns)
   - Multiple choice: "What's the pattern?" with 4 options
-  - Feedback when answer selected
-
-**For Deductive Challenges:**
+  - Feedback when answer selected</p>
+<p><strong>For Deductive Challenges:</strong>
   - Display given facts in boxes
   - Logical steps shown as flowchart
-  - Fill-in-the-blank for conclusion
-
-**For Counterexample Challenges:**
+  - Fill-in-the-blank for conclusion</p>
+<p><strong>For Counterexample Challenges:</strong>
   - Display a conjecture
   - Interactive number pad or shape builder
   - "Test this" button to check if input is a counterexample
-  - Feedback: "Not a counterexample" or "✓ You found one!"
-
-**Bottom Section: Score & Controls (900px × 150px)**
+  - Feedback: "Not a counterexample" or "✓ You found one!"</p>
+<p><strong>Bottom Section: Score &amp; Controls (900px × 150px)</strong>
 - Score display: "Correct: X | Attempts: Y"
 - Progress bar showing current level
 - Buttons: "New Problem" | "Hint" | "Explain Answer"
-- Reasoning type indicator: "Current mode: Inductive Reasoning"
-
-**Sample Problems:**
-
-**Inductive Example 1:**
+- Reasoning type indicator: "Current mode: Inductive Reasoning"</p>
+<p><strong>Sample Problems:</strong></p>
+<p><strong>Inductive Example 1:</strong>
 - Show shapes: Triangle (3 sides, 180°), Square (4 sides, 360°), Pentagon (5 sides, 540°)
 - Question: "What's the pattern for interior angle sum?"
-- Options: "Add 180° for each side" | "Multiply sides by 90°" | "(n-2) × 180°" | "n × 180°"
-
-**Deductive Example 1:**
+- Options: "Add 180° for each side" | "Multiply sides by 90°" | "(n-2) × 180°" | "n × 180°"</p>
+<p><strong>Deductive Example 1:</strong>
 - Fact 1: "All squares have four equal sides"
 - Fact 2: "Figure ABCD is a square"
-- Question: "What can you conclude?" → Answer: "ABCD has four equal sides"
-
-**Counterexample Example 1:**
+- Question: "What can you conclude?" → Answer: "ABCD has four equal sides"</p>
+<p><strong>Counterexample Example 1:</strong>
 - Conjecture: "If a number ends in 5, it's divisible by 10"
 - Input: Number pad
-- Test: "15" → "✓ Counterexample! 15 ends in 5 but isn't divisible by 10"
-
-**Visual Feedback:**
+- Test: "15" → "✓ Counterexample! 15 ends in 5 but isn't divisible by 10"</p>
+<p><strong>Visual Feedback:</strong>
 - Correct answers: Green checkmark animation, +10 points, encouraging message
 - Incorrect answers: Red X, explanation of why it's wrong, hint offered
-- Counterexample found: Gold star animation, "Great reasoning!"
-
-**Difficulty Progression:**
+- Counterexample found: Gold star animation, "Great reasoning!"</p>
+<p><strong>Difficulty Progression:</strong>
 - Levels 1-3: Simple patterns, basic logic
 - Levels 4-6: Multi-step reasoning
 - Levels 7-9: Complex patterns, tricky counterexamples
-- Level 10: Mixed challenge round
-
-**Implementation:** p5.js with problem bank (JSON), DOM input elements, and animation feedback
-
+- Level 10: Mixed challenge round</p>
+<p><strong>Implementation:</strong> p5.js with problem bank (JSON), DOM input elements, and animation feedback</p>
 </details>
-
 <h2 id="putting-it-all-together-the-language-of-geometry">Putting It All Together: The Language of Geometry</h2>
 <p>You've now learned the fundamental building blocks of geometry and how to reason about them. Let's summarize the key ideas:</p>
 <p><strong>The Undefined Terms:</strong> Point, Line, and Plane form the foundation—everything else is built from these three concepts.</p>
@@ -2628,34 +2551,25 @@ Create an interactive game where students practice inductive reasoning, deductiv
 <li><strong>Counterexamples:</strong> Find one case where a conjecture fails → Disprove the conjecture</li>
 </ul>
 <h4 id="diagram-concept-map-of-chapter-1">Diagram: Concept Map of Chapter 1</h4>
-<details markdown="1">
+<details>
 <summary>Visual summary of all concepts and their relationships</summary>
-
-**Type:** Interactive Infographic
-
-**Learning Objective:** Students will **evaluate** their understanding of the chapter by exploring connections between concepts and **remember** key definitions and relationships. (Bloom's Taxonomy: Remembering, Evaluating)
-
-**Specification:**
-
-Create an interactive concept map showing all 18 concepts and their relationships.
-
-**Canvas:** 1000px × 800px, background: Radial gradient from white (center) to light blue (#E3F2FD)
-
-**Layout:** Hub-and-spoke with hierarchical organization
-
-**Center Hub:**
+<p><strong>Type:</strong> Interactive Infographic</p>
+<p><strong>Learning Objective:</strong> Students will <strong>evaluate</strong> their understanding of the chapter by exploring connections between concepts and <strong>remember</strong> key definitions and relationships. (Bloom's Taxonomy: Remembering, Evaluating)</p>
+<p><strong>Specification:</strong></p>
+<p>Create an interactive concept map showing all 18 concepts and their relationships.</p>
+<p><strong>Canvas:</strong> 1000px × 800px, background: Radial gradient from white (center) to light blue (#E3F2FD)</p>
+<p><strong>Layout:</strong> Hub-and-spoke with hierarchical organization</p>
+<p><strong>Center Hub:</strong>
 - Large circle (80px diameter): "Foundations of Geometry"
 - Color: Dark blue (#1565C0)
-- Text: White, bold
-
-**First Ring - Undefined Terms (closest to center):**
+- Text: White, bold</p>
+<p><strong>First Ring - Undefined Terms (closest to center):</strong>
 - Three circles around hub:
   1. "Point" (red, 60px)
   2. "Line" (blue, 60px)
   3. "Plane" (green, 60px)
-- Lines connecting each to center hub
-
-**Second Ring - Basic Objects:**
+- Lines connecting each to center hub</p>
+<p><strong>Second Ring - Basic Objects:</strong>
 - Six circles:
   - "Ray" (connects to Line)
   - "Line Segment" (connects to Line)
@@ -2663,51 +2577,43 @@ Create an interactive concept map showing all 18 concepts and their relationship
   - "Vertex" (connects to Angle)
   - "Midpoint" (connects to Line Segment)
   - "Intersection" (connects to multiple: Line, Plane)
-- Each labeled with icon and text
-
-**Third Ring - Point Relationships:**
+- Each labeled with icon and text</p>
+<p><strong>Third Ring - Point Relationships:</strong>
 - Two circles:
   - "Collinear Points" (connects to Line)
-  - "Coplanar Points" (connects to Plane)
-
-**Third Ring - Line Relationships:**
+  - "Coplanar Points" (connects to Plane)</p>
+<p><strong>Third Ring - Line Relationships:</strong>
 - Three circles:
   - "Parallel Lines" (connects to Line)
   - "Perpendicular Lines" (connects to Line, Angle)
-  - "Skew Lines" (connects to Line, Plane)
-
-**Fourth Ring (outer) - Reasoning:**
+  - "Skew Lines" (connects to Line, Plane)</p>
+<p><strong>Fourth Ring (outer) - Reasoning:</strong>
 - Four circles:
   - "Inductive Reasoning" (orange)
   - "Deductive Reasoning" (orange)
   - "Conjecture" (connects to Inductive)
-  - "Counterexample" (connects to Conjecture)
-
-**Interactive Features:**
-- **Hover over any concept:**
+  - "Counterexample" (connects to Conjecture)</p>
+<p><strong>Interactive Features:</strong>
+- <strong>Hover over any concept:</strong>
   - Circle enlarges slightly
   - Tooltip appears with definition
   - Connected concepts highlight in yellow
-- **Click on concept:**
+- <strong>Click on concept:</strong>
   - Full definition panel slides in from right
   - Shows examples and non-examples
   - "Related Concepts" section highlights connections
-- **Legend button:** Shows color coding:
+- <strong>Legend button:</strong> Shows color coding:
   - Red = Undefined Terms
   - Blue = Objects
   - Green = Relationships
-  - Orange = Reasoning
-
-**Visual Design:**
+  - Orange = Reasoning</p>
+<p><strong>Visual Design:</strong>
 - Connecting lines: Gray, 2px, with arrows showing dependency
 - Circle colors: As specified above
 - Labels: Black text, 12pt, positioned outside circles
-- Shadow effects on circles for depth
-
-**Implementation:** vis.js network or custom p5.js with node positioning and interaction handlers
-
+- Shadow effects on circles for depth</p>
+<p><strong>Implementation:</strong> vis.js network or custom p5.js with node positioning and interaction handlers</p>
 </details>
-
 <h2 id="practice-problems">Practice Problems</h2>
 <p>Now it's your turn! Try these problems to test your understanding:</p>
 <p><strong>Problem 1:</strong> Name three collinear points in this diagram:</p>
@@ -2744,6 +2650,9 @@ Create an interactive concept map showing all 18 concepts and their relationship
 
 
 
+
+  
+  
 
 
 
