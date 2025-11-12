@@ -16,6 +16,7 @@ nav:
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Diagrams: learning-graph/diagrams.md
   - Chapters:
     - Overview: chapters/index.md
     - 1. Foundations of Geometry: chapters/01-foundations-of-geometry/index.md
