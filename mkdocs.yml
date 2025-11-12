@@ -10,6 +10,7 @@ nav:
   - Home: index.md
   - About: about.md
   - Course Description: course-description.md
+  
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Concept List: learning-graph/concept-list.md
@@ -17,6 +18,7 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Diagrams: learning-graph/diagrams.md
+  
   - Chapters:
     - Overview: chapters/index.md
     - 1. Foundations of Geometry: chapters/01-foundations-of-geometry/index.md
@@ -31,6 +33,7 @@ nav:
     - 10. Similarity and Right Triangle Trigonometry: chapters/10-similarity-trigonometry/index.md
     - 11. Circles: chapters/11-circles/index.md
     - 12. Area, Volume, and Applications: chapters/12-area-volume-applications/index.md
+  
   - Sample Prompts:
     - Introduction: prompts/index.md
     - Course Description: prompts/01-course-description.md
@@ -43,6 +46,7 @@ nav:
     - MicroSims Ideas: prompts/08-microsims.md
     - Individual MicroSim: prompts/09-individual-microsim.md
     - Chapter Design: prompts/10-chapter-design.md
+  
   - MicroSims:
     - Introduction: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
@@ -59,6 +63,7 @@ nav:
     - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
     - Templates: sims/templates/index.md
     - Workflow: sims/workflow/index.md
+    - Colinear and Coplanar Points: sims/collinear-coplanar-points
   - Glossary: glossary.md
   - License: license.md
   - How We Built This Site: how-we-built-this-site.md
