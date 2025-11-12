@@ -10,9 +10,13 @@ social:
 
 # Collinear and Coplanar Points
 
-<iframe src="main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 [Run the Collinear and Coplanar Points MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+
+```html
+<iframe src="main.html" width="100%" height="500px" scrolling="no"></iframe>
+```
 
 ## Description
 

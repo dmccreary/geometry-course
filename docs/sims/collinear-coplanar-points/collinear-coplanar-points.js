@@ -1,8 +1,8 @@
 // Collinear and Coplanar Points Diagram
 // Shows examples and non-examples of collinear and coplanar points
 
-let canvasWidth = 600;
-let canvasHeight = 600;
+let canvasWidth = 600; // will be set to container
+let canvasHeight = 500;
 let containerWidth = canvasWidth;
 let containerHeight = canvasHeight;
 

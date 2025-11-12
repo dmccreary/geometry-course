@@ -425,11 +425,14 @@ Points are **coplanar** if they all lie on the same plane. Any three points are 
 - All points in a 2D drawing are coplanar (they're all on the paper)
 
 #### Diagram: Collinear and Coplanar Points
+<iframe src="../../sims/collinear-coplanar-points/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
+[View Collinear and Coplanar Points Full Screen ](../../sims/collinear-coplanar-points/main.html)
 <details markdown="1">
 <summary>Visual examples of collinear and coplanar arrangements</summary>
 
 **Type:** Diagram
+**Status:** Done
 
 **Learning Objective:** Students will **analyze** point arrangements to determine whether sets of points are collinear or coplanar. (Bloom's Taxonomy: Analyzing)
 
