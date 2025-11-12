@@ -665,15 +665,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#library" class="md-nav__link">
-    <span class="md-ellipsis">
-      Library
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#building-with-basic-objects" class="md-nav__link">
     <span class="md-ellipsis">
       Building with Basic Objects
@@ -1701,15 +1692,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#library" class="md-nav__link">
-    <span class="md-ellipsis">
-      Library
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#building-with-basic-objects" class="md-nav__link">
     <span class="md-ellipsis">
       Building with Basic Objects
@@ -2102,8 +2084,7 @@
 <p><a href="../../sims/point-line-plane/main.html">Run Point Line Plane Fullscreen</a></p>
 <details>
 <summary>Visual representation of point, line, and plane</summary>
-<p><strong>Type:</strong> Diagram
-<strong>Status:</strong> Done with P5.js at <a href="../../sims/point-line-plane/">Point Line Plane</a></p>
+<p><strong>Type:</strong> Diagram</p>
 <p><strong>Learning Objective:</strong> Students will <strong>remember</strong> the three undefined terms of geometry (point, line, plane) and <strong>understand</strong> their visual representations and basic properties. (Bloom's Taxonomy: Remembering, Understanding)</p>
 <p><strong>Specification:</strong></p>
 <p>Create a colorful diagram showing the three undefined terms side by side:</p>
@@ -2134,8 +2115,8 @@
 - Add annotation: "Has no thickness—only length and width"
 - Bottom annotation: "Named by any three non-collinear points"</p>
 <p><strong>Title above all panels:</strong> "The Three Undefined Terms of Geometry" (24pt, bold)</p>
-<p><strong>Footer note:</strong> "These terms are 'core' because they're so fundamental that we understand them through experience rather than formal definition."</p>
-<p><strong>Implementation:</strong> microsim-p5 skill</p>
+<p><strong>Footer note:</strong> "These terms are 'undefined' because they're so fundamental that we understand them through experience rather than formal definition."</p>
+<p><strong>Implementation:</strong> HTML/CSS or p5.js canvas drawing with clear labels and color-coding</p>
 </details>
 <h2 id="the-core-terms-point-line-and-plane">The Core Terms: Point, Line, and Plane</h2>
 <h3 id="point">Point</h3>
@@ -2168,8 +2149,6 @@
 </ul>
 <p>The floor of your classroom, the surface of a mirror, or a perfectly calm lake all approximate planes in the physical world—though real planes extend infinitely in geometry.</p>
 <h4 id="microsim-points-and-lines-explorer">MicroSim: Points and Lines Explorer</h4>
-<iframe src="../../sims/point-line-explorer/main.html" height="722px" scrolling="no"></iframe>
-<p><a href="../../sims/point-line-explorer/main.html">Run the Point and Line Explorer MicroSim Fullscreen</a></p>
 <details>
 <summary>Points and Lines Explorer</summary>
 <p>Directory name: point-line-explorer</p>
@@ -2214,36 +2193,7 @@ Users can do three things.  Move a point, create a new point and connect two poi
 <p><strong>Line Drawing:</strong>
 - Navy Blue 4px thickness
 - Lines span the entire drawing region - not just between points</p>
-<h2 id="library">Library</h2>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">drawLineSegmentSymbol</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">length</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="c1">// Draws a line segment symbol with arrows on both ends</span>
-<span class="w">  </span><span class="c1">// x, y: center position of the symbol</span>
-<span class="w">  </span><span class="c1">// length: length of the line segment</span>
-<span class="w">  </span><span class="nx">push</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
-
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">halfLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">length</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">leftX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">halfLength</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">rightX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">halfLength</span><span class="p">;</span>
-
-<span class="w">    </span><span class="c1">// Draw the line</span>
-<span class="w">    </span><span class="nx">line</span><span class="p">(</span><span class="nx">leftX</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">rightX</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// Draw arrow heads</span>
-<span class="w">    </span><span class="nx">noStroke</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">arrowSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
-
-<span class="w">    </span><span class="c1">// Left arrow</span>
-<span class="w">    </span><span class="nx">triangle</span><span class="p">(</span><span class="nx">leftX</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">leftX</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">arrowSize</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">leftX</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">arrowSize</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// Right arrow</span>
-<span class="w">    </span><span class="nx">triangle</span><span class="p">(</span><span class="nx">rightX</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">rightX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">arrowSize</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">rightX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">arrowSize</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">pop</span><span class="p">();</span>
-<span class="p">}</span>
-</code></pre></div>
-<p><strong>Implementation:</strong> use microsim-p5 skill</p>
+<p><strong>Implementation:</strong> p5.js with createCanvas(), mousePressed(), and DOM controls</p>
 </details>
 <h2 id="building-with-basic-objects">Building with Basic Objects</h2>
 <p>Now that we understand points, lines, and planes, we can use them to create more specific geometric objects.</p>
