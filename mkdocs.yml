@@ -65,7 +65,11 @@ nav:
     - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
     - Templates: sims/templates/index.md
     - Workflow: sims/workflow/index.md
-    - Colinear and Coplanar Points: sims/collinear-coplanar-points
+    - Colinear and Coplanar Points: sims/collinear-coplanar-points.md
+    - Line Relationships: sims/line-relationships/index.md
+  
+  
+  
   - Glossary: glossary.md
   - License: license.md
   - How We Built This Site: how-we-built-this-site.md

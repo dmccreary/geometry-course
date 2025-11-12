@@ -1,0 +1,133 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "title": "Line Relationships in 3D",
+  "description": "A 3D WebGL visualization demonstrating parallel, perpendicular, and skew line relationships in three-dimensional space using an interactive rotating box.",
+  "creator": "Claude Code with microsim-p5 skill",
+  "subject": ["Mathematics", "Geometry", "Spatial Reasoning"],
+  "topic": "3D Line Relationships",
+  "gradeLevel": "9-12",
+  "bloomsLevel": ["Understanding", "Analyzing", "Applying"],
+  "language": "en",
+  "format": "text/html",
+  "type": "Interactive Simulation",
+  "date": "2025-11-12",
+  "rights": "CC BY-NC 4.0",
+  "learningObjectives": [
+    "Identify parallel, perpendicular, and skew line relationships in 3D space",
+    "Distinguish between coplanar lines (parallel and perpendicular) and non-coplanar lines (skew)",
+    "Visualize how line relationships differ between 2D and 3D geometry",
+    "Apply knowledge of 3D line relationships to real-world structures"
+  ],
+  "prerequisites": [
+    "Understanding of basic line relationships in 2D (parallel and perpendicular)",
+    "Familiarity with 3D coordinate systems",
+    "Basic knowledge of angles and right angles"
+  ],
+  "duration": "15-20 minutes",
+  "framework": "p5.js",
+  "webGLEnabled": true,
+  "canvasWidth": 800,
+  "canvasHeight": 600,
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js 1.11.10 from CDN"],
+  "accessibility": {
+    "keyboardNavigation": false,
+    "screenReaderSupport": true,
+    "colorBlindSafe": true,
+    "description": "3D visualization with color-coded lines (blue for parallel, red for perpendicular, green for skew) and text labels"
+  },
+  "controls": [
+    {
+      "type": "checkbox",
+      "id": "autoRotateCheckbox",
+      "label": "Auto-rotate",
+      "default": true,
+      "description": "Enable or disable automatic rotation of the 3D box"
+    },
+    {
+      "type": "slider",
+      "id": "rotationSlider",
+      "label": "Rotation Speed",
+      "min": 0,
+      "max": 2,
+      "default": 0.5,
+      "step": 0.1,
+      "unit": "speed",
+      "description": "Control the speed of automatic rotation"
+    },
+    {
+      "type": "mouse",
+      "id": "mouseDrag",
+      "label": "Manual Rotation",
+      "description": "Click and drag to manually rotate the box in any direction"
+    }
+  ],
+  "variables": [
+    {
+      "name": "rotX",
+      "description": "Current rotation angle around X-axis",
+      "initialValue": -0.3,
+      "unit": "radians"
+    },
+    {
+      "name": "rotY",
+      "description": "Current rotation angle around Y-axis",
+      "initialValue": 0,
+      "unit": "radians"
+    },
+    {
+      "name": "boxWidth",
+      "description": "Width of the 3D box",
+      "initialValue": 300,
+      "unit": "pixels"
+    },
+    {
+      "name": "boxHeight",
+      "description": "Height of the 3D box",
+      "initialValue": 200,
+      "unit": "pixels"
+    },
+    {
+      "name": "boxDepth",
+      "description": "Depth of the 3D box",
+      "initialValue": 150,
+      "unit": "pixels"
+    }
+  ],
+  "modelType": "Geometric visualization",
+  "assumptions": [
+    "Lines are represented by edges of a rectangular prism",
+    "Box is semi-transparent to allow viewing of all edges",
+    "Color-coding distinguishes different line relationships"
+  ],
+  "limitations": [
+    "Shows only three specific examples of each line relationship",
+    "Box shape constrains the types of line relationships shown",
+    "Does not calculate or display numerical measurements of angles or distances"
+  ],
+  "visualElements": [
+    "3D rectangular prism (box) with transparent faces",
+    "Blue highlighted edges showing parallel lines with || symbol",
+    "Red highlighted edges showing perpendicular lines with ⊥ symbol and right angle indicator",
+    "Green highlighted edges showing skew lines with dashed distance line",
+    "Legend explaining all three line relationships",
+    "Text labels identifying each line (m, n, p, q, r, s)"
+  ],
+  "educationalStandards": [
+    "CCSS.MATH.CONTENT.HSG.CO.A.1 - Know precise definitions of line relationships",
+    "CCSS.MATH.CONTENT.HSG.GMD.B.4 - Identify shapes in three dimensions"
+  ],
+  "tags": [
+    "geometry",
+    "3D",
+    "spatial-reasoning",
+    "parallel-lines",
+    "perpendicular-lines",
+    "skew-lines",
+    "WebGL",
+    "interactive-3D",
+    "line-relationships",
+    "coplanar",
+    "non-coplanar"
+  ]
+}
