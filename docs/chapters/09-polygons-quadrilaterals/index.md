@@ -46,7 +46,7 @@ A **polygon** is a closed figure formed by three or more line segments called si
 Polygons are classified by the number of sides they have:
 
 - **Triangle:** 3 sides
-- **Quadrilateral:** 4 sides
+- **Square (or Quadrilateral):** 4 sides
 - **Pentagon:** 5 sides
 - **Hexagon:** 6 sides
 - **Heptagon (or Septagon):** 7 sides
@@ -64,6 +64,15 @@ We can also classify polygons by their regularity. A **regular polygon** has all
 ```html
 <iframe src="https://dmccreary.github.io/geometry-course/sims/regular-polygon-explorer/main.html" height="452px" width="100%" scrolling="no"></iframe>
 ```
+Now that you have seen some of the different types of regular polygons you can test your knowledge.
+Here is another version of the regular polygon explorer but with a twist!  In this version
+you will see a "Quiz Mode" button.  You can press this button and the MicroSim will
+give you the name of a shape and you mush move the slider to the right number of sides
+and then click the "Check Your Answer".  You might find that triangle and square are easy, but it is not easy to remember how many sides there are in a `Dodecagon`.  Try it out!
+
+#### Diagram: Regular Polygon Explorer Quiz
+
+<iframe src="../../sims/regular-polygon-explorer-quiz/main.html" height="452px" width="100%" scrolling="no"></iframe>
 
 #### Diagram: Polygon Family Tree
 <details markdown="1">

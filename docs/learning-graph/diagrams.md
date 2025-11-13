@@ -1,13 +1,18 @@
+---
+hide:
+  - toc
+---
+
 # Geometry Course - Diagram and MicroSim Report
 
-**Total Visual Elements:** 99
-**Diagrams:** 66
+**Total Visual Elements:** 97
+**Diagrams:** 64
 **MicroSims:** 31
 
 ## Summary by Difficulty
 
 - **Easy:** 56
-- **Medium:** 28
+- **Medium:** 26
 - **Hard:** 12
 - **Very Hard:** 3
 
@@ -15,75 +20,73 @@
 
 | Chapter | Element Title | Type | Bloom Levels | UI Elements | Difficulty |
 |---------|---------------|------|--------------|-------------|------------|
-| 01 | [Collinear and Coplanar Points](../../chapters/01-foundations-of-geometry/#diagram-collinear-and-coplanar-points) | Diagram | Analyzing | 7 | Medium |
-| 01 | [Concept Map of Chapter 1](../../chapters/01-foundations-of-geometry/#diagram-concept-map-of-chapter-1) | Unknown | Remembering, Evaluating | 2 | Easy |
-| 01 | [Line Relationships in 3D](../../chapters/01-foundations-of-geometry/#diagram-line-relationships-in-3d) | Diagram | Understanding | 0 | Medium |
-| 01 | [Rays and Segments](../../chapters/01-foundations-of-geometry/#diagram-rays-and-segments) | Diagram | Understanding | 4 | Medium |
-| 01 | [The Three Undefined Terms](../../chapters/01-foundations-of-geometry/#diagram-the-three-undefined-terms) | Diagram | Remembering, Understanding | 5 | Medium |
-| 02 | [Conditional Statement Structure](../../chapters/02-logic-and-proof/#diagram-conditional-statement-structure) | Diagram | Understanding | 0 | Easy |
-| 02 | [Coordinate Proof Setup for Rectangle Diagonals](../../chapters/02-logic-and-proof/#diagram-coordinate-proof-setup-for-rectangle-diagonals) | Diagram | Applying | 0 | Easy |
-| 02 | [Flow Chart Proof Example](../../chapters/02-logic-and-proof/#diagram-flow-chart-proof-example) | Diagram | Analyzing | 0 | Easy |
-| 02 | [Four Related Conditional Statements](../../chapters/02-logic-and-proof/#diagram-four-related-conditional-statements) | Diagram | Analyzing | 0 | Easy |
-| 02 | [Postulate Visualization Gallery](../../chapters/02-logic-and-proof/#diagram-postulate-visualization-gallery) | Diagram | Remembering | 9 | Medium |
-| 02 | [The Anatomy of a Proof](../../chapters/02-logic-and-proof/#diagram-the-anatomy-of-a-proof) | Diagram | Understanding | 0 | Easy |
-| 03 | [Adjacent vs. Non-Adjacent Angles](../../chapters/03-angles-and-relationships/#diagram-adjacent-vs.-non-adjacent-angles) | Diagram | Not specified | 0 | Easy |
-| 03 | [Angle Bisector Construction](../../chapters/03-angles-and-relationships/#diagram-angle-bisector-construction) | Diagram | Not specified | 0 | Easy |
-| 03 | [Angle Parts and Notation](../../chapters/03-angles-and-relationships/#diagram-angle-parts-and-notation) | Microsim | Not specified | 1 | Medium |
-| 03 | [Chapter Concept Map](../../chapters/03-angles-and-relationships/#diagram-chapter-concept-map) | Unknown | Not specified | 1 | Easy |
-| 03 | [Complementary Angles Visual](../../chapters/03-angles-and-relationships/#diagram-complementary-angles-visual) | Microsim | Not specified | 0 | Medium |
-| 03 | [Linear Pair Structure](../../chapters/03-angles-and-relationships/#diagram-linear-pair-structure) | Microsim | Not specified | 0 | Easy |
-| 03 | [Parallel Lines Cut by a Transversal Setup](../../chapters/03-angles-and-relationships/#diagram-parallel-lines-cut-by-a-transversal-setup) | Diagram | Not specified | 0 | Easy |
-| 03 | [Right Angle in Real-World Contexts](../../chapters/03-angles-and-relationships/#diagram-right-angle-in-real-world-contexts) | Diagram | Not specified | 6 | Easy |
-| 03 | [Summary of Angle Relationships with Parallel Lines](../../chapters/03-angles-and-relationships/#diagram-summary-of-angle-relationships-with-parallel-lines) | Diagram | Not specified | 6 | Medium |
-| 03 | [Vertical Angles at Intersection](../../chapters/03-angles-and-relationships/#diagram-vertical-angles-at-intersection) | Microsim | Not specified | 0 | Easy |
-| 04 | [Bisecting a Segment - Complete Construction](../../chapters/04-geometric-constructions/#diagram-bisecting-a-segment---complete-construction) | Diagram | Not specified | 5 | Easy |
-| 04 | [Bisecting an Angle - Sequential Steps](../../chapters/04-geometric-constructions/#diagram-bisecting-an-angle---sequential-steps) | Diagram | Not specified | 6 | Easy |
-| 04 | [Constructing Parallel Lines Using Corresponding Angles](../../chapters/04-geometric-constructions/#diagram-constructing-parallel-lines-using-corresponding-angles) | Diagram | Not specified | 7 | Medium |
-| 04 | [Construction Techniques Reference Chart](../../chapters/04-geometric-constructions/#diagram-construction-techniques-reference-chart) | Diagram | Not specified | 16 | Medium |
-| 04 | [Copying a Segment - All Steps Shown](../../chapters/04-geometric-constructions/#diagram-copying-a-segment---all-steps-shown) | Diagram | Not specified | 7 | Medium |
-| 04 | [Parts of a Compass and Basic Circle Construction](../../chapters/04-geometric-constructions/#diagram-parts-of-a-compass-and-basic-circle-construction) | Diagram | Not specified | 3 | Easy |
-| 04 | [Straightedge vs. Ruler](../../chapters/04-geometric-constructions/#diagram-straightedge-vs.-ruler) | Diagram | Not specified | 3 | Easy |
-| 04 | [Two Types of Perpendicular Constructions](../../chapters/04-geometric-constructions/#diagram-two-types-of-perpendicular-constructions) | Diagram | Not specified | 5 | Medium |
-| 05 | [Distance Formula Visualization](../../chapters/05-coordinate-geometry/#diagram-distance-formula-visualization) | Diagram | Not specified | 4 | Easy |
-| 05 | [Four Types of Slope](../../chapters/05-coordinate-geometry/#diagram-four-types-of-slope) | Diagram | Not specified | 6 | Medium |
-| 05 | [Midpoint Formula Visualization](../../chapters/05-coordinate-geometry/#diagram-midpoint-formula-visualization) | Diagram | Not specified | 4 | Medium |
-| 05 | [Parallel Lines in the Coordinate Plane](../../chapters/05-coordinate-geometry/#diagram-parallel-lines-in-the-coordinate-plane) | Diagram | Not specified | 2 | Easy |
-| 05 | [Perpendicular Lines with Negative Reciprocal Slopes](../../chapters/05-coordinate-geometry/#diagram-perpendicular-lines-with-negative-reciprocal-slopes) | Diagram | Not specified | 0 | Easy |
-| 05 | [Slope-Intercept Form Visualization](../../chapters/05-coordinate-geometry/#diagram-slope-intercept-form-visualization) | Diagram | Not specified | 0 | Medium |
-| 05 | [The Coordinate Plane and Quadrants](../../chapters/05-coordinate-geometry/#diagram-the-coordinate-plane-and-quadrants) | Diagram | Not specified | 0 | Easy |
-| 06 | [Congruent Triangles with Corresponding Parts](../../chapters/06-transformations-congruence/#diagram-congruent-triangles-with-corresponding-parts) | Diagram | Not specified | 1 | Easy |
-| 06 | [Dilations with Different Scale Factors](../../chapters/06-transformations-congruence/#diagram-dilations-with-different-scale-factors) | Diagram | Not specified | 0 | Easy |
-| 06 | [Pre-Image and Image Notation](../../chapters/06-transformations-congruence/#diagram-pre-image-and-image-notation) | Diagram | Not specified | 0 | Easy |
-| 06 | [Reflections Over Different Lines](../../chapters/06-transformations-congruence/#diagram-reflections-over-different-lines) | Diagram | Not specified | 0 | Easy |
-| 06 | [Rigid Motion Summary](../../chapters/06-transformations-congruence/#diagram-rigid-motion-summary) | Diagram | Not specified | 0 | Medium |
-| 06 | [Rotation Around Origin](../../chapters/06-transformations-congruence/#diagram-rotation-around-origin) | Diagram | Not specified | 0 | Easy |
-| 06 | [Translation Examples](../../chapters/06-transformations-congruence/#diagram-translation-examples) | Diagram | Not specified | 0 | Easy |
-| 06 | [Triangle Congruence Criteria](../../chapters/06-transformations-congruence/#diagram-triangle-congruence-criteria) | Diagram | Not specified | 9 | Medium |
-| 07 | [All Five Congruence Criteria Reference](../../chapters/07-triangle-congruence/#diagram-all-five-congruence-criteria-reference) | Diagram | Not specified | 7 | Medium |
-| 07 | [Exterior Angle Theorem Visualization](../../chapters/07-triangle-congruence/#diagram-exterior-angle-theorem-visualization) | Diagram | Not specified | 0 | Easy |
-| 07 | [Four Special Segments and Their Concurrent Points](../../chapters/07-triangle-congruence/#diagram-four-special-segments-and-their-concurrent-points) | Diagram | Not specified | 5 | Medium |
-| 07 | [Hinge Theorem Visualization](../../chapters/07-triangle-congruence/#diagram-hinge-theorem-visualization) | Diagram | Not specified | 0 | Easy |
-| 07 | [Isosceles Triangle Properties](../../chapters/07-triangle-congruence/#diagram-isosceles-triangle-properties) | Diagram | Not specified | 0 | Easy |
-| 07 | [SAS Congruence with Included Angle](../../chapters/07-triangle-congruence/#diagram-sas-congruence-with-included-angle) | Diagram | Not specified | 0 | Easy |
-| 07 | [SSS Congruence Visualization](../../chapters/07-triangle-congruence/#diagram-sss-congruence-visualization) | Diagram | Not specified | 6 | Easy |
-| 07 | [Triangle Classification by Angles](../../chapters/07-triangle-congruence/#diagram-triangle-classification-by-angles) | Diagram | Not specified | 0 | Easy |
-| 07 | [Triangle Classification by Sides](../../chapters/07-triangle-congruence/#diagram-triangle-classification-by-sides) | Diagram | Not specified | 0 | Easy |
-| 07 | [Triangle Sum Theorem Proof Visualization](../../chapters/07-triangle-congruence/#diagram-triangle-sum-theorem-proof-visualization) | Diagram | Not specified | 0 | Easy |
-| 08 | [All Four Centers in One Triangle](../../chapters/08-triangle-centers/#diagram-all-four-centers-in-one-triangle) | Microsim | Not specified | 1 | Medium |
-| 08 | [Equilateral Triangle with Coinciding Centers](../../chapters/08-triangle-centers/#diagram-equilateral-triangle-with-coinciding-centers) | Diagram | Not specified | 0 | Easy |
-| 08 | [Orthocenter Location in Different Triangle Types](../../chapters/08-triangle-centers/#diagram-orthocenter-location-in-different-triangle-types) | Diagram | Not specified | 5 | Medium |
-| 08 | [The Euler Line](../../chapters/08-triangle-centers/#diagram-the-euler-line) | Microsim | Not specified | 0 | Easy |
-| 08 | [The Nine-Point Circle](../../chapters/08-triangle-centers/#diagram-the-nine-point-circle) | Diagram | Not specified | 0 | Easy |
-| 08 | [Triangle with Angle Bisectors and Incenter](../../chapters/08-triangle-centers/#diagram-triangle-with-angle-bisectors-and-incenter) | Microsim | Not specified | 0 | Easy |
-| 08 | [Triangle with Perpendicular Bisectors and Circumcenter](../../chapters/08-triangle-centers/#diagram-triangle-with-perpendicular-bisectors-and-circumcenter) | Microsim | Not specified | 0 | Easy |
-| 08 | [Triangle with Three Altitudes and Orthocenter](../../chapters/08-triangle-centers/#diagram-triangle-with-three-altitudes-and-orthocenter) | Microsim | Not specified | 0 | Easy |
-| 08 | [Triangle with Three Medians and Centroid](../../chapters/08-triangle-centers/#diagram-triangle-with-three-medians-and-centroid) | Microsim | Not specified | 0 | Easy |
-| 09 | [Interior and Exterior Angle Relationship](../../chapters/09-polygons-quadrilaterals/#diagram-interior-and-exterior-angle-relationship) | Diagram | Not specified | 0 | Easy |
-| 09 | [Kite Properties Illustration](../../chapters/09-polygons-quadrilaterals/#diagram-kite-properties-illustration) | Diagram | Not specified | 0 | Easy |
-| 09 | [Polygon Family Tree](../../chapters/09-polygons-quadrilaterals/#diagram-polygon-family-tree) | Diagram | Not specified | 0 | Easy |
-| 09 | [Quadrilateral Family Hierarchy](../../chapters/09-polygons-quadrilaterals/#diagram-quadrilateral-family-hierarchy) | Diagram | Not specified | 0 | Easy |
-| 09 | [The Three Regular Tessellations](../../chapters/09-polygons-quadrilaterals/#diagram-the-three-regular-tessellations) | Diagram | Not specified | 12 | Medium |
-| 09 | [Venn Diagram of Rectangle, Rhombus, and Square](../../chapters/09-polygons-quadrilaterals/#diagram-venn-diagram-of-rectangle-rhombus-and-square) | Diagram | Not specified | 0 | Easy |
+| 1 | [Concept Map of Chapter 1](../../chapters/01-foundations-of-geometry/#diagram-concept-map-of-chapter-1) | Unknown | Remembering, Evaluating | 2 | Easy |
+| 1 | [Line Relationships in 3D](../../chapters/01-foundations-of-geometry/#diagram-line-relationships-in-3d) | Diagram | Understanding | 0 | Medium |
+| 1 | [Rays and Segments](../../chapters/01-foundations-of-geometry/#diagram-rays-and-segments) | Diagram | Understanding | 4 | Medium |
+| 2 | [Conditional Statement Structure](../../chapters/02-logic-and-proof/#diagram-conditional-statement-structure) | Diagram | Understanding | 0 | Easy |
+| 2 | [Coordinate Proof Setup for Rectangle Diagonals](../../chapters/02-logic-and-proof/#diagram-coordinate-proof-setup-for-rectangle-diagonals) | Diagram | Applying | 0 | Easy |
+| 2 | [Flow Chart Proof Example](../../chapters/02-logic-and-proof/#diagram-flow-chart-proof-example) | Diagram | Analyzing | 0 | Easy |
+| 2 | [Four Related Conditional Statements](../../chapters/02-logic-and-proof/#diagram-four-related-conditional-statements) | Diagram | Analyzing | 0 | Easy |
+| 2 | [Postulate Visualization Gallery](../../chapters/02-logic-and-proof/#diagram-postulate-visualization-gallery) | Diagram | Remembering | 9 | Medium |
+| 2 | [The Anatomy of a Proof](../../chapters/02-logic-and-proof/#diagram-the-anatomy-of-a-proof) | Diagram | Understanding | 0 | Easy |
+| 3 | [Adjacent vs. Non-Adjacent Angles](../../chapters/03-angles-and-relationships/#diagram-adjacent-vs.-non-adjacent-angles) | Diagram | Not specified | 0 | Easy |
+| 3 | [Angle Bisector Construction](../../chapters/03-angles-and-relationships/#diagram-angle-bisector-construction) | Diagram | Not specified | 0 | Easy |
+| 3 | [Angle Parts and Notation](../../chapters/03-angles-and-relationships/#diagram-angle-parts-and-notation) | Microsim | Not specified | 1 | Medium |
+| 3 | [Chapter Concept Map](../../chapters/03-angles-and-relationships/#diagram-chapter-concept-map) | Unknown | Not specified | 1 | Easy |
+| 3 | [Complementary Angles Visual](../../chapters/03-angles-and-relationships/#diagram-complementary-angles-visual) | Microsim | Not specified | 0 | Medium |
+| 3 | [Linear Pair Structure](../../chapters/03-angles-and-relationships/#diagram-linear-pair-structure) | Microsim | Not specified | 0 | Easy |
+| 3 | [Parallel Lines Cut by a Transversal Setup](../../chapters/03-angles-and-relationships/#diagram-parallel-lines-cut-by-a-transversal-setup) | Diagram | Not specified | 0 | Easy |
+| 3 | [Right Angle in Real-World Contexts](../../chapters/03-angles-and-relationships/#diagram-right-angle-in-real-world-contexts) | Diagram | Not specified | 6 | Easy |
+| 3 | [Summary of Angle Relationships with Parallel Lines](../../chapters/03-angles-and-relationships/#diagram-summary-of-angle-relationships-with-parallel-lines) | Diagram | Not specified | 6 | Medium |
+| 3 | [Vertical Angles at Intersection](../../chapters/03-angles-and-relationships/#diagram-vertical-angles-at-intersection) | Microsim | Not specified | 0 | Easy |
+| 4 | [Bisecting a Segment - Complete Construction](../../chapters/04-geometric-constructions/#diagram-bisecting-a-segment---complete-construction) | Diagram | Not specified | 5 | Easy |
+| 4 | [Bisecting an Angle - Sequential Steps](../../chapters/04-geometric-constructions/#diagram-bisecting-an-angle---sequential-steps) | Diagram | Not specified | 6 | Easy |
+| 4 | [Constructing Parallel Lines Using Corresponding Angles](../../chapters/04-geometric-constructions/#diagram-constructing-parallel-lines-using-corresponding-angles) | Diagram | Not specified | 7 | Medium |
+| 4 | [Construction Techniques Reference Chart](../../chapters/04-geometric-constructions/#diagram-construction-techniques-reference-chart) | Diagram | Not specified | 16 | Medium |
+| 4 | [Copying a Segment - All Steps Shown](../../chapters/04-geometric-constructions/#diagram-copying-a-segment---all-steps-shown) | Diagram | Not specified | 7 | Medium |
+| 4 | [Parts of a Compass and Basic Circle Construction](../../chapters/04-geometric-constructions/#diagram-parts-of-a-compass-and-basic-circle-construction) | Diagram | Not specified | 3 | Easy |
+| 4 | [Straightedge vs. Ruler](../../chapters/04-geometric-constructions/#diagram-straightedge-vs.-ruler) | Diagram | Not specified | 3 | Easy |
+| 4 | [Two Types of Perpendicular Constructions](../../chapters/04-geometric-constructions/#diagram-two-types-of-perpendicular-constructions) | Diagram | Not specified | 5 | Medium |
+| 5 | [Distance Formula Visualization](../../chapters/05-coordinate-geometry/#diagram-distance-formula-visualization) | Diagram | Not specified | 4 | Easy |
+| 5 | [Four Types of Slope](../../chapters/05-coordinate-geometry/#diagram-four-types-of-slope) | Diagram | Not specified | 6 | Medium |
+| 5 | [Midpoint Formula Visualization](../../chapters/05-coordinate-geometry/#diagram-midpoint-formula-visualization) | Diagram | Not specified | 4 | Medium |
+| 5 | [Parallel Lines in the Coordinate Plane](../../chapters/05-coordinate-geometry/#diagram-parallel-lines-in-the-coordinate-plane) | Diagram | Not specified | 2 | Easy |
+| 5 | [Perpendicular Lines with Negative Reciprocal Slopes](../../chapters/05-coordinate-geometry/#diagram-perpendicular-lines-with-negative-reciprocal-slopes) | Diagram | Not specified | 0 | Easy |
+| 5 | [Slope-Intercept Form Visualization](../../chapters/05-coordinate-geometry/#diagram-slope-intercept-form-visualization) | Diagram | Not specified | 0 | Medium |
+| 5 | [The Coordinate Plane and Quadrants](../../chapters/05-coordinate-geometry/#diagram-the-coordinate-plane-and-quadrants) | Diagram | Not specified | 0 | Easy |
+| 6 | [Congruent Triangles with Corresponding Parts](../../chapters/06-transformations-congruence/#diagram-congruent-triangles-with-corresponding-parts) | Diagram | Not specified | 1 | Easy |
+| 6 | [Dilations with Different Scale Factors](../../chapters/06-transformations-congruence/#diagram-dilations-with-different-scale-factors) | Diagram | Not specified | 0 | Easy |
+| 6 | [Pre-Image and Image Notation](../../chapters/06-transformations-congruence/#diagram-pre-image-and-image-notation) | Diagram | Not specified | 0 | Easy |
+| 6 | [Reflections Over Different Lines](../../chapters/06-transformations-congruence/#diagram-reflections-over-different-lines) | Diagram | Not specified | 0 | Easy |
+| 6 | [Rigid Motion Summary](../../chapters/06-transformations-congruence/#diagram-rigid-motion-summary) | Diagram | Not specified | 0 | Medium |
+| 6 | [Rotation Around Origin](../../chapters/06-transformations-congruence/#diagram-rotation-around-origin) | Diagram | Not specified | 0 | Easy |
+| 6 | [Translation Examples](../../chapters/06-transformations-congruence/#diagram-translation-examples) | Diagram | Not specified | 0 | Easy |
+| 6 | [Triangle Congruence Criteria](../../chapters/06-transformations-congruence/#diagram-triangle-congruence-criteria) | Diagram | Not specified | 9 | Medium |
+| 7 | [All Five Congruence Criteria Reference](../../chapters/07-triangle-congruence/#diagram-all-five-congruence-criteria-reference) | Diagram | Not specified | 7 | Medium |
+| 7 | [Exterior Angle Theorem Visualization](../../chapters/07-triangle-congruence/#diagram-exterior-angle-theorem-visualization) | Diagram | Not specified | 0 | Easy |
+| 7 | [Four Special Segments and Their Concurrent Points](../../chapters/07-triangle-congruence/#diagram-four-special-segments-and-their-concurrent-points) | Diagram | Not specified | 5 | Medium |
+| 7 | [Hinge Theorem Visualization](../../chapters/07-triangle-congruence/#diagram-hinge-theorem-visualization) | Diagram | Not specified | 0 | Easy |
+| 7 | [Isosceles Triangle Properties](../../chapters/07-triangle-congruence/#diagram-isosceles-triangle-properties) | Diagram | Not specified | 0 | Easy |
+| 7 | [SAS Congruence with Included Angle](../../chapters/07-triangle-congruence/#diagram-sas-congruence-with-included-angle) | Diagram | Not specified | 0 | Easy |
+| 7 | [SSS Congruence Visualization](../../chapters/07-triangle-congruence/#diagram-sss-congruence-visualization) | Diagram | Not specified | 6 | Easy |
+| 7 | [Triangle Classification by Angles](../../chapters/07-triangle-congruence/#diagram-triangle-classification-by-angles) | Diagram | Not specified | 0 | Easy |
+| 7 | [Triangle Classification by Sides](../../chapters/07-triangle-congruence/#diagram-triangle-classification-by-sides) | Diagram | Not specified | 0 | Easy |
+| 7 | [Triangle Sum Theorem Proof Visualization](../../chapters/07-triangle-congruence/#diagram-triangle-sum-theorem-proof-visualization) | Diagram | Not specified | 0 | Easy |
+| 8 | [All Four Centers in One Triangle](../../chapters/08-triangle-centers/#diagram-all-four-centers-in-one-triangle) | Microsim | Not specified | 1 | Medium |
+| 8 | [Equilateral Triangle with Coinciding Centers](../../chapters/08-triangle-centers/#diagram-equilateral-triangle-with-coinciding-centers) | Diagram | Not specified | 0 | Easy |
+| 8 | [Orthocenter Location in Different Triangle Types](../../chapters/08-triangle-centers/#diagram-orthocenter-location-in-different-triangle-types) | Diagram | Not specified | 5 | Medium |
+| 8 | [The Euler Line](../../chapters/08-triangle-centers/#diagram-the-euler-line) | Microsim | Not specified | 0 | Easy |
+| 8 | [The Nine-Point Circle](../../chapters/08-triangle-centers/#diagram-the-nine-point-circle) | Diagram | Not specified | 0 | Easy |
+| 8 | [Triangle with Angle Bisectors and Incenter](../../chapters/08-triangle-centers/#diagram-triangle-with-angle-bisectors-and-incenter) | Microsim | Not specified | 0 | Easy |
+| 8 | [Triangle with Perpendicular Bisectors and Circumcenter](../../chapters/08-triangle-centers/#diagram-triangle-with-perpendicular-bisectors-and-circumcenter) | Microsim | Not specified | 0 | Easy |
+| 8 | [Triangle with Three Altitudes and Orthocenter](../../chapters/08-triangle-centers/#diagram-triangle-with-three-altitudes-and-orthocenter) | Microsim | Not specified | 0 | Easy |
+| 8 | [Triangle with Three Medians and Centroid](../../chapters/08-triangle-centers/#diagram-triangle-with-three-medians-and-centroid) | Microsim | Not specified | 0 | Easy |
+| 9 | [Interior and Exterior Angle Relationship](../../chapters/09-polygons-quadrilaterals/#diagram-interior-and-exterior-angle-relationship) | Diagram | Not specified | 0 | Easy |
+| 9 | [Kite Properties Illustration](../../chapters/09-polygons-quadrilaterals/#diagram-kite-properties-illustration) | Diagram | Not specified | 0 | Easy |
+| 9 | [Polygon Family Tree](../../chapters/09-polygons-quadrilaterals/#diagram-polygon-family-tree) | Diagram | Not specified | 0 | Easy |
+| 9 | [Quadrilateral Family Hierarchy](../../chapters/09-polygons-quadrilaterals/#diagram-quadrilateral-family-hierarchy) | Diagram | Not specified | 0 | Easy |
+| 9 | [The Three Regular Tessellations](../../chapters/09-polygons-quadrilaterals/#diagram-the-three-regular-tessellations) | Diagram | Not specified | 12 | Medium |
+| 9 | [Venn Diagram of Rectangle, Rhombus, and Square](../../chapters/09-polygons-quadrilaterals/#diagram-venn-diagram-of-rectangle-rhombus-and-square) | Diagram | Not specified | 0 | Easy |
 | 10 | [AA Similarity Proof](../../chapters/10-similarity-trigonometry/#diagram-aa-similarity-proof) | Microsim | Not specified | 0 | Medium |
 | 10 | [Altitude to Hypotenuse](../../chapters/10-similarity-trigonometry/#diagram-altitude-to-hypotenuse) | Microsim | Not specified | 0 | Easy |
 | 10 | [Angles of Elevation and Depression](../../chapters/10-similarity-trigonometry/#diagram-angles-of-elevation-and-depression) | Microsim | Not specified | 0 | Easy |
@@ -119,25 +122,13 @@
 
 ### Chapter 01: Foundations Of Geometry
 
-**Total elements:** 5
-
-#### [The Three Undefined Terms](../../chapters/01-foundations-of-geometry/#diagram-the-three-undefined-terms) (Diagram)
-- **Bloom's Taxonomy:** Remembering, Understanding
-- **UI Elements:** 5
-- **Difficulty:** Medium
-- **Learning Objective:** Students will **remember** the three undefined terms of geometry (point, line, plane) and **understand** their visual representations and basic proper...
+**Total elements:** 3
 
 #### [Rays and Segments](../../chapters/01-foundations-of-geometry/#diagram-rays-and-segments) (Diagram)
 - **Bloom's Taxonomy:** Understanding
 - **UI Elements:** 4
 - **Difficulty:** Medium
 - **Learning Objective:** Students will **understand** the differences between rays and line segments by comparing their visual representations and properties. (Bloom's Taxonom...
-
-#### [Collinear and Coplanar Points](../../chapters/01-foundations-of-geometry/#diagram-collinear-and-coplanar-points) (Diagram)
-- **Bloom's Taxonomy:** Analyzing
-- **UI Elements:** 7
-- **Difficulty:** Medium
-- **Learning Objective:** Students will **analyze** point arrangements to determine whether sets of points are collinear or coplanar. (Bloom's Taxonomy: Analyzing)...
 
 #### [Line Relationships in 3D](../../chapters/01-foundations-of-geometry/#diagram-line-relationships-in-3d) (Diagram)
 - **Bloom's Taxonomy:** Understanding

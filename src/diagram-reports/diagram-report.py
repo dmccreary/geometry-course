@@ -297,6 +297,11 @@ class ReportGenerator:
     def generate_markdown(self) -> str:
         """Generate Markdown format report"""
         lines = [
+            "---",
+            "hide:",
+            "  - toc",
+            "---",
+            "",
             "# Geometry Course - Diagram and MicroSim Report",
             "",
             f"**Total Visual Elements:** {len(self.elements)}",
@@ -331,7 +336,7 @@ class ReportGenerator:
             chapter_link = f"../../chapters/{element.chapter_dir}/#{anchor}"
             element_link = f"[{element.element_title}]({chapter_link})"
             lines.append(
-                f"| {element.chapter_num} | {element_link} | "
+                f"| {int(element.chapter_num)} | {element_link} | "
                 f"{element.element_type.title()} | {bloom_str} | "
                 f"{element.ui_elements_count} | {element.estimated_difficulty} |"
             )
@@ -539,7 +544,7 @@ class ReportGenerator:
 
             html += f"""
             <tr class="{type_class}">
-                <td><strong>{element.chapter_num}</strong></td>
+                <td><strong>{int(element.chapter_num)}</strong></td>
                 <td>{element.element_title}</td>
                 <td><em>{element.element_type.title()}</em></td>
                 <td><small>{bloom_str}</small></td>

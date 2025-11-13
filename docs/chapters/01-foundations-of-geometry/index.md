@@ -46,13 +46,14 @@ In this chapter, you'll discover how mathematicians construct an entire logical 
 
 #### Diagram: Point Line and Plane
 
-<iframe src="../../sims/point-line-plane/main.html" height="522x"></iframe>
+<iframe src="../../sims/point-line-plane/main.html" height="522x" scrolling="no"></iframe>
 [Run Point Line Plane Fullscreen](../../sims/point-line-plane/main.html)
 
 <details markdown="1">
 <summary>Visual representation of point, line, and plane</summary>
 
-**Type:** Diagram
+**Type:** Static Three-Panel P5 Diagram<br/>
+**Status:** Done
 
 **Learning Objective:** Students will **remember** the three undefined terms of geometry (point, line, plane) and **understand** their visual representations and basic properties. (Bloom's Taxonomy: Remembering, Understanding)
 
@@ -90,11 +91,11 @@ Create a colorful diagram showing the three undefined terms side by side:
 - Add annotation: "Has no thickness—only length and width"
 - Bottom annotation: "Named by any three non-collinear points"
 
-**Title above all panels:** "The Three Undefined Terms of Geometry" (24pt, bold)
+**Title above all panels:** "The Three Core Terms of Geometry" (24pt, bold)
 
-**Footer note:** "These terms are 'undefined' because they're so fundamental that we understand them through experience rather than formal definition."
+**Footer note:** "These concepts are 'core' because they're so fundamental that we understand them through experience rather than formal definition."
 
-**Implementation:** HTML/CSS or p5.js canvas drawing with clear labels and color-coding
+**Implementation Notes:** I ran the Claude Code `microsim-p5` skill on the specification.  Manually adjust positioning of elements with the three panels.  This drawing required a new function to draw the line segment symbol over the two letters.
 
 </details>
 
@@ -140,12 +141,15 @@ The floor of your classroom, the surface of a mirror, or a perfectly calm lake a
 
 #### MicroSim: Points and Lines Explorer
 
+[](../../sims/p)
+
 <details markdown="1">
 <summary>Points and Lines Explorer</summary>
 
 Directory name: point-line-explorer
 
-**Type:** MicroSim (p5.js)
+**Type:** MicroSim (p5.js)<br/>
+**Status:** Done
 
 **Learning Objective:** Students will **apply** their understanding of points, lines, 
 by manipulating interactive geometric objects they create and observing their properties. 
@@ -157,7 +161,7 @@ Create an interactive p5.js simulation allowing students to add and edit points 
 When setup() runs, it will generate 10 blue points with labels "A" to "J" and place
 them randomly on the screen.  
 
-Each point is a small blue circle radius 10 with a uppercase label under it.
+Each point is a small colored circle radius 10 with a uppercase label under it.
 Users can do three things.  Move a point, create a new point and connect two points with a new line.
 
 1. Mode 1: *Create/Move*:* Move a point with their mouse by dragging the point or click on the background to create a new point
@@ -194,7 +198,7 @@ Users can do three things.  Move a point, create a new point and connect two poi
 - Lines span the entire drawing region - not just between points
 
 
-**Implementation:** p5.js with createCanvas(), mousePressed(), and DOM controls
+**Implementation Notes:** I used the Claude Code Skill microsim-p5 after extensive editing of the specification to only focus on the Point and Lines.  The Plane editing would be too complex for users.
 
 </details>
 
