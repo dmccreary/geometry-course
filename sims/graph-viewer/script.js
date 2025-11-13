@@ -195,9 +195,21 @@ function initializeNetwork(graphData) {
   var visGroups = {};
   if (graphData.groups) {
     for (const [groupName, groupStyle] of Object.entries(graphData.groups)) {
+      const bgColor = getColorValue(groupStyle.color);
+      const textColor = getFontColor(groupStyle.color) || 'black';
+
       visGroups[groupName] = {
-        color: groupStyle.color,  // vis.js can handle this nested structure
-        font: groupStyle.font
+        color: {
+          background: bgColor,
+          border: bgColor,
+          highlight: {
+            background: bgColor,
+            border: 'black'
+          }
+        },
+        font: {
+          color: textColor
+        }
       };
     }
   }
