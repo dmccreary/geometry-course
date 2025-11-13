@@ -32,10 +32,8 @@ function setup() {
 
     // create a new slider at the bottom of the canvas in the control region
     mySlider = createSlider(0, 180, 45, 1);
-    // position the slider below the drawing region
-    mySlider.position(sliderLeftMargin, drawHeight + 19);
-    // make the slider width fill the area to the right of the label and value of the slider
-    mySlider.size(canvasWidth - sliderLeftMargin - 10);
+    mySlider.position(sliderLeftMargin, drawHeight + 20);
+    mySlider.size(canvasWidth - sliderLeftMargin - margin);
 }
 
 function draw() {
@@ -47,6 +45,13 @@ function draw() {
     // make the background of the controls area white
     fill('white');
     rect(0, drawHeight, canvasWidth, controlHeight);
+
+    // Center The Title
+    textAlign(CENTER,TOP);
+    noStroke();
+    fill('black');
+    textSize(24);
+    text('Angle Explorer', canvasWidth/2, margin)
 
     // get the updated slider value
     angle = mySlider.value();
@@ -88,16 +93,11 @@ function draw() {
     // Get the angle type
     let angleType = getAngleType(angle);
 
-    // Display the angle type
-    fill('black');
-    textSize(24);
-    // Draw the angle type in the title area
-    text(angleType, centerX - 70, 30);
-
     // draw label and value in control area
     fill('black');
+    textAlign(CENTER, TOP);
     textSize(defaultTextSize);
-    text("Angle: " + angle + "°", 10, drawHeight + 25);
+    text(angleType, canvasWidth/2, drawHeight - 30);
 }
 
 // Function to determine the angle type
