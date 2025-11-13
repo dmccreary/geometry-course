@@ -136,9 +136,13 @@ function generateLegend(groups) {
     colorCell.className = 'color-indicator';
     const bgColor = getColorValue(groupStyle.color);
     const textColor = getFontColor(groupStyle.color) || 'black';
+    // Use colorName if available, otherwise use the color value
+    const displayName = (typeof groupStyle.color === 'object' && groupStyle.color.colorName)
+      ? groupStyle.color.colorName
+      : bgColor;
     colorCell.style.backgroundColor = bgColor;
     colorCell.style.color = textColor;
-    colorCell.textContent = bgColor;
+    colorCell.textContent = displayName;
 
     row.appendChild(checkboxCell);
     row.appendChild(colorCell);

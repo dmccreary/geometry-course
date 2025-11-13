@@ -13,8 +13,7 @@
     "FOUND": {
       "classifierName": "Foundation Concepts",
       "color": {
-        "color": "red",
-        "colorName": "Red",
+        "color": "#e74c3c",
         "font": {
           "color": "white"
         }
@@ -24,7 +23,6 @@
       "classifierName": "Logic and Reasoning",
       "color": {
         "color": "#e67e22",
-        "colorName": "Orange",
         "font": {
           "color": "white"
         }
@@ -34,7 +32,6 @@
       "classifierName": "Angle Relationships",
       "color": {
         "color": "#f39c12",
-        "colorName": "Orange",
         "font": {
           "color": "black"
         }
@@ -44,7 +41,6 @@
       "classifierName": "Constructions",
       "color": {
         "color": "#f1c40f",
-        "colorName": "Yellow",
         "font": {
           "color": "black"
         }
@@ -54,7 +50,6 @@
       "classifierName": "Transformations",
       "color": {
         "color": "#2ecc71",
-        "colorName": "Green",
         "font": {
           "color": "white"
         }
@@ -64,7 +59,6 @@
       "classifierName": "Lines and Planes",
       "color": {
         "color": "#1abc9c",
-        "colorName": "Turquoise",
         "font": {
           "color": "white"
         }
@@ -74,7 +68,6 @@
       "classifierName": "Triangles",
       "color": {
         "color": "#3498db",
-        "colorName": "Blue",
         "font": {
           "color": "white"
         }
@@ -84,7 +77,6 @@
       "classifierName": "Polygons",
       "color": {
         "color": "#9b59b6",
-        "colorName": "Purple",
         "font": {
           "color": "white"
         }
@@ -94,7 +86,6 @@
       "classifierName": "Similarity and Right Triangles",
       "color": {
         "color": "#e91e63",
-        "colorName": "Pink",
         "font": {
           "color": "white"
         }
@@ -104,7 +95,6 @@
       "classifierName": "Circles",
       "color": {
         "color": "#00bcd4",
-        "colorName": "Cyan",
         "font": {
           "color": "white"
         }
@@ -114,7 +104,6 @@
       "classifierName": "Area and Volume",
       "color": {
         "color": "#607d8b",
-        "colorName": "Blue Gray",
         "font": {
           "color": "white"
         }
@@ -124,7 +113,6 @@
       "classifierName": "Applications",
       "color": {
         "color": "#795548",
-        "colorName": "Brown",
         "font": {
           "color": "white"
         }
