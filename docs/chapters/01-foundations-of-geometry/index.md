@@ -141,7 +141,10 @@ The floor of your classroom, the surface of a mirror, or a perfectly calm lake a
 
 #### MicroSim: Points and Lines Explorer
 
-[](../../sims/p)
+<iframe src="../../sims/point-line-explorer/main.html" height="722px" scrolling="no"></iframe>
+
+
+[Run the Points and Lines Explorer MicroSim Fullscreen](../../sims/point-line-explorer/main.html)
 
 <details markdown="1">
 <summary>Points and Lines Explorer</summary>

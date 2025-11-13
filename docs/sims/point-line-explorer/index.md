@@ -4,6 +4,10 @@
 
 [Run the Points and Lines Explorer MicroSim Fullscreen](main.html){ .md-button .md-button--primary }
 
+```html
+<iframe src="main.html" height="722px" scrolling="no"></iframe>
+```
+
 ## Description
 
 The Points and Lines Explorer is an interactive geometry MicroSim that helps students understand fundamental concepts of points and lines through hands-on manipulation. Students can create, move, and connect geometric points to form lines, exploring how two points determine a unique line and observing the properties of geometric objects.
