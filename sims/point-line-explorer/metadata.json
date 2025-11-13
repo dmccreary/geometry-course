@@ -1,0 +1,119 @@
+{
+  "title": "Points and Lines Explorer",
+  "creator": "AI Assistant with Claude Code",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Points and Lines"
+  ],
+  "description": "An interactive MicroSim for exploring fundamental geometric concepts of points, lines, and their relationships through hands-on manipulation. Students can create, move, and connect points to form lines, demonstrating that two points determine a unique line.",
+  "date": "2025-11-12",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educational": {
+    "gradeLevel": "9-12",
+    "subjectArea": "Mathematics",
+    "topic": "Points, Lines, and Geometric Notation",
+    "learningObjectives": [
+      "Understand that a point represents a specific location in space",
+      "Recognize that two points determine exactly one line",
+      "Apply geometric notation for naming lines (e.g., line AB)",
+      "Explore properties of collinear and non-collinear points",
+      "Manipulate geometric objects to observe changing relationships"
+    ],
+    "bloomsTaxonomyLevels": [
+      "Remember",
+      "Understand",
+      "Apply"
+    ],
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Basic algebra skills",
+      "Familiarity with coordinate systems",
+      "Introduction to geometric notation"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 720,
+      "drawHeight": 600,
+      "controlHeight": 120
+    },
+    "responsive": "Width-responsive",
+    "dependencies": [
+      "p5.js CDN"
+    ],
+    "accessibility": [
+      "Screen reader description",
+      "High contrast colors",
+      "Keyboard-accessible controls"
+    ]
+  },
+  "userInterface": {
+    "controls": [
+      {
+        "type": "button",
+        "name": "Regenerate Random Points",
+        "description": "Creates a new random configuration with the number of points specified by the slider"
+      },
+      {
+        "type": "button",
+        "name": "Mode Toggle",
+        "description": "Switches between Move Points mode (create/move) and Connect Points mode (draw lines)"
+      },
+      {
+        "type": "button",
+        "name": "Add Point",
+        "description": "Adds a single point at a random location on the canvas"
+      },
+      {
+        "type": "slider",
+        "name": "Number of Points",
+        "min": 1,
+        "max": 20,
+        "default": 10,
+        "step": 1,
+        "description": "Controls how many points are generated when using the Regenerate button"
+      }
+    ],
+    "modes": [
+      {
+        "name": "Move Mode",
+        "description": "Click anywhere to create new points, drag existing points to move them"
+      },
+      {
+        "name": "Connect Mode",
+        "description": "Click two points to create a line through them that extends infinitely in both directions"
+      }
+    ]
+  },
+  "simulationModel": {
+    "modelType": "Geometric Visualization",
+    "variables": [
+      "Point positions (x, y coordinates)",
+      "Point labels (alphabetical)",
+      "Line endpoints (pairs of points)",
+      "Current interaction mode"
+    ],
+    "assumptions": [
+      "Euclidean geometry on a 2D plane",
+      "Lines extend infinitely (represented by arrows)",
+      "Points are labeled sequentially from A-Z"
+    ],
+    "limitations": [
+      "2D representation only (no 3D visualization)",
+      "Canvas boundaries limit visible portion of infinite lines",
+      "Labels wrap after 26 points (A-Z)"
+    ]
+  },
+  "standards": {
+    "commonCore": [
+      "CCSS.MATH.CONTENT.HSG.CO.A.1"
+    ]
+  }
+}
