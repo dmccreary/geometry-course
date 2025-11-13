@@ -93,21 +93,25 @@ From this basic formula, we can derive formulas for all other polygons.
 
 #### Diagram: Area Formulas for Quadrilaterals
 
+<iframe src="../../sims/area-formulas-quadrilaterals/main.html" height="480px" width="100%" scrolling="no"></iframe>
+
+[View the Area Area Formulas for Quadrilaterals Fullscreen](../../sims/area-formulas-quadrilaterals/main.html)
+
 <details markdown="1">
-<summary>Visual guide to quadrilateral area formulas</summary>
+   <summary>Visual guide to quadrilateral area formulas</summary>
 
 **Type:** P5.js MicroSim
-**Status:** In Progress
+**Status:** Done
 
 **Learning Objective:** Students will **remember** area formulas for rectangles, squares, parallelograms, trapezoids, rhombuses, and kites, and **understand** how these formulas relate to the base rectangle formula. (Bloom's Taxonomy: Remembering, Understanding)
 
 ## Specification
 
-**Title:** "Area Formulas for Quadrilaterals" (bold, 24pt)
-
+**Title:** "Area Formulas for Quadrilaterals" (bold, 24pt, centered, top)
+**Status:** Done
 
 Create a colorful six-panel diagram showing six quadrilaterals with their area formulas in a grid layout 3 columns wide and 2 rows deep.  
-The MicroSim will be 400px tall and be width responsive.
+The MicroSim will be 500px tall and be width responsive.
 The margin around the panels will be 10px.
 The width of each panel will be 1/3 of the canvas width less 4 margin 
 A centered title will be drawn at the top of each panel.  
@@ -172,6 +176,7 @@ Put the panelTitleFormulaFontSize as 16 in the globals.
 - Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = \frac{1}{2}d_1d_2$ (bold, 18pt)
 
+**Implementation Note:** This MicroSim was created by the microsim-p5 skill with only a small change to the placement of the kite.  This was fixed by adding a `translate(0, -20)` after the `push()` function.
 
 </details>
 
@@ -189,14 +194,16 @@ where $b$ is the base and $h$ is the height (perpendicular distance from the bas
 <summary>Interactive exploration of triangle area formula</summary>
 
 **Type:** MicroSim (p5.js)
+**Status:** In progress
 
 **Learning Objective:** Students will **apply** the triangle area formula to various triangles and **analyze** how changing the base or height affects the area. (Bloom's Taxonomy: Applying, Analyzing)
 
 **Specification:**
 
 Create an interactive p5.js simulation for exploring triangle area.
+Students will use horizontal sliders to control the base length and the height of the triangle.
 
-**Canvas:** 800px × 650px, background: white
+**Canvas:** 500px height with responsive width
 
 **Main Display:**
 - Draw a scalable triangle with adjustable base and height
@@ -227,7 +234,7 @@ Create an interactive p5.js simulation for exploring triangle area.
 - Highlight formula components as corresponding sliders move
 
 **Color Scheme:**
-- Background: White
+- Background of drawing area: aliceblue
 - Triangle fill: Blue (#2196F3, 40% opacity)
 - Triangle outline: Dark blue (#0D47A1)
 - Height line: Red dashed

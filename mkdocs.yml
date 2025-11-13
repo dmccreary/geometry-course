@@ -68,7 +68,9 @@ nav:
     - Workflow: sims/workflow/index.md
     - Colinear and Coplanar Points: sims/collinear-coplanar-points/index.md
     - Point Line Explorer: sims/point-line-explorer/index.md
-  
+    - Area Formulas for Quadrilaterals: sims/area-formulas-quadrilaterals/index.md
+    - Triangle Area Explorer: sims/triangle-area-explorer/index.md
+
   - Glossary: glossary.md
   - License: license.md
   - How We Built This Site: how-we-built-this-site.md
