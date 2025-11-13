@@ -1,0 +1,107 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "title": "Area Formulas for Quadrilaterals",
+  "creator": "Claude Code with microsim-p5 skill",
+  "subject": "Geometry",
+  "description": "A visual guide showing area formulas for six common quadrilaterals (rectangle, square, parallelogram, trapezoid, rhombus, and kite) with labeled diagrams and mathematical formulas in a responsive 2x3 grid layout.",
+  "date": "2025-11-13",
+  "type": "Interactive Visual Reference",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "9-12",
+  "subjectArea": "Mathematics",
+  "topic": "Area Formulas",
+  "learningObjectives": [
+    "Students will remember area formulas for rectangles, squares, parallelograms, trapezoids, rhombuses, and kites",
+    "Students will understand how these formulas relate to the base rectangle formula",
+    "Students will identify the dimensions needed for each area formula"
+  ],
+  "bloomsTaxonomyLevels": [
+    "Remembering",
+    "Understanding"
+  ],
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Understanding of quadrilateral definitions",
+    "Basic measurement concepts (length, width, height)",
+    "Basic algebraic notation"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive width × 400px",
+  "responsive": "Width-responsive",
+  "dependencies": [
+    "p5.js 1.11.10 CDN"
+  ],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false,
+    "ariaLabels": true
+  },
+  "controls": [],
+  "parameters": [],
+  "modelType": "Static visual reference",
+  "variables": [
+    "panelWidth",
+    "panelTitleFontSize",
+    "panelFormulaFontSize"
+  ],
+  "equations": [
+    "Rectangle: A = lw",
+    "Square: A = s²",
+    "Parallelogram: A = bh",
+    "Trapezoid: A = ½(b₁ + b₂)h",
+    "Rhombus: A = ½d₁d₂",
+    "Kite: A = ½d₁d₂"
+  ],
+  "assumptions": [
+    "All shapes are planar (2D)",
+    "Measurements are in consistent units",
+    "Formulas shown are for standard orientations"
+  ],
+  "limitations": [
+    "Does not perform calculations",
+    "Does not show derivations of formulas",
+    "No interactive manipulation of shapes"
+  ],
+  "educationalContext": {
+    "pedagogicalApproach": "Visual reference and comparative analysis",
+    "suggestedActivities": [
+      "Formula comparison and relationship identification",
+      "Dimension identification practice",
+      "Application practice with actual measurements",
+      "Discussion of how rectangle formula relates to others"
+    ],
+    "assessmentOpportunities": [
+      "Formula recall quizzes",
+      "Dimension labeling exercises",
+      "Area calculation problems"
+    ]
+  },
+  "technicalDetails": {
+    "browserCompatibility": [
+      "Chrome",
+      "Firefox",
+      "Safari",
+      "Edge"
+    ],
+    "mobileCompatible": true,
+    "offlineCapable": false
+  },
+  "standardsAlignment": [
+    "CCSS.MATH.CONTENT.HSG.GMD.A.1 - Give an informal argument for the formulas for the area of geometric figures"
+  ],
+  "keywords": [
+    "area",
+    "formulas",
+    "quadrilaterals",
+    "rectangle",
+    "square",
+    "parallelogram",
+    "trapezoid",
+    "rhombus",
+    "kite",
+    "geometry",
+    "measurement"
+  ]
+}
