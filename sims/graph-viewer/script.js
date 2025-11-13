@@ -102,14 +102,14 @@ function getColorName(color) {
     'brown': 'Brown',
     'teal': 'Teal'
   };
-  return colorNames[color.toLowerSafe()] || color;
+  return colorNames[toLowerSafe(color)] || color;
 }
 
 // Helper function to determine if text should be white or black
 function getTextColorForBackground(backgroundColor) {
   // Colors that need white text
   const darkColors = ['red', 'green', 'blue', 'indigo', 'violet', 'gray', 'brown'];
-  return darkColors.includes(backgroundColor.toLowerSafe()) ? 'white' : 'black';
+  return darkColors.includes(toLowerSafe(backgroundColor)) ? 'white' : 'black';
 }
 
 // Function to generate legend table from groups data
@@ -226,7 +226,7 @@ function initializeSearch() {
   var searchContainer = document.getElementById('search-container');
 
   searchInput.addEventListener('input', function() {
-    var query = this.value.toLowerSafe();
+    var query = toLowerSafe(this.value);
     if (query === '') {
       searchResults.style.display = 'none';
       searchResults.innerHTML = '';
@@ -236,7 +236,7 @@ function initializeSearch() {
     // Only search visible nodes
     var matches = nodes.get({
       filter: function (item) {
-        return !item.hidden && item.label.toLowerSafe().includes(query);
+        return !item.hidden && toLowerSafe(item.label).includes(query);
       }
     });
 
