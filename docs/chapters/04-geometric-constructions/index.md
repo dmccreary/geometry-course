@@ -161,7 +161,7 @@ One of the most basic constructions is **copying a segment**—creating a new li
 4. Draw an arc that intersects the ray; label the intersection point D
 5. CD ≅ AB (the segments are congruent)
 
-#### MicroSim: Copy a Segment Interactive Construction
+#### Drawing: Copy a Segment Interactive Construction
 <details markdown="1">
     <summary>Interactive Segment Copying</summary>
     Type: microsim
@@ -303,7 +303,7 @@ One of the most basic constructions is **copying a segment**—creating a new li
 5. Place compass point on E and draw an arc intersecting the first arc; label this intersection F
 6. Draw ray DF; now ∠EDF ≅ ∠ABC
 
-#### MicroSim: Copy an Angle Interactive Construction
+#### Drawing: Copy an Angle Interactive Construction
 <details markdown="1">
     <summary>Interactive Angle Copying</summary>
     Type: microsim
@@ -466,7 +466,7 @@ The construction above creates a **perpendicular bisector**—a special line tha
 
 An important property: *Every point on the perpendicular bisector is equidistant from the endpoints of the segment.* This means if you pick any point on line PQ, its distance to A equals its distance to B.
 
-#### MicroSim: Perpendicular Bisector Explorer
+#### Drawing: Perpendicular Bisector Explorer
 <details markdown="1">
     <summary>Interactive Perpendicular Bisector</summary>
     Type: microsim
@@ -614,7 +614,7 @@ An important property: *Every point on the perpendicular bisector is equidistant
     Implementation: SVG with precise angle measurements
 </details>
 
-#### MicroSim: Angle Bisector Construction Practice
+#### Drawing: Angle Bisector Construction Practice
 <details markdown="1">
     <summary>Interactive Angle Bisector Tutorial</summary>
     Type: microsim
@@ -792,7 +792,7 @@ Perpendicular lines meet at right angles (90°). There are two common perpendicu
     Implementation: SVG with clear side-by-side comparison
 </details>
 
-#### MicroSim: Perpendicular Construction Selector
+#### Drawing: Perpendicular Construction Selector
 <details markdown="1">
     <summary>Interactive Perpendicular Construction</summary>
     Type: microsim
@@ -1035,7 +1035,7 @@ This postulate distinguishes Euclidean geometry from other geometries. For over 
     Implementation: HTML/CSS/JavaScript with SVG graphics for geometric panels
 </details>
 
-#### MicroSim: Parallel Lines Construction Challenge
+#### Drawing: Parallel Lines Construction Challenge
 <details markdown="1">
     <summary>Interactive Parallel Construction Practice</summary>
     Type: microsim
@@ -1249,7 +1249,7 @@ While we now have digital tools, understanding classical constructions has pract
 - CAD software uses construction logic
 - 3D modeling tools implement bisection and perpendicular operations
 
-#### MicroSim: Construction in Action - Design a Structure
+#### Drawing: Construction in Action - Design a Structure
 <details markdown="1">
     <summary>Apply Constructions to Design Challenge</summary>
     Type: microsim
@@ -1467,7 +1467,7 @@ To master geometric constructions, you need to practice. Here are some challenge
 11. Divide a segment into four equal parts using only constructions
 12. Construct a 30° angle without using a protractor
 
-#### MicroSim: Construction Practice Workbench
+#### Drawing: Construction Practice Workbench
 <details markdown="1">
     <summary>Interactive Construction Practice Tool</summary>
     Type: microsim

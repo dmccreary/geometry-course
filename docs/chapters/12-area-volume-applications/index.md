@@ -188,7 +188,7 @@ $$A = \frac{1}{2}bh$$
 
 where $b$ is the base and $h$ is the height (perpendicular distance from the base to the opposite vertex).
 
-#### MicroSim: Triangle Area Explorer
+#### Drawing: Triangle Area Explorer
 
 <iframe src="../../sims/triangle-area-explorer/main.html"
         height="455px"
@@ -197,7 +197,7 @@ where $b$ is the base and $h$ is the height (perpendicular distance from the bas
 </iframe>
 
 <details markdown="1">
-<summary>Interactive exploration of triangle area formula</summary>
+   <summary>Triangle Area Explorer</summary>
 
 **Type:** MicroSim (p5.js)
 **Status:** Done
@@ -206,14 +206,16 @@ where $b$ is the base and $h$ is the height (perpendicular distance from the bas
 
 **Specification:**
 
-Create an interactive p5.js simulation for exploring triangle area.
-Students will use horizontal sliders to control the base length and the height of the triangle. They will see the calculations for the area done in
-abstract units (1 pixel = 15 pixels)
+- Create an interactive p5.js simulation for exploring triangle area.
+- Students will use horizontal sliders to control the base length and the height of the triangle. 
+- They will see the calculations for the area done in abstract length units (1 pixel = 15 pixels)
 
 **Canvas:** 480px height with responsive width
 
+```python
 // Scale factor for drawing (pixels per unit)
 let scale = 15;
+```
 
 **Main Display:**
 - Draw a scalable triangle with adjustable base and height
@@ -279,7 +281,7 @@ $$A = \frac{1}{2}a(ns)$$
 
 where $n$ is the number of sides and $s$ is the side length.
 
-#### MicroSim: Regular Polygon Area Explorer
+#### Drawing: Regular Polygon Area Explorer
 
 <details markdown="1">
   <summary>Interactive exploration of regular polygon areas</summary>
@@ -527,7 +529,7 @@ Create a colorful diagram showing circle components and formulas.
 
 </details>
 
-#### MicroSim: Circle Area and Circumference Calculator
+#### Drawing: Circle Area and Circumference Calculator
 
 <details markdown="1">
 <summary>Interactive circle measurement tool</summary>
@@ -707,7 +709,7 @@ Create a colorful diagram showing seven common 3D solids in a gallery format.
 
 A **net** is a two-dimensional pattern that can be folded to form a three-dimensional solid. Nets are useful for understanding surface area and for constructing physical models.
 
-#### MicroSim: Net to Solid Explorer
+#### Drawing: Net to Solid Explorer
 
 <details markdown="1">
 <summary>Interactive exploration of 3D solid nets</summary>
@@ -898,7 +900,7 @@ Create a colorful reference sheet for surface area formulas.
 
 </details>
 
-#### MicroSim: Surface Area Calculator
+#### Drawing: Surface Area Calculator
 
 <details markdown="1">
 <summary>Interactive surface area calculation tool</summary>
@@ -1036,7 +1038,7 @@ This principle helps us understand why an oblique prism (tilted) has the same vo
 
 A **cross-section** is the 2D shape formed when a plane intersects a 3D solid. Understanding cross-sections helps visualize how solids are constructed and why volume formulas work.
 
-#### MicroSim: Cross-Section Explorer
+#### Drawing: Cross-Section Explorer
 
 <details markdown="1">
 <summary>Interactive exploration of 3D solid cross-sections</summary>
@@ -1184,7 +1186,7 @@ Create an interactive p5.js simulation showing cross-sections of 3D solids.
 
 </details>
 
-#### MicroSim: Cavalieri's Principle Demonstration
+#### Drawing: Cavalieri's Principle Demonstration
 
 <details markdown="1">
 <summary>Interactive demonstration of Cavalieri's Principle</summary>
@@ -1380,7 +1382,7 @@ Create a colorful diagram comparing prism/cylinder volumes with pyramid/cone vol
 
 </details>
 
-#### MicroSim: Volume Explorer
+#### Drawing: Volume Explorer
 
 <details markdown="1">
 <summary>Interactive volume calculation and comparison tool</summary>
@@ -1509,7 +1511,7 @@ For example, a scale of $1:50$ means that 1 cm in the model represents 50 cm in 
 
 If a model is made at $1:10$ scale, then areas are reduced by $(1/10)^2 = 1/100$, and volumes are reduced by $(1/10)^3 = 1/1000$.
 
-#### MicroSim: Scale Model Builder
+#### Drawing: Scale Model Builder
 
 <details markdown="1">
 <summary>Interactive scale model creation and analysis</summary>
@@ -1767,7 +1769,7 @@ These problems often require:
 2. Expressing the quantity to optimize as a function of one variable
 3. Using algebraic or calculus techniques to find the optimal value
 
-#### MicroSim: Optimization Challenge - Maximum Volume Box
+#### Drawing: Optimization Challenge - Maximum Volume Box
 
 <details markdown="1">
 <summary>Interactive optimization problem solver</summary>

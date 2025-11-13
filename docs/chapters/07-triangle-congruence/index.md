@@ -195,7 +195,7 @@ Triangles can also be classified by their angle measures:
 
 **Important note:** Every triangle falls into exactly one category by sides (scalene, isosceles, or equilateral) AND exactly one category by angles (acute, right, or obtuse). For example, a triangle can be "isosceles and acute" or "scalene and right."
 
-#### MicroSim: Interactive Triangle Classifier
+#### Drawing: Interactive Triangle Classifier
 <details markdown="1">
     <summary>Triangle Classification Explorer</summary>
     Type: microsim
@@ -532,7 +532,7 @@ This is a special case that only applies to right triangles.
     Implementation: Infographic-style SVG with clear visual hierarchy
 </details>
 
-#### MicroSim: Triangle Congruence Criterion Selector
+#### Drawing: Triangle Congruence Criterion Selector
 <details markdown="1">
     <summary>Interactive Congruence Criterion Practice</summary>
     Type: microsim
@@ -841,7 +841,7 @@ $m\angle 4 = m\angle A + m\angle B$
     Implementation: SVG with clear color coding and annotations
 </details>
 
-#### MicroSim: Exterior Angle Explorer
+#### Drawing: Exterior Angle Explorer
 <details markdown="1">
     <summary>Interactive Exterior Angle Tool</summary>
     Type: microsim
@@ -1051,7 +1051,7 @@ In symbols: For triangle ABC with sides $a$, $b$, and $c$:
 
 This theorem tells us which combinations of three lengths can actually form a triangle. If the longest side is too long compared to the other two, the sides can't "reach" to form a triangle.
 
-#### MicroSim: Triangle Inequality Explorer
+#### Drawing: Triangle Inequality Explorer
 <details markdown="1">
     <summary>Can These Sides Form a Triangle?</summary>
     Type: microsim
@@ -1413,7 +1413,7 @@ An **angle bisector** of a triangle is a segment that divides an angle into two 
     Implementation: SVG with precise geometric constructions
 </details>
 
-#### MicroSim: Special Segments Explorer
+#### Drawing: Special Segments Explorer
 <details markdown="1">
     <summary>Interactive Triangle Centers Tool</summary>
     Type: microsim

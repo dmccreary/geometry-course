@@ -71,6 +71,13 @@ nav:
     - 100 MicroSims: prompts/09-100-microsims.md
     - Individual MicroSim: prompts/09-individual-microsim.md
     - Chapter Design: prompts/10-chapter-design.md
+    - prompts/11-sims-gallery.md
+    - prompts/12-readme.md
+    - prompts/13=angle-pairs.md
+    - prompts/14-cover-image.md
+    - prompts/15-resort-microsims-by-name.md
+    - prompts/ch-01-content-generation-skill.md
+    - prompts/ch-02-content.md
   
   - Glossary: glossary.md
   - License: license.md

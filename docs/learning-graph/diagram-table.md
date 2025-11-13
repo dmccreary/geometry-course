@@ -6,13 +6,13 @@ hide:
 # Geometry Course - Diagram and MicroSim Table
 
 **Total Visual Elements:** 99
-**Diagrams:** 65
-**MicroSims:** 32
+**Diagrams:** 64
+**MicroSims:** 33
 
 ## Summary by Difficulty
 
-- **Easy:** 56
-- **Medium:** 27
+- **Easy:** 55
+- **Medium:** 28
 - **Hard:** 13
 - **Very Hard:** 3
 
@@ -111,7 +111,7 @@ hide:
 | 11 | [Power of a Point Visualization](../chapters/11-circles/index.md#diagram-power-of-a-point-visualization) |  | Microsim | Evaluating | 11 | Very Hard |
 | 11 | [Rolling Wheel Arc Length Application](../chapters/11-circles/index.md#diagram-rolling-wheel-arc-length-application) |  | Microsim | Applying | 10 | Hard |
 | 11 | [Secants and Tangents](../chapters/11-circles/index.md#diagram-secants-and-tangents) |  | Microsim | Applying | 8 | Hard |
-| 12 | [Area Formulas for Quadrilaterals](../chapters/12-area-volume-applications/index.md#diagram-area-formulas-for-quadrilaterals) |  | Diagram | Remembering, Understanding | 0 | Easy |
+| 12 | [Area Formulas for Quadrilaterals](../chapters/12-area-volume-applications/index.md#diagram-area-formulas-for-quadrilaterals) | Done | Microsim | Remembering, Understanding | 9 | Medium |
 | 12 | [Circle Anatomy and Formulas](../chapters/12-area-volume-applications/index.md#diagram-circle-anatomy-and-formulas) |  | Diagram | Remembering, Understanding | 1 | Easy |
 | 12 | [Comparing Perimeter and Circumference](../chapters/12-area-volume-applications/index.md#diagram-comparing-perimeter-and-circumference) |  | Diagram | Understanding, Analyzing | 0 | Easy |
 | 12 | [Packaging Efficiency Comparison](../chapters/12-area-volume-applications/index.md#diagram-packaging-efficiency-comparison) |  | Diagram | Analyzing, Evaluating, Creating | 3 | Hard |

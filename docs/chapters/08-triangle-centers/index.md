@@ -101,7 +101,7 @@ where:
 
 This formula shows that the centroid is simply the average of the three vertex coordinates — both for x-coordinates and y-coordinates.
 
-#### MicroSim: Interactive Centroid Explorer
+#### Drawing: Interactive Centroid Explorer
 <details markdown="1">
 <summary>Interactive Centroid Explorer</summary>
 Type: microsim
@@ -227,7 +227,7 @@ The circumcenter's location tells you something important about the triangle's a
 | Right | One angle = 90° | On the hypotenuse (midpoint) |
 | Obtuse | One angle > 90° | Outside the triangle |
 
-#### MicroSim: Circumcenter and Triangle Type Explorer
+#### Drawing: Circumcenter and Triangle Type Explorer
 <details markdown="1">
 <summary>Circumcenter and Triangle Type Explorer</summary>
 Type: microsim
@@ -460,7 +460,7 @@ Annotations:
 Implementation: Static diagram or p5.js sketch that can be used in textbook
 </details>
 
-#### MicroSim: Euler Line Explorer
+#### Drawing: Euler Line Explorer
 <details markdown="1">
 <summary>Euler Line Explorer</summary>
 Type: microsim
@@ -606,7 +606,7 @@ where:
 
 This elegant formula shows that the inradius depends on both the triangle's area and its perimeter.
 
-#### MicroSim: Interactive Incircle and Area Explorer
+#### Drawing: Interactive Incircle and Area Explorer
 <details markdown="1">
 <summary>Interactive Incircle and Area Explorer</summary>
 Type: microsim
@@ -729,7 +729,7 @@ Annotations:
 Implementation: Static diagram ideal for reference, or interactive p5.js version
 </details>
 
-#### MicroSim: Complete Triangle Centers Explorer
+#### Drawing: Complete Triangle Centers Explorer
 <details markdown="1">
 <summary>Complete Triangle Centers Explorer</summary>
 Type: microsim

@@ -1,8 +1,8 @@
 # Geometry Course - Diagram and MicroSim Details
 
 **Total Visual Elements:** 99
-**Diagrams:** 65
-**MicroSims:** 32
+**Diagrams:** 64
+**MicroSims:** 33
 
 ## Chapter 1: Foundations Of Geometry
 
@@ -686,10 +686,11 @@
 **Total elements:** 8
 
 ### [Area Formulas for Quadrilaterals](../chapters/12-area-volume-applications/index.md#diagram-area-formulas-for-quadrilaterals)
-- **Type:** Diagram
+- **Status:** Done
+- **Type:** Microsim
 - **Bloom's Taxonomy:** Remembering, Understanding
-- **UI Elements:** 0
-- **Difficulty:** Easy
+- **UI Elements:** 9
+- **Difficulty:** Medium
 - **Learning Objective:** Students will **remember** area formulas for rectangles, squares, parallelograms, trapezoids, rhombuses, and kites, and **understand** how these formu...
 
 ### [Circle Anatomy and Formulas](../chapters/12-area-volume-applications/index.md#diagram-circle-anatomy-and-formulas)

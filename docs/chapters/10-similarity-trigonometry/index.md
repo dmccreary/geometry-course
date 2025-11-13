@@ -100,7 +100,7 @@ For example, if a 4-inch photograph is enlarged to 10 inches, the scale factor i
 
 $k = \frac{10}{4} = 2.5$
 
-#### MicroSim: Scale Factor Explorer
+#### Drawing: Scale Factor Explorer
 <details markdown="1">
 <summary>Scale Factor Explorer MicroSim</summary>
 Type: microsim
@@ -215,7 +215,7 @@ Here's how the criteria compare:
 | **AAS** | Two angles equal, non-included side equal | Not used (AA is sufficient) |
 | **AA** | Not sufficient for congruence | Two angles equal → Similar |
 
-#### MicroSim: Triangle Similarity Tester
+#### Drawing: Triangle Similarity Tester
 <details markdown="1">
 <summary>Triangle Similarity Tester MicroSim</summary>
 Type: microsim
@@ -406,7 +406,7 @@ $25 = c^2$
 
 $c = 5$
 
-#### MicroSim: Pythagorean Theorem Visual Proof
+#### Drawing: Pythagorean Theorem Visual Proof
 <details markdown="1">
 <summary>Pythagorean Theorem Visual Proof MicroSim</summary>
 Type: microsim
@@ -511,7 +511,7 @@ where:
 
 $d = \sqrt{(5-2)^2 + (7-3)^2} = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$
 
-#### MicroSim: Distance Formula Explorer
+#### Drawing: Distance Formula Explorer
 <details markdown="1">
 <summary>Distance Formula Explorer MicroSim</summary>
 Type: microsim
@@ -658,7 +658,7 @@ Color scheme: Bright, distinct colors for each side type
 Implementation: Static diagram or interactive p5.js where students can change the angle
 </details>
 
-#### MicroSim: Trigonometric Ratios Explorer
+#### Drawing: Trigonometric Ratios Explorer
 <details markdown="1">
 <summary>Trigonometric Ratios Explorer MicroSim</summary>
 Type: microsim
@@ -757,7 +757,7 @@ $\tan(\theta) = \frac{3}{12} = 0.25$
 
 $\theta = \tan^{-1}(0.25) ≈ 14°$
 
-#### MicroSim: Inverse Trig Function Solver
+#### Drawing: Inverse Trig Function Solver
 <details markdown="1">
 <summary>Inverse Trig Function Solver MicroSim</summary>
 Type: microsim
@@ -899,7 +899,7 @@ Trigonometry and similar triangles make indirect measurement possible.
 2. **Trigonometry method**: Measure an angle and one distance, then use trig ratios
 3. **Shadow method**: Use shadows and proportions on a sunny day
 
-#### MicroSim: Shadow Method Indirect Measurement
+#### Drawing: Shadow Method Indirect Measurement
 <details markdown="1">
 <summary>Shadow Method Indirect Measurement MicroSim</summary>
 Type: microsim
@@ -973,7 +973,7 @@ Include realistic visual elements (sun, clouds, ground)
 Use color coding to match corresponding parts of similar triangles
 </details>
 
-#### MicroSim: Angle of Elevation Measurement Tool
+#### Drawing: Angle of Elevation Measurement Tool
 <details markdown="1">
 <summary>Angle of Elevation Measurement Tool MicroSim</summary>
 Type: microsim
