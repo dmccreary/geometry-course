@@ -65,10 +65,8 @@ nav:
     - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
     - Templates: sims/templates/index.md
     - Workflow: sims/workflow/index.md
-    - Colinear and Coplanar Points: sims/collinear-coplanar-points/index.md
-    - Regular Polygon Explorer: sims/regular-polygon-explorer/index.md
-    - Regular Polygon Explorer Quiz: sims/regular-polygon-explorer-quiz/index.md
-
+    - Colinear and Coplanar Points: sims/collinear-coplanar-points
+  
   - Glossary: glossary.md
   - License: license.md
   - How We Built This Site: how-we-built-this-site.md

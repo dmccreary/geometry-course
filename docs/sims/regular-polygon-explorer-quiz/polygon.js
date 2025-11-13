@@ -115,7 +115,7 @@ function setup() {
 
     // Check Answer button
     checkAnswerButton = createButton('Check My Answer');
-    checkAnswerButton.position(120, drawHeight + 55);
+    checkAnswerButton.position(170, drawHeight + 55);
     checkAnswerButton.mousePressed(checkAnswer);
     checkAnswerButton.style('padding', '8px 16px');
     checkAnswerButton.style('font-size', '14px');
@@ -166,6 +166,13 @@ function draw() {
         vertex(x, y);
     }
     endShape(CLOSE);
+
+    // Draw the number of points in the center
+    fill('white');
+    noStroke();
+    textSize(48);
+    textAlign(CENTER, CENTER);
+    text(pointValue, centerX, centerY);
 
     // Draw annotation below polygon
     let annotationText = '';

@@ -88,28 +88,25 @@ function uncheckAllGroups() {
   });
 }
 
-// Helper function to get readable color name
-function getColorName(color) {
-  const colorNames = {
-    'red': 'Red',
-    'orange': 'Orange',
-    'gold': 'Gold',
-    'green': 'Green',
-    'blue': 'Blue',
-    'indigo': 'Indigo',
-    'violet': 'Violet',
-    'gray': 'Gray',
-    'brown': 'Brown',
-    'teal': 'Teal'
-  };
-  return colorNames[color.toLowerSafe()] || color;
+// Helper function to extract color value from color object or string
+function getColorValue(colorData) {
+  // If color is an object with a color property, return that
+  if (typeof colorData === 'object' && colorData !== null && colorData.color) {
+    return colorData.color;
+  }
+  // Otherwise return as-is (for backward compatibility with string colors)
+  return colorData;
 }
 
-// Helper function to determine if text should be white or black
-function getTextColorForBackground(backgroundColor) {
-  // Colors that need white text
-  const darkColors = ['red', 'green', 'blue', 'indigo', 'violet', 'gray', 'brown'];
-  return darkColors.includes(backgroundColor.toLowerSafe()) ? 'white' : 'black';
+// Helper function to get font color from color object
+function getFontColor(colorData) {
+  // If color is an object with font.color, return that
+  if (typeof colorData === 'object' && colorData !== null &&
+      colorData.font && colorData.font.color) {
+    return colorData.font.color;
+  }
+  // Otherwise return null to use default logic
+  return null;
 }
 
 // Function to generate legend table from groups data
@@ -137,11 +134,15 @@ function generateLegend(groups) {
     // Create color indicator cell
     const colorCell = document.createElement('td');
     colorCell.className = 'color-indicator';
-    const bgColor = groupStyle.color;
-    const textColor = getTextColorForBackground(bgColor);
+    const bgColor = getColorValue(groupStyle.color);
+    const textColor = getFontColor(groupStyle.color) || 'black';
+    // Use colorName if available, otherwise use the color value
+    const displayName = (typeof groupStyle.color === 'object' && groupStyle.color.colorName)
+      ? groupStyle.color.colorName
+      : bgColor;
     colorCell.style.backgroundColor = bgColor;
     colorCell.style.color = textColor;
-    colorCell.textContent = getColorName(bgColor);
+    colorCell.textContent = displayName;
 
     row.appendChild(checkboxCell);
     row.appendChild(colorCell);
@@ -190,8 +191,31 @@ function initializeNetwork(graphData) {
     edges: edges
   };
 
+  // Transform groups to vis.js format (handle nested color objects)
+  var visGroups = {};
+  if (graphData.groups) {
+    for (const [groupName, groupStyle] of Object.entries(graphData.groups)) {
+      const bgColor = getColorValue(groupStyle.color);
+      const textColor = getFontColor(groupStyle.color) || 'black';
+
+      visGroups[groupName] = {
+        color: {
+          background: bgColor,
+          border: bgColor,
+          highlight: {
+            background: bgColor,
+            border: 'black'
+          }
+        },
+        font: {
+          color: textColor
+        }
+      };
+    }
+  }
+
   var options = {
-    groups: graphData.groups || {},  // Apply group-based styling
+    groups: visGroups,  // Apply group-based styling
     edges: {
       arrows: {
         to: { enabled: true, type: 'arrow', color: 'black', scaleFactor: 1 }
@@ -226,7 +250,7 @@ function initializeSearch() {
   var searchContainer = document.getElementById('search-container');
 
   searchInput.addEventListener('input', function() {
-    var query = this.value.toLowerSafe();
+    var query = toLowerSafe(this.value);
     if (query === '') {
       searchResults.style.display = 'none';
       searchResults.innerHTML = '';
@@ -236,7 +260,7 @@ function initializeSearch() {
     // Only search visible nodes
     var matches = nodes.get({
       filter: function (item) {
-        return !item.hidden && item.label.toLowerSafe().includes(query);
+        return !item.hidden && toLowerSafe(item.label).includes(query);
       }
     });
 
