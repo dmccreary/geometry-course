@@ -65,7 +65,8 @@ nav:
     - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
     - Templates: sims/templates/index.md
     - Workflow: sims/workflow/index.md
-    - Colinear and Coplanar Points: sims/collinear-coplanar-points
+    - Colinear and Coplanar Points: sims/collinear-coplanar-points/index.md
+    - Point Line Explorer: sims/point-line-explorer/index.md
   
   - Glossary: glossary.md
   - License: license.md
