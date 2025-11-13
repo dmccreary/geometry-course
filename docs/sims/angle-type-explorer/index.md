@@ -1,4 +1,4 @@
-# Angle Explorer MicroSim
+# Angle Type Explorer
 
 <iframe src="main.html" height="300px" width="100%" scrolling="no"></iframe>
 
@@ -7,11 +7,8 @@
 
 ## Lesson Plan
 
-### Grade Level
-10th Grade Geometry
+**Grade Level:** High School Grade Geometry
 
-### Duration
-45 minutes
 
 ### Learning Objectives
 By the end of this lesson, students will be able to:
@@ -58,27 +55,32 @@ Expected responses: corners of buildings, scissors opening, clock hands, road in
 
 Have students open the Angle Explorer MicroSim and work through these steps:
 
-1. **Zero Angle (0°)**
-   - Set the slider to 0°
-   - Observe: What do you notice about the two rays?
-   - Discussion: Are the rays overlapping?
+#### 1. **Zero Angle (0°)**
 
-2. **Right Angle (90°)**
-   - Set the slider to exactly 90°
-   - Observe: How do the rays look in relation to each other?
-   - Real-world connection: Can you name objects that form right angles?
+- Set the slider to 0°
+- Observe: What do you notice about the two rays?
+- Discussion: Are the rays overlapping?
 
-3. **Straight Angle (180°)**
-   - Set the slider to 180°
-   - Observe: What happened to the angle?
-   - Discussion: How is this similar to a straight line?
+#### 2. **Right Angle (90°)**
 
-4. **Acute vs. Obtuse**
-   - Try 45° (acute) and 135° (obtuse)
-   - Compare: How are they different?
-   - Pattern: What happens at values between 0° and 90°? Between 90° and 180°?
+- Set the slider to exactly 90°
+- Observe: How do the rays look in relation to each other?
+- Real-world connection: Can you name objects that form right angles?
 
-**Guided Questions:**
+#### 3. **Straight Angle (180°)**
+
+- Set the slider to 180°
+- Observe: What happened to the angle?
+- Discussion: How is this similar to a straight line?
+
+#### 4. **Acute vs. Obtuse**
+
+- Try 45° (acute) and 135° (obtuse)
+- Compare: How are they different?
+- Pattern: What happens at values between 0° and 90°? Between 90° and 180°?
+
+#### Guided Questions
+
 - "What happens to the red arc as you increase the angle?"
 - "At what point does the angle change from acute to obtuse?"
 - "Can you predict the angle type before checking the label?"
@@ -89,23 +91,25 @@ Have students open the Angle Explorer MicroSim and work through these steps:
 
 Students work individually or in pairs:
 
-1. **Estimation Round** (5 minutes)
-   - Close your eyes while your partner sets the slider
-   - Open your eyes and estimate the angle (don't look at the number!)
-   - Check your estimate against the actual value
-   - Repeat 5 times, trying to get closer each time
+#### 1. **Estimation Round**
 
-2. **Classification Challenge** (5 minutes)
-   - Set these angles and classify each one:
-     - 23°, 67°, 90°, 112°, 158°, 0°, 45°, 135°, 180°
-   - Record your classifications
-   - Use the MicroSim to verify
+- Close your eyes while your partner sets the slider
+- Open your eyes and estimate the angle (don't look at the number!)
+- Check your estimate against the actual value
+- Repeat 5 times, trying to get closer each time
 
-3. **Critical Thinking** (5 minutes)
-   - What angle is exactly halfway between acute and obtuse?
-   - What angle divides the acute range in half?
-   - If an angle is 89°, how far is it from being a right angle?
-   - Challenge: Without using the sim, what angle is complementary to 65°? (Answer: 25°, since 65° + 25° = 90°)
+#### 2. **Classification Challenge** 
+
+- Set these angles and classify each one:
+   - 23°, 67°, 90°, 112°, 158°, 0°, 45°, 135°, 180°
+- Record your classifications
+- Use the MicroSim to verify
+
+#### 3. **Critical Thinking**
+- What angle is exactly halfway between acute and obtuse?
+- What angle divides the acute range in half?
+- If an angle is 89°, how far is it from being a right angle?
+- Challenge: Without using the sim, what angle is complementary to 65°? (Answer: 25°, since 65° + 25° = 90°)
 
 ### Part 4: Real-World Application
 
@@ -118,7 +122,7 @@ Brainstorm and sketch examples of each angle type found in:
 3. **Sports**: basketball shot trajectory, diving board angle
 4. **Technology**: laptop screen opening, phone stand, tablet case
 
-**Discussion Questions:**
+#### Discussion Questions:
 - Why are right angles so common in construction?
 - When might an architect intentionally use obtuse or acute angles?
 - How do angles affect stability in structures?
@@ -153,17 +157,20 @@ Answer one of these questions in your notebook:
 ## Differentiation Strategies
 
 ### For Advanced Learners:
+
 - Introduce reflex angles (180° - 360°) and challenge them to think about how the MicroSim could be modified
 - Explore angle relationships: complementary (sum to 90°), supplementary (sum to 180°)
 - Calculate angle measures in regular polygons
 
 ### For Struggling Learners:
+
 - Provide a visual reference chart with angle types and examples
 - Allow more time with the MicroSim during guided exploration
 - Pair with a peer mentor for the estimation challenge
 - Focus on identifying just three categories: acute, right, obtuse
 
 ### For English Language Learners:
+
 - Pre-teach vocabulary with visual supports
 - Provide sentence frames for discussions
 - Use gestures to demonstrate angle opening and closing

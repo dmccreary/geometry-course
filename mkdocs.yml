@@ -38,7 +38,7 @@ nav:
   # sort these by the name of the microsim after the List of MicroSims which should always be first
   - MicroSims:
     - List of MicroSims: sims/index.md
-    - Angle Explorer: sims/angle-explorer/index.md
+    - Angle Type Explorer: sims/angle-type-explorer/index.md
     - Area Formulas for Quadrilaterals: sims/area-formulas-quadrilaterals/index.md
     - Circle Area Calculator: sims/circle-area-calculator/index.md
     - Circle Area Explorer: sims/circle-area-explorer/index.md

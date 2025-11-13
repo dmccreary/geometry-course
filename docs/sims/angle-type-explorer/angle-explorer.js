@@ -1,5 +1,5 @@
 /// <reference types="p5/global" />
-// Sample MicroSim Template for 2D Geometry
+// Angle Type Explorer
 
 // MicroSim Template for 2D geometry with region drawing parameters
 // Use for an instructor standing in front of a "smart white board" with controls on the bottom
@@ -40,15 +40,10 @@ function setup() {
     mySlider.size(canvasWidth - sliderLeftMargin - margin*2);
 }
 
-
-
 function draw() {
-    // make the background drawing region a very light blue
     fill('aliceblue');
-    // draw a thin light gray outline for the region borders
     stroke('silver');
     rect(0, 0, canvasWidth, drawHeight);
-    // make the background of the controls area white
     fill('white');
     rect(0, drawHeight, canvasWidth, controlHeight);
 
@@ -57,7 +52,7 @@ function draw() {
     noStroke();
     fill('black');
     textSize(24);
-    text('Angle Explorer', canvasWidth/2, margin/2)
+    text('Angle Type Explorer', canvasWidth/2, margin/2)
 
     // get the updated slider value
     angle = mySlider.value();

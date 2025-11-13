@@ -77,6 +77,15 @@ Angles are measured in **degrees**, denoted by the symbol °. A full rotation ar
     Implementation: SVG or p5.js static drawing
 </details>
 
+## Angle Types
+
+Now that you are familiar with the basics of what angles are and draw them, let's see
+how we give different angles different names.
+
+#### Drawing: Angle Type Explorer
+
+<iframe src="../../sims/angle-type-explorer/main.html" height="300px" width="100%" scrolling="no"></iframe>
+
 ### Acute Angles
 
 An **acute angle** measures greater than 0° but less than 90°. Think of acute angles as "sharp" angles—the word "acute" comes from the Latin word meaning "sharp."
