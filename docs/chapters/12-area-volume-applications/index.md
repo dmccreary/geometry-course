@@ -96,44 +96,64 @@ From this basic formula, we can derive formulas for all other polygons.
 <details markdown="1">
 <summary>Visual guide to quadrilateral area formulas</summary>
 
-**Type:** Diagram
+**Type:** P5.js MicroSim
+**Status:** In Progress
 
 **Learning Objective:** Students will **remember** area formulas for rectangles, squares, parallelograms, trapezoids, rhombuses, and kites, and **understand** how these formulas relate to the base rectangle formula. (Bloom's Taxonomy: Remembering, Understanding)
 
-**Specification:**
+## Specification
 
-Create a colorful diagram showing six quadrilaterals with their area formulas in a 2×3 grid layout.
+**Title:** "Area Formulas for Quadrilaterals" (bold, 24pt)
 
-**Layout:** 2 rows × 3 columns, each cell 350px wide × 300px tall
 
-**Row 1:**
+Create a colorful six-panel diagram showing six quadrilaterals with their area formulas in a grid layout 3 columns wide and 2 rows deep.  
+The MicroSim will be 400px tall and be width responsive.
+The margin around the panels will be 10px.
+The width of each panel will be 1/3 of the canvas width less 4 margin 
+A centered title will be drawn at the top of each panel.  
+A drawing of the shape will be in the center of the panel.
+Use panelWidth as a global variable.
+Make all the panels width update in the updateCanvasSize()
+At the bottom will be the formula to calculate the area of each item.
+Each panel will have a push() and pop() wrapping the center drawing of the object.
 
-**Cell 1: Rectangle**
+Put panelTitleFontSize as 24 in the globals.
+Put the panelTitleFormulaFontSize as 16 in the globals.
+
+**Layout:** 2 rows × 3 columns, each cell 1/3 of the canvas wide × and 300px tall
+
+## Row 1 Specification
+
+### Cell 1: Rectangle
 - Background: Light yellow (#FFF9C4)
-- Draw rectangle (200px × 120px) in navy blue (#1A237E), filled with semi-transparent blue (#64B5F6, 30% opacity)
-- Label dimensions: "l" on top edge, "w" on right edge (red text)
-- Formula below: $A = lw$ (bold, 18pt)
+- Draw rectangle in navy blue (#1A237E), filled with semi-transparent blue (#64B5F6, 30% opacity)
+- Make the drawing of the rectangle always be centered in the panel.
+- Update the width of the drawing relative to the panelWidth-2*margin.
+- Formula below: $A = lw$
 
-**Cell 2: Square**
+### Cell 2: Square
 - Background: Light pink (#FCE4EC)
-- Draw square (150px × 150px) in deep purple (#4A148C), filled with semi-transparent purple (#BA68C8, 30% opacity)
-- Label one side: "s" (red text)
+- Draw square in deep purple (#4A148C), filled with semi-transparent purple (#BA68C8, 30% opacity)
+- Make the drawing of the square always be centered in the panel.
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = s^2$ (bold, 18pt)
 
-**Cell 3: Parallelogram**
+### Cell 3: Parallelogram
 - Background: Light green (#E8F5E9)
-- Draw parallelogram (220px base × 100px height, slanted) in dark green (#1B5E20), filled with semi-transparent green (#81C784, 30% opacity)
+- Draw parallelogram slanted in dark green (#1B5E20), filled with semi-transparent green (#81C784, 30% opacity)
 - Draw dashed height line perpendicular to base (red)
 - Label base "b" and height "h" (red text)
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = bh$ (bold, 18pt)
 
 **Row 2:**
 
 **Cell 4: Trapezoid**
 - Background: Light orange (#FFF3E0)
-- Draw trapezoid (top base 120px, bottom base 200px, height 100px) in dark orange (#E65100), filled with semi-transparent orange (#FFB74D, 30% opacity)
+- Draw trapezoid in dark orange (#E65100), filled with semi-transparent orange (#FFB74D, 30% opacity)
 - Draw dashed height line (red)
 - Label top base "$b_1$", bottom base "$b_2$", height "h" (red text)
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = \frac{1}{2}(b_1 + b_2)h$ (bold, 18pt)
 
 **Cell 5: Rhombus**
@@ -141,16 +161,17 @@ Create a colorful diagram showing six quadrilaterals with their area formulas in
 - Draw rhombus (diagonals 180px and 120px) in dark cyan (#006064), filled with semi-transparent cyan (#4DD0E1, 30% opacity)
 - Draw both diagonals as dashed lines (red)
 - Label diagonals "$d_1$" and "$d_2$" (red text)
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = \frac{1}{2}d_1d_2$ (bold, 18pt)
 
 **Cell 6: Kite**
 - Background: Light lavender (#F3E5F5)
-- Draw kite (vertical diagonal 160px, horizontal diagonal 100px) in dark purple (#6A1B9A), filled with semi-transparent purple (#BA68C8, 30% opacity)
+- Draw kite in dark purple (#6A1B9A), filled with semi-transparent purple (#BA68C8, 30% opacity)
 - Draw both diagonals as dashed lines (red)
 - Label diagonals "$d_1$" and "$d_2$" (red text)
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = \frac{1}{2}d_1d_2$ (bold, 18pt)
 
-**Title above grid:** "Area Formulas for Quadrilaterals" (bold, 24pt)
 
 </details>
 
