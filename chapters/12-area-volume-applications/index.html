@@ -923,6 +923,21 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation Notes">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#area-of-regular-polygons" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1980,6 +1995,21 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation Notes">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#area-of-regular-polygons" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2763,15 +2793,24 @@ Put the panelTitleFormulaFontSize as 16 in the globals.</p>
 <div class="arithmatex">\[A = \frac{1}{2}bh\]</div>
 <p>where <span class="arithmatex">\(b\)</span> is the base and <span class="arithmatex">\(h\)</span> is the height (perpendicular distance from the base to the opposite vertex).</p>
 <h4 id="microsim-triangle-area-explorer">MicroSim: Triangle Area Explorer</h4>
+<iframe src="../../sims/triangle-area-explorer/main.html"
+        height="455px"
+        width="100%"
+        scrolling="no">
+</iframe>
+
 <details>
 <summary>Interactive exploration of triangle area formula</summary>
 <p><strong>Type:</strong> MicroSim (p5.js)
-<strong>Status:</strong> In progress</p>
+<strong>Status:</strong> Done</p>
 <p><strong>Learning Objective:</strong> Students will <strong>apply</strong> the triangle area formula to various triangles and <strong>analyze</strong> how changing the base or height affects the area. (Bloom's Taxonomy: Applying, Analyzing)</p>
 <p><strong>Specification:</strong></p>
 <p>Create an interactive p5.js simulation for exploring triangle area.
-Students will use horizontal sliders to control the base length and the height of the triangle.</p>
-<p><strong>Canvas:</strong> 500px height with responsive width</p>
+Students will use horizontal sliders to control the base length and the height of the triangle. They will see the calculations for the area done in
+abstract units (1 pixel = 15 pixels)</p>
+<p><strong>Canvas:</strong> 480px height with responsive width</p>
+<p>// Scale factor for drawing (pixels per unit)
+let scale = 15;</p>
 <p><strong>Main Display:</strong>
 - Draw a scalable triangle with adjustable base and height
 - Base lies on horizontal line near middle of canvas (y = 300)
@@ -2786,11 +2825,13 @@ Students will use horizontal sliders to control the base length and the height o
 - Display: "Base: [value] units" (16pt, black)
 - Display: "Height: [value] units" (16pt, black)
 - Display: "Area: [calculated] square units" (18pt bold, blue)</p>
-<p><strong>Controls (bottom panel, y = 550):</strong>
-- Slider: "Base Length" (5 - 30 units), position (50, 560), width 280px
-- Slider: "Height" (3 - 25 units), position (400, 560), width 280px
-- Button: "Reset to Default" at (350, 600)
-- Display current formula: <span class="arithmatex">\(A = \frac{1}{2}bh\)</span> (centered, below controls)</p>
+<p><strong>Controls (bottom panel, y = 550):</strong></p>
+<ul>
+<li>Slider: "Base Length" (0 - 40 units)</li>
+<li>Slider: "Height" (0 - 16 units)</li>
+<li>Button: "Reset to Default" at (10, 600)</li>
+<li>Display current formula: <span class="arithmatex">\(A = \frac{1}{2}bh\)</span> at 80% width and 20% down</li>
+</ul>
 <p><strong>Interactive Features:</strong>
 - Real-time area calculation as sliders move
 - Smooth animation when adjusting dimensions
@@ -2802,6 +2843,13 @@ Students will use horizontal sliders to control the base length and the height o
 - Height line: Red dashed
 - Sliders: Blue thumbs
 - Text: Black for labels, blue for calculated area</p>
+<h2 id="implementation-notes">Implementation Notes</h2>
+<p>On Nov. 13th, 2025 I used the microsim-p5 skill to generate this diagram.  It functioned
+perfectly the first time, but I had to spend about 20 minutes
+adjusting the vertical spacing such as the height of the drawing
+area and the control area.  I also had to adjust the ranges of the sliders.
+We need a better algorithm for
+getting the spacing correct.</p>
 </details>
 <h3 id="area-of-regular-polygons">Area of Regular Polygons</h3>
 <p>A <strong>regular polygon</strong> has all sides congruent and all angles congruent. To find the area of a regular polygon, we can divide it into congruent triangles from the center.</p>
@@ -2814,7 +2862,9 @@ Students will use horizontal sliders to control the base length and the height o
 <h4 id="microsim-regular-polygon-area-explorer">MicroSim: Regular Polygon Area Explorer</h4>
 <details>
 <summary>Interactive exploration of regular polygon areas</summary>
-<p><strong>Type:</strong> MicroSim (p5.js)</p>
+<p><strong>Type:</strong> MicroSim (p5.js)
+<strong>Status:</strong> In Progress</p>
+<p><strong>Note:</strong> This is very similar to the <a href="../../sims/regular-polygon-explorer/">Regular Polygon Explorer</a></p>
 <p><strong>Learning Objective:</strong> Students will <strong>apply</strong> the regular polygon area formula to polygons with different numbers of sides, and <strong>analyze</strong> how the apothem, perimeter, and number of sides affect the total area. (Bloom's Taxonomy: Applying, Analyzing)</p>
 <p><strong>Specification:</strong></p>
 <p>Create an interactive p5.js simulation for exploring regular polygon areas.</p>

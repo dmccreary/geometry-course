@@ -4,18 +4,18 @@
 
 // Canvas dimensions
 let canvasWidth = 800;
-let drawHeight = 500;
-let controlHeight = 120;
+let drawHeight = 340;
+let controlHeight = 110;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 20;
-let sliderLeftMargin = 150;
+let sliderLeftMargin = 185;
 let defaultTextSize = 16;
 
 // Triangle parameters
 let baseLength = 20; // units
 let triangleHeight = 15; // units
 const defaultBase = 20;
-const defaultHeight = 15;
+const defaultHeight = 12;
 
 // Sliders and controls
 let baseSlider;
@@ -34,17 +34,17 @@ function setup() {
   canvas.parent(document.querySelector('main'));
 
   // Create sliders
-  baseSlider = createSlider(5, 30, defaultBase, 0.5);
+  baseSlider = createSlider(0, 40, defaultBase, 0.5);
   baseSlider.position(sliderLeftMargin, drawHeight + 20);
   baseSlider.size(canvasWidth - sliderLeftMargin - margin);
 
-  heightSlider = createSlider(3, 25, defaultHeight, 0.5);
-  heightSlider.position(sliderLeftMargin, drawHeight + 60);
+  heightSlider = createSlider(0, 16, defaultHeight, 0.5);
+  heightSlider.position(sliderLeftMargin, drawHeight + 50);
   heightSlider.size(canvasWidth - sliderLeftMargin - margin);
 
   // Create reset button
   resetButton = createButton('Reset to Default');
-  resetButton.position(canvasWidth/2 - 60, drawHeight + 100);
+  resetButton.position(margin, drawHeight + 80);
   resetButton.mousePressed(resetValues);
 
   describe('Interactive triangle area explorer showing how base and height affect area calculation using the formula A = 1/2 × base × height', LABEL);
@@ -62,7 +62,7 @@ function draw() {
 
   // Drawing area background
   fill('aliceblue');
-  noStroke();
+  stroke('silver');
   rect(0, 0, canvasWidth, drawHeight);
 
   // Control area background
@@ -86,12 +86,12 @@ function draw() {
   textSize(16);
   textAlign(LEFT, CENTER);
   text('Base Length: ' + baseLength.toFixed(1) + ' units', 10, drawHeight + 30);
-  text('Height: ' + triangleHeight.toFixed(1) + ' units', 10, drawHeight + 70);
+  text('Height: ' + triangleHeight.toFixed(1) + ' units', 10, drawHeight + 60);
 
   // Formula display
   textSize(18);
   textAlign(CENTER, CENTER);
-  text('Formula: A = ½bh', canvasWidth/2, drawHeight + 100);
+  text('Formula: A = ½bh', canvasWidth*.8, drawHeight*.2);
 
   // Reset default settings
   textAlign(LEFT, CENTER);
@@ -127,7 +127,7 @@ function drawMeasurementsBox(area) {
 
 function drawTriangle() {
   push();
-
+    translate(0, -30);
   // Calculate triangle coordinates
   // Center the triangle horizontally
   let baseStartX = canvasWidth/2 - (baseLength * scale)/2;
@@ -199,16 +199,12 @@ function updateCanvasSize() {
     canvasWidth = container.offsetWidth;
 
     // Update slider widths
+    // Note, they may not be created the first time this is called
     if (typeof baseSlider !== 'undefined') {
       baseSlider.size(canvasWidth - sliderLeftMargin - margin);
-      baseSlider.position(sliderLeftMargin, drawHeight + 20);
     }
     if (typeof heightSlider !== 'undefined') {
       heightSlider.size(canvasWidth - sliderLeftMargin - margin);
-      heightSlider.position(sliderLeftMargin, drawHeight + 60);
-    }
-    if (typeof resetButton !== 'undefined') {
-      resetButton.position(canvasWidth/2 - 60, drawHeight + 100);
     }
   }
 }
