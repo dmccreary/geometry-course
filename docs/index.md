@@ -1,9 +1,9 @@
 ---
-title: Artificial Intelligence Assisted Geometry
+title: AI Assisted Geometry
 description: Introduction to Geometry for junior high or high school students with extensive interactive MicroSims.
-image: /img/cover-art.png
-og:image: /img/cover-art.png
-twitter:image: /img/cover-art.png
+image: /img/cover-landscape.png
+og:image: /img/cover-landscape.png
+twitter:image: /img/cover-landscape.png
 social:
    cards: false
 hide:
@@ -14,7 +14,7 @@ hide:
 </style>
 # Artificial Intelligence Assisted Geometry
 
-![Cover Art](./img/cover-art.png)
+![Cover Art](./img/cover-art.png) {width: 500px;}
 
 Welcome to our website for an Artificial Intelligence (AI) 
 assisted high school geometry course.
