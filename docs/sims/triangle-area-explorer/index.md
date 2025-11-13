@@ -7,10 +7,9 @@ twitter:image: /sims/triangle-area-explorer/triangle-area-explorer.png
 social:
    cards: false
 ---
-
 # Triangle Area Explorer
 
-<iframe src="main.html" height="622px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="455px" width="100%" scrolling="no"></iframe>
 
 [Run the Triangle Area Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 

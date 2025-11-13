@@ -190,20 +190,30 @@ where $b$ is the base and $h$ is the height (perpendicular distance from the bas
 
 #### MicroSim: Triangle Area Explorer
 
+<iframe src="../../sims/triangle-area-explorer/main.html"
+        height="455px"
+        width="100%"
+        scrolling="no">
+</iframe>
+
 <details markdown="1">
 <summary>Interactive exploration of triangle area formula</summary>
 
 **Type:** MicroSim (p5.js)
-**Status:** In progress
+**Status:** Done
 
 **Learning Objective:** Students will **apply** the triangle area formula to various triangles and **analyze** how changing the base or height affects the area. (Bloom's Taxonomy: Applying, Analyzing)
 
 **Specification:**
 
 Create an interactive p5.js simulation for exploring triangle area.
-Students will use horizontal sliders to control the base length and the height of the triangle.
+Students will use horizontal sliders to control the base length and the height of the triangle. They will see the calculations for the area done in
+abstract units (1 pixel = 15 pixels)
 
-**Canvas:** 500px height with responsive width
+**Canvas:** 480px height with responsive width
+
+// Scale factor for drawing (pixels per unit)
+let scale = 15;
 
 **Main Display:**
 - Draw a scalable triangle with adjustable base and height
@@ -223,10 +233,11 @@ Students will use horizontal sliders to control the base length and the height o
 - Display: "Area: [calculated] square units" (18pt bold, blue)
 
 **Controls (bottom panel, y = 550):**
-- Slider: "Base Length" (5 - 30 units), position (50, 560), width 280px
-- Slider: "Height" (3 - 25 units), position (400, 560), width 280px
-- Button: "Reset to Default" at (350, 600)
-- Display current formula: $A = \frac{1}{2}bh$ (centered, below controls)
+
+- Slider: "Base Length" (0 - 40 units)
+- Slider: "Height" (0 - 16 units)
+- Button: "Reset to Default" at (10, 600)
+- Display current formula: $A = \frac{1}{2}bh$ at 80% width and 20% down
 
 **Interactive Features:**
 - Real-time area calculation as sliders move
@@ -240,6 +251,15 @@ Students will use horizontal sliders to control the base length and the height o
 - Height line: Red dashed
 - Sliders: Blue thumbs
 - Text: Black for labels, blue for calculated area
+
+## Implementation Notes
+
+On Nov. 13th, 2025 I used the microsim-p5 skill to generate this diagram.  It functioned
+perfectly the first time, but I had to spend about 20 minutes
+adjusting the vertical spacing such as the height of the drawing
+area and the control area.  I also had to adjust the ranges of the sliders.
+We need a better algorithm for
+getting the spacing correct.
 
 </details>
 
@@ -262,9 +282,12 @@ where $n$ is the number of sides and $s$ is the side length.
 #### MicroSim: Regular Polygon Area Explorer
 
 <details markdown="1">
-<summary>Interactive exploration of regular polygon areas</summary>
+  <summary>Interactive exploration of regular polygon areas</summary>
 
 **Type:** MicroSim (p5.js)
+**Status:** In Progress
+
+**Note:** This is very similar to the [Regular Polygon Explorer](../../sims/regular-polygon-explorer/)
 
 **Learning Objective:** Students will **apply** the regular polygon area formula to polygons with different numbers of sides, and **analyze** how the apothem, perimeter, and number of sides affect the total area. (Bloom's Taxonomy: Applying, Analyzing)
 
