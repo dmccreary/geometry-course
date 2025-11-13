@@ -1,6 +1,6 @@
 # Angle Explorer MicroSim
 
-![Image Name](./angle-explorer.png){ width="400" }
+<iframe src="main.html" height="500px" width="100%" scrolling="no"></iframe>
 
 [Run the MicroSim Template](./angle-explorer.html){ .md-button .md-button--primary }
 [Edit this MicroSim](https://editor.p5js.org/dmccreary/sketches/dJq4nTXE4)
