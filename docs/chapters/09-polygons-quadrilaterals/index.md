@@ -57,6 +57,14 @@ Polygons are classified by the number of sides they have:
 
 We can also classify polygons by their regularity. A **regular polygon** has all sides of equal length and all interior angles of equal measure. A regular triangle is an equilateral triangle, while a regular quadrilateral is a square.
 
+#### Diagram: Regular Polygon Explorer
+
+<iframe src="../../sims/regular-polygon-explorer/main.html" height="452px" width="100%" scrolling="no"></iframe>
+
+```html
+<iframe src="https://dmccreary.github.io/geometry-course/sims/regular-polygon-explorer/main.html" height="452px" width="100%" scrolling="no"></iframe>
+```
+
 #### Diagram: Polygon Family Tree
 <details markdown="1">
 <summary>Polygon Family Tree</summary>
