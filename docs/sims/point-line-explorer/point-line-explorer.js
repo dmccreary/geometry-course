@@ -2,7 +2,7 @@
 // Canvas dimensions - REQUIRED structure
 let canvasWidth = 600;              // Initial width (responsive)
 let drawHeight = 600;               // Drawing/simulation area height
-let controlHeight = 120;            // Controls area height (increased for multiple controls)
+let controlHeight = 60;            // Controls area height (increased for multiple controls)
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;                     // Margin for visual elements
 let sliderLeftMargin = 170;         // Left margin for slider positioning
@@ -59,7 +59,7 @@ function setup() {
   addPointButton.mousePressed(addRandomPoint);
 
   numPointsSlider = createSlider(1, 20, 10, 1);
-  numPointsSlider.position(sliderLeftMargin, drawHeight + 60);
+  numPointsSlider.position(sliderLeftMargin, drawHeight + 45);
   numPointsSlider.size(canvasWidth - sliderLeftMargin - margin);
 
   describe('Interactive geometry explorer showing points and lines. Users can create, move, and connect points to explore geometric relationships.', LABEL);
@@ -327,9 +327,8 @@ function drawControlLabels() {
   textSize(defaultTextSize);
 
   // Slider label and value
-  const sliderY = drawHeight + 70;
-  text('Number of Points:', 10, sliderY);
-  text(numPointsSlider.value(), sliderLeftMargin - 30, sliderY);
+  const sliderY = drawHeight + 55;
+  text('Number of Points:' + numPointsSlider.value(), 10, sliderY);
 }
 
 function mousePressed() {

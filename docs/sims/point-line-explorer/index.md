@@ -1,11 +1,11 @@
 # Points and Lines Explorer
 
-<iframe src="main.html" height="722px" scrolling="no"></iframe>
+<iframe src="main.html" height="682px" scrolling="no"></iframe>
 
 [Run the Points and Lines Explorer MicroSim Fullscreen](main.html){ .md-button .md-button--primary }
 
 ```html
-<iframe src="main.html" height="722px" scrolling="no"></iframe>
+<iframe src="sims/point-line-explorer/main.html" height="682px" scrolling="no"></iframe>
 ```
 
 ## Description
