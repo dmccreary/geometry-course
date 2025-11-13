@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "checkJs": false
+  },
+  "include": [
+    "docs/sims/**/*.js"
+  ],
+  "typeAcquisition": {
+    "include": ["p5"]
+  }
+}
