@@ -83,7 +83,7 @@ theme:
   logo: img/logo.png
   favicon: img/favicon.ico
   palette:
-    primary: 'blue'
+    primary: 'purple'
     accent: 'orange'
   include_sidebar: true
   features:
