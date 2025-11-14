@@ -1,0 +1,137 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "dublin_core": {
+    "title": "Sierpinski Triangles",
+    "creator": "Dan McCreary",
+    "subject": ["Mathematics", "Geometry", "Fractals", "Recursion", "Computer Science"],
+    "description": "An interactive visualization of the Sierpinski triangle fractal demonstrating recursive subdivision and self-similar patterns. Students can adjust the recursion depth from 0 to 7 levels to explore how simple rules create complex fractal patterns.",
+    "date": "2025-01-14",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY 4.0"
+  },
+  "educational": {
+    "grade_level": "9-12",
+    "subject_area": "Mathematics",
+    "topic": "Fractals and Recursive Patterns",
+    "learning_objectives": [
+      "Understand the concept of recursive subdivision in geometry",
+      "Analyze how fractals exhibit self-similarity at different scales",
+      "Explore the relationship between recursion depth and pattern complexity",
+      "Evaluate how mathematical infinity appears in finite visualizations",
+      "Calculate exponential growth in triangle counts (3^n)"
+    ],
+    "blooms_taxonomy": ["Understanding", "Applying", "Analyzing", "Evaluating"],
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Basic understanding of triangles and geometric shapes",
+      "Familiarity with exponents and powers",
+      "Understanding of the concept of patterns"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvas_dimensions": {
+      "width": "responsive",
+      "draw_height": 500,
+      "control_height": 50,
+      "total_height": 550
+    },
+    "responsive": "Width-responsive",
+    "dependencies": ["p5.js CDN"],
+    "accessibility": {
+      "screen_reader": true,
+      "keyboard_navigation": false,
+      "describe_function": true
+    }
+  },
+  "user_interface": {
+    "controls": [
+      {
+        "type": "slider",
+        "label": "Recursion Depth",
+        "variable": "recursionSlider",
+        "min": 0,
+        "max": 7,
+        "default": 4,
+        "step": 1,
+        "description": "Controls the number of recursive subdivisions in the Sierpinski triangle pattern"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "currentDepth",
+        "type": "integer",
+        "range": "0-7",
+        "default": 4,
+        "purpose": "Determines how many levels of recursion to apply when drawing the fractal"
+      }
+    ],
+    "displays": [
+      {
+        "type": "text",
+        "label": "Recursion Depth",
+        "location": "control_area",
+        "description": "Shows current recursion depth value"
+      },
+      {
+        "type": "text",
+        "label": "Triangles",
+        "location": "control_area",
+        "description": "Shows total number of triangles drawn (3^depth)"
+      }
+    ]
+  },
+  "simulation_model": {
+    "model_type": "Recursive geometric subdivision",
+    "key_variables": [
+      "recursionDepth - Number of recursive subdivisions to perform",
+      "triangleCount - Total triangles drawn equals 3^depth",
+      "vertices - Coordinates of triangle vertices for each recursion level"
+    ],
+    "algorithm": [
+      "Start with an equilateral triangle",
+      "For each recursion level:",
+      "  - Find midpoints of each side",
+      "  - Create 4 smaller triangles from these midpoints",
+      "  - Draw only the 3 outer triangles (skip center)",
+      "  - Recursively apply to each of the 3 triangles"
+    ],
+    "equations": [
+      "Triangle count = 3^n where n is recursion depth",
+      "Total area approaches 0 as n approaches infinity",
+      "Fractal dimension ≈ log(3)/log(2) ≈ 1.585"
+    ],
+    "assumptions": [
+      "Perfect geometric precision in subdivision",
+      "Equilateral starting triangle",
+      "Infinite recursion not practically achievable (limited to depth 7)"
+    ],
+    "limitations": [
+      "Performance degrades beyond depth 7 due to exponential triangle count",
+      "Does not show the mathematical properties of infinite recursion",
+      "Visual resolution limits ability to see very small triangles at high depths"
+    ]
+  },
+  "related_concepts": [
+    "Pascal's Triangle",
+    "Koch Snowflake",
+    "Chaos Game",
+    "Fractal Dimension",
+    "Cellular Automata (Rule 90)",
+    "Self-similarity",
+    "Exponential Growth",
+    "Recursion in Computer Science"
+  ],
+  "standards_alignment": {
+    "ccss": [
+      "CCSS.MATH.HSG.MG.A.1 - Use geometric shapes to model situations",
+      "CCSS.MATH.PRACTICE.MP7 - Look for and make use of structure"
+    ],
+    "ngss": [
+      "HS-ETS1-4 - Use mathematics and computational thinking"
+    ]
+  }
+}
