@@ -1,0 +1,49 @@
+{
+  "title": "Circle Area Calculator MicroSim",
+  "description": "Interactive visualization demonstrating the relationship between a circle's radius, area (πr²), and circumference (2πr) with real-time calculations and visual feedback. Students can adjust the radius slider to observe how area grows quadratically while circumference grows linearly.",
+  "creator": "Dan McCreary",
+  "date": "2024-11-10",
+  "subject": [
+    "geometry",
+    "circles",
+    "area",
+    "circumference",
+    "pi",
+    "radius",
+    "quadratic relationships",
+    "mathematical formulas",
+    "interactive learning"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC 4.0",
+  "identifier": "circle-area-calculator",
+  "contributor": [],
+  "educational": {
+    "gradeLevel": "7-10",
+    "bloomsLevel": [
+      "Remember",
+      "Understand",
+      "Apply",
+      "Analyze",
+      "Evaluate"
+    ],
+    "concepts": [
+      "circle",
+      "radius",
+      "area",
+      "circumference",
+      "pi",
+      "quadratic growth",
+      "linear growth"
+    ],
+    "prerequisites": [
+      "Basic geometric shapes",
+      "Squaring numbers",
+      "Basic multiplication"
+    ],
+    "library": "p5.js",
+    "duration": "45-60 minutes"
+  }
+}
