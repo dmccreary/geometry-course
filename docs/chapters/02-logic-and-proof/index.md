@@ -124,7 +124,7 @@ The only way a conditional statement is false is when you have a true hypothesis
 - Conclusion: it is a square (false for most four-sided shapes)
 - This statement is **false** because we can find a counterexample: a rectangle has four sides but is not a square.
 
-#### MicroSim: Conditional Statement Truth Explorer
+#### Drawing: Conditional Statement Truth Explorer
 
 <details markdown="1">
 <summary>Interactive Conditional Statement Evaluator</summary>
@@ -310,7 +310,7 @@ $n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$
 
 This has the form "2 times something plus 1," which is the definition of an odd number. Therefore $n^2$ is odd, proving the contrapositive—and thus proving the original statement!
 
-#### MicroSim: Converse, Inverse, Contrapositive Generator
+#### Drawing: Converse, Inverse, Contrapositive Generator
 
 <details markdown="1">
 <summary>Interactive Statement Transformer</summary>
@@ -658,7 +658,7 @@ This proof shows the power of the two-column format: each statement builds logic
 - **Standard format:** Widely recognized and accepted in mathematics
 - **Error checking:** Easy to verify each step has proper justification
 
-#### MicroSim: Interactive Two-Column Proof Builder
+#### Drawing: Interactive Two-Column Proof Builder
 
 <details markdown="1">
 <summary>Drag-and-Drop Proof Construction</summary>
@@ -942,7 +942,7 @@ This contradicts our initial statement that $l$ and $m$ are two different lines.
 
 Therefore, our assumption must be false. We conclude that two lines cannot intersect in more than one point—they intersect in exactly one point.
 
-#### MicroSim: Indirect Proof Contradiction Finder
+#### Drawing: Indirect Proof Contradiction Finder
 
 <details markdown="1">
 <summary>Interactive Proof by Contradiction Explorer</summary>
@@ -1235,7 +1235,7 @@ Implementation: SVG with LaTeX rendering for formulas using MathJax
 4. **Check your formulas:** Distance, slope, midpoint—use the right one for the job
 5. **State what you proved:** Connect back to the geometric property
 
-#### MicroSim: Coordinate Proof Laboratory
+#### Drawing: Coordinate Proof Laboratory
 
 <details markdown="1">
 <summary>Interactive Coordinate Geometry Proof Tool</summary>

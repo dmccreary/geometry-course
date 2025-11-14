@@ -17,7 +17,8 @@ nav:
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
-    - Diagrams: learning-graph/diagrams.md
+    - Diagrams Table: learning-graph/diagram-table.md
+    - Diagrams Details: learning-graph/diagram-details.md
   
   - Chapters:
     - Overview: chapters/index.md
@@ -34,6 +35,34 @@ nav:
     - 11. Circles: chapters/11-circles/index.md
     - 12. Area, Volume, and Applications: chapters/12-area-volume-applications/index.md
   
+  # sort these by the name of the microsim after the List of MicroSims which should always be first
+  - MicroSims:
+    - List of MicroSims: sims/index.md
+    - Angle Pairs: sims/angle-pairs/index.md
+    - Angle Type Explorer: sims/angle-type-explorer/index.md
+    - Area Formulas for Quadrilaterals: sims/area-formulas-quadrilaterals/index.md
+    - Circle Area Calculator: sims/circle-area-calculator/index.md
+    - Circle Area Explorer: sims/circle-area-explorer/index.md
+    - Colinear and Coplanar Points: sims/collinear-coplanar-points/index.md
+    - Complementary and Supplementary Angles: sims/comp-and-sup-angles/index.md
+    - Cords: sims/cords/index.md
+    - Cosine: sims/cosine/index.md
+    - Degrees vs Radians: sims/degrees-vs-radians/index.md
+    - Graph Viewer: sims/graph-viewer/index.md
+    - Line Relationships 3D: sims/line-relationships-3d/index.md
+    - Point Line Explorer: sims/point-line-explorer/index.md
+    - Point, Line, Plane: sims/point-line-plane/index.md
+    - Pythagorean Theorem: sims/pythagorean-theorem/index.md
+    - Regular Polygon Explorer: sims/regular-polygon-explorer/index.md
+    - Regular Polygon Explorer Quiz: sims/regular-polygon-explorer-quiz/index.md
+    - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
+    - Templates: sims/templates/index.md
+    - Triangle Area Explorer: sims/triangle-area-explorer/index.md
+    - Triangle Congruence: sims/triangle-congruence/index.md
+    - Word Cloud: sims/word-cloud/index.md
+    - Workflow: sims/workflow/index.md
+
+
   - Sample Prompts:
     - Introduction: prompts/index.md
     - Course Description: prompts/01-course-description.md
@@ -47,34 +76,22 @@ nav:
     - 100 MicroSims: prompts/09-100-microsims.md
     - Individual MicroSim: prompts/09-individual-microsim.md
     - Chapter Design: prompts/10-chapter-design.md
+    - prompts/11-sims-gallery.md
+    - prompts/12-readme.md
+    - prompts/13=angle-pairs.md
+    - prompts/14-cover-image.md
+    - prompts/15-resort-microsims-by-name.md
+    - prompts/ch-01-content-generation-skill.md
+    - prompts/ch-02-content.md
   
-  - MicroSims:
-    - Introduction: sims/index.md
-    - Point, Line, Plane: sims/point-line-plane/index.md
-    - Graph Viewer: sims/graph-viewer/index.md
-    - Word Cloud: sims/word-cloud/index.md
-    - Angle Explorer: sims/angle-explorer/index.md
-    - Degrees vs Radians: sims/degrees-vs-radians/index.md
-    - Complementary and Supplementary Angles: sims/comp-and-sup-angles/index.md
-    - Circle Area Calculator: sims/circle-area-calculator/index.md
-    - Circle Area Explorer: sims/circle-area-explorer/index.md
-    - Cords: sims/cords/index.md
-    - Pythagorean Theorem: sims/pythagorean-theorem/index.md
-    - Triangle Congruence: sims/triangle-congruence/index.md
-    - Cosine: sims/cosine/index.md
-    - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
-    - Templates: sims/templates/index.md
-    - Workflow: sims/workflow/index.md
-    - Colinear and Coplanar Points: sims/collinear-coplanar-points/index.md
-    - Point Line Explorer: sims/point-line-explorer/index.md
-  
+  - Instructor's Guide: instructors-guide.md/microsims-for-geometry.md
   - Glossary: glossary.md
   - License: license.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
   - Contact: contact.md
  
-# Dans Microsite Standards from here down
+# Dan's Microsite Standards from here down
 
 theme:
   name: material
@@ -83,7 +100,7 @@ theme:
   logo: img/logo.png
   favicon: img/favicon.ico
   palette:
-    primary: 'blue'
+    primary: 'purple'
     accent: 'orange'
   include_sidebar: true
   features:

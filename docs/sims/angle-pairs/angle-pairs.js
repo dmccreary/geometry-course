@@ -15,8 +15,8 @@ let drawHeight = 400;
 let controlHeight = 90;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
-let sliderLeftMargin = 80;
-let defaultTextSize = 16;
+let sliderLeftMargin = 70;
+let defaultTextSize = 18;
 
 let containerWidth;
 let containerHeight = canvasHeight;
@@ -40,12 +40,12 @@ function setup() {
 
   // Sliders: 0..180 keeps a clean adjacent-angles story
   theta1Slider = createSlider(0, 180, 45, 1);
-  theta1Slider.position(sliderLeftMargin, drawHeight + 10);
-  theta1Slider.size(containerWidth - sliderLeftMargin - 15);
+  theta1Slider.position(sliderLeftMargin, drawHeight + 5);
+  theta1Slider.size(containerWidth - sliderLeftMargin - 200);
 
   theta2Slider = createSlider(0, 180, 45, 1);
-  theta2Slider.position(sliderLeftMargin, drawHeight + 40);
-  theta2Slider.size(containerWidth - sliderLeftMargin - 15);
+  theta2Slider.position(sliderLeftMargin, drawHeight + 33);
+  theta2Slider.size(containerWidth - sliderLeftMargin - 200);
 
   snapButton = createButton('Snap to 90/180');
   snapButton.position(10, drawHeight + 60);
@@ -58,7 +58,7 @@ function setup() {
 
 function draw() {
 
-  //--- Draw regions per standard rules ---
+  //--- Draw regions per standard MicroSim rules ---
   
   // Drawing area
   fill('aliceblue');
@@ -202,7 +202,7 @@ function drawControlLabels(th1, th2, sum, isComp, isSupp) {
   textAlign(LEFT, CENTER);
 
   text(`θ₁: ${th1}°`, 10, drawHeight + 15);
-  text(`θ₂: ${th2}°`, 10, drawHeight + 45);
+  text(`θ₂: ${th2}°`, 10, drawHeight + 43);
 
   const status = isComp ? 'Complementary' : (isSupp ? 'Supplementary' : '—');
   textAlign(RIGHT, CENTER);

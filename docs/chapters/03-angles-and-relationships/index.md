@@ -77,11 +77,20 @@ Angles are measured in **degrees**, denoted by the symbol °. A full rotation ar
     Implementation: SVG or p5.js static drawing
 </details>
 
+## Angle Types
+
+Now that you are familiar with the basics of what angles are and draw them, let's see
+how we give different angles different names.
+
+#### Drawing: Angle Type Explorer
+
+<iframe src="../../sims/angle-type-explorer/main.html" height="300px" width="100%" scrolling="no"></iframe>
+
 ### Acute Angles
 
 An **acute angle** measures greater than 0° but less than 90°. Think of acute angles as "sharp" angles—the word "acute" comes from the Latin word meaning "sharp."
 
-#### MicroSim: Acute Angle Explorer
+#### Drawing: Acute Angle Explorer
 <details markdown="1">
     <summary>Acute Angle Explorer</summary>
     Type: microsim
@@ -186,7 +195,7 @@ An **obtuse angle** measures greater than 90° but less than 180°. The word "ob
 
 A **straight angle** measures exactly 180°. It forms a straight line, with the two rays pointing in exactly opposite directions from the vertex. While it might not look like a typical angle, a straight angle is still classified as an angle because it's formed by two rays sharing a common endpoint.
 
-#### MicroSim: Angle Classification Interactive
+#### Drawing: Angle Classification Interactive
 <details markdown="1">
     <summary>Angle Classification Challenge</summary>
     Type: microsim
@@ -311,7 +320,7 @@ where:
 
 A common example of supplementary angles is a 120° angle paired with a 60° angle, since 120° + 60° = 180°.
 
-#### MicroSim: Complementary and Supplementary Angle Finder
+#### Drawing: Complementary and Supplementary Angle Finder
 <details markdown="1">
     <summary>Angle Pair Calculator</summary>
     Type: microsim
@@ -508,7 +517,7 @@ When two lines intersect, they form four angles at the point of intersection. Th
     Implementation: SVG or p5.js static drawing
 </details>
 
-#### MicroSim: Vertical Angles Explorer
+#### Drawing: Vertical Angles Explorer
 <details markdown="1">
     <summary>Interactive Vertical Angles Demonstration</summary>
     Type: microsim
@@ -683,7 +692,7 @@ The same-side interior angle pairs are:
 - ∠3 and ∠5
 - ∠4 and ∠6
 
-#### MicroSim: Parallel Lines and Transversal Angle Explorer
+#### Drawing: Parallel Lines and Transversal Angle Explorer
 <details markdown="1">
     <summary>Interactive Transversal Angle Relationships</summary>
     Type: microsim
@@ -815,7 +824,7 @@ Identify the angle relationship (corresponding, alternate interior, etc.), then:
 - If they're congruent, set the measures equal
 - If they're supplementary, add them to get 180°
 
-#### MicroSim: Angle Relationship Problem Solver
+#### Drawing: Angle Relationship Problem Solver
 <details markdown="1">
     <summary>Interactive Angle Problem Practice</summary>
     Type: microsim

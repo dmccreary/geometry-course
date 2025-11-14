@@ -35,6 +35,7 @@ class VisualElement:
     bloom_levels: List[str]
     ui_elements_count: int
     estimated_difficulty: str  # 'Easy', 'Medium', 'Hard', 'Very Hard'
+    status: str = ""  # Implementation status
     learning_objective: str = ""
     specifications: str = ""
 
@@ -44,6 +45,7 @@ class VisualElement:
             'Chapter': self.chapter_num,
             'Chapter Name': self.chapter_name,
             'Element Title': self.element_title,
+            'Status': self.status,
             'Type': self.element_type.title(),
             'Bloom Levels': ', '.join(self.bloom_levels),
             'UI Elements': self.ui_elements_count,
@@ -56,13 +58,14 @@ class DiagramAnalyzer:
     """Analyzes markdown files to extract diagram and MicroSim information"""
 
     # Patterns to match - made more flexible
-    # Match #### Diagram: Title followed by <details> block
-    HEADER_DETAILS_PATTERN = re.compile(r'####\s+Diagram:\s*([^\n]+)\n\s*<details[^>]*>(.*?)</details>', re.DOTALL)
+    # Match #### Diagram: Title followed by <details> block (with optional content in between)
+    HEADER_DETAILS_PATTERN = re.compile(r'####\s+Diagram:\s*([^\n]+)\n(.*?)<details[^>]*>(.*?)</details>', re.DOTALL)
     DETAILS_PATTERN = re.compile(r'<details[^>]*>(.*?)</details>', re.DOTALL)
     SUMMARY_PATTERN = re.compile(r'<summary>(.*?)</summary>', re.DOTALL)
     TYPE_PATTERN = re.compile(r'\*\*Type:\*\*\s*(.*?)(?:\n|\r|\*\*)', re.IGNORECASE)
     BLOOM_PATTERN = re.compile(r'Bloom\'?s Taxonomy[:\s]+(.*?)(?:\)|\.|\n|\r)', re.IGNORECASE)
     LEARNING_OBJ_PATTERN = re.compile(r'\*\*Learning Objective:\*\*\s*(.*?)(?:\n\*\*|\r\n\*\*|\n\n|\r\r)', re.DOTALL | re.IGNORECASE)
+    STATUS_PATTERN = re.compile(r'\*\*Status:\*\*\s*(.*?)(?:\n\n|\r\n\r\n|\n\*\*|\r\*\*|\n|\r)', re.IGNORECASE)
 
     # UI element keywords to count
     UI_KEYWORDS = [
@@ -119,7 +122,8 @@ class DiagramAnalyzer:
             elements_found = 0
             for match in header_details_blocks:
                 header_title = match.group(1).strip()
-                details_content = match.group(2)
+                # group(2) is now the content between header and details (iframe, etc.)
+                details_content = match.group(3)  # The actual details content
                 element = self.parse_details_block(details_content, chapter_num, chapter_name, chapter_dir_name, header_title)
                 if element:
                     self.elements.append(element)
@@ -175,6 +179,9 @@ class DiagramAnalyzer:
         # Extract learning objective
         learning_obj = self.extract_learning_objective(content)
 
+        # Extract status
+        status = self.extract_status(content)
+
         # Count UI elements
         ui_count = self.count_ui_elements(content)
 
@@ -190,6 +197,7 @@ class DiagramAnalyzer:
             bloom_levels=bloom_levels,
             ui_elements_count=ui_count,
             estimated_difficulty=difficulty,
+            status=status,
             learning_objective=learning_obj,
             specifications=content[:500]  # Store first 500 chars of specs
         )
@@ -224,6 +232,13 @@ class DiagramAnalyzer:
         obj_match = self.LEARNING_OBJ_PATTERN.search(content)
         if obj_match:
             return obj_match.group(1).strip().replace('\n', ' ')
+        return ""
+
+    def extract_status(self, content: str) -> str:
+        """Extract status from content"""
+        status_match = self.STATUS_PATTERN.search(content)
+        if status_match:
+            return status_match.group(1).strip()
         return ""
 
     def count_ui_elements(self, content: str) -> int:
@@ -294,15 +309,15 @@ class ReportGenerator:
     def __init__(self, elements: List[VisualElement]):
         self.elements = elements
 
-    def generate_markdown(self) -> str:
-        """Generate Markdown format report"""
+    def generate_markdown_table(self) -> str:
+        """Generate Markdown table report"""
         lines = [
             "---",
             "hide:",
             "  - toc",
             "---",
             "",
-            "# Geometry Course - Diagram and MicroSim Report",
+            "# Geometry Course - Diagram and MicroSim Table",
             "",
             f"**Total Visual Elements:** {len(self.elements)}",
             f"**Diagrams:** {sum(1 for e in self.elements if e.element_type == 'diagram')}",
@@ -323,52 +338,76 @@ class ReportGenerator:
 
         lines.extend([
             "",
-            "## Detailed Element List",
+            "## All Visual Elements",
             "",
-            "| Chapter | Element Title | Type | Bloom Levels | UI Elements | Difficulty |",
-            "|---------|---------------|------|--------------|-------------|------------|"
+            "| Chapter | Element Title | Status | Type | Bloom Levels | UI Elements | Difficulty |",
+            "|---------|---------------|--------|------|--------------|-------------|------------|"
         ])
 
         for element in sorted(self.elements, key=lambda e: (e.chapter_num, e.element_title)):
             bloom_str = ', '.join(element.bloom_levels)
             # Create link to chapter section with "Diagram:" prefix
-            anchor = f"diagram-{element.element_title.lower().replace(' ', '-').replace('/', '-').replace('(', '').replace(')', '').replace(',', '')}"
-            chapter_link = f"../../chapters/{element.chapter_dir}/#{anchor}"
+            # MkDocs anchor: lowercase, spaces to hyphens, remove most punctuation except hyphens
+            anchor_text = f"diagram-{element.element_title}"
+            anchor = anchor_text.lower().replace(' ', '-').replace('/', '-').replace('(', '').replace(')', '').replace(',', '').replace('.', '').replace(':', '')
+            # Clean up multiple consecutive hyphens
+            while '--' in anchor:
+                anchor = anchor.replace('--', '-')
+            chapter_link = f"../chapters/{element.chapter_dir}/index.md#{anchor}"
             element_link = f"[{element.element_title}]({chapter_link})"
+            status_display = element.status if element.status else ""
             lines.append(
                 f"| {int(element.chapter_num)} | {element_link} | "
-                f"{element.element_type.title()} | {bloom_str} | "
+                f"{status_display} | {element.element_type.title()} | {bloom_str} | "
                 f"{element.ui_elements_count} | {element.estimated_difficulty} |"
             )
 
-        lines.extend([
+        return '\n'.join(lines)
+
+    def generate_markdown_details(self) -> str:
+        """Generate Markdown details report organized by chapter"""
+        lines = [
+            "# Geometry Course - Diagram and MicroSim Details",
             "",
-            "## Elements by Chapter",
+            f"**Total Visual Elements:** {len(self.elements)}",
+            f"**Diagrams:** {sum(1 for e in self.elements if e.element_type == 'diagram')}",
+            f"**MicroSims:** {sum(1 for e in self.elements if e.element_type == 'microsim')}",
             ""
-        ])
+        ]
 
         # Group by chapter
         by_chapter = {}
         for element in self.elements:
-            key = f"{element.chapter_num}: {element.chapter_name}"
+            key = (element.chapter_num, element.chapter_name, element.chapter_dir)
             if key not in by_chapter:
                 by_chapter[key] = []
             by_chapter[key].append(element)
 
-        for chapter_key in sorted(by_chapter.keys()):
+        # Sort chapters by chapter number
+        for chapter_key in sorted(by_chapter.keys(), key=lambda x: x[0]):
+            chapter_num, chapter_name, chapter_dir = chapter_key
             elements = by_chapter[chapter_key]
+
             lines.extend([
-                f"### Chapter {chapter_key}",
+                f"## Chapter {int(chapter_num)}: {chapter_name}",
                 "",
                 f"**Total elements:** {len(elements)}",
                 ""
             ])
 
-            for element in elements:
+            for element in sorted(elements, key=lambda e: e.element_title):
                 # Create link to chapter section
-                anchor = f"diagram-{element.element_title.lower().replace(' ', '-').replace('/', '-').replace('(', '').replace(')', '').replace(',', '')}"
-                chapter_link = f"../../chapters/{element.chapter_dir}/#{anchor}"
-                lines.append(f"#### [{element.element_title}]({chapter_link}) ({element.element_type.title()})")
+                # MkDocs anchor: lowercase, spaces to hyphens, remove most punctuation except hyphens
+                anchor_text = f"diagram-{element.element_title}"
+                anchor = anchor_text.lower().replace(' ', '-').replace('/', '-').replace('(', '').replace(')', '').replace(',', '').replace('.', '').replace(':', '')
+                # Clean up multiple consecutive hyphens
+                while '--' in anchor:
+                    anchor = anchor.replace('--', '-')
+                chapter_link = f"../chapters/{element.chapter_dir}/index.md#{anchor}"
+                lines.append(f"### [{element.element_title}]({chapter_link})")
+                if element.status:
+                    lines.append(f"- **Status:** {element.status}")
+                lines.append(f"- **Type:** {element.element_type.title()}")
                 lines.append(f"- **Bloom's Taxonomy:** {', '.join(element.bloom_levels)}")
                 lines.append(f"- **UI Elements:** {element.ui_elements_count}")
                 lines.append(f"- **Difficulty:** {element.estimated_difficulty}")
@@ -567,9 +606,9 @@ def main():
         description='Generate report of diagrams and MicroSims in geometry course'
     )
     parser.add_argument(
-        '--output',
-        default='../../docs/learning-graph/diagrams.md',
-        help='Output file path (default: ../../docs/learning-graph/diagrams.md)'
+        '--output-dir',
+        default='../../docs/learning-graph',
+        help='Output directory path (default: ../../docs/learning-graph)'
     )
     parser.add_argument(
         '--format',
@@ -590,12 +629,17 @@ def main():
 
     args = parser.parse_args()
 
-    # Resolve chapters directory path
+    # Resolve paths
     script_dir = Path(__file__).parent
     chapters_dir = (script_dir / args.chapters_dir).resolve()
+    output_dir = (script_dir / args.output_dir).resolve()
 
     if not chapters_dir.exists():
         print(f"Error: Chapters directory not found: {chapters_dir}")
+        return 1
+
+    if not output_dir.exists():
+        print(f"Error: Output directory not found: {output_dir}")
         return 1
 
     print(f"Analyzing chapters in: {chapters_dir}")
@@ -610,20 +654,31 @@ def main():
     generator = ReportGenerator(analyzer.elements)
 
     if args.format == 'markdown':
-        content = generator.generate_markdown()
-        with open(args.output, 'w', encoding='utf-8') as f:
-            f.write(content)
-        print(f"Markdown report saved to: {args.output}")
+        # Generate table report
+        table_content = generator.generate_markdown_table()
+        table_output = output_dir / 'diagram-table.md'
+        with open(table_output, 'w', encoding='utf-8') as f:
+            f.write(table_content)
+        print(f"Table report saved to: {table_output}")
+
+        # Generate details report
+        details_content = generator.generate_markdown_details()
+        details_output = output_dir / 'diagram-details.md'
+        with open(details_output, 'w', encoding='utf-8') as f:
+            f.write(details_content)
+        print(f"Details report saved to: {details_output}")
 
     elif args.format == 'csv':
-        generator.generate_csv(args.output)
-        print(f"CSV report saved to: {args.output}")
+        csv_output = output_dir / 'diagrams.csv'
+        generator.generate_csv(str(csv_output))
+        print(f"CSV report saved to: {csv_output}")
 
     elif args.format == 'html':
+        html_output = output_dir / 'diagrams.html'
         content = generator.generate_html()
-        with open(args.output, 'w', encoding='utf-8') as f:
+        with open(html_output, 'w', encoding='utf-8') as f:
             f.write(content)
-        print(f"HTML report saved to: {args.output}")
+        print(f"HTML report saved to: {html_output}")
 
     # Print summary to console
     print("\n=== SUMMARY ===")

@@ -139,7 +139,7 @@ A **plane** is a flat surface that extends infinitely in all directions. Like a 
 
 The floor of your classroom, the surface of a mirror, or a perfectly calm lake all approximate planes in the physical world—though real planes extend infinitely in geometry.
 
-#### MicroSim: Points and Lines Explorer
+#### Drawing: Points and Lines Explorer
 
 <iframe src="../../sims/point-line-explorer/main.html" height="722px" scrolling="no"></iframe>
 
@@ -352,7 +352,7 @@ The **vertex** of an angle is the common endpoint where the two rays meet. It's 
 
 Think of a vertex like the hinge of a door—it's the fixed point around which rotation occurs.
 
-#### MicroSim: Angle Builder
+#### Drawing: Angle Builder
 
 <details markdown="1">
 <summary>Interactive angle creation and measurement</summary>
@@ -688,7 +688,7 @@ A **counterexample** is a specific example that shows a conjecture is false. Fin
 
 **Power of counterexamples:** You can test thousands of cases and a conjecture seems true, but one counterexample proves it's false!
 
-#### MicroSim: Reasoning Detective
+#### Drawing: Reasoning Detective
 
 <details markdown="1">
 <summary>Interactive reasoning challenge game</summary>

@@ -1,0 +1,35 @@
+{
+  "title": "Circle Area Explorer",
+  "description": "An interactive educational simulation that demonstrates the quadratic relationship between a circle's radius and its area using the formula A = πr². Students can manipulate the radius using a slider or by directly dragging within the circle, with an optional graph showing the quadratic growth curve.",
+  "creator": "Dan McCreary",
+  "contributor": ["ChatGPT (AI Assistant)"],
+  "date": "2024-11-29",
+  "subject": ["geometry", "circles", "area", "quadratic relationships", "pi", "radius", "mathematics", "interactive simulation"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC 4.0",
+  "identifier": "https://dmccreary.github.io/geometry-course/sims/circle-area-explorer/",
+  "publisher": "Dan McCreary - Geometry Course",
+  "educationalLevel": "high school",
+  "learningResourceType": "interactive demonstration",
+  "audience": "High school geometry students (grades 9-10)",
+  "version": "1.1",
+  "library": "p5.js",
+  "bloomLevel": ["Remember", "Understand", "Apply", "Analyze", "Evaluate"],
+  "concepts": [
+    "Circle area formula",
+    "Quadratic relationships",
+    "Pi constant",
+    "Radius",
+    "Direct manipulation",
+    "Graphical representation",
+    "Rate of change"
+  ],
+  "prerequisites": [
+    "Basic understanding of circles",
+    "Familiarity with pi (π)",
+    "Basic algebra skills",
+    "Understanding of squared terms"
+  ]
+}

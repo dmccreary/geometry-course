@@ -1,7 +1,5 @@
 # MicroSims for Geometry
 
-## Concept Graph Viewer
-
 ## Lesson Plan: Using MicroSims in Geometry Instruction
 
 ### Overview

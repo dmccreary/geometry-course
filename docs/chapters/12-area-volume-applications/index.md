@@ -93,47 +93,71 @@ From this basic formula, we can derive formulas for all other polygons.
 
 #### Diagram: Area Formulas for Quadrilaterals
 
-<details markdown="1">
-<summary>Visual guide to quadrilateral area formulas</summary>
+<iframe src="../../sims/area-formulas-quadrilaterals/main.html" height="480px" width="100%" scrolling="no"></iframe>
 
-**Type:** Diagram
+[View the Area Area Formulas for Quadrilaterals Fullscreen](../../sims/area-formulas-quadrilaterals/main.html)
+
+<details markdown="1">
+   <summary>Visual guide to quadrilateral area formulas</summary>
+
+**Type:** P5.js MicroSim
+**Status:** Done
 
 **Learning Objective:** Students will **remember** area formulas for rectangles, squares, parallelograms, trapezoids, rhombuses, and kites, and **understand** how these formulas relate to the base rectangle formula. (Bloom's Taxonomy: Remembering, Understanding)
 
-**Specification:**
+## Specification
 
-Create a colorful diagram showing six quadrilaterals with their area formulas in a 2×3 grid layout.
+**Title:** "Area Formulas for Quadrilaterals" (bold, 24pt, centered, top)
+**Status:** Done
 
-**Layout:** 2 rows × 3 columns, each cell 350px wide × 300px tall
+Create a colorful six-panel diagram showing six quadrilaterals with their area formulas in a grid layout 3 columns wide and 2 rows deep.  
+The MicroSim will be 500px tall and be width responsive.
+The margin around the panels will be 10px.
+The width of each panel will be 1/3 of the canvas width less 4 margin 
+A centered title will be drawn at the top of each panel.  
+A drawing of the shape will be in the center of the panel.
+Use panelWidth as a global variable.
+Make all the panels width update in the updateCanvasSize()
+At the bottom will be the formula to calculate the area of each item.
+Each panel will have a push() and pop() wrapping the center drawing of the object.
 
-**Row 1:**
+Put panelTitleFontSize as 24 in the globals.
+Put the panelTitleFormulaFontSize as 16 in the globals.
 
-**Cell 1: Rectangle**
+**Layout:** 2 rows × 3 columns, each cell 1/3 of the canvas wide × and 300px tall
+
+## Row 1 Specification
+
+### Cell 1: Rectangle
 - Background: Light yellow (#FFF9C4)
-- Draw rectangle (200px × 120px) in navy blue (#1A237E), filled with semi-transparent blue (#64B5F6, 30% opacity)
-- Label dimensions: "l" on top edge, "w" on right edge (red text)
-- Formula below: $A = lw$ (bold, 18pt)
+- Draw rectangle in navy blue (#1A237E), filled with semi-transparent blue (#64B5F6, 30% opacity)
+- Make the drawing of the rectangle always be centered in the panel.
+- Update the width of the drawing relative to the panelWidth-2*margin.
+- Formula below: $A = lw$
 
-**Cell 2: Square**
+### Cell 2: Square
 - Background: Light pink (#FCE4EC)
-- Draw square (150px × 150px) in deep purple (#4A148C), filled with semi-transparent purple (#BA68C8, 30% opacity)
-- Label one side: "s" (red text)
+- Draw square in deep purple (#4A148C), filled with semi-transparent purple (#BA68C8, 30% opacity)
+- Make the drawing of the square always be centered in the panel.
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = s^2$ (bold, 18pt)
 
-**Cell 3: Parallelogram**
+### Cell 3: Parallelogram
 - Background: Light green (#E8F5E9)
-- Draw parallelogram (220px base × 100px height, slanted) in dark green (#1B5E20), filled with semi-transparent green (#81C784, 30% opacity)
+- Draw parallelogram slanted in dark green (#1B5E20), filled with semi-transparent green (#81C784, 30% opacity)
 - Draw dashed height line perpendicular to base (red)
 - Label base "b" and height "h" (red text)
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = bh$ (bold, 18pt)
 
 **Row 2:**
 
 **Cell 4: Trapezoid**
 - Background: Light orange (#FFF3E0)
-- Draw trapezoid (top base 120px, bottom base 200px, height 100px) in dark orange (#E65100), filled with semi-transparent orange (#FFB74D, 30% opacity)
+- Draw trapezoid in dark orange (#E65100), filled with semi-transparent orange (#FFB74D, 30% opacity)
 - Draw dashed height line (red)
 - Label top base "$b_1$", bottom base "$b_2$", height "h" (red text)
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = \frac{1}{2}(b_1 + b_2)h$ (bold, 18pt)
 
 **Cell 5: Rhombus**
@@ -141,16 +165,18 @@ Create a colorful diagram showing six quadrilaterals with their area formulas in
 - Draw rhombus (diagonals 180px and 120px) in dark cyan (#006064), filled with semi-transparent cyan (#4DD0E1, 30% opacity)
 - Draw both diagonals as dashed lines (red)
 - Label diagonals "$d_1$" and "$d_2$" (red text)
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = \frac{1}{2}d_1d_2$ (bold, 18pt)
 
 **Cell 6: Kite**
 - Background: Light lavender (#F3E5F5)
-- Draw kite (vertical diagonal 160px, horizontal diagonal 100px) in dark purple (#6A1B9A), filled with semi-transparent purple (#BA68C8, 30% opacity)
+- Draw kite in dark purple (#6A1B9A), filled with semi-transparent purple (#BA68C8, 30% opacity)
 - Draw both diagonals as dashed lines (red)
 - Label diagonals "$d_1$" and "$d_2$" (red text)
+- Update the width of the drawing relative to the panelWidth-2*margin.
 - Formula below: $A = \frac{1}{2}d_1d_2$ (bold, 18pt)
 
-**Title above grid:** "Area Formulas for Quadrilaterals" (bold, 24pt)
+**Implementation Note:** This MicroSim was created by the microsim-p5 skill with only a small change to the placement of the kite.  This was fixed by adding a `translate(0, -20)` after the `push()` function.
 
 </details>
 
@@ -162,20 +188,34 @@ $$A = \frac{1}{2}bh$$
 
 where $b$ is the base and $h$ is the height (perpendicular distance from the base to the opposite vertex).
 
-#### MicroSim: Triangle Area Explorer
+#### Drawing: Triangle Area Explorer
+
+<iframe src="../../sims/triangle-area-explorer/main.html"
+        height="455px"
+        width="100%"
+        scrolling="no">
+</iframe>
 
 <details markdown="1">
-<summary>Interactive exploration of triangle area formula</summary>
+   <summary>Triangle Area Explorer</summary>
 
 **Type:** MicroSim (p5.js)
+**Status:** Done
 
 **Learning Objective:** Students will **apply** the triangle area formula to various triangles and **analyze** how changing the base or height affects the area. (Bloom's Taxonomy: Applying, Analyzing)
 
 **Specification:**
 
-Create an interactive p5.js simulation for exploring triangle area.
+- Create an interactive p5.js simulation for exploring triangle area.
+- Students will use horizontal sliders to control the base length and the height of the triangle. 
+- They will see the calculations for the area done in abstract length units (1 pixel = 15 pixels)
 
-**Canvas:** 800px × 650px, background: white
+**Canvas:** 480px height with responsive width
+
+```python
+// Scale factor for drawing (pixels per unit)
+let scale = 15;
+```
 
 **Main Display:**
 - Draw a scalable triangle with adjustable base and height
@@ -195,10 +235,11 @@ Create an interactive p5.js simulation for exploring triangle area.
 - Display: "Area: [calculated] square units" (18pt bold, blue)
 
 **Controls (bottom panel, y = 550):**
-- Slider: "Base Length" (5 - 30 units), position (50, 560), width 280px
-- Slider: "Height" (3 - 25 units), position (400, 560), width 280px
-- Button: "Reset to Default" at (350, 600)
-- Display current formula: $A = \frac{1}{2}bh$ (centered, below controls)
+
+- Slider: "Base Length" (0 - 40 units)
+- Slider: "Height" (0 - 16 units)
+- Button: "Reset to Default" at (10, 600)
+- Display current formula: $A = \frac{1}{2}bh$ at 80% width and 20% down
 
 **Interactive Features:**
 - Real-time area calculation as sliders move
@@ -206,12 +247,21 @@ Create an interactive p5.js simulation for exploring triangle area.
 - Highlight formula components as corresponding sliders move
 
 **Color Scheme:**
-- Background: White
+- Background of drawing area: aliceblue
 - Triangle fill: Blue (#2196F3, 40% opacity)
 - Triangle outline: Dark blue (#0D47A1)
 - Height line: Red dashed
 - Sliders: Blue thumbs
 - Text: Black for labels, blue for calculated area
+
+## Implementation Notes
+
+On Nov. 13th, 2025 I used the microsim-p5 skill to generate this diagram.  It functioned
+perfectly the first time, but I had to spend about 20 minutes
+adjusting the vertical spacing such as the height of the drawing
+area and the control area.  I also had to adjust the ranges of the sliders.
+We need a better algorithm for
+getting the spacing correct.
 
 </details>
 
@@ -231,12 +281,15 @@ $$A = \frac{1}{2}a(ns)$$
 
 where $n$ is the number of sides and $s$ is the side length.
 
-#### MicroSim: Regular Polygon Area Explorer
+#### Drawing: Regular Polygon Area Explorer
 
 <details markdown="1">
-<summary>Interactive exploration of regular polygon areas</summary>
+  <summary>Interactive exploration of regular polygon areas</summary>
 
 **Type:** MicroSim (p5.js)
+**Status:** In Progress
+
+**Note:** This is very similar to the [Regular Polygon Explorer](../../sims/regular-polygon-explorer/)
 
 **Learning Objective:** Students will **apply** the regular polygon area formula to polygons with different numbers of sides, and **analyze** how the apothem, perimeter, and number of sides affect the total area. (Bloom's Taxonomy: Applying, Analyzing)
 
@@ -476,7 +529,7 @@ Create a colorful diagram showing circle components and formulas.
 
 </details>
 
-#### MicroSim: Circle Area and Circumference Calculator
+#### Drawing: Circle Area and Circumference Calculator
 
 <details markdown="1">
 <summary>Interactive circle measurement tool</summary>
@@ -656,7 +709,7 @@ Create a colorful diagram showing seven common 3D solids in a gallery format.
 
 A **net** is a two-dimensional pattern that can be folded to form a three-dimensional solid. Nets are useful for understanding surface area and for constructing physical models.
 
-#### MicroSim: Net to Solid Explorer
+#### Drawing: Net to Solid Explorer
 
 <details markdown="1">
 <summary>Interactive exploration of 3D solid nets</summary>
@@ -847,7 +900,7 @@ Create a colorful reference sheet for surface area formulas.
 
 </details>
 
-#### MicroSim: Surface Area Calculator
+#### Drawing: Surface Area Calculator
 
 <details markdown="1">
 <summary>Interactive surface area calculation tool</summary>
@@ -985,7 +1038,7 @@ This principle helps us understand why an oblique prism (tilted) has the same vo
 
 A **cross-section** is the 2D shape formed when a plane intersects a 3D solid. Understanding cross-sections helps visualize how solids are constructed and why volume formulas work.
 
-#### MicroSim: Cross-Section Explorer
+#### Drawing: Cross-Section Explorer
 
 <details markdown="1">
 <summary>Interactive exploration of 3D solid cross-sections</summary>
@@ -1133,7 +1186,7 @@ Create an interactive p5.js simulation showing cross-sections of 3D solids.
 
 </details>
 
-#### MicroSim: Cavalieri's Principle Demonstration
+#### Drawing: Cavalieri's Principle Demonstration
 
 <details markdown="1">
 <summary>Interactive demonstration of Cavalieri's Principle</summary>
@@ -1329,7 +1382,7 @@ Create a colorful diagram comparing prism/cylinder volumes with pyramid/cone vol
 
 </details>
 
-#### MicroSim: Volume Explorer
+#### Drawing: Volume Explorer
 
 <details markdown="1">
 <summary>Interactive volume calculation and comparison tool</summary>
@@ -1458,7 +1511,7 @@ For example, a scale of $1:50$ means that 1 cm in the model represents 50 cm in 
 
 If a model is made at $1:10$ scale, then areas are reduced by $(1/10)^2 = 1/100$, and volumes are reduced by $(1/10)^3 = 1/1000$.
 
-#### MicroSim: Scale Model Builder
+#### Drawing: Scale Model Builder
 
 <details markdown="1">
 <summary>Interactive scale model creation and analysis</summary>
@@ -1716,7 +1769,7 @@ These problems often require:
 2. Expressing the quantity to optimize as a function of one variable
 3. Using algebraic or calculus techniques to find the optimal value
 
-#### MicroSim: Optimization Challenge - Maximum Volume Box
+#### Drawing: Optimization Challenge - Maximum Volume Box
 
 <details markdown="1">
 <summary>Interactive optimization problem solver</summary>

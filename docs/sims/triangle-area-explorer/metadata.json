@@ -1,0 +1,165 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "title": "Triangle Area Explorer",
+  "creator": "Claude Code with microsim-p5 skill",
+  "subject": "Geometry",
+  "description": "An interactive exploration tool for understanding how base and height affect triangle area through the formula A = ½bh. Students manipulate sliders to adjust dimensions and observe real-time area calculations.",
+  "date": "2025-11-13",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "6-8",
+  "subjectArea": "Mathematics",
+  "topic": "Triangle Area",
+  "learningObjectives": [
+    "Students will apply the triangle area formula A = ½bh to calculate areas with different dimensions",
+    "Students will analyze the relationship between base, height, and area",
+    "Students will understand that height must be perpendicular to the base",
+    "Students will predict how changing dimensions affects area"
+  ],
+  "bloomsTaxonomyLevels": [
+    "Applying",
+    "Analyzing"
+  ],
+  "duration": "15-20 minutes",
+  "prerequisites": [
+    "Understanding of triangles",
+    "Basic multiplication and division",
+    "Understanding of units and square units",
+    "Concept of perpendicular lines"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive width × 620px",
+  "responsive": "Width-responsive",
+  "dependencies": [
+    "p5.js 1.11.10 CDN"
+  ],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false,
+    "ariaLabels": true
+  },
+  "controls": [
+    {
+      "name": "Base Length Slider",
+      "type": "slider",
+      "range": "5-30 units",
+      "default": 20,
+      "description": "Adjusts the length of the triangle's base"
+    },
+    {
+      "name": "Height Slider",
+      "type": "slider",
+      "range": "3-25 units",
+      "default": 15,
+      "description": "Adjusts the perpendicular height of the triangle"
+    },
+    {
+      "name": "Reset Button",
+      "type": "button",
+      "description": "Resets base and height to default values"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "baseLength",
+      "range": "5-30",
+      "default": 20,
+      "unit": "units",
+      "purpose": "Horizontal dimension of triangle base"
+    },
+    {
+      "name": "triangleHeight",
+      "range": "3-25",
+      "default": 15,
+      "unit": "units",
+      "purpose": "Perpendicular height from base to apex"
+    }
+  ],
+  "modelType": "Mathematical formula visualization",
+  "variables": [
+    "baseLength",
+    "triangleHeight",
+    "area",
+    "scale",
+    "baseY"
+  ],
+  "equations": [
+    "Area = (base × height) / 2",
+    "A = ½bh"
+  ],
+  "assumptions": [
+    "Triangle is drawn in 2D plane",
+    "Height is always perpendicular to base",
+    "Measurements use consistent arbitrary units",
+    "Triangle vertices remain within visible canvas"
+  ],
+  "limitations": [
+    "Does not show other triangle properties (angles, perimeter)",
+    "Limited to right-angle height visualization",
+    "Fixed scale factor for display",
+    "Does not cover triangle classification types"
+  ],
+  "educationalContext": {
+    "pedagogicalApproach": "Interactive exploration and discovery learning",
+    "suggestedActivities": [
+      "Pattern discovery: observe effects of doubling dimensions",
+      "Area challenge: find multiple base/height combinations for same area",
+      "Maximum/minimum area exploration",
+      "Proportional reasoning: relationship between dimension and area changes"
+    ],
+    "assessmentOpportunities": [
+      "Calculate areas with given dimensions",
+      "Predict area changes from dimension changes",
+      "Identify base and height from triangle diagrams",
+      "Solve for unknown dimension given area and one dimension"
+    ],
+    "commonMisconceptions": [
+      "Height can be measured at any angle (must be perpendicular)",
+      "Area equals perimeter",
+      "Doubling both dimensions doubles area (actually quadruples)",
+      "Formula is bh instead of ½bh"
+    ],
+    "discussionQuestions": [
+      "Why is the formula ½bh instead of just bh?",
+      "What happens to area if you double both base and height?",
+      "Can two triangles with different dimensions have the same area?",
+      "How is triangle area related to rectangle area?"
+    ]
+  },
+  "technicalDetails": {
+    "browserCompatibility": [
+      "Chrome",
+      "Firefox",
+      "Safari",
+      "Edge"
+    ],
+    "mobileCompatible": true,
+    "offlineCapable": false,
+    "visualFeatures": [
+      "Semi-transparent triangle fill",
+      "Dashed height line in red",
+      "Right angle indicator",
+      "Labeled dimensions",
+      "Measurement display box",
+      "Real-time area calculation"
+    ]
+  },
+  "standardsAlignment": [
+    "CCSS.MATH.CONTENT.6.G.A.1 - Find the area of triangles and polygons",
+    "CCSS.MATH.CONTENT.7.G.B.6 - Solve real-world problems involving area"
+  ],
+  "keywords": [
+    "triangle",
+    "area",
+    "formula",
+    "base",
+    "height",
+    "perpendicular",
+    "geometry",
+    "measurement",
+    "interactive",
+    "exploration"
+  ]
+}

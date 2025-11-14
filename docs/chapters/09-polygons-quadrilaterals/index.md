@@ -159,7 +159,7 @@ where:
 - $I$ is the measure of each interior angle
 - $n$ is the number of sides
 
-#### MicroSim: Polygon Interior Angle Explorer
+#### Drawing: Polygon Interior Angle Explorer
 <details markdown="1">
 <summary>Polygon Interior Angle Explorer</summary>
 Type: microsim
@@ -399,7 +399,7 @@ A **parallelogram** is a quadrilateral with two pairs of parallel sides. This si
 
 These properties make parallelograms rigid and stable. If you know the length of two adjacent sides and the measure of one angle, you can construct a unique parallelogram.
 
-#### MicroSim: Parallelogram Property Explorer
+#### Drawing: Parallelogram Property Explorer
 <details markdown="1">
 <summary>Parallelogram Property Explorer</summary>
 Type: microsim
@@ -620,7 +620,7 @@ An **isosceles trapezoid** is a trapezoid whose legs are congruent. This additio
 
 Isosceles trapezoids appear in architecture, furniture design, and ancient amphitheaters where every seat needs equal viewing angles.
 
-#### MicroSim: Trapezoid vs Isosceles Trapezoid Comparison
+#### Drawing: Trapezoid vs Isosceles Trapezoid Comparison
 <details markdown="1">
 <summary>Trapezoid vs Isosceles Trapezoid Comparison</summary>
 Type: microsim
@@ -818,7 +818,7 @@ For a regular octagon:
 
 Regular octagons can combine with squares to create beautiful tessellating patterns.
 
-#### MicroSim: Polygon Constructor
+#### Drawing: Polygon Constructor
 <details markdown="1">
 <summary>Polygon Constructor</summary>
 Type: microsim
@@ -942,7 +942,7 @@ Examples include:
 - **Hexagons and triangles:** Two hexagons and two triangles: $120° + 120° + 60° + 60° = 360°$
 - **Hexagons, squares, and triangles:** Various combinations create beautiful patterns
 
-#### MicroSim: Tessellation Builder
+#### Drawing: Tessellation Builder
 <details markdown="1">
 <summary>Tessellation Builder</summary>
 Type: microsim

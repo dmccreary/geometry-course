@@ -157,7 +157,7 @@ If point $(x, y)$ is translated by $(h, k)$, the image is $(x + h, y + k)$.
     Implementation: SVG with precise coordinate alignment
 </details>
 
-#### MicroSim: Interactive Translation Explorer
+#### Drawing: Interactive Translation Explorer
 <details markdown="1">
     <summary>Translation Tool</summary>
     Type: microsim
@@ -309,7 +309,7 @@ A **rotation** turns a figure around a fixed point called the **center of rotati
     Implementation: SVG with precise angle measurements
 </details>
 
-#### MicroSim: Interactive Rotation Explorer
+#### Drawing: Interactive Rotation Explorer
 <details markdown="1">
     <summary>Rotation Tool</summary>
     Type: microsim
@@ -458,7 +458,7 @@ A **reflection** flips a figure over a line called the **line of reflection** (o
     Implementation: SVG with precise symmetry
 </details>
 
-#### MicroSim: Interactive Reflection Explorer
+#### Drawing: Interactive Reflection Explorer
 <details markdown="1">
     <summary>Reflection Tool</summary>
     Type: microsim
@@ -696,7 +696,7 @@ A **composition of transformations** means performing one transformation after a
 - Composition of two reflections over parallel lines = translation
 - Composition of two reflections over intersecting lines = rotation
 
-#### MicroSim: Composition of Transformations Explorer
+#### Drawing: Composition of Transformations Explorer
 <details markdown="1">
     <summary>Transformation Composition Tool</summary>
     Type: microsim
@@ -935,7 +935,7 @@ For triangles specifically, we don't need to check all six pairs of correspondin
     Implementation: Infographic-style SVG with clear visual organization
 </details>
 
-#### MicroSim: Triangle Congruence Identifier
+#### Drawing: Triangle Congruence Identifier
 <details markdown="1">
     <summary>Triangle Congruence Practice Tool</summary>
     Type: microsim

@@ -182,7 +182,7 @@ This formula comes directly from the Pythagorean theorem! The distance between t
     Implementation: SVG with mathematical precision
 </details>
 
-#### MicroSim: Interactive Distance Calculator
+#### Drawing: Interactive Distance Calculator
 <details markdown="1">
     <summary>Distance Formula Explorer</summary>
     Type: microsim
@@ -335,7 +335,7 @@ The midpoint formula finds the **average** of the x-coordinates and the average 
     Implementation: SVG with clear visual connection to averaging
 </details>
 
-#### MicroSim: Midpoint Explorer with Verification
+#### Drawing: Midpoint Explorer with Verification
 <details markdown="1">
     <summary>Interactive Midpoint Calculator</summary>
     Type: microsim
@@ -516,7 +516,7 @@ where:
     Implementation: SVG with clear visual distinction between slope types
 </details>
 
-#### MicroSim: Slope Explorer and Calculator
+#### Drawing: Slope Explorer and Calculator
 <details markdown="1">
     <summary>Interactive Slope Visualization</summary>
     Type: microsim
@@ -712,7 +712,7 @@ This form is called "slope-intercept" because you can immediately see both the s
     Implementation: SVG with clear slope triangles and labeled points
 </details>
 
-#### MicroSim: Slope-Intercept Form Explorer
+#### Drawing: Slope-Intercept Form Explorer
 <details markdown="1">
     <summary>Interactive y = mx + b Grapher</summary>
     Type: microsim
@@ -842,7 +842,7 @@ Solution:
   - $y - 5 = 3x - 6$
   - $y = 3x - 1$
 
-#### MicroSim: Point-Slope Form Builder
+#### Drawing: Point-Slope Form Builder
 <details markdown="1">
     <summary>Interactive Point-Slope Form Tool</summary>
     Type: microsim
@@ -1102,7 +1102,7 @@ If line 1 has slope $m_1$ and line 2 has slope $m_2$, then:
     Implementation: SVG with precise right angles and clear slope calculations
 </details>
 
-#### MicroSim: Parallel and Perpendicular Line Explorer
+#### Drawing: Parallel and Perpendicular Line Explorer
 <details markdown="1">
     <summary>Interactive Parallel/Perpendicular Relationships</summary>
     Type: microsim
@@ -1253,7 +1253,7 @@ A **transversal** is a line that intersects two or more other lines. When a tran
 3. Calculate intersection points
 4. Measure angles using slopes
 
-#### MicroSim: Coordinate Plane Transversal Analysis
+#### Drawing: Coordinate Plane Transversal Analysis
 <details markdown="1">
     <summary>Transversal with Parallel Lines - Coordinate Approach</summary>
     Type: microsim
