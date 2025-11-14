@@ -19,6 +19,8 @@ nav:
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Diagrams Table: learning-graph/diagram-table.md
     - Diagrams Details: learning-graph/diagram-details.md
+    - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
   
   - Chapters:
     - Overview: chapters/index.md
@@ -85,6 +87,7 @@ nav:
     - prompts/ch-02-content.md
   
   - Instructor's Guide: instructors-guide.md/microsims-for-geometry.md
+  - FAQs: faq.md
   - Glossary: glossary.md
   - License: license.md
   - How We Built This Site: how-we-built-this-site.md
