@@ -58,6 +58,7 @@ nav:
     - Regular Polygon Explorer: sims/regular-polygon-explorer/index.md
     - Regular Polygon Explorer Quiz: sims/regular-polygon-explorer-quiz/index.md
     - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
+    - Sierpinski Triangles: sims/sierpinski-triangles/index.md
     - Templates: sims/templates/index.md
     - Triangle Area Explorer: sims/triangle-area-explorer/index.md
     - Triangle Congruence: sims/triangle-congruence/index.md
@@ -89,7 +90,7 @@ nav:
   - Instructor's Guide:
     - Introduction: instructors-guide/index.md
     - MicroSims Philosophy: instructors-guide/microsims-for-geometry.md
-    - Comparison Table: instructors-guide/comparison-table.m
+    - Comparison Table: instructors-guide/comparison-table.md
   
   - FAQs: faq.md
   - Glossary: glossary.md
