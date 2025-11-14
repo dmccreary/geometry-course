@@ -86,7 +86,11 @@ nav:
     - prompts/ch-01-content-generation-skill.md
     - prompts/ch-02-content.md
   
-  - Instructor's Guide: instructors-guide.md/microsims-for-geometry.md
+  - Instructor's Guide:
+    - Introduction: instructors-guide/index.md
+    - MicroSims Philosophy: instructors-guide/microsims-for-geometry.md
+    - Comparison Table: instructors-guide/comparison-table.m
+  
   - FAQs: faq.md
   - Glossary: glossary.md
   - License: license.md
