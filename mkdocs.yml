@@ -50,6 +50,7 @@ nav:
     - Cords: sims/cords/index.md
     - Cosine: sims/cosine/index.md
     - Degrees vs Radians: sims/degrees-vs-radians/index.md
+    - Koch Fractal: sims/koch-fractal/index.md
     - Graph Viewer: sims/graph-viewer/index.md
     - Line Relationships 3D: sims/line-relationships-3d/index.md
     - Point Line Explorer: sims/point-line-explorer/index.md
