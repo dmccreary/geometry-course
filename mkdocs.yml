@@ -84,6 +84,7 @@ nav:
     - prompts/ch-01-content-generation-skill.md
     - prompts/ch-02-content.md
   
+  - Instructor's Guide: instructors-guide.md/microsims-for-geometry.md
   - Glossary: glossary.md
   - License: license.md
   - How We Built This Site: how-we-built-this-site.md
