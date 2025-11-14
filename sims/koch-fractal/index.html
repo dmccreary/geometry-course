@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive visualization of the Sierpinski triangle fractal, demonstrating recursive subdivision and self-similar patterns in mathematics.">
+        <meta name="description" content="An interactive visualization demonstrating the iterative construction of the Koch curve, a classic fractal with self-similar patterns at every scale.">
       
       
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/sims/sierpinski-triangles/">
+        <link rel="canonical" href="https://dmccreary.github.io/geometry-course/sims/koch-fractal/">
       
       
-        <link rel="prev" href="../sine-and-cosine-circle/">
+        <link rel="prev" href="../degrees-vs-radians/">
       
       
-        <link rel="next" href="../templates/">
+        <link rel="next" href="../graph-viewer/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Sierpinski Triangles - AI Assisted Geometry</title>
+        <title>Koch Fractal - AI Assisted Geometry</title>
       
     
     
@@ -73,11 +73,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Sierpinski Triangles - AI Assisted Geometry" >
+        <meta  property="og:title"  content="Koch Fractal - AI Assisted Geometry" >
       
-        <meta  property="og:description"  content="An interactive visualization of the Sierpinski triangle fractal, demonstrating recursive subdivision and self-similar patterns in mathematics." >
+        <meta  property="og:description"  content="An interactive visualization demonstrating the iterative construction of the Koch curve, a classic fractal with self-similar patterns at every scale." >
       
-        <meta property="og:image" content="https://dmccreary.github.io/geometry-course/sims/sierpinski-triangles/sierpinski-triangles.png">
+        <meta property="og:image" content="https://dmccreary.github.io/geometry-course/sims/koch-fractal/koch-fractal.png">
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -85,15 +85,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://dmccreary.github.io/geometry-course/sims/sierpinski-triangles/" >
+        <meta  property="og:url"  content="https://dmccreary.github.io/geometry-course/sims/koch-fractal/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Sierpinski Triangles - AI Assisted Geometry" >
+        <meta  name="twitter:title"  content="Koch Fractal - AI Assisted Geometry" >
       
-        <meta  name="twitter:description"  content="An interactive visualization of the Sierpinski triangle fractal, demonstrating recursive subdivision and self-similar patterns in mathematics." >
+        <meta  name="twitter:description"  content="An interactive visualization demonstrating the iterative construction of the Koch curve, a classic fractal with self-similar patterns at every scale." >
       
-        <meta name="twitter:image" content="https://dmccreary.github.io/geometry-course/sims/sierpinski-triangles/sierpinski-triangles.png">
+        <meta name="twitter:image" content="https://dmccreary.github.io/geometry-course/sims/koch-fractal/koch-fractal.png">
       
     
     
@@ -114,7 +114,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sierpinski-triangles" class="md-skip">
+        <a href="#koch-fractal" class="md-skip">
           Skip to content
         </a>
       
@@ -149,7 +149,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sierpinski Triangles
+              Koch Fractal
             
           </span>
         </div>
@@ -841,10 +841,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../koch-fractal/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Koch Fractal
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -853,6 +873,155 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction (5 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exploration-10-15-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploration (10-15 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extension-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extension Activities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Questions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grade-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grade Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Concepts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1030,30 +1199,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Sierpinski Triangles
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../sierpinski-triangles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1062,146 +1211,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#embedding-in-your-website" class="md-nav__link">
-    <span class="md-ellipsis">
-      Embedding in Your Website
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    <span class="md-ellipsis">
-      Description
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Description">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#key-mathematical-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Mathematical Properties
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#educational-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Educational Applications
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lesson-plan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lesson Plan
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lesson Plan">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      Learning Objectives
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#activity-sequence" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activity Sequence
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Assessment
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#standards-alignment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Standards Alignment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Concepts
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Notes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Credits
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1596,15 +1605,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#embedding-in-your-website" class="md-nav__link">
-    <span class="md-ellipsis">
-      Embedding in Your Website
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       Description
@@ -1615,9 +1615,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-mathematical-properties" class="md-nav__link">
+  <a href="#key-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Mathematical Properties
+      Key Properties
     </span>
   </a>
   
@@ -1629,9 +1629,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#educational-applications" class="md-nav__link">
+  <a href="#learning-objectives" class="md-nav__link">
     <span class="md-ellipsis">
-      Educational Applications
+      Learning Objectives
     </span>
   </a>
   
@@ -1648,36 +1648,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#introduction-5-minutes" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning Objectives
+      Introduction (5 minutes)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#activity-sequence" class="md-nav__link">
+  <a href="#exploration-10-15-minutes" class="md-nav__link">
     <span class="md-ellipsis">
-      Activity Sequence
+      Exploration (10-15 minutes)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#extension-activities" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Extension Activities
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#standards-alignment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Standards Alignment
+      Assessment Questions
     </span>
   </a>
   
@@ -1689,27 +1689,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grade-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grade Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematical Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#related-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       Related Concepts
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Notes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Credits
     </span>
   </a>
   
@@ -1730,7 +1748,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/sierpinski-triangles/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/koch-fractal/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1738,96 +1756,108 @@
   
 
 
-<h1 id="sierpinski-triangles">Sierpinski Triangles</h1>
-<iframe src="main.html" height="552px" width="100%" scrolling="no"></iframe>
+<h1 id="koch-fractal">Koch Fractal</h1>
+<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Sierpinski Triangles MicroSim Fullscreen</a></p>
-<h2 id="embedding-in-your-website">Embedding in Your Website</h2>
+<p><a class="md-button md-button--primary" href="main.html">Run the Koch Fractal MicroSim Fullscreen</a></p>
 <p>You can include this MicroSim on your website using the following <code>iframe</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/geometry-course/sims/sierpinski-triangles/main.html&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;552px&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/geometry-course/sims/koch-fractal/main.html&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;450px&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="description">Description</h2>
-<p>The Sierpinski triangle is one of the most famous fractals in mathematics, named after Polish mathematician Wacław Sierpiński who described it in 1915. This MicroSim demonstrates how a simple recursive rule creates an infinitely complex geometric pattern through repeated subdivision.</p>
-<p>Starting with a single equilateral triangle, the fractal is generated by:</p>
-<ol>
-<li>Finding the midpoint of each side of the triangle</li>
-<li>Connecting these midpoints to create four smaller triangles</li>
-<li>Removing (not drawing) the center triangle</li>
-<li>Recursively repeating this process on each of the three remaining triangles</li>
-</ol>
-<p>At recursion depth 0, you see a single solid triangle. With each increase in depth, the pattern subdivides, creating a self-similar structure where each part resembles the whole. At higher recursion levels, the characteristic pattern emerges: a triangle composed of ever-smaller triangles with triangular "holes" at every scale.</p>
-<h3 id="key-mathematical-properties">Key Mathematical Properties</h3>
+<p>The Koch Fractal (also known as the Koch Curve or Koch Snowflake when arranged in a triangle) is one of the earliest and most famous examples of a fractal curve. This MicroSim demonstrates the iterative construction process that creates this remarkable mathematical object.</p>
+<p>At recursion level 0, the curve is simply a straight line. With each iteration:
+1. Each line segment is divided into three equal parts
+2. The middle third is replaced with two sides of an equilateral triangle
+3. This process repeats for every line segment</p>
+<h3 id="key-properties">Key Properties</h3>
 <ul>
-<li><strong>Self-similarity</strong>: The pattern looks the same at any scale</li>
-<li><strong>Fractal dimension</strong>: Approximately 1.585 (between 1D and 2D)</li>
-<li><strong>Area</strong>: Approaches zero as recursion depth increases to infinity</li>
-<li><strong>Perimeter</strong>: Grows infinitely as recursion depth increases</li>
-<li><strong>Triangle count</strong>: At depth n, there are 3^n filled triangles</li>
+<li><strong>Self-Similarity</strong>: The curve looks similar at any magnification level</li>
+<li><strong>Infinite Length</strong>: With each iteration, the length increases by 4/3, approaching infinity</li>
+<li><strong>Finite Area</strong>: Despite infinite length, the curve encloses a finite area</li>
+<li><strong>Dimension</strong>: The Koch curve has a fractal dimension of approximately 1.26, between a line (1D) and a plane (2D)</li>
 </ul>
-<h2 id="educational-applications">Educational Applications</h2>
-<p>This MicroSim helps students understand:</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>Students using this MicroSim will:</p>
 <ul>
-<li><strong>Recursion</strong>: How simple rules applied repeatedly create complex patterns</li>
-<li><strong>Fractals</strong>: Self-similar structures that appear in nature and mathematics</li>
-<li><strong>Geometric patterns</strong>: How subdivision creates intricate designs</li>
-<li><strong>Mathematical infinity</strong>: How processes can continue indefinitely</li>
-<li><strong>Exponential growth</strong>: The number of triangles triples with each recursion level</li>
+<li>Understand how simple iterative rules can create complex patterns</li>
+<li>Explore the concept of self-similarity in fractals</li>
+<li>Observe how mathematical infinity can be approached through finite iterations</li>
+<li>Connect geometric transformations with fractal generation</li>
+<li>Appreciate the beauty and complexity of mathematical structures</li>
 </ul>
 <h2 id="lesson-plan">Lesson Plan</h2>
-<h3 id="learning-objectives">Learning Objectives</h3>
-<p>Students will:
-- Understand the concept of recursive subdivision in geometry (Bloom's: <strong>Understanding</strong>)
-- Analyze how fractals exhibit self-similarity at different scales (Bloom's: <strong>Analyzing</strong>)
-- Explore the relationship between recursion depth and pattern complexity (Bloom's: <strong>Applying</strong>)
-- Evaluate how mathematical infinity appears in finite visualizations (Bloom's: <strong>Evaluating</strong>)</p>
-<h3 id="activity-sequence">Activity Sequence</h3>
-<p><strong>Introduction (5 minutes)</strong>
-1. Show the MicroSim at recursion depth 0
-2. Ask: "What happens if we divide each triangle into smaller triangles?"
-3. Gradually increase the recursion depth while students observe</p>
-<p><strong>Exploration (10 minutes)</strong>
-1. Have students experiment with different recursion depths (0-7)
-2. Ask them to record the number of triangles at each depth
-3. Guide them to discover the pattern: 1, 3, 9, 27, 81, 243, 729, 2187</p>
-<p><strong>Pattern Recognition (5 minutes)</strong>
-1. Help students recognize the exponential growth: 3^0, 3^1, 3^2, etc.
-2. Discuss self-similarity: zoom in on any part and see the same pattern
-3. Compare to other fractals in nature (snowflakes, coastlines, ferns)</p>
-<p><strong>Mathematical Connection (5 minutes)</strong>
-1. Discuss what happens at "infinite" recursion
-2. Introduce the concept of fractal dimension
-3. Connect to area and perimeter paradoxes</p>
-<p><strong>Extension Questions</strong>
-- What would happen if we used squares instead of triangles?
-- Can you find similar patterns in nature or art?
-- How is this related to computer programming and recursion?
-- What other fractals have you seen?</p>
-<h3 id="assessment">Assessment</h3>
-<p>Students can demonstrate understanding by:
-- Explaining the recursive rule in their own words
-- Predicting triangle counts at different depths
-- Identifying self-similar patterns at different scales
-- Drawing the first 2-3 recursion levels by hand</p>
-<h3 id="standards-alignment">Standards Alignment</h3>
+<h3 id="introduction-5-minutes">Introduction (5 minutes)</h3>
 <ul>
-<li><strong>CCSS.MATH.HSG.MG.A.1</strong>: Use geometric shapes to model real-world situations</li>
-<li><strong>CCSS.MATH.PRACTICE.MP7</strong>: Look for and make use of structure</li>
-<li><strong>NGSS HS-ETS1-4</strong>: Use mathematics and computational thinking</li>
+<li>Start with recursion level 0 to show the baseline</li>
+<li>Ask students: "What do you think will happen at level 1?"</li>
+<li>Discuss the concept of iteration and replacement rules</li>
 </ul>
+<h3 id="exploration-10-15-minutes">Exploration (10-15 minutes)</h3>
+<ol>
+<li><strong>Pattern Recognition</strong>: Have students increment the recursion level slowly (0→1→2→3)</li>
+<li>Observe and sketch what happens at each level</li>
+<li>Count the number of line segments at each level</li>
+<li>
+<p>Notice the self-similar pattern</p>
+</li>
+<li>
+<p><strong>Mathematical Investigation</strong>:</p>
+</li>
+<li>If the original line length is 1 unit, what is the length at each level?</li>
+<li>Level 0: 1 unit</li>
+<li>Level 1: 4/3 units</li>
+<li>Level 2: (4/3)² units</li>
+<li>
+<p>Level n: (4/3)ⁿ units</p>
+</li>
+<li>
+<p><strong>Complexity Observation</strong>:</p>
+</li>
+<li>At what recursion level does the curve become too complex to draw individual segments?</li>
+<li>How many line segments are there at level 6? (4⁶ = 4,096 segments)</li>
+</ol>
+<h3 id="extension-activities">Extension Activities</h3>
+<ul>
+<li><strong>Koch Snowflake</strong>: Explain that three Koch curves arranged in a triangle create the famous Koch Snowflake</li>
+<li><strong>Fractal Dimension</strong>: Introduce the concept using the formula: D = log(4)/log(3) ≈ 1.26</li>
+<li><strong>Nature Connection</strong>: Discuss where fractal-like patterns appear in nature (coastlines, trees, clouds, blood vessels)</li>
+<li><strong>Art and Design</strong>: Have students create artwork inspired by fractal patterns</li>
+</ul>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>How does the length of the curve change with each iteration?</li>
+<li>Will the curve ever reach a point where it stops changing? Why or why not?</li>
+<li>What makes this curve "fractal"?</li>
+<li>Can you think of examples in nature that show similar self-repeating patterns?</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Basic understanding of line segments and geometric transformations</li>
+<li>Familiarity with the concept of iteration</li>
+<li>Knowledge of equilateral triangles (helpful but not required)</li>
+</ul>
+<h2 id="grade-level">Grade Level</h2>
+<p>Grades 9-12 (High School Geometry, Pre-Calculus, or Computer Science)</p>
+<h2 id="duration">Duration</h2>
+<p>15-20 minutes for exploration and discussion</p>
+<h2 id="mathematical-background">Mathematical Background</h2>
+<p>The Koch curve was first described by Swedish mathematician Helge von Koch in 1904. It serves as one of the simplest examples demonstrating that:</p>
+<ul>
+<li>A curve can have infinite length while enclosing a finite area</li>
+<li>Continuous curves need not be differentiable at any point</li>
+<li>Simple recursive rules can generate infinitely complex patterns</li>
+</ul>
+<p>The construction algorithm is deterministic and can be easily programmed, making it an excellent introduction to both fractals and recursive algorithms in computer science.</p>
 <h2 id="related-concepts">Related Concepts</h2>
 <ul>
-<li>Pascal's Triangle (the pattern appears in binomial coefficients)</li>
-<li>Chaos Game (an alternative construction method using random points)</li>
-<li>Koch Snowflake (another famous fractal)</li>
-<li>Binary Trees (similar recursive structure)</li>
-<li>Cellular Automata (Rule 90 generates Sierpinski pattern)</li>
+<li><strong>Fractals</strong>: Mandelbrot Set, Sierpiński Triangle, Cantor Set</li>
+<li><strong>Recursion</strong>: Self-referential processes in mathematics and computer science</li>
+<li><strong>Dimension Theory</strong>: Understanding dimensions beyond integers</li>
+<li><strong>Infinite Series</strong>: Geometric series and convergence</li>
+<li><strong>Chaos Theory</strong>: Sensitivity to initial conditions and pattern formation</li>
 </ul>
-<h2 id="technical-notes">Technical Notes</h2>
-<p>This MicroSim uses recursive function calls to generate the fractal pattern. The <code>drawSierpinski()</code> function calls itself three times at each level (except at the base case), creating an elegant example of recursion in computer science.</p>
-<p>The recursion is limited to depth 7 to maintain performance, as depth 8 would require drawing 6,561 triangles (3^8).</p>
-<h2 id="credits">Credits</h2>
-<p>Created as part of the AI-Assisted Geometry Course educational materials.</p>
-<p><strong>Note</strong>: Remember to create a screenshot (sierpinski-triangles.png) of the MicroSim for social media preview images.</p>
+<hr />
+<p><em>This MicroSim was created to help students visualize the iterative construction of fractals and understand how simple rules can generate complex mathematical structures.</em></p>
 
 
 
@@ -1868,7 +1898,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../sine-and-cosine-circle/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sine and Cosine Circle">
+          <a href="../degrees-vs-radians/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Degrees vs Radians">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1878,20 +1908,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Sine and Cosine Circle
+                Degrees vs Radians
               </div>
             </div>
           </a>
         
         
           
-          <a href="../templates/" class="md-footer__link md-footer__link--next" aria-label="Next: Templates">
+          <a href="../graph-viewer/" class="md-footer__link md-footer__link--next" aria-label="Next: Graph Viewer">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Templates
+                Graph Viewer
               </div>
             </div>
             <div class="md-footer__button md-icon">
