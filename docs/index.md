@@ -14,7 +14,7 @@ hide:
 </style>
 # Artificial Intelligence Assisted Geometry
 
-![Cover Art](./img/cover-art.png) {width: 500px;}
+![Cover Art](./img/cover-social-media.png){ width = "500px"}
 
 Welcome to our website for an Artificial Intelligence (AI) 
 assisted high school geometry course.
