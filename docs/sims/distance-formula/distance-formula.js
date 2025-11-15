@@ -61,6 +61,7 @@ function setup() {
   randomButton.position(200, drawHeight + 10);
   randomButton.mousePressed(randomizePoints);
 
+  /* We don't need input fields since we can drag the points
   // Create input fields for Point A
   createP('Point A:').position(200, drawHeight + 30).style('margin', '0');
   aXInput = createInput(pointA.x.toString());
@@ -74,6 +75,7 @@ function setup() {
   aYInput.input(updateFromInputs);
 
   // Create input fields for Point B
+  
   createP('Point B:').position(370, drawHeight + 30).style('margin', '0');
   bXInput = createInput(pointB.x.toString());
   bXInput.position(430, drawHeight + 45);
@@ -84,7 +86,8 @@ function setup() {
   bYInput.position(480, drawHeight + 45);
   bYInput.size(40);
   bYInput.input(updateFromInputs);
-
+  */
+  
   describe('Interactive coordinate plane showing the distance formula between two draggable points, with visual representation of the right triangle formed and the Pythagorean theorem connection.', LABEL);
 }
 
@@ -93,28 +96,16 @@ function draw() {
 
   // Drawing area (light blue background)
   fill('aliceblue');
-  noStroke();
+  stroke('silver');
   rect(0, 0, width, drawHeight);
 
   // Control area (white background)
   fill('white');
   rect(0, drawHeight, width, controlHeight);
 
-  // Draw border between areas
-  stroke('silver');
-  strokeWeight(1);
-  line(0, drawHeight, width, drawHeight);
-
   // Update center
   centerX = canvasWidth / 2;
   centerY = drawHeight / 2;
-
-  // Place the title in the top center of the canvas
-  fill('black');
-  textSize(28);
-  textAlign(CENTER, TOP);
-  noStroke();
-  text('Distance Formula Explorer', canvasWidth/2, 10);
 
   // Draw coordinate grid
   drawGrid();
@@ -148,6 +139,18 @@ function draw() {
 
   // Display calculations
   displayCalculations(distance, dx, dy, horizontalDist, verticalDist);
+
+    // Place the title in the top center of the canvas
+  fill('black');
+  textSize(28);
+  textAlign(CENTER, TOP);
+  noStroke();
+  text('Distance Formula Explorer', canvasWidth/2, 10);
+  
+  textSize(16);
+  fill('gray');
+  textAlign(LEFT, CENTER);
+  text("Drag points to change distance", 10, drawHeight-12)
 
   // Return default settings
   stroke('black');
@@ -342,11 +345,11 @@ function mouseDragged() {
     if (draggingPoint === 'A') {
       pointA.x = newX;
       pointA.y = newY;
-      updateInputFields();
+      // updateInputFields();
     } else if (draggingPoint === 'B') {
       pointB.x = newX;
       pointB.y = newY;
-      updateInputFields();
+      // updateInputFields();
     }
   }
 }
@@ -372,19 +375,21 @@ function canvasToGridY(canvasY) {
 }
 
 function randomizePoints() {
-  pointA.x = floor(random(-8, 9));
-  pointA.y = floor(random(-8, 9));
-  pointB.x = floor(random(-8, 9));
-  pointB.y = floor(random(-8, 9));
-  updateInputFields();
+  pointA.x = floor(random(-7, 8));
+  pointA.y = floor(random(-7, 7));
+  pointB.x = floor(random(-7, 8));
+  pointB.y = floor(random(-7, 7));
+  // updateInputFields();
 }
 
+/*
 function updateInputFields() {
   aXInput.value(pointA.x.toString());
   aYInput.value(pointA.y.toString());
   bXInput.value(pointB.x.toString());
   bYInput.value(pointB.y.toString());
 }
+*/
 
 function updateFromInputs() {
   let newAX = parseFloat(aXInput.value());

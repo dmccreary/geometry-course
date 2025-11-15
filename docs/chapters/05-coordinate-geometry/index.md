@@ -124,6 +124,7 @@ where:
 This formula comes directly from the Pythagorean theorem! The distance between two points is the hypotenuse of a right triangle whose legs are the horizontal and vertical distances between the points.
 
 #### Diagram: Distance Formula Visualization
+
 <details markdown="1">
     <summary>Deriving the Distance Formula from Pythagorean Theorem</summary>
     Type: diagram
@@ -183,9 +184,13 @@ This formula comes directly from the Pythagorean theorem! The distance between t
 </details>
 
 #### Drawing: Interactive Distance Calculator
+
+<iframe src="../../sims/distance-formula/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Distance Formula Explorer</summary>
     Type: microsim
+    **Status:** Done
 
     **Learning Objective:** Students will calculate distances between points and visualize the relationship to right triangles (Bloom's: **Applying** and **Analyzing**)
 
