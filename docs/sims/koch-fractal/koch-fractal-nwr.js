@@ -15,7 +15,6 @@ let defaultTextSize = 16;            // Base text size
 let recursionSlider;
 let baselineLength = 580;            // Length of the baseline (will be adjusted for responsiveness)
 let baselineY;                       // Y position of baseline (bottom of drawing region)
-let referenceWidth = 600;            // Reference width for maintaining consistent vertical scale
 
 function setup() {
   updateCanvasSize();
@@ -70,8 +69,7 @@ function draw() {
   // Draw the Koch curve
   stroke('navy');
   strokeWeight(2);
-  // Pass reference width to maintain consistent vertical scale
-  KochCurve(startX, baselineY, endX, baselineY, levels, referenceWidth);
+  KochCurve(startX, baselineY, endX, baselineY, levels);
 
   // Draw control labels and values in the control area
   fill('black');
@@ -82,15 +80,13 @@ function draw() {
 }
 
 // Recursive function to draw Koch curve
-function KochCurve(x1, y1, x2, y2, levels, refWidth) {
+function KochCurve(x1, y1, x2, y2, levels) {
   // Calculate the distance and angle between the two points
   let dx = x2 - x1;
   let dy = y2 - y1;
   let dist = sqrt(dx * dx + dy * dy);
-
-  // Scale unit based on reference width to maintain consistent vertical scale
-  // This keeps the fractal height constant regardless of canvas width
-  let unit = (dist / 3) * (refWidth / (canvasWidth - 2 * margin));
+  let unit = dist / 3;
+  let angle = atan2(dy, dx);
 
   if (levels > 0) {
     // Calculate the five points of the Koch curve iteration
@@ -121,10 +117,10 @@ function KochCurve(x1, y1, x2, y2, levels, refWidth) {
     // Point 5: ending point (x2, y2)
 
     // Recursively draw the four segments
-    KochCurve(x1, y1, x3, y3, levels - 1, refWidth);  // First third
-    KochCurve(x3, y3, x4, y4, levels - 1, refWidth);  // Up to peak
-    KochCurve(x4, y4, x5, y5, levels - 1, refWidth);  // Down from peak
-    KochCurve(x5, y5, x2, y2, levels - 1, refWidth);  // Final third
+    KochCurve(x1, y1, x3, y3, levels - 1);  // First third
+    KochCurve(x3, y3, x4, y4, levels - 1);  // Up to peak
+    KochCurve(x4, y4, x5, y5, levels - 1);  // Down from peak
+    KochCurve(x5, y5, x2, y2, levels - 1);  // Final third
   } else {
     // Base case: draw a straight line
     line(x1, y1, x2, y2);

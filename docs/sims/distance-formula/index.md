@@ -13,6 +13,7 @@ social:
 <iframe src="main.html" height="702px" width="100%" scrolling="no"></iframe>
 
 [Run the Distance Formula Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Edit the Distance Formula Explorer MicroSim in the P5.js Editor](https://editor.p5js.org/dmccreary/sketches/4VKTPrx9y)
 
 ## Description
 
