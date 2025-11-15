@@ -15,6 +15,7 @@ let defaultTextSize = 16;            // Base text size
 let recursionSlider;
 let baselineLength = 580;            // Length of the baseline (will be adjusted for responsiveness)
 let baselineY;                       // Y position of baseline (bottom of drawing region)
+let referenceWidth = 600;            // Reference width for maintaining consistent vertical scale
 
 function setup() {
   updateCanvasSize();
@@ -69,7 +70,8 @@ function draw() {
   // Draw the Koch curve
   stroke('navy');
   strokeWeight(2);
-  KochCurve(startX, baselineY, endX, baselineY, levels);
+  // Pass reference width to maintain consistent vertical scale
+  KochCurve(startX, baselineY, endX, baselineY, levels, referenceWidth);
 
   // Draw control labels and values in the control area
   fill('black');
@@ -80,14 +82,15 @@ function draw() {
 }
 
 // Recursive function to draw Koch curve
-function KochCurve(x1, y1, x2, y2, levels) {
+function KochCurve(x1, y1, x2, y2, levels, refWidth) {
   // Calculate the distance and angle between the two points
-  // bug: the height should be fixed
   let dx = x2 - x1;
   let dy = y2 - y1;
   let dist = sqrt(dx * dx + dy * dy);
-  let unit = dist / 3;
-  let angle = atan2(dy, dx);
+
+  // Scale unit based on reference width to maintain consistent vertical scale
+  // This keeps the fractal height constant regardless of canvas width
+  let unit = (dist / 3) * (refWidth / (canvasWidth - 2 * margin));
 
   if (levels > 0) {
     // Calculate the five points of the Koch curve iteration
@@ -97,21 +100,31 @@ function KochCurve(x1, y1, x2, y2, levels) {
     let x3 = x1 + dx / 3;
     let y3 = y1 + dy / 3;
 
-    // Point 3: the peak of the equilateral triangle (subtract 60 to draw upward)
-    let x4 = x3 + cos(angle - 60) * unit;
-    let y4 = y3 + sin(angle - 60) * unit;
-
     // Point 4: two-thirds along the line
     let x5 = x1 + dx * 2 / 3;
     let y5 = y1 + dy * 2 / 3;
 
+    // Point 3: the peak of the equilateral triangle
+    // Using perpendicular offset for fixed height regardless of angle
+    let height = sqrt(3) / 2 * unit;
+    // Midpoint between x3 and x5
+    let midX = (x3 + x5) / 2;
+    let midY = (y3 + y5) / 2;
+    // Perpendicular direction (upward in screen coordinates)
+    // For a horizontal line going right (dx > 0, dy = 0):
+    // perpendicular "up" means negative y direction
+    let perpX = dy / dist;   // Perpendicular X component
+    let perpY = -dx / dist;  // Perpendicular Y component (negative for upward)
+    let x4 = midX + perpX * height;
+    let y4 = midY + perpY * height;
+
     // Point 5: ending point (x2, y2)
 
     // Recursively draw the four segments
-    KochCurve(x1, y1, x3, y3, levels - 1);  // First third
-    KochCurve(x3, y3, x4, y4, levels - 1);  // Up to peak
-    KochCurve(x4, y4, x5, y5, levels - 1);  // Down from peak
-    KochCurve(x5, y5, x2, y2, levels - 1);  // Final third
+    KochCurve(x1, y1, x3, y3, levels - 1, refWidth);  // First third
+    KochCurve(x3, y3, x4, y4, levels - 1, refWidth);  // Up to peak
+    KochCurve(x4, y4, x5, y5, levels - 1, refWidth);  // Down from peak
+    KochCurve(x5, y5, x2, y2, levels - 1, refWidth);  // Final third
   } else {
     // Base case: draw a straight line
     line(x1, y1, x2, y2);
