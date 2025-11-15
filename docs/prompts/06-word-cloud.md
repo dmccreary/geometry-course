@@ -2,18 +2,17 @@
 
 ## Sample Prompt
 
-```linenums="0"
-Create a JavaScript program within an HTML file
-using wordcloud2 JavaScript 
-library that generates a word cloud diagram for the 
-most 50 most important concepts in a geometry textbook.
-Rank the terms on a scale from 30 to 70 with the
-most commonly referenced terms getting a score of 70
-and the least commonly referenced term getting a 30.
+!!! prompt
+    Create a JavaScript program within an HTML file
+    using wordcloud2 JavaScript 
+    library that generates a word cloud diagram for the 
+    most 50 most important concepts in a geometry textbook.
+    Rank the terms on a scale from 30 to 70 with the
+    most commonly referenced terms getting a score of 70
+    and the least commonly referenced term getting a 30.
 
-Generate a single HTML file that has the terms in the body 
-of the JavaScript.
-```
+    Generate a single HTML file that has the terms in the body 
+    of the JavaScript.
 
 ## Sample Response
 

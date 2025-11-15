@@ -1,26 +1,29 @@
 # Concept Dependency
 
+!!! note
+    All of these steps are now done by the Claude Skill [learning-graph-generator](https://dmccreary.github.io/claude-skills/skill-descriptions/learning-graph-generator/)
+
 ## Prompt
 
-```linenums="0"
-That was very good.
-Let's call the number in front of each concept the ConceptID
-and the string after the number the "ConceptLabel".
+!!! prompt
+    That was very good.
+    Let's call the number in front of each concept the ConceptID
+    and the string after the number the "ConceptLabel".
 
-Now our next step is to create a precise concept learning dependency
-graph.  For each concept, create a list of other concepts
-that must be understood before that concept can be mastered.
+    Now our next step is to create a precise concept learning dependency
+    graph.  For each concept, create a list of other concepts
+    that must be understood before that concept can be mastered.
 
-Return a CSV file that has the following format:
+    Return a CSV file that has the following format:
 
-- Column 1 is the ConceptID from the list above
-- Column 2 is the ConceptLabel from the list above
-- Column 3 is the Dependencies.  It is a pipe-delimited list of the ConceptIDs that this concept depends on.
+    - Column 1 is the ConceptID from the list above
+    - Column 2 is the ConceptLabel from the list above
+    - Column 3 is the Dependencies.  It is a pipe-delimited list of the ConceptIDs that this concept depends on.
 
-Foundation concepts don't depend on any other concepts.  Their Dependencies is empty.  Some of  initial introductory concepts are foundation concepts.
-There must be at least one concept that depends on a foundation concept.
-Make sure each concept is connected to the graph in some way.
-```
+    Foundation concepts don't depend on any other concepts.  Their Dependencies is empty.  Some of  initial introductory concepts are foundation concepts.
+    There must be at least one concept that depends on a foundation concept.
+    Make sure each concept is connected to the graph in some way.
+
 
 ## Sample Response
 

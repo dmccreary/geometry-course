@@ -1,17 +1,19 @@
 # Generating a Glossary of Terms
 
+!!! note
+    All of these steps are now done by the Claude Skill [glossary-generator](https://dmccreary.github.io/claude-skills/skill-descriptions/glossary-generator/)
+
 See the actual glossary of terms here: [Glossary](../glossary.md)
 
 ## Sample Prompt
 
-```linenums="0"
-Now for each concept in this course, please create an
-entry to a glossary of terms.  The label for the concept
-should be placed in a level four markdown header.  A precise
-and concise definition should be placed in the body of the markdown.
+!!! prompt
+    Now for each concept in this course, please create an
+    entry to a glossary of terms.  The label for the concept
+    should be placed in a level four markdown header.  A precise
+    and concise definition should be placed in the body of the markdown.
 
-Return the entire glossary of terms in alphabetical order.
-```
+    Return the entire glossary of terms in alphabetical order.
 
 ## Sample Response
 

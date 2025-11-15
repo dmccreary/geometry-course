@@ -1,13 +1,16 @@
 # Chapter Design
 
-```linenums="0"
-You are an expert at designing interactive textbooks for high-school students.
-Your assignment is to create a 12-chapter book on high-school geometry.
-For each chapter, return the name of the chapter in a level 2 markdown header.
-Do not place dividers 
-Then return a short paragraph describing that chapter.  List any interactive geometry
-simulations (MicroSims) in that chapter that can be run using p5.js in your browser.
-```
+!!! note
+    This step has now been automated by the [book-chapter-generator](https://dmccreary.github.io/claude-skills/skill-descriptions/book-chapter-generator/)
+
+!!! prompt
+    You are an expert at designing interactive textbooks for high-school students.
+    Your assignment is to create a 12-chapter book on high-school geometry.
+    For each chapter, return the name of the chapter in a level 2 markdown header.
+    Do not place dividers 
+    Then return a short paragraph describing that chapter.  List any interactive geometry
+    simulations (MicroSims) in that chapter that can be run using p5.js in your browser.
+
 
 ## Response
 

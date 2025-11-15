@@ -51,6 +51,7 @@ nav:
     - Cosine: sims/cosine/index.md
     - Degrees vs Radians: sims/degrees-vs-radians/index.md
     - Koch Fractal: sims/koch-fractal/index.md
+    - Distance Formula Explorer: sims/distance-formula/index.md
     - Graph Viewer: sims/graph-viewer/index.md
     - Line Relationships 3D: sims/line-relationships-3d/index.md
     - Point Line Explorer: sims/point-line-explorer/index.md
@@ -142,6 +143,7 @@ markdown_extensions:
 extra_css:
    - css/extra.css
 extra_javascript:
+  - js/extra.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 extra:
   analytics:

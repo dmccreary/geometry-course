@@ -1,25 +1,29 @@
 # Taxonomy
 
+!!! note
+    All of these steps are now done by the Claude Skill [learning-graph-generator](https://dmccreary.github.io/claude-skills/skill-descriptions/learning-graph-generator/)
+
 ## Sample Prompt
 
-```
-That was perfect.  Thank you for your excellent results.
-This is going very well.
 
-Next, I would like you to create a 10-classification taxonomy system to classify each concept.  For example here are some suggestions
+!!! prompt
+    That was perfect.  Thank you for your excellent results.
+    This is going very well.
 
-1. Foundational Concepts
-2. Terms and Definitions
-3. Types of Polygons and Shapes
-4. Forumlas
-5. Steps in a proof
-6. Application of geometry
-...
-10. Miscellaneous
+    Next, I would like you to create a 10-classification taxonomy system to classify each concept.  For example here are some suggestions
 
-Please consider these as a starting point and list a taxonomy and return your suggestions for a full 10-item classification system.
-```
+    1. Foundational Concepts
+    2. Terms and Definitions
+    3. Types of Polygons and Shapes
+    4. Formulas
+    5. Steps in a proof
+    6. Application of geometry
+    ...
+    10. Miscellaneous
 
+    Please consider these as a starting point and list a taxonomy and return your suggestions for a full 10-item classification system.
+
+## Response
 
 Certainly! Based on the concepts covered in the course and your suggestions, here is a 10-classification taxonomy system:
 

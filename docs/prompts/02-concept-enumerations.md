@@ -1,6 +1,12 @@
 # Concept Enumerations
 
-That is a perfect course description.  Now for our next step, use this course description to create an enumerated  list of the 150 core concepts taught in this course.  Return this list as a numbered list with only a short concept label in each list element.  Use short names and abbreviations when possible.
+!!! note
+    All of these steps are now done by the Claude Skill [learning-graph-generator](https://dmccreary.github.io/claude-skills/skill-descriptions/learning-graph-generator/)
+
+To be run right after the [Course Description](./01-course-description.md)
+
+!!! prompt
+    That is a perfect course description.  Now for our next step, use this course description to create an enumerated  list of the 150 core concepts taught in this course.  Return this list as a numbered list with only a short concept label in each list element.  Use short names and abbreviations when possible.
 
 ## ChatGPT o1-preview response
 

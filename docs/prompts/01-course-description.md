@@ -1,22 +1,23 @@
 # Course Description
 
+!!! note
+    All of these steps are now done by the Claude Skill [course-description-analyzer](https://dmccreary.github.io/claude-skills/skill-descriptions/course-description-analyzer/) which will prompt you for content and then score your document on a 1-100 scale based on quality.
+
 ## Sample Prompt
 
-```linenums="0"
-Create a one-page course description of a high-school
-level geometry course as it might appear in a school
-course catalog.  Mention that the course is designed
-for self-paced independent learning and includes a
-large number of interactive geometry animations
-and simulations to make the concepts fun and easy to learn. 
-```
+!!! prompt
+    Create a one-page course description of a high-school
+    level geometry course as it might appear in a school
+    course catalog.  Mention that the course is designed
+    for self-paced independent learning and includes a
+    large number of interactive geometry animations
+    and simulations to make the concepts fun and easy to learn. 
 
 ## Sample ChatGPT Response
 
-
-**Title:** High School Geometry
-**Course Code**: MATH-204
-**Grade Levels**: 9-12
+**Title:** High School Geometry<br/>
+**Course Code**: MATH-204<br/>
+**Grade Levels**: 9-12<br/>
 **Credits**: 1.0
 
 ### Course Overview

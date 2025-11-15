@@ -1,0 +1,168 @@
+{
+  "title": "Distance Formula Explorer",
+  "creator": "AI-Generated MicroSim",
+  "subject": ["Mathematics", "Geometry", "Coordinate Geometry", "Algebra"],
+  "description": "An interactive educational simulation that helps students visualize and apply the distance formula to find distances between two points on the coordinate plane, demonstrating the connection to the Pythagorean theorem through visual right triangles.",
+  "date": "2025-11-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educational": {
+    "gradeLevel": ["9", "10", "11", "12"],
+    "subjectArea": "Mathematics - Geometry",
+    "topic": "Distance Formula and Coordinate Geometry",
+    "learningObjectives": [
+      "Apply the distance formula to find distances between two points on a coordinate plane",
+      "Understand the connection between the distance formula and the Pythagorean theorem",
+      "Visualize the geometric relationship between horizontal distance, vertical distance, and diagonal distance",
+      "Calculate distances using both algebraic formulas and visual representations",
+      "Analyze how changing point positions affects distance and triangle dimensions"
+    ],
+    "bloomsTaxonomyLevels": ["Understanding", "Applying", "Analyzing"],
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Understanding of the Pythagorean theorem",
+      "Familiarity with coordinate plane and plotting points",
+      "Basic algebra skills (squaring, square roots)",
+      "Knowledge of absolute value"
+    ],
+    "standards": [
+      "CCSS.MATH.CONTENT.HSG.GPE.B.7",
+      "CCSS.MATH.CONTENT.8.G.B.8"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": "800×700",
+    "drawHeight": 600,
+    "controlHeight": 100,
+    "responsive": "Width-responsive",
+    "dependencies": ["p5.js CDN"],
+    "accessibility": [
+      "High contrast colors",
+      "Keyboard navigation support",
+      "Screen reader descriptions",
+      "Large text (16pt minimum)",
+      "Manual coordinate entry"
+    ]
+  },
+  "userInterface": {
+    "controls": [
+      {
+        "type": "draggable-point",
+        "name": "Point A",
+        "description": "Blue draggable point representing the first coordinate (x₁, y₁)",
+        "default": "(1, 2)"
+      },
+      {
+        "type": "draggable-point",
+        "name": "Point B",
+        "description": "Red draggable point representing the second coordinate (x₂, y₂)",
+        "default": "(4, 6)"
+      },
+      {
+        "type": "checkbox",
+        "name": "Show Right Triangle",
+        "description": "Toggles visibility of the right triangle formed by horizontal and vertical legs",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "name": "Show Calculation Steps",
+        "description": "Displays step-by-step calculation of the distance formula",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "name": "Snap to Grid",
+        "description": "Constrains dragged points to integer coordinates",
+        "default": true
+      },
+      {
+        "type": "button",
+        "name": "Random Points",
+        "description": "Generates random coordinates for both points within the grid range"
+      },
+      {
+        "type": "input-field",
+        "name": "Point A Coordinates",
+        "description": "Manual entry fields for x₁ and y₁ coordinates",
+        "range": "-10 to 10"
+      },
+      {
+        "type": "input-field",
+        "name": "Point B Coordinates",
+        "description": "Manual entry fields for x₂ and y₂ coordinates",
+        "range": "-10 to 10"
+      }
+    ],
+    "visualElements": [
+      "Coordinate grid with labeled axes (-10 to +10)",
+      "Two draggable colored points (blue for A, red for B)",
+      "Purple line showing distance between points",
+      "Optional gray right triangle with labeled legs",
+      "Real-time coordinate display for both points",
+      "Distance calculation display"
+    ]
+  },
+  "simulationModel": {
+    "modelType": "Mathematical visualization",
+    "variables": [
+      "Point A coordinates (x₁, y₁)",
+      "Point B coordinates (x₂, y₂)",
+      "Horizontal distance (Δx = x₂ - x₁)",
+      "Vertical distance (Δy = y₂ - y₁)",
+      "Euclidean distance (d)"
+    ],
+    "equations": [
+      "Δx = x₂ - x₁",
+      "Δy = y₂ - y₁",
+      "d = √[(Δx)² + (Δy)²]",
+      "d = √[(x₂ - x₁)² + (y₂ - y₁)²]"
+    ],
+    "assumptions": [
+      "2D Euclidean space",
+      "Grid range limited to -10 to +10 for clarity",
+      "Distances calculated in grid units"
+    ],
+    "limitations": [
+      "Does not extend to 3D coordinate systems",
+      "Limited to Cartesian coordinates (no polar coordinates)",
+      "Grid resolution fixed at integer precision when snapping enabled"
+    ]
+  },
+  "pedagogy": {
+    "instructionalStrategy": "Interactive exploration and discovery learning",
+    "assessmentOpportunities": [
+      "Calculate specific distances given coordinates",
+      "Identify point pairs that create specific distances",
+      "Explain the relationship to Pythagorean theorem",
+      "Solve optimization problems (minimum distance scenarios)"
+    ],
+    "differentiation": [
+      "Snap to grid for beginners working with integers",
+      "Free positioning for advanced students working with decimals",
+      "Calculation steps toggle supports multiple learning paces",
+      "Random points provide unlimited practice opportunities"
+    ],
+    "commonMisconceptions": [
+      "Forgetting to square the differences before adding",
+      "Sign errors when working with negative coordinates",
+      "Confusing distance formula with slope formula",
+      "Not taking the square root of the sum"
+    ]
+  },
+  "keywords": [
+    "distance formula",
+    "coordinate plane",
+    "Pythagorean theorem",
+    "Euclidean distance",
+    "Cartesian coordinates",
+    "geometry",
+    "algebra",
+    "interactive learning",
+    "mathematics visualization"
+  ]
+}

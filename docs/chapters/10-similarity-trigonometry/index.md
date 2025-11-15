@@ -512,16 +512,20 @@ where:
 $d = \sqrt{(5-2)^2 + (7-3)^2} = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$
 
 #### Drawing: Distance Formula Explorer
+<iframe src="../../sims/distance-formula/main.html" height="600px" width="100%" scrolling="no">
 <details markdown="1">
 <summary>Distance Formula Explorer MicroSim</summary>
-Type: microsim
+**Type:** microsim
+**Status: In Progress
+**Name:** distance-formula
 
-Learning Objective: Students will apply the distance formula to find distances between points on the coordinate plane, visualizing the connection to the Pythagorean theorem (Bloom's: Applying, Understanding).
+Learning Objective: Students will apply the distance formula to find distances between two points on the coordinate plane, visualizing the connection to the Pythagorean theorem (Bloom's: Applying, Understanding).
 
 Purpose: Interactive coordinate plane where students can place points and see the distance calculation with visual right triangle.
 
 Canvas layout (800x650px):
-- Main area (800x550): Coordinate plane with grid (-10 to 10 on both axes)
+- Main area 600px high: width response
+- Coordinate plane with grid (-10 to 10 on both axes)
 - Bottom area (800x100): Controls and calculation display
 
 Visual elements:

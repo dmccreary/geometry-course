@@ -2,20 +2,21 @@
 
 ## Sample Prompt
 
-```linenums="0"
-Create a list of the 25 most commonly used
-equations in a high school geometry course.
+!!! prompt
+    Create a list of the 25 most commonly used
+    equations in a high school geometry course.
 
-For each equation, return the following:
+    For each equation, return the following:
 
-1. The name of the equation in markdown level 4.
-2. Within the body, return the equation in LaTeX format
-3. Surround the equation with dollar signs
-4. For each variable in the equation, add a "where:" that defines each variable
-5. Put blank lines around the list of variables
-6. Wrap the variables names in dollar signs
+    1. The name of the equation in markdown level 4.
+    2. Within the body, return the equation in LaTeX format
+    3. Surround the equation with dollar signs
+    4. For each variable in the equation, add a "where:" that defines each variable
+    5. Put blank lines around the list of variables
+    6. Wrap the variables names in dollar signs
 
-Examples:
+
+## Examples:
 
 #### Slope and Intercept
 $y = m * x + b$
