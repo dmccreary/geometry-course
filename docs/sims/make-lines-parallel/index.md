@@ -13,6 +13,7 @@ social:
 <iframe src="main.html" height="682px" width="100%" scrolling="no"></iframe>
 
 [Run the Make Lines Parallel MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Edit on the P5 Editor](https://editor.p5js.org/dmccreary/sketches/2NUiP08gr)
 
 ## Description
 
