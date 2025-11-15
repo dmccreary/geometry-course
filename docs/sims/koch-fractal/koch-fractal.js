@@ -4,7 +4,7 @@
 
 // Canvas dimensions - REQUIRED structure
 let canvasWidth = 600;              // Initial width (responsive)
-let drawHeight = 400;                // Drawing/simulation area height
+let drawHeight = 300;                // Drawing/simulation area height
 let controlHeight = 50;              // Controls area height
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;                     // Margin for visual elements
@@ -23,10 +23,11 @@ function setup() {
   angleMode(DEGREES);
 
   // Position baseline near bottom of drawing region
-  baselineY = drawHeight - 60;
+  // baselineY = drawHeight - 30;
+  baselineY = drawHeight - 30;
 
   // Create recursion level slider
-  recursionSlider = createSlider(0, 6, 0, 1);
+  recursionSlider = createSlider(0, 6, 3, 1);
   recursionSlider.position(sliderLeftMargin, drawHeight + 15);
   recursionSlider.size(canvasWidth - sliderLeftMargin - margin);
 
@@ -38,7 +39,7 @@ function draw() {
 
   // Drawing area (light blue background)
   fill('aliceblue');
-  noStroke();
+  stroke('silver');
   rect(0, 0, width, drawHeight);
 
   // Control area (white background)
@@ -75,12 +76,13 @@ function draw() {
   noStroke();
   textAlign(LEFT, CENTER);
   textSize(defaultTextSize);
-  text('Recursion Level: ' + levels, 10, drawHeight + 30);
+  text('Recursion Level: ' + levels, 10, drawHeight + 24);
 }
 
 // Recursive function to draw Koch curve
 function KochCurve(x1, y1, x2, y2, levels) {
   // Calculate the distance and angle between the two points
+  // bug: the height should be fixed
   let dx = x2 - x1;
   let dy = y2 - y1;
   let dist = sqrt(dx * dx + dy * dy);
