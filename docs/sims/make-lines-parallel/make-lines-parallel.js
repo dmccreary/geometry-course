@@ -32,6 +32,7 @@ let feedbackMessage = '';
 let feedbackColor;
 let animationProgress = 0;
 let animationLine = null; // Line to animate
+let correctCount = 0; // Track number of correct answers
 
 function setup() {
   const canvas = createCanvas(canvasWidth, canvasHeight);
@@ -47,18 +48,18 @@ function setup() {
   generateNewProblem();
 
   // Create Check button
-  checkButton = createButton('Check (3)');
-  checkButton.position(canvasWidth - 180, drawHeight + 20);
+  checkButton = createButton('Check Answer');
+  checkButton.position(10, drawHeight + 20);
   checkButton.mousePressed(checkParallel);
   checkButton.style('font-size', '18px');
   checkButton.style('padding', '10px 20px');
 
   // Create New Problem button
   resetButton = createButton('New Problem');
-  resetButton.position(canvasWidth - 180, drawHeight + 55);
+  resetButton.position(180, drawHeight + 20);
   resetButton.mousePressed(resetLines);
-  resetButton.style('font-size', '14px');
-  resetButton.style('padding', '5px 15px');
+  resetButton.style('font-size', '18px');
+  resetButton.style('padding', '10px 20px');
 
   describe('Interactive grid where students drag a red point to make two lines parallel by matching their slopes.', LABEL);
 }
@@ -107,11 +108,12 @@ function draw() {
     displayFeedback();
   }
 
-  // Update button label with attempts remaining
-  let attemptsRemaining = 3; // Could track this if needed
-  if (checkState === 'ready' || checkState === 'incorrect') {
-    checkButton.html('Check (' + attemptsRemaining + ')');
-  }
+  // Display score counter in control area
+  fill('black');
+  textSize(20);
+  textAlign(LEFT, CENTER);
+  noStroke();
+  text('Answers Correct: ' + correctCount, 400, drawHeight + 35);
 
   // Return default settings
   stroke('black');
@@ -266,6 +268,7 @@ function checkParallel() {
   if (areParallel) {
     feedbackMessage = 'Correct!';
     feedbackColor = 'green';
+    correctCount++; // Increment score
   } else {
     feedbackMessage = 'Incorrect. Try Again!';
     feedbackColor = 'red';
@@ -415,14 +418,5 @@ function updateCanvasSize() {
   if (container) {
     canvasWidth = container.offsetWidth;
   }
-
-  // Update button positions
-  if (typeof checkButton !== 'undefined') {
-    checkButton.position(canvasWidth - 180, drawHeight + 20);
-  }
-  if (typeof resetButton !== 'undefined') {
-    resetButton.position(canvasWidth - 180, drawHeight + 55);
-  }
-
   updateGridPosition();
 }
