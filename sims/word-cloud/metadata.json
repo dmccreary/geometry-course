@@ -1,0 +1,18 @@
+{
+  "title": "Geometry Word Cloud",
+  "description": "A word cloud visualization of key geometry concepts weighted by their importance and frequency in the curriculum.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["Mathematics", "Geometry", "Vocabulary", "Visualization"],
+  "type": "Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "visualization",
+  "audience": "Students, Educators",
+  "bloomLevel": ["Remember", "Understand"],
+  "concepts": ["Geometry Vocabulary", "Key Concepts", "Topic Overview"],
+  "prerequisites": ["None"],
+  "library": "wordcloud2.js"
+}

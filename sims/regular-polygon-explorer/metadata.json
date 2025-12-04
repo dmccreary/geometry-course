@@ -1,0 +1,18 @@
+{
+  "title": "Regular Polygon Explorer",
+  "description": "An interactive MicroSim for exploring regular polygons by adjusting the number of sides, demonstrating how polygons approach circles as sides increase.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["Mathematics", "Geometry", "Polygons"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "Middle School to High School (Grades 6-12)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "bloomLevel": ["Understand", "Apply", "Analyze"],
+  "concepts": ["Regular Polygon", "Vertices", "Triangle", "Square", "Pentagon", "Hexagon", "Circle Approximation"],
+  "prerequisites": ["Basic understanding of shapes", "Familiarity with polygons"],
+  "library": "p5.js"
+}

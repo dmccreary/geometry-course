@@ -1,0 +1,18 @@
+{
+  "title": "Triangle Congruence",
+  "description": "An interactive MicroSim demonstrating triangle congruence postulates including SSS (Side-Side-Side) and SAS (Side-Angle-Side).",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["Mathematics", "Geometry", "Triangles", "Congruence"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "bloomLevel": ["Understand", "Apply", "Analyze"],
+  "concepts": ["Triangle Congruence", "SSS Postulate", "SAS Postulate", "Congruent Triangles"],
+  "prerequisites": ["Understanding of triangles", "Basic angle measurement", "Triangle properties"],
+  "library": "p5.js"
+}
