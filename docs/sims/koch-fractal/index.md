@@ -1,11 +1,9 @@
 ---
 title: Koch Fractal
 description: An interactive visualization demonstrating the iterative construction of the Koch curve, a classic fractal with self-similar patterns at every scale.
+quality_score: 85
 image: /sims/koch-fractal/koch-fractal.png
 og:image: /sims/koch-fractal/koch-fractal.png
-twitter:image: /sims/koch-fractal/koch-fractal.png
-social:
-   cards: false
 ---
 
 # Koch Fractal

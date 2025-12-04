@@ -1,11 +1,9 @@
 ---
 title: Point, Line, Plane - The Three Undefined Terms
 description: A visual diagram MicroSim showing the three fundamental undefined terms of geometry with their properties and visual representations.
+quality_score: 85
 image: /sims/point-line-plane/point-line-plane.png
 og:image: /sims/point-line-plane/point-line-plane.png
-twitter:image: /sims/point-line-plane/point-line-plane.png
-social:
-   cards: false
 ---
 
 # Point, Line, Plane - The Three Undefined Terms

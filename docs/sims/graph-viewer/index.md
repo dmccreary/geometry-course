@@ -1,6 +1,22 @@
+---
+title: Learning Graph Viewer
+description: An interactive vis.js network graph viewer for exploring geometry concepts and their dependencies with search, filtering, and statistics.
+quality_score: 65
+image: /sims/graph-viewer/graph-viewer.png
+og:image: /sims/graph-viewer/graph-viewer.png
+---
+
 # Learning Graph Viewer
 
-[Run the Learning Graph Viewer](main.html){ .md-button .md-button--primary }
+<iframe src="main.html" width="100%" height="700px" scrolling="no"></iframe>
+
+[Run the Learning Graph Viewer Fullscreen](main.html){ .md-button .md-button--primary }
+
+**Copy this iframe to embed in your website:**
+
+```html
+<iframe src="https://dmccreary.github.io/geometry-course/sims/graph-viewer/main.html" width="100%" height="700px" scrolling="no"></iframe>
+```
 
 This viewer reads a learning graph data from [../../learning-graph/learning-graph.json](../../learning-graph/learning-graph.json):
 

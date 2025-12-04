@@ -1,8 +1,28 @@
+---
+title: Triangle Congruence
+description: An interactive MicroSim demonstrating triangle congruence postulates including SSS (Side-Side-Side) and SAS (Side-Angle-Side).
+quality_score: 40
+image: /sims/triangle-congruence/triangle-congruence.png
+og:image: /sims/triangle-congruence/triangle-congruence.png
+---
+
 # Triangle Congruence
 
-[Run the Triangle Congruence MicroSim](./triangle-congruence.html){ .md-button .md-button--primary }
+<iframe src="triangle-congruence.html" width="100%" height="500px" scrolling="no"></iframe>
 
-# Congruence Triangles MicroSim
+[Run the Triangle Congruence MicroSim Fullscreen](./triangle-congruence.html){ .md-button .md-button--primary }
+
+**Copy this iframe to embed in your website:**
+
+```html
+<iframe src="https://dmccreary.github.io/geometry-course/sims/triangle-congruence/triangle-congruence.html" width="100%" height="500px" scrolling="no"></iframe>
+```
+
+## Description
+
+This MicroSim demonstrates triangle congruence postulates, helping students understand when two triangles are guaranteed to be congruent. Students can explore SSS (Side-Side-Side) and SAS (Side-Angle-Side) congruence by manipulating triangle parameters.
+
+## Congruence Triangles MicroSim
 
 ## Prompt
 

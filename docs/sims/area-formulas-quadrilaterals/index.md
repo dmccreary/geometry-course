@@ -1,11 +1,9 @@
 ---
 title: Area Formulas for Quadrilaterals
 description: A visual guide showing area formulas for six common quadrilaterals with labeled diagrams and mathematical formulas.
+quality_score: 75
 image: /sims/area-formulas-quadrilaterals/area-formulas-quadrilaterals.png
 og:image: /sims/area-formulas-quadrilaterals/area-formulas-quadrilaterals.png
-twitter:image: /sims/area-formulas-quadrilaterals/area-formulas-quadrilaterals.png
-social:
-   cards: false
 ---
 
 # Area Formulas for Quadrilaterals

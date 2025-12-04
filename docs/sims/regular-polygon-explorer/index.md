@@ -1,13 +1,21 @@
+---
+title: Regular Polygon Explorer
+description: An interactive MicroSim for exploring regular polygons by adjusting the number of sides, demonstrating how polygons approach circles as sides increase.
+quality_score: 70
+image: /sims/regular-polygon-explorer/regular-polygon-explorer.png
+og:image: /sims/regular-polygon-explorer/regular-polygon-explorer.png
+---
+
 # Regular Polygon Explorer
 
 <iframe src="main.html" height="452px" width="100%" scrolling="no"></iframe>
 
 [Run the Regular Polygon Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
-You can include this MicroSim on your website using the following `iframe`:
+**Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/regular-polygon-explorer/main.html" height="452px" width="100%" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/regular-polygon-explorer/main.html" width="100%" height="452px" scrolling="no"></iframe>
 ```
 
 ## Description

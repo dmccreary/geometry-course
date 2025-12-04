@@ -1,11 +1,9 @@
 ---
 title: Triangle Area Explorer
 description: An interactive MicroSim for exploring how base and height affect triangle area using the formula A = ½bh.
+quality_score: 80
 image: /sims/triangle-area-explorer/triangle-area-explorer.png
 og:image: /sims/triangle-area-explorer/triangle-area-explorer.png
-twitter:image: /sims/triangle-area-explorer/triangle-area-explorer.png
-social:
-   cards: false
 ---
 # Triangle Area Explorer
 

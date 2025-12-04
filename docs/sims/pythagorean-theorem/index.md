@@ -1,15 +1,32 @@
+---
+title: Pythagorean Theorem
+description: An interactive MicroSim demonstrating the Pythagorean theorem (a² + b² = c²) with adjustable triangle sides and visual proof using squares.
+quality_score: 55
+image: /sims/pythagorean-theorem/pythagorean-theorem.png
+og:image: /sims/pythagorean-theorem/pythagorean-theorem.png
+---
+
 # Pythagorean Theorem MicroSim
+
+<iframe src="pythagorean-theorem.html" width="100%" height="500px" scrolling="no"></iframe>
+
+[Run the Pythagorean Theorem MicroSim Fullscreen](./pythagorean-theorem.html){ .md-button .md-button--primary }
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/vmutQF9Qi){ .md-button }
+
+**Copy this iframe to embed in your website:**
+
+```html
+<iframe src="https://dmccreary.github.io/geometry-course/sims/pythagorean-theorem/pythagorean-theorem.html" width="100%" height="500px" scrolling="no"></iframe>
+```
+
+## Description
+
+This MicroSim demonstrates the Pythagorean Theorem, one of the most famous theorems in geometry. Students can adjust the lengths of sides a and b using sliders, and toggle the display of squares on each side to visualize why a² + b² = c².
 
 ![](pythagorean-theorem.png)
 
-[Run the Pythagorean Theorem MicroSim](./pythagorean-theorem.html){ .md-button .md-button--primary }
-[Edit the MicroSim](https://editor.p5js.org/dmccreary/sketches/vmutQF9Qi)
-
 [Version 1 of Pythagorean Theorem MicroSim](./v1.html)
-
-This MicroSim demonstrates the Pythagorean Theorem, one of the most famous theorems in geometry.
-Using the ChatGPT o1-preview and a good MicroSim template it was easy for us
-to generate this demo.
 
 ## Description of the Pythagorean Theorem MicroSim
 

@@ -1,13 +1,21 @@
+---
+title: Regular Polygon Explorer Quiz
+description: An interactive quiz MicroSim where students test their knowledge of polygon names by creating shapes matching given prompts.
+quality_score: 70
+image: /sims/regular-polygon-explorer-quiz/regular-polygon-explorer-quiz.png
+og:image: /sims/regular-polygon-explorer-quiz/regular-polygon-explorer-quiz.png
+---
+
 # Regular Polygon Explorer Quiz
 
 <iframe src="main.html" height="502px" width="100%" scrolling="no"></iframe>
 
 [Run the Regular Polygon Explorer Quiz MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
-You can include this MicroSim on your website using the following `iframe`:
+**Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/regular-polygon-explorer-quiz/main.html" height="502px" width="100%" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/regular-polygon-explorer-quiz/main.html" width="100%" height="502px" scrolling="no"></iframe>
 ```
 
 ## Description

@@ -1,0 +1,18 @@
+{
+  "title": "Angle Type Explorer",
+  "description": "An interactive MicroSim that allows students to classify angles as acute, right, obtuse, or straight by adjusting a slider from 0° to 180°.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["Mathematics", "Geometry", "Angles"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "bloomLevel": ["Remember", "Understand", "Apply"],
+  "concepts": ["Acute Angle", "Right Angle", "Obtuse Angle", "Straight Angle", "Angle Classification"],
+  "prerequisites": ["Basic understanding of angles", "Knowledge of degree measurement"],
+  "library": "p5.js"
+}

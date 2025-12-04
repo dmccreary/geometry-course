@@ -1,11 +1,9 @@
 ---
 title: Line Relationships in 3D
 description: A 3D WebGL visualization demonstrating parallel, perpendicular, and skew line relationships in three-dimensional space.
+quality_score: 85
 image: /sims/line-relationships-3d/line-relationships-3d.png
 og:image: /sims/line-relationships-3d/line-relationships-3d.png
-twitter:image: /sims/line-relationships-3d/line-relationships-3d.png
-social:
-   cards: false
 ---
 
 # Line Relationships in 3D

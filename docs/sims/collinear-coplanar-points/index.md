@@ -1,11 +1,9 @@
 ---
 title: Collinear and Coplanar Points
 description: A four-panel diagram showing examples and non-examples of collinear and coplanar point arrangements.
+quality_score: 80
 image: /sims/collinear-coplanar-points/collinear-coplanar-points.png
 og:image: /sims/collinear-coplanar-points/collinear-coplanar-points.png
-twitter:image: /sims/collinear-coplanar-points/collinear-coplanar-points.png
-social:
-   cards: false
 ---
 
 # Collinear and Coplanar Points

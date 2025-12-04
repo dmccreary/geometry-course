@@ -1,6 +1,26 @@
-# Word Cloud for Geometry
+---
+title: Geometry Word Cloud
+description: A word cloud visualization of key geometry concepts weighted by their importance and frequency in the curriculum.
+quality_score: 35
+image: /sims/word-cloud/word-cloud.png
+og:image: /sims/word-cloud/word-cloud.png
+---
 
-[Word Cloud MicroSim](word-cloud.html)
+# Geometry Word Cloud
+
+<iframe src="word-cloud.html" width="100%" height="600px" scrolling="no"></iframe>
+
+[Run the Word Cloud MicroSim Fullscreen](word-cloud.html){ .md-button .md-button--primary }
+
+**Copy this iframe to embed in your website:**
+
+```html
+<iframe src="https://dmccreary.github.io/geometry-course/sims/word-cloud/word-cloud.html" width="100%" height="600px" scrolling="no"></iframe>
+```
+
+## Description
+
+This word cloud displays key geometry concepts with their sizes weighted by importance in the curriculum. It provides a visual overview of the main topics covered in the geometry course.
 
 OK, the link to the library was the problem. Now can you give me some suggestions on how to change the layout?
 

@@ -1,0 +1,18 @@
+{
+  "title": "Learning Graph Viewer",
+  "description": "An interactive vis.js network graph viewer for exploring geometry concepts and their dependencies with search, filtering, and statistics.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["Mathematics", "Geometry", "Education", "Learning Graph"],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "visualization",
+  "audience": "Students, Educators",
+  "bloomLevel": ["Understand", "Analyze"],
+  "concepts": ["Concept Dependencies", "Knowledge Graph", "Taxonomy", "Learning Progression"],
+  "prerequisites": ["None"],
+  "library": "vis.js"
+}

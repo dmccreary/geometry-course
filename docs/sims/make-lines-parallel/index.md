@@ -1,11 +1,9 @@
 ---
 title: Make Lines Parallel
 description: An interactive MicroSim where students drag a point to make two lines parallel by matching their slopes on a coordinate grid.
+quality_score: 90
 image: /sims/make-lines-parallel/make-lines-parallel.png
 og:image: /sims/make-lines-parallel/make-lines-parallel.png
-twitter:image: /sims/make-lines-parallel/make-lines-parallel.png
-social:
-   cards: false
 ---
 
 # Make Lines Parallel

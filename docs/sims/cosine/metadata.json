@@ -1,0 +1,18 @@
+{
+  "title": "Cosine as a Ratio",
+  "description": "An interactive MicroSim demonstrating how the cosine function can be visualized as the ratio of the adjacent side to the hypotenuse in a right triangle.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["Mathematics", "Geometry", "Trigonometry"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "bloomLevel": ["Understand", "Apply", "Analyze"],
+  "concepts": ["Cosine", "Trigonometric Ratios", "Right Triangle", "Adjacent Side", "Hypotenuse"],
+  "prerequisites": ["Right triangles", "Basic angle measurement", "Understanding of ratios"],
+  "library": "p5.js"
+}

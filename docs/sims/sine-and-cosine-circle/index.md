@@ -1,8 +1,30 @@
+---
+title: Sine and Cosine Circle
+description: An interactive MicroSim demonstrating how sine and cosine values relate to a point moving around the unit circle, with corresponding graph visualization.
+quality_score: 45
+image: /sims/sine-and-cosine-circle/sine-and-cosine-circle.png
+og:image: /sims/sine-and-cosine-circle/sine-and-cosine-circle.png
+---
+
 # Sine and Cosine Circle
+
+<iframe src="sine-and-cosine-circle-v1.html" width="100%" height="450px" scrolling="no"></iframe>
+
+[Run the Sine and Cosine Circle MicroSim Fullscreen](./sine-and-cosine-circle-v1.html){ .md-button .md-button--primary }
+
+**Copy this iframe to embed in your website:**
+
+```html
+<iframe src="https://dmccreary.github.io/geometry-course/sims/sine-and-cosine-circle/sine-and-cosine-circle-v1.html" width="100%" height="450px" scrolling="no"></iframe>
+```
+
+## Description
+
+This MicroSim demonstrates the relationship between a point moving around the unit circle and the corresponding sine and cosine values. Students can observe how the x-coordinate (cosine) and y-coordinate (sine) of a point on the circle create the familiar sine and cosine wave patterns.
 
 ![](./sine-and-cosine-circle.png)
 
-[Run the Sine and Cosine Circle MicroSim](./sine-and-cosine-circle-v1.html){ .md-button .md-button--primary }
+## Sample Prompt
 
 From the p5.js site we have the following example code:
 

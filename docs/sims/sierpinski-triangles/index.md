@@ -1,11 +1,9 @@
 ---
 title: Sierpinski Triangles
 description: An interactive visualization of the Sierpinski triangle fractal, demonstrating recursive subdivision and self-similar patterns in mathematics.
+quality_score: 85
 image: /sims/sierpinski-triangles/sierpinski-triangles.png
 og:image: /sims/sierpinski-triangles/sierpinski-triangles.png
-twitter:image: /sims/sierpinski-triangles/sierpinski-triangles.png
-social:
-   cards: false
 ---
 
 # Sierpinski Triangles

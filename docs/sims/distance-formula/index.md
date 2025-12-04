@@ -1,11 +1,9 @@
 ---
 title: Distance Formula Explorer
 description: An interactive MicroSim that helps students visualize and apply the distance formula to find distances between two points on the coordinate plane, showing the connection to the Pythagorean theorem.
+quality_score: 90
 image: /sims/distance-formula/distance-formula.png
 og:image: /sims/distance-formula/distance-formula.png
-twitter:image: /sims/distance-formula/distance-formula.png
-social:
-   cards: false
 ---
 
 # Distance Formula Explorer

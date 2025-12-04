@@ -1,11 +1,21 @@
+---
+title: Points and Lines Explorer
+description: An interactive MicroSim for creating, moving, and connecting geometric points to form lines, demonstrating that two points determine a unique line.
+quality_score: 75
+image: /sims/point-line-explorer/point-line-explorer.png
+og:image: /sims/point-line-explorer/point-line-explorer.png
+---
+
 # Points and Lines Explorer
 
-<iframe src="main.html" height="682px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="682px" scrolling="no"></iframe>
 
 [Run the Points and Lines Explorer MicroSim Fullscreen](main.html){ .md-button .md-button--primary }
 
+**Copy this iframe to embed in your website:**
+
 ```html
-<iframe src="sims/point-line-explorer/main.html" height="682px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/point-line-explorer/main.html" width="100%" height="682px" scrolling="no"></iframe>
 ```
 
 ## Description

@@ -1,30 +1,28 @@
 ---
-title: Degrees to Radians MicroSim
-description: Interactive MicroSim comparing degrees and radians.
-image: /img/cover-preview.png
-og:image: /img/cover-preview.png
-twitter:image: /img/cover-preview.png
-social:
-   cards: false
-hide:
-  - toc
+title: Degrees vs Radians
+description: An interactive MicroSim comparing degrees and radians, showing how 2π radians equals 360 degrees through visual representation.
+quality_score: 55
+image: /sims/degrees-vs-radians/degrees-vs-radians.png
+og:image: /sims/degrees-vs-radians/degrees-vs-radians.png
 ---
+
 # Degrees vs Radians
 
-<iframe src="./main.html" height="480px" scrolling="no"
-  style="overflow: hidden;"></iframe>
+<iframe src="main.html" width="100%" height="480px" scrolling="no"></iframe>
 
-You can include this MicroSim in your course by pasting the following HTML directly into your web page.
+[Run the Degrees vs Radians MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/wVpFITKAE){ .md-button }
+
+**Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/signal-processing/sims/SIM_NAME/main.html" height="480px" scrolling="no"
-  style="overflow: hidden;"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/degrees-vs-radians/main.html" width="100%" height="480px" scrolling="no"></iframe>
 ```
 
-[Run the MicroSim](./main.html){ .md-button .md-button--primary }
+## Description
 
-[Edit the MicroSim]()
-[Run the MicroSim](main.html)
+This MicroSim illustrates the relationship between degrees and radians, the two most common ways to measure angles. A slider allows students to rotate a line around a circle while observing both the degree measurement and the radian measurement. Alternating colored arcs along the circumference show each radian segment, demonstrating that there are 2π (approximately 6.28) radians in a full circle.
 
 ## Sample Prompt
 

@@ -1,9 +1,28 @@
+---
+title: Angle Type Explorer
+description: An interactive MicroSim that allows students to classify angles as acute, right, obtuse, or straight by adjusting a slider.
+quality_score: 75
+image: /sims/angle-type-explorer/angle-type-explorer.png
+og:image: /sims/angle-type-explorer/angle-type-explorer.png
+---
+
 # Angle Type Explorer
 
 <iframe src="main.html" height="300px" width="100%" scrolling="no"></iframe>
 
-[Run the MicroSim Template](./main.html){ .md-button .md-button--primary }
-[Edit this MicroSim](https://editor.p5js.org/dmccreary/sketches/Tckt4HwaA)
+[Run the Angle Type Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/Tckt4HwaA){ .md-button }
+
+**Copy this iframe to embed in your website:**
+
+```html
+<iframe src="https://dmccreary.github.io/geometry-course/sims/angle-type-explorer/main.html" width="100%" height="300px" scrolling="no"></iframe>
+```
+
+## Description
+
+The Angle Type Explorer allows students to interactively explore angle classifications by adjusting a slider from 0° to 180°. As the angle changes, students can observe how angles transition between acute (0°-90°), right (90°), obtuse (90°-180°), and straight (180°) classifications.
 
 ## Lesson Plan
 

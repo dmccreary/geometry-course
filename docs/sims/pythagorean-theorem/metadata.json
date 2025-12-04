@@ -1,0 +1,18 @@
+{
+  "title": "Pythagorean Theorem",
+  "description": "An interactive MicroSim demonstrating the Pythagorean theorem (a² + b² = c²) with adjustable triangle sides and visual proof using squares.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["Mathematics", "Geometry", "Pythagorean Theorem"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "bloomLevel": ["Understand", "Apply", "Analyze"],
+  "concepts": ["Pythagorean Theorem", "Right Triangle", "Hypotenuse", "Legs of a Triangle", "Square of a Number"],
+  "prerequisites": ["Understanding of right triangles", "Basic algebra", "Square roots"],
+  "library": "p5.js"
+}
