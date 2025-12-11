@@ -58,6 +58,7 @@ nav:
     - Graph Viewer: sims/graph-viewer/index.md
     - Make Lines Parallel: sims/make-lines-parallel/index.md
     - Line Relationships 3D: sims/line-relationships-3d/index.md
+    - Peano-Gosper Fractal: sims/peano-gosper-fractal/index.md
     - Point Line Explorer: sims/point-line-explorer/index.md
     - Point, Line, Plane: sims/point-line-plane/index.md
     - Pythagorean Theorem: sims/pythagorean-theorem/index.md
