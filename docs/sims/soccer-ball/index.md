@@ -11,7 +11,7 @@ og:image: /sims/soccer-ball/soccer-ball.png
 <iframe src="main.html" height="500px" width="100%" scrolling="no"></iframe>
 
 [Run the Soccer Ball MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
-
+[Edit the Soccer Ball MicroSim with the p5.js editor](https://editor.p5js.org/dmccreary/sketches/aG2VyFTGf)
 You can include this MicroSim on your website using the following `iframe`:
 
 ```html
@@ -131,9 +131,74 @@ This MicroSim is built using p5.js in WEBGL mode and features:
 
 - 3D rendering of a truncated icosahedron with 60 mathematically accurate vertices
 - Black pentagonal faces and white hexagonal faces (classic soccer ball colors)
-- Interactive rotation speed control
-- Ambient and directional lighting for depth perception
+- Interactive rotation speed and zoom controls
+- Width-responsive canvas that adapts to container size
 - Click-to-save screenshot functionality
+
+### How the Drawing Algorithm Works
+
+The soccer ball is rendered using a three-step process that leverages the mathematical properties of the truncated icosahedron:
+
+#### Step 1: Generate the 60 Vertices Using the Golden Ratio
+
+The vertices of a truncated icosahedron can be expressed using the **golden ratio** (φ = (1 + √5) / 2 ≈ 1.618). The 60 vertices are organized into groups based on coordinate permutations:
+
+```javascript
+let phi = (1 + Math.sqrt(5)) / 2; // Golden ratio
+
+// Examples of vertex coordinates (before scaling):
+// (0, ±1, ±3φ) and cyclic permutations
+// (±2, ±(1+2φ), ±φ) and cyclic permutations
+// (±1, ±(2+φ), ±2φ) and cyclic permutations
+```
+
+Each vertex is stored as a 3D vector and scaled by a radius factor to control the ball's size.
+
+#### Step 2: Define the 32 Faces as Vertex Index Arrays
+
+The faces are defined by listing the indices of vertices that form each polygon:
+
+- **12 Pentagon faces** (indices 0-11): Each pentagon is defined by 5 vertex indices
+- **20 Hexagon faces** (indices 12-31): Each hexagon is defined by 6 vertex indices
+
+```javascript
+// Example pentagon face (5 vertices)
+this.faces.push([42, 38, 30, 2, 34]);
+
+// Example hexagon face (6 vertices)
+this.faces.push([0, 2, 34, 58, 56, 32]);
+```
+
+The vertex ordering matters—vertices must be listed in the correct winding order (clockwise or counter-clockwise) for proper rendering.
+
+#### Step 3: Render Faces with Different Materials
+
+The `show()` method draws the ball in three passes:
+
+1. **Black Pentagons**: Uses standard `fill(30, 30, 30)` with stroke for the 12 pentagon faces
+2. **White Hexagons**: Uses `emissiveMaterial(255, 255, 255)` to ensure pure white regardless of lighting conditions
+3. **Hexagon Outlines**: Draws strokes separately since emissive materials don't support stroke
+
+```javascript
+// Pentagon rendering (affected by lighting)
+fill(30, 30, 30);
+stroke(50);
+// ... draw pentagon shapes
+
+// Hexagon rendering (pure white, unaffected by lighting)
+noStroke();
+emissiveMaterial(255, 255, 255);
+// ... draw hexagon shapes
+
+// Hexagon outlines (separate pass)
+stroke(50);
+noFill();
+// ... draw hexagon outlines
+```
+
+### Why Use Emissive Material for White Faces?
+
+In 3D rendering, surface colors are affected by scene lighting. A white surface facing away from a light source appears gray or dark. By using `emissiveMaterial()`, the white hexagons "emit" their own light and always appear pure white, creating the classic soccer ball appearance where the white panels are uniformly bright.
 
 ## Standards Alignment
 
