@@ -13,6 +13,7 @@ social:
 <iframe src="main.html" height="662px" width="100%" scrolling="no"></iframe>
 
 [Run the Cesaro Curve MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Edit the Cesaro Curve MicroSim on the p5.js editor](https://editor.p5js.org/dmccreary/sketches/NA7SxRZ_A)
 
 ## About This MicroSim
 
