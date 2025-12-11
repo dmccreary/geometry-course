@@ -53,8 +53,9 @@ function setup() {
 }
 
 function draw() {
-    // Sky blue background for drawing area
-    background(135, 206, 235);
+    // Was a Sky blue background for drawing area
+    // turned to Alice Blue for better contrast with white panels
+    background('aliceblue');
 
     // Update values from sliders
     rotationSpeed = rotationSpeedSlider.value() / 1000;
