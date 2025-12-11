@@ -30,12 +30,12 @@ function setup() {
     canvas.parent(document.querySelector('main'));
 
     // Recursion level slider (1-5, default 1)
-    recursionSlider = createSlider(1, 5, 1, 1);
+    recursionSlider = createSlider(1, 7, 3, 1);
     recursionSlider.position(sliderLeftMargin, drawHeight + 12);
     recursionSlider.size(canvasWidth - sliderLeftMargin - margin);
 
     // Size slider (30-100%, default 60%)
-    sizeSlider = createSlider(30, 100, 60, 1);
+    sizeSlider = createSlider(100, 600, 400, 1);
     sizeSlider.position(sliderLeftMargin, drawHeight + 32);
     sizeSlider.size(canvasWidth - sliderLeftMargin - margin);
 
