@@ -1,0 +1,75 @@
+{
+  "title": "Cesaro Curve",
+  "description": "An interactive MicroSim demonstrating the Cesaro curve fractal (torn square) with adjustable recursion depth and size controls.",
+  "creator": "Dan McCreary",
+  "subject": ["Mathematics", "Geometry", "Fractals"],
+  "date": "2025-12-10",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "subjectArea": "Mathematics",
+  "topic": "Fractals and Recursion",
+  "learningObjectives": [
+    "Understand how angle choices affect fractal appearance",
+    "Observe the relationship between recursion depth and pattern complexity",
+    "Compare different fractal construction methods",
+    "Explore how simple rules create complex, beautiful patterns"
+  ],
+  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Basic geometry", "Understanding of angles"],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 650",
+  "responsive": true,
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "name": "recursionSlider",
+      "label": "Recursion Level",
+      "min": 1,
+      "max": 10,
+      "default": 1,
+      "step": 1,
+      "description": "Controls the depth of fractal recursion. Higher values create more detailed, lace-like patterns."
+    },
+    {
+      "type": "slider",
+      "name": "sizeSlider",
+      "label": "Size",
+      "min": 50,
+      "max": 100,
+      "default": 80,
+      "step": 1,
+      "unit": "%",
+      "description": "Adjusts the overall size of the curve within the canvas."
+    }
+  ],
+  "modelType": "geometric-fractal",
+  "variables": [
+    "recursionLevel",
+    "curveSize",
+    "bendAngle"
+  ],
+  "equations": [
+    "Bend angle: 85 degrees",
+    "Number of segments at level n: S(n) = 4 * 2^(n-1)",
+    "Fractal dimension: approximately 1.78"
+  ],
+  "assumptions": [
+    "Perfect geometric construction",
+    "Fixed 85-degree bend angle",
+    "Discrete recursion levels (not continuous)"
+  ],
+  "limitations": [
+    "Maximum recursion level of 10 to prevent performance issues",
+    "Cannot visualize infinite recursion",
+    "Bend angle is fixed (not adjustable in this version)"
+  ]
+}
