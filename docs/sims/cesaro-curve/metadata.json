@@ -12,14 +12,14 @@
   "subjectArea": "Mathematics",
   "topic": "Fractals and Recursion",
   "learningObjectives": [
-    "Understand how angle choices affect fractal appearance",
+    "Understand how perpendicular displacement creates fractal patterns",
     "Observe the relationship between recursion depth and pattern complexity",
-    "Compare different fractal construction methods",
-    "Explore how simple rules create complex, beautiful patterns"
+    "Compare different fractal construction methods (Koch, Levy, Cesaro)",
+    "Explore how initial shape affects final fractal appearance"
   ],
   "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
   "duration": "10-15 minutes",
-  "prerequisites": ["Basic geometry", "Understanding of angles"],
+  "prerequisites": ["Basic geometry", "Understanding of perpendicular lines"],
   "framework": "p5.js",
   "canvasDimensions": "responsive x 650",
   "responsive": true,
@@ -34,7 +34,7 @@
       "name": "recursionSlider",
       "label": "Recursion Level",
       "min": 1,
-      "max": 10,
+      "max": 7,
       "default": 1,
       "step": 1,
       "description": "Controls the depth of fractal recursion. Higher values create more detailed, lace-like patterns."
@@ -43,9 +43,9 @@
       "type": "slider",
       "name": "sizeSlider",
       "label": "Size",
-      "min": 50,
+      "min": 30,
       "max": 100,
-      "default": 80,
+      "default": 60,
       "step": 1,
       "unit": "%",
       "description": "Adjusts the overall size of the curve within the canvas."
@@ -55,21 +55,22 @@
   "variables": [
     "recursionLevel",
     "curveSize",
-    "bendAngle"
+    "bendAmount"
   ],
   "equations": [
-    "Bend angle: 85 degrees",
-    "Number of segments at level n: S(n) = 4 * 2^(n-1)",
+    "Perpendicular displacement: 1/4 of segment length",
+    "Number of segments at level n: S(n) = 12 * 2^(n-1)",
     "Fractal dimension: approximately 1.78"
   ],
   "assumptions": [
     "Perfect geometric construction",
-    "Fixed 85-degree bend angle",
-    "Discrete recursion levels (not continuous)"
+    "Fixed perpendicular displacement ratio (1/4)",
+    "Discrete recursion levels (not continuous)",
+    "Starting shape is a square divided into four quadrants"
   ],
   "limitations": [
-    "Maximum recursion level of 10 to prevent performance issues",
+    "Maximum recursion level of 7 to prevent performance issues",
     "Cannot visualize infinite recursion",
-    "Bend angle is fixed (not adjustable in this version)"
+    "Displacement ratio is fixed (not adjustable in this version)"
   ]
 }
