@@ -13,7 +13,7 @@ social:
 <iframe src="main.html" height="462px" width="100%" scrolling="no"></iframe>
 
 [Run the Levy C Curve MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
-
+[Edit the Levy C Curve MicroSim using the p5.js editor](https://editor.p5js.org/dmccreary/sketches/ABAndBLE3)
 ## About This MicroSim
 
 The Levy C curve (also known as the Levy dragon or Levy tapestry) is a self-similar fractal curve discovered by French mathematician Paul Levy in 1938. This MicroSim allows you to explore how this elegant curve is constructed through recursive subdivision of line segments.

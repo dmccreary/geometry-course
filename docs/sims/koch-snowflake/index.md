@@ -13,7 +13,7 @@ social:
 <iframe src="main.html" height="462px" width="100%" scrolling="no"></iframe>
 
 [Run the Koch Snowflake MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
-
+[Edit the Koch Snowflake MicroSim with the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/a7gFbhYHB)
 ## About This MicroSim
 
 The Koch snowflake is one of the earliest described fractal curves, first appearing in a 1904 paper by Swedish mathematician Helge von Koch. This MicroSim allows you to explore how the snowflake is constructed through recursive subdivision of line segments.
