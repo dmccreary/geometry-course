@@ -13,6 +13,7 @@ social:
 <iframe src="main.html" height="562px" width="100%" scrolling="no"></iframe>
 
 [Run the Peano-Gosper Fractal MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Edit the Peano-Gosper Fractal MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/gKdgsFyQw)
 
 ## About This MicroSim
 
