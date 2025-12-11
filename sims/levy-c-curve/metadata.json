@@ -1,0 +1,72 @@
+{
+  "title": "Levy C Curve",
+  "description": "An interactive MicroSim demonstrating the Levy C curve fractal with adjustable recursion depth and size controls.",
+  "creator": "Dan McCreary",
+  "subject": ["Mathematics", "Geometry", "Fractals"],
+  "date": "2025-12-10",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "subjectArea": "Mathematics",
+  "topic": "Fractals and Recursion",
+  "learningObjectives": [
+    "Understand how simple geometric rules create complex fractal patterns",
+    "Compare and contrast different fractal construction methods",
+    "Observe the relationship between recursion depth and visual complexity",
+    "Explore the concept of fractal dimension through visual observation"
+  ],
+  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Basic geometry", "Understanding of angles"],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 450",
+  "responsive": true,
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "name": "recursionSlider",
+      "label": "Recursion Level",
+      "min": 1,
+      "max": 16,
+      "default": 1,
+      "step": 1,
+      "description": "Controls the depth of fractal recursion. Higher values create more detailed curves."
+    },
+    {
+      "type": "slider",
+      "name": "sizeSlider",
+      "label": "Size",
+      "min": 50,
+      "max": 100,
+      "default": 80,
+      "step": 1,
+      "unit": "%",
+      "description": "Adjusts the overall size of the curve within the canvas."
+    }
+  ],
+  "modelType": "geometric-fractal",
+  "variables": [
+    "recursionLevel",
+    "curveSize"
+  ],
+  "equations": [
+    "Number of segments at level n: S(n) = 2^(n-1)",
+    "Each segment length: L(n) = L(0) / (sqrt(2))^(n-1)",
+    "Fractal dimension: 2 (space-filling)"
+  ],
+  "assumptions": [
+    "Perfect geometric construction",
+    "Discrete recursion levels (not continuous)"
+  ],
+  "limitations": [
+    "Maximum recursion level of 16 to prevent performance issues",
+    "Cannot visualize infinite recursion"
+  ]
+}

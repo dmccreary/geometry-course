@@ -1,0 +1,72 @@
+{
+  "title": "Koch Snowflake",
+  "description": "An interactive MicroSim demonstrating the Koch snowflake fractal with adjustable recursion depth and size controls.",
+  "creator": "Dan McCreary",
+  "subject": ["Mathematics", "Geometry", "Fractals"],
+  "date": "2025-12-10",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "subjectArea": "Mathematics",
+  "topic": "Fractals and Recursion",
+  "learningObjectives": [
+    "Understand the concept of recursive geometric patterns",
+    "Observe how simple rules can generate complex shapes",
+    "Explore the relationship between recursion depth and visual complexity",
+    "Appreciate the mathematical properties of fractals"
+  ],
+  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Basic geometry", "Understanding of triangles"],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 450",
+  "responsive": true,
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "name": "recursionSlider",
+      "label": "Recursion Level",
+      "min": 1,
+      "max": 6,
+      "default": 1,
+      "step": 1,
+      "description": "Controls the depth of fractal recursion. Higher values create more detailed snowflakes."
+    },
+    {
+      "type": "slider",
+      "name": "sizeSlider",
+      "label": "Size",
+      "min": 50,
+      "max": 100,
+      "default": 80,
+      "step": 1,
+      "unit": "%",
+      "description": "Adjusts the overall size of the snowflake within the canvas."
+    }
+  ],
+  "modelType": "geometric-fractal",
+  "variables": [
+    "recursionLevel",
+    "snowflakeSize"
+  ],
+  "equations": [
+    "Perimeter at level n: P(n) = P(0) * (4/3)^n",
+    "Number of segments at level n: S(n) = 3 * 4^(n-1)",
+    "Fractal dimension: log(4)/log(3) ≈ 1.26"
+  ],
+  "assumptions": [
+    "Perfect geometric construction",
+    "Discrete recursion levels (not continuous)"
+  ],
+  "limitations": [
+    "Maximum recursion level of 6 to prevent performance issues",
+    "Cannot visualize infinite recursion"
+  ]
+}
