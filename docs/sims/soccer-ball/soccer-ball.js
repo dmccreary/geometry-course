@@ -3,7 +3,7 @@
 // Adapted from the Coding Train dodecahedron example
 // https://editor.p5js.org/codingtrain/sketches/frIcGeI8l
 
-// Canvas dimensions
+// Canvas dimensions - responsive
 let canvasWidth = 670;
 let drawHeight = 450;
 let controlHeight = 50;
@@ -19,12 +19,16 @@ let rotationSpeed = 0.01;
 let zoomLevel = 600;
 
 function setup() {
+    // Get the parent container width for responsive sizing
+    const mainElement = document.querySelector('main');
+    canvasWidth = mainElement ? mainElement.offsetWidth : windowWidth;
+    canvasHeight = drawHeight + controlHeight;
+
     const canvas = createCanvas(canvasWidth, canvasHeight, WEBGL);
-    var mainElement = document.querySelector('main');
     canvas.parent(mainElement);
 
     // Create speed label and slider using HTML elements (WEBGL doesn't support text without font)
-    speedLabel = createDiv('Speed: 10');
+    speedLabel = createDiv('Speed: 2');
     speedLabel.position(10, drawHeight + 20);
     speedLabel.style('font-family', 'Arial, sans-serif');
     speedLabel.style('font-size', '14px');
@@ -35,12 +39,12 @@ function setup() {
 
     // Create zoom label and slider using HTML elements
     zoomLabel = createDiv('Zoom: 2000');
-    zoomLabel.position(340, drawHeight + 20);
+    zoomLabel.position(canvasWidth / 2 + 10, drawHeight + 20);
     zoomLabel.style('font-family', 'Arial, sans-serif');
     zoomLabel.style('font-size', '14px');
 
     zoomSlider = createSlider(1200, 4000, 2000, 10);
-    zoomSlider.position(440, drawHeight + 20);
+    zoomSlider.position(canvasWidth / 2 + 100, drawHeight + 20);
     zoomSlider.size(120);
 
     ball = new SoccerBall(120);
@@ -85,6 +89,19 @@ function draw() {
     // Draw the soccer ball
     ball.show();
     pop();
+}
+
+function windowResized() {
+    // Get the parent container width for responsive sizing
+    const mainElement = document.querySelector('main');
+    canvasWidth = mainElement ? mainElement.offsetWidth : windowWidth;
+    canvasHeight = drawHeight + controlHeight;
+
+    resizeCanvas(canvasWidth, canvasHeight);
+
+    // Reposition zoom controls based on new width
+    zoomLabel.position(canvasWidth / 2 + 10, drawHeight + 20);
+    zoomSlider.position(canvasWidth / 2 + 100, drawHeight + 20);
 }
 
 function mousePressed() {
@@ -223,9 +240,23 @@ class SoccerBall {
             endShape(CLOSE);
         }
 
-        // Draw the 20 hexagon faces (WHITE)
+        // Draw the 20 hexagon faces (WHITE) - use emissiveMaterial for pure white
+        noStroke();
+        emissiveMaterial(255, 255, 255); // Pure white, unaffected by lighting
         for (let i = 12; i < this.faces.length; i++) {
-            fill(255, 255, 255); // White
+            beginShape();
+            for (let j = 0; j < this.faces[i].length; j++) {
+                let v = this.vert[this.faces[i][j]];
+                vertex(v.x, v.y, v.z);
+            }
+            endShape(CLOSE);
+        }
+
+        // Draw white hexagon outlines separately
+        stroke(50);
+        strokeWeight(2);
+        noFill();
+        for (let i = 12; i < this.faces.length; i++) {
             beginShape();
             for (let j = 0; j < this.faces[i].length; j++) {
                 let v = this.vert[this.faces[i][j]];

@@ -8,7 +8,7 @@ og:image: /sims/soccer-ball/soccer-ball.png
 
 # Soccer Ball - Truncated Icosahedron
 
-<iframe src="main.html" height="520px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="500px" width="100%" scrolling="no"></iframe>
 
 [Run the Soccer Ball MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
