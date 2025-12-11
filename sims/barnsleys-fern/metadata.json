@@ -1,0 +1,103 @@
+{
+  "title": "Barnsley's Fern",
+  "description": "An interactive MicroSim demonstrating Barnsley's fern fractal with adjustable parameters for iterations, scale, leaf angle, and curl.",
+  "creator": "Dan McCreary",
+  "subject": ["Mathematics", "Geometry", "Fractals", "Iterated Function Systems"],
+  "date": "2025-12-10",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "subjectArea": "Mathematics",
+  "topic": "Fractals and Iterated Function Systems",
+  "learningObjectives": [
+    "Understand how Iterated Function Systems create fractal patterns",
+    "Explore the relationship between mathematical parameters and visual appearance",
+    "Recognize self-similarity in fractal structures",
+    "Connect mathematical abstractions to natural forms"
+  ],
+  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze", "Evaluate"],
+  "duration": "10-20 minutes",
+  "prerequisites": ["Basic geometry", "Understanding of coordinate systems", "Familiarity with transformations"],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 690",
+  "responsive": true,
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "name": "iterationsSlider",
+      "label": "Iterations",
+      "min": 10000,
+      "max": 200000,
+      "default": 50000,
+      "step": 10000,
+      "description": "Number of points to plot. More iterations create a denser, more detailed fern."
+    },
+    {
+      "type": "slider",
+      "name": "scaleSlider",
+      "label": "Scale",
+      "min": 20,
+      "max": 80,
+      "default": 45,
+      "step": 1,
+      "description": "Controls the overall size of the fern display."
+    },
+    {
+      "type": "slider",
+      "name": "leafAngleSlider",
+      "label": "Leaf Angle",
+      "min": 0,
+      "max": 15,
+      "default": 3,
+      "step": 0.5,
+      "unit": "degrees",
+      "description": "Adjusts the angle at which leaflets branch from the stem."
+    },
+    {
+      "type": "slider",
+      "name": "curlSlider",
+      "label": "Curl",
+      "min": 0,
+      "max": 10,
+      "default": 4,
+      "step": 0.5,
+      "description": "Controls how much the fern tip curls over."
+    },
+    {
+      "type": "checkbox",
+      "name": "spleenwortCheckbox",
+      "label": "Black Spleenwort Preset",
+      "default": false,
+      "description": "Sets all parameters to values that best resemble the black spleenwort fern (Asplenium adiantum-nigrum)."
+    }
+  ],
+  "modelType": "iterated-function-system",
+  "variables": [
+    "iterations",
+    "fernScale",
+    "leafAngle",
+    "curl"
+  ],
+  "equations": [
+    "Affine transformation: [x', y'] = [[a,b],[c,d]] * [x,y] + [e,f]",
+    "Four transformations with probabilities: 1%, 85%, 7%, 7%",
+    "Fractal dimension: approximately 1.45"
+  ],
+  "assumptions": [
+    "Random selection of transformations based on fixed probabilities",
+    "Starting point at origin",
+    "Points plotted sequentially"
+  ],
+  "limitations": [
+    "Maximum 200,000 iterations to prevent performance issues",
+    "Simplified IFS model compared to real fern complexity",
+    "Parameters affect appearance but don't match all real fern species"
+  ]
+}
