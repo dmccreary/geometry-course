@@ -1,0 +1,24 @@
+{
+  "title": "Rays and Segments Comparison",
+  "description": "A side-by-side comparison diagram showing the differences between rays and line segments in geometry.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Rays", "Line Segments"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Foundations of Geometry",
+  "learningObjectives": [
+    "Understand the differences between rays and line segments",
+    "Identify visual representations of rays and segments",
+    "Recognize proper notation for rays and line segments"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": ["Basic understanding of points and lines"],
+  "library": "p5.js",
+  "canvasDimensions": "700x400",
+  "responsive": true
+}
