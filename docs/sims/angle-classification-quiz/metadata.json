@@ -1,0 +1,31 @@
+{
+  "title": "Angle Classification Quiz",
+  "description": "Interactive quiz game for practicing angle classification as acute, right, obtuse, or straight.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Angles"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Classify angles by their measure",
+    "Distinguish between acute, right, obtuse, and straight angles",
+    "Apply angle classification rules quickly"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": ["Understanding of angle types"],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Acute"},
+    {"type": "button", "label": "Right"},
+    {"type": "button", "label": "Obtuse"},
+    {"type": "button", "label": "Straight"},
+    {"type": "button", "label": "Next Angle"}
+  ]
+}

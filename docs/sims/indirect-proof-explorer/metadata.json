@@ -1,0 +1,31 @@
+{
+  "title": "Indirect Proof Explorer",
+  "description": "Step through the four stages of proof by contradiction with multiple geometry examples.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Proofs", "Logic"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Construct indirect proofs by identifying assumptions",
+    "Derive consequences from assumed statements",
+    "Identify contradictions with known postulates/theorems",
+    "Evaluate when indirect proof is appropriate"
+  ],
+  "bloomsLevel": "Evaluating",
+  "duration": "15 minutes",
+  "prerequisites": ["Direct proof concepts", "Basic postulates and theorems"],
+  "library": "p5.js",
+  "canvasDimensions": "850x600",
+  "responsive": true,
+  "controls": [
+    {"type": "select", "label": "Select proof"},
+    {"type": "button", "label": "Prev Stage"},
+    {"type": "button", "label": "Next Stage"},
+    {"type": "button", "label": "Reset"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Conditional Statement Truth Explorer",
+  "description": "Interactive exploration of when conditional statements are true or false based on hypothesis and conclusion truth values.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Logic"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Apply truth value rules to evaluate conditional statements",
+    "Identify counterexamples",
+    "Understand conditional statement truth tables"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10-15 minutes",
+  "prerequisites": ["Understanding of conditional statement structure"],
+  "library": "p5.js",
+  "canvasDimensions": "700x520",
+  "responsive": true,
+  "controls": [
+    {"type": "checkbox", "label": "Hypothesis is TRUE"},
+    {"type": "checkbox", "label": "Conclusion is TRUE"},
+    {"type": "button", "label": "Random Example"}
+  ]
+}

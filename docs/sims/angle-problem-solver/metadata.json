@@ -1,0 +1,31 @@
+{
+  "title": "Angle Problem Solver",
+  "description": "Interactive practice tool for solving angle relationship problems with step-by-step hints and feedback.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Angles", "Problem Solving"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Apply angle relationships to solve problems",
+    "Analyze diagrams to identify angle types",
+    "Evaluate understanding through immediate feedback"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "15-20 minutes",
+  "prerequisites": ["Angle types", "Angle relationships", "Parallel lines"],
+  "library": "p5.js",
+  "canvasDimensions": "750x700",
+  "responsive": true,
+  "controls": [
+    {"type": "input", "label": "Answer field"},
+    {"type": "button", "label": "Check"},
+    {"type": "button", "label": "Hint"},
+    {"type": "button", "label": "Solution"},
+    {"type": "button", "label": "Next Problem"}
+  ]
+}

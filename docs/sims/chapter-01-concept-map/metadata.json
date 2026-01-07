@@ -1,0 +1,31 @@
+{
+  "title": "Chapter 1 Concept Map",
+  "description": "An interactive concept map showing all key concepts from Chapter 1 - Foundations of Geometry and their relationships.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Concept Maps"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Foundations of Geometry",
+  "learningObjectives": [
+    "Remember key definitions and terms from Chapter 1",
+    "Understand how concepts relate to each other",
+    "Evaluate their own understanding of the material",
+    "Identify gaps in their knowledge"
+  ],
+  "bloomsLevel": ["Remembering", "Evaluating"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Completion of Chapter 1 reading"],
+  "library": "vis-network",
+  "canvasDimensions": "1000x700",
+  "responsive": true,
+  "concepts": [
+    "Point", "Line", "Plane", "Ray", "Segment", "Angle", "Vertex",
+    "Midpoint", "Intersection", "Collinear", "Coplanar", "Parallel",
+    "Perpendicular", "Skew", "Inductive Reasoning", "Deductive Reasoning",
+    "Conjecture", "Counterexample"
+  ]
+}

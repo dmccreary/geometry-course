@@ -1,0 +1,31 @@
+{
+  "title": "Flow Chart Proof",
+  "description": "Interactive flow chart proof of the Vertical Angles Theorem with step-by-step reveal and auto-play.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Proofs"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Interpret flow chart proofs with branching logic",
+    "Trace logical dependencies between statements",
+    "Understand how parallel reasoning paths can converge"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "10 minutes",
+  "prerequisites": ["Basic understanding of vertical angles", "Linear pair concept"],
+  "library": "p5.js",
+  "canvasDimensions": "850x620",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Prev"},
+    {"type": "button", "label": "Next"},
+    {"type": "button", "label": "Auto Play"},
+    {"type": "button", "label": "Reset"},
+    {"type": "slider", "label": "Speed"}
+  ]
+}

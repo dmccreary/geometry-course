@@ -1,0 +1,30 @@
+{
+  "title": "Copy a Segment Construction",
+  "description": "Step-by-step interactive tutorial for copying a line segment using compass and straightedge.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Perform the steps to copy a segment",
+    "Understand why the construction creates congruent segments",
+    "Apply compass and straightedge techniques"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": ["Compass usage", "Straightedge usage"],
+  "library": "p5.js",
+  "canvasDimensions": "750x600",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Previous"},
+    {"type": "button", "label": "Next"},
+    {"type": "button", "label": "Reset"},
+    {"type": "button", "label": "Auto Play"}
+  ]
+}

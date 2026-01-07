@@ -1,0 +1,27 @@
+{
+  "title": "Linear Pair Structure",
+  "description": "Interactive diagram showing the anatomy of a linear pair with hover annotations.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Angles"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Recognize linear pairs",
+    "Apply the linear pair postulate",
+    "Calculate unknown angles in linear pairs"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": ["Adjacent angles", "Supplementary angles"],
+  "library": "p5.js",
+  "canvasDimensions": "700x400",
+  "responsive": true,
+  "controls": [
+    {"type": "hover", "label": "Hover over parts"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Two-Column Proof Builder",
+  "description": "Interactive proof builder where students click to fill in statements and reasons for the Vertical Angles Theorem.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Proofs"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Apply the structure of two-column proofs",
+    "Connect statements with appropriate reasons",
+    "Understand the logical flow of geometric proofs",
+    "Practice the Vertical Angles Theorem proof"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "15 minutes",
+  "prerequisites": ["Understanding of vertical angles", "Basic proof concepts"],
+  "library": "p5.js",
+  "canvasDimensions": "850x650",
+  "responsive": true,
+  "controls": [
+    {"type": "click", "label": "Click cells to select answers"},
+    {"type": "button", "label": "Hint"},
+    {"type": "button", "label": "Check Proof"},
+    {"type": "button", "label": "Reset"}
+  ]
+}

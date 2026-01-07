@@ -1,0 +1,28 @@
+{
+  "title": "Angle Bisector",
+  "description": "Interactive diagram showing how an angle bisector divides an angle into two congruent parts.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Angles"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Identify angle bisectors",
+    "Calculate angle measures using the bisector property",
+    "Apply the definition: bisector creates two equal angles"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": ["Understanding of angles"],
+  "library": "p5.js",
+  "canvasDimensions": "700x500",
+  "responsive": true,
+  "controls": [
+    {"type": "slider", "label": "Total angle (20-160°)"},
+    {"type": "hover", "label": "Hover over parts"}
+  ]
+}
