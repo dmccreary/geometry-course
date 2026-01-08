@@ -1,0 +1,26 @@
+{
+  "title": "Triangle Congruence Criteria",
+  "description": "Interactive diagram showing the five triangle congruence criteria plus why AAA is not sufficient.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Congruence"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Triangle Congruence",
+  "learningObjectives": [
+    "Identify congruence criteria",
+    "Evaluate sufficiency of given information"
+  ],
+  "bloomsLevel": "Evaluating",
+  "duration": "5 minutes",
+  "prerequisites": ["Triangle basics", "Corresponding parts"],
+  "library": "p5.js",
+  "canvasDimensions": "800x550",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Select criterion"}
+  ]
+}

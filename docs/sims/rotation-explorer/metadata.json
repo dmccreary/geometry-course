@@ -1,0 +1,30 @@
+{
+  "title": "Rotation Explorer",
+  "description": "Interactive tool for exploring rotations with adjustable angle and draggable center of rotation.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Rotations",
+  "learningObjectives": [
+    "Apply rotations with different angles",
+    "Analyze effects of center position"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5-10 minutes",
+  "prerequisites": ["Rotation definition", "Angle measurement"],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {"type": "slider", "label": "Angle"},
+    {"type": "drag", "label": "Center of rotation"},
+    {"type": "button", "label": "Preset angles"},
+    {"type": "button", "label": "Animate"},
+    {"type": "button", "label": "Toggle arcs/radii"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Inscribed Angle Theorem",
+  "description": "Interactive demonstration that an inscribed angle measures half the central angle intercepting the same arc.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Circles"],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Inscribed Angle Theorem",
+  "learningObjectives": [
+    "Understand the relationship between central and inscribed angles",
+    "Apply the inscribed angle theorem to find unknown angles",
+    "Recognize that inscribed angles intercepting the same arc are equal"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": ["Circle basics", "Central angles"],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [
+    {"type": "slider", "label": "Central Angle (30° to 180°)"}
+  ]
+}

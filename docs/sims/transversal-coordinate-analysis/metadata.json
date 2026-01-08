@@ -1,0 +1,28 @@
+{
+  "title": "Transversal Coordinate Analysis",
+  "description": "Analyze transversal-parallel line configurations using coordinate geometry and verify angle relationships.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Transversals and Parallel Lines",
+  "learningObjectives": [
+    "Analyze transversal configurations using coordinate methods",
+    "Verify angle relationships algebraically"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "10 minutes",
+  "prerequisites": ["Parallel lines", "Transversals", "Slope"],
+  "library": "p5.js",
+  "canvasDimensions": "1000x750",
+  "responsive": true,
+  "controls": [
+    {"type": "slider", "label": "Parallel slope", "min": -2, "max": 2},
+    {"type": "slider", "label": "Transversal slope", "min": -2, "max": 2},
+    {"type": "button", "label": "Random"}
+  ]
+}

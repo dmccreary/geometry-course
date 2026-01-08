@@ -92,6 +92,8 @@ For entire figures, if triangle $ABC$ is transformed, its image is triangle $A'B
     Implementation: SVG with clear labeling
 </details>
 
+<iframe src="../../sims/preimage-image-notation/main.html" height="402px" width="100%" scrolling="no"></iframe>
+
 ## Translation: The Slide
 
 A **translation** (or slide) moves every point of a figure the same distance in the same direction. Think of it as sliding a book across a table—the book doesn't rotate or flip, it just moves.
@@ -156,6 +158,8 @@ If point $(x, y)$ is translated by $(h, k)$, the image is $(x + h, y + k)$.
 
     Implementation: SVG with precise coordinate alignment
 </details>
+
+<iframe src="../../sims/translation-examples/main.html" height="402px" width="100%" scrolling="no"></iframe>
 
 #### Drawing: Interactive Translation Explorer
 <details markdown="1">
@@ -226,6 +230,8 @@ If point $(x, y)$ is translated by $(h, k)$, the image is $(x + h, y + k)$.
 
     Implementation: p5.js with smooth animation
 </details>
+
+<iframe src="../../sims/translation-explorer/main.html" height="602px" width="100%" scrolling="no"></iframe>
 
 ## Rotation: The Turn
 
@@ -309,6 +315,8 @@ A **rotation** turns a figure around a fixed point called the **center of rotati
     Implementation: SVG with precise angle measurements
 </details>
 
+<iframe src="../../sims/rotation-origin/main.html" height="452px" width="100%" scrolling="no"></iframe>
+
 #### Drawing: Interactive Rotation Explorer
 <details markdown="1">
     <summary>Rotation Tool</summary>
@@ -388,6 +396,8 @@ A **rotation** turns a figure around a fixed point called the **center of rotati
     Implementation: p5.js with circular motion animation
 </details>
 
+<iframe src="../../sims/rotation-explorer/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 ## Reflection: The Flip
 
 A **reflection** flips a figure over a line called the **line of reflection** (or mirror line). The image appears as a mirror image of the pre-image.
@@ -457,6 +467,8 @@ A **reflection** flips a figure over a line called the **line of reflection** (o
 
     Implementation: SVG with precise symmetry
 </details>
+
+<iframe src="../../sims/reflection-lines/main.html" height="422px" width="100%" scrolling="no"></iframe>
 
 #### Drawing: Interactive Reflection Explorer
 <details markdown="1">
@@ -539,6 +551,8 @@ A **reflection** flips a figure over a line called the **line of reflection** (o
     Implementation: p5.js with perpendicular line calculations
 </details>
 
+<iframe src="../../sims/reflection-explorer/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 ## Dilation: Changing Size
 
 A **dilation** is a transformation that changes the size of a figure while preserving its shape. Unlike the previous transformations, dilations are NOT rigid motions because size changes.
@@ -614,6 +628,8 @@ A **dilation** is a transformation that changes the size of a figure while prese
     Implementation: SVG with proportional scaling
 </details>
 
+<iframe src="../../sims/dilation-scale-factors/main.html" height="452px" width="100%" scrolling="no"></iframe>
+
 ## Rigid Motions and Congruence
 
 **Rigid motions** (also called **isometries**) are transformations that preserve distance and angle measure. The three rigid motions are:
@@ -684,6 +700,8 @@ This provides our modern definition of **congruence**: figures that can be made 
 
     Implementation: Infographic-style SVG
 </details>
+
+<iframe src="../../sims/rigid-motion-summary/main.html" height="502px" width="100%" scrolling="no"></iframe>
 
 ## Composition of Transformations
 
@@ -768,6 +786,8 @@ A **composition of transformations** means performing one transformation after a
     Implementation: p5.js with multi-stage visualization
 </details>
 
+<iframe src="../../sims/composition-transformations/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 ## Congruent Figures
 
 Two figures are **congruent** if they have the same size and shape. The modern definition: **Two figures are congruent if and only if one can be mapped onto the other by a sequence of rigid motions.**
@@ -847,6 +867,8 @@ Two figures are **congruent** if they have the same size and shape. The modern d
 
     Implementation: SVG with clear correspondence visualization
 </details>
+
+<iframe src="../../sims/congruent-triangles-parts/main.html" height="482px" width="100%" scrolling="no"></iframe>
 
 ## Triangle Congruence
 
@@ -935,6 +957,8 @@ For triangles specifically, we don't need to check all six pairs of correspondin
     Implementation: Infographic-style SVG with clear visual organization
 </details>
 
+<iframe src="../../sims/triangle-congruence-criteria/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 #### Drawing: Triangle Congruence Identifier
 <details markdown="1">
     <summary>Triangle Congruence Practice Tool</summary>
@@ -1012,6 +1036,8 @@ For triangles specifically, we don't need to check all six pairs of correspondin
 
     Implementation: p5.js with random problem generation
 </details>
+
+<iframe src="../../sims/triangle-congruence-identifier/main.html" height="602px" width="100%" scrolling="no"></iframe>
 
 ## Summary: Transformations and Congruence
 

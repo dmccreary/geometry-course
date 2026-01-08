@@ -1,0 +1,29 @@
+{
+  "title": "Construction Practice Workbench",
+  "description": "Comprehensive practice environment for all geometric construction techniques.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "type": "Interactive Practice",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Practice all construction techniques with feedback",
+    "Analyze each step of the construction process",
+    "Evaluate understanding through progressive difficulty"
+  ],
+  "bloomsLevel": "Evaluating",
+  "duration": "15 minutes",
+  "prerequisites": ["All construction techniques from Chapter 4"],
+  "library": "p5.js",
+  "canvasDimensions": "900x650",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Problem selector"},
+    {"type": "button", "label": "Step navigation"},
+    {"type": "button", "label": "Show/Hide solution"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Triangle Sum Theorem Proof",
+  "description": "Visual step-by-step proof that triangle angles sum to 180°.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangle Theorems"],
+  "type": "Interactive Proof",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Triangle Sum Theorem",
+  "learningObjectives": [
+    "Understand why triangle angles sum to 180°",
+    "Apply parallel line properties in proofs"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "4 minutes",
+  "prerequisites": ["Parallel lines", "Alternate interior angles"],
+  "library": "p5.js",
+  "canvasDimensions": "800x500",
+  "responsive": true,
+  "controls": [
+    {"type": "click", "label": "Advance proof step"}
+  ]
+}

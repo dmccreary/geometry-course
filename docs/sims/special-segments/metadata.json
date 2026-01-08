@@ -1,0 +1,27 @@
+{
+  "title": "Special Segments in Triangles",
+  "description": "Interactive diagram showing four types of special segments and their concurrent points.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Special Segments in Triangles",
+  "learningObjectives": [
+    "Identify special segments",
+    "Locate points of concurrency",
+    "Understand properties of triangle centers"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": ["Triangle basics", "Perpendicular lines", "Angle bisectors"],
+  "library": "p5.js",
+  "canvasDimensions": "800x650",
+  "responsive": true,
+  "controls": [
+    {"type": "click", "label": "Focus on panel"}
+  ]
+}

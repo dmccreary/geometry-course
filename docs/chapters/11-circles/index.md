@@ -112,6 +112,8 @@ where:
     Implementation: p5.js with createSlider for interactive control
 </details>
 
+<iframe src="../../sims/circle-parts-explorer/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 ### Lines That Intersect Circles
 
 Circles interact with lines in several special ways. Understanding these relationships helps us solve problems involving tangent lines, intersecting chords, and secant lines.
@@ -275,6 +277,8 @@ where:
     Implementation: p5.js with angle calculations and dynamic arc highlighting
 </details>
 
+<iframe src="../../sims/inscribed-angle-theorem/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 The arc between the two points where the angle's sides intersect the circle is called the **intercepted arc**. When working with arcs, we distinguish between two types:
 
 - A **minor arc** is less than 180° (semicircle)
@@ -413,6 +417,8 @@ where:
 
     Implementation: p5.js with arc length = (θ/360) × 2πr and area = (θ/360) × πr²
 </details>
+
+<iframe src="../../sims/circle-area-explorer/main.html" height="502px" width="100%" scrolling="no"></iframe>
 
 A **segment of a circle** is the region between a chord and the arc it cuts off. Unlike a sector (which includes two radii), a segment has a chord as one of its boundaries. To find the area of a segment, you subtract the area of the triangle formed by the chord and the two radii from the area of the sector.
 

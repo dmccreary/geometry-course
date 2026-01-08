@@ -1,0 +1,26 @@
+{
+  "title": "Distance Formula Visualization",
+  "description": "Three-panel diagram showing how the Distance Formula derives from the Pythagorean theorem.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Distance Formula",
+  "learningObjectives": [
+    "Understand how the Distance Formula connects to the Pythagorean theorem",
+    "Apply the formula to find distances between points"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": ["Pythagorean theorem", "Coordinate plane"],
+  "library": "p5.js",
+  "canvasDimensions": "900x400",
+  "responsive": true,
+  "controls": [
+    {"type": "hover", "label": "Panel highlight"}
+  ]
+}

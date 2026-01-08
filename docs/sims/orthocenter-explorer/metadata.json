@@ -1,0 +1,28 @@
+{
+  "title": "Orthocenter Explorer",
+  "description": "Interactive visualization of the orthocenter and altitudes in triangles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangle Centers"],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Orthocenter and Altitudes",
+  "learningObjectives": [
+    "Understand that altitudes are perpendicular to opposite sides",
+    "Identify the orthocenter as the intersection of altitudes",
+    "Recognize how orthocenter location varies with triangle type",
+    "Connect the orthocenter to special triangle properties"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": ["Triangle basics", "Altitudes", "Perpendicular lines"],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [
+    {"type": "drag", "label": "Drag vertices to reshape triangle"}
+  ]
+}

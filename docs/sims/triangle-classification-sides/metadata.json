@@ -1,0 +1,26 @@
+{
+  "title": "Triangle Classification by Sides",
+  "description": "Interactive diagram showing scalene, isosceles, and equilateral triangles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Triangle Classification",
+  "learningObjectives": [
+    "Identify triangle types by sides",
+    "Understand side-angle relationships"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "3 minutes",
+  "prerequisites": ["Basic geometry concepts"],
+  "library": "p5.js",
+  "canvasDimensions": "800x420",
+  "responsive": true,
+  "controls": [
+    {"type": "click", "label": "Highlight triangle type"}
+  ]
+}

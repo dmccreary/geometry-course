@@ -1,0 +1,30 @@
+{
+  "title": "Parallel Lines Construction",
+  "description": "Step-by-step construction of parallel lines using corresponding angles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Constructions", "Parallel Lines"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Construct parallel lines using corresponding angles",
+    "Apply the angle copying construction",
+    "Understand the corresponding angles converse theorem"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": ["Angle copying construction", "Corresponding angles"],
+  "library": "p5.js",
+  "canvasDimensions": "800x650",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Previous"},
+    {"type": "button", "label": "Next"},
+    {"type": "button", "label": "Reset"},
+    {"type": "button", "label": "Auto Play"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Perpendicular Lines with Negative Reciprocal Slopes",
+  "description": "Three examples showing perpendicular lines and the negative reciprocal slope relationship.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Perpendicular Lines",
+  "learningObjectives": [
+    "Identify perpendicular lines by negative reciprocal slopes",
+    "Calculate perpendicular slopes"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": ["Slope", "Reciprocals"],
+  "library": "p5.js",
+  "canvasDimensions": "1000x450",
+  "responsive": true,
+  "controls": [
+    {"type": "hover", "label": "Panel highlight"}
+  ]
+}

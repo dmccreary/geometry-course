@@ -1,0 +1,29 @@
+{
+  "title": "Centroid Explorer",
+  "description": "Interactive visualization of the centroid, medians, and the 2:1 ratio property in triangles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangle Centers"],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Centroid and Medians",
+  "learningObjectives": [
+    "Understand that medians connect vertices to opposite midpoints",
+    "Identify the centroid as the intersection of the three medians",
+    "Recognize that the centroid is always inside the triangle",
+    "Apply the 2:1 ratio property of medians"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": ["Triangle basics", "Midpoints"],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [
+    {"type": "drag", "label": "Drag vertices to reshape"},
+    {"type": "click", "label": "Click median to see 2:1 ratio"}
+  ]
+}

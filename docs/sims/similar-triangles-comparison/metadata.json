@@ -1,0 +1,27 @@
+{
+  "title": "Similar Triangles Comparison",
+  "description": "Interactive visualization comparing two similar triangles with adjustable scale factor to demonstrate proportionality and angle congruence.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Similarity"],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Similar Triangles",
+  "learningObjectives": [
+    "Understand the definition of similar figures",
+    "Apply scale factors to find corresponding side lengths",
+    "Recognize the relationship between scale factor and area ratio"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": ["Triangles", "Proportions", "Ratios"],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [
+    {"type": "slider", "label": "Scale Factor (0.5 to 3.0)"}
+  ]
+}

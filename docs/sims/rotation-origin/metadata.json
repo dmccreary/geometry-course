@@ -1,0 +1,26 @@
+{
+  "title": "Rotation Around Origin",
+  "description": "Interactive diagram showing rotations at 90°, 180°, 270°, and 45° around the origin.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Rotations",
+  "learningObjectives": [
+    "Understand rotation angles",
+    "Apply coordinate rules for rotations"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": ["Coordinate plane basics", "Angle measurement"],
+  "library": "p5.js",
+  "canvasDimensions": "800x450",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Select rotation angle"}
+  ]
+}

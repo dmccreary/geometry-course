@@ -1,0 +1,29 @@
+{
+  "title": "Composition of Transformations",
+  "description": "Interactive tool for exploring sequences of transformations.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Composition of Transformations",
+  "learningObjectives": [
+    "Apply transformation sequences",
+    "Analyze order effects"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5-10 minutes",
+  "prerequisites": ["Translation", "Rotation", "Reflection"],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Select T1"},
+    {"type": "button", "label": "Select T2"},
+    {"type": "button", "label": "Animate"},
+    {"type": "button", "label": "Reset"}
+  ]
+}

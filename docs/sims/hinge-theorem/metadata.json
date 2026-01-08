@@ -1,0 +1,26 @@
+{
+  "title": "Hinge Theorem Visualization",
+  "description": "Interactive diagram showing Hinge Theorem with door analogy.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangle Inequality"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Hinge Theorem",
+  "learningObjectives": [
+    "Understand Hinge Theorem relationship",
+    "Apply theorem to compare triangles"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "4 minutes",
+  "prerequisites": ["Triangle inequality", "Angle relationships"],
+  "library": "p5.js",
+  "canvasDimensions": "800x500",
+  "responsive": true,
+  "controls": [
+    {"type": "slider", "label": "Adjust included angle"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Parallel and Perpendicular Line Explorer",
+  "description": "Interactive tool for exploring parallel and perpendicular line relationships with slope verification.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Parallel and Perpendicular Lines",
+  "learningObjectives": [
+    "Create parallel and perpendicular lines",
+    "Verify slope relationships"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": ["Slope", "Parallel lines", "Perpendicular lines"],
+  "library": "p5.js",
+  "canvasDimensions": "950x750",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Mode Toggle"},
+    {"type": "slider", "label": "Slope (m₁)", "min": -3, "max": 3},
+    {"type": "slider", "label": "Intercept (b₁)", "min": -5, "max": 5},
+    {"type": "button", "label": "Random"}
+  ]
+}

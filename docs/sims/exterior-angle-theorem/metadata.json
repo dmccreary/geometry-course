@@ -1,0 +1,26 @@
+{
+  "title": "Exterior Angle Theorem",
+  "description": "Interactive diagram showing exterior angle equals sum of remote interior angles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangle Theorems"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Exterior Angle Theorem",
+  "learningObjectives": [
+    "Identify exterior and remote interior angles",
+    "Apply Exterior Angle Theorem"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "3 minutes",
+  "prerequisites": ["Triangle Sum Theorem", "Linear pairs"],
+  "library": "p5.js",
+  "canvasDimensions": "800x450",
+  "responsive": true,
+  "controls": [
+    {"type": "click", "label": "Toggle example view"}
+  ]
+}

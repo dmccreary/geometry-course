@@ -1,0 +1,29 @@
+{
+  "title": "Nine-Point Circle",
+  "description": "Interactive visualization of the nine-point circle showing all nine special points it passes through.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangle Centers", "Advanced Geometry"],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Nine-Point Circle",
+  "learningObjectives": [
+    "Identify the nine special points on the nine-point circle",
+    "Understand that N is the midpoint of segment OH",
+    "Recognize that the nine-point radius equals half the circumradius",
+    "Appreciate this elegant geometric relationship"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": ["Orthocenter", "Circumcenter", "Euler line"],
+  "library": "p5.js",
+  "canvasDimensions": "700x600",
+  "responsive": true,
+  "controls": [
+    {"type": "drag", "label": "Drag vertices to reshape"},
+    {"type": "button", "label": "Toggle point groups"}
+  ]
+}

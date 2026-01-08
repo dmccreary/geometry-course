@@ -1,0 +1,28 @@
+{
+  "title": "Parallel Postulate History",
+  "description": "Interactive infographic showing the history and significance of the Parallel Postulate.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "History of Mathematics"],
+  "type": "Interactive Infographic",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Non-Euclidean Geometry",
+  "learningObjectives": [
+    "Understand the historical context of the Parallel Postulate",
+    "Evaluate the mathematical significance of proving impossibility",
+    "Compare Euclidean and non-Euclidean geometries"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": ["Parallel lines", "Euclidean geometry basics"],
+  "library": "p5.js",
+  "canvasDimensions": "900x600",
+  "responsive": true,
+  "controls": [
+    {"type": "hover", "label": "Timeline events"},
+    {"type": "click", "label": "Geometry panels"}
+  ]
+}

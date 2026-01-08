@@ -115,6 +115,8 @@ Triangles can be classified by the relationships among their side lengths:
     Implementation: SVG with precise measurements
 </details>
 
+<iframe src="../../sims/triangle-classification-sides/main.html" height="422px" width="100%" scrolling="no"></iframe>
+
 **Scalene Triangle:** A triangle with **all three sides of different lengths**. Since no sides are equal, no angles are equal either.
 
 **Isosceles Triangle:** A triangle with **exactly two sides of equal length** (congruent). The two equal sides are called **legs**, and the third side is the **base**. The angles opposite the equal sides (called **base angles**) are also equal.
@@ -186,6 +188,8 @@ Triangles can also be classified by their angle measures:
 
     Implementation: SVG with accurate angle measures
 </details>
+
+<iframe src="../../sims/triangle-classification-angles/main.html" height="422px" width="100%" scrolling="no"></iframe>
 
 **Acute Triangle:** A triangle where **all three angles are less than 90°** (all acute angles).
 
@@ -288,6 +292,8 @@ Triangles can also be classified by their angle measures:
     Implementation: p5.js with distance and angle calculations
 </details>
 
+<iframe src="../../sims/triangle-classifier/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 ## Triangle Congruence Criteria
 
 In Chapter 6, you learned that two figures are congruent if one can be mapped onto the other through rigid motions (translations, rotations, reflections). For triangles specifically, we have powerful shortcuts that allow us to prove congruence without checking all six pairs of corresponding parts.
@@ -353,6 +359,8 @@ In symbols: If $AB \cong DE$, $BC \cong EF$, and $AC \cong DF$, then $\triangle 
     Implementation: SVG with construction visualization
 </details>
 
+<iframe src="../../sims/sss-congruence/main.html" height="402px" width="100%" scrolling="no"></iframe>
+
 ### SAS (Side-Angle-Side) Congruence
 
 **SAS Congruence Postulate:** If two sides and the **included angle** of one triangle are congruent to two sides and the included angle of another triangle, then the triangles are congruent.
@@ -411,6 +419,8 @@ In symbols: If $AB \cong DE$, $\angle B \cong \angle E$, and $BC \cong EF$, then
 
     Implementation: SVG with clear annotations
 </details>
+
+<iframe src="../../sims/sas-congruence/main.html" height="452px" width="100%" scrolling="no"></iframe>
 
 ### ASA (Angle-Side-Angle) Congruence
 
@@ -531,6 +541,8 @@ This is a special case that only applies to right triangles.
 
     Implementation: Infographic-style SVG with clear visual hierarchy
 </details>
+
+<iframe src="../../sims/congruence-criteria-reference/main.html" height="702px" width="100%" scrolling="no"></iframe>
 
 #### Drawing: Triangle Congruence Criterion Selector
 <details markdown="1">
@@ -771,6 +783,8 @@ This is one of the most important theorems in geometry. It means that if you kno
     Implementation: SVG with step-by-step diagram or animated sequence
 </details>
 
+<iframe src="../../sims/triangle-sum-theorem/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 ### Exterior Angle Theorem
 
 **Exterior Angle Theorem:** The measure of an **exterior angle** of a triangle equals the sum of the measures of the two **remote interior angles** (the two interior angles not adjacent to the exterior angle).
@@ -840,6 +854,8 @@ $m\angle 4 = m\angle A + m\angle B$
 
     Implementation: SVG with clear color coding and annotations
 </details>
+
+<iframe src="../../sims/exterior-angle-theorem/main.html" height="452px" width="100%" scrolling="no"></iframe>
 
 #### Drawing: Exterior Angle Explorer
 <details markdown="1">
@@ -1035,6 +1051,8 @@ In other words: If $AB \cong AC$ in triangle ABC, then $\angle B \cong \angle C$
     Implementation: SVG with clear geometric markings
 </details>
 
+<iframe src="../../sims/isosceles-triangle-properties/main.html" height="482px" width="100%" scrolling="no"></iframe>
+
 ## Triangle Inequality and Side-Angle Relationships
 
 Triangles must satisfy certain inequality conditions to exist. Not every combination of side lengths can form a triangle, and there are important relationships between the sizes of sides and angles.
@@ -1178,6 +1196,8 @@ This theorem tells us which combinations of three lengths can actually form a tr
     Implementation: p5.js with arc drawing and intersection detection
 </details>
 
+<iframe src="../../sims/triangle-inequality-explorer/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 ### Hinge Theorem (SAS Inequality Theorem)
 
 **Hinge Theorem:** If two sides of one triangle are congruent to two sides of another triangle, but the included angle of the first triangle is larger than the included angle of the second, then the third side of the first triangle is longer than the third side of the second.
@@ -1258,6 +1278,8 @@ Think of it like a door hinge: the wider you open the hinge (larger angle), the 
 
     Implementation: SVG with door hinge illustration and geometric comparison
 </details>
+
+<iframe src="../../sims/hinge-theorem/main.html" height="502px" width="100%" scrolling="no"></iframe>
 
 ## Special Segments in Triangles
 
@@ -1412,6 +1434,8 @@ An **angle bisector** of a triangle is a segment that divides an angle into two 
 
     Implementation: SVG with precise geometric constructions
 </details>
+
+<iframe src="../../sims/special-segments/main.html" height="652px" width="100%" scrolling="no"></iframe>
 
 #### Drawing: Special Segments Explorer
 <details markdown="1">

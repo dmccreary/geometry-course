@@ -1,0 +1,27 @@
+{
+  "title": "Four Types of Slope",
+  "description": "Four-panel diagram showing positive, negative, zero, and undefined slope types with visual examples.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Slope",
+  "learningObjectives": [
+    "Classify lines by slope type",
+    "Interpret slope values",
+    "Calculate slope using rise/run"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": ["Coordinate plane", "Fractions"],
+  "library": "p5.js",
+  "canvasDimensions": "900x700",
+  "responsive": true,
+  "controls": [
+    {"type": "hover", "label": "Panel highlight"}
+  ]
+}

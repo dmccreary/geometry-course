@@ -1,0 +1,26 @@
+{
+  "title": "Parallel Lines in the Coordinate Plane",
+  "description": "Diagram showing three parallel lines with equal slopes and a table comparing their equations.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Parallel Lines",
+  "learningObjectives": [
+    "Identify parallel lines by equal slopes",
+    "Write equations of parallel lines"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": ["Slope", "Slope-intercept form"],
+  "library": "p5.js",
+  "canvasDimensions": "900x600",
+  "responsive": true,
+  "controls": [
+    {"type": "hover", "label": "Line highlight"}
+  ]
+}

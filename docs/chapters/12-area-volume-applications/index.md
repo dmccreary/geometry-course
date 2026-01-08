@@ -592,6 +592,8 @@ Create an interactive p5.js simulation for calculating circle measurements.
 
 </details>
 
+<iframe src="../../sims/circle-area-calculator/main.html" height="452px" width="100%" scrolling="no"></iframe>
+
 ---
 
 ## Part 3: Three-Dimensional Solids

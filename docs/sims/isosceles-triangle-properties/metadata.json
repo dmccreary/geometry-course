@@ -1,0 +1,26 @@
+{
+  "title": "Isosceles Triangle Properties",
+  "description": "Interactive diagram showing Base Angles Theorem for isosceles triangles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Isosceles Triangles",
+  "learningObjectives": [
+    "Identify parts of isosceles triangles",
+    "Apply Base Angles Theorem"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "3 minutes",
+  "prerequisites": ["Triangle classification", "Angle relationships"],
+  "library": "p5.js",
+  "canvasDimensions": "800x480",
+  "responsive": true,
+  "controls": [
+    {"type": "click", "label": "Cycle through examples"}
+  ]
+}

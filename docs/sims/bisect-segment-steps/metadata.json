@@ -1,0 +1,27 @@
+{
+  "title": "Bisect Segment Steps",
+  "description": "Reference diagram showing the four-step construction of a segment bisector and perpendicular bisector.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "type": "Interactive Reference",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Construct a segment bisector using compass and straightedge",
+    "Understand why the construction creates a perpendicular bisector",
+    "Identify the midpoint and its properties"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "3 minutes",
+  "prerequisites": ["Segments", "Perpendicular lines"],
+  "library": "p5.js",
+  "canvasDimensions": "900x400",
+  "responsive": true,
+  "controls": [
+    {"type": "hover", "label": "Panel highlight"}
+  ]
+}

@@ -79,6 +79,8 @@ Annotations:
 Implementation: Can be created using p5.js or as a static SVG diagram
 </details>
 
+<iframe src="../../sims/centroid-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### Properties of the Centroid
 
 The centroid has several important properties that make it useful:
@@ -208,6 +210,8 @@ Annotations:
 Implementation: Can be created using p5.js with circle() and line() functions, or as static SVG
 </details>
 
+<iframe src="../../sims/circumcenter-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### Properties of the Circumcenter
 
 The circumcenter has these distinctive properties:
@@ -288,6 +292,8 @@ Implementation notes:
 - Use atan2() for angle calculations
 </details>
 
+<iframe src="../../sims/circumcenter-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### The Circumradius Formula
 
 For a triangle with sides of length $a$, $b$, and $c$, and area $A$, the circumradius $R$ can be calculated using:
@@ -362,6 +368,8 @@ Visual note: Show both an acute triangle example (orthocenter inside) and an obt
 Implementation: Static diagram or interactive p5.js sketch showing both cases
 </details>
 
+<iframe src="../../sims/orthocenter-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### Properties of the Orthocenter
 
 The orthocenter has these notable properties:
@@ -415,6 +423,8 @@ Color scheme:
 Implementation: Static diagram ideal for clear comparison, or SVG with hover effects
 </details>
 
+<iframe src="../../sims/orthocenter-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### The Euler Line
 
 One of the most beautiful discoveries in triangle geometry is the **Euler line**, named after Swiss mathematician Leonhard Euler. For most triangles, three of the four triangle centers—the centroid, circumcenter, and orthocenter—always lie on the same straight line. This line is called the Euler line.
@@ -459,6 +469,8 @@ Annotations:
 
 Implementation: Static diagram or p5.js sketch that can be used in textbook
 </details>
+
+<iframe src="../../sims/euler-line-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
 
 #### Drawing: Euler Line Explorer
 <details markdown="1">
@@ -523,6 +535,8 @@ Implementation notes:
 - Add smooth transitions when using preset buttons
 </details>
 
+<iframe src="../../sims/euler-line-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### Real-World Applications of Orthocenters
 
 Orthocenters appear in:
@@ -580,6 +594,8 @@ Annotations:
 
 Implementation: Can be created using p5.js or as static SVG diagram
 </details>
+
+<iframe src="../../sims/incircle-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
 
 ### Properties of the Incenter
 
@@ -669,6 +685,8 @@ Implementation notes:
 - Find tangency points by dropping perpendiculars from incenter to each side
 </details>
 
+<iframe src="../../sims/incircle-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### Comparing All Four Centers
 
 Now that we've explored all four triangle centers, let's compare their key characteristics:
@@ -728,6 +746,8 @@ Annotations:
 
 Implementation: Static diagram ideal for reference, or interactive p5.js version
 </details>
+
+<iframe src="../../sims/triangle-centers-comparison/main.html" height="602px" width="100%" scrolling="no"></iframe>
 
 #### Drawing: Complete Triangle Centers Explorer
 <details markdown="1">
@@ -817,6 +837,8 @@ Implementation notes:
 - Calculate and display Euler line as line through any two of {G, O, H}
 </details>
 
+<iframe src="../../sims/triangle-centers-comparison/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 ### Real-World Applications of Incenters
 
 Incenters are used in:
@@ -870,6 +892,8 @@ Annotations:
 
 Implementation: Static diagram perfect for highlighting this special case
 </details>
+
+<iframe src="../../sims/triangle-centers-comparison/main.html" height="602px" width="100%" scrolling="no"></iframe>
 
 ### The Isosceles Triangle: Symmetry on the Axis
 
@@ -954,6 +978,8 @@ Annotations:
 
 Implementation: Static diagram for textbook, with potential interactive version highlighting each group of three points
 </details>
+
+<iframe src="../../sims/nine-point-circle/main.html" height="602px" width="100%" scrolling="no"></iframe>
 
 ### The Fermat Point: Minimizing Total Distance
 

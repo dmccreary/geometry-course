@@ -1,0 +1,27 @@
+{
+  "title": "Bisect Angle Steps",
+  "description": "Reference diagram showing the step-by-step construction of an angle bisector.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "type": "Interactive Reference",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Construct an angle bisector using compass and straightedge",
+    "Understand how the construction creates two congruent angles",
+    "Apply the technique to divide any angle in half"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "3 minutes",
+  "prerequisites": ["Angles", "Congruent angles"],
+  "library": "p5.js",
+  "canvasDimensions": "900x380",
+  "responsive": true,
+  "controls": [
+    {"type": "hover", "label": "Panel highlight"}
+  ]
+}

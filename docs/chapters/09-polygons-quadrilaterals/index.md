@@ -224,6 +224,8 @@ Implementation notes:
 - Use lerp() for smooth animation transitions
 </details>
 
+<iframe src="../../sims/polygon-interior-angles/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ## Exterior Angles of Polygons
 
 While interior angles measure the space inside each corner of a polygon, **exterior angles** measure the amount of turn at each vertex as you walk around the polygon's perimeter. To find an exterior angle, extend one side of the polygon and measure the angle between the extension and the adjacent side.
@@ -384,6 +386,8 @@ Labels:
 
 Implementation: SVG hierarchical diagram with embedded shape previews
 </details>
+
+<iframe src="../../sims/quadrilateral-hierarchy/main.html" height="552px" width="100%" scrolling="no"></iframe>
 
 ### Parallelograms
 
@@ -1063,6 +1067,8 @@ Implementation notes:
 - Use class structure for different polygon types
 </details>
 
+<iframe src="../../sims/tessellation-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### Tessellations in Nature and Design
 
 Tessellations appear throughout the natural world and human creativity:
@@ -1138,6 +1144,8 @@ Layout:
 
 Implementation: SVG or vector graphics with precise geometric construction
 </details>
+
+<iframe src="../../sims/tessellation-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
 
 ## Summary and Key Takeaways
 

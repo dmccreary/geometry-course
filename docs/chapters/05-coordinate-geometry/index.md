@@ -43,6 +43,11 @@ Every point in the plane can be identified by an **ordered pair** of numbers (x,
 - The **y-coordinate** tells how far up or down the point is from the origin
 
 #### Diagram: The Coordinate Plane and Quadrants
+
+<iframe src="/sims/coordinate-plane-quadrants/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Coordinate Plane and Quadrants MicroSim](/sims/coordinate-plane-quadrants/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Coordinate Plane Structure</summary>
     Type: diagram
@@ -124,6 +129,10 @@ where:
 This formula comes directly from the Pythagorean theorem! The distance between two points is the hypotenuse of a right triangle whose legs are the horizontal and vertical distances between the points.
 
 #### Diagram: Distance Formula Visualization
+
+<iframe src="../../sims/distance-formula-visualization/main.html" height="402px" width="100%" scrolling="no"></iframe>
+
+[Distance Formula Visualization MicroSim](/sims/distance-formula-visualization/){ .md-button .md-button--primary }
 
 <details markdown="1">
     <summary>Deriving the Distance Formula from Pythagorean Theorem</summary>
@@ -291,6 +300,11 @@ where:
 The midpoint formula finds the **average** of the x-coordinates and the average of the y-coordinates. It's like finding the balance point of the segment.
 
 #### Diagram: Midpoint Formula Visualization
+
+<iframe src="../../sims/midpoint-formula-visualization/main.html" height="452px" width="100%" scrolling="no"></iframe>
+
+[Midpoint Formula Visualization MicroSim](/sims/midpoint-formula-visualization/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Finding the Midpoint</summary>
     Type: diagram
@@ -341,6 +355,11 @@ The midpoint formula finds the **average** of the x-coordinates and the average 
 </details>
 
 #### Drawing: Midpoint Explorer with Verification
+
+<iframe src="../../sims/midpoint-explorer/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
+[Midpoint Explorer MicroSim](/sims/midpoint-explorer/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Midpoint Calculator</summary>
     Type: microsim
@@ -449,6 +468,11 @@ where:
 - **Undefined slope**: Vertical line (no run, division by zero)
 
 #### Diagram: Four Types of Slope
+
+<iframe src="../../sims/slope-types/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
+[Four Types of Slope MicroSim](/sims/slope-types/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Slope Types and Interpretation</summary>
     Type: diagram
@@ -522,6 +546,11 @@ where:
 </details>
 
 #### Drawing: Slope Explorer and Calculator
+
+<iframe src="../../sims/slope-explorer/main.html" height="752px" width="100%" scrolling="no"></iframe>
+
+[Slope Explorer MicroSim](/sims/slope-explorer/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Slope Visualization</summary>
     Type: microsim
@@ -655,6 +684,11 @@ This form is called "slope-intercept" because you can immediately see both the s
 - Y-intercept: $b = 3$ (crosses y-axis at point (0, 3))
 
 #### Diagram: Slope-Intercept Form Visualization
+
+<iframe src="../../sims/slope-intercept-form/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
+[Slope-Intercept Form MicroSim](/sims/slope-intercept-form/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Understanding y = mx + b</summary>
     Type: diagram
@@ -718,6 +752,11 @@ This form is called "slope-intercept" because you can immediately see both the s
 </details>
 
 #### Drawing: Slope-Intercept Form Explorer
+
+<iframe src="../../sims/slope-intercept-explorer/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
+[Slope-Intercept Explorer MicroSim](/sims/slope-intercept-explorer/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive y = mx + b Grapher</summary>
     Type: microsim
@@ -848,6 +887,11 @@ Solution:
   - $y = 3x - 1$
 
 #### Drawing: Point-Slope Form Builder
+
+<iframe src="../../sims/point-slope-builder/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
+[Point-Slope Builder MicroSim](/sims/point-slope-builder/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Point-Slope Form Tool</summary>
     Type: microsim
@@ -974,6 +1018,11 @@ If line 1 has slope $m_1$ and line 2 has slope $m_2$, then:
 - All parallel lines have equations $y = mx + b$ where $m$ is constant and $b$ varies
 
 #### Diagram: Parallel Lines in the Coordinate Plane
+
+<iframe src="../../sims/parallel-lines-coordinate/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
+[Parallel Lines Diagram MicroSim](/sims/parallel-lines-coordinate/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Parallel Lines with Equal Slopes</summary>
     Type: diagram
@@ -1048,6 +1097,11 @@ If line 1 has slope $m_1$ and line 2 has slope $m_2$, then:
 **Special case:** Horizontal lines ($m = 0$) are perpendicular to vertical lines ($m$ undefined).
 
 #### Diagram: Perpendicular Lines with Negative Reciprocal Slopes
+
+<iframe src="../../sims/perpendicular-lines-slopes/main.html" height="452px" width="100%" scrolling="no"></iframe>
+
+[Perpendicular Lines Diagram MicroSim](/sims/perpendicular-lines-slopes/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Perpendicular Slope Relationships</summary>
     Type: diagram
@@ -1108,6 +1162,11 @@ If line 1 has slope $m_1$ and line 2 has slope $m_2$, then:
 </details>
 
 #### Drawing: Parallel and Perpendicular Line Explorer
+
+<iframe src="../../sims/parallel-perpendicular-explorer/main.html" height="752px" width="100%" scrolling="no"></iframe>
+
+[Parallel/Perpendicular Explorer MicroSim](/sims/parallel-perpendicular-explorer/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Parallel/Perpendicular Relationships</summary>
     Type: microsim
@@ -1259,6 +1318,11 @@ A **transversal** is a line that intersects two or more other lines. When a tran
 4. Measure angles using slopes
 
 #### Drawing: Coordinate Plane Transversal Analysis
+
+<iframe src="../../sims/transversal-coordinate-analysis/main.html" height="752px" width="100%" scrolling="no"></iframe>
+
+[Transversal Analysis MicroSim](/sims/transversal-coordinate-analysis/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Transversal with Parallel Lines - Coordinate Approach</summary>
     Type: microsim

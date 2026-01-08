@@ -1,0 +1,31 @@
+{
+  "title": "Interactive Triangle Classifier",
+  "description": "Drag triangle vertices to create and classify triangles by sides and angles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Triangle Classification",
+  "learningObjectives": [
+    "Classify triangles by sides",
+    "Classify triangles by angles",
+    "Understand dual classification system"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": ["Triangle classification concepts"],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {"type": "drag", "label": "Move vertices"},
+    {"type": "button", "label": "Reset triangle"},
+    {"type": "button", "label": "Random triangle"},
+    {"type": "toggle", "label": "Grid display"},
+    {"type": "toggle", "label": "Measurements display"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Trigonometric Ratios Explorer",
+  "description": "Interactive visualization of sine, cosine, and tangent ratios in a right triangle with adjustable angle.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Trigonometry"],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Trigonometric Ratios",
+  "learningObjectives": [
+    "Identify opposite, adjacent, and hypotenuse relative to an angle",
+    "Calculate sine, cosine, and tangent ratios",
+    "Understand how trig ratios change as angles change"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": ["Right triangles", "Ratios", "Angles"],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [
+    {"type": "slider", "label": "Angle θ (5° to 85°)"}
+  ]
+}

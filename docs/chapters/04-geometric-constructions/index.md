@@ -46,6 +46,11 @@ A **compass** is a tool with two legs: one holds a pencil or marking point, and 
 The compass is powerful because circles have perfect symmetry—every point on a circle is exactly the same distance from the center.
 
 #### Diagram: Parts of a Compass and Basic Circle Construction
+
+<iframe src="/sims/compass-parts/main.html" height="452px" width="100%" scrolling="no"></iframe>
+
+[Compass Parts MicroSim](/sims/compass-parts/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Compass Anatomy and Circle Drawing</summary>
     Type: diagram
@@ -92,6 +97,11 @@ A **straightedge** is a ruler without markings. You cannot measure distances wit
 Think of the straightedge as a tool that extends the line determined by two points infinitely in both directions (or as far as you need).
 
 #### Diagram: Straightedge vs. Ruler
+
+<iframe src="/sims/straightedge-vs-ruler/main.html" height="402px" width="100%" scrolling="no"></iframe>
+
+[Straightedge vs Ruler MicroSim](/sims/straightedge-vs-ruler/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Straightedge Comparison</summary>
     Type: diagram
@@ -162,6 +172,11 @@ One of the most basic constructions is **copying a segment**—creating a new li
 5. CD ≅ AB (the segments are congruent)
 
 #### Drawing: Copy a Segment Interactive Construction
+
+<iframe src="/sims/copy-segment/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
+[Copy Segment MicroSim](/sims/copy-segment/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Segment Copying</summary>
     Type: microsim
@@ -239,6 +254,11 @@ One of the most basic constructions is **copying a segment**—creating a new li
 </details>
 
 #### Diagram: Copying a Segment - All Steps Shown
+
+<iframe src="/sims/copy-segment-steps/main.html" height="302px" width="100%" scrolling="no"></iframe>
+
+[Copy Segment Steps MicroSim](/sims/copy-segment-steps/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Segment Copying Reference Diagram</summary>
     Type: diagram
@@ -304,6 +324,11 @@ One of the most basic constructions is **copying a segment**—creating a new li
 6. Draw ray DF; now ∠EDF ≅ ∠ABC
 
 #### Drawing: Copy an Angle Interactive Construction
+
+<iframe src="/sims/copy-angle/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Copy Angle MicroSim](/sims/copy-angle/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Angle Copying</summary>
     Type: microsim
@@ -403,6 +428,11 @@ A **segment bisector** is a line, ray, or segment that divides a segment into tw
 5. Line PQ is the perpendicular bisector of AB; it intersects AB at midpoint M
 
 #### Diagram: Bisecting a Segment - Complete Construction
+
+<iframe src="/sims/bisect-segment-steps/main.html" height="402px" width="100%" scrolling="no"></iframe>
+
+[Bisect Segment Steps MicroSim](/sims/bisect-segment-steps/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Segment Bisector Construction Steps</summary>
     Type: diagram
@@ -467,6 +497,11 @@ The construction above creates a **perpendicular bisector**—a special line tha
 An important property: *Every point on the perpendicular bisector is equidistant from the endpoints of the segment.* This means if you pick any point on line PQ, its distance to A equals its distance to B.
 
 #### Drawing: Perpendicular Bisector Explorer
+
+<iframe src="/sims/perpendicular-bisector-explorer/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Perpendicular Bisector Explorer MicroSim](/sims/perpendicular-bisector-explorer/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Perpendicular Bisector</summary>
     Type: microsim
@@ -558,6 +593,11 @@ An important property: *Every point on the perpendicular bisector is equidistant
 5. Draw ray BD; this is the angle bisector
 
 #### Diagram: Bisecting an Angle - Sequential Steps
+
+<iframe src="/sims/bisect-angle-steps/main.html" height="382px" width="100%" scrolling="no"></iframe>
+
+[Bisect Angle Steps MicroSim](/sims/bisect-angle-steps/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Angle Bisector Construction</summary>
     Type: diagram
@@ -615,6 +655,11 @@ An important property: *Every point on the perpendicular bisector is equidistant
 </details>
 
 #### Drawing: Angle Bisector Construction Practice
+
+<iframe src="/sims/angle-bisector-construction/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Angle Bisector Construction MicroSim](/sims/angle-bisector-construction/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Angle Bisector Tutorial</summary>
     Type: microsim
@@ -728,6 +773,11 @@ Perpendicular lines meet at right angles (90°). There are two common perpendicu
 4. Draw line PQ; this is perpendicular to ℓ
 
 #### Diagram: Two Types of Perpendicular Constructions
+
+<iframe src="/sims/perpendicular-constructions/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
+[Perpendicular Constructions MicroSim](/sims/perpendicular-constructions/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Perpendicular Construction Comparison</summary>
     Type: diagram
@@ -793,6 +843,11 @@ Perpendicular lines meet at right angles (90°). There are two common perpendicu
 </details>
 
 #### Drawing: Perpendicular Construction Selector
+
+<iframe src="/sims/perpendicular-construction-selector/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
+[Perpendicular Construction Selector MicroSim](/sims/perpendicular-construction-selector/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Perpendicular Construction</summary>
     Type: microsim
@@ -891,6 +946,11 @@ Parallel lines never intersect—they maintain a constant distance apart. The **
 This works because corresponding angles are congruent when lines are parallel!
 
 #### Diagram: Constructing Parallel Lines Using Corresponding Angles
+
+<iframe src="/sims/parallel-lines-construction/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Parallel Lines Construction MicroSim](/sims/parallel-lines-construction/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Parallel Line Construction</summary>
     Type: diagram
@@ -961,6 +1021,11 @@ A more intuitive modern version:
 This postulate distinguishes Euclidean geometry from other geometries. For over 2,000 years, mathematicians tried to prove it from other axioms, but eventually discovered it's an independent assumption. Changing this postulate leads to non-Euclidean geometries used in Einstein's relativity!
 
 #### Infographic: The Parallel Postulate Through History
+
+<iframe src="/sims/parallel-postulate-history/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
+[Parallel Postulate History MicroSim](/sims/parallel-postulate-history/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>History and Importance of the Parallel Postulate</summary>
     Type: infographic
@@ -1036,6 +1101,11 @@ This postulate distinguishes Euclidean geometry from other geometries. For over 
 </details>
 
 #### Drawing: Parallel Lines Construction Challenge
+
+<iframe src="/sims/parallel-lines-challenge/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
+[Parallel Lines Challenge MicroSim](/sims/parallel-lines-challenge/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Parallel Construction Practice</summary>
     Type: microsim
@@ -1144,6 +1214,11 @@ Let's review the key constructions you've learned:
 - **Parallel through a point**: Draw transversal, copy corresponding angle
 
 #### Diagram: Construction Techniques Reference Chart
+
+<iframe src="/sims/construction-reference-chart/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Construction Techniques Reference Chart MicroSim](/sims/construction-reference-chart/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Quick Reference for All Constructions</summary>
     Type: diagram
@@ -1250,6 +1325,11 @@ While we now have digital tools, understanding classical constructions has pract
 - 3D modeling tools implement bisection and perpendicular operations
 
 #### Drawing: Construction in Action - Design a Structure
+
+<iframe src="/sims/construction-design-challenge/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Construction Design Challenge MicroSim](/sims/construction-design-challenge/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Apply Constructions to Design Challenge</summary>
     Type: microsim
@@ -1361,6 +1441,11 @@ In the 19th century, mathematicians proved these constructions are **impossible*
 However, these "impossible" problems led to important mathematical discoveries in algebra and number theory!
 
 #### Infographic: The Three Impossible Constructions
+
+<iframe src="/sims/impossible-constructions/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
+[Impossible Constructions MicroSim](/sims/impossible-constructions/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Famous Impossible Construction Problems</summary>
     Type: infographic
@@ -1468,6 +1553,11 @@ To master geometric constructions, you need to practice. Here are some challenge
 12. Construct a 30° angle without using a protractor
 
 #### Drawing: Construction Practice Workbench
+
+<iframe src="/sims/construction-practice-workbench/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Construction Practice Workbench MicroSim](/sims/construction-practice-workbench/){ .md-button .md-button--primary }
+
 <details markdown="1">
     <summary>Interactive Construction Practice Tool</summary>
     Type: microsim

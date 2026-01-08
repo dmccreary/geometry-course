@@ -1,0 +1,29 @@
+{
+  "title": "Triangle Congruence Identifier",
+  "description": "Interactive practice tool for identifying which triangle congruence criterion applies.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Congruence"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Triangle Congruence",
+  "learningObjectives": [
+    "Apply congruence criteria",
+    "Evaluate sufficiency of given information"
+  ],
+  "bloomsLevel": "Evaluating",
+  "duration": "10-15 minutes",
+  "prerequisites": ["Triangle congruence criteria"],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {"type": "button", "label": "Select answer"},
+    {"type": "button", "label": "Check Answer"},
+    {"type": "button", "label": "Next Problem"},
+    {"type": "button", "label": "Hint"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Translation Explorer",
+  "description": "Interactive tool for exploring translations with adjustable horizontal and vertical components.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Translations",
+  "learningObjectives": [
+    "Apply translation rules to coordinates",
+    "Analyze preservation of size and shape"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5-10 minutes",
+  "prerequisites": ["Coordinate plane basics", "Translation definition"],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {"type": "slider", "label": "Horizontal (h)"},
+    {"type": "slider", "label": "Vertical (k)"},
+    {"type": "button", "label": "Animate"},
+    {"type": "button", "label": "Toggle Vector"}
+  ]
+}

@@ -82,6 +82,8 @@ Color scheme: Triangles outlined in black, angles marked in red/blue/green, rati
 Implementation: Can be created using p5.js, GeoGebra, or static diagram tool
 </details>
 
+<iframe src="../../sims/similar-triangles-comparison/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 ### Scale Factor
 
 The **scale factor** is the ratio of corresponding side lengths between two similar figures. If the scale factor is greater than 1, the image is an enlargement. If it's between 0 and 1, the image is a reduction.
@@ -456,6 +458,8 @@ Implementation: p5.js with animation using frameCount
 Include smooth transitions for the rearrangement animation
 </details>
 
+<iframe src="../../sims/pythagorean-theorem/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 ### Pythagorean Triples
 
 A **Pythagorean triple** is a set of three positive integers $a$, $b$, and $c$ that satisfy the Pythagorean theorem: $a^2 + b^2 = c^2$.
@@ -661,6 +665,8 @@ Color scheme: Bright, distinct colors for each side type
 
 Implementation: Static diagram or interactive p5.js where students can change the angle
 </details>
+
+<iframe src="../../sims/trig-ratios-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
 
 #### Drawing: Trigonometric Ratios Explorer
 <details markdown="1">
