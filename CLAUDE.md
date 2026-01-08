@@ -99,6 +99,11 @@ MicroSims are p5.js sketches that visualize geometry concepts. Each MicroSim typ
    http://127.0.0.1:5500/docs/sims/[sim-name]/main.html
    ```
 
+6. **Auto-open after changes**: After creating or modifying a MicroSim, ALWAYS open the Live Server preview URL in the browser:
+   ```bash
+   open "http://127.0.0.1:5500/docs/sims/[sim-name]/main.html"
+   ```
+
 ### Learning Graph System
 
 The learning graph (`data/geometry.json`) is a vis.js network graph structure:
