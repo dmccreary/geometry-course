@@ -8,14 +8,14 @@ og:image: /sims/word-cloud/word-cloud.png
 
 # Geometry Word Cloud
 
-<iframe src="word-cloud.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="600px" scrolling="no"></iframe>
 
-[Run the Word Cloud MicroSim Fullscreen](word-cloud.html){ .md-button .md-button--primary }
+[Run the Word Cloud MicroSim Fullscreen](main.html){ .md-button .md-button--primary }
 
 **Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/word-cloud/word-cloud.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/word-cloud/main.html" width="100%" height="600px" scrolling="no"></iframe>
 ```
 
 ## Description

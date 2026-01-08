@@ -8,16 +8,16 @@ og:image: /sims/cosine/cosine.png
 
 # Cosine as the Ratio of Two Sides of a Triangle
 
-<iframe src="cosine.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="450px" scrolling="no"></iframe>
 
-[Run the Cosine MicroSim Fullscreen](./cosine.html){ .md-button .md-button--primary }
+[Run the Cosine MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
 [Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/4u1wiQds8){ .md-button }
 
 **Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/cosine/cosine.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/cosine/main.html" width="100%" height="450px" scrolling="no"></iframe>
 ```
 
 ## Description

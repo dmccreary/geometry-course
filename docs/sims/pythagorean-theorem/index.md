@@ -8,16 +8,16 @@ og:image: /sims/pythagorean-theorem/pythagorean-theorem.png
 
 # Pythagorean Theorem MicroSim
 
-<iframe src="pythagorean-theorem.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="500px" scrolling="no"></iframe>
 
-[Run the Pythagorean Theorem MicroSim Fullscreen](./pythagorean-theorem.html){ .md-button .md-button--primary }
+[Run the Pythagorean Theorem MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
 [Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/vmutQF9Qi){ .md-button }
 
 **Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/pythagorean-theorem/pythagorean-theorem.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/pythagorean-theorem/main.html" width="100%" height="500px" scrolling="no"></iframe>
 ```
 
 ## Description

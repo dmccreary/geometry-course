@@ -8,14 +8,14 @@ og:image: /sims/sine-and-cosine-circle/sine-and-cosine-circle.png
 
 # Sine and Cosine Circle
 
-<iframe src="sine-and-cosine-circle-v1.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="450px" scrolling="no"></iframe>
 
-[Run the Sine and Cosine Circle MicroSim Fullscreen](./sine-and-cosine-circle-v1.html){ .md-button .md-button--primary }
+[Run the Sine and Cosine Circle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
 **Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/sine-and-cosine-circle/sine-and-cosine-circle-v1.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/sine-and-cosine-circle/main.html" width="100%" height="450px" scrolling="no"></iframe>
 ```
 
 ## Description

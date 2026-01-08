@@ -2,7 +2,7 @@
 
 ![](workflow.png)
 
-[Workflow in vis.js](workflow.html)
+[Workflow in vis.js](main.html)
 
 ## Prompt
 

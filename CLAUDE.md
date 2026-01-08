@@ -61,7 +61,7 @@ MicroSims are p5.js sketches that visualize geometry concepts. Each MicroSim typ
 
 1. **Structure**: Each sim in `docs/sims/[sim-name]/`
    - `index.md` - Documentation page with iframe embedding
-   - `[sim-name].html` - Standalone HTML file with p5.js sketch
+   - `main.html` - Standalone HTML file (ALWAYS use this name for consistency)
    - `[sim-name].js` - p5.js JavaScript code
    - `[sim-name].png` - Screenshot/preview image
 
@@ -89,9 +89,14 @@ MicroSims are p5.js sketches that visualize geometry concepts. Each MicroSim typ
    }
    ```
 
-4. **Embedding**: MicroSims can be embedded using iframe:
+4. **Embedding**: MicroSims are embedded using iframe with `main.html`:
    ```html
-   <iframe src="path/to/sim.html" width="620" height="455" scrolling="no"></iframe>
+   <iframe src="main.html" width="100%" height="450px" scrolling="no"></iframe>
+   ```
+
+5. **Live Server Preview**: Use VS Code Live Server extension for fast iteration:
+   ```
+   http://127.0.0.1:5500/docs/sims/[sim-name]/main.html
    ```
 
 ### Learning Graph System
@@ -119,12 +124,13 @@ Key configuration in `mkdocs.yml`:
 
 1. Create directory: `docs/sims/[sim-name]/`
 2. Create p5.js sketch (typically in p5.js web editor first)
-3. Export as standalone HTML or create separate .js and .html files
-4. Take screenshot for preview image
+3. Create `main.html` (ALWAYS use this filename) and `[sim-name].js` files
+4. Take screenshot for preview image (`[sim-name].png`)
 5. Create `index.md` with:
    - Preview image
-   - Link to run MicroSim
-   - Link to edit in p5.js editor
+   - Iframe embedding: `<iframe src="main.html" ...>`
+   - Link to run MicroSim fullscreen
+   - Link to edit in p5.js editor (optional)
    - Sample prompt used to generate it
    - Description of what it teaches
 6. Add to navigation in `mkdocs.yml` under `MicroSims` section

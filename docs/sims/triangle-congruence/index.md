@@ -8,14 +8,14 @@ og:image: /sims/triangle-congruence/triangle-congruence.png
 
 # Triangle Congruence
 
-<iframe src="triangle-congruence.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="500px" scrolling="no"></iframe>
 
-[Run the Triangle Congruence MicroSim Fullscreen](./triangle-congruence.html){ .md-button .md-button--primary }
+[Run the Triangle Congruence MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
 **Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/triangle-congruence/triangle-congruence.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/triangle-congruence/main.html" width="100%" height="500px" scrolling="no"></iframe>
 ```
 
 ## Description

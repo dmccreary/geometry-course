@@ -8,16 +8,16 @@ og:image: /sims/comp-and-sup-angles/comp-and-sup-angles.png
 
 # Complementary and Supplementary Angles
 
-<iframe src="comp-and-sup-angles.html" width="100%" height="400px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="400px" scrolling="no"></iframe>
 
-[Run the Complementary and Supplementary MicroSim Fullscreen](./comp-and-sup-angles.html){ .md-button .md-button--primary }
+[Run the Complementary and Supplementary MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
 [Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/NnFw96a9w){ .md-button }
 
 **Copy this iframe to embed in your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/geometry-course/sims/comp-and-sup-angles/comp-and-sup-angles.html" width="100%" height="400px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/geometry-course/sims/comp-and-sup-angles/main.html" width="100%" height="400px" scrolling="no"></iframe>
 ```
 
 ## Description

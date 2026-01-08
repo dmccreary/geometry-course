@@ -17,6 +17,45 @@ Use this skill when:
 - Debugging geometry visualizations with incorrect labels or positioning
 - Building MicroSims with shapes that need to be scaled, rotated, or transformed
 
+## File Naming Convention
+
+**ALWAYS use `main.html` as the HTML filename for all MicroSims.** This ensures consistent iframe embedding across the project.
+
+### Standard Directory Structure
+
+Each MicroSim should have this structure:
+
+```
+docs/sims/[sim-name]/
+├── main.html           # REQUIRED: The HTML file (always named main.html)
+├── [sim-name].js       # JavaScript file with p5.js code
+├── index.md            # Documentation page
+├── [sim-name].png      # Screenshot/preview image
+└── metadata.json       # Optional: MicroSim metadata
+```
+
+### Live Server Preview URL
+
+After creating or modifying a MicroSim, use this URL pattern for Live Server preview:
+
+```
+http://127.0.0.1:5500/docs/sims/[sim-name]/main.html
+```
+
+### Iframe Embedding
+
+Always use `main.html` in iframe references:
+
+```html
+<iframe src="main.html" width="100%" height="450px" scrolling="no"></iframe>
+```
+
+For external embedding:
+
+```html
+<iframe src="https://dmccreary.github.io/geometry-course/sims/[sim-name]/main.html" width="100%" height="450px" scrolling="no"></iframe>
+```
+
 ## Core Principle: Local Coordinate Systems
 
 **Always draw geometric shapes in local coordinates centered at the origin, then use transformations to position them.**
@@ -225,6 +264,13 @@ function drawRightAngle(vertex, adj1, adj2, scaleFactor) {
 
 Before finalizing a geometry MicroSim, verify:
 
+### File Structure
+- [ ] HTML file is named `main.html`
+- [ ] Directory follows `docs/sims/[sim-name]/` pattern
+- [ ] index.md uses `main.html` in iframe src
+- [ ] Screenshot image exists for preview
+
+### Geometry Code Quality
 - [ ] Shapes draw in local coordinates (centered at origin)
 - [ ] Push/pop/translate/scale used for positioning
 - [ ] Stroke weights compensated for scale factor
