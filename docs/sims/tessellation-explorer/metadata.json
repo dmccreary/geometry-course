@@ -3,7 +3,11 @@
   "description": "Interactive visualization of the three regular tessellations - triangles, squares, and hexagons.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Tessellations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Tessellations"
+  ],
   "type": "Interactive Visualization",
   "format": "text/html",
   "language": "en",
@@ -13,15 +17,31 @@
   "learningObjectives": [
     "Understand why only three regular polygons tessellate alone",
     "Apply the interior angle formula to verify tessellation conditions",
-    "Recognize the 360° requirement at each vertex"
+    "Recognize the 360\u00b0 requirement at each vertex"
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Interior angles of polygons", "Regular polygons"],
+  "prerequisites": [
+    "Interior angles of polygons",
+    "Regular polygons"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x550",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Switch between triangle, square, hexagon"}
+    {
+      "type": "button",
+      "label": "Switch between triangle, square, hexagon"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

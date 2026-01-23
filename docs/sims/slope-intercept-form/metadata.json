@@ -3,7 +3,12 @@
   "description": "Two-panel diagram showing how slope and y-intercept determine a line in slope-intercept form y = mx + b.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry", "Linear Equations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry",
+    "Linear Equations"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +21,27 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Slope", "Coordinate plane"],
+  "prerequisites": [
+    "Slope",
+    "Coordinate plane"
+  ],
   "library": "p5.js",
   "canvasDimensions": "1000x500",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Panel highlight"}
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

@@ -2,7 +2,11 @@
   "title": "Koch Snowflake",
   "description": "An interactive MicroSim demonstrating the Koch snowflake fractal with adjustable recursion depth and size controls.",
   "creator": "Dan McCreary",
-  "subject": ["Mathematics", "Geometry", "Fractals"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Fractals"
+  ],
   "date": "2025-12-10",
   "type": "Interactive Simulation",
   "format": "text/html",
@@ -17,13 +21,23 @@
     "Explore the relationship between recursion depth and visual complexity",
     "Appreciate the mathematical properties of fractals"
   ],
-  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "bloomsTaxonomyLevels": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
   "duration": "10-15 minutes",
-  "prerequisites": ["Basic geometry", "Understanding of triangles"],
+  "prerequisites": [
+    "Basic geometry",
+    "Understanding of triangles"
+  ],
   "framework": "p5.js",
   "canvasDimensions": "responsive x 450",
   "responsive": true,
-  "dependencies": ["p5.js CDN"],
+  "dependencies": [
+    "p5.js CDN"
+  ],
   "accessibility": {
     "screenReaderSupport": true,
     "keyboardNavigation": false
@@ -59,7 +73,7 @@
   "equations": [
     "Perimeter at level n: P(n) = P(0) * (4/3)^n",
     "Number of segments at level n: S(n) = 3 * 4^(n-1)",
-    "Fractal dimension: log(4)/log(3) ≈ 1.26"
+    "Fractal dimension: log(4)/log(3) \u2248 1.26"
   ],
   "assumptions": [
     "Perfect geometric construction",
@@ -68,5 +82,18 @@
   "limitations": [
     "Maximum recursion level of 6 to prevent performance issues",
     "Cannot visualize infinite recursion"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

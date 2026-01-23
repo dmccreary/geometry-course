@@ -3,7 +3,12 @@
   "description": "Interactive tool for exploring coordinate geometry proofs with draggable vertices and real-time calculations.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry", "Proofs"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry",
+    "Proofs"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -18,14 +23,42 @@
   ],
   "bloomsLevel": "Creating",
   "duration": "20 minutes",
-  "prerequisites": ["Distance formula", "Midpoint formula", "Coordinate plane"],
+  "prerequisites": [
+    "Distance formula",
+    "Midpoint formula",
+    "Coordinate plane"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x620",
   "responsive": true,
   "controls": [
-    {"type": "select", "label": "Shape selection"},
-    {"type": "checkbox", "label": "Snap to grid"},
-    {"type": "checkbox", "label": "Show distances"},
-    {"type": "drag", "label": "Draggable vertices"}
+    {
+      "type": "select",
+      "label": "Shape selection"
+    },
+    {
+      "type": "checkbox",
+      "label": "Snap to grid"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show distances"
+    },
+    {
+      "type": "drag",
+      "label": "Draggable vertices"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

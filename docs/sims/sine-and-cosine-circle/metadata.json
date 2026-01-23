@@ -3,7 +3,11 @@
   "description": "An interactive MicroSim demonstrating how sine and cosine values relate to a point moving around the unit circle, with corresponding graph visualization.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["Mathematics", "Geometry", "Trigonometry"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Trigonometry"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -11,8 +15,41 @@
   "educationalLevel": "High School (Grades 9-12)",
   "learningResourceType": "simulation",
   "audience": "Students, Educators",
-  "bloomLevel": ["Understand", "Apply", "Analyze"],
-  "concepts": ["Sine", "Cosine", "Unit Circle", "Trigonometric Functions", "Periodic Functions"],
-  "prerequisites": ["Understanding of circles", "Basic angle measurement", "Introduction to functions"],
-  "library": "p5.js"
+  "bloomLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "concepts": [
+    "Sine",
+    "Cosine",
+    "Unit Circle",
+    "Trigonometric Functions",
+    "Periodic Functions"
+  ],
+  "prerequisites": [
+    "Understanding of circles",
+    "Basic angle measurement",
+    "Introduction to functions"
+  ],
+  "library": "p5.js",
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of sine and cosine circle",
+    "Apply sine and cosine circle to solve problems",
+    "Visualize and interpret sine and cosine circle relationships",
+    "Experiment with parameters to observe their effects on sine and cosine circle"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

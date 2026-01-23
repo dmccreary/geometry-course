@@ -115,5 +115,26 @@
     "commonCore": [
       "CCSS.MATH.CONTENT.HSG.CO.A.1"
     ]
-  }
+  },
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of points and lines explorer",
+    "Explore points and lines explorer through interactive visualization",
+    "Apply knowledge of points and lines explorer to solve problems",
+    "Experiment with parameters to observe their effects on points and lines explorer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

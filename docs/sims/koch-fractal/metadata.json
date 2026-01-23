@@ -1,14 +1,18 @@
 {
   "title": "Koch Fractal",
   "creator": "Generated with Claude Code",
-  "subject": ["Mathematics", "Geometry", "Fractals", "Computer Science"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Fractals",
+    "Computer Science"
+  ],
   "description": "An interactive visualization demonstrating the iterative construction of the Koch curve, a classic fractal with self-similar patterns at every scale. Students can adjust the recursion level from 0 to 6 to observe how simple iterative rules create complex fractal patterns.",
   "date": "2025-11-14",
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC 4.0",
-
   "educational": {
     "gradeLevel": "9-12",
     "subjectArea": "Mathematics",
@@ -20,7 +24,12 @@
       "Connect geometric transformations with fractal generation",
       "Calculate fractal dimensions and understand dimensions beyond integers"
     ],
-    "bloomsTaxonomy": ["Remember", "Understand", "Apply", "Analyze"],
+    "bloomsTaxonomy": [
+      "Remember",
+      "Understand",
+      "Apply",
+      "Analyze"
+    ],
     "duration": "15-20 minutes",
     "prerequisites": [
       "Basic understanding of line segments and geometric transformations",
@@ -28,19 +37,19 @@
       "Knowledge of equilateral triangles (helpful but not required)"
     ]
   },
-
   "technical": {
     "framework": "p5.js",
     "version": "1.11.10",
-    "canvasDimensions": "600×450 (width×height)",
+    "canvasDimensions": "600\u00d7450 (width\u00d7height)",
     "responsive": "Width-responsive",
-    "dependencies": ["p5.js CDN"],
+    "dependencies": [
+      "p5.js CDN"
+    ],
     "accessibility": {
       "screenReader": "ARIA labels and describe() function",
       "keyboardNav": "Slider keyboard control supported"
     }
   },
-
   "controls": [
     {
       "type": "slider",
@@ -53,7 +62,6 @@
       "purpose": "Controls the number of iterations in the Koch curve construction. Level 0 shows a straight line, while higher levels show increasingly complex fractal patterns."
     }
   ],
-
   "model": {
     "type": "Geometric Iteration",
     "variables": [
@@ -64,9 +72,9 @@
     "algorithm": "Recursive Koch curve generation using geometric transformation",
     "description": "At each recursion level, every line segment is divided into three equal parts, and the middle third is replaced with two sides of an equilateral triangle. This process creates a self-similar fractal pattern.",
     "equations": [
-      "Length at level n: (4/3)^n × original length",
+      "Length at level n: (4/3)^n \u00d7 original length",
       "Number of segments at level n: 4^n",
-      "Fractal dimension: log(4)/log(3) ≈ 1.26"
+      "Fractal dimension: log(4)/log(3) \u2248 1.26"
     ],
     "assumptions": [
       "The fractal is displayed as a 2D projection",
@@ -79,7 +87,6 @@
       "Performance may decrease at high recursion levels on slower devices"
     ]
   },
-
   "pedagogy": {
     "instructionalStrategy": "Guided exploration with scaffolded questions",
     "assessmentOpportunities": [
@@ -94,18 +101,16 @@
       "Confusion between recursion level and fractal dimension"
     ]
   },
-
   "relatedConcepts": [
     "Fractals",
     "Recursion",
     "Self-similarity",
     "Fractal dimension",
-    "Sierpiński triangle",
+    "Sierpi\u0144ski triangle",
     "Cantor set",
     "Geometric series",
     "Infinite series convergence"
   ],
-
   "references": [
     {
       "title": "On a Continuous Curve Without Tangent Constructible from Elementary Geometry",
@@ -119,5 +124,24 @@
       "year": 1982,
       "note": "Comprehensive introduction to fractals and their applications"
     }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of koch fractal",
+    "Apply koch fractal to solve problems",
+    "Visualize and interpret koch fractal relationships",
+    "Experiment with parameters to observe their effects on koch fractal"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
   ]
 }

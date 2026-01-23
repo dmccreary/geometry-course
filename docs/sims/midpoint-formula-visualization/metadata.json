@@ -3,7 +3,11 @@
   "description": "Two-panel diagram showing how to find the midpoint between two points using the averaging concept.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,28 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Coordinate plane", "Averages"],
+  "prerequisites": [
+    "Coordinate plane",
+    "Averages"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x450",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Panel highlight"}
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "3d-model",
+    "diagram",
+    "graph"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

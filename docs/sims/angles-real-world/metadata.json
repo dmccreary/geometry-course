@@ -3,7 +3,12 @@
   "description": "Interactive infographic showing six categories of real-world angle applications.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Angles", "Real-World Applications"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles",
+    "Real-World Applications"
+  ],
   "type": "Interactive Infographic",
   "format": "text/html",
   "language": "en",
@@ -17,12 +22,38 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "10 minutes",
-  "prerequisites": ["Angle types", "Angle measurement"],
+  "prerequisites": [
+    "Angle types",
+    "Angle measurement"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x600",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Category selection"},
-    {"type": "hover", "label": "Card preview"}
+    {
+      "type": "click",
+      "label": "Category selection"
+    },
+    {
+      "type": "hover",
+      "label": "Card preview"
+    }
+  ],
+  "visualizationType": [
+    "3d-model",
+    "data-visualization",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
   ]
 }

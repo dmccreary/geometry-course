@@ -3,7 +3,11 @@
   "description": "Interactive tool to test Triangle Inequality Theorem.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,13 +20,34 @@
   ],
   "bloomsLevel": "Evaluating",
   "duration": "5 minutes",
-  "prerequisites": ["Triangle basics"],
+  "prerequisites": [
+    "Triangle basics"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x600",
   "responsive": true,
   "controls": [
-    {"type": "slider", "label": "Side a length"},
-    {"type": "slider", "label": "Side b length"},
-    {"type": "slider", "label": "Side c length"}
+    {
+      "type": "slider",
+      "label": "Side a length"
+    },
+    {
+      "type": "slider",
+      "label": "Side b length"
+    },
+    {
+      "type": "slider",
+      "label": "Side c length"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
   ]
 }

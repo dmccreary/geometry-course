@@ -3,7 +3,11 @@
   "description": "Interactive tool to generate converse, inverse, and contrapositive from any conditional statement.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Logic"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Logic"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,13 +21,36 @@
   ],
   "bloomsLevel": "Creating",
   "duration": "15 minutes",
-  "prerequisites": ["Understanding of conditional statements"],
+  "prerequisites": [
+    "Understanding of conditional statements"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x600",
   "responsive": true,
   "controls": [
-    {"type": "select", "label": "Select statement"},
-    {"type": "checkbox", "label": "Show connections"},
-    {"type": "hover", "label": "Hover to highlight equivalents"}
+    {
+      "type": "select",
+      "label": "Select statement"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show connections"
+    },
+    {
+      "type": "hover",
+      "label": "Hover to highlight equivalents"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
   ]
 }

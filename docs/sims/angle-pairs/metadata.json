@@ -3,7 +3,11 @@
   "description": "An interactive MicroSim exploring different types of angle pairs including complementary, supplementary, vertical, and adjacent angles.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["Mathematics", "Geometry", "Angles"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Angles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -11,8 +15,37 @@
   "educationalLevel": "High School (Grades 9-12)",
   "learningResourceType": "simulation",
   "audience": "Students, Educators",
-  "bloomLevel": ["Understand", "Apply"],
-  "concepts": ["Complementary Angles", "Supplementary Angles", "Vertical Angles", "Adjacent Angles"],
-  "prerequisites": ["Basic angle measurement", "Understanding of degrees"],
-  "library": "p5.js"
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Complementary Angles",
+    "Supplementary Angles",
+    "Vertical Angles",
+    "Adjacent Angles"
+  ],
+  "prerequisites": [
+    "Basic angle measurement",
+    "Understanding of degrees"
+  ],
+  "library": "p5.js",
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of angle pairs",
+    "Apply angle pairs to solve problems",
+    "Visualize and interpret angle pairs relationships",
+    "Experiment with parameters to observe their effects on angle pairs"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

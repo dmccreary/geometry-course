@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing the coordinate plane with axes, origin, quadrants, and sample points.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,28 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Number line"],
+  "prerequisites": [
+    "Number line"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x650",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Quadrant highlight"}
+    {
+      "type": "hover",
+      "label": "Quadrant highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

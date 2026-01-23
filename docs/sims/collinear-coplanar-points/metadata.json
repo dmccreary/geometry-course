@@ -27,7 +27,7 @@
     "Understanding of basic geometric terms (point, line, plane)"
   ],
   "framework": "p5.js",
-  "canvasDimensions": "900×600 (initial, width-responsive)",
+  "canvasDimensions": "900\u00d7600 (initial, width-responsive)",
   "responsive": true,
   "dependencies": [
     "p5.js CDN v1.11.10"
@@ -48,5 +48,18 @@
   "limitations": [
     "Panel 4 uses perspective projection to represent 3D space in 2D",
     "Static diagram without interactivity"
+  ],
+  "visualizationType": [
+    "3d-model",
+    "diagram",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

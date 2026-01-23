@@ -3,7 +3,11 @@
   "description": "Drag triangle vertices to create and classify triangles by sides and angles.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,15 +21,43 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "5 minutes",
-  "prerequisites": ["Triangle classification concepts"],
+  "prerequisites": [
+    "Triangle classification concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x600",
   "responsive": true,
   "controls": [
-    {"type": "drag", "label": "Move vertices"},
-    {"type": "button", "label": "Reset triangle"},
-    {"type": "button", "label": "Random triangle"},
-    {"type": "toggle", "label": "Grid display"},
-    {"type": "toggle", "label": "Measurements display"}
+    {
+      "type": "drag",
+      "label": "Move vertices"
+    },
+    {
+      "type": "button",
+      "label": "Reset triangle"
+    },
+    {
+      "type": "button",
+      "label": "Random triangle"
+    },
+    {
+      "type": "toggle",
+      "label": "Grid display"
+    },
+    {
+      "type": "toggle",
+      "label": "Measurements display"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

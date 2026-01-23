@@ -3,7 +3,11 @@
   "description": "Complete visual reference for all triangle congruence criteria.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangle Congruence"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Congruence"
+  ],
   "type": "Interactive Reference",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,28 @@
   ],
   "bloomsLevel": "Evaluating",
   "duration": "5 minutes",
-  "prerequisites": ["Triangle basics", "Congruence concept"],
+  "prerequisites": [
+    "Triangle basics",
+    "Congruence concept"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x700",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Highlight criterion"}
+    {
+      "type": "click",
+      "label": "Highlight criterion"
+    }
+  ],
+  "visualizationType": [
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
   ]
 }

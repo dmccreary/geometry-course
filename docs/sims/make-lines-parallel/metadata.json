@@ -1,7 +1,12 @@
 {
   "title": "Make Lines Parallel",
   "creator": "AI-Generated MicroSim",
-  "subject": ["Mathematics", "Geometry", "Algebra", "Coordinate Geometry"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Algebra",
+    "Coordinate Geometry"
+  ],
   "description": "An interactive educational simulation where students drag a point to make two lines parallel by matching their slopes on a coordinate grid. Students receive immediate visual feedback through animation and color-coded messages.",
   "date": "2025-11-14",
   "type": "Interactive Simulation",
@@ -9,7 +14,12 @@
   "language": "en",
   "rights": "CC BY-NC 4.0",
   "educational": {
-    "gradeLevel": ["7", "8", "9", "10"],
+    "gradeLevel": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
     "subjectArea": "Mathematics - Geometry and Algebra",
     "topic": "Parallel Lines and Slope",
     "learningObjectives": [
@@ -19,11 +29,17 @@
       "Create parallel lines by manipulating coordinates on a grid",
       "Evaluate whether two lines are parallel by comparing their slopes"
     ],
-    "bloomsTaxonomyLevels": ["Understanding", "Applying", "Analyzing", "Evaluating", "Creating"],
+    "bloomsTaxonomyLevels": [
+      "Understanding",
+      "Applying",
+      "Analyzing",
+      "Evaluating",
+      "Creating"
+    ],
     "duration": "10-15 minutes",
     "prerequisites": [
       "Understanding of coordinate plane and plotting points",
-      "Knowledge of slope formula: m = (y₂ - y₁) / (x₂ - x₁)",
+      "Knowledge of slope formula: m = (y\u2082 - y\u2081) / (x\u2082 - x\u2081)",
       "Basic understanding of what parallel means",
       "Ability to calculate rise and run"
     ],
@@ -35,11 +51,13 @@
   "technical": {
     "framework": "p5.js",
     "version": "1.11.10",
-    "canvasDimensions": "800×680",
+    "canvasDimensions": "800\u00d7680",
     "drawHeight": 600,
     "controlHeight": 80,
     "responsive": "Width-responsive",
-    "dependencies": ["p5.js CDN"],
+    "dependencies": [
+      "p5.js CDN"
+    ],
     "accessibility": [
       "High contrast colors",
       "Large interactive targets",
@@ -73,7 +91,7 @@
       }
     ],
     "visualElements": [
-      "10×10 coordinate grid with 50-pixel spacing",
+      "10\u00d710 coordinate grid with 50-pixel spacing",
       "Fixed blue line with two black endpoints",
       "Adjustable blue line with one black fixed endpoint and one red movable endpoint",
       "Animated green line during slope checking (2-second transition)",
@@ -84,18 +102,18 @@
   "simulationModel": {
     "modelType": "Mathematical visualization and interactive construction",
     "variables": [
-      "Line 1 Point 1 coordinates (x₁, y₁) - fixed at (1, 7)",
-      "Line 1 Point 2 coordinates (x₂, y₂) - fixed at (7, 3)",
-      "Line 2 Point 1 coordinates (x₃, y₃) - fixed at (3, 6)",
-      "Line 2 Point 2 coordinates (x₄, y₄) - draggable, initially (5, 2)",
-      "Slope of Line 1 (m₁)",
-      "Slope of Line 2 (m₂)",
+      "Line 1 Point 1 coordinates (x\u2081, y\u2081) - fixed at (1, 7)",
+      "Line 1 Point 2 coordinates (x\u2082, y\u2082) - fixed at (7, 3)",
+      "Line 2 Point 1 coordinates (x\u2083, y\u2083) - fixed at (3, 6)",
+      "Line 2 Point 2 coordinates (x\u2084, y\u2084) - draggable, initially (5, 2)",
+      "Slope of Line 1 (m\u2081)",
+      "Slope of Line 2 (m\u2082)",
       "Animation progress (0 to 1)",
       "Check state (ready, checking, correct, incorrect)"
     ],
     "equations": [
-      "Slope formula: m = (y₂ - y₁) / (x₂ - x₁)",
-      "Parallel condition: |m₁ - m₂| < 0.01 (tolerance)",
+      "Slope formula: m = (y\u2082 - y\u2081) / (x\u2082 - x\u2081)",
+      "Parallel condition: |m\u2081 - m\u2082| < 0.01 (tolerance)",
       "Animation interpolation: lerp(start, end, t)"
     ],
     "assumptions": [
@@ -105,7 +123,7 @@
       "Small tolerance (0.01) accounts for floating-point precision"
     ],
     "limitations": [
-      "Limited to 10×10 grid range",
+      "Limited to 10\u00d710 grid range",
       "Only one line is adjustable (the other is fixed)",
       "Does not handle vertical parallel lines explicitly",
       "No support for lines outside the grid boundaries"
@@ -145,5 +163,28 @@
     "drag and drop",
     "coordinate plane",
     "mathematics visualization"
+  ],
+  "visualizationType": [
+    "3d-model",
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of make lines parallel",
+    "Apply make lines parallel to solve problems",
+    "Visualize and interpret make lines parallel relationships",
+    "Experiment with parameters to observe their effects on make lines parallel"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

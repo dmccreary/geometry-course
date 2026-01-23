@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing Base Angles Theorem for isosceles triangles.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangles"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,27 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "3 minutes",
-  "prerequisites": ["Triangle classification", "Angle relationships"],
+  "prerequisites": [
+    "Triangle classification",
+    "Angle relationships"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x480",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Cycle through examples"}
+    {
+      "type": "click",
+      "label": "Cycle through examples"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

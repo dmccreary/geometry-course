@@ -3,7 +3,11 @@
   "description": "Interactive slope visualization with draggable points and real-time slope calculation.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,16 +20,49 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "10 minutes",
-  "prerequisites": ["Coordinate plane", "Slope formula"],
+  "prerequisites": [
+    "Coordinate plane",
+    "Slope formula"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x750",
   "responsive": true,
   "controls": [
-    {"type": "draggable", "label": "Point A"},
-    {"type": "draggable", "label": "Point B"},
-    {"type": "button", "label": "Random Line"},
-    {"type": "button", "label": "Toggle Rise/Run"},
-    {"type": "button", "label": "Toggle Extension"},
-    {"type": "button", "label": "Toggle Snap"}
+    {
+      "type": "draggable",
+      "label": "Point A"
+    },
+    {
+      "type": "draggable",
+      "label": "Point B"
+    },
+    {
+      "type": "button",
+      "label": "Random Line"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Rise/Run"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Extension"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Snap"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

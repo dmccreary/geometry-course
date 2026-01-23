@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing horizontal, vertical, and diagonal translation examples with vectors.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,30 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Coordinate plane basics"],
+  "prerequisites": [
+    "Coordinate plane basics"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x400",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Select example type"}
+    {
+      "type": "button",
+      "label": "Select example type"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

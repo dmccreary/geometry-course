@@ -3,7 +3,11 @@
   "description": "Analyze transversal-parallel line configurations using coordinate geometry and verify angle relationships.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,13 +20,42 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "10 minutes",
-  "prerequisites": ["Parallel lines", "Transversals", "Slope"],
+  "prerequisites": [
+    "Parallel lines",
+    "Transversals",
+    "Slope"
+  ],
   "library": "p5.js",
   "canvasDimensions": "1000x750",
   "responsive": true,
   "controls": [
-    {"type": "slider", "label": "Parallel slope", "min": -2, "max": 2},
-    {"type": "slider", "label": "Transversal slope", "min": -2, "max": 2},
-    {"type": "button", "label": "Random"}
+    {
+      "type": "slider",
+      "label": "Parallel slope",
+      "min": -2,
+      "max": 2
+    },
+    {
+      "type": "slider",
+      "label": "Transversal slope",
+      "min": -2,
+      "max": 2
+    },
+    {
+      "type": "button",
+      "label": "Random"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

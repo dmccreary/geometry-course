@@ -3,7 +3,11 @@
   "description": "Interactive comparison of the three rigid motions showing what each preserves.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,34 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "5 minutes",
-  "prerequisites": ["Translation", "Rotation", "Reflection basics"],
+  "prerequisites": [
+    "Translation",
+    "Rotation",
+    "Reflection basics"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x500",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Select transformation type"}
+    {
+      "type": "click",
+      "label": "Select transformation type"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

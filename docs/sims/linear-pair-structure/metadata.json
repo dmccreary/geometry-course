@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing the anatomy of a linear pair with hover annotations.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Angles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,28 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Adjacent angles", "Supplementary angles"],
+  "prerequisites": [
+    "Adjacent angles",
+    "Supplementary angles"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x400",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Hover over parts"}
+    {
+      "type": "hover",
+      "label": "Hover over parts"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

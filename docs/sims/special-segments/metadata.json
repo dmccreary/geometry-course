@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing four types of special segments and their concurrent points.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangles"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,30 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "5 minutes",
-  "prerequisites": ["Triangle basics", "Perpendicular lines", "Angle bisectors"],
+  "prerequisites": [
+    "Triangle basics",
+    "Perpendicular lines",
+    "Angle bisectors"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x650",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Focus on panel"}
+    {
+      "type": "click",
+      "label": "Focus on panel"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

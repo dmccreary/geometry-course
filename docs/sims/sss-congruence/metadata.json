@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing SSS congruence through construction and rigid motion.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangle Congruence"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Congruence"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,30 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "3 minutes",
-  "prerequisites": ["Triangle basics", "Congruence concept"],
+  "prerequisites": [
+    "Triangle basics",
+    "Congruence concept"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x400",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Focus on panel"}
+    {
+      "type": "click",
+      "label": "Focus on panel"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

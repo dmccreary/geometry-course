@@ -2,7 +2,12 @@
   "title": "Peano-Gosper Fractal",
   "description": "An interactive MicroSim demonstrating the Peano-Gosper curve (Gosper curve or flowsnake) with adjustable recursion depth and size controls.",
   "creator": "Dan McCreary",
-  "subject": ["Mathematics", "Geometry", "Fractals", "L-Systems"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Fractals",
+    "L-Systems"
+  ],
   "date": "2025-12-10",
   "type": "Interactive Simulation",
   "format": "text/html",
@@ -17,13 +22,24 @@
     "Recognize hexagonal symmetry in mathematical patterns",
     "Understand the concept of space-filling curves"
   ],
-  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "bloomsTaxonomyLevels": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
   "duration": "10-15 minutes",
-  "prerequisites": ["Basic geometry", "Understanding of angles", "Familiarity with recursion concepts"],
+  "prerequisites": [
+    "Basic geometry",
+    "Understanding of angles",
+    "Familiarity with recursion concepts"
+  ],
   "framework": "p5.js",
   "canvasDimensions": "responsive x 550",
   "responsive": true,
-  "dependencies": ["p5.js CDN"],
+  "dependencies": [
+    "p5.js CDN"
+  ],
   "accessibility": {
     "screenReaderSupport": true,
     "keyboardNavigation": false
@@ -62,7 +78,7 @@
     "Rule A: A-B--B+A++AA+B-",
     "Rule B: +A-BB--B-A++A+B",
     "Turn angle: 60 degrees",
-    "Growth factor per iteration: sqrt(7) ≈ 2.646",
+    "Growth factor per iteration: sqrt(7) \u2248 2.646",
     "Fractal dimension: 2 (space-filling)"
   ],
   "assumptions": [
@@ -74,5 +90,16 @@
     "Maximum recursion level of 5 to prevent performance issues",
     "Cannot visualize infinite recursion",
     "Turn angle is fixed (not adjustable in this version)"
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

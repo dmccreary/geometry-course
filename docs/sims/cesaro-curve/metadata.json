@@ -2,7 +2,11 @@
   "title": "Cesaro Curve",
   "description": "An interactive MicroSim demonstrating the Cesaro curve fractal (torn square) with adjustable recursion depth and size controls.",
   "creator": "Dan McCreary",
-  "subject": ["Mathematics", "Geometry", "Fractals"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Fractals"
+  ],
   "date": "2025-12-10",
   "type": "Interactive Simulation",
   "format": "text/html",
@@ -17,13 +21,23 @@
     "Compare different fractal construction methods (Koch, Levy, Cesaro)",
     "Explore how initial shape affects final fractal appearance"
   ],
-  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "bloomsTaxonomyLevels": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
   "duration": "10-15 minutes",
-  "prerequisites": ["Basic geometry", "Understanding of perpendicular lines"],
+  "prerequisites": [
+    "Basic geometry",
+    "Understanding of perpendicular lines"
+  ],
   "framework": "p5.js",
   "canvasDimensions": "responsive x 650",
   "responsive": true,
-  "dependencies": ["p5.js CDN"],
+  "dependencies": [
+    "p5.js CDN"
+  ],
   "accessibility": {
     "screenReaderSupport": true,
     "keyboardNavigation": false
@@ -72,5 +86,16 @@
     "Maximum recursion level of 7 to prevent performance issues",
     "Cannot visualize infinite recursion",
     "Displacement ratio is fixed (not adjustable in this version)"
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

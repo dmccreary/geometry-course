@@ -3,7 +3,12 @@
   "description": "Interactive coordinate proof showing that rectangle diagonals are congruent using the distance formula.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry", "Proofs"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry",
+    "Proofs"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -18,13 +23,37 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "10 minutes",
-  "prerequisites": ["Distance formula", "Coordinate plane basics"],
+  "prerequisites": [
+    "Distance formula",
+    "Coordinate plane basics"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x550",
   "responsive": true,
   "controls": [
-    {"type": "slider", "label": "a (width)"},
-    {"type": "slider", "label": "b (height)"},
-    {"type": "hover", "label": "Vertex coordinates"}
+    {
+      "type": "slider",
+      "label": "a (width)"
+    },
+    {
+      "type": "slider",
+      "label": "b (height)"
+    },
+    {
+      "type": "hover",
+      "label": "Vertex coordinates"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

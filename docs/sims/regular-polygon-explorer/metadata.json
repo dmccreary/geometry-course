@@ -3,7 +3,11 @@
   "description": "An interactive MicroSim for exploring regular polygons by adjusting the number of sides, demonstrating how polygons approach circles as sides increase.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["Mathematics", "Geometry", "Polygons"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Polygons"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -11,8 +15,43 @@
   "educationalLevel": "Middle School to High School (Grades 6-12)",
   "learningResourceType": "simulation",
   "audience": "Students, Educators",
-  "bloomLevel": ["Understand", "Apply", "Analyze"],
-  "concepts": ["Regular Polygon", "Vertices", "Triangle", "Square", "Pentagon", "Hexagon", "Circle Approximation"],
-  "prerequisites": ["Basic understanding of shapes", "Familiarity with polygons"],
-  "library": "p5.js"
+  "bloomLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "concepts": [
+    "Regular Polygon",
+    "Vertices",
+    "Triangle",
+    "Square",
+    "Pentagon",
+    "Hexagon",
+    "Circle Approximation"
+  ],
+  "prerequisites": [
+    "Basic understanding of shapes",
+    "Familiarity with polygons"
+  ],
+  "library": "p5.js",
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of regular polygon explorer",
+    "Apply regular polygon explorer to solve problems",
+    "Visualize and interpret regular polygon explorer relationships",
+    "Experiment with parameters to observe their effects on regular polygon explorer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

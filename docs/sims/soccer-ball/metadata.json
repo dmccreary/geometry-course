@@ -94,7 +94,7 @@
       "vertexConfiguration": "5.6.6"
     },
     "mathematicalBasis": [
-      "Golden ratio (φ) used for vertex coordinates",
+      "Golden ratio (\u03c6) used for vertex coordinates",
       "Euler's formula: V - E + F = 2"
     ],
     "visualFeatures": [
@@ -129,5 +129,27 @@
       "Geodesic dome architecture",
       "Viral capsid structures in biology"
     ]
-  }
+  },
+  "visualizationType": [
+    "3d-model",
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of soccer ball - truncated icosahedron",
+    "Explore soccer ball - truncated icosahedron through interactive visualization",
+    "Apply knowledge of soccer ball - truncated icosahedron to solve problems",
+    "Experiment with parameters to observe their effects on soccer ball - truncated icosahedron"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

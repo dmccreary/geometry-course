@@ -3,7 +3,11 @@
   "description": "Interactive visualization of the incenter, angle bisectors, and incircle in triangles.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangle Centers"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Centers"
+  ],
   "type": "Interactive Visualization",
   "format": "text/html",
   "language": "en",
@@ -18,11 +22,27 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Triangle basics", "Angle bisectors"],
+  "prerequisites": [
+    "Triangle basics",
+    "Angle bisectors"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x550",
   "responsive": true,
   "controls": [
-    {"type": "drag", "label": "Drag vertices to reshape triangle"}
+    {
+      "type": "drag",
+      "label": "Drag vertices to reshape triangle"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

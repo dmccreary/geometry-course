@@ -3,7 +3,11 @@
   "description": "Interactive visualization of the Euler line connecting centroid, circumcenter, and orthocenter.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangle Centers"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Centers"
+  ],
   "type": "Interactive Visualization",
   "format": "text/html",
   "language": "en",
@@ -18,11 +22,29 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "5 minutes",
-  "prerequisites": ["Centroid", "Circumcenter", "Orthocenter"],
+  "prerequisites": [
+    "Centroid",
+    "Circumcenter",
+    "Orthocenter"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x550",
   "responsive": true,
   "controls": [
-    {"type": "drag", "label": "Drag vertices to reshape triangle"}
+    {
+      "type": "drag",
+      "label": "Drag vertices to reshape triangle"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

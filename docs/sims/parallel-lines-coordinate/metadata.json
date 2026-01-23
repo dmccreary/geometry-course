@@ -3,7 +3,11 @@
   "description": "Diagram showing three parallel lines with equal slopes and a table comparing their equations.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,28 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Slope", "Slope-intercept form"],
+  "prerequisites": [
+    "Slope",
+    "Slope-intercept form"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x600",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Line highlight"}
+    {
+      "type": "hover",
+      "label": "Line highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

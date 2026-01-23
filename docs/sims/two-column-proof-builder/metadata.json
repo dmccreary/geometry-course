@@ -3,7 +3,11 @@
   "description": "Interactive proof builder where students click to fill in statements and reasons for the Vertical Angles Theorem.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Proofs"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Proofs"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -18,14 +22,39 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "15 minutes",
-  "prerequisites": ["Understanding of vertical angles", "Basic proof concepts"],
+  "prerequisites": [
+    "Understanding of vertical angles",
+    "Basic proof concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x650",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Click cells to select answers"},
-    {"type": "button", "label": "Hint"},
-    {"type": "button", "label": "Check Proof"},
-    {"type": "button", "label": "Reset"}
+    {
+      "type": "click",
+      "label": "Click cells to select answers"
+    },
+    {
+      "type": "button",
+      "label": "Hint"
+    },
+    {
+      "type": "button",
+      "label": "Check Proof"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

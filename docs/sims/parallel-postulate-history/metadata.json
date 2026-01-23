@@ -3,7 +3,11 @@
   "description": "Interactive infographic showing the history and significance of the Parallel Postulate.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "History of Mathematics"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "History of Mathematics"
+  ],
   "type": "Interactive Infographic",
   "format": "text/html",
   "language": "en",
@@ -17,12 +21,38 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Parallel lines", "Euclidean geometry basics"],
+  "prerequisites": [
+    "Parallel lines",
+    "Euclidean geometry basics"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x600",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Timeline events"},
-    {"type": "click", "label": "Geometry panels"}
+    {
+      "type": "hover",
+      "label": "Timeline events"
+    },
+    {
+      "type": "click",
+      "label": "Geometry panels"
+    }
+  ],
+  "visualizationType": [
+    "data-visualization",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

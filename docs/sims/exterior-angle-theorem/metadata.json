@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing exterior angle equals sum of remote interior angles.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangle Theorems"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Theorems"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,27 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "3 minutes",
-  "prerequisites": ["Triangle Sum Theorem", "Linear pairs"],
+  "prerequisites": [
+    "Triangle Sum Theorem",
+    "Linear pairs"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x450",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Toggle example view"}
+    {
+      "type": "click",
+      "label": "Toggle example view"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

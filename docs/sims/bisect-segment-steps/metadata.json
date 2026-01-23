@@ -3,7 +3,11 @@
   "description": "Reference diagram showing the four-step construction of a segment bisector and perpendicular bisector.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
   "type": "Interactive Reference",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,27 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "3 minutes",
-  "prerequisites": ["Segments", "Perpendicular lines"],
+  "prerequisites": [
+    "Segments",
+    "Perpendicular lines"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x400",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Panel highlight"}
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

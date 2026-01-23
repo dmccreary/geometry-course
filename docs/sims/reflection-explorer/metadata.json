@@ -3,7 +3,11 @@
   "description": "Interactive tool for exploring reflections with selectable mirror lines including custom positions.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,14 +20,43 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "5-10 minutes",
-  "prerequisites": ["Reflection definition", "Coordinate plane"],
+  "prerequisites": [
+    "Reflection definition",
+    "Coordinate plane"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x600",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Select line type"},
-    {"type": "slider", "label": "Position k"},
-    {"type": "button", "label": "Animate"},
-    {"type": "button", "label": "Toggle distances"}
+    {
+      "type": "button",
+      "label": "Select line type"
+    },
+    {
+      "type": "slider",
+      "label": "Position k"
+    },
+    {
+      "type": "button",
+      "label": "Animate"
+    },
+    {
+      "type": "button",
+      "label": "Toggle distances"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

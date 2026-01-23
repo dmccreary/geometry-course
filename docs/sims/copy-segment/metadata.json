@@ -3,7 +3,11 @@
   "description": "Step-by-step interactive tutorial for copying a line segment using compass and straightedge.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,14 +21,40 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "10 minutes",
-  "prerequisites": ["Compass usage", "Straightedge usage"],
+  "prerequisites": [
+    "Compass usage",
+    "Straightedge usage"
+  ],
   "library": "p5.js",
   "canvasDimensions": "750x600",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Previous"},
-    {"type": "button", "label": "Next"},
-    {"type": "button", "label": "Reset"},
-    {"type": "button", "label": "Auto Play"}
+    {
+      "type": "button",
+      "label": "Previous"
+    },
+    {
+      "type": "button",
+      "label": "Next"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    },
+    {
+      "type": "button",
+      "label": "Auto Play"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

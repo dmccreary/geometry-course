@@ -3,7 +3,12 @@
   "description": "Interactive exploration of angle relationships when parallel lines are cut by a transversal.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Angles", "Parallel Lines"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles",
+    "Parallel Lines"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,16 +22,46 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "15 minutes",
-  "prerequisites": ["Parallel lines", "Angle measurement"],
+  "prerequisites": [
+    "Parallel lines",
+    "Angle measurement"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x600",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Corresponding"},
-    {"type": "button", "label": "Alt. Interior"},
-    {"type": "button", "label": "Alt. Exterior"},
-    {"type": "button", "label": "Same-Side Int."},
-    {"type": "button", "label": "Clear"},
-    {"type": "slider", "label": "Transversal angle"}
+    {
+      "type": "button",
+      "label": "Corresponding"
+    },
+    {
+      "type": "button",
+      "label": "Alt. Interior"
+    },
+    {
+      "type": "button",
+      "label": "Alt. Exterior"
+    },
+    {
+      "type": "button",
+      "label": "Same-Side Int."
+    },
+    {
+      "type": "button",
+      "label": "Clear"
+    },
+    {
+      "type": "slider",
+      "label": "Transversal angle"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

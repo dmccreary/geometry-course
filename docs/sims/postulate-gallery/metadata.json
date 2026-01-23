@@ -3,7 +3,11 @@
   "description": "Interactive gallery showing five fundamental geometric postulates with visual representations.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Postulates"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Postulates"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,12 +21,31 @@
   ],
   "bloomsLevel": "Remembering",
   "duration": "10 minutes",
-  "prerequisites": ["Basic understanding of points, lines, and planes"],
+  "prerequisites": [
+    "Basic understanding of points, lines, and planes"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x500",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Hover to highlight panels"},
-    {"type": "click", "label": "Click to select panels"}
+    {
+      "type": "hover",
+      "label": "Hover to highlight panels"
+    },
+    {
+      "type": "click",
+      "label": "Click to select panels"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

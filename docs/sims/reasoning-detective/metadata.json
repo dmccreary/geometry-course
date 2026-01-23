@@ -3,7 +3,12 @@
   "description": "An interactive game where students practice inductive reasoning, deductive reasoning, and finding counterexamples to develop mathematical thinking skills.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Logic", "Reasoning"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Logic",
+    "Reasoning"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,9 +21,15 @@
     "Evaluate conjectures by finding counterexamples",
     "Distinguish between inductive and deductive reasoning"
   ],
-  "bloomsLevel": ["Evaluating", "Creating"],
+  "bloomsLevel": [
+    "Evaluating",
+    "Creating"
+  ],
   "duration": "20-30 minutes",
-  "prerequisites": ["Basic understanding of geometric terms", "Familiarity with logical statements"],
+  "prerequisites": [
+    "Basic understanding of geometric terms",
+    "Familiarity with logical statements"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x650",
   "responsive": true,
@@ -35,5 +46,16 @@
       "type": "button",
       "label": "Check Answer"
     }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
   ]
 }

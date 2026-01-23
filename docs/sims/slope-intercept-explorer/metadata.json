@@ -3,7 +3,12 @@
   "description": "Interactive y = mx + b grapher with sliders to adjust slope and y-intercept.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry", "Linear Equations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry",
+    "Linear Equations"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,12 +21,37 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "10 minutes",
-  "prerequisites": ["Slope", "Y-intercept", "Coordinate plane"],
+  "prerequisites": [
+    "Slope",
+    "Y-intercept",
+    "Coordinate plane"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x700",
   "responsive": true,
   "controls": [
-    {"type": "slider", "label": "Slope (m)", "min": -3, "max": 3},
-    {"type": "slider", "label": "Y-intercept (b)", "min": -5, "max": 5}
+    {
+      "type": "slider",
+      "label": "Slope (m)",
+      "min": -3,
+      "max": 3
+    },
+    {
+      "type": "slider",
+      "label": "Y-intercept (b)",
+      "min": -5,
+      "max": 5
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

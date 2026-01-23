@@ -121,7 +121,7 @@
       "How do we name each of these geometric objects?"
     ],
     "commonMisconceptions": [
-      "Points have size (they don't—they only have position)",
+      "Points have size (they don't\u2014they only have position)",
       "Lines have endpoints (they extend infinitely)",
       "Planes have edges (they extend infinitely in all directions)"
     ],
@@ -131,5 +131,26 @@
       "Explain dimensional properties of each term",
       "Distinguish between defined and undefined terms"
     ]
-  }
+  },
+  "visualizationType": [
+    "3d-model",
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of point, line, plane - the three undefined terms",
+    "Explore point, line, plane - the three undefined terms through interactive visualization",
+    "Apply knowledge of point, line, plane - the three undefined terms to solve problems",
+    "Test understanding of point, line, plane - the three undefined terms through interactive exercises"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ]
 }

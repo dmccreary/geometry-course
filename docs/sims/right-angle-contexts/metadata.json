@@ -3,7 +3,11 @@
   "description": "Interactive 2x2 grid showing right angles in everyday objects like books, street intersections, picture frames, and geometric notation.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Angles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,29 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Understanding of angle measurement"],
+  "prerequisites": [
+    "Understanding of angle measurement"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x500",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Hover over panels for details"}
+    {
+      "type": "hover",
+      "label": "Hover over panels for details"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

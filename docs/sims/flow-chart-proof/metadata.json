@@ -3,7 +3,11 @@
   "description": "Interactive flow chart proof of the Vertical Angles Theorem with step-by-step reveal and auto-play.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Proofs"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Proofs"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,15 +21,43 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "10 minutes",
-  "prerequisites": ["Basic understanding of vertical angles", "Linear pair concept"],
+  "prerequisites": [
+    "Basic understanding of vertical angles",
+    "Linear pair concept"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x620",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Prev"},
-    {"type": "button", "label": "Next"},
-    {"type": "button", "label": "Auto Play"},
-    {"type": "button", "label": "Reset"},
-    {"type": "slider", "label": "Speed"}
+    {
+      "type": "button",
+      "label": "Prev"
+    },
+    {
+      "type": "button",
+      "label": "Next"
+    },
+    {
+      "type": "button",
+      "label": "Auto Play"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    },
+    {
+      "type": "slider",
+      "label": "Speed"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

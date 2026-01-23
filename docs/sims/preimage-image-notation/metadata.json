@@ -3,7 +3,11 @@
   "description": "Diagram introducing pre-image, image, and prime notation for geometric transformations.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,29 @@
   ],
   "bloomsLevel": "Remembering",
   "duration": "3 minutes",
-  "prerequisites": ["Basic geometry concepts"],
+  "prerequisites": [
+    "Basic geometry concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x400",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Animate transformation"}
+    {
+      "type": "click",
+      "label": "Animate transformation"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

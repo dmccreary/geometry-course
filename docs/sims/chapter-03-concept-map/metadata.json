@@ -3,7 +3,12 @@
   "description": "Interactive concept map showing the relationships between all 14 angle concepts in Chapter 03.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Angles", "Concept Mapping"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles",
+    "Concept Mapping"
+  ],
   "type": "Interactive Visualization",
   "format": "text/html",
   "language": "en",
@@ -17,15 +22,46 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "10 minutes",
-  "prerequisites": ["Chapter 03 content"],
+  "prerequisites": [
+    "Chapter 03 content"
+  ],
   "library": "vis-network",
   "canvasDimensions": "950x680",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Show All"},
-    {"type": "button", "label": "Classifications"},
-    {"type": "button", "label": "Relationships"},
-    {"type": "button", "label": "Advanced"},
-    {"type": "click", "label": "Node selection"}
+    {
+      "type": "button",
+      "label": "Show All"
+    },
+    {
+      "type": "button",
+      "label": "Classifications"
+    },
+    {
+      "type": "button",
+      "label": "Relationships"
+    },
+    {
+      "type": "button",
+      "label": "Advanced"
+    },
+    {
+      "type": "click",
+      "label": "Node selection"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

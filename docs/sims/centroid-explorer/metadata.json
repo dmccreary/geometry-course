@@ -3,7 +3,11 @@
   "description": "Interactive visualization of the centroid, medians, and the 2:1 ratio property in triangles.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangle Centers"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Centers"
+  ],
   "type": "Interactive Visualization",
   "format": "text/html",
   "language": "en",
@@ -18,12 +22,33 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Triangle basics", "Midpoints"],
+  "prerequisites": [
+    "Triangle basics",
+    "Midpoints"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x550",
   "responsive": true,
   "controls": [
-    {"type": "drag", "label": "Drag vertices to reshape"},
-    {"type": "click", "label": "Click median to see 2:1 ratio"}
+    {
+      "type": "drag",
+      "label": "Drag vertices to reshape"
+    },
+    {
+      "type": "click",
+      "label": "Click median to see 2:1 ratio"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

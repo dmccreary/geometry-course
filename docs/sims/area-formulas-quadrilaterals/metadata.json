@@ -28,7 +28,7 @@
     "Basic algebraic notation"
   ],
   "framework": "p5.js",
-  "canvasDimensions": "responsive width × 400px",
+  "canvasDimensions": "responsive width \u00d7 400px",
   "responsive": "Width-responsive",
   "dependencies": [
     "p5.js 1.11.10 CDN"
@@ -48,11 +48,11 @@
   ],
   "equations": [
     "Rectangle: A = lw",
-    "Square: A = s²",
+    "Square: A = s\u00b2",
     "Parallelogram: A = bh",
-    "Trapezoid: A = ½(b₁ + b₂)h",
-    "Rhombus: A = ½d₁d₂",
-    "Kite: A = ½d₁d₂"
+    "Trapezoid: A = \u00bd(b\u2081 + b\u2082)h",
+    "Rhombus: A = \u00bdd\u2081d\u2082",
+    "Kite: A = \u00bdd\u2081d\u2082"
   ],
   "assumptions": [
     "All shapes are planar (2D)",
@@ -103,5 +103,18 @@
     "kite",
     "geometry",
     "measurement"
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
   ]
 }

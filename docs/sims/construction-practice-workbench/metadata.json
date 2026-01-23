@@ -3,7 +3,11 @@
   "description": "Comprehensive practice environment for all geometric construction techniques.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
   "type": "Interactive Practice",
   "format": "text/html",
   "language": "en",
@@ -17,13 +21,35 @@
   ],
   "bloomsLevel": "Evaluating",
   "duration": "15 minutes",
-  "prerequisites": ["All construction techniques from Chapter 4"],
+  "prerequisites": [
+    "All construction techniques from Chapter 4"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x650",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Problem selector"},
-    {"type": "button", "label": "Step navigation"},
-    {"type": "button", "label": "Show/Hide solution"}
+    {
+      "type": "button",
+      "label": "Problem selector"
+    },
+    {
+      "type": "button",
+      "label": "Step navigation"
+    },
+    {
+      "type": "button",
+      "label": "Show/Hide solution"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

@@ -3,7 +3,11 @@
   "description": "Apply geometric construction techniques to design a symmetric bridge structure.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Engineering Design"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Engineering Design"
+  ],
   "type": "Interactive Project",
   "format": "text/html",
   "language": "en",
@@ -17,13 +21,38 @@
   ],
   "bloomsLevel": "Creating",
   "duration": "10 minutes",
-  "prerequisites": ["Segment bisection", "Perpendicular construction", "Parallel lines"],
+  "prerequisites": [
+    "Segment bisection",
+    "Perpendicular construction",
+    "Parallel lines"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x650",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Next step"},
-    {"type": "toggle", "label": "Construction lines"},
-    {"type": "button", "label": "Reset"}
+    {
+      "type": "button",
+      "label": "Next step"
+    },
+    {
+      "type": "toggle",
+      "label": "Construction lines"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

@@ -3,7 +3,11 @@
   "description": "Interactive visualization of basic circle components including center, radius, diameter, and chord with automatic calculation of circumference and area.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Circles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Circles"
+  ],
   "type": "Interactive Visualization",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,25 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Basic geometry vocabulary"],
+  "prerequisites": [
+    "Basic geometry vocabulary"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x500",
   "responsive": true,
   "controls": [
-    {"type": "slider", "label": "Radius (50 to 180)"}
+    {
+      "type": "slider",
+      "label": "Radius (50 to 180)"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

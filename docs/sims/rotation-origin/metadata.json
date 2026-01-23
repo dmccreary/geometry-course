@@ -1,9 +1,13 @@
 {
   "title": "Rotation Around Origin",
-  "description": "Interactive diagram showing rotations at 90°, 180°, 270°, and 45° around the origin.",
+  "description": "Interactive diagram showing rotations at 90\u00b0, 180\u00b0, 270\u00b0, and 45\u00b0 around the origin.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,31 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Coordinate plane basics", "Angle measurement"],
+  "prerequisites": [
+    "Coordinate plane basics",
+    "Angle measurement"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x450",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Select rotation angle"}
+    {
+      "type": "button",
+      "label": "Select rotation angle"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

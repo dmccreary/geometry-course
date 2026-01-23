@@ -3,7 +3,11 @@
   "description": "Interactive visualization showing the classification hierarchy of quadrilaterals from general to specific types.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Quadrilaterals"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Quadrilaterals"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,28 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Basic quadrilaterals", "Parallel lines"],
+  "prerequisites": [
+    "Basic quadrilaterals",
+    "Parallel lines"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x600",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Hover to see properties"}
+    {
+      "type": "hover",
+      "label": "Hover to see properties"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

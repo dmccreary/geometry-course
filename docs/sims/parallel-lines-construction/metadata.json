@@ -3,7 +3,12 @@
   "description": "Step-by-step construction of parallel lines using corresponding angles.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Constructions", "Parallel Lines"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions",
+    "Parallel Lines"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,14 +22,39 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "10 minutes",
-  "prerequisites": ["Angle copying construction", "Corresponding angles"],
+  "prerequisites": [
+    "Angle copying construction",
+    "Corresponding angles"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x650",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Previous"},
-    {"type": "button", "label": "Next"},
-    {"type": "button", "label": "Reset"},
-    {"type": "button", "label": "Auto Play"}
+    {
+      "type": "button",
+      "label": "Previous"
+    },
+    {
+      "type": "button",
+      "label": "Next"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    },
+    {
+      "type": "button",
+      "label": "Auto Play"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

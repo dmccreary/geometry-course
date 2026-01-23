@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing the essential components of every geometric proof - Given, Logical Steps, and Prove.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Proofs"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Proofs"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,26 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "10 minutes",
-  "prerequisites": ["Basic understanding of logical statements"],
+  "prerequisites": [
+    "Basic understanding of logical statements"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x450",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Hover to see details"}
+    {
+      "type": "hover",
+      "label": "Hover to see details"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

@@ -2,7 +2,11 @@
   "title": "Sierpinski Carpet",
   "description": "An interactive MicroSim demonstrating the Sierpinski carpet fractal with adjustable recursion depth and size controls.",
   "creator": "Dan McCreary",
-  "subject": ["Mathematics", "Geometry", "Fractals"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Fractals"
+  ],
   "date": "2025-12-10",
   "type": "Interactive Simulation",
   "format": "text/html",
@@ -17,13 +21,24 @@
     "Compare 2D fractals with 1D and triangular versions",
     "Explore the concept of fractal dimension"
   ],
-  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "bloomsTaxonomyLevels": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
   "duration": "10-15 minutes",
-  "prerequisites": ["Basic geometry", "Understanding of area", "Familiarity with fractions"],
+  "prerequisites": [
+    "Basic geometry",
+    "Understanding of area",
+    "Familiarity with fractions"
+  ],
   "framework": "p5.js",
   "canvasDimensions": "responsive x 550",
   "responsive": true,
-  "dependencies": ["p5.js CDN"],
+  "dependencies": [
+    "p5.js CDN"
+  ],
   "accessibility": {
     "screenReaderSupport": true,
     "keyboardNavigation": false
@@ -59,7 +74,7 @@
   "equations": [
     "Number of squares at level n: 8^n",
     "Remaining area at level n: (8/9)^n",
-    "Fractal dimension: log(8)/log(3) ≈ 1.8928"
+    "Fractal dimension: log(8)/log(3) \u2248 1.8928"
   ],
   "assumptions": [
     "Perfect geometric construction",
@@ -70,5 +85,18 @@
     "Maximum recursion level of 6 to prevent performance issues",
     "Cannot visualize infinite recursion",
     "Grid subdivision is fixed at 3x3"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

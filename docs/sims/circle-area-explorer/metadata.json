@@ -1,10 +1,21 @@
 {
   "title": "Circle Area Explorer",
-  "description": "An interactive educational simulation that demonstrates the quadratic relationship between a circle's radius and its area using the formula A = πr². Students can manipulate the radius using a slider or by directly dragging within the circle, with an optional graph showing the quadratic growth curve.",
+  "description": "An interactive educational simulation that demonstrates the quadratic relationship between a circle's radius and its area using the formula A = \u03c0r\u00b2. Students can manipulate the radius using a slider or by directly dragging within the circle, with an optional graph showing the quadratic growth curve.",
   "creator": "Dan McCreary",
-  "contributor": ["ChatGPT (AI Assistant)"],
+  "contributor": [
+    "ChatGPT (AI Assistant)"
+  ],
   "date": "2024-11-29",
-  "subject": ["geometry", "circles", "area", "quadratic relationships", "pi", "radius", "mathematics", "interactive simulation"],
+  "subject": [
+    "geometry",
+    "circles",
+    "area",
+    "quadratic relationships",
+    "pi",
+    "radius",
+    "mathematics",
+    "interactive simulation"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en-US",
@@ -16,7 +27,13 @@
   "audience": "High school geometry students (grades 9-10)",
   "version": "1.1",
   "library": "p5.js",
-  "bloomLevel": ["Remember", "Understand", "Apply", "Analyze", "Evaluate"],
+  "bloomLevel": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate"
+  ],
   "concepts": [
     "Circle area formula",
     "Quadratic relationships",
@@ -28,8 +45,30 @@
   ],
   "prerequisites": [
     "Basic understanding of circles",
-    "Familiarity with pi (π)",
+    "Familiarity with pi (\u03c0)",
     "Basic algebra skills",
     "Understanding of squared terms"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of circle area explorer",
+    "Explore circle area explorer through interactive visualization",
+    "Apply knowledge of circle area explorer to solve problems",
+    "Experiment with parameters to observe their effects on circle area explorer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

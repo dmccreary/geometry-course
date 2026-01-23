@@ -2,7 +2,12 @@
   "title": "Barnsley's Fern",
   "description": "An interactive MicroSim demonstrating Barnsley's fern fractal with adjustable parameters for iterations, scale, leaf angle, and curl.",
   "creator": "Dan McCreary",
-  "subject": ["Mathematics", "Geometry", "Fractals", "Iterated Function Systems"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Fractals",
+    "Iterated Function Systems"
+  ],
   "date": "2025-12-10",
   "type": "Interactive Simulation",
   "format": "text/html",
@@ -17,13 +22,25 @@
     "Recognize self-similarity in fractal structures",
     "Connect mathematical abstractions to natural forms"
   ],
-  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze", "Evaluate"],
+  "bloomsTaxonomyLevels": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate"
+  ],
   "duration": "10-20 minutes",
-  "prerequisites": ["Basic geometry", "Understanding of coordinate systems", "Familiarity with transformations"],
+  "prerequisites": [
+    "Basic geometry",
+    "Understanding of coordinate systems",
+    "Familiarity with transformations"
+  ],
   "framework": "p5.js",
   "canvasDimensions": "responsive x 690",
   "responsive": true,
-  "dependencies": ["p5.js CDN"],
+  "dependencies": [
+    "p5.js CDN"
+  ],
   "accessibility": {
     "screenReaderSupport": true,
     "keyboardNavigation": false
@@ -99,5 +116,19 @@
     "Maximum 200,000 iterations to prevent performance issues",
     "Simplified IFS model compared to real fern complexity",
     "Parameters affect appearance but don't match all real fern species"
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

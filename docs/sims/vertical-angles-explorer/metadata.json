@@ -3,7 +3,11 @@
   "description": "Interactive demonstration where students drag intersecting lines to discover that vertical angles are always congruent.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Angles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,28 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "10 minutes",
-  "prerequisites": ["Understanding of angle measurement", "Intersecting lines"],
+  "prerequisites": [
+    "Understanding of angle measurement",
+    "Intersecting lines"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x550",
   "responsive": true,
   "controls": [
-    {"type": "drag", "label": "Drag line endpoints to rotate"}
+    {
+      "type": "drag",
+      "label": "Drag line endpoints to rotate"
+    }
+  ],
+  "visualizationType": [
+    "3d-model",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

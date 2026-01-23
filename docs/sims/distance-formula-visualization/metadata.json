@@ -3,7 +3,11 @@
   "description": "Three-panel diagram showing how the Distance Formula derives from the Pythagorean theorem.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,28 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Pythagorean theorem", "Coordinate plane"],
+  "prerequisites": [
+    "Pythagorean theorem",
+    "Coordinate plane"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x400",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Panel highlight"}
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "3d-model",
+    "diagram",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

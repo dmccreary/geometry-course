@@ -1,7 +1,12 @@
 {
   "title": "Distance Formula Explorer",
   "creator": "AI-Generated MicroSim",
-  "subject": ["Mathematics", "Geometry", "Coordinate Geometry", "Algebra"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Coordinate Geometry",
+    "Algebra"
+  ],
   "description": "An interactive educational simulation that helps students visualize and apply the distance formula to find distances between two points on the coordinate plane, demonstrating the connection to the Pythagorean theorem through visual right triangles.",
   "date": "2025-11-14",
   "type": "Interactive Simulation",
@@ -9,7 +14,12 @@
   "language": "en",
   "rights": "CC BY-NC 4.0",
   "educational": {
-    "gradeLevel": ["9", "10", "11", "12"],
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
     "subjectArea": "Mathematics - Geometry",
     "topic": "Distance Formula and Coordinate Geometry",
     "learningObjectives": [
@@ -19,7 +29,11 @@
       "Calculate distances using both algebraic formulas and visual representations",
       "Analyze how changing point positions affects distance and triangle dimensions"
     ],
-    "bloomsTaxonomyLevels": ["Understanding", "Applying", "Analyzing"],
+    "bloomsTaxonomyLevels": [
+      "Understanding",
+      "Applying",
+      "Analyzing"
+    ],
     "duration": "15-20 minutes",
     "prerequisites": [
       "Understanding of the Pythagorean theorem",
@@ -35,11 +49,13 @@
   "technical": {
     "framework": "p5.js",
     "version": "1.11.10",
-    "canvasDimensions": "800×700",
+    "canvasDimensions": "800\u00d7700",
     "drawHeight": 600,
     "controlHeight": 100,
     "responsive": "Width-responsive",
-    "dependencies": ["p5.js CDN"],
+    "dependencies": [
+      "p5.js CDN"
+    ],
     "accessibility": [
       "High contrast colors",
       "Keyboard navigation support",
@@ -53,13 +69,13 @@
       {
         "type": "draggable-point",
         "name": "Point A",
-        "description": "Blue draggable point representing the first coordinate (x₁, y₁)",
+        "description": "Blue draggable point representing the first coordinate (x\u2081, y\u2081)",
         "default": "(1, 2)"
       },
       {
         "type": "draggable-point",
         "name": "Point B",
-        "description": "Red draggable point representing the second coordinate (x₂, y₂)",
+        "description": "Red draggable point representing the second coordinate (x\u2082, y\u2082)",
         "default": "(4, 6)"
       },
       {
@@ -88,13 +104,13 @@
       {
         "type": "input-field",
         "name": "Point A Coordinates",
-        "description": "Manual entry fields for x₁ and y₁ coordinates",
+        "description": "Manual entry fields for x\u2081 and y\u2081 coordinates",
         "range": "-10 to 10"
       },
       {
         "type": "input-field",
         "name": "Point B Coordinates",
-        "description": "Manual entry fields for x₂ and y₂ coordinates",
+        "description": "Manual entry fields for x\u2082 and y\u2082 coordinates",
         "range": "-10 to 10"
       }
     ],
@@ -110,17 +126,17 @@
   "simulationModel": {
     "modelType": "Mathematical visualization",
     "variables": [
-      "Point A coordinates (x₁, y₁)",
-      "Point B coordinates (x₂, y₂)",
-      "Horizontal distance (Δx = x₂ - x₁)",
-      "Vertical distance (Δy = y₂ - y₁)",
+      "Point A coordinates (x\u2081, y\u2081)",
+      "Point B coordinates (x\u2082, y\u2082)",
+      "Horizontal distance (\u0394x = x\u2082 - x\u2081)",
+      "Vertical distance (\u0394y = y\u2082 - y\u2081)",
       "Euclidean distance (d)"
     ],
     "equations": [
-      "Δx = x₂ - x₁",
-      "Δy = y₂ - y₁",
-      "d = √[(Δx)² + (Δy)²]",
-      "d = √[(x₂ - x₁)² + (y₂ - y₁)²]"
+      "\u0394x = x\u2082 - x\u2081",
+      "\u0394y = y\u2082 - y\u2081",
+      "d = \u221a[(\u0394x)\u00b2 + (\u0394y)\u00b2]",
+      "d = \u221a[(x\u2082 - x\u2081)\u00b2 + (y\u2082 - y\u2081)\u00b2]"
     ],
     "assumptions": [
       "2D Euclidean space",
@@ -164,5 +180,28 @@
     "algebra",
     "interactive learning",
     "mathematics visualization"
+  ],
+  "visualizationType": [
+    "3d-model",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of distance formula explorer",
+    "Apply distance formula explorer to solve problems",
+    "Visualize and interpret distance formula explorer relationships",
+    "Experiment with parameters to observe their effects on distance formula explorer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

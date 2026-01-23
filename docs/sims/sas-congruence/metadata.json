@@ -3,7 +3,11 @@
   "description": "Interactive diagram comparing valid SAS congruence with invalid SSA.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangle Congruence"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Congruence"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,29 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "4 minutes",
-  "prerequisites": ["Triangle basics", "Angle concepts"],
+  "prerequisites": [
+    "Triangle basics",
+    "Angle concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x450",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Focus on panel"}
+    {
+      "type": "click",
+      "label": "Focus on panel"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

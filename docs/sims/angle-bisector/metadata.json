@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing how an angle bisector divides an angle into two congruent parts.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Angles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,12 +21,31 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Understanding of angles"],
+  "prerequisites": [
+    "Understanding of angles"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x500",
   "responsive": true,
   "controls": [
-    {"type": "slider", "label": "Total angle (20-160°)"},
-    {"type": "hover", "label": "Hover over parts"}
+    {
+      "type": "slider",
+      "label": "Total angle (20-160\u00b0)"
+    },
+    {
+      "type": "hover",
+      "label": "Hover over parts"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

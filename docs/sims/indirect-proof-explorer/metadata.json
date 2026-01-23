@@ -3,7 +3,12 @@
   "description": "Step through the four stages of proof by contradiction with multiple geometry examples.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Proofs", "Logic"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Proofs",
+    "Logic"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -18,14 +23,42 @@
   ],
   "bloomsLevel": "Evaluating",
   "duration": "15 minutes",
-  "prerequisites": ["Direct proof concepts", "Basic postulates and theorems"],
+  "prerequisites": [
+    "Direct proof concepts",
+    "Basic postulates and theorems"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x600",
   "responsive": true,
   "controls": [
-    {"type": "select", "label": "Select proof"},
-    {"type": "button", "label": "Prev Stage"},
-    {"type": "button", "label": "Next Stage"},
-    {"type": "button", "label": "Reset"}
+    {
+      "type": "select",
+      "label": "Select proof"
+    },
+    {
+      "type": "button",
+      "label": "Prev Stage"
+    },
+    {
+      "type": "button",
+      "label": "Next Stage"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

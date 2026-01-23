@@ -3,7 +3,12 @@
   "description": "Visual comparison showing why constructions use straightedges instead of rulers.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Constructions", "Tools"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions",
+    "Tools"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -17,11 +22,27 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5 minutes",
-  "prerequisites": ["Basic geometry concepts"],
+  "prerequisites": [
+    "Basic geometry concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x400",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Panel highlight"}
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

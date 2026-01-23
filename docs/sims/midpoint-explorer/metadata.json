@@ -3,7 +3,11 @@
   "description": "Interactive exploration of the midpoint formula with draggable points and distance verification.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,16 +20,49 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "10 minutes",
-  "prerequisites": ["Coordinate plane", "Distance formula"],
+  "prerequisites": [
+    "Coordinate plane",
+    "Distance formula"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x700",
   "responsive": true,
   "controls": [
-    {"type": "draggable", "label": "Point A"},
-    {"type": "draggable", "label": "Point B"},
-    {"type": "button", "label": "Random Points"},
-    {"type": "button", "label": "Toggle Distances"},
-    {"type": "button", "label": "Toggle Steps"},
-    {"type": "button", "label": "Toggle Snap"}
+    {
+      "type": "draggable",
+      "label": "Point A"
+    },
+    {
+      "type": "draggable",
+      "label": "Point B"
+    },
+    {
+      "type": "button",
+      "label": "Random Points"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Distances"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Steps"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Snap"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

@@ -3,7 +3,11 @@
   "description": "A visual diagram showing the components of conditional statements - hypothesis and conclusion.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Logic"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Logic"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,8 +21,22 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "5-10 minutes",
-  "prerequisites": ["Basic understanding of logical statements"],
+  "prerequisites": [
+    "Basic understanding of logical statements"
+  ],
   "library": "p5.js",
   "canvasDimensions": "750x450",
-  "responsive": true
+  "responsive": true,
+  "visualizationType": [
+    "3d-model",
+    "diagram",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ]
 }

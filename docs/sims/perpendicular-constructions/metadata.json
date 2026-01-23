@@ -3,7 +3,11 @@
   "description": "Comparison diagram showing perpendicular through a point ON a line vs FROM a point to a line.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,28 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "8 minutes",
-  "prerequisites": ["Compass usage", "Perpendicular concepts"],
+  "prerequisites": [
+    "Compass usage",
+    "Perpendicular concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x500",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Panel highlight"}
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

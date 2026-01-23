@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing scalene, isosceles, and equilateral triangles.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangles"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,28 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "3 minutes",
-  "prerequisites": ["Basic geometry concepts"],
+  "prerequisites": [
+    "Basic geometry concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x420",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Highlight triangle type"}
+    {
+      "type": "click",
+      "label": "Highlight triangle type"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

@@ -3,7 +3,11 @@
   "description": "Interactive tool for exploring sequences of transformations.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,14 +20,44 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "5-10 minutes",
-  "prerequisites": ["Translation", "Rotation", "Reflection"],
+  "prerequisites": [
+    "Translation",
+    "Rotation",
+    "Reflection"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x600",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Select T1"},
-    {"type": "button", "label": "Select T2"},
-    {"type": "button", "label": "Animate"},
-    {"type": "button", "label": "Reset"}
+    {
+      "type": "button",
+      "label": "Select T1"
+    },
+    {
+      "type": "button",
+      "label": "Select T2"
+    },
+    {
+      "type": "button",
+      "label": "Animate"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    }
+  ],
+  "visualizationType": [
+    "3d-model",
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

@@ -3,7 +3,11 @@
   "description": "Interactive quiz game for practicing angle classification as acute, right, obtuse, or straight.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Angles"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,15 +21,43 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "10 minutes",
-  "prerequisites": ["Understanding of angle types"],
+  "prerequisites": [
+    "Understanding of angle types"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x550",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Acute"},
-    {"type": "button", "label": "Right"},
-    {"type": "button", "label": "Obtuse"},
-    {"type": "button", "label": "Straight"},
-    {"type": "button", "label": "Next Angle"}
+    {
+      "type": "button",
+      "label": "Acute"
+    },
+    {
+      "type": "button",
+      "label": "Right"
+    },
+    {
+      "type": "button",
+      "label": "Obtuse"
+    },
+    {
+      "type": "button",
+      "label": "Straight"
+    },
+    {
+      "type": "button",
+      "label": "Next Angle"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

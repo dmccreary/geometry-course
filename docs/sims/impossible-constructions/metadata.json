@@ -3,7 +3,12 @@
   "description": "Interactive infographic about the three classical problems that cannot be solved with compass and straightedge.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "History", "Constructions"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "History",
+    "Constructions"
+  ],
   "type": "Interactive Infographic",
   "format": "text/html",
   "language": "en",
@@ -17,12 +22,33 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "10 minutes",
-  "prerequisites": ["Basic constructions"],
+  "prerequisites": [
+    "Basic constructions"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x600",
   "responsive": true,
   "controls": [
-    {"type": "click", "label": "Problem selection"},
-    {"type": "hover", "label": "Card preview"}
+    {
+      "type": "click",
+      "label": "Problem selection"
+    },
+    {
+      "type": "hover",
+      "label": "Card preview"
+    }
+  ],
+  "visualizationType": [
+    "data-visualization",
+    "graph",
+    "interactive-demo",
+    "network",
+    "timeline"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

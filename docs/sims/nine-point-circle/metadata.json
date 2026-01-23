@@ -3,7 +3,12 @@
   "description": "Interactive visualization of the nine-point circle showing all nine special points it passes through.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Triangle Centers", "Advanced Geometry"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Centers",
+    "Advanced Geometry"
+  ],
   "type": "Interactive Visualization",
   "format": "text/html",
   "language": "en",
@@ -18,12 +23,32 @@
   ],
   "bloomsLevel": "Analyzing",
   "duration": "5 minutes",
-  "prerequisites": ["Orthocenter", "Circumcenter", "Euler line"],
+  "prerequisites": [
+    "Orthocenter",
+    "Circumcenter",
+    "Euler line"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x600",
   "responsive": true,
   "controls": [
-    {"type": "drag", "label": "Drag vertices to reshape"},
-    {"type": "button", "label": "Toggle point groups"}
+    {
+      "type": "drag",
+      "label": "Drag vertices to reshape"
+    },
+    {
+      "type": "button",
+      "label": "Toggle point groups"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

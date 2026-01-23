@@ -3,7 +3,12 @@
   "description": "Interactive tool for building line equations using point-slope form with draggable point and slope slider.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Coordinate Geometry", "Linear Equations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry",
+    "Linear Equations"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -16,15 +21,45 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "10 minutes",
-  "prerequisites": ["Slope", "Slope-intercept form"],
+  "prerequisites": [
+    "Slope",
+    "Slope-intercept form"
+  ],
   "library": "p5.js",
   "canvasDimensions": "850x700",
   "responsive": true,
   "controls": [
-    {"type": "draggable", "label": "Point P"},
-    {"type": "slider", "label": "Slope (m)", "min": -3, "max": 3},
-    {"type": "button", "label": "Random"},
-    {"type": "button", "label": "Toggle Triangle"},
-    {"type": "button", "label": "Toggle Snap"}
+    {
+      "type": "draggable",
+      "label": "Point P"
+    },
+    {
+      "type": "slider",
+      "label": "Slope (m)",
+      "min": -3,
+      "max": 3
+    },
+    {
+      "type": "button",
+      "label": "Random"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Triangle"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Snap"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

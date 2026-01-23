@@ -3,7 +3,11 @@
   "description": "Interactive diagram showing enlargements and reductions through dilations with various scale factors.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Transformations"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
   "type": "Interactive Diagram",
   "format": "text/html",
   "language": "en",
@@ -16,11 +20,31 @@
   ],
   "bloomsLevel": "Applying",
   "duration": "5 minutes",
-  "prerequisites": ["Coordinate plane basics", "Ratio concepts"],
+  "prerequisites": [
+    "Coordinate plane basics",
+    "Ratio concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "800x450",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Select scale factor"}
+    {
+      "type": "button",
+      "label": "Select scale factor"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
   ]
 }

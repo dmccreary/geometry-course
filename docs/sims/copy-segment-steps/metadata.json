@@ -3,7 +3,11 @@
   "description": "Reference diagram showing all five steps of copying a segment construction.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
   "type": "Interactive Reference",
   "format": "text/html",
   "language": "en",
@@ -17,11 +21,26 @@
   ],
   "bloomsLevel": "Understanding",
   "duration": "3 minutes",
-  "prerequisites": ["Copy Segment Construction"],
+  "prerequisites": [
+    "Copy Segment Construction"
+  ],
   "library": "p5.js",
   "canvasDimensions": "900x300",
   "responsive": true,
   "controls": [
-    {"type": "hover", "label": "Panel highlight"}
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

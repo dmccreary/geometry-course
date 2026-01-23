@@ -1,9 +1,14 @@
 {
   "title": "Degrees vs Radians",
-  "description": "An interactive MicroSim comparing degrees and radians, showing how 2π radians equals 360 degrees through visual representation on a circle.",
+  "description": "An interactive MicroSim comparing degrees and radians, showing how 2\u03c0 radians equals 360 degrees through visual representation on a circle.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["Mathematics", "Geometry", "Trigonometry", "Angle Measurement"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Trigonometry",
+    "Angle Measurement"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -11,8 +16,37 @@
   "educationalLevel": "High School (Grades 9-12)",
   "learningResourceType": "simulation",
   "audience": "Students, Educators",
-  "bloomLevel": ["Understand", "Apply"],
-  "concepts": ["Degrees", "Radians", "Unit Circle", "Angle Conversion", "Pi"],
-  "prerequisites": ["Basic angle measurement", "Understanding of circles"],
-  "library": "p5.js"
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Degrees",
+    "Radians",
+    "Unit Circle",
+    "Angle Conversion",
+    "Pi"
+  ],
+  "prerequisites": [
+    "Basic angle measurement",
+    "Understanding of circles"
+  ],
+  "library": "p5.js",
+  "visualizationType": [
+    "3d-model",
+    "diagram",
+    "interactive-demo"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of degrees vs radians",
+    "Apply degrees vs radians to solve problems",
+    "Visualize and interpret degrees vs radians relationships",
+    "Experiment with parameters to observe their effects on degrees vs radians"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

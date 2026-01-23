@@ -3,7 +3,11 @@
   "description": "Interactive construction and exploration of the perpendicular bisector's equidistant property.",
   "creator": "Claude AI",
   "date": "2026-01-07",
-  "subject": ["Geometry", "Mathematics", "Constructions"],
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -17,15 +21,43 @@
   ],
   "bloomsLevel": "Evaluating",
   "duration": "10 minutes",
-  "prerequisites": ["Compass usage", "Segment concepts"],
+  "prerequisites": [
+    "Compass usage",
+    "Segment concepts"
+  ],
   "library": "p5.js",
   "canvasDimensions": "700x650",
   "responsive": true,
   "controls": [
-    {"type": "button", "label": "Previous"},
-    {"type": "button", "label": "Next"},
-    {"type": "button", "label": "Reset"},
-    {"type": "button", "label": "Explore"},
-    {"type": "drag", "label": "Point T"}
+    {
+      "type": "button",
+      "label": "Previous"
+    },
+    {
+      "type": "button",
+      "label": "Next"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    },
+    {
+      "type": "button",
+      "label": "Explore"
+    },
+    {
+      "type": "drag",
+      "label": "Point T"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
   ]
 }
