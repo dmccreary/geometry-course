@@ -24,12 +24,6 @@
       "Connect geometric transformations with fractal generation",
       "Calculate fractal dimensions and understand dimensions beyond integers"
     ],
-    "bloomsTaxonomy": [
-      "Remember",
-      "Understand",
-      "Apply",
-      "Analyze"
-    ],
     "duration": "15-20 minutes",
     "prerequisites": [
       "Basic understanding of line segments and geometric transformations",
@@ -40,7 +34,7 @@
   "technical": {
     "framework": "p5.js",
     "version": "1.11.10",
-    "canvasDimensions": "600\u00d7450 (width\u00d7height)",
+    "canvasDimensions": "600×450 (width×height)",
     "responsive": "Width-responsive",
     "dependencies": [
       "p5.js CDN"
@@ -72,9 +66,9 @@
     "algorithm": "Recursive Koch curve generation using geometric transformation",
     "description": "At each recursion level, every line segment is divided into three equal parts, and the middle third is replaced with two sides of an equilateral triangle. This process creates a self-similar fractal pattern.",
     "equations": [
-      "Length at level n: (4/3)^n \u00d7 original length",
+      "Length at level n: (4/3)^n × original length",
       "Number of segments at level n: 4^n",
-      "Fractal dimension: log(4)/log(3) \u2248 1.26"
+      "Fractal dimension: log(4)/log(3) ≈ 1.26"
     ],
     "assumptions": [
       "The fractal is displayed as a 2D projection",
@@ -106,7 +100,7 @@
     "Recursion",
     "Self-similarity",
     "Fractal dimension",
-    "Sierpi\u0144ski triangle",
+    "Sierpiński triangle",
     "Cantor set",
     "Geometric series",
     "Infinite series convergence"
@@ -166,6 +160,12 @@
       "corrective",
       "explanatory"
     ],
-    "interactionStyle": "construct"
+    "interactionStyle": "construct",
+    "bloomsTaxonomy": [
+      "Remember",
+      "Understand",
+      "Apply",
+      "Analyze"
+    ]
   }
 }

@@ -29,11 +29,6 @@
       "Apply Euler's formula (V - E + F = 2) to verify the soccer ball structure",
       "Analyze why exactly 12 pentagons are needed to close a sphere"
     ],
-    "bloomsTaxonomy": [
-      "Understanding",
-      "Applying",
-      "Analyzing"
-    ],
     "duration": "15-20 minutes",
     "prerequisites": [
       "Understanding of polygons (pentagons and hexagons)",
@@ -94,7 +89,7 @@
       "vertexConfiguration": "5.6.6"
     },
     "mathematicalBasis": [
-      "Golden ratio (\u03c6) used for vertex coordinates",
+      "Golden ratio (φ) used for vertex coordinates",
       "Euler's formula: V - E + F = 2"
     ],
     "visualFeatures": [
@@ -128,6 +123,11 @@
       "Buckminsterfullerene (C60) molecule structure",
       "Geodesic dome architecture",
       "Viral capsid structures in biology"
+    ],
+    "bloomsTaxonomy": [
+      "Understanding",
+      "Applying",
+      "Analyzing"
     ]
   },
   "visualizationType": [

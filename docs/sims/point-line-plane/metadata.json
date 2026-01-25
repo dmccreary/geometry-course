@@ -28,10 +28,6 @@
       "Recognize proper geometric notation for naming points, lines, and planes",
       "Distinguish between the three undefined terms based on their dimensional properties"
     ],
-    "bloomsTaxonomy": [
-      "Remembering",
-      "Understanding"
-    ],
     "duration": "10-15 minutes",
     "prerequisites": [
       "Basic understanding of spatial relationships",
@@ -121,7 +117,7 @@
       "How do we name each of these geometric objects?"
     ],
     "commonMisconceptions": [
-      "Points have size (they don't\u2014they only have position)",
+      "Points have size (they don't—they only have position)",
       "Lines have endpoints (they extend infinitely)",
       "Planes have edges (they extend infinitely in all directions)"
     ],
@@ -130,6 +126,10 @@
       "Name geometric objects using proper notation",
       "Explain dimensional properties of each term",
       "Distinguish between defined and undefined terms"
+    ],
+    "bloomsTaxonomy": [
+      "Remembering",
+      "Understanding"
     ]
   },
   "visualizationType": [
