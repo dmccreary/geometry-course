@@ -3,12 +3,17 @@
 // Version: geometry-1
 // Modified to add radius line and draggable small circle
 
-let canvasWidth = 600;
+let canvasWidth = 667;
+// The top drawing region above the interactive controls
 let drawWidth = canvasWidth;
 let drawHeight = 330;
+// The control region where we place sliders and buttons
 let controlHeight = 40;
+// The total height of both the drawing region height + the control region height
 let canvasHeight = drawHeight + controlHeight;
+// Margin around the active plotting region
 let margin = 25;
+// The left margin area needs to hold the width of the text label and value
 let sliderLeftMargin = 120;
 // Larger text so students in the back of the room can read the labels
 let defaultTextSize = 16;
@@ -22,7 +27,6 @@ let angle = 0; // in radians
 let radius = 100;
 
 function setup() {
-  canvasWidth = windowWidth;
   const canvas = createCanvas(canvasWidth, canvasHeight);
   var mainElement = document.querySelector('main');
   canvas.parent(mainElement);
@@ -36,12 +40,12 @@ function setup() {
   // Create slider for radius control
   // range from 10 to 150 with a default of 100 and a step of 1
   radiusSlider = createSlider(10, 150, 100, 1);
-  radiusSlider.position(sliderLeftMargin, drawHeight + 10);
+  radiusSlider.position(sliderLeftMargin, drawHeight + 20);
   radiusSlider.size(canvasWidth - sliderLeftMargin - 120);
 
   // Create toggle graph button
   toggleGraphButton = createButton("Toggle Plot");
-  toggleGraphButton.position(canvasWidth - 90, drawHeight + 10);
+  toggleGraphButton.position(canvasWidth - 90, drawHeight + 18);
   toggleGraphButton.mousePressed(() => {
     showGraph = !showGraph;
   });
@@ -179,21 +183,4 @@ function mouseDragged() {
 
 function mouseReleased() {
   dragging = false;
-}
-
-// Handle window resizing to make canvas responsive
-function windowResized() {
-    canvasWidth = windowWidth;
-    drawWidth = canvasWidth;
-    resizeCanvas(canvasWidth, canvasHeight);
-
-    // Recalculate circle position to keep it centered on the left side
-    circleX = canvasWidth / 4;
-    circleY = drawHeight / 2;
-
-    // Make the slider width change with the window
-    radiusSlider.size(canvasWidth - sliderLeftMargin - 120);
-
-    // Reposition the toggle button
-    toggleGraphButton.position(canvasWidth - 90, drawHeight + 10);
 }
