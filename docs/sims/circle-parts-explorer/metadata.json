@@ -1,67 +1,45 @@
 {
-  "title": "Circle Parts Explorer",
-  "description": "Interactive visualization of basic circle components including center, radius, diameter, and chord with automatic calculation of circumference and area.",
-  "creator": "Claude AI",
-  "date": "2026-01-07",
-  "subject": [
-    "Geometry",
-    "Mathematics",
-    "Circles"
-  ],
-  "type": "Interactive Visualization",
-  "format": "text/html",
-  "language": "en",
-  "rights": "CC BY-NC 4.0",
-  "gradeLevel": "9-12",
-  "topic": "Circle Components",
-  "learningObjectives": [
-    "Identify and label basic components of a circle",
-    "Understand the relationship between radius and diameter",
-    "Calculate circumference and area using formulas"
-  ],
-  "bloomsLevel": "Understanding",
-  "duration": "5 minutes",
-  "prerequisites": [
-    "Basic geometry vocabulary"
-  ],
-  "library": "p5.js",
-  "canvasDimensions": "700x500",
-  "responsive": true,
-  "controls": [
-    {
-      "type": "slider",
-      "label": "Radius (50 to 180)"
+  "title": "Parts of a Circle",
+  "creator": "Dan McCreary",
+  "subject": "High School Geometry",
+  "description": "Interactive MicroSim for parts of a circle",
+  "date": "2026-02-10",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Mathematics",
+    "topic": "Parts of a Circle",
+    "learningObjectives": [
+      "TODO: Add learning objectives"
+    ],
+    "bloomsTaxonomy": "Remembering",
+    "duration": "10-15 minutes",
+    "prerequisites": [],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 450
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
     }
-  ],
-  "visualizationType": [
-    "interactive-demo"
-  ],
-  "bloomsTaxonomy": [
-    "Remember",
-    "Understand",
-    "Apply",
-    "Create"
-  ],
+  },
   "pedagogical": {
-    "pattern": "exploration",
-    "bloomAlignment": [
-      "understand",
-      "apply",
-      "analyze"
-    ],
-    "bloomVerbs": [
-      "calculate",
-      "demonstrate",
-      "illustrate",
-      "use",
-      "analyze"
-    ],
-    "pacing": "self-paced",
-    "supportsPrediction": false,
-    "dataVisibility": "high",
-    "feedbackType": [
-      "corrective"
-    ],
-    "interactionStyle": "respond"
-  }
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [],
+    "commonMisconceptions": [],
+    "assessmentOpportunities": []
+  },
+  "chapter": "11-circles"
 }

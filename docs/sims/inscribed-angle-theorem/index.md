@@ -1,50 +1,59 @@
 ---
-title: Inscribed Angle Theorem
-description: Interactive demonstration that an inscribed angle measures half the central angle intercepting the same arc.
+title: Central and Inscribed Angles
+description: Interactive p5.js MicroSim for central and inscribed angles.
 image: /sims/inscribed-angle-theorem/inscribed-angle-theorem.png
 og:image: /sims/inscribed-angle-theorem/inscribed-angle-theorem.png
 twitter:image: /sims/inscribed-angle-theorem/inscribed-angle-theorem.png
 social:
    cards: false
+quality_score: 0
 ---
 
-# Inscribed Angle Theorem
+# Central and Inscribed Angles
 
-<iframe src="main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
 
-[Run Fullscreen](./main.html){ .md-button .md-button--primary }
+[Run the Central and Inscribed Angles MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+<br/>
+[Edit in the p5.js Editor](https://editor.p5js.org/)
 
 ## About This MicroSim
 
-This interactive visualization demonstrates the **Inscribed Angle Theorem**:
+TODO: Describe what this MicroSim demonstrates.
 
-> An inscribed angle is half the measure of the central angle that intercepts the same arc.
+## How to Use
 
-## Key Concepts
+TODO: Describe how students should interact with this MicroSim.
 
-- **Central Angle** (blue): An angle with its vertex at the center of the circle
-- **Inscribed Angle** (red): An angle with its vertex on the circle
-- **Intercepted Arc** (yellow): The arc between the two points where the angle's sides meet the circle
+## Iframe Embed Code
 
-## The Theorem
+```html
+<iframe src="main.html"
+        height="450px"
+        width="100%"
+        scrolling="no"></iframe>
+```
 
-$$m\angle_{inscribed} = \frac{1}{2} \times m\angle_{central}$$
+## Lesson Plan
 
-When both angles intercept the same arc:
-- If the central angle is 90°, the inscribed angle is 45°
-- If the central angle is 120°, the inscribed angle is 60°
-- If the central angle is 180° (semicircle), the inscribed angle is 90°
+### Grade Level
+9-12 (High School Geometry)
 
-## Special Case: Angle in a Semicircle
+### Duration
+10-15 minutes
 
-When the central angle is 180° (a diameter), the inscribed angle is always 90°. This is called **Thales' theorem** - any angle inscribed in a semicircle is a right angle.
+### Prerequisites
+TODO: List prerequisites.
 
-## Learning Objectives
+### Activities
 
-- Understand the relationship between central and inscribed angles
-- Apply the inscribed angle theorem to find unknown angle measures
-- Recognize that inscribed angles intercepting the same arc are equal
+1. **Exploration** (5 min): TODO
+2. **Guided Practice** (5 min): TODO
+3. **Assessment** (5 min): TODO
 
-## Bloom's Taxonomy Level
+### Assessment
+TODO: List assessment criteria.
 
-**Analyzing** and **Applying**
+## References
+
+1. TODO: Add references.

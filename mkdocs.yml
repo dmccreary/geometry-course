@@ -40,133 +40,165 @@ nav:
   # sort these by the name of the microsim after the List of MicroSims which should always be first
   - MicroSims:
     - List of MicroSims: sims/index.md
-    - Adjacent Angles Comparison: sims/adjacent-angles-comparison/index.md
-    - Anatomy of a Proof: sims/anatomy-of-proof/index.md
+    - A title under 60 characters.: sims/templates/index.md
+    - Acute Angle Explorer: sims/acute-angle-explorer/index.md
+    - Adjacent vs Non-Adjacent Angles: sims/adjacent-angles-comparison/index.md
     - Angle Bisector: sims/angle-bisector/index.md
     - Angle Bisector Construction: sims/angle-bisector-construction/index.md
+    - Angle Builder: sims/angle-builder/index.md
+    - Angle Classification Interactive: sims/angle-classification/index.md
     - Angle Classification Quiz: sims/angle-classification-quiz/index.md
     - Angle Pair Finder: sims/angle-pair-finder/index.md
     - Angle Pairs: sims/angle-pairs/index.md
-    - Angle Parts Notation: sims/angle-parts-notation/index.md
+    - Angle Parts and Notation: sims/angle-parts-notation/index.md
     - Angle Problem Solver: sims/angle-problem-solver/index.md
+    - Angle Relationships in Circles: sims/circle-angle-theorems/index.md
     - Angle Relationships Summary: sims/angle-relationships-summary/index.md
     - Angle Type Explorer: sims/angle-type-explorer/index.md
-    - Angles Real World: sims/angles-real-world/index.md
+    - Angles in the Real World: sims/angles-real-world/index.md
+    - Arc Length and Sector Area Calculator: sims/circle-area-explorer/index.md
+    - Arc Types: sims/arc-types-explorer/index.md
     - Area Formulas for Quadrilaterals: sims/area-formulas-quadrilaterals/index.md
     - Barnsley's Fern: sims/barnsleys-fern/index.md
     - Bisect Angle Steps: sims/bisect-angle-steps/index.md
     - Bisect Segment Steps: sims/bisect-segment-steps/index.md
-    - Circle Area Calculator: sims/circle-area-calculator/index.md
-    - Circle Area Explorer: sims/circle-area-explorer/index.md
-    - Circle Parts Explorer: sims/circle-parts-explorer/index.md
-    - Circumcenter Explorer: sims/circumcenter-explorer/index.md
+    - Central and Inscribed Angles: sims/inscribed-angle-theorem/index.md
     - Centroid Explorer: sims/centroid-explorer/index.md
     - Cesaro Curve: sims/cesaro-curve/index.md
-    - Ch1 Concept Map: sims/ch1-concept-map/index.md
     - Chapter 03 Concept Map: sims/chapter-03-concept-map/index.md
-    - Colinear and Coplanar Points: sims/collinear-coplanar-points/index.md
-    - Compass Parts: sims/compass-parts/index.md
-    - Complementary Angles Visual: sims/complementary-angles-visual/index.md
+    - Chapter 1 Concept Map: sims/ch1-concept-map/index.md
+    - Chapter 1 Concept Map: sims/chapter-01-concept-map/index.md
+    - Chords: sims/cords/index.md
+    - Chords in a Circle: sims/chords-in-circle/index.md
+    - Circle Area Calculator MicroSim: sims/circle-area-calculator/index.md
+    - Circle Equation Interactive Grapher: sims/circle-equation-grapher/index.md
+    - Circle Segment Visualization: sims/circle-segment-vs-sector/index.md
+    - Circle-Circle Intersection Cases: sims/circle-circle-intersection/index.md
+    - Circumcenter Explorer: sims/circumcenter-explorer/index.md
+    - Collinear and Coplanar Points: sims/collinear-coplanar-points/index.md
+    - Compass Parts and Circle Construction: sims/compass-parts/index.md
     - Complementary and Supplementary Angles: sims/comp-and-sup-angles/index.md
+    - Complementary Angles Visual: sims/complementary-angles-visual/index.md
+    - Completing the Square for Circles: sims/completing-square-circles/index.md
     - Composition of Transformations: sims/composition-transformations/index.md
+    - Conditional Statement Structure: sims/conditional-statement-structure/index.md
     - Conditional Statement Transformer: sims/conditional-statement-transformer/index.md
-    - Conditional Truth Explorer: sims/conditional-truth-explorer/index.md
-    - Congruence Criteria Reference: sims/congruence-criteria-reference/index.md
-    - Congruent Triangles Parts: sims/congruent-triangles-parts/index.md
+    - Conditional Statement Transformer: sims/conditional-transformer/index.md
+    - Conditional Statement Truth Explorer: sims/conditional-truth-explorer/index.md
+    - Congruent Triangles with Corresponding Parts: sims/congruent-triangles-parts/index.md
     - Construction Design Challenge: sims/construction-design-challenge/index.md
     - Construction Practice Workbench: sims/construction-practice-workbench/index.md
     - Construction Techniques Reference Chart: sims/construction-reference-chart/index.md
-    - Copy Angle: sims/copy-angle/index.md
-    - Copy Segment: sims/copy-segment/index.md
+    - Coordinate Plane and Quadrants: sims/coordinate-plane-quadrants/index.md
+    - Coordinate Proof - Rectangle Diagonals: sims/coordinate-proof-diagonals/index.md
+    - Coordinate Proof Laboratory: sims/coordinate-proof-lab/index.md
+    - Coordinate Proof Setup for Rectangle Diagonals: sims/coordinate-proof-setup/index.md
+    - Copy a Segment Construction: sims/copy-segment/index.md
+    - Copy an Angle Construction: sims/copy-angle/index.md
     - Copy Segment Steps: sims/copy-segment-steps/index.md
-    - Coordinate Plane Quadrants: sims/coordinate-plane-quadrants/index.md
-    - Coordinate Proof Setup: sims/coordinate-proof-setup/index.md
-    - Cords: sims/cords/index.md
-    - Cosine: sims/cosine/index.md
+    - Cosine as a Ratio: sims/cosine/index.md
     - Degrees vs Radians: sims/degrees-vs-radians/index.md
-    - Dilation Scale Factors: sims/dilation-scale-factors/index.md
+    - Dilations with Different Scale Factors: sims/dilation-scale-factors/index.md
     - Distance Formula Explorer: sims/distance-formula/index.md
+    - Distance Formula Visualization: sims/distance-formula-visualization/index.md
+    - Eight Angles Formed by Parallel Lines and a Transversal: sims/transversal-eight-angles/index.md
     - Euler Line Explorer: sims/euler-line-explorer/index.md
     - Exterior Angle Theorem: sims/exterior-angle-theorem/index.md
-    - Four Related Conditionals: sims/four-related-conditionals/index.md
-    - Distance Formula Visualization: sims/distance-formula-visualization/index.md
+    - Flow Chart Proof: sims/flow-chart-proof/index.md
+    - Four Related Conditional Statements: sims/four-conditionals/index.md
+    - Four Related Conditional Statements: sims/four-related-conditionals/index.md
+    - Four Triangle Centers: sims/triangle-centers-comparison/index.md
+    - Four Types of Slope: sims/slope-types/index.md
+    - Geometry Word Cloud: sims/word-cloud/index.md
+    - Hinge Theorem Visualization: sims/hinge-theorem/index.md
+    - Incircle Explorer: sims/incircle-explorer/index.md
+    - Indirect Proof Explorer: sims/indirect-proof-explorer/index.md
+    - Inscribed and Circumscribed Polygons: sims/inscribed-circumscribed-polygons/index.md
+    - Inscribed Quadrilateral Angle Sums: sims/inscribed-quadrilateral-angles/index.md
+    - Interactive Triangle Classifier: sims/triangle-classifier/index.md
+    - Isosceles Triangle Properties: sims/isosceles-triangle-properties/index.md
     - Koch Fractal: sims/koch-fractal/index.md
     - Koch Snowflake: sims/koch-snowflake/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
     - Levy C Curve: sims/levy-c-curve/index.md
-    - Graph Viewer: sims/graph-viewer/index.md
-    - Hinge Theorem: sims/hinge-theorem/index.md
-    - Impossible Constructions: sims/impossible-constructions/index.md
-    - Incircle Explorer: sims/incircle-explorer/index.md
-    - Inscribed Angle Theorem: sims/inscribed-angle-theorem/index.md
-    - Isosceles Triangle Properties: sims/isosceles-triangle-properties/index.md
+    - Line Relationships in 3D: sims/line-relationships-3d/index.md
+    - Line-Circle Intersection Cases: sims/line-circle-intersection/index.md
     - Linear Pair Structure: sims/linear-pair-structure/index.md
     - Make Lines Parallel: sims/make-lines-parallel/index.md
-    - Midpoint Explorer: sims/midpoint-explorer/index.md
+    - Midpoint Explorer with Verification: sims/midpoint-explorer/index.md
     - Midpoint Formula Visualization: sims/midpoint-formula-visualization/index.md
     - Nine-Point Circle: sims/nine-point-circle/index.md
     - Orthocenter Explorer: sims/orthocenter-explorer/index.md
-    - Line Relationships 3D: sims/line-relationships-3d/index.md
-    - Parallel Lines Challenge: sims/parallel-lines-challenge/index.md
+    - Parallel and Perpendicular Line Explorer: sims/parallel-perpendicular-explorer/index.md
+    - Parallel Lines & Transversal Explorer: sims/parallel-transversal-explorer/index.md
     - Parallel Lines Construction: sims/parallel-lines-construction/index.md
+    - Parallel Lines Construction Challenge: sims/parallel-lines-challenge/index.md
+    - Parallel Lines in the Coordinate Plane: sims/parallel-lines-coordinate/index.md
     - Parallel Postulate History: sims/parallel-postulate-history/index.md
-    - Parallel Lines Coordinate: sims/parallel-lines-coordinate/index.md
-    - Parallel Perpendicular Explorer: sims/parallel-perpendicular-explorer/index.md
-    - Parallel Transversal Explorer: sims/parallel-transversal-explorer/index.md
+    - Parts of a Circle: sims/circle-parts-explorer/index.md
     - Peano-Gosper Fractal: sims/peano-gosper-fractal/index.md
-    - Perpendicular Construction Selector: sims/perpendicular-construction-selector/index.md
     - Perpendicular Bisector Explorer: sims/perpendicular-bisector-explorer/index.md
-    - Perpendicular Constructions: sims/perpendicular-constructions/index.md
-    - Perpendicular Lines Slopes: sims/perpendicular-lines-slopes/index.md
-    - Preimage Image Notation: sims/preimage-image-notation/index.md
-    - Point Line Explorer: sims/point-line-explorer/index.md
-    - Point, Line, Plane: sims/point-line-plane/index.md
-    - Point Slope Builder: sims/point-slope-builder/index.md
-    - Polygon Interior Angles: sims/polygon-interior-angles/index.md
+    - Perpendicular Construction Selector: sims/perpendicular-construction-selector/index.md
+    - Perpendicular Lines with Negative Reciprocal Slopes: sims/perpendicular-lines-slopes/index.md
+    - Point, Line, Plane - The Three Undefined Terms: sims/point-line-plane/index.md
+    - Point-Slope Form Builder: sims/point-slope-builder/index.md
+    - Points and Lines Explorer: sims/point-line-explorer/index.md
+    - Polygon Interior Angles Explorer: sims/polygon-interior-angles/index.md
+    - Postulate Visualization Gallery: sims/postulate-gallery/index.md
+    - Postulate Visualization Gallery: sims/postulate-visualization/index.md
+    - Power of a Point Visualization: sims/power-of-a-point/index.md
+    - Pre-Image and Image Notation: sims/preimage-image-notation/index.md
     - Pythagorean Theorem: sims/pythagorean-theorem/index.md
-    - Quadrilateral Hierarchy: sims/quadrilateral-hierarchy/index.md
+    - Quadrilateral Family Hierarchy: sims/quadrilateral-hierarchy/index.md
+    - Rays and Segments: sims/rays-and-segments/index.md
     - Reasoning Detective: sims/reasoning-detective/index.md
-    - Reflection Lines: sims/reflection-lines/index.md
     - Reflection Explorer: sims/reflection-explorer/index.md
+    - Reflections Over Different Lines: sims/reflection-lines/index.md
     - Regular Polygon Explorer: sims/regular-polygon-explorer/index.md
-    - Right Angle Contexts: sims/right-angle-contexts/index.md
-    - Rigid Motion Summary: sims/rigid-motion-summary/index.md
-    - Rotation Origin: sims/rotation-origin/index.md
-    - Rotation Explorer: sims/rotation-explorer/index.md
-    - SAS Congruence: sims/sas-congruence/index.md
     - Regular Polygon Explorer Quiz: sims/regular-polygon-explorer-quiz/index.md
-    - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
+    - Right Angles in Real-World Contexts: sims/right-angle-contexts/index.md
+    - Rigid Motion Summary: sims/rigid-motion-summary/index.md
+    - Rolling Wheel Arc Length Application: sims/rolling-wheel-distance/index.md
+    - Rotation Around Origin: sims/rotation-origin/index.md
+    - Rotation Explorer: sims/rotation-explorer/index.md
+    - SAS Congruence Visualization: sims/sas-congruence/index.md
+    - Secants and Tangents: sims/secants-and-tangents/index.md
     - Sierpinski Carpet: sims/sierpinski-carpet/index.md
     - Sierpinski Triangles: sims/sierpinski-triangles/index.md
     - Similar Triangles Comparison: sims/similar-triangles-comparison/index.md
-    - Slope Explorer: sims/slope-explorer/index.md
-    - Slope Intercept Explorer: sims/slope-intercept-explorer/index.md
-    - Slope Intercept Form: sims/slope-intercept-form/index.md
-    - Slope Types: sims/slope-types/index.md
-    - Soccer Ball: sims/soccer-ball/index.md
-    - Special Segments: sims/special-segments/index.md
-    - SSS Congruence: sims/sss-congruence/index.md
+    - Sine and Cosine Circle: sims/sine-and-cosine-circle/index.md
+    - Slope Explorer and Calculator: sims/slope-explorer/index.md
+    - Slope-Intercept Form Explorer: sims/slope-intercept-explorer/index.md
+    - Slope-Intercept Form Visualization: sims/slope-intercept-form/index.md
+    - Soccer Ball - Truncated Icosahedron: sims/soccer-ball/index.md
+    - Special Segments in Triangles: sims/special-segments/index.md
+    - SSS Congruence Visualization: sims/sss-congruence/index.md
     - Straightedge vs Ruler: sims/straightedge-vs-ruler/index.md
-    - Templates: sims/templates/index.md
     - Tessellation Explorer: sims/tessellation-explorer/index.md
+    - The Anatomy of a Proof: sims/anatomy-of-proof/index.md
+    - The Anatomy of a Proof: sims/proof-anatomy/index.md
+    - The Three Impossible Constructions: sims/impossible-constructions/index.md
     - Translation Examples: sims/translation-examples/index.md
     - Translation Explorer: sims/translation-explorer/index.md
-    - Triangle Area Explorer: sims/triangle-area-explorer/index.md
-    - Triangle Classification Angles: sims/triangle-classification-angles/index.md
-    - Triangle Centers Comparison: sims/triangle-centers-comparison/index.md
-    - Triangle Classification Sides: sims/triangle-classification-sides/index.md
     - Transversal Angle Explorer: sims/transversal-angle-explorer/index.md
     - Transversal Coordinate Analysis: sims/transversal-coordinate-analysis/index.md
-    - Transversal Eight Angles: sims/transversal-eight-angles/index.md
-    - Triangle Classifier: sims/triangle-classifier/index.md
+    - Triangle Area Explorer: sims/triangle-area-explorer/index.md
+    - Triangle Classification by Angles: sims/triangle-classification-angles/index.md
+    - Triangle Classification by Sides: sims/triangle-classification-sides/index.md
     - Triangle Congruence: sims/triangle-congruence/index.md
     - Triangle Congruence Criteria: sims/triangle-congruence-criteria/index.md
+    - Triangle Congruence Criteria Reference: sims/congruence-criteria-reference/index.md
     - Triangle Congruence Identifier: sims/triangle-congruence-identifier/index.md
     - Triangle Inequality Explorer: sims/triangle-inequality-explorer/index.md
-    - Triangle Sum Theorem: sims/triangle-sum-theorem/index.md
-    - Trig Ratios Explorer: sims/trig-ratios-explorer/index.md
+    - Triangle Sum Theorem Proof: sims/triangle-sum-theorem/index.md
+    - Trigonometric Ratios Explorer: sims/trig-ratios-explorer/index.md
+    - Two Types of Perpendicular Constructions: sims/perpendicular-constructions/index.md
+    - Two-Column Proof Builder: sims/two-column-proof-builder/index.md
+    - Vertical Angles at Intersection: sims/vertical-angles-intersection/index.md
     - Vertical Angles Explorer: sims/vertical-angles-explorer/index.md
-    - Word Cloud: sims/word-cloud/index.md
     - Workflow: sims/workflow/index.md
+
+
 
 
   - Sample Prompts:

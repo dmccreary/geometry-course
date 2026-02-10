@@ -1,49 +1,59 @@
 ---
-title: Circle Parts Explorer
-description: Interactive visualization of basic circle components including center, radius, diameter, and chord.
+title: Parts of a Circle
+description: Interactive p5.js MicroSim for parts of a circle.
 image: /sims/circle-parts-explorer/circle-parts-explorer.png
 og:image: /sims/circle-parts-explorer/circle-parts-explorer.png
 twitter:image: /sims/circle-parts-explorer/circle-parts-explorer.png
 social:
    cards: false
+quality_score: 0
 ---
 
-# Circle Parts Explorer
+# Parts of a Circle
 
-<iframe src="main.html" height="502px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
 
-[Run Fullscreen](./main.html){ .md-button .md-button--primary }
+[Run the Parts of a Circle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+<br/>
+[Edit in the p5.js Editor](https://editor.p5js.org/)
 
 ## About This MicroSim
 
-This interactive visualization demonstrates the fundamental parts of a circle:
+TODO: Describe what this MicroSim demonstrates.
 
-- **Center** (red dot) - The fixed point from which all points on the circle are equidistant
-- **Radius** (green/purple lines) - The distance from center to any point on the circle
-- **Diameter** (orange line) - A chord passing through the center; equals 2 × radius
-- **Chord** (blue line) - A line segment with both endpoints on the circle
+## How to Use
 
-## Key Relationships
+TODO: Describe how students should interact with this MicroSim.
 
-| Measurement | Formula |
-|-------------|---------|
-| Diameter | d = 2r |
-| Circumference | C = 2πr = πd |
-| Area | A = πr² |
+## Iframe Embed Code
 
-## Important Facts
+```html
+<iframe src="main.html"
+        height="450px"
+        width="100%"
+        scrolling="no"></iframe>
+```
 
-- The **diameter** is the longest possible chord in a circle
-- All radii of a circle are equal in length
-- The diameter is twice the radius (d = 2r)
-- Every chord divides the circle into two arcs
+## Lesson Plan
 
-## Learning Objectives
+### Grade Level
+9-12 (High School Geometry)
 
-- Identify and label the basic components of a circle
-- Understand the relationship between radius and diameter
-- Calculate circumference and area using formulas
+### Duration
+10-15 minutes
 
-## Bloom's Taxonomy Level
+### Prerequisites
+TODO: List prerequisites.
 
-**Remembering** and **Understanding**
+### Activities
+
+1. **Exploration** (5 min): TODO
+2. **Guided Practice** (5 min): TODO
+3. **Assessment** (5 min): TODO
+
+### Assessment
+TODO: List assessment criteria.
+
+## References
+
+1. TODO: Add references.

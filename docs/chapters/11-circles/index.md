@@ -77,6 +77,9 @@ where:
 - $r$ is the radius
 
 #### Diagram: Parts of a Circle
+
+<iframe src="../../sims/circle-parts-explorer/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Basic Circle Components</summary>
     Type: microsim
@@ -118,7 +121,7 @@ where:
     Implementation: p5.js with createSlider for interactive control
 </details>
 
-<iframe src="../../sims/circle-parts-explorer/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 
 ### Lines That Intersect Circles
 
@@ -127,6 +130,9 @@ Circles interact with lines in several special ways. Understanding these relatio
 A **chord** is a line segment whose endpoints both lie on the circle. The diameter is the longest possible chord of any circle, as it passes through the center.
 
 #### Diagram: Chords in a Circle
+
+<iframe src="../../sims/chords-in-circle/main.html" height="470px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Chord Visualization</summary>
     Type: microsim
@@ -175,6 +181,9 @@ A **secant** is a line (not just a segment) that intersects the circle at exactl
 A **tangent to a circle** is a line that touches the circle at exactly one point. This special point where the tangent meets the circle is called the **point of tangency**. An important property: a tangent line is always perpendicular to the radius drawn to the point of tangency.
 
 #### Diagram: Secants and Tangents
+
+<iframe src="../../sims/secants-and-tangents/main.html" height="520px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Secant and Tangent Line Interactive</summary>
     Type: microsim
@@ -245,6 +254,9 @@ where:
 - $m\angle_{central}$ is the measure of the central angle subtending the same arc
 
 #### Diagram: Central and Inscribed Angles
+
+<iframe src="../../sims/inscribed-angle-theorem/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Central vs Inscribed Angles Interactive</summary>
     Type: microsim
@@ -289,8 +301,6 @@ where:
     Implementation: p5.js with angle calculations and dynamic arc highlighting
 </details>
 
-<iframe src="../../sims/inscribed-angle-theorem/main.html" height="552px" width="100%" scrolling="no"></iframe>
-
 The arc between the two points where the angle's sides intersect the circle is called the **intercepted arc**. When working with arcs, we distinguish between two types:
 
 - A **minor arc** is less than 180° (semicircle)
@@ -300,6 +310,9 @@ The arc between the two points where the angle's sides intersect the circle is c
 Minor arcs are typically named with two letters (the endpoints), while major arcs use three letters to avoid confusion.
 
 #### Diagram: Arc Types
+
+<iframe src="../../sims/arc-types-explorer/main.html" height="470px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Major Arcs, Minor Arcs, and Semicircles</summary>
     Type: microsim
@@ -382,6 +395,9 @@ where:
 - $r$ is the radius of the circle
 
 #### Diagram: Arc Length and Sector Area Calculator
+
+<iframe src="../../sims/circle-area-explorer/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Interactive Arc Length and Sector MicroSim</summary>
     Type: microsim
@@ -430,11 +446,12 @@ where:
     Implementation: p5.js with arc length = (θ/360) × 2πr and area = (θ/360) × πr²
 </details>
 
-<iframe src="../../sims/circle-area-explorer/main.html" height="502px" width="100%" scrolling="no"></iframe>
-
 A **segment of a circle** is the region between a chord and the arc it cuts off. Unlike a sector (which includes two radii), a segment has a chord as one of its boundaries. To find the area of a segment, you subtract the area of the triangle formed by the chord and the two radii from the area of the sector.
 
 #### Diagram: Circle Segment Visualization
+
+<iframe src="../../sims/circle-segment-vs-sector/main.html" height="400px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Circle Segment vs Sector</summary>
     Type: diagram
@@ -497,6 +514,9 @@ Here are some important properties:
 **Secant-Secant Angle:** When two secants intersect outside the circle, the measure of the angle formed is half the difference of the measures of the intercepted arcs.
 
 #### Diagram: Angle Relationships in Circles
+
+<iframe src="../../sims/circle-angle-theorems/main.html" height="520px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Special Angle Theorems Interactive</summary>
     Type: microsim
@@ -583,6 +603,9 @@ where:
 - $PB$ is the external part of the secant
 
 #### Diagram: Power of a Point Visualization
+
+<iframe src="../../sims/power-of-a-point/main.html" height="520px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Tangent and Secant Segment Products</summary>
     Type: microsim
@@ -637,6 +660,9 @@ An **inscribed polygon** is a polygon whose vertices all lie on a circle. The ci
 A **circumscribed polygon** is a polygon whose sides are all tangent to a circle. The circle is said to be **inscribed** in the polygon. Not all polygons have inscribed circles, but regular polygons (with all sides and angles equal) always do.
 
 #### Diagram: Inscribed and Circumscribed Polygons
+
+<iframe src="../../sims/inscribed-circumscribed-polygons/main.html" height="470px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Polygons and Circles Relationships</summary>
     Type: microsim
@@ -700,6 +726,9 @@ where:
 - $\angle A, \angle B, \angle C, \angle D$ are the four angles of the inscribed quadrilateral
 
 #### Diagram: Inscribed Quadrilateral Angle Sums
+
+<iframe src="../../sims/inscribed-quadrilateral-angles/main.html" height="520px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Inscribed Quadrilateral Interactive</summary>
     Type: microsim
@@ -780,6 +809,9 @@ When the center is at the origin $(0, 0)$, the equation simplifies to:
 $x^2 + y^2 = r^2$
 
 #### Diagram: Circle Equation Interactive Grapher
+
+<iframe src="../../sims/circle-equation-grapher/main.html" height="530px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Graphing Circles on Coordinate Plane</summary>
     Type: microsim
@@ -857,6 +889,9 @@ $(x - 2)^2 + (y + 3)^2 = 25$
 This reveals center $(2, -3)$ and radius $r = 5$.
 
 #### Diagram: Completing the Square for Circles
+
+<iframe src="../../sims/completing-square-circles/main.html" height="520px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Converting Circle Equations Interactive</summary>
     Type: microsim
@@ -921,6 +956,9 @@ Circles can intersect with lines and with other circles. Finding these intersect
 To find intersection points, substitute the line equation into the circle equation and solve the resulting quadratic.
 
 #### Diagram: Line-Circle Intersection Cases
+
+<iframe src="../../sims/line-circle-intersection/main.html" height="520px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Line and Circle Intersection Explorer</summary>
     Type: microsim
@@ -979,6 +1017,9 @@ To find intersection points, substitute the line equation into the circle equati
 The number of intersections depends on the distance between centers and the sum/difference of radii.
 
 #### Diagram: Circle-Circle Intersection Cases
+
+<iframe src="../../sims/circle-circle-intersection/main.html" height="520px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Two Circles Intersection Explorer</summary>
     Type: microsim
@@ -1044,6 +1085,9 @@ Here are some practical applications:
 - **Communications:** Radio and cell towers have circular coverage areas with the tower at the center
 
 #### Diagram: Rolling Wheel Arc Length Application
+
+<iframe src="../../sims/rolling-wheel-distance/main.html" height="440px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Wheel Rolling Distance Calculator</summary>
     Type: microsim
