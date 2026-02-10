@@ -1,19 +1,19 @@
 ---
-title: Parts of a Circle
-description: Interactive p5.js MicroSim for parts of a circle.
-image: /sims/circle-parts-explorer/circle-parts-explorer.png
-og:image: /sims/circle-parts-explorer/circle-parts-explorer.png
-twitter:image: /sims/circle-parts-explorer/circle-parts-explorer.png
+title: Volume Formulas Comparison
+description: Interactive p5.js MicroSim for volume formulas comparison.
+image: /sims/volume-formulas-comparison/volume-formulas-comparison.png
+og:image: /sims/volume-formulas-comparison/volume-formulas-comparison.png
+twitter:image: /sims/volume-formulas-comparison/volume-formulas-comparison.png
 social:
    cards: false
 quality_score: 0
 ---
 
-# Parts of a Circle
+# Volume Formulas Comparison
 
-<iframe src="main.html" height="460px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
 
-[Run the Parts of a Circle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Run the Volume Formulas Comparison MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
 [Edit in the p5.js Editor](https://editor.p5js.org/)
 
@@ -29,7 +29,7 @@ TODO: Describe how students should interact with this MicroSim.
 
 ```html
 <iframe src="main.html"
-        height="460px"
+        height="450px"
         width="100%"
         scrolling="no"></iframe>
 ```

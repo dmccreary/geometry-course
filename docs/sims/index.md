@@ -117,7 +117,7 @@ Interactive simulations to explore geometric concepts through hands-on manipulat
 - **[Line Relationships 3D](./line-relationships-3d/index.md)**
 
 
-    ![Line Relationships 3D](./line-relationships-3d/line-relationships-3d.png)
+    ![Line Relationships 3D](./line-relationships-3d/line-relationships-3d.jpg)
 
     Visualize relationships between lines in 3D space including parallel, intersecting, perpendicular, and skew lines.
 

@@ -62,6 +62,7 @@ nav:
     - Barnsley's Fern: sims/barnsleys-fern/index.md
     - Bisect Angle Steps: sims/bisect-angle-steps/index.md
     - Bisect Segment Steps: sims/bisect-segment-steps/index.md
+    - Cavalieri's Principle Demonstration: sims/cavalieris-principle-demonstration/index.md
     - Central and Inscribed Angles: sims/inscribed-angle-theorem/index.md
     - Centroid Explorer: sims/centroid-explorer/index.md
     - Cesaro Curve: sims/cesaro-curve/index.md
@@ -70,12 +71,15 @@ nav:
     - Chapter 1 Concept Map: sims/chapter-01-concept-map/index.md
     - Chords: sims/cords/index.md
     - Chords in a Circle: sims/chords-in-circle/index.md
+    - Circle Anatomy and Formulas: sims/circle-anatomy-and-formulas/index.md
+    - Circle Area and Circumference Calculator: sims/circle-area-and-circumference-calculator/index.md
     - Circle Area Calculator MicroSim: sims/circle-area-calculator/index.md
     - Circle Equation Interactive Grapher: sims/circle-equation-grapher/index.md
     - Circle Segment Visualization: sims/circle-segment-vs-sector/index.md
     - Circle-Circle Intersection Cases: sims/circle-circle-intersection/index.md
     - Circumcenter Explorer: sims/circumcenter-explorer/index.md
     - Collinear and Coplanar Points: sims/collinear-coplanar-points/index.md
+    - Comparing Perimeter and Circumference: sims/comparing-perimeter-and-circumference/index.md
     - Compass Parts and Circle Construction: sims/compass-parts/index.md
     - Complementary and Supplementary Angles: sims/comp-and-sup-angles/index.md
     - Complementary Angles Visual: sims/complementary-angles-visual/index.md
@@ -97,6 +101,7 @@ nav:
     - Copy an Angle Construction: sims/copy-angle/index.md
     - Copy Segment Steps: sims/copy-segment-steps/index.md
     - Cosine as a Ratio: sims/cosine/index.md
+    - Cross-Section Explorer: sims/cross-section-explorer/index.md
     - Degrees vs Radians: sims/degrees-vs-radians/index.md
     - Dilations with Different Scale Factors: sims/dilation-scale-factors/index.md
     - Distance Formula Explorer: sims/distance-formula/index.md
@@ -127,8 +132,11 @@ nav:
     - Make Lines Parallel: sims/make-lines-parallel/index.md
     - Midpoint Explorer with Verification: sims/midpoint-explorer/index.md
     - Midpoint Formula Visualization: sims/midpoint-formula-visualization/index.md
+    - Net to Solid Explorer: sims/net-to-solid-explorer/index.md
     - Nine-Point Circle: sims/nine-point-circle/index.md
+    - Optimization Challenge - Maximum Volume Box: sims/optimization-challenge-maximum-volume-box/index.md
     - Orthocenter Explorer: sims/orthocenter-explorer/index.md
+    - Packaging Efficiency Comparison: sims/packaging-efficiency-comparison/index.md
     - Parallel and Perpendicular Line Explorer: sims/parallel-perpendicular-explorer/index.md
     - Parallel Lines & Transversal Explorer: sims/parallel-transversal-explorer/index.md
     - Parallel Lines Construction: sims/parallel-lines-construction/index.md
@@ -154,6 +162,7 @@ nav:
     - Reasoning Detective: sims/reasoning-detective/index.md
     - Reflection Explorer: sims/reflection-explorer/index.md
     - Reflections Over Different Lines: sims/reflection-lines/index.md
+    - Regular Polygon Area Explorer: sims/regular-polygon-area-explorer/index.md
     - Regular Polygon Explorer: sims/regular-polygon-explorer/index.md
     - Regular Polygon Explorer Quiz: sims/regular-polygon-explorer-quiz/index.md
     - Right Angles in Real-World Contexts: sims/right-angle-contexts/index.md
@@ -162,6 +171,8 @@ nav:
     - Rotation Around Origin: sims/rotation-origin/index.md
     - Rotation Explorer: sims/rotation-explorer/index.md
     - SAS Congruence Visualization: sims/sas-congruence/index.md
+    - Scale Model Builder: sims/scale-model-builder/index.md
+    - Scale Relationships: sims/scale-relationships/index.md
     - Secants and Tangents: sims/secants-and-tangents/index.md
     - Sierpinski Carpet: sims/sierpinski-carpet/index.md
     - Sierpinski Triangles: sims/sierpinski-triangles/index.md
@@ -174,10 +185,13 @@ nav:
     - Special Segments in Triangles: sims/special-segments/index.md
     - SSS Congruence Visualization: sims/sss-congruence/index.md
     - Straightedge vs Ruler: sims/straightedge-vs-ruler/index.md
+    - Surface Area Calculator: sims/surface-area-calculator/index.md
+    - Surface Area Formulas Reference: sims/surface-area-formulas-reference/index.md
     - Tessellation Explorer: sims/tessellation-explorer/index.md
     - The Anatomy of a Proof: sims/anatomy-of-proof/index.md
     - The Anatomy of a Proof: sims/proof-anatomy/index.md
     - The Three Impossible Constructions: sims/impossible-constructions/index.md
+    - Three-Dimensional Solids Gallery: sims/three-dimensional-solids-gallery/index.md
     - Translation Examples: sims/translation-examples/index.md
     - Translation Explorer: sims/translation-explorer/index.md
     - Transversal Angle Explorer: sims/transversal-angle-explorer/index.md
@@ -196,7 +210,11 @@ nav:
     - Two-Column Proof Builder: sims/two-column-proof-builder/index.md
     - Vertical Angles at Intersection: sims/vertical-angles-intersection/index.md
     - Vertical Angles Explorer: sims/vertical-angles-explorer/index.md
+    - Volume Explorer: sims/volume-explorer/index.md
+    - Volume Formulas Comparison: sims/volume-formulas-comparison/index.md
     - Workflow: sims/workflow/index.md
+
+
 
 
 

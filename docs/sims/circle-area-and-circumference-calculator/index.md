@@ -1,19 +1,19 @@
 ---
-title: Parts of a Circle
-description: Interactive p5.js MicroSim for parts of a circle.
-image: /sims/circle-parts-explorer/circle-parts-explorer.png
-og:image: /sims/circle-parts-explorer/circle-parts-explorer.png
-twitter:image: /sims/circle-parts-explorer/circle-parts-explorer.png
+title: Circle Area and Circumference Calculator
+description: Interactive p5.js MicroSim for circle area and circumference calculator.
+image: /sims/circle-area-and-circumference-calculator/circle-area-and-circumference-calculator.png
+og:image: /sims/circle-area-and-circumference-calculator/circle-area-and-circumference-calculator.png
+twitter:image: /sims/circle-area-and-circumference-calculator/circle-area-and-circumference-calculator.png
 social:
    cards: false
 quality_score: 0
 ---
 
-# Parts of a Circle
+# Circle Area and Circumference Calculator
 
-<iframe src="main.html" height="460px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
 
-[Run the Parts of a Circle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Run the Circle Area and Circumference Calculator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
 [Edit in the p5.js Editor](https://editor.p5js.org/)
 
@@ -29,7 +29,7 @@ TODO: Describe how students should interact with this MicroSim.
 
 ```html
 <iframe src="main.html"
-        height="460px"
+        height="450px"
         width="100%"
         scrolling="no"></iframe>
 ```

@@ -287,6 +287,10 @@ where $n$ is the number of sides and $s$ is the side length.
 
 #### Drawing: Regular Polygon Area Explorer
 
+
+<iframe src="../../sims/regular-polygon-area-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Regular Polygon Area Explorer Fullscreen](../../sims/regular-polygon-area-explorer/main.html)
+
 <details markdown="1">
   <summary>Interactive exploration of regular polygon areas</summary>
 
@@ -407,6 +411,10 @@ $$A = \pi r^2$$
 
 #### Diagram: Comparing Perimeter and Circumference
 
+
+<iframe src="../../sims/comparing-perimeter-and-circumference/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Comparing Perimeter and Circumference Fullscreen](../../sims/comparing-perimeter-and-circumference/main.html)
+
 <details markdown="1">
 <summary>Visual comparison of polygon perimeters approaching circle circumference</summary>
 
@@ -490,6 +498,10 @@ Create a colorful diagram showing how polygons approximate circles.
 
 #### Diagram: Circle Anatomy and Formulas
 
+
+<iframe src="../../sims/circle-anatomy-and-formulas/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Circle Anatomy and Formulas Fullscreen](../../sims/circle-anatomy-and-formulas/main.html)
+
 <details markdown="1">
 <summary>Visual guide to circle measurements</summary>
 
@@ -538,6 +550,10 @@ Create a colorful diagram showing circle components and formulas.
 </details>
 
 #### Drawing: Circle Area and Circumference Calculator
+
+
+<iframe src="../../sims/circle-area-and-circumference-calculator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Circle Area and Circumference Calculator Fullscreen](../../sims/circle-area-and-circumference-calculator/main.html)
 
 <details markdown="1">
 <summary>Interactive circle measurement tool</summary>
@@ -626,6 +642,10 @@ Other important three-dimensional solids include:
 - **Sphere**: The set of all points in space equidistant from a center point
 
 #### Diagram: Three-Dimensional Solids Gallery
+
+
+<iframe src="../../sims/three-dimensional-solids-gallery/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Three-Dimensional Solids Gallery Fullscreen](../../sims/three-dimensional-solids-gallery/main.html)
 
 <details markdown="1">
 <summary>Visual catalog of common 3D solids</summary>
@@ -720,6 +740,10 @@ Create a colorful diagram showing seven common 3D solids in a gallery format.
 A **net** is a two-dimensional pattern that can be folded to form a three-dimensional solid. Nets are useful for understanding surface area and for constructing physical models.
 
 #### Drawing: Net to Solid Explorer
+
+
+<iframe src="../../sims/net-to-solid-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Net to Solid Explorer Fullscreen](../../sims/net-to-solid-explorer/main.html)
 
 <details markdown="1">
 <summary>Interactive exploration of 3D solid nets</summary>
@@ -829,6 +853,10 @@ $$SA = 4\pi r^2$$
 
 #### Diagram: Surface Area Formulas Reference
 
+
+<iframe src="../../sims/surface-area-formulas-reference/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Surface Area Formulas Reference Fullscreen](../../sims/surface-area-formulas-reference/main.html)
+
 <details markdown="1">
 <summary>Visual reference for surface area calculations</summary>
 
@@ -915,6 +943,10 @@ Create a colorful reference sheet for surface area formulas.
 </details>
 
 #### Drawing: Surface Area Calculator
+
+
+<iframe src="../../sims/surface-area-calculator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Surface Area Calculator Fullscreen](../../sims/surface-area-calculator/main.html)
 
 <details markdown="1">
 <summary>Interactive surface area calculation tool</summary>
@@ -1057,6 +1089,10 @@ This principle helps us understand why an oblique prism (tilted) has the same vo
 A **cross-section** is the 2D shape formed when a plane intersects a 3D solid. Understanding cross-sections helps visualize how solids are constructed and why volume formulas work.
 
 #### Drawing: Cross-Section Explorer
+
+
+<iframe src="../../sims/cross-section-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Cross-Section Explorer Fullscreen](../../sims/cross-section-explorer/main.html)
 
 <details markdown="1">
 <summary>Interactive exploration of 3D solid cross-sections</summary>
@@ -1206,6 +1242,10 @@ Create an interactive p5.js simulation showing cross-sections of 3D solids.
 
 #### Drawing: Cavalieri's Principle Demonstration
 
+
+<iframe src="../../sims/cavalieris-principle-demonstration/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Cavalieri's Principle Demonstration Fullscreen](../../sims/cavalieris-principle-demonstration/main.html)
+
 <details markdown="1">
 <summary>Interactive demonstration of Cavalieri's Principle</summary>
 
@@ -1325,6 +1365,10 @@ Create an interactive p5.js simulation demonstrating Cavalieri's Principle.
 
 #### Diagram: Volume Formulas Comparison
 
+
+<iframe src="../../sims/volume-formulas-comparison/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Volume Formulas Comparison Fullscreen](../../sims/volume-formulas-comparison/main.html)
+
 <details markdown="1">
 <summary>Visual comparison of volume formulas and relationships</summary>
 
@@ -1401,6 +1445,10 @@ Create a colorful diagram comparing prism/cylinder volumes with pyramid/cone vol
 </details>
 
 #### Drawing: Volume Explorer
+
+
+<iframe src="../../sims/volume-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Volume Explorer Fullscreen](../../sims/volume-explorer/main.html)
 
 <details markdown="1">
 <summary>Interactive volume calculation and comparison tool</summary>
@@ -1534,6 +1582,10 @@ If a model is made at $1:10$ scale, then areas are reduced by $(1/10)^2 = 1/100$
     This is why scale matters so much in nature. If you doubled every dimension of an animal, its weight (volume) would increase by $2^3 = 8$ times, but its bone cross-section (area) would only grow by $2^2 = 4$ times. The bones couldn't support the weight! Geometry explains real biology.
 
 #### Drawing: Scale Model Builder
+
+
+<iframe src="../../sims/scale-model-builder/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Scale Model Builder Fullscreen](../../sims/scale-model-builder/main.html)
 
 <details markdown="1">
 <summary>Interactive scale model creation and analysis</summary>
@@ -1693,6 +1745,10 @@ Three columns showing how measurements scale:
 
 #### Diagram: Scale Relationships
 
+
+<iframe src="../../sims/scale-relationships/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Scale Relationships Fullscreen](../../sims/scale-relationships/main.html)
+
 <details markdown="1">
 <summary>Visual guide to how scale affects length, area, and volume</summary>
 
@@ -1792,6 +1848,10 @@ These problems often require:
 3. Using algebraic or calculus techniques to find the optimal value
 
 #### Drawing: Optimization Challenge - Maximum Volume Box
+
+
+<iframe src="../../sims/optimization-challenge-maximum-volume-box/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Optimization Challenge - Maximum Volume Box Fullscreen](../../sims/optimization-challenge-maximum-volume-box/main.html)
 
 <details markdown="1">
 <summary>Interactive optimization problem solver</summary>
@@ -1942,6 +2002,10 @@ A **design challenge** typically involves:
 5. Consider practical constraints (ease of opening, display, etc.)
 
 #### Diagram: Packaging Efficiency Comparison
+
+
+<iframe src="../../sims/packaging-efficiency-comparison/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Packaging Efficiency Comparison Fullscreen](../../sims/packaging-efficiency-comparison/main.html)
 
 <details markdown="1">
 <summary>Visual comparison of different packaging arrangements</summary>

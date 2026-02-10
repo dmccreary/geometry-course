@@ -1,19 +1,19 @@
 ---
-title: Parts of a Circle
-description: Interactive p5.js MicroSim for parts of a circle.
-image: /sims/circle-parts-explorer/circle-parts-explorer.png
-og:image: /sims/circle-parts-explorer/circle-parts-explorer.png
-twitter:image: /sims/circle-parts-explorer/circle-parts-explorer.png
+title: Surface Area Formulas Reference
+description: Interactive p5.js MicroSim for surface area formulas reference.
+image: /sims/surface-area-formulas-reference/surface-area-formulas-reference.png
+og:image: /sims/surface-area-formulas-reference/surface-area-formulas-reference.png
+twitter:image: /sims/surface-area-formulas-reference/surface-area-formulas-reference.png
 social:
    cards: false
 quality_score: 0
 ---
 
-# Parts of a Circle
+# Surface Area Formulas Reference
 
-<iframe src="main.html" height="460px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
 
-[Run the Parts of a Circle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Run the Surface Area Formulas Reference MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
 [Edit in the p5.js Editor](https://editor.p5js.org/)
 
@@ -29,7 +29,7 @@ TODO: Describe how students should interact with this MicroSim.
 
 ```html
 <iframe src="main.html"
-        height="460px"
+        height="450px"
         width="100%"
         scrolling="no"></iframe>
 ```
