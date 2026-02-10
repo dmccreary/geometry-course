@@ -267,3 +267,10 @@ Used for choosing modes, algorithms, datasets
 ### Input (Text field)
 `createInput(value, type)`
 Used for numeric or short text input
+
+### Aligning Multiple Sliders
+
+Whe a p5.js MicroSim has multiple sliders, wrap them in a div so the
+label, value and slider are all aligned.  Here is the template:
+
+~/.claude/skills/microsim-generator/assets/templates/p5/slider-label-value-alignment.js

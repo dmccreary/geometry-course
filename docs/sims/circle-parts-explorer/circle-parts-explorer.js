@@ -15,8 +15,9 @@ let centerX, centerY;
 let bgColor;
 
 function setup() {
+    updateCanvasSize();
     const canvas = createCanvas(canvasWidth, canvasHeight);
-    canvas.parent('canvas-container');
+    canvas.parent(document.querySelector('main'));
 
     bgColor = color(248, 250, 252);
     centerX = canvasWidth / 3;
@@ -26,7 +27,7 @@ function setup() {
     radiusSlider = createSlider(50, 180, 120, 10);
     radiusSlider.position(canvasWidth/2 - 100, drawHeight + 55);
     radiusSlider.size(200);
-    radiusSlider.parent('canvas-container');
+    radiusSlider.parent(document.querySelector('main'));
 
     textFont('Arial');
 }
@@ -188,7 +189,7 @@ function windowResized() {
 }
 
 function updateCanvasSize() {
-    let containerWidth = select('#canvas-container').width;
+    let containerWidth = select('main').width;
     if (containerWidth > 0) {
         canvasWidth = min(containerWidth, 750);
         resizeCanvas(canvasWidth, canvasHeight);

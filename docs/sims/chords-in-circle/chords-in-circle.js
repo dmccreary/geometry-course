@@ -12,9 +12,7 @@ let centerX, centerY;
 let chords = [];
 let showPerpDistances = true;
 
-// Button
-let btnX, btnY, btnW = 160, btnH = 32;
-let toggleX, toggleW = 220, toggleH = 32;
+let newChordsBtn, perpCheckbox;
 
 function setup() {
     updateCanvasSize();
@@ -22,14 +20,30 @@ function setup() {
     canvas.parent(document.querySelector('main'));
     centerX = canvasWidth / 2;
     centerY = drawHeight / 2 + 15;
-    btnX = 30;
-    btnY = drawHeight + 10;
-    toggleX = btnX + btnW + 20;
+
+    let controlRow = createDiv();
+    controlRow.parent(document.querySelector('main'));
+    controlRow.position(10, drawHeight + 10);
+
+    newChordsBtn = createButton('New Chords');
+    newChordsBtn.parent(controlRow);
+    newChordsBtn.mousePressed(generateChords);
+
+    let spacer = createSpan(' ');
+    spacer.parent(controlRow);
+    spacer.style('display', 'inline-block');
+    spacer.style('width', '20px');
+
+    perpCheckbox = createCheckbox('Show Perpendicular Dist.', true);
+    perpCheckbox.parent(controlRow);
+
     generateChords();
 }
 
 function draw() {
     background(240, 248, 255);
+
+    showPerpDistances = perpCheckbox.checked();
 
     // Title
     fill(40);
@@ -55,10 +69,10 @@ function draw() {
 
     // Draw chords
     let colors = [
-        [33, 150, 243],   // blue
-        [76, 175, 80],    // green
-        [156, 39, 176],   // purple
-        [220, 20, 60]     // red (diameter)
+        [33, 150, 243],
+        [76, 175, 80],
+        [156, 39, 176],
+        [220, 20, 60]
     ];
     let labels = ['Chord 1', 'Chord 2', 'Chord 3', 'Diameter'];
 
@@ -66,23 +80,19 @@ function draw() {
         let c = chords[i];
         let col = colors[i];
 
-        // Draw chord
         stroke(col[0], col[1], col[2]);
         strokeWeight(3);
         line(c.x1, c.y1, c.x2, c.y2);
 
-        // Endpoints
         fill(col[0], col[1], col[2]);
         noStroke();
         ellipse(c.x1, c.y1, 8);
         ellipse(c.x2, c.y2, 8);
 
-        // Chord length
         let len = dist(c.x1, c.y1, c.x2, c.y2);
         let mx = (c.x1 + c.x2) / 2;
         let my = (c.y1 + c.y2) / 2;
 
-        // Perpendicular distance from center
         if (showPerpDistances) {
             let perpDist = pointToLineDist(centerX, centerY, c.x1, c.y1, c.x2, c.y2);
             let proj = projectPoint(centerX, centerY, c.x1, c.y1, c.x2, c.y2);
@@ -92,7 +102,6 @@ function draw() {
             line(centerX, centerY, proj.x, proj.y);
             drawingContext.setLineDash([]);
 
-            // Distance label near midpoint of perp line
             fill(col[0], col[1], col[2]);
             noStroke();
             textSize(10);
@@ -102,7 +111,6 @@ function draw() {
             text('d=' + perpDist.toFixed(0), lx + 12, ly);
         }
 
-        // Label
         fill(col[0], col[1], col[2]);
         noStroke();
         textSize(12);
@@ -111,12 +119,7 @@ function draw() {
         text(labels[i] + ' (' + len.toFixed(0) + 'px)', mx, my + offset);
     }
 
-    // Info box
     drawInfoBox();
-
-    // Buttons
-    drawButton(btnX, btnY, btnW, btnH, 'New Chords');
-    drawToggle(toggleX, btnY, toggleW, toggleH, 'Show Perpendicular Dist.', showPerpDistances);
 }
 
 function drawInfoBox() {
@@ -136,7 +139,6 @@ function drawInfoBox() {
 
 function generateChords() {
     chords = [];
-    // 3 random chords (not through center)
     for (let i = 0; i < 3; i++) {
         let a1 = random(TWO_PI);
         let spread = random(PI * 0.3, PI * 0.8);
@@ -148,7 +150,6 @@ function generateChords() {
             y2: centerY + circleR * sin(a2)
         });
     }
-    // Diameter (through center)
     let da = random(TWO_PI);
     chords.push({
         x1: centerX + circleR * cos(da),
@@ -159,10 +160,7 @@ function generateChords() {
 }
 
 function pointToLineDist(px, py, x1, y1, x2, y2) {
-    let A = px - x1;
-    let B = py - y1;
-    let C = x2 - x1;
-    let D = y2 - y1;
+    let A = px - x1, B = py - y1, C = x2 - x1, D = y2 - y1;
     let dot = A * C + B * D;
     let lenSq = C * C + D * D;
     let param = lenSq !== 0 ? dot / lenSq : -1;
@@ -174,47 +172,11 @@ function pointToLineDist(px, py, x1, y1, x2, y2) {
 }
 
 function projectPoint(px, py, x1, y1, x2, y2) {
-    let A = px - x1;
-    let B = py - y1;
-    let C = x2 - x1;
-    let D = y2 - y1;
+    let A = px - x1, B = py - y1, C = x2 - x1, D = y2 - y1;
     let dot = A * C + B * D;
     let lenSq = C * C + D * D;
     let param = lenSq !== 0 ? dot / lenSq : 0;
     return { x: x1 + param * C, y: y1 + param * D };
-}
-
-function drawButton(x, y, w, h, label) {
-    let hover = mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h;
-    fill(hover ? '#1565C0' : '#1E88E5');
-    noStroke();
-    rect(x, y, w, h, 6);
-    fill(255);
-    textSize(13);
-    textAlign(CENTER, CENTER);
-    text(label, x + w / 2, y + h / 2);
-}
-
-function drawToggle(x, y, w, h, label, state) {
-    let hover = mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h;
-    fill(state ? (hover ? '#2E7D32' : '#43A047') : (hover ? '#757575' : '#9E9E9E'));
-    noStroke();
-    rect(x, y, w, h, 6);
-    fill(255);
-    textSize(12);
-    textAlign(CENTER, CENTER);
-    text((state ? '✓ ' : '  ') + label, x + w / 2, y + h / 2);
-}
-
-function mousePressed() {
-    // New Chords button
-    if (mouseX > btnX && mouseX < btnX + btnW && mouseY > btnY && mouseY < btnY + btnH) {
-        generateChords();
-    }
-    // Toggle perpendicular distances
-    if (mouseX > toggleX && mouseX < toggleX + toggleW && mouseY > btnY && mouseY < btnY + toggleH) {
-        showPerpDistances = !showPerpDistances;
-    }
 }
 
 function windowResized() {

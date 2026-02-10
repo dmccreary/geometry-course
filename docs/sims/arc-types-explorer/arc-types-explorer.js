@@ -3,17 +3,15 @@
 
 let canvasWidth = 710;
 let drawHeight = 400;
-let controlHeight = 50;
+let controlHeight = 40;
 let canvasHeight = drawHeight + controlHeight;
 
 let circleR = 140;
 let centerX, centerY;
 let centralAngle = 120;
 
-// Slider
-let sliderX = 30, sliderW = 250;
-let sliderY;
-let dragging = false;
+let angleSlider;
+let angleValueSpan;
 
 function setup() {
     updateCanvasSize();
@@ -21,11 +19,29 @@ function setup() {
     canvas.parent(document.querySelector('main'));
     centerX = canvasWidth / 2;
     centerY = drawHeight / 2 + 15;
-    sliderY = drawHeight + 22;
+
+    let row = createDiv();
+    row.parent(document.querySelector('main'));
+    row.position(10, drawHeight + 8);
+
+    let label = createSpan('Central Angle: ');
+    label.parent(row);
+    styleLabel(label, 100);
+
+    angleValueSpan = createSpan('120°');
+    angleValueSpan.parent(row);
+    styleValue(angleValueSpan);
+
+    angleSlider = createSlider(10, 350, 120, 10);
+    angleSlider.parent(row);
+    angleSlider.size(250);
 }
 
 function draw() {
     background(240, 248, 255);
+
+    centralAngle = angleSlider.value();
+    angleValueSpan.html(centralAngle + '°');
 
     // Title
     fill(40);
@@ -36,23 +52,21 @@ function draw() {
     text('Arc Types: Minor, Major, and Semicircle', canvasWidth / 2, 8);
     textStyle(NORMAL);
 
-    // Angles for points A and B
-    let startAngle = -PI / 6; // Point A fixed at ~330 degrees
-    let endAngle = startAngle - radians(centralAngle); // Point B
+    let startAngle = -PI / 6;
+    let endAngle = startAngle - radians(centralAngle);
 
-    // Draw major arc (orange, the larger arc)
+    // Draw major arc (orange)
     stroke(255, 152, 0);
     strokeWeight(6);
     noFill();
-    // Major arc goes from endAngle back around to startAngle (the long way)
     arc(centerX, centerY, circleR * 2, circleR * 2, startAngle, endAngle + TWO_PI);
 
-    // Draw minor arc (green, the smaller arc)
+    // Draw minor arc (green)
     stroke(76, 175, 80);
     strokeWeight(6);
     arc(centerX, centerY, circleR * 2, circleR * 2, endAngle, startAngle);
 
-    // Draw circle outline (thin)
+    // Circle outline
     stroke(150);
     strokeWeight(1);
     noFill();
@@ -63,7 +77,7 @@ function draw() {
     noStroke();
     ellipse(centerX, centerY, 6);
 
-    // Radii to A and B (dashed)
+    // Radii (dashed)
     stroke(150);
     strokeWeight(1.5);
     drawingContext.setLineDash([5, 5]);
@@ -106,11 +120,9 @@ function draw() {
     let minorMid = (startAngle + endAngle) / 2;
     let majorMid = minorMid + PI;
     let labelR = circleR + 30;
-
     let minorDeg = centralAngle;
     let majorDeg = 360 - centralAngle;
 
-    // Determine type
     let minorLabel, majorLabel;
     if (centralAngle < 180) {
         minorLabel = 'Minor Arc AB';
@@ -155,45 +167,16 @@ function draw() {
         text('Both arcs are semicircles!', bx2 + 10, by2 + 78);
         textStyle(NORMAL);
     }
-
-    // Slider
-    drawSlider();
 }
 
-function drawSlider() {
-    fill(60);
-    noStroke();
-    textSize(12);
-    textAlign(LEFT, CENTER);
-    text('Central Angle: ' + centralAngle + '°', sliderX, sliderY - 6);
-
-    let trackY = sliderY + 10;
-    stroke(180);
-    strokeWeight(3);
-    line(sliderX, trackY, sliderX + sliderW, trackY);
-
-    let thumbX = map(centralAngle, 10, 350, sliderX, sliderX + sliderW);
-    fill(33, 150, 243);
-    noStroke();
-    ellipse(thumbX, trackY, 16);
+function styleLabel(el, w) {
+    el.style('display', 'inline-block');
+    el.style('width', (w || 60) + 'px');
 }
 
-function mousePressed() {
-    let trackY = sliderY + 10;
-    if (abs(mouseY - trackY) < 14 && mouseX > sliderX - 10 && mouseX < sliderX + sliderW + 10) {
-        dragging = true;
-    }
-}
-
-function mouseDragged() {
-    if (dragging) {
-        let trackY = sliderY + 10;
-        centralAngle = round(constrain(map(mouseX, sliderX, sliderX + sliderW, 10, 350), 10, 350) / 10) * 10;
-    }
-}
-
-function mouseReleased() {
-    dragging = false;
+function styleValue(el) {
+    el.style('display', 'inline-block');
+    el.style('width', '35px');
 }
 
 function windowResized() {

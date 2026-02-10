@@ -3,7 +3,7 @@
 
 let canvasWidth = 710;
 let drawHeight = 430;
-let controlHeight = 70;
+let controlHeight = 40;
 let canvasHeight = drawHeight + controlHeight;
 
 let circleR = 110;
@@ -11,7 +11,9 @@ let centerX, centerY;
 let pointDist = 200;
 let secant1Angle = 20;
 let secant2Angle = -20;
-let draggingSlider = -1;
+
+let s1Slider, s2Slider;
+let s1ValueSpan, s2ValueSpan;
 
 function setup() {
     updateCanvasSize();
@@ -19,10 +21,49 @@ function setup() {
     canvas.parent(document.querySelector('main'));
     centerX = canvasWidth / 2 - 60;
     centerY = drawHeight / 2 + 10;
+
+    // Secant 1 angle slider
+    let s1Row = createDiv();
+    s1Row.parent(document.querySelector('main'));
+    s1Row.position(10, drawHeight + 8);
+
+    let s1Label = createSpan('Secant 1: ');
+    s1Label.parent(s1Row);
+    styleLabel(s1Label, 70);
+
+    s1ValueSpan = createSpan('20°');
+    s1ValueSpan.parent(s1Row);
+    styleValue(s1ValueSpan);
+
+    s1Slider = createSlider(-40, 40, 20, 1);
+    s1Slider.parent(s1Row);
+    s1Slider.size(120);
+
+    // Secant 2 angle slider
+    let s2Row = createDiv();
+    s2Row.parent(document.querySelector('main'));
+    s2Row.position(330, drawHeight + 8);
+
+    let s2Label = createSpan('Secant 2: ');
+    s2Label.parent(s2Row);
+    styleLabel(s2Label, 70);
+
+    s2ValueSpan = createSpan('-20°');
+    s2ValueSpan.parent(s2Row);
+    styleValue(s2ValueSpan);
+
+    s2Slider = createSlider(-40, 40, -20, 1);
+    s2Slider.parent(s2Row);
+    s2Slider.size(120);
 }
 
 function draw() {
     background(240, 248, 255);
+
+    secant1Angle = s1Slider.value();
+    secant2Angle = s2Slider.value();
+    s1ValueSpan.html(secant1Angle + '°');
+    s2ValueSpan.html(secant2Angle + '°');
 
     fill(40);
     noStroke();
@@ -32,72 +73,54 @@ function draw() {
     text('Power of a Point Theorem', canvasWidth / 2, 8);
     textStyle(NORMAL);
 
-    // External point P
     let px = centerX + pointDist;
     let py = centerY;
 
     // Circle
-    stroke(150);
-    strokeWeight(2);
-    noFill();
+    stroke(150); strokeWeight(2); noFill();
     ellipse(centerX, centerY, circleR * 2);
 
-    // Secant 1
+    // Secants
     let s1 = drawSecant(px, py, radians(secant1Angle), [33, 150, 243]);
-    // Secant 2
     let s2 = drawSecant(px, py, radians(secant2Angle), [76, 175, 80]);
 
     // External point
-    fill(220, 20, 60);
-    noStroke();
+    fill(220, 20, 60); noStroke();
     ellipse(px, py, 12);
     fill(220, 20, 60);
-    textSize(14);
-    textStyle(BOLD);
-    textAlign(LEFT, CENTER);
+    textSize(14); textStyle(BOLD); textAlign(LEFT, CENTER);
     text('P', px + 10, py - 10);
     textStyle(NORMAL);
 
     // Center
-    fill(100);
-    ellipse(centerX, centerY, 6);
+    fill(100); ellipse(centerX, centerY, 6);
 
     // Product display
     if (s1 && s2) {
         let prod1 = s1.near * s1.far;
         let prod2 = s2.near * s2.far;
 
-        let boxX = 15;
-        let boxY = 50;
-        fill(255, 255, 255, 240);
-        stroke(180);
-        strokeWeight(1);
+        let boxX = 15, boxY = 50;
+        fill(255, 255, 255, 240); stroke(180); strokeWeight(1);
         rect(boxX, boxY, 220, 130, 8);
 
-        noStroke();
-        textSize(13);
-        textAlign(LEFT, TOP);
+        noStroke(); textSize(13); textAlign(LEFT, TOP);
 
         fill(33, 150, 243);
         text('Secant 1:', boxX + 10, boxY + 10);
-        fill(60);
-        textSize(12);
+        fill(60); textSize(12);
         text('PA = ' + s1.near.toFixed(1) + ', PC = ' + s1.far.toFixed(1), boxX + 10, boxY + 28);
         text('PA × PC = ' + prod1.toFixed(1), boxX + 10, boxY + 44);
 
-        fill(76, 175, 80);
-        textSize(13);
+        fill(76, 175, 80); textSize(13);
         text('Secant 2:', boxX + 10, boxY + 66);
-        fill(60);
-        textSize(12);
+        fill(60); textSize(12);
         text('PB = ' + s2.near.toFixed(1) + ', PD = ' + s2.far.toFixed(1), boxX + 10, boxY + 84);
         text('PB × PD = ' + prod2.toFixed(1), boxX + 10, boxY + 100);
 
-        // Verification
         let diff = abs(prod1 - prod2);
         if (diff < 1) {
-            fill(46, 125, 50);
-            textStyle(BOLD);
+            fill(46, 125, 50); textStyle(BOLD);
             text('✓ Products equal!', boxX + 10, boxY + 118);
         } else {
             fill(220, 20, 60);
@@ -105,23 +128,13 @@ function draw() {
         }
         textStyle(NORMAL);
     }
-
-    // Controls
-    let slX = 30;
-    let slW = 180;
-    let y = drawHeight + 8;
-
-    drawSlider(slX, y, slW, 'Secant 1 Angle', secant1Angle, -40, 40, 0);
-    drawSlider(slX + slW + 60, y, slW, 'Secant 2 Angle', secant2Angle, -40, 40, 1);
 }
 
 function drawSecant(px, py, angle, col) {
     let dx = -cos(angle);
     let dy = -sin(angle);
 
-    // Line-circle intersection
-    let fx = px - centerX;
-    let fy = py - centerY;
+    let fx = px - centerX, fy = py - centerY;
     let a = dx * dx + dy * dy;
     let b = 2 * (fx * dx + fy * dy);
     let c = fx * fx + fy * fy - circleR * circleR;
@@ -132,81 +145,35 @@ function drawSecant(px, py, angle, col) {
     let t1 = (-b - sqrt(disc)) / (2 * a);
     let t2 = (-b + sqrt(disc)) / (2 * a);
 
-    let i1x = px + t1 * dx;
-    let i1y = py + t1 * dy;
-    let i2x = px + t2 * dx;
-    let i2y = py + t2 * dy;
+    let i1x = px + t1 * dx, i1y = py + t1 * dy;
+    let i2x = px + t2 * dx, i2y = py + t2 * dy;
 
-    // Draw line
-    stroke(col[0], col[1], col[2]);
-    strokeWeight(2.5);
+    stroke(col[0], col[1], col[2]); strokeWeight(2.5);
     line(px, py, i2x + (i2x - px) * 0.1, i2y + (i2y - py) * 0.1);
 
-    // Intersection points
-    fill(col[0], col[1], col[2]);
-    noStroke();
+    fill(col[0], col[1], col[2]); noStroke();
     ellipse(i1x, i1y, 10);
     ellipse(i2x, i2y, 10);
 
     let d1 = dist(px, py, i1x, i1y);
     let d2 = dist(px, py, i2x, i2y);
 
-    // Labels
-    textSize(11);
-    textAlign(CENTER, CENTER);
-    let perpX = dy;
-    let perpY = -dx;
+    textSize(11); textAlign(CENTER, CENTER);
+    let perpX = dy, perpY = -dx;
     text(d1.toFixed(0), (px + i1x)/2 + perpX * 12, (py + i1y)/2 + perpY * 12);
     text(d2.toFixed(0), (px + i2x)/2 + perpX * 12, (py + i2y)/2 + perpY * 12);
 
     return { near: min(d1, d2), far: max(d1, d2) };
 }
 
-function drawSlider(x, y, w, label, val, minV, maxV, idx) {
-    fill(60);
-    noStroke();
-    textSize(12);
-    textAlign(LEFT, CENTER);
-    text(label + ': ' + nf(val, 0, 0) + '°', x, y);
-
-    let trackY = y + 18;
-    stroke(180);
-    strokeWeight(3);
-    line(x, trackY, x + w, trackY);
-
-    let thumbX = map(val, minV, maxV, x, x + w);
-    fill(33, 150, 243);
-    noStroke();
-    ellipse(thumbX, trackY, 14);
+function styleLabel(el, w) {
+    el.style('display', 'inline-block');
+    el.style('width', (w || 60) + 'px');
 }
 
-function mousePressed() {
-    let slX = 30;
-    let slW = 180;
-    let tY = drawHeight + 8 + 18;
-
-    if (abs(mouseY - tY) < 12 && mouseX > slX && mouseX < slX + slW) {
-        draggingSlider = 0;
-    }
-    let slX2 = slX + slW + 60;
-    if (abs(mouseY - tY) < 12 && mouseX > slX2 && mouseX < slX2 + slW) {
-        draggingSlider = 1;
-    }
-}
-
-function mouseDragged() {
-    let slX = 30;
-    let slW = 180;
-    if (draggingSlider === 0) {
-        secant1Angle = round(constrain(map(mouseX, slX, slX + slW, -40, 40), -40, 40));
-    } else if (draggingSlider === 1) {
-        let slX2 = slX + slW + 60;
-        secant2Angle = round(constrain(map(mouseX, slX2, slX2 + slW, -40, 40), -40, 40));
-    }
-}
-
-function mouseReleased() {
-    draggingSlider = -1;
+function styleValue(el) {
+    el.style('display', 'inline-block');
+    el.style('width', '35px');
 }
 
 function windowResized() {
