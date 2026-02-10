@@ -48,7 +48,7 @@ Every point in the plane can be identified by an **ordered pair** of numbers (x,
 
 #### Diagram: The Coordinate Plane and Quadrants
 
-<iframe src="/sims/coordinate-plane-quadrants/main.html" height="652px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/coordinate-plane-quadrants/main.html" height="652px" width="100%" scrolling="no"></iframe>
 
 [Coordinate Plane and Quadrants MicroSim](/sims/coordinate-plane-quadrants/){ .md-button .md-button--primary }
 

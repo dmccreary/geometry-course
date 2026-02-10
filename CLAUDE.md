@@ -90,9 +90,9 @@ MicroSims are p5.js sketches that visualize geometry concepts. Each MicroSim typ
    ```
 
 4. **Embedding**: MicroSims are embedded using iframe with `main.html`:
-   ```html
-   <iframe src="main.html" width="100%" height="450px" scrolling="no"></iframe>
-   ```
+   - From a sim's own `index.md`: `<iframe src="main.html" ...>`
+   - From chapter files: `<iframe src="../../sims/[sim-name]/main.html" ...>`
+   - **NEVER use absolute paths** (e.g., `/sims/...`) in iframe src attributes — they break on GitHub Pages where the site is served under a subdirectory. Always use relative paths.
 
 5. **Live Server Preview**: Use VS Code Live Server extension for fast iteration:
    ```
