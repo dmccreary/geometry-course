@@ -1,0 +1,48 @@
+{
+  "title": "Four Related Conditional Statements",
+  "description": "Interactive diagram showing the four related conditional statements (Original, Converse, Inverse, Contrapositive) with their logical relationships, truth values, and a concrete geometry example.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Logic",
+    "Conditional Statements",
+    "Proof"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/geometry-course/sims/four-related-conditionals/",
+  "publisher": "AI Assisted Geometry Course",
+  "educationalLevel": "High School",
+  "learningResourceType": "diagram",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "Conditional Statement",
+    "Converse",
+    "Inverse",
+    "Contrapositive",
+    "Logical Equivalence",
+    "Negation",
+    "Truth Value"
+  ],
+  "prerequisites": [
+    "Understanding of if-then statements",
+    "Basic logic vocabulary"
+  ],
+  "library": "p5.js",
+  "pedagogical": {
+    "bloomsTaxonomy": "Analyzing",
+    "learningObjective": "Students will be able to construct the converse, inverse, and contrapositive of a conditional statement and understand their logical relationships.",
+    "interactionType": "static-diagram",
+    "estimatedDuration": "5-10 minutes"
+  }
+}

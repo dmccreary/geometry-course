@@ -11,26 +11,26 @@ quality_score: 85
 
 # Angle Parts and Notation
 
-<iframe src="main.html" height="402px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="452px" width="100%" scrolling="no"></iframe>
 
 [Run Fullscreen](./main.html){ .md-button .md-button--primary }
 
 ## About This MicroSim
 
-This interactive diagram teaches the fundamental parts of an angle and proper angle notation. Hover over each component to learn about its role and how to name angles correctly.
+This static diagram teaches the fundamental parts of an angle and proper angle notation. Annotation arrows identify each component, and a notation panel summarizes the different ways to name an angle.
 
 ## Angle Components
 
-- **Vertex (B)** - The common endpoint where both rays meet
+- **Vertex (B)** - The common endpoint where both rays meet (orange dot)
 - **Side BA** - One of the two rays forming the angle (blue)
 - **Side BC** - The other ray forming the angle (red)
-- **Angle Arc** - Shows the opening between the rays
+- **Angle Arc** - Shows the opening between the rays (green)
 
-## How to Use
+## Annotations
 
-- **Hover** over any part of the angle to see its description
-- The info panel updates with relevant details
-- Learn the different ways to name an angle
+- Arrow pointing to B labeled "Vertex"
+- Arrows pointing to each ray labeled "Side BA" and "Side BC"
+- Note explaining that the two rays are the sides of the angle
 
 ## Angle Notation
 
@@ -59,7 +59,7 @@ This interactive diagram teaches the fundamental parts of an angle and proper an
 
 ```html
 <iframe src="https://dmccreary.github.io/geometry-course/sims/angle-parts-notation/main.html"
-        height="402px"
+        height="452px"
         width="100%"
         scrolling="no"></iframe>
 ```

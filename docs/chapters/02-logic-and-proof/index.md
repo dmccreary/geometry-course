@@ -34,6 +34,12 @@ This chapter builds on concepts from:
 
 ## Introduction: The Language of Mathematical Reasoning
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to the world of logic and proof! In this chapter, we'll learn
+    to think like detectives — building arguments so airtight that no one
+    can dispute them. Let's get started!
+
 Imagine you're a detective investigating a crime scene. You collect evidence, follow logical chains of reasoning, and ultimately present a convincing argument about what happened. In geometry, you'll do something remarkably similar! You'll start with basic facts (evidence), apply logical reasoning (investigation), and construct proofs (your case) to demonstrate why geometric relationships are true.
 
 Logic is the foundation of all mathematical reasoning. In this chapter, you'll discover how to build arguments that are not just persuasive, but mathematically undeniable. You'll learn to recognize patterns in statements, transform them into equivalent forms, and construct airtight proofs that would make any detective proud.
@@ -55,6 +61,10 @@ In geometry, conditional statements become the foundation for building proofs an
 **Formal notation:** We write conditional statements as $p \rightarrow q$, which reads "if p, then q" or "p implies q."
 
 #### Diagram: Conditional Statement Structure
+
+<iframe src="../../sims/conditional-statement-structure/main.html" width="100%" height="402px" scrolling="no"></iframe>
+
+[Run Conditional Statement Structure Fullscreen](../../sims/conditional-statement-structure/main.html)
 
 <details markdown="1">
 <summary>Conditional Statement Visual Breakdown</summary>
@@ -118,6 +128,13 @@ Here's a truth table showing all possibilities:
 
 The only way a conditional statement is false is when you have a true hypothesis leading to a false conclusion—this is called a **counterexample**.
 
+!!! mascot-warning "Watch Out!"
+
+    Many students expect a false hypothesis to make the whole conditional
+    false — but it doesn't! A conditional is only false when the hypothesis
+    is true and the conclusion is false. That single row in the truth table
+    trips up almost everyone at first.
+
 **Example:** Consider the statement "If a shape has four sides, then it is a square."
 
 - Hypothesis: a shape has four sides (true for rectangles, rhombuses, trapezoids)
@@ -125,6 +142,10 @@ The only way a conditional statement is false is when you have a true hypothesis
 - This statement is **false** because we can find a counterexample: a rectangle has four sides but is not a square.
 
 #### Drawing: Conditional Statement Truth Explorer
+
+<iframe src="../../sims/conditional-truth-explorer/main.html" width="100%" height="502px" scrolling="no"></iframe>
+
+[Run Conditional Truth Explorer Fullscreen](../../sims/conditional-truth-explorer/main.html)
 
 <details markdown="1">
 <summary>Interactive Conditional Statement Evaluator</summary>
@@ -205,6 +226,12 @@ We can form:
 3. **Contrapositive:** Switch AND negate both parts
    - If not q, then not p (~q → ~p)
 
+!!! mascot-thinking "Think About It..."
+
+    Here's the big insight: the contrapositive is ALWAYS logically
+    equivalent to the original statement. If you ever struggle to prove
+    something directly, try proving its contrapositive instead!
+
 Here's the crucial insight: **The contrapositive is always logically equivalent to the original statement.** This means if the original is true, the contrapositive is also true, and vice versa. However, the converse and inverse are NOT necessarily equivalent to the original statement.
 
 ### Examples with Geometric Statements
@@ -224,6 +251,10 @@ Let's explore these relationships with a concrete example:
 - This is TRUE. (Logically equivalent to the original.)
 
 #### Diagram: Four Related Conditional Statements
+
+<iframe src="../../sims/four-related-conditionals/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[Run Four Related Conditionals Fullscreen](../../sims/four-related-conditionals/main.html)
 
 <details markdown="1">
 <summary>Visual Map of Conditional Statement Relationships</summary>
@@ -311,6 +342,10 @@ $n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$
 This has the form "2 times something plus 1," which is the definition of an odd number. Therefore $n^2$ is odd, proving the contrapositive—and thus proving the original statement!
 
 #### Drawing: Converse, Inverse, Contrapositive Generator
+
+<iframe src="../../sims/conditional-statement-transformer/main.html" width="100%" height="702px" scrolling="no"></iframe>
+
+[Run Conditional Statement Transformer Fullscreen](../../sims/conditional-statement-transformer/main.html)
 
 <details markdown="1">
 <summary>Interactive Statement Transformer</summary>
@@ -450,6 +485,10 @@ These statements seem obvious and intuitive, which is exactly the point! Postula
 
 #### Diagram: Postulate Visualization Gallery
 
+<iframe src="../../sims/postulate-visualization/main.html" width="100%" height="452px" scrolling="no"></iframe>
+
+[Run Postulate Visualization Gallery Fullscreen](../../sims/postulate-visualization/main.html)
+
 <details markdown="1">
 <summary>Visual Representations of Key Postulates</summary>
 Type: diagram
@@ -539,6 +578,12 @@ The beauty of theorems is that once proven, they become tools we can use to prov
 
 A **proof** is a logical argument that uses postulates, definitions, and previously proven theorems to show that a statement is true. Proofs are the heart of geometry—they're how we know with absolute certainty that something is true.
 
+!!! mascot-encourage "You've Got This!"
+
+    Proofs can feel challenging at first, and that's completely normal.
+    Every mathematician started exactly where you are now. With practice,
+    building proofs becomes as natural as solving equations.
+
 There are several formats for organizing proofs, each with its own advantages. Let's explore the main types.
 
 ### The Structure of All Proofs
@@ -553,6 +598,10 @@ Regardless of format, every proof has the same essential components:
 Think of a proof like a journey from "given" (starting location) to "prove" (destination), where each step is a valid move according to the rules of geometry.
 
 #### Diagram: The Anatomy of a Proof
+
+<iframe src="../../sims/anatomy-of-proof/main.html" width="100%" height="402px" scrolling="no"></iframe>
+
+[Run Anatomy of a Proof Fullscreen](../../sims/anatomy-of-proof/main.html)
 
 <details markdown="1">
 <summary>Universal Structure of Geometric Proofs</summary>
@@ -659,6 +708,10 @@ This proof shows the power of the two-column format: each statement builds logic
 - **Error checking:** Easy to verify each step has proper justification
 
 #### Drawing: Interactive Two-Column Proof Builder
+
+<iframe src="../../sims/two-column-proof-builder/main.html" width="100%" height="702px" scrolling="no"></iframe>
+
+[Run Two-Column Proof Builder Fullscreen](../../sims/two-column-proof-builder/main.html)
 
 <details markdown="1">
 <summary>Drag-and-Drop Proof Construction</summary>
@@ -799,6 +852,10 @@ A **flow chart proof** uses boxes and arrows to show the logical flow of a proof
 - Reasons are written near the arrows or boxes
 
 #### Diagram: Flow Chart Proof Example
+
+<iframe src="../../sims/flow-chart-proof/main.html" width="100%" height="802px" scrolling="no"></iframe>
+
+[Run Flow Chart Proof Fullscreen](../../sims/flow-chart-proof/main.html)
 
 <details markdown="1">
 <summary>Vertical Angles Theorem Flow Chart Proof</summary>
@@ -943,6 +1000,10 @@ This contradicts our initial statement that $l$ and $m$ are two different lines.
 Therefore, our assumption must be false. We conclude that two lines cannot intersect in more than one point—they intersect in exactly one point.
 
 #### Drawing: Indirect Proof Contradiction Finder
+
+<iframe src="../../sims/indirect-proof-explorer/main.html" width="100%" height="652px" scrolling="no"></iframe>
+
+[Run Indirect Proof Explorer Fullscreen](../../sims/indirect-proof-explorer/main.html)
 
 <details markdown="1">
 <summary>Interactive Proof by Contradiction Explorer</summary>
@@ -1139,6 +1200,10 @@ Therefore, the diagonals of a rectangle are congruent.
 
 #### Diagram: Coordinate Proof Setup for Rectangle Diagonals
 
+<iframe src="../../sims/coordinate-proof-setup/main.html" width="100%" height="452px" scrolling="no"></iframe>
+
+[Run Coordinate Proof Setup Fullscreen](../../sims/coordinate-proof-setup/main.html)
+
 <details markdown="1">
 <summary>Visual Coordinate Proof Demonstration</summary>
 Type: diagram
@@ -1229,6 +1294,12 @@ Implementation: SVG with LaTeX rendering for formulas using MathJax
 
 ### Tips for Coordinate Proofs
 
+!!! mascot-tip "Here's a Tip!"
+
+    Always place one vertex at the origin and align a side along an axis.
+    This simple trick eliminates zeros in your calculations and makes
+    the algebra much cleaner!
+
 1. **Choose smart coordinates:** Place the figure to use (0, 0) and align with axes when possible
 2. **Use variables:** Let sides have lengths a, b, c rather than specific numbers
 3. **Simplify early:** Algebraic simplification makes calculations easier
@@ -1236,6 +1307,10 @@ Implementation: SVG with LaTeX rendering for formulas using MathJax
 5. **State what you proved:** Connect back to the geometric property
 
 #### Drawing: Coordinate Proof Laboratory
+
+<iframe src="../../sims/coordinate-proof-lab/main.html" width="100%" height="702px" scrolling="no"></iframe>
+
+[Run Coordinate Proof Laboratory Fullscreen](../../sims/coordinate-proof-lab/main.html)
 
 <details markdown="1">
 <summary>Interactive Coordinate Geometry Proof Tool</summary>
@@ -1468,6 +1543,12 @@ Congratulations! You've now mastered the fundamental tools of logical reasoning 
 These logical reasoning skills form the foundation for everything else you'll do in geometry. As you move forward, you'll use these proof techniques to discover and verify geometric relationships about angles, triangles, circles, and more complex figures.
 
 Remember: a proof is not just a series of statements—it's a story that explains why something must be true. With practice, you'll become fluent in telling these mathematical stories with clarity, precision, and elegance.
+
+!!! mascot-celebration "Great Work!"
+
+    You've mastered five different proof techniques — that's an incredible
+    toolkit! From two-column to coordinate proofs, you now have the
+    reasoning skills that power all of geometry. Onward!
 
 Keep practicing, stay curious, and enjoy the logical beauty of geometry!
 

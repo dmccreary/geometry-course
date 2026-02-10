@@ -11,44 +11,38 @@ quality_score: 85
 
 # Flow Chart Proof
 
-<iframe src="main.html" height="622px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="802px" width="100%" scrolling="no"></iframe>
 
 [Run Fullscreen](./main.html){ .md-button .md-button--primary }
 
 ## About This MicroSim
 
-This interactive visualization demonstrates how the **Vertical Angles Theorem** can be proved using a flow chart format. The proof unfolds step-by-step, showing how each statement logically leads to the next.
+This interactive visualization demonstrates how the **Vertical Angles Theorem** can be proved using a flow chart format. The proof unfolds step-by-step, showing how each statement logically leads to the next through boxes connected by arrows.
 
 ## How to Use
 
 1. **Next/Prev buttons** - Step through the proof one statement at a time
 2. **Auto Play** - Watch the entire proof unfold automatically
-3. **Speed slider** - Adjust how fast auto-play advances (1-5 seconds)
+3. **Speed slider** - Drag to adjust how fast auto-play advances
 4. **Reset** - Return to the beginning
 
 ## The Flow Chart Structure
 
-The proof branches and merges:
+The proof branches from a single given into two parallel paths that converge:
 
-- **Green boxes** - Given and final conclusion
+- **Green boxes** - Given information and final conclusion
 - **Blue boxes** - Linear pair definitions
 - **Orange boxes** - Supplementary angle relationships
-- **Purple boxes** - Algebraic manipulation steps
+- **Purple boxes** - Algebraic manipulation steps leading to proof
 
 ## Proof Logic
 
 1. Start with vertical angles (Given)
 2. Both angles form linear pairs with a third angle
-3. Linear pairs are supplementary (180°)
-4. Use algebra to show the angles are equal
-5. Conclude angles are congruent
-
-## Interactive Features
-
-- **Step-by-step reveal** - See how each step builds on previous ones
-- **Glowing effect** - Current step is highlighted
-- **Auto-play mode** - Automated progression through all steps
-- **Adjustable speed** - Control the pace of learning
+3. Linear pairs are supplementary (sum to 180 degrees)
+4. Use the Transitive Property since both sums equal 180 degrees
+5. Apply the Subtraction Property to eliminate the common angle
+6. Conclude the angles are congruent
 
 ## Learning Objectives
 
@@ -58,13 +52,13 @@ The proof branches and merges:
 
 ## Bloom's Taxonomy Level
 
-**Analyzing** - Understanding the logical structure and dependencies in proofs.
+**Analyzing** - Students interpret and trace logical structure and dependencies in flow chart proofs.
 
 ## Iframe Embed Code
 
 ```html
 <iframe src="https://dmccreary.github.io/geometry-course/sims/flow-chart-proof/main.html"
-        height="622px"
+        height="802px"
         width="100%"
         scrolling="no"></iframe>
 ```

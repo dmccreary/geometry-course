@@ -33,6 +33,12 @@ This chapter builds on concepts from:
 
 ## Introduction to Angles
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to the world of angles! In this chapter, we'll explore how
+    angles are classified, how they pair up, and the powerful relationships
+    that form when parallel lines are crossed by a transversal. Let's dive in!
+
 An **angle** is formed whenever two rays share a common endpoint. That shared point is called the **vertex**, and the two rays are called the **sides** of the angle. Understanding angles is fundamental to geometry because they appear everywhere—in triangles, polygons, parallel lines, and even in the real world around us, from the corners of buildings to the hands of a clock.
 
 In this chapter, you'll learn to classify angles by their measure, recognize special angle relationships, and use these relationships to solve problems. You'll also discover how angles interact when lines cross or when parallel lines are cut by a transversal. These relationships form the foundation for proving theorems about triangles, polygons, and more complex geometric figures.
@@ -42,6 +48,9 @@ In this chapter, you'll learn to classify angles by their measure, recognize spe
 Angles are measured in **degrees**, denoted by the symbol °. A full rotation around a point is 360°, and angles are classified based on their measure.
 
 #### Diagram: Angle Parts and Notation
+
+<iframe src="../../sims/angle-parts-notation/main.html" height="452px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Angle Parts and Notation</summary>
     Type: diagram
@@ -91,6 +100,9 @@ how we give different angles different names.
 An **acute angle** measures greater than 0° but less than 90°. Think of acute angles as "sharp" angles—the word "acute" comes from the Latin word meaning "sharp."
 
 #### Drawing: Acute Angle Explorer
+
+<iframe src="../../sims/acute-angle-explorer/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Acute Angle Explorer</summary>
     Type: microsim
@@ -147,6 +159,9 @@ A **right angle** measures exactly 90°. Right angles are perhaps the most impor
 Right angles are often marked with a small square symbol at the vertex rather than a curved arc. This visual notation immediately tells you the angle measures 90° without needing to write the measurement.
 
 #### Diagram: Right Angle in Real-World Contexts
+
+<iframe src="../../sims/right-angle-contexts/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Right Angle Applications</summary>
     Type: diagram
@@ -196,6 +211,9 @@ An **obtuse angle** measures greater than 90° but less than 180°. The word "ob
 A **straight angle** measures exactly 180°. It forms a straight line, with the two rays pointing in exactly opposite directions from the vertex. While it might not look like a typical angle, a straight angle is still classified as an angle because it's formed by two rays sharing a common endpoint.
 
 #### Drawing: Angle Classification Interactive
+
+<iframe src="../../sims/angle-classification/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Angle Classification Challenge</summary>
     Type: microsim
@@ -267,6 +285,9 @@ where:
 For example, a 30° angle and a 60° angle are complementary because 30° + 60° = 90°.
 
 #### Diagram: Complementary Angles Visual
+
+<iframe src="../../sims/complementary-angles-visual/main.html" height="402px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Complementary Angles Examples</summary>
     Type: diagram
@@ -320,7 +341,16 @@ where:
 
 A common example of supplementary angles is a 120° angle paired with a 60° angle, since 120° + 60° = 180°.
 
+!!! mascot-tip "Here's a Tip!"
+
+    How to remember the difference: **C**omplementary adds to a
+    **C**orner (90°), and **S**upplementary adds to a **S**traight
+    line (180°). That little trick will save you every time!
+
 #### Drawing: Complementary and Supplementary Angle Finder
+
+<iframe src="../../sims/angle-pair-calculator/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Angle Pair Calculator</summary>
     Type: microsim
@@ -385,6 +415,9 @@ The key requirements for adjacent angles are:
 3. Non-overlapping (the angles don't cover the same space)
 
 #### Diagram: Adjacent vs. Non-Adjacent Angles
+
+<iframe src="../../sims/adjacent-angles-comparison/main.html" height="352px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Adjacent Angles Comparison</summary>
     Type: diagram
@@ -439,6 +472,9 @@ If two angles form a linear pair, then they are supplementary.
 This is an important property because it allows us to find unknown angle measures. If you know one angle in a linear pair, you can always find the other by subtracting from 180°.
 
 #### Diagram: Linear Pair Structure
+
+<iframe src="../../sims/linear-pair-structure/main.html" height="402px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Linear Pair Anatomy</summary>
     Type: diagram
@@ -476,9 +512,18 @@ This is an important property because it allows us to find unknown angle measure
 
 ## Vertical Angles
 
+!!! mascot-thinking "Think About It..."
+
+    Here's something beautiful: vertical angles are ALWAYS equal, no
+    matter how the lines are tilted. We proved this in Chapter 2 — and
+    now you get to use that theorem everywhere!
+
 When two lines intersect, they form four angles at the point of intersection. The angles that are opposite each other are called **vertical angles** (sometimes called "opposite angles"). Vertical angles have a special property: they are always congruent, meaning they have equal measures.
 
 #### Diagram: Vertical Angles at Intersection
+
+<iframe src="../../sims/vertical-angles-intersection/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Vertical Angles Formation</summary>
     Type: diagram
@@ -518,6 +563,9 @@ When two lines intersect, they form four angles at the point of intersection. Th
 </details>
 
 #### Drawing: Vertical Angles Explorer
+
+<iframe src="../../sims/vertical-angles-explorer/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Interactive Vertical Angles Demonstration</summary>
     Type: microsim
@@ -577,6 +625,9 @@ If ray BD bisects ∠ABC, then:
 Angle bisectors are useful in constructions and proofs, and they play an important role in triangle geometry.
 
 #### Diagram: Angle Bisector Construction
+
+<iframe src="../../sims/angle-bisector-construction/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Angle Bisector Visual</summary>
     Type: diagram
@@ -619,6 +670,9 @@ When a line (called a **transversal**) crosses two parallel lines, eight angles 
 Let's first understand the setup: imagine two parallel lines lying flat, like railroad tracks. Now imagine a third line crossing both of them—that's the transversal. The eight angles formed have special names based on their positions.
 
 #### Diagram: Parallel Lines Cut by a Transversal Setup
+
+<iframe src="../../sims/transversal-eight-angles/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Transversal and Eight Angles</summary>
     Type: diagram
@@ -686,6 +740,13 @@ The alternate exterior angle pairs are:
 
 ### Same-Side Interior Angles
 
+!!! mascot-warning "Watch Out!"
+
+    Don't fall into the trap! Three of the four transversal angle pairs
+    are congruent, but same-side interior angles are supplementary —
+    they add to 180°, not equal each other. This is the one students
+    mix up most often.
+
 **Same-side interior angles** (also called consecutive interior angles or co-interior angles) are on the same side of the transversal and between the parallel lines. When parallel lines are cut by a transversal, same-side interior angles are supplementary—they add up to 180°.
 
 The same-side interior angle pairs are:
@@ -693,6 +754,9 @@ The same-side interior angle pairs are:
 - ∠4 and ∠6
 
 #### Drawing: Parallel Lines and Transversal Angle Explorer
+
+<iframe src="../../sims/transversal-angle-explorer/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Interactive Transversal Angle Relationships</summary>
     Type: microsim
@@ -749,6 +813,9 @@ The same-side interior angle pairs are:
 </details>
 
 #### Diagram: Summary of Angle Relationships with Parallel Lines
+
+<iframe src="../../sims/angle-relationships-summary/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Angle Relationships Reference Chart</summary>
     Type: diagram
@@ -800,6 +867,12 @@ The same-side interior angle pairs are:
 
 ## Solving Problems with Angle Relationships
 
+!!! mascot-encourage "You've Got This!"
+
+    With so many angle relationships in your toolkit, you can crack
+    almost any angle problem. The key is identifying which relationship
+    applies — then the algebra is the easy part!
+
 Now that you understand all these angle relationships, you can use them to solve for unknown angle measures. The key is to identify which relationship applies, then set up an equation.
 
 Let's look at some common problem-solving strategies:
@@ -825,6 +898,9 @@ Identify the angle relationship (corresponding, alternate interior, etc.), then:
 - If they're supplementary, add them to get 180°
 
 #### Drawing: Angle Relationship Problem Solver
+
+<iframe src="../../sims/angle-problem-solver/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Interactive Angle Problem Practice</summary>
     Type: microsim
@@ -996,9 +1072,18 @@ When a transversal crosses two parallel lines, special angle relationships are f
 - **Alternate exterior angles**: Opposite sides of transversal, outside parallel lines (congruent)
 - **Same-side interior angles**: Same side of transversal, between parallel lines (supplementary)
 
+!!! mascot-celebration "Great Work!"
+
+    You've mastered angle classifications, special pairs, and all four
+    transversal angle relationships. That's a powerful toolkit that will
+    unlock proofs about triangles and polygons in the chapters ahead!
+
 These angle relationships are foundational tools for proving theorems about triangles, polygons, and more complex geometric figures in the chapters ahead. Mastering these concepts now will make future topics much easier to understand.
 
 #### Diagram: Chapter Concept Map
+
+<iframe src="../../sims/chapter-03-concept-map/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Concept Relationships Map</summary>
     Type: graph-model

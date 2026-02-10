@@ -1,65 +1,53 @@
 ---
 title: Reasoning Detective
-description: An interactive game where students practice inductive reasoning, deductive reasoning, and finding counterexamples.
+description: An interactive game where students practice inductive reasoning, deductive reasoning, and finding counterexamples to develop mathematical thinking skills.
+quality_score: 90
 image: /sims/reasoning-detective/reasoning-detective.png
 og:image: /sims/reasoning-detective/reasoning-detective.png
 twitter:image: /sims/reasoning-detective/reasoning-detective.png
 social:
    cards: false
-quality_score: 85
 ---
-
 # Reasoning Detective
 
-<iframe src="main.html" height="652px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="702px" width="100%" scrolling="no"></iframe>
 
 [Run the Reasoning Detective MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
-<br/>
-[Edit in the p5.js Editor](https://editor.p5js.org/)
 
 ## About This MicroSim
 
-The Reasoning Detective is an interactive game that challenges students to practice three types of mathematical reasoning:
+The Reasoning Detective is an interactive game that challenges students to practice three types of mathematical reasoning fundamental to geometry:
 
-1. **Inductive Reasoning** - Observe patterns and make generalizations
-2. **Deductive Reasoning** - Apply logical rules to reach conclusions
-3. **Counterexample Hunting** - Find examples that disprove false conjectures
+1. **Inductive Reasoning** -- Observe patterns in examples and make generalizations
+2. **Deductive Reasoning** -- Apply given facts and logical rules to reach conclusions
+3. **Counterexample Hunting** -- Find specific numbers that disprove false conjectures
+
+Each problem type has a distinct interaction style: multiple-choice for inductive and deductive challenges, and a number pad with a "Test It!" button for counterexample problems.
 
 ## How to Play
 
-1. Read the problem and the given information carefully
-2. Click on the answer you think is correct
-3. Click "Check Answer" to see if you're right
-4. Use "Hint" if you need help
-5. Click "New Problem" to advance to the next challenge
+1. Read the problem displayed in the top section
+2. For **Inductive** and **Deductive** problems, click on the answer option you believe is correct
+3. For **Counterexample** problems, use the number pad (or keyboard) to enter a number, then click "Test It!"
+4. Use the **Hint** button if you need help
+5. Use **Explain Answer** to see the full reasoning after answering
+6. Click **New Problem** to get a random new challenge
 
 ## Problem Types
 
-| Type | Color | Description |
-|------|-------|-------------|
-| Inductive | Green | Pattern recognition from examples |
-| Deductive | Blue | Logical conclusions from given facts |
-| Counterexample | Orange | Find examples that disprove statements |
-
-## Learning Objectives
-
-After playing this game, students will be able to:
-
-- **Recognize** patterns using inductive reasoning
-- **Apply** deductive reasoning to reach valid conclusions
-- **Evaluate** conjectures by finding counterexamples
-- **Distinguish** between inductive and deductive reasoning
-
-## Bloom's Taxonomy Levels
-
-- **Evaluating** - Judging whether statements are true or false
-- **Creating** - Constructing counterexamples to disprove conjectures
+| Type | Badge Color | Description |
+|------|-------------|-------------|
+| Inductive | Blue | Pattern recognition from examples |
+| Deductive | Green | Logical conclusions from given facts |
+| Counterexample | Orange | Find numbers that disprove conjectures |
 
 ## Iframe Embed Code
 
+You can include this MicroSim on your website using the following iframe:
+
 ```html
 <iframe src="https://dmccreary.github.io/geometry-course/sims/reasoning-detective/main.html"
-        height="652px"
+        height="702px"
         width="100%"
         scrolling="no"></iframe>
 ```
@@ -72,26 +60,43 @@ After playing this game, students will be able to:
 ### Duration
 20-30 minutes
 
+### Learning Objectives
+
+After using this MicroSim, students will be able to:
+
+- **Evaluate** mathematical statements by applying inductive and deductive reasoning
+- **Create** counterexamples to disprove false conjectures
+- **Distinguish** between inductive reasoning (pattern-based) and deductive reasoning (logic-based)
+- **Recognize** that a single counterexample is sufficient to disprove a conjecture
+
+### Bloom's Taxonomy Levels
+
+- **Evaluating** -- Judging whether statements and conjectures are true or false
+- **Creating** -- Constructing counterexamples to disprove conjectures
+
 ### Prerequisites
-- Basic understanding of geometric terms
-- Familiarity with logical statements
+
+- Basic understanding of geometric terms (angles, polygons, lines)
+- Familiarity with number properties (even, odd, prime, divisibility)
 
 ### Activities
 
-1. **Introduction** (5 min): Discuss the differences between inductive and deductive reasoning.
-
-2. **Guided Practice** (10 min): Work through 2-3 problems as a class, discussing the reasoning process.
-
-3. **Independent Practice** (10 min): Students work through problems individually, aiming for a high score.
-
-4. **Discussion** (5 min): Share challenging problems and discuss strategies.
+1. **Introduction** (5 min): Discuss the differences between inductive and deductive reasoning with real-world examples
+2. **Guided Practice** (10 min): Work through 2-3 problems as a class, discussing the reasoning process for each type
+3. **Independent Practice** (10 min): Students work through problems individually, aiming for a high accuracy score
+4. **Discussion** (5 min): Share challenging problems and discuss strategies used to find counterexamples
 
 ### Assessment
-- Can students identify the type of reasoning being used?
+
+- Can students correctly identify patterns using inductive reasoning?
+- Can students apply given facts to draw valid deductive conclusions?
 - Can students find counterexamples to disprove false conjectures?
-- Can students apply deductive reasoning correctly?
+- Can students articulate the difference between inductive and deductive reasoning?
 
 ## References
 
-1. [Inductive vs. Deductive Reasoning](https://www.khanacademy.org/math/algebra-home/alg-series-and-induction/alg-deductive-and-inductive-reasoning/v/deductive-reasoning-1) - Khan Academy - Explanation of reasoning types
-2. [Mathematical Reasoning](https://www.mathsisfun.com/numbers/mathematical-reasoning.html) - Math is Fun - Overview of mathematical logic
+1. [Inductive and Deductive Reasoning](https://www.khanacademy.org/math/algebra-home/alg-series-and-induction/alg-deductive-and-inductive-reasoning/v/deductive-reasoning-1) - Khan Academy
+2. [Counterexamples in Mathematics](https://www.mathsisfun.com/algebra/counterexample.html) - Math is Fun
+3. [Geometry Foundations: Reasoning](https://www.ck12.org/geometry/inductive-reasoning/) - CK-12 Foundation
+
+Note: Remember to take a screenshot and save it as `reasoning-detective.png` for social media previews.

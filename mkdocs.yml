@@ -41,6 +41,7 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Adjacent Angles Comparison: sims/adjacent-angles-comparison/index.md
+    - Anatomy of a Proof: sims/anatomy-of-proof/index.md
     - Angle Bisector: sims/angle-bisector/index.md
     - Angle Bisector Construction: sims/angle-bisector-construction/index.md
     - Angle Classification Quiz: sims/angle-classification-quiz/index.md
@@ -61,12 +62,15 @@ nav:
     - Circumcenter Explorer: sims/circumcenter-explorer/index.md
     - Centroid Explorer: sims/centroid-explorer/index.md
     - Cesaro Curve: sims/cesaro-curve/index.md
+    - Ch1 Concept Map: sims/ch1-concept-map/index.md
     - Chapter 03 Concept Map: sims/chapter-03-concept-map/index.md
     - Colinear and Coplanar Points: sims/collinear-coplanar-points/index.md
     - Compass Parts: sims/compass-parts/index.md
     - Complementary Angles Visual: sims/complementary-angles-visual/index.md
     - Complementary and Supplementary Angles: sims/comp-and-sup-angles/index.md
     - Composition of Transformations: sims/composition-transformations/index.md
+    - Conditional Statement Transformer: sims/conditional-statement-transformer/index.md
+    - Conditional Truth Explorer: sims/conditional-truth-explorer/index.md
     - Congruence Criteria Reference: sims/congruence-criteria-reference/index.md
     - Congruent Triangles Parts: sims/congruent-triangles-parts/index.md
     - Construction Design Challenge: sims/construction-design-challenge/index.md
@@ -76,6 +80,7 @@ nav:
     - Copy Segment: sims/copy-segment/index.md
     - Copy Segment Steps: sims/copy-segment-steps/index.md
     - Coordinate Plane Quadrants: sims/coordinate-plane-quadrants/index.md
+    - Coordinate Proof Setup: sims/coordinate-proof-setup/index.md
     - Cords: sims/cords/index.md
     - Cosine: sims/cosine/index.md
     - Degrees vs Radians: sims/degrees-vs-radians/index.md
@@ -83,6 +88,7 @@ nav:
     - Distance Formula Explorer: sims/distance-formula/index.md
     - Euler Line Explorer: sims/euler-line-explorer/index.md
     - Exterior Angle Theorem: sims/exterior-angle-theorem/index.md
+    - Four Related Conditionals: sims/four-related-conditionals/index.md
     - Distance Formula Visualization: sims/distance-formula-visualization/index.md
     - Koch Fractal: sims/koch-fractal/index.md
     - Koch Snowflake: sims/koch-snowflake/index.md
@@ -118,6 +124,7 @@ nav:
     - Polygon Interior Angles: sims/polygon-interior-angles/index.md
     - Pythagorean Theorem: sims/pythagorean-theorem/index.md
     - Quadrilateral Hierarchy: sims/quadrilateral-hierarchy/index.md
+    - Reasoning Detective: sims/reasoning-detective/index.md
     - Reflection Lines: sims/reflection-lines/index.md
     - Reflection Explorer: sims/reflection-explorer/index.md
     - Regular Polygon Explorer: sims/regular-polygon-explorer/index.md
@@ -148,6 +155,7 @@ nav:
     - Triangle Centers Comparison: sims/triangle-centers-comparison/index.md
     - Triangle Classification Sides: sims/triangle-classification-sides/index.md
     - Transversal Coordinate Analysis: sims/transversal-coordinate-analysis/index.md
+    - Transversal Eight Angles: sims/transversal-eight-angles/index.md
     - Triangle Classifier: sims/triangle-classifier/index.md
     - Triangle Congruence: sims/triangle-congruence/index.md
     - Triangle Congruence Criteria: sims/triangle-congruence-criteria/index.md
@@ -199,7 +207,7 @@ theme:
   name: material
   extra_css:
     - styles/custom.css
-  logo: img/logo.png
+  logo: img/geowise.png
   favicon: img/favicon.ico
   palette:
     primary: 'purple'

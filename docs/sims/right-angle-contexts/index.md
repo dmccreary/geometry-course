@@ -11,7 +11,7 @@ quality_score: 85
 
 # Right Angles in Real-World Contexts
 
-<iframe src="main.html" height="502px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
 
 [Run Fullscreen](./main.html){ .md-button .md-button--primary }
 

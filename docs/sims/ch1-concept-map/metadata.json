@@ -1,0 +1,80 @@
+{
+  "title": "Chapter 1 Concept Map",
+  "description": "An interactive concept map showing all 18 key concepts from Chapter 1 - Foundations of Geometry and their relationships using vis-network.",
+  "creator": "Claude AI",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Concept Maps"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Foundations of Geometry",
+  "learningObjectives": [
+    "Remember key definitions and terms from Chapter 1",
+    "Understand how concepts relate to each other",
+    "Evaluate their own understanding of the material",
+    "Identify gaps in their knowledge"
+  ],
+  "bloomsLevel": [
+    "Remembering",
+    "Evaluating"
+  ],
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Completion of Chapter 1 reading"
+  ],
+  "library": "vis-network",
+  "canvasDimensions": "1000x800",
+  "responsive": true,
+  "concepts": [
+    "Point",
+    "Line",
+    "Plane",
+    "Ray",
+    "Line Segment",
+    "Angle",
+    "Vertex",
+    "Midpoint",
+    "Intersection",
+    "Collinear Points",
+    "Coplanar Points",
+    "Parallel Lines",
+    "Perpendicular Lines",
+    "Skew Lines",
+    "Inductive Reasoning",
+    "Deductive Reasoning",
+    "Conjecture",
+    "Counterexample"
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "remember",
+      "understand",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "recall",
+      "explain",
+      "assess",
+      "trace"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "explore"
+  }
+}

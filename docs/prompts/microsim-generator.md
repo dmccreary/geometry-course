@@ -1,0 +1,1 @@
+Run the MicroSim generator skill /microsim-generator in parallel on all the #### Drawing and #### Diagram elements in chapters 1-3 that do not have an existing <iframe> between the level 4 header and the <details> block.  Use the content inside the <details> as the specification for the MicroSim.

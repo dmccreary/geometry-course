@@ -1,0 +1,63 @@
+{
+  "title": "Eight Angles Formed by Parallel Lines and a Transversal",
+  "description": "Static diagram showing two parallel lines cut by a transversal with all eight angles numbered and labeled, along with a summary of the four special angle pair types.",
+  "creator": "Claude AI",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles",
+    "Parallel Lines"
+  ],
+  "type": "Static Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Identify the eight angles formed when a transversal crosses two parallel lines",
+    "Name the four types of special angle pairs (corresponding, alternate interior, alternate exterior, same-side interior)",
+    "State which angle pairs are congruent and which are supplementary"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "3 minutes",
+  "prerequisites": [
+    "Parallel lines",
+    "Transversal",
+    "Basic angle measurement"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [],
+  "visualizationType": [
+    "diagram",
+    "reference-chart"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "remember",
+      "understand"
+    ],
+    "bloomVerbs": [
+      "identify",
+      "name",
+      "classify",
+      "describe",
+      "distinguish"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "visual"
+    ],
+    "interactionStyle": "observe"
+  }
+}

@@ -1,5 +1,9 @@
 # Polygons and Quadrilaterals
 
+!!! mascot-welcome "Welcome to the World of Polygons!"
+
+    We've conquered triangles, and now it's time to explore shapes with four, five, six, and even more sides. From honeycombs to stop signs, polygons are everywhere -- let's figure this out together!
+
 ## Summary
 
 This chapter extends triangle concepts to polygons with special focus on quadrilaterals and their unique properties. You'll learn to classify quadrilaterals by their sides and angles, prove relationships between different types of quadrilaterals, and explore angle sums in polygons. The chapter also introduces regular polygons and tessellations, connecting geometry to patterns found in nature and art.
@@ -135,6 +139,10 @@ where:
 - $n$ is the number of sides
 
 This formula reveals an elegant pattern. Every time we add one more side to a polygon, we add exactly 180° to the interior angle sum—the same as adding one more triangle to our diagonal partition.
+
+!!! mascot-thinking "See the Pattern?"
+
+    Every new side adds exactly one more triangle's worth of angles -- that's 180 degrees every time. Once you see that connection, the formula practically writes itself!
 
 Let's verify this formula with some examples:
 
@@ -329,6 +337,10 @@ All quadrilaterals share some common properties:
 - Can be divided into two triangles
 
 However, special quadrilaterals have additional properties that make them particularly useful in mathematics, art, and engineering.
+
+!!! mascot-warning "Don't Mix Up the Hierarchy!"
+
+    A square is always a rectangle, but a rectangle is not always a square. Properties flow downward in the family tree -- every special shape inherits from its parent, not the other way around.
 
 #### Diagram: Quadrilateral Family Hierarchy
 <details markdown="1">
@@ -730,6 +742,10 @@ A **kite** is a quadrilateral with two pairs of consecutive congruent sides, but
 
 Kites are unique among quadrilaterals because they're not parallelograms (their sides aren't parallel), yet they still have beautiful symmetry.
 
+!!! mascot-tip "Remembering Quadrilateral Properties"
+
+    Focus on diagonals -- they're the secret key to telling quadrilaterals apart. Parallelogram diagonals bisect each other, rectangle diagonals are equal, rhombus diagonals are perpendicular, and kite diagonals are perpendicular too.
+
 #### Diagram: Kite Properties Illustration
 <details markdown="1">
 <summary>Kite Properties Illustration</summary>
@@ -935,6 +951,10 @@ Each interior angle of a regular pentagon measures $108°$. If we try to fit pen
 - Four pentagons: $108° + 108° + 108° + 108° = 432°$ (too much—they overlap!)
 
 Since we can't get exactly 360°, regular pentagons won't tile the plane by themselves.
+
+!!! mascot-thinking "Only Three? Really!"
+
+    Out of infinitely many regular polygons, only three can tessellate on their own. The 360-degree vertex rule is a strict gatekeeper -- and it's the same reason bees chose hexagons for their honeycombs!
 
 ### Semi-Regular Tessellations
 
@@ -1172,6 +1192,10 @@ In this chapter, you've explored the diverse world of polygons and discovered th
   - Semi-regular tessellations combine multiple polygon types
 
 As you continue your geometry journey, you'll see these polygon properties appear in coordinate geometry, transformations, area calculations, and real-world applications. The patterns you've discovered here form the foundation for understanding more complex mathematical structures.
+
+!!! mascot-celebration "You've Mapped the Polygon Universe!"
+
+    From triangles to tessellations, you now understand how polygons are classified, how their angles work, and why only certain shapes can tile a plane. That's a huge achievement -- nice work!
 
 ## Practice Problems
 

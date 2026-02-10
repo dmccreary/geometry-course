@@ -50,6 +50,10 @@ In this chapter, you'll explore the rich world of triangles: how to classify the
 
 Understanding triangles is essential because they are the building blocks of more complex geometric figures. Any polygon can be divided into triangles, making triangle properties the foundation for understanding all of plane geometry.
 
+!!! mascot-welcome "Welcome to the World of Triangles!"
+
+    Triangles are my favorite shape -- simple yet incredibly powerful! In this chapter, we'll classify them, prove when two are identical, and discover hidden points inside every triangle. Let's figure this out together!
+
 ## Triangle Basics and Classifications
 
 A **triangle** is a polygon with three sides, three vertices, and three angles. The sum of the three interior angles always equals 180°, a fundamental property we'll prove later in this chapter.
@@ -300,6 +304,10 @@ In Chapter 6, you learned that two figures are congruent if one can be mapped on
 
 These shortcuts are called **triangle congruence criteria** or **triangle congruence postulates/theorems**. There are five valid criteria:
 
+!!! mascot-thinking "A Powerful Shortcut!"
+
+    Instead of checking all six parts (three sides and three angles), we only need three specific pieces of information to prove two triangles are congruent. That's the beauty of these criteria -- less work, same certainty!
+
 ### SSS (Side-Side-Side) Congruence
 
 **SSS Congruence Postulate:** If three sides of one triangle are congruent to three sides of another triangle, then the triangles are congruent.
@@ -441,6 +449,10 @@ In symbols: If $\angle A \cong \angle D$, $\angle B \cong \angle E$, and $BC \co
 **HL Congruence Theorem:** For **right triangles only**, if the hypotenuse and one leg of one right triangle are congruent to the hypotenuse and one leg of another right triangle, then the triangles are congruent.
 
 This is a special case that only applies to right triangles.
+
+!!! mascot-warning "Don't Fall for SSA!"
+
+    A very common mistake is thinking that two sides and a non-included angle (SSA) can prove congruence. It can't -- SSA is the "ambiguous case" because two different triangles can have the same SSA measurements. Also remember, AAA only proves similarity, not congruence!
 
 #### Diagram: All Five Congruence Criteria Reference
 <details markdown="1">
@@ -710,6 +722,10 @@ In symbols: If triangle ABC has angles $\angle A$, $\angle B$, and $\angle C$, t
 $m\angle A + m\angle B + m\angle C = 180°$
 
 This is one of the most important theorems in geometry. It means that if you know two angles of a triangle, you can always find the third angle by subtracting from 180°.
+
+!!! mascot-tip "Quick Angle Check"
+
+    Whenever you find an unknown angle in a triangle, add all three angles together. If they don't sum to exactly 180 degrees, something went wrong -- go back and double-check your work. This is one of the most reliable error-catchers in geometry!
 
 #### Diagram: Triangle Sum Theorem Proof Visualization
 <details markdown="1">
@@ -1285,6 +1301,10 @@ Think of it like a door hinge: the wider you open the hinge (larger angle), the 
 
 Triangles contain several important segments that have special properties. These segments—medians, altitudes, perpendicular bisectors, and angle bisectors—all play important roles in triangle geometry and have unique concurrency points.
 
+!!! mascot-thinking "Hidden Points Inside Every Triangle"
+
+    Here's something remarkable: every triangle has four special "center" points hiding inside it (or sometimes outside!). Each one comes from drawing three lines of the same type, and they always meet at a single point. We call that concurrency, and it's one of the most elegant ideas in geometry.
+
 ### Median of a Triangle
 
 A **median** of a triangle is a segment from a vertex to the midpoint of the opposite side. Every triangle has three medians, one from each vertex.
@@ -1780,6 +1800,10 @@ Triangles are everywhere:
 - **Surveying**: Measuring distances and land areas
 
 Triangles are the fundamental building blocks of geometry. The properties you've learned in this chapter will be used throughout the rest of your study of geometry—from understanding polygons to working with circles, solids, and beyond.
+
+!!! mascot-celebration "Fantastic Work!"
+
+    You've mastered triangle classifications, five congruence criteria, key angle theorems, inequality rules, and four special segment types. That's a huge toolkit! Everything from here builds on what you just learned.
 
 ---
 

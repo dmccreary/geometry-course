@@ -2,7 +2,7 @@
 // Visual breakdown of hypothesis and conclusion
 
 let canvasWidth = 750;
-let drawHeight = 450;
+let drawHeight = 520;
 let canvasHeight = drawHeight;
 
 function setup() {
@@ -44,7 +44,7 @@ function draw() {
   // Main diagram area
   let diagramY = 100;
   let boxWidth = 280;
-  let boxHeight = 140;
+  let boxHeight = 110;
   let gap = 60;
 
   let leftBoxX = canvasWidth / 2 - boxWidth - gap / 2;
@@ -62,19 +62,13 @@ function draw() {
   textSize(22);
   textStyle(BOLD);
   textAlign(CENTER, TOP);
-  text('Hypothesis (p)', leftBoxX + boxWidth / 2, diagramY + 15);
+  text('Hypothesis (p)', leftBoxX + boxWidth / 2, diagramY + 20);
 
   fill('#1565C0');
   textSize(16);
   textStyle(ITALIC);
-  text('The "IF" part', leftBoxX + boxWidth / 2, diagramY + 45);
+  text('The "IF" part', leftBoxX + boxWidth / 2, diagramY + 55);
   textStyle(NORMAL);
-
-  // Hypothesis content
-  fill('#263238');
-  textSize(15);
-  text('The condition or', leftBoxX + boxWidth / 2, diagramY + 80);
-  text('given information', leftBoxX + boxWidth / 2, diagramY + 100);
 
   // Conclusion box (light green)
   fill('#C8E6C9');
@@ -88,19 +82,13 @@ function draw() {
   textSize(22);
   textStyle(BOLD);
   textAlign(CENTER, TOP);
-  text('Conclusion (q)', rightBoxX + boxWidth / 2, diagramY + 15);
+  text('Conclusion (q)', rightBoxX + boxWidth / 2, diagramY + 20);
 
   fill('#2E7D32');
   textSize(16);
   textStyle(ITALIC);
-  text('The "THEN" part', rightBoxX + boxWidth / 2, diagramY + 45);
+  text('The "THEN" part', rightBoxX + boxWidth / 2, diagramY + 55);
   textStyle(NORMAL);
-
-  // Conclusion content
-  fill('#263238');
-  textSize(15);
-  text('What follows', rightBoxX + boxWidth / 2, diagramY + 80);
-  text('or results', rightBoxX + boxWidth / 2, diagramY + 100);
 
   // Arrow connecting boxes
   let arrowY = diagramY + boxHeight / 2;
@@ -125,11 +113,32 @@ function draw() {
 
   // Arrow symbol below
   textSize(24);
-  text('→', canvasWidth / 2, arrowY + 30);
+  text('\u2192', canvasWidth / 2, arrowY + 30);
+  textStyle(NORMAL);
+
+  // Annotation notes below the main boxes
+  let noteY = diagramY + boxHeight + 12;
+
+  // Hypothesis annotation
+  fill('#5C6BC0');
+  textSize(13);
+  textStyle(ITALIC);
+  textAlign(CENTER, TOP);
+  text('This is the condition or', leftBoxX + boxWidth / 2, noteY);
+  text('given information', leftBoxX + boxWidth / 2, noteY + 16);
+  textStyle(NORMAL);
+
+  // Conclusion annotation
+  fill('#388E3C');
+  textSize(13);
+  textStyle(ITALIC);
+  textAlign(CENTER, TOP);
+  text('This is what follows', rightBoxX + boxWidth / 2, noteY);
+  text('or results', rightBoxX + boxWidth / 2, noteY + 16);
   textStyle(NORMAL);
 
   // Example breakdown section
-  let breakdownY = diagramY + boxHeight + 50;
+  let breakdownY = noteY + 55;
 
   // Section title
   fill('#424242');
@@ -192,7 +201,7 @@ function draw() {
   fill('#616161');
   textSize(14);
   textAlign(CENTER, BOTTOM);
-  text('Notation: p → q  reads as "If p, then q" or "p implies q"', canvasWidth / 2, canvasHeight - 15);
+  text('Notation: p \u2192 q  reads as "If p, then q" or "p implies q"', canvasWidth / 2, canvasHeight - 15);
 }
 
 function windowResized() {

@@ -1,12 +1,13 @@
 {
   "title": "Flow Chart Proof",
-  "description": "Interactive flow chart proof of the Vertical Angles Theorem with step-by-step reveal and auto-play.",
+  "description": "Interactive flow chart proof of the Vertical Angles Theorem with step-by-step reveal and auto-play. Demonstrates how a proof can be organized as a flow chart with boxes and arrows.",
   "creator": "Claude AI",
-  "date": "2026-01-07",
+  "date": "2026-02-10",
   "subject": [
     "Geometry",
     "Mathematics",
-    "Proofs"
+    "Proofs",
+    "Flow Chart Proofs"
   ],
   "type": "Interactive Simulation",
   "format": "text/html",
@@ -17,70 +18,69 @@
   "learningObjectives": [
     "Interpret flow chart proofs with branching logic",
     "Trace logical dependencies between statements",
-    "Understand how parallel reasoning paths can converge"
+    "Create flow chart proofs showing logical dependencies between statements"
   ],
   "bloomsLevel": "Analyzing",
   "duration": "10 minutes",
   "prerequisites": [
     "Basic understanding of vertical angles",
-    "Linear pair concept"
+    "Linear pair concept",
+    "Supplementary angles"
   ],
   "library": "p5.js",
-  "canvasDimensions": "850x620",
+  "canvasDimensions": "700x800",
   "responsive": true,
   "controls": [
     {
       "type": "button",
-      "label": "Prev"
+      "label": "Prev",
+      "implementation": "canvas-based"
     },
     {
       "type": "button",
-      "label": "Next"
+      "label": "Next",
+      "implementation": "canvas-based"
     },
     {
       "type": "button",
-      "label": "Auto Play"
+      "label": "Auto Play",
+      "implementation": "canvas-based"
     },
     {
       "type": "button",
-      "label": "Reset"
+      "label": "Reset",
+      "implementation": "canvas-based"
     },
     {
       "type": "slider",
-      "label": "Speed"
+      "label": "Speed",
+      "implementation": "canvas-based"
     }
   ],
   "visualizationType": [
+    "diagram",
     "animation",
     "interactive-demo"
-  ],
-  "bloomsTaxonomy": [
-    "Remember",
-    "Understand",
-    "Apply",
-    "Create"
   ],
   "pedagogical": {
     "pattern": "reference",
     "bloomAlignment": [
       "understand",
-      "apply",
-      "evaluate"
+      "analyze"
     ],
     "bloomVerbs": [
-      "describe",
       "interpret",
-      "demonstrate",
-      "illustrate",
-      "implement"
+      "trace",
+      "analyze",
+      "identify"
     ],
     "pacing": "self-paced",
     "supportsPrediction": false,
     "dataVisibility": "high",
     "feedbackType": [
-      "delayed",
-      "explanatory"
+      "immediate",
+      "visual"
     ],
-    "interactionStyle": "construct"
+    "interactionStyle": "explore"
   }
 }

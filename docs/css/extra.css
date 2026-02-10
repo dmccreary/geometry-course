@@ -5,7 +5,7 @@
 /* size of logo in the upper-left corner */
 .md-header__button.md-logo img, .md-header__button.md-logo svg {
     height: 50px;
-    width: 70px;
+    width: 50px;
 }
 
 /* Container to control the iframe size and scaling */
@@ -48,4 +48,210 @@ iframe {
 
 .admonition.prompt .copy-button:hover {
   background-color: #0041a4; /* Darker blue on hover */
+}
+
+/* ============================================
+   GeoWise Learning Mascot — Custom Admonitions
+   ============================================ */
+
+:root {
+  --geowise-purple: #7B1FA2;
+  --geowise-orange: #FF9800;
+  --geowise-icon-size: 3.74em;
+}
+
+/* Taller title bar for all mascot admonitions */
+.md-typeset .admonition.mascot-welcome > .admonition-title,
+.md-typeset .admonition.mascot-thinking > .admonition-title,
+.md-typeset .admonition.mascot-tip > .admonition-title,
+.md-typeset .admonition.mascot-warning > .admonition-title,
+.md-typeset .admonition.mascot-celebration > .admonition-title,
+.md-typeset .admonition.mascot-encourage > .admonition-title,
+.md-typeset details.mascot-welcome > summary,
+.md-typeset details.mascot-thinking > summary,
+.md-typeset details.mascot-tip > summary,
+.md-typeset details.mascot-warning > summary,
+.md-typeset details.mascot-celebration > summary,
+.md-typeset details.mascot-encourage > summary {
+  overflow: visible;
+  position: relative;
+  padding-left: 5em;
+}
+
+/* All mascot admonition containers must allow icon overflow */
+.md-typeset .admonition.mascot-welcome,
+.md-typeset .admonition.mascot-thinking,
+.md-typeset .admonition.mascot-tip,
+.md-typeset .admonition.mascot-warning,
+.md-typeset .admonition.mascot-celebration,
+.md-typeset .admonition.mascot-encourage,
+.md-typeset details.mascot-welcome,
+.md-typeset details.mascot-thinking,
+.md-typeset details.mascot-tip,
+.md-typeset details.mascot-warning,
+.md-typeset details.mascot-celebration,
+.md-typeset details.mascot-encourage {
+  overflow: visible;
+}
+
+/* --- mascot-welcome --- */
+.md-typeset .admonition.mascot-welcome,
+.md-typeset details.mascot-welcome {
+  border-color: var(--geowise-purple);
+  background-color: #F3E5F5;
+}
+.md-typeset .mascot-welcome > .admonition-title,
+.md-typeset .mascot-welcome > summary {
+  background-color: var(--geowise-purple);
+  color: white;
+}
+.md-typeset .mascot-welcome > .admonition-title::before,
+.md-typeset .mascot-welcome > summary::before {
+  content: "";
+  background: url('../img/geowise-welcome.png') center/contain no-repeat;
+  width: var(--geowise-icon-size);
+  height: var(--geowise-icon-size);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  z-index: 2;
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-color: transparent;
+}
+
+/* --- mascot-thinking --- */
+.md-typeset .admonition.mascot-thinking,
+.md-typeset details.mascot-thinking {
+  border-color: var(--geowise-orange);
+  background-color: #FFF3E0;
+}
+.md-typeset .mascot-thinking > .admonition-title,
+.md-typeset .mascot-thinking > summary {
+  background-color: var(--geowise-orange);
+  color: white;
+}
+.md-typeset .mascot-thinking > .admonition-title::before,
+.md-typeset .mascot-thinking > summary::before {
+  content: "";
+  background: url('../img/geowise-thinking.png') center/contain no-repeat;
+  width: var(--geowise-icon-size);
+  height: var(--geowise-icon-size);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  z-index: 2;
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-color: transparent;
+}
+
+/* --- mascot-tip --- */
+.md-typeset .admonition.mascot-tip,
+.md-typeset details.mascot-tip {
+  border-color: #66BB6A;
+  background-color: #E8F5E9;
+}
+.md-typeset .mascot-tip > .admonition-title,
+.md-typeset .mascot-tip > summary {
+  background-color: #66BB6A;
+  color: white;
+}
+.md-typeset .mascot-tip > .admonition-title::before,
+.md-typeset .mascot-tip > summary::before {
+  content: "";
+  background: url('../img/geowise-tip.png') center/contain no-repeat;
+  width: var(--geowise-icon-size);
+  height: var(--geowise-icon-size);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  z-index: 2;
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-color: transparent;
+}
+
+/* --- mascot-warning --- */
+.md-typeset .admonition.mascot-warning,
+.md-typeset details.mascot-warning {
+  border-color: #EF5350;
+  background-color: #FFEBEE;
+}
+.md-typeset .mascot-warning > .admonition-title,
+.md-typeset .mascot-warning > summary {
+  background-color: #EF5350;
+  color: white;
+}
+.md-typeset .mascot-warning > .admonition-title::before,
+.md-typeset .mascot-warning > summary::before {
+  content: "";
+  background: url('../img/geowise-warning.png') center/contain no-repeat;
+  width: var(--geowise-icon-size);
+  height: var(--geowise-icon-size);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  z-index: 2;
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-color: transparent;
+}
+
+/* --- mascot-celebration --- */
+.md-typeset .admonition.mascot-celebration,
+.md-typeset details.mascot-celebration {
+  border-color: #AB47BC;
+  background-color: #F3E5F5;
+}
+.md-typeset .mascot-celebration > .admonition-title,
+.md-typeset .mascot-celebration > summary {
+  background-color: #AB47BC;
+  color: white;
+}
+.md-typeset .mascot-celebration > .admonition-title::before,
+.md-typeset .mascot-celebration > summary::before {
+  content: "";
+  background: url('../img/geowise-celebrates.png') center/contain no-repeat;
+  width: var(--geowise-icon-size);
+  height: var(--geowise-icon-size);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  z-index: 2;
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-color: transparent;
+}
+
+/* --- mascot-encourage --- */
+.md-typeset .admonition.mascot-encourage,
+.md-typeset details.mascot-encourage {
+  border-color: #29B6F6;
+  background-color: #E1F5FE;
+}
+.md-typeset .mascot-encourage > .admonition-title,
+.md-typeset .mascot-encourage > summary {
+  background-color: #29B6F6;
+  color: white;
+}
+.md-typeset .mascot-encourage > .admonition-title::before,
+.md-typeset .mascot-encourage > summary::before {
+  content: "";
+  background: url('../img/geowise-encourage.png') center/contain no-repeat;
+  width: var(--geowise-icon-size);
+  height: var(--geowise-icon-size);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  z-index: 2;
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-color: transparent;
 }

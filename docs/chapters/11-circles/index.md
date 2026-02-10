@@ -40,6 +40,12 @@ This chapter builds on concepts from:
 
 ---
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to the world of circles! From spinning wheels to planetary orbits,
+    circles are everywhere. We're going to explore their hidden geometry together,
+    and I think you'll be amazed at how elegant these shapes really are.
+
 ## Introduction to Circles
 
 Circles are among the most perfect and symmetrical shapes in geometry. From wheels and gears to pizzas and planets, circular forms appear throughout nature and human design. Unlike polygons with straight edges and corners, circles possess a continuous curve that is equidistant from a central point at every location.
@@ -220,6 +226,12 @@ Circles create several types of angles with special relationships. Understanding
 A **central angle** is an angle whose vertex is at the center of the circle. The two sides of a central angle are radii of the circle. Central angles are measured in degrees, and a full rotation around the center is 360°.
 
 An **inscribed angle** is an angle formed by two chords that share an endpoint on the circle. The vertex of an inscribed angle lies on the circle itself, not at the center.
+
+!!! mascot-thinking "Here's the Big Insight!"
+
+    An inscribed angle is always exactly half the central angle that
+    opens to the same arc. Move the vertex anywhere on the circle and
+    the inscribed angle stays the same -- try it in the sim below!
 
 Here's a fundamental relationship: An inscribed angle is always half the measure of the central angle that subtends the same arc.
 
@@ -468,6 +480,13 @@ A **segment of a circle** is the region between a chord and the arc it cuts off.
 ### Relationships Between Chords, Tangents, and Angles
 
 Circles have many elegant theorems that describe how chords, tangents, secants, and angles relate to each other.
+
+!!! mascot-warning "Watch Out!"
+
+    These three angle formulas look similar but work differently. The
+    chord-chord formula uses a *sum* of arcs, while the secant-secant
+    formula uses a *difference*. Mixing them up is one of the most
+    common mistakes on tests!
 
 Here are some important properties:
 
@@ -809,6 +828,12 @@ $x^2 + y^2 = r^2$
     Implementation: p5.js with coordinate transformation and distance checking
 </details>
 
+!!! mascot-tip "A Handy Shortcut!"
+
+    To quickly read a circle's center from the standard equation, just
+    flip the signs inside the parentheses. If you see $(x - 2)^2 + (y + 3)^2$,
+    the center is $(2, -3)$. The plus-three becomes minus-three!
+
 Sometimes circle equations appear in **expanded form** rather than standard form:
 
 $x^2 + y^2 + Dx + Ey + F = 0$
@@ -1111,6 +1136,13 @@ In this chapter, you've explored the rich geometry of circles and their special 
 
 These concepts form the foundation for understanding circular motion, rotational systems, and curved designs in mathematics, science, and engineering!
 
+!!! mascot-encourage "You've Got This!"
+
+    This chapter covered a lot of ground -- from basic definitions all the
+    way to coordinate equations. If some of the theorems feel tricky, that's
+    completely normal. Work through the practice problems below, and
+    each one will help lock the ideas in place.
+
 ### Practice Problems
 
 Try these problems to test your understanding:
@@ -1145,3 +1177,9 @@ Now that you understand circles, you're ready to explore more advanced topics:
 - **Chapter 12: Area and Volume** - Apply circle concepts to find areas and volumes of 3D shapes
 - **Chapter 13: Geometric Probability** - Use sectors and segments for probability problems
 - **Advanced Geometry** - Study conic sections (ellipses, parabolas, hyperbolas) which generalize circles
+
+!!! mascot-celebration "Fantastic Work!"
+
+    You've mastered the geometry of circles! From radii and chords to
+    coordinate equations, you now have a powerful toolkit. These ideas
+    will come back again and again in advanced math and science.

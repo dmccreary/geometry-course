@@ -41,6 +41,10 @@ This chapter builds on concepts from:
 
 ## Introduction
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to one of geometry's most powerful chapters! We're going to discover how similarity and trigonometry let us measure things we can't even reach. Ready to unlock some mathematical superpowers?
+
 Have you ever wondered how surveyors measure the height of a mountain without climbing it? Or how architects create scale models of buildings? The answer lies in **similarity** and **trigonometry**—two powerful mathematical tools that allow us to work with shapes that have the same form but different sizes, and to find unknown measurements using angles and ratios.
 
 In this chapter, you'll discover how to determine if two figures are similar, use scale factors to solve real-world problems, and unlock the secrets of right triangles through the Pythagorean theorem and trigonometric ratios. By the end, you'll be able to measure the height of your school building using just a measuring tape and a sunny day!
@@ -166,6 +170,10 @@ The three triangle similarity criteria are:
 If two angles of one triangle are congruent to two angles of another triangle, then the triangles are similar.
 
 Why does this work? Remember that the sum of angles in any triangle is 180°. If two angles match, the third angle must also match!
+
+!!! mascot-thinking "An 'Aha' Moment!"
+
+    Notice how AA Similarity only needs two angles, not three! Since a triangle's angles always add up to 180 degrees, the third angle is locked in automatically. That's one less thing we need to check.
 
 #### Diagram: AA Similarity Proof
 <details markdown="1">
@@ -631,6 +639,10 @@ A popular way to remember these ratios is **SOH-CAH-TOA**:
 - **CAH**: Cosine = Adjacent / Hypotenuse
 - **TOA**: Tangent = Opposite / Adjacent
 
+!!! mascot-tip "Study Tip!"
+
+    Write SOH-CAH-TOA on a sticky note and keep it in your notebook. Before solving any trig problem, first label the sides as opposite, adjacent, and hypotenuse relative to the angle you're working with. Getting the sides right is half the battle!
+
 #### Diagram: Trigonometric Ratios Visualization
 <details markdown="1">
 <summary>Trigonometric Ratios in a Right Triangle</summary>
@@ -758,6 +770,10 @@ The three inverse trig functions are:
 - $\sin^{-1}$ (or arcsin): finds the angle when you know opposite and hypotenuse
 - $\cos^{-1}$ (or arccos): finds the angle when you know adjacent and hypotenuse
 - $\tan^{-1}$ (or arctan): finds the angle when you know opposite and adjacent
+
+!!! mascot-warning "Watch Out!"
+
+    The notation $\sin^{-1}$ does NOT mean $\frac{1}{\sin}$! That superscript $-1$ means "inverse," not "reciprocal." It's one of the most common mistakes in trigonometry, so watch for it on tests!
 
 **Note:** The $-1$ is not an exponent! $\sin^{-1}$ does not mean $\frac{1}{\sin}$. It means "inverse sine."
 
@@ -902,6 +918,10 @@ $h = 50 \cdot \tan(60°) ≈ 50 \cdot 1.732 = 86.6 \text{ feet}$
 **Indirect measurement** means finding a distance or height without measuring it directly. This is incredibly useful when you can't physically measure something—like the height of a mountain or the width of a river!
 
 Trigonometry and similar triangles make indirect measurement possible.
+
+!!! mascot-encourage "You've Got This!"
+
+    This is where everything we've learned comes together -- similarity, proportions, and trigonometry all working as a team. If it feels like a lot, take it one step at a time. Let's see how these tools solve real problems!
 
 ### Methods of Indirect Measurement
 
@@ -1197,6 +1217,10 @@ Let's review the essential concepts from this chapter:
 - Angle of depression: looking down from horizontal
 - Indirect measurement: using similarity or trigonometry to find distances you can't measure directly
 - Shadow method: use similar triangles and proportions
+
+!!! mascot-celebration "Great Work!"
+
+    You've just mastered one of the most practical chapters in geometry! From similar figures to trigonometric ratios, you now have the tools to measure buildings, mountains, and rivers -- all without leaving the ground. That's something to celebrate!
 
 ## Practice Problems
 

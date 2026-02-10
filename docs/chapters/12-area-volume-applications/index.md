@@ -65,6 +65,10 @@ This chapter builds on concepts from:
 
 Welcome to the culminating chapter of your geometry journey! In this chapter, you'll bring together everything you've learned about shapes, measurements, and reasoning to solve real-world problems involving area and volume. From designing packaging to planning construction projects, the formulas and techniques you'll master here have countless practical applications.
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to the grand finale! We've built up a whole toolkit of geometric ideas, and now it's time to put them to work measuring real shapes in two and three dimensions. Let's dive in!
+
 We'll start by reviewing and expanding your knowledge of two-dimensional area calculations, then venture into the fascinating world of three-dimensional geometry. You'll learn to calculate surface areas and volumes of prisms, pyramids, cylinders, cones, and spheres. Finally, you'll apply these skills to authentic challenges involving scale models, optimization, and geometric design.
 
 By the end of this chapter, you'll be able to:
@@ -396,6 +400,10 @@ where $d$ is diameter and $r$ is radius.
 **Area formula:**
 
 $$A = \pi r^2$$
+
+!!! mascot-thinking "A Circle is a Polygon with Infinite Sides!"
+
+    Here's an amazing connection: as a regular polygon gets more and more sides, it looks more and more like a circle. That means our polygon area formula gradually turns into the circle area formula. We can see one idea flowing into the next!
 
 #### Diagram: Comparing Perimeter and Circumference
 
@@ -815,6 +823,10 @@ where $r$ is radius and $l$ is slant height.
 **Sphere:**
 $$SA = 4\pi r^2$$
 
+!!! mascot-tip "A Handy Way to Remember"
+
+    Notice that the sphere's surface area is exactly four times the area of a circle with the same radius. Try wrapping an orange with paper circles -- you'll need exactly four of them! Connecting formulas to physical objects makes them easier to recall.
+
 #### Diagram: Surface Area Formulas Reference
 
 <details markdown="1">
@@ -1033,6 +1045,10 @@ $$V = \frac{1}{3}\pi r^2h$$
 $$V = \frac{4}{3}\pi r^3$$
 
 ### Cavalieri's Principle
+
+!!! mascot-warning "Don't Forget the One-Third!"
+
+    A very common mistake is using $V = Bh$ for pyramids and cones instead of $V = \frac{1}{3}Bh$. Remember, a pyramid fills only one-third of the prism that surrounds it. Always ask yourself: does this solid taper to a point? If so, include the $\frac{1}{3}$ factor.
 
 **Cavalieri's Principle** states that if two solids have the same height and the same cross-sectional area at every level, then they have the same volume.
 
@@ -1512,6 +1528,10 @@ For example, a scale of $1:50$ means that 1 cm in the model represents 50 cm in 
 - Volumes scale by $k^3$
 
 If a model is made at $1:10$ scale, then areas are reduced by $(1/10)^2 = 1/100$, and volumes are reduced by $(1/10)^3 = 1/1000$.
+
+!!! mascot-thinking "Why Giants Can't Exist!"
+
+    This is why scale matters so much in nature. If you doubled every dimension of an animal, its weight (volume) would increase by $2^3 = 8$ times, but its bone cross-section (area) would only grow by $2^2 = 4$ times. The bones couldn't support the weight! Geometry explains real biology.
 
 #### Drawing: Scale Model Builder
 
@@ -2240,6 +2260,10 @@ These skills will serve you well in:
 Continue to look for geometric patterns and relationships in the world around you. The problem-solving skills and spatial reasoning you've developed will continue to grow as you apply them to new challenges.
 
 Your **Geometric Proof Portfolio** (developed throughout this course) showcases your growth as a mathematical thinker. Keep it as a reference and a reminder of what you've accomplished!
+
+!!! mascot-celebration "You Did It!"
+
+    From points and lines all the way to volumes and design challenges -- we've covered an incredible amount of geometry together. You should be proud of how far you've come. Take these skills with you; the world is full of shapes waiting to be understood!
 
 ---
 

@@ -28,6 +28,10 @@ This chapter builds on concepts from:
 
 ## Introduction to Coordinate Geometry
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to coordinate geometry! This is where algebra and geometry join forces, and I think you're going to love how powerful that combination is. Let's explore how two simple numbers can describe any point in the plane.
+
 Imagine being able to describe every point on a map with just two numbers, or finding the exact distance between two cities without measuring physically. This is the power of coordinate geometry—also called **analytic geometry**—which combines the visual world of geometry with the computational world of algebra.
 
 In this chapter, you'll learn how to place geometric figures on a coordinate plane and use algebraic formulas to answer geometric questions. You'll discover that a simple slope can tell you whether lines are parallel or perpendicular, and that equations can precisely describe infinite lines. This powerful synthesis of algebra and geometry, developed by René Descartes in the 17th century, revolutionized mathematics and gave us tools to model everything from planetary orbits to computer graphics.
@@ -279,6 +283,10 @@ Solution:
 - $d = \sqrt{25}$
 - $d = 5$ units
 
+!!! mascot-thinking "The Pythagorean Theorem Strikes Again!"
+
+    Did you notice? The distance formula is really just the Pythagorean theorem in disguise. Every time we find the distance between two points, we're secretly building a right triangle and calculating its hypotenuse.
+
 ## Midpoint Formula
 
 The **midpoint** of a segment is the point exactly halfway between the endpoints. On the coordinate plane, we can find the midpoint using the **Midpoint Formula**.
@@ -444,6 +452,10 @@ Solution:
 - $M = \left(\frac{2}{2}, \frac{4}{2}\right)$
 - $M = (1, 2)$
 
+!!! mascot-tip "A Handy Way to Remember"
+
+    Think of the midpoint formula as "average, average." You're just averaging the x-coordinates and averaging the y-coordinates. If you can find the average of two numbers, you can find a midpoint!
+
 ## Slope: Measuring Steepness
 
 **Slope** measures the steepness and direction of a line. It tells us how much the line rises (or falls) for each unit of horizontal movement.
@@ -466,6 +478,10 @@ where:
 - **Negative slope** ($m < 0$): Line falls from left to right (downhill)
 - **Zero slope** ($m = 0$): Horizontal line (no rise)
 - **Undefined slope**: Vertical line (no run, division by zero)
+
+!!! mascot-warning "Don't Mix Up Zero and Undefined!"
+
+    A common mistake is confusing zero slope with undefined slope. Remember: a **horizontal** line has zero slope (the rise is zero), but a **vertical** line has **undefined** slope (the run is zero, and we can't divide by zero).
 
 #### Diagram: Four Types of Slope
 
@@ -1096,6 +1112,10 @@ If line 1 has slope $m_1$ and line 2 has slope $m_2$, then:
 
 **Special case:** Horizontal lines ($m = 0$) are perpendicular to vertical lines ($m$ undefined).
 
+!!! mascot-thinking "Flip and Negate!"
+
+    Here's a quick trick for finding perpendicular slopes: flip the fraction and change the sign. If a line's slope is $\frac{2}{3}$, the perpendicular slope is $-\frac{3}{2}$. We call these "negative reciprocals," and their product is always $-1$.
+
 #### Diagram: Perpendicular Lines with Negative Reciprocal Slopes
 
 <iframe src="../../sims/perpendicular-lines-slopes/main.html" height="452px" width="100%" scrolling="no"></iframe>
@@ -1532,6 +1552,10 @@ Coordinate geometry allows you to:
 - Connect visual geometry with numerical algebra
 
 These tools form the foundation for advanced topics in mathematics, physics, computer science, and engineering. By mastering coordinate geometry, you've gained powerful methods for analyzing and solving problems in both pure and applied mathematics.
+
+!!! mascot-celebration "Great Work!"
+
+    You've connected algebra and geometry into one powerful toolkit! The distance formula, midpoint formula, slope, and line equations will be your trusted companions throughout the rest of this course. Be proud of how far you've come!
 
 ---
 

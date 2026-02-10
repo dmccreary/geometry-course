@@ -29,6 +29,10 @@ This chapter assumes only the prerequisites from:
 
 ---
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to the world of transformations! In this chapter, we'll discover how slides, turns, and flips give us a powerful new way to understand when shapes are truly the same. Let's get moving!
+
 ## Introduction to Transformations
 
 Imagine picking up a shape and moving it across a table, rotating it, or flipping it over. These motions—slides, turns, and flips—are examples of **geometric transformations**. In this chapter, you'll learn how transformations provide a dynamic way to understand geometry, moving beyond static figures to shapes in motion.
@@ -107,6 +111,10 @@ A **translation** (or slide) moves every point of a figure the same distance in 
 **Coordinate notation:** A translation can be described by how far to move horizontally and vertically. We write $T_{(h,k)}$ to mean "translate $h$ units horizontally and $k$ units vertically."
 
 If point $(x, y)$ is translated by $(h, k)$, the image is $(x + h, y + k)$.
+
+!!! mascot-thinking "Every Point Gets the Same Ride!"
+
+    Notice how elegant this is: one simple rule, $(x+h, y+k)$, moves every single point the exact same way. No point gets special treatment. That's what makes a translation so predictable and useful.
 
 #### Diagram: Translation Examples
 <details markdown="1">
@@ -567,6 +575,10 @@ A **dilation** is a transformation that changes the size of a figure while prese
 
 **Coordinate notation:** A dilation centered at origin with scale factor $k$ transforms $(x, y) \rightarrow (kx, ky)$.
 
+!!! mascot-warning "Don't Mix Up Dilation with Rigid Motions!"
+
+    Dilation changes the size of a figure, so it is NOT a rigid motion. If someone asks whether two figures of different sizes can be congruent, the answer is no. Congruence requires same size and same shape.
+
 #### Diagram: Dilations with Different Scale Factors
 <details markdown="1">
     <summary>Dilation Visualization</summary>
@@ -643,6 +655,10 @@ Notice that **dilation is NOT a rigid motion** because it changes distances.
 **Key theorem:** Two figures are congruent if and only if one can be mapped onto the other by a sequence of rigid motions.
 
 This provides our modern definition of **congruence**: figures that can be made to coincide through rigid motions have the same size and shape.
+
+!!! mascot-thinking "This Changes Everything!"
+
+    Here's the big idea: congruence isn't just about measuring sides and angles one by one. Two figures are congruent if we can slide, turn, or flip one to land perfectly on the other. That's a much more visual and intuitive way to think about it!
 
 #### Diagram: Rigid Motion Summary
 <details markdown="1">
@@ -888,6 +904,10 @@ For triangles specifically, we don't need to check all six pairs of correspondin
 
 **Note:** **AAA** (three angles) and **SSA** (two sides and non-included angle) are NOT sufficient for congruence!
 
+!!! mascot-tip "A Memory Trick for the Five Shortcuts"
+
+    Remember the valid ones: SSS, SAS, ASA, AAS, and HL. A helpful check: if your shortcut has two S's and one A (or vice versa), make sure the angle is in the right spot. SAS means the angle is between the two sides, which matters!
+
 #### Diagram: Triangle Congruence Criteria
 <details markdown="1">
     <summary>Five Ways to Prove Triangle Congruence</summary>
@@ -1068,6 +1088,10 @@ In this chapter, you've learned how transformations provide a dynamic, modern ap
 - Manufacturing and quality control
 
 This transformation-based approach to congruence is the foundation for modern geometry and connects directly to advanced topics in mathematics, computer science, and physics.
+
+!!! mascot-celebration "You've Mastered Transformations!"
+
+    Incredible work! You now have a whole toolkit of transformations -- slides, turns, flips, and resizes -- plus a modern understanding of congruence. These ideas power everything from video game graphics to architectural design. Onward!
 
 ---
 

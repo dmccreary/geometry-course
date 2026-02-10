@@ -11,7 +11,7 @@ quality_score: 85
 
 # Conditional Statement Structure
 
-<iframe src="main.html" height="452px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="522px" width="100%" scrolling="no"></iframe>
 
 [Run the Diagram Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -46,7 +46,7 @@ After studying this diagram, students will be able to:
 
 ```html
 <iframe src="https://dmccreary.github.io/geometry-course/sims/conditional-statement-structure/main.html"
-        height="452px"
+        height="522px"
         width="100%"
         scrolling="no"></iframe>
 ```

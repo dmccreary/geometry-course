@@ -1,0 +1,29 @@
+{
+  "title": "Vertical Angles at Intersection",
+  "description": "Diagram showing how vertical angles are formed when two lines intersect, with color-coded pairs demonstrating congruence",
+  "creator": "Dan McCreary",
+  "date": "2026-02-10",
+  "type": "Diagram",
+  "subject": "Geometry",
+  "language": "en",
+  "format": "text/html",
+  "license": "CC BY-NC 4.0",
+  "library": "p5.js",
+  "libraryVersion": "1.11.10",
+  "canvasWidth": 600,
+  "canvasHeight": 600,
+  "drawHeight": 600,
+  "controlHeight": 0,
+  "controls": [],
+  "educational": {
+    "bloomsTaxonomy": ["Understand", "Apply"],
+    "concepts": ["Vertical Angles"],
+    "chapter": 3,
+    "gradeLevel": "9-12"
+  },
+  "pedagogical": {
+    "feedbackType": ["visual"],
+    "scaffolding": "Color-coded angle pairs with theorem statement",
+    "assessmentType": "observational"
+  }
+}

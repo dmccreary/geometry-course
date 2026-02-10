@@ -25,12 +25,10 @@
     "Basic understanding of logical statements"
   ],
   "library": "p5.js",
-  "canvasDimensions": "750x450",
+  "canvasDimensions": "750x520",
   "responsive": true,
   "visualizationType": [
-    "3d-model",
-    "diagram",
-    "map"
+    "diagram"
   ],
   "bloomsTaxonomy": [
     "Remember",

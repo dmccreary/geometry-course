@@ -1,0 +1,60 @@
+{
+  "title": "The Anatomy of a Proof",
+  "description": "Interactive flowchart diagram showing the essential components of every geometric proof - Given, Logical Steps, and Prove.",
+  "creator": "Claude AI",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Proofs"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Identify the essential components of a geometric proof",
+    "Understand the structure of Given, Logical Steps, and Prove",
+    "Recognize that all proof formats share this universal structure"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Basic understanding of logical statements",
+    "Familiarity with postulates and theorems"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "900x400",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Hover over sections to see details"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "flowchart"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand"
+    ],
+    "bloomVerbs": [
+      "identify",
+      "describe",
+      "recognize",
+      "explain"
+    ],
+    "pacing": "self-guided",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "explore"
+  }
+}

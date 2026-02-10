@@ -31,6 +31,13 @@ This chapter builds on concepts from:
 
 ## Introduction to Geometric Constructions
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to geometric constructions! In this chapter, you'll create
+    precise figures using only a compass and straightedge — the same two
+    tools mathematicians have used for over 2,000 years. Let's build
+    something beautiful!
+
 Imagine creating perfect geometric figures using only two simple tools: a compass and a straightedge. For over 2,000 years, mathematicians have used these tools to explore the fundamental properties of shapes and prove important theorems. In this chapter, you'll learn the classical construction techniques that allow you to create precise geometric figures without measurements—only using the relationships between points, lines, and circles.
 
 Geometric constructions are more than just drawing exercises. They reveal deep mathematical truths and help you understand *why* geometric relationships work, not just *that* they work. Every construction you perform is a hands-on proof of a geometric principle. These techniques were so important to ancient Greek mathematicians that they posed famous construction challenges, some of which took millennia to solve!
@@ -309,6 +316,12 @@ One of the most basic constructions is **copying a segment**—creating a new li
 
 ## Copying an Angle
 
+!!! mascot-tip "Here's a Tip!"
+
+    Copying an angle has more steps than copying a segment, but the key
+    idea is the same: you're transferring a distance with the compass.
+    The distance PQ captures the "opening" of the angle.
+
 **Copying an angle** means creating a new angle with exactly the same measure as a given angle, in a different location.
 
 **Given:** Angle ∠ABC
@@ -493,6 +506,12 @@ A **segment bisector** is a line, ray, or segment that divides a segment into tw
 ### Perpendicular Bisector
 
 The construction above creates a **perpendicular bisector**—a special line that is both a bisector (cuts the segment in half) and perpendicular (meets the segment at a 90° angle).
+
+!!! mascot-thinking "Think About It..."
+
+    Here's a beautiful fact: every single point on the perpendicular
+    bisector is exactly the same distance from both endpoints. This one
+    property is the key to many constructions and proofs ahead!
 
 An important property: *Every point on the perpendicular bisector is equidistant from the endpoints of the segment.* This means if you pick any point on line PQ, its distance to A equals its distance to B.
 
@@ -741,6 +760,12 @@ An important property: *Every point on the perpendicular bisector is equidistant
 </details>
 
 ## Constructing Perpendiculars
+
+!!! mascot-warning "Watch Out!"
+
+    There are two different perpendicular constructions, and mixing them
+    up is a common mistake. Always check first: is the point ON the line
+    or OFF the line? That tells you which method to use.
 
 Perpendicular lines meet at right angles (90°). There are two common perpendicular constructions:
 
@@ -1430,6 +1455,13 @@ While we now have digital tools, understanding classical constructions has pract
 
 ## The Impossible Constructions
 
+!!! mascot-encourage "You've Got This!"
+
+    Don't be discouraged by "impossible" problems! Proving that something
+    can't be done is actually one of the greatest achievements in
+    mathematics. It took over 2,000 years — and led to entirely new
+    branches of math.
+
 For centuries, mathematicians tried to solve three famous construction problems using only compass and straightedge:
 
 1. **Squaring the circle**: Construct a square with the same area as a given circle
@@ -1706,6 +1738,12 @@ In this chapter, you've learned the classical art of geometric construction usin
 - Constructions reveal *why* geometric relationships are true
 
 These construction skills develop your spatial reasoning, problem-solving abilities, and appreciation for mathematical elegance. While modern tools automate many tasks, understanding the underlying geometric principles remains essential for advanced mathematics, engineering, and design.
+
+!!! mascot-celebration "Great Work!"
+
+    You've mastered the ancient art of compass and straightedge
+    construction! These same techniques were used by Euclid himself.
+    That's 2,000 years of mathematical tradition in your hands.
 
 ---
 

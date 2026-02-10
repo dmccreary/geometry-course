@@ -23,6 +23,10 @@ This chapter builds on concepts from:
 
 ## Introduction to Triangle Centers
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to one of the most elegant topics in geometry! We're about to discover four hidden points that every triangle carries inside it. Let's explore these triangle centers together.
+
 Every triangle, no matter what shape it takes, contains four remarkable points called **centers**. These centers are special locations formed by the intersection of lines drawn according to specific geometric rules. Ancient Greek mathematicians discovered these centers thousands of years ago, and they continue to fascinate geometry students today because of their elegant properties and surprising applications.
 
 Think about finding the "middle" of a triangle. Where exactly is that middle point? The answer depends on what you mean by "middle." If you want to balance the triangle on your finger, you need one kind of center. If you want to draw the smallest circle that fits around the triangle, you need a different center. Each of the four classical triangle centers answers a different question about balance, distance, or angles within triangles.
@@ -43,6 +47,10 @@ Each center reveals something unique about triangle geometry and has practical a
 The **centroid** is the point where a triangle would balance perfectly if it were made of a uniform material like cardboard. Imagine cutting a triangle out of cardboard and trying to balance it on the tip of a pencil — the centroid is exactly where you'd place the pencil for perfect balance.
 
 To find the centroid, we draw the three **medians** of the triangle. A median is a line segment that connects a vertex (corner) of the triangle to the midpoint of the opposite side. Every triangle has exactly three medians, and these three medians always intersect at a single point: the centroid.
+
+!!! mascot-thinking "Here's a Neat Pattern!"
+
+    The centroid always splits each median into two pieces with a 2:1 ratio. The piece from the vertex to the centroid is always twice as long as the piece from the centroid to the midpoint. Try it on any triangle -- it always works!
 
 The centroid has a fascinating property: it divides each median in a 2:1 ratio. This means that the distance from any vertex to the centroid is exactly twice the distance from the centroid to the midpoint of the opposite side.
 
@@ -168,6 +176,10 @@ The **circumcenter** is the center of the circle that passes through all three v
 To find the circumcenter, we construct the **perpendicular bisectors** of the triangle's three sides. A perpendicular bisector is a line that passes through the midpoint of a side and is perpendicular (at a 90° angle) to that side. The three perpendicular bisectors of a triangle always meet at a single point: the circumcenter.
 
 Unlike the centroid, the circumcenter may lie inside, outside, or on the triangle itself, depending on the triangle's shape:
+
+!!! mascot-warning "Watch Out!"
+
+    Don't assume every triangle center sits inside the triangle! The circumcenter can wander outside for obtuse triangles. When you see an angle greater than 90 degrees, check your work carefully.
 
 - **Acute triangle**: Circumcenter is inside the triangle
 - **Right triangle**: Circumcenter is on the hypotenuse (at its midpoint)
@@ -427,6 +439,10 @@ Implementation: Static diagram ideal for clear comparison, or SVG with hover eff
 
 ### The Euler Line
 
+!!! mascot-thinking "This is Amazing!"
+
+    Three of the four triangle centers always line up on a single straight line. When we first see this, it feels almost magical -- but we can prove it! Drag the vertices in the explorer below and watch the Euler line hold steady.
+
 One of the most beautiful discoveries in triangle geometry is the **Euler line**, named after Swiss mathematician Leonhard Euler. For most triangles, three of the four triangle centers—the centroid, circumcenter, and orthocenter—always lie on the same straight line. This line is called the Euler line.
 
 The centroid divides the Euler line in a special way: the distance from the centroid to the orthocenter is exactly twice the distance from the centroid to the circumcenter.
@@ -547,6 +563,10 @@ Orthocenters appear in:
 - **Physics**: Calculating perpendicular components in vector problems
 
 ## The Incenter: The Circle Within
+
+!!! mascot-encourage "You're Doing Great!"
+
+    We've covered three centers so far -- that's a lot of new geometry! This last center, the incenter, is especially satisfying because it always stays inside the triangle, no matter how you stretch it. Let's finish strong.
 
 ### What is the Incenter?
 
@@ -988,6 +1008,10 @@ Another special point in a triangle is the **Fermat point** (also called the Tor
 Engineers use the Fermat point to find optimal locations for facilities that serve three cities, minimizing total transportation distance.
 
 ## Summary and Key Takeaways
+
+!!! mascot-celebration "Excellent Work!"
+
+    We explored all four triangle centers and the Euler line that connects three of them. These ideas have fascinated mathematicians for thousands of years -- and now you understand them too. Well done!
 
 In this chapter, you explored the four classical triangle centers and discovered their unique properties and applications:
 

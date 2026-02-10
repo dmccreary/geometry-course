@@ -1,8 +1,8 @@
 {
   "title": "Reasoning Detective",
-  "description": "An interactive game where students practice inductive reasoning, deductive reasoning, and finding counterexamples to develop mathematical thinking skills.",
-  "creator": "Claude AI",
-  "date": "2026-01-07",
+  "description": "An interactive game where students practice inductive reasoning, deductive reasoning, and finding counterexamples to develop mathematical thinking skills in geometry.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-10",
   "subject": [
     "Geometry",
     "Mathematics",
@@ -11,72 +11,89 @@
   ],
   "type": "Interactive Simulation",
   "format": "text/html",
-  "language": "en",
-  "rights": "CC BY-NC 4.0",
-  "gradeLevel": "9-12",
-  "topic": "Mathematical Reasoning",
-  "learningObjectives": [
-    "Recognize patterns using inductive reasoning",
-    "Apply deductive reasoning to reach valid conclusions",
-    "Evaluate conjectures by finding counterexamples",
-    "Distinguish between inductive and deductive reasoning"
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
   ],
-  "bloomsLevel": [
-    "Evaluating",
-    "Creating"
+  "identifier": "https://dmccreary.github.io/geometry-course/sims/reasoning-detective/",
+  "publisher": "AI Assisted Geometry Course",
+  "educationalLevel": "High School (9-12)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "2.0.0",
+  "bloomLevel": [
+    "Evaluate",
+    "Create"
   ],
-  "duration": "20-30 minutes",
+  "concepts": [
+    "Inductive Reasoning",
+    "Deductive Reasoning",
+    "Conjecture",
+    "Counterexample",
+    "Interior Angle Sum",
+    "Supplementary Angles",
+    "Parallel Lines",
+    "Triangle Angle Sum"
+  ],
   "prerequisites": [
     "Basic understanding of geometric terms",
-    "Familiarity with logical statements"
+    "Familiarity with logical statements",
+    "Number properties (even, odd, prime)"
   ],
   "library": "p5.js",
-  "canvasDimensions": "900x650",
+  "canvasDimensions": "900x700",
   "responsive": true,
   "controls": [
     {
-      "type": "button",
-      "label": "New Problem"
+      "type": "canvas-button",
+      "label": "New Problem",
+      "description": "Load a random new problem"
     },
     {
-      "type": "button",
-      "label": "Hint"
+      "type": "canvas-button",
+      "label": "Hint",
+      "description": "Show a hint for the current problem"
     },
     {
-      "type": "button",
-      "label": "Check Answer"
+      "type": "canvas-button",
+      "label": "Explain Answer",
+      "description": "Show a full explanation of the answer"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Multiple Choice Options",
+      "description": "Clickable answer options for inductive and deductive problems"
+    },
+    {
+      "type": "canvas-numpad",
+      "label": "Number Pad",
+      "description": "On-screen number pad for entering counterexample values"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Test It!",
+      "description": "Test entered number as a counterexample"
     }
-  ],
-  "visualizationType": [
-    "interactive-demo",
-    "map"
-  ],
-  "bloomsTaxonomy": [
-    "Remember",
-    "Understand",
-    "Apply",
-    "Evaluate",
-    "Create"
   ],
   "pedagogical": {
     "pattern": "assessment",
     "bloomAlignment": [
-      "understand",
-      "apply",
-      "evaluate"
+      "evaluate",
+      "create"
     ],
     "bloomVerbs": [
-      "compare",
-      "describe",
-      "summarize",
-      "apply",
-      "implement"
+      "evaluate",
+      "create",
+      "distinguish",
+      "recognize",
+      "disprove"
     ],
     "pacing": "self-paced",
-    "supportsPrediction": false,
+    "supportsPrediction": true,
     "dataVisibility": "high",
     "feedbackType": [
-      "delayed",
+      "immediate",
       "corrective",
       "explanatory"
     ],

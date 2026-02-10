@@ -156,6 +156,73 @@ Key configuration in `mkdocs.yml`:
 - **p5.js Editor**: Many sims have corresponding sketches at editor.p5js.org/dmccreary
 - **Educational Focus**: Maintain clarity, accuracy, and appropriate difficulty level for high school geometry
 
+## Learning Mascot: GeoWise the Owl
+
+The course uses a pedagogical agent mascot named GeoWise — a purple chibi owl with gold-rimmed glasses, an orange scarf, and a geometric compass. The full style guide is at `docs/learning-graph/style-guide.md`.
+
+### Character Voice
+- Warm, patient, encouraging, curious, slightly playful
+- Uses "we" for partnership ("Let's see what happens...")
+- 1-3 sentences max per appearance
+- Never condescending; acknowledges difficulty honestly
+- Catchphrase: "Let's figure this out together!"
+
+### Mascot Admonition Types
+
+Use these custom admonition types in chapter markdown:
+
+| Type | Purpose | Color |
+|------|---------|-------|
+| `mascot-welcome` | Chapter openings | Purple `#7B1FA2` |
+| `mascot-thinking` | Key concepts, "aha" moments | Orange `#FF9800` |
+| `mascot-tip` | Practical tips, study advice | Green `#66BB6A` |
+| `mascot-warning` | Common mistakes, misconceptions | Red `#EF5350` |
+| `mascot-celebration` | Section completion, milestones | Deep purple `#AB47BC` |
+| `mascot-encourage` | Difficult content, persistence | Blue `#29B6F6` |
+
+### Placement Rules
+- `mascot-welcome`: 1x at chapter opening
+- `mascot-thinking`: 2-3x for key insights
+- `mascot-tip`: as needed for practical advice
+- `mascot-warning`: as needed for common mistakes
+- `mascot-celebration`: 1x at end of major sections
+- `mascot-encourage`: as needed for hard content
+- **TOTAL: no more than 5-6 GeoWise admonitions per chapter**
+- **NEVER place two GeoWise admonitions back-to-back**
+
+### Mascot Image Files
+Images are stored in `docs/img/` (not a subdirectory):
+- `geowise.png` — base character (waving, with compass)
+- `geowise-welcome.png` — waving, chapter openings
+- `geowise-thinking.png` — hand on chin, lightbulb
+- `geowise-tip.png` — pointing up, sparkles
+- `geowise-warning.png` — hands up, exclamation mark
+- `geowise-celebrates.png` — wings spread, confetti
+- `geowise-encourage.png` — thumbs up
+
+### CSS Implementation Notes
+Mascot admonition CSS is in `docs/css/extra.css`. Key technical details:
+- Icon is rendered via `::before` pseudo-element on `.admonition-title`
+- Icon uses `position: absolute` so it doesn't inflate the title bar height
+- Title bar needs `overflow: visible` and `position: relative`
+- Admonition container also needs `overflow: visible`
+- **Critical:** Must set `mask-image: none` and `-webkit-mask-image: none` to override MkDocs Material's built-in SVG mask on `::before`, which otherwise clips the mascot image
+- Icon size controlled by `--geowise-icon-size` CSS variable (currently `3.74em`)
+- Title text uses `padding-left: 5em` to clear the icon
+
+### Example Usage
+```markdown
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to geometry! I'm GeoWise, and I'll be your guide
+    through this course. Let's get started!
+
+!!! mascot-warning "Watch Out!"
+
+    Don't confuse skew lines with parallel lines. Both never
+    intersect, but parallel lines live in the same plane!
+```
+
 ## File Conventions
 
 - Use lowercase with hyphens for file/directory names (e.g., `angle-explorer`, `pythagorean-theorem`)

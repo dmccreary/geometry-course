@@ -40,6 +40,12 @@ This chapter assumes only the prerequisites listed in the [course description](.
 
 ## Introduction: The Building Blocks of Geometry
 
+!!! mascot-welcome "Let's Figure This Out Together!"
+
+    Welcome to geometry! I'm GeoWise, and I'll be your guide through this
+    course. In this first chapter, we'll discover how the entire world of
+    geometry is built from just three simple ideas. Let's get started!
+
 Geometry is the study of shapes, sizes, and positions of objects in space. Just as a house needs a solid foundation, geometry is built upon fundamental ideas called **undefined terms**. These are concepts so basic that we accept them without formal definition—we understand them intuitively through our experience with the physical world.
 
 In this chapter, you'll discover how mathematicians construct an entire logical system from just three undefined terms: point, line, and plane. You'll also learn two powerful types of reasoning that allow you to make discoveries and prove your ideas with certainty.
@@ -240,6 +246,10 @@ The edge of your desk, the distance between two cities on a map, or the side of 
 
 #### Diagram: Rays and Segments
 
+<iframe src="../../sims/rays-and-segments/main.html" width="100%" height="402px" scrolling="no"></iframe>
+
+[Run Rays and Segments Fullscreen](../../sims/rays-and-segments/main.html)
+
 <details markdown="1">
 <summary>Comparison of rays and line segments</summary>
 
@@ -313,6 +323,11 @@ The **midpoint** of a line segment is the point that divides the segment into tw
 
 If point $M$ is the midpoint of $\overline{AB}$, then $AM = MB$ and $AM + MB = AB$.
 
+!!! mascot-tip "Here's a Tip!"
+
+    To find a midpoint, just average! Average the x-coordinates, then
+    average the y-coordinates. It works every time.
+
 **Finding the midpoint:** If you know the coordinates of the endpoints, you can find the midpoint using the midpoint formula:
 
 For segment $\overline{AB}$ with endpoints $A(x_1, y_1)$ and $B(x_2, y_2)$, the midpoint $M$ has coordinates:
@@ -353,6 +368,10 @@ The **vertex** of an angle is the common endpoint where the two rays meet. It's 
 Think of a vertex like the hinge of a door—it's the fixed point around which rotation occurs.
 
 #### Drawing: Angle Builder
+
+<iframe src="../../sims/angle-builder/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[Run Angle Builder Fullscreen](../../sims/angle-builder/main.html)
 
 <details markdown="1">
 <summary>Interactive angle creation and measurement</summary>
@@ -554,6 +573,13 @@ Two lines are **perpendicular** if they intersect at a right angle (90°). The s
 
 ### Skew Lines
 
+!!! mascot-warning "Watch Out!"
+
+    Students often confuse skew lines with parallel lines. Both never
+    intersect — but parallel lines live in the same plane, while skew
+    lines do not. If you can't lay a flat sheet of paper on both lines
+    at once, they're skew!
+
 Two lines are **skew** if they don't lie in the same plane (non-coplanar) and never intersect. Skew lines are not parallel because parallel lines must be coplanar.
 
 **Key characteristics:**
@@ -566,6 +592,10 @@ Two lines are **skew** if they don't lie in the same plane (non-coplanar) and ne
 **Examples:** A highway overpass and the road beneath it (going in different directions), opposite edges of a rectangular box that don't share a corner
 
 #### Diagram: Line Relationships in 3D
+
+<iframe src="../../sims/line-relationships-3d/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[Run Line Relationships in 3D Fullscreen](../../sims/line-relationships-3d/main.html)
 
 <details markdown="1">
 <summary>3D visualization of parallel, perpendicular, and skew lines</summary>
@@ -622,6 +652,12 @@ Create a 3D box diagram showing all three line relationships.
 </details>
 
 ## Mathematical Reasoning: Finding Patterns and Proving Ideas
+
+!!! mascot-thinking "Think About It..."
+
+    Geometry isn't just about memorizing shapes — it's about learning
+    to think like a mathematician. The reasoning skills in this section
+    are tools you'll use in every chapter that follows.
 
 Geometry isn't just about shapes—it's about thinking logically and making convincing arguments. Mathematicians use two main types of reasoning to explore patterns and prove their discoveries.
 
@@ -689,6 +725,10 @@ A **counterexample** is a specific example that shows a conjecture is false. Fin
 **Power of counterexamples:** You can test thousands of cases and a conjecture seems true, but one counterexample proves it's false!
 
 #### Drawing: Reasoning Detective
+
+<iframe src="../../sims/reasoning-detective/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
+[Run the Reasoning Detective MicroSim Fullscreen](../../sims/reasoning-detective/main.html)
 
 <details markdown="1">
 <summary>Interactive reasoning challenge game</summary>
@@ -791,6 +831,10 @@ You've now learned the fundamental building blocks of geometry and how to reason
 - **Counterexamples:** Find one case where a conjecture fails → Disprove the conjecture
 
 #### Diagram: Concept Map of Chapter 1
+
+<iframe src="../../sims/ch1-concept-map/main.html" width="100%" height="802px" scrolling="no"></iframe>
+
+[Run Chapter 1 Concept Map Fullscreen](../../sims/ch1-concept-map/main.html)
 
 <details markdown="1">
 <summary>Visual summary of all concepts and their relationships</summary>
@@ -900,6 +944,12 @@ In the next chapter, you'll learn about **Logic and Proof**—the formal system 
 The foundation you've built in this chapter—understanding undefined terms, recognizing geometric relationships, and distinguishing between inductive and deductive reasoning—will be essential as you learn to construct rigorous mathematical proofs!
 
 ---
+
+!!! mascot-celebration "Great Work!"
+
+    You've just built the entire foundation of geometry from scratch!
+    Every theorem, proof, and shape you'll encounter in this course
+    rests on the ideas in this chapter. That's something to be proud of.
 
 **Chapter 1 Summary**
 
