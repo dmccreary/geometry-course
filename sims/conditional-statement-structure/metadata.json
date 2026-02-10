@@ -1,0 +1,63 @@
+{
+  "title": "Conditional Statement Structure",
+  "description": "A visual diagram showing the components of conditional statements - hypothesis and conclusion.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Logic"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Identify the hypothesis and conclusion in conditional statements",
+    "Understand the structure of if-then statements",
+    "Apply proper notation for conditional statements"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5-10 minutes",
+  "prerequisites": [
+    "Basic understanding of logical statements"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "750x520",
+  "responsive": true,
+  "visualizationType": [
+    "diagram"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "assessment",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "illustrate",
+      "implement",
+      "assess"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
+  }
+}

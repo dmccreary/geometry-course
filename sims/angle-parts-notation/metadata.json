@@ -1,0 +1,69 @@
+{
+  "title": "Angle Parts and Notation",
+  "description": "Interactive diagram showing the anatomy of an angle with vertex, sides, and proper notation.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Identify the vertex and sides of an angle",
+    "Apply proper angle notation",
+    "Understand measurement notation"
+  ],
+  "bloomsLevel": "Remembering",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Basic understanding of points and rays"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x400",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Hover over parts for details"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "interpret",
+      "apply",
+      "calculate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "respond"
+  }
+}

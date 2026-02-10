@@ -1,0 +1,68 @@
+{
+  "title": "The Anatomy of a Proof",
+  "description": "Interactive diagram showing the essential components of every geometric proof - Given, Logical Steps, and Prove.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Proofs"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Understand the essential components of a geometric proof",
+    "Identify the Given, Steps, and Prove in any proof format",
+    "Recognize that all proof formats share this structure"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Basic understanding of logical statements"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "850x450",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Hover to see details"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "demonstrate",
+      "illustrate",
+      "implement",
+      "use"
+    ],
+    "pacing": "step-through",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

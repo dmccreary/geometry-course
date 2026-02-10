@@ -1,0 +1,69 @@
+{
+  "title": "Copy Segment Steps",
+  "description": "Reference diagram showing all five steps of copying a segment construction.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
+  "type": "Interactive Reference",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Follow the sequential steps of segment copying",
+    "Identify the role of each step in the construction",
+    "Understand why the construction creates congruent segments"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "3 minutes",
+  "prerequisites": [
+    "Copy Segment Construction"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "900x300",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "demonstrate",
+      "illustrate",
+      "implement",
+      "use"
+    ],
+    "pacing": "step-through",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

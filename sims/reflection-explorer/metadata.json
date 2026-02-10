@@ -1,0 +1,84 @@
+{
+  "title": "Reflection Explorer",
+  "description": "Interactive tool for exploring reflections with selectable mirror lines including custom positions.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Reflections",
+  "learningObjectives": [
+    "Apply reflections over various lines",
+    "Analyze perpendicular distance preservation"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5-10 minutes",
+  "prerequisites": [
+    "Reflection definition",
+    "Coordinate plane"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Select line type"
+    },
+    {
+      "type": "slider",
+      "label": "Position k"
+    },
+    {
+      "type": "button",
+      "label": "Animate"
+    },
+    {
+      "type": "button",
+      "label": "Toggle distances"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "calculate",
+      "implement",
+      "use"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "respond"
+  }
+}

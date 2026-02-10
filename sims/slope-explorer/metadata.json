@@ -1,0 +1,91 @@
+{
+  "title": "Slope Explorer and Calculator",
+  "description": "Interactive slope visualization with draggable points and real-time slope calculation.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Slope",
+  "learningObjectives": [
+    "Calculate slope from two points",
+    "Understand how slope relates to line steepness and direction"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Coordinate plane",
+    "Slope formula"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "850x750",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "draggable",
+      "label": "Point A"
+    },
+    {
+      "type": "draggable",
+      "label": "Point B"
+    },
+    {
+      "type": "button",
+      "label": "Random Line"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Rise/Run"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Extension"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Snap"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "interpret",
+      "apply",
+      "calculate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective"
+    ],
+    "interactionStyle": "respond"
+  }
+}

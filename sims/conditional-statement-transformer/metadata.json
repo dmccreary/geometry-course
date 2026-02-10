@@ -1,0 +1,83 @@
+{
+  "title": "Conditional Statement Transformer",
+  "description": "Interactive simulation that generates the converse, inverse, and contrapositive of geometric conditional statements and displays their truth values in a color-coded 2x2 grid layout.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Logic",
+    "Conditional Statements",
+    "Converse",
+    "Inverse",
+    "Contrapositive",
+    "Mathematical Reasoning"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/geometry-course/sims/conditional-statement-transformer/",
+  "publisher": "AI Assisted Geometry Course",
+  "educationalLevel": "High School (9-12)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "pedagogical": {
+    "bloomLevel": [
+      "Analyze",
+      "Create"
+    ],
+    "bloomVerb": "create",
+    "learningObjective": "Students will be able to create converse, inverse, and contrapositive statements from any given conditional statement and test their truth values.",
+    "estimatedDuration": "10-15 minutes"
+  },
+  "concepts": [
+    "Conditional Statement",
+    "Hypothesis",
+    "Conclusion",
+    "Converse",
+    "Inverse",
+    "Contrapositive",
+    "Logical Equivalence",
+    "Truth Value",
+    "Negation"
+  ],
+  "prerequisites": [
+    "Understanding of conditional statements (if-then form)",
+    "Basic geometric vocabulary",
+    "Concept of negation in logic"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "Prev",
+      "description": "Navigate to the previous statement"
+    },
+    {
+      "type": "button",
+      "label": "Next",
+      "description": "Navigate to the next statement"
+    },
+    {
+      "type": "button",
+      "label": "New Random",
+      "description": "Jump to a random statement"
+    },
+    {
+      "type": "toggle",
+      "label": "Show Connections",
+      "description": "Toggle visibility of equivalence connection lines",
+      "default": true
+    },
+    {
+      "type": "toggle",
+      "label": "Show Truth Values",
+      "description": "Toggle visibility of truth value indicators",
+      "default": true
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Slope-Intercept Form Explorer",
+  "description": "Interactive y = mx + b grapher with sliders to adjust slope and y-intercept.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry",
+    "Linear Equations"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Slope-Intercept Form",
+  "learningObjectives": [
+    "Graph lines using slope-intercept form",
+    "Understand how changing m and b affects the line"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Slope",
+    "Y-intercept",
+    "Coordinate plane"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "900x700",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Slope (m)",
+      "min": -3,
+      "max": 3
+    },
+    {
+      "type": "slider",
+      "label": "Y-intercept (b)",
+      "min": -5,
+      "max": 5
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "interpret",
+      "apply",
+      "calculate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective"
+    ],
+    "interactionStyle": "manipulate"
+  }
+}

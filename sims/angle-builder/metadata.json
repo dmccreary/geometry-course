@@ -1,0 +1,98 @@
+{
+  "title": "Angle Builder",
+  "description": "An interactive tool for creating and measuring angles, showing angle classification and relationships including complementary and supplementary angles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Foundations of Geometry",
+  "learningObjectives": [
+    "Create angles of specific measures using ray rotation",
+    "Classify angles as acute, right, obtuse, straight, or reflex",
+    "Calculate complementary and supplementary angles",
+    "Analyze the relationship between ray positions and angle measurements"
+  ],
+  "bloomsLevel": [
+    "Creating",
+    "Analyzing"
+  ],
+  "duration": "15-20 minutes",
+  "prerequisites": [
+    "Understanding of rays and vertices",
+    "Basic knowledge of degree measurement"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Angle",
+      "min": 0,
+      "max": 360,
+      "default": 45,
+      "unit": "degrees"
+    },
+    {
+      "type": "button",
+      "label": "Reset to 0\u00b0"
+    },
+    {
+      "type": "button",
+      "label": "Random"
+    },
+    {
+      "type": "select",
+      "label": "Snap",
+      "options": [
+        "1\u00b0",
+        "15\u00b0",
+        "30\u00b0",
+        "45\u00b0",
+        "90\u00b0"
+      ]
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "assessment",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "classify",
+      "describe",
+      "apply",
+      "calculate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "construct"
+  }
+}

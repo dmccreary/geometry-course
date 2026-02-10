@@ -1,0 +1,83 @@
+{
+  "title": "Regular Polygon Explorer Quiz",
+  "description": "An interactive quiz MicroSim where students test their knowledge of polygon names by creating shapes matching given prompts.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Polygons",
+    "Assessment"
+  ],
+  "type": "Interactive Assessment",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "Middle School to High School (Grades 6-12)",
+  "learningResourceType": "assessment",
+  "audience": "Students, Educators",
+  "bloomLevel": [
+    "Remember",
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Polygon Names",
+    "Regular Polygon",
+    "Number of Sides",
+    "Triangle",
+    "Square",
+    "Pentagon",
+    "Hexagon"
+  ],
+  "prerequisites": [
+    "Basic polygon terminology",
+    "Understanding of regular polygons"
+  ],
+  "library": "p5.js",
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of regular polygon explorer quiz",
+    "Apply regular polygon explorer quiz to solve problems",
+    "Visualize and interpret regular polygon explorer quiz relationships",
+    "Experiment with parameters to observe their effects on regular polygon explorer quiz"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "assessment",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "explain",
+      "apply",
+      "calculate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "delayed",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
+}

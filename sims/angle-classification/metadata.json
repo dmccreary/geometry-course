@@ -1,0 +1,35 @@
+{
+  "title": "Angle Classification Interactive",
+  "description": "Quiz-style game where students classify angles as acute, right, obtuse, or straight based on their measures",
+  "creator": "Dan McCreary",
+  "date": "2026-02-10",
+  "type": "MicroSim",
+  "subject": "Geometry",
+  "language": "en",
+  "format": "text/html",
+  "license": "CC BY-NC 4.0",
+  "library": "p5.js",
+  "libraryVersion": "1.11.10",
+  "canvasWidth": 700,
+  "canvasHeight": 550,
+  "drawHeight": 450,
+  "controlHeight": 100,
+  "controls": [
+    {"type": "canvas-button", "label": "Acute", "action": "Classify angle as acute"},
+    {"type": "canvas-button", "label": "Right", "action": "Classify angle as right"},
+    {"type": "canvas-button", "label": "Obtuse", "action": "Classify angle as obtuse"},
+    {"type": "canvas-button", "label": "Straight", "action": "Classify angle as straight"},
+    {"type": "canvas-button", "label": "Next Angle", "action": "Generate new random angle"}
+  ],
+  "educational": {
+    "bloomsTaxonomy": ["Understand", "Apply"],
+    "concepts": ["Acute Angle", "Right Angle", "Obtuse Angle", "Straight Angle"],
+    "chapter": 3,
+    "gradeLevel": "9-12"
+  },
+  "pedagogical": {
+    "feedbackType": ["immediate", "corrective", "explanatory"],
+    "scaffolding": "weighted random generation ensures variety of angle types",
+    "assessmentType": "formative"
+  }
+}

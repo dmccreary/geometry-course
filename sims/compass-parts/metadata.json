@@ -1,0 +1,71 @@
+{
+  "title": "Compass Parts and Circle Construction",
+  "description": "Interactive diagram showing the parts of a compass and how to draw perfect circles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions",
+    "Tools"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Identify the parts of a compass",
+    "Understand how circles are constructed",
+    "Recognize that all radii of a circle are equal"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Basic geometry concepts"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x450",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Part identification"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "explain",
+      "demonstrate",
+      "illustrate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

@@ -21,11 +21,8 @@
         <link rel="next" href="../09-polygons-quadrilaterals/">
       
       
-        
-      
-      
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -33,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -57,8 +54,6 @@
     
       <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../css/mascot.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -75,20 +70,34 @@
 
     
     
-  
-<meta property="og:type" content="website" />
-<meta property="og:title" content="8. Triangle Centers and Advanced Topics - AI Assisted Geometry" />
-<meta property="og:description" content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial" />
-<meta property="og:image" content="https://dmccreary.github.io/geometry-course/assets/images/social/chapters/08-triangle-centers/index.png" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://dmccreary.github.io/geometry-course/chapters/08-triangle-centers/" />
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="8. Triangle Centers and Advanced Topics - AI Assisted Geometry" />
-<meta property="twitter:description" content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial" />
-<meta property="twitter:image" content="https://dmccreary.github.io/geometry-course/assets/images/social/chapters/08-triangle-centers/index.png" />
-</head>
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="8. Triangle Centers and Advanced Topics - AI Assisted Geometry" >
+      
+        <meta  property="og:description"  content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/geometry-course/assets/images/social/chapters/08-triangle-centers/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/geometry-course/chapters/08-triangle-centers/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="8. Triangle Centers and Advanced Topics - AI Assisted Geometry" >
+      
+        <meta  name="twitter:description"  content="An AI assisted geometry course that features a learning graph and MicroSims.  All content licensed Creative Commons ShareAlike Attribution Noncommercial" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/geometry-course/assets/images/social/chapters/08-triangle-centers/index.png" >
+      
+    
+    
+  </head>
   
   
     
@@ -123,7 +132,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="AI Assisted Geometry" class="md-header__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
       
-  <img src="../../img/logo.png" alt="logo">
+  <img src="../../img/geowise.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -152,13 +161,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -190,14 +197,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -232,7 +238,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="AI Assisted Geometry" class="md-nav__button md-logo" aria-label="AI Assisted Geometry" data-md-component="logo">
       
-  <img src="../../img/logo.png" alt="logo">
+  <img src="../../img/geowise.png" alt="logo">
 
     </a>
     AI Assisted Geometry
@@ -242,7 +248,7 @@
       <a href="https://github.com/dmccreary/geometry-course" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -262,16 +268,9 @@
       <a href="../.." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Home
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -289,16 +288,9 @@
       <a href="../../about/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     About
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -316,16 +308,9 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Course Description
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -360,7 +345,8 @@
       
         
       
-    
+        
+      
     
     
     
@@ -374,20 +360,12 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
-    
-  
     Learning Graph
-  
-
-    
   </span>
-  
   
 
       
@@ -417,30 +395,53 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -453,20 +454,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
-    
-  
     Chapters
-  
-
-    
   </span>
-  
   
 
             </a>
@@ -481,11 +476,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Chapters
-  
-
+            Chapters
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -501,16 +492,9 @@
       <a href="../01-foundations-of-geometry/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     1. Foundations of Geometry
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -529,16 +513,9 @@
       <a href="../02-logic-and-proof/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     2. Logic and Proof
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -557,16 +534,9 @@
       <a href="../03-angles-and-relationships/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     3. Angles and Angle Relationships
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -585,16 +555,9 @@
       <a href="../04-geometric-constructions/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     4. Geometric Constructions
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -613,16 +576,9 @@
       <a href="../05-coordinate-geometry/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     5. Coordinate Geometry and Lines
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -641,16 +597,9 @@
       <a href="../06-transformations-congruence/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     6. Transformations and Congruence
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -669,16 +618,9 @@
       <a href="../07-triangle-congruence/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     7. Triangle Congruence and Properties
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -706,16 +648,9 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
-    
-  
     8. Triangle Centers and Advanced Topics
-  
-
-    
   </span>
-  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -724,16 +659,9 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     8. Triangle Centers and Advanced Topics
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -756,9 +684,7 @@
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Summary
-      
+      Summary
     </span>
   </a>
   
@@ -767,9 +693,7 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Concepts Covered
-      
+      Concepts Covered
     </span>
   </a>
   
@@ -778,9 +702,7 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Prerequisites
-      
+      Prerequisites
     </span>
   </a>
   
@@ -789,9 +711,7 @@
         <li class="md-nav__item">
   <a href="#introduction-to-triangle-centers" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Introduction to Triangle Centers
-      
+      Introduction to Triangle Centers
     </span>
   </a>
   
@@ -800,9 +720,7 @@
         <li class="md-nav__item">
   <a href="#the-centroid-the-balance-point" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Centroid: The Balance Point
-      
+      The Centroid: The Balance Point
     </span>
   </a>
   
@@ -812,9 +730,7 @@
           <li class="md-nav__item">
   <a href="#what-is-the-centroid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        What is the Centroid?
-      
+      What is the Centroid?
     </span>
   </a>
   
@@ -824,9 +740,7 @@
           <li class="md-nav__item">
   <a href="#diagram-triangle-with-three-medians-and-centroid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Triangle with Three Medians and Centroid
-      
+      Diagram: Triangle with Three Medians and Centroid
     </span>
   </a>
   
@@ -840,9 +754,7 @@
           <li class="md-nav__item">
   <a href="#properties-of-the-centroid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Properties of the Centroid
-      
+      Properties of the Centroid
     </span>
   </a>
   
@@ -852,9 +764,7 @@
           <li class="md-nav__item">
   <a href="#formula-distance-to-centroid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Formula: Distance to Centroid
-      
+      Formula: Distance to Centroid
     </span>
   </a>
   
@@ -863,9 +773,7 @@
           <li class="md-nav__item">
   <a href="#drawing-interactive-centroid-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Interactive Centroid Explorer
-      
+      Drawing: Interactive Centroid Explorer
     </span>
   </a>
   
@@ -879,9 +787,7 @@
           <li class="md-nav__item">
   <a href="#real-world-applications-of-centroids" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Real-World Applications of Centroids
-      
+      Real-World Applications of Centroids
     </span>
   </a>
   
@@ -895,9 +801,7 @@
         <li class="md-nav__item">
   <a href="#the-circumcenter-the-circle-through-three-points" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Circumcenter: The Circle Through Three Points
-      
+      The Circumcenter: The Circle Through Three Points
     </span>
   </a>
   
@@ -907,9 +811,7 @@
           <li class="md-nav__item">
   <a href="#what-is-the-circumcenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        What is the Circumcenter?
-      
+      What is the Circumcenter?
     </span>
   </a>
   
@@ -919,9 +821,7 @@
           <li class="md-nav__item">
   <a href="#diagram-triangle-with-perpendicular-bisectors-and-circumcenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Triangle with Perpendicular Bisectors and Circumcenter
-      
+      Diagram: Triangle with Perpendicular Bisectors and Circumcenter
     </span>
   </a>
   
@@ -935,9 +835,7 @@
           <li class="md-nav__item">
   <a href="#properties-of-the-circumcenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Properties of the Circumcenter
-      
+      Properties of the Circumcenter
     </span>
   </a>
   
@@ -947,9 +845,7 @@
           <li class="md-nav__item">
   <a href="#comparison-table-circumcenter-location-by-triangle-type" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Comparison Table: Circumcenter Location by Triangle Type
-      
+      Comparison Table: Circumcenter Location by Triangle Type
     </span>
   </a>
   
@@ -958,9 +854,7 @@
           <li class="md-nav__item">
   <a href="#drawing-circumcenter-and-triangle-type-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Circumcenter and Triangle Type Explorer
-      
+      Drawing: Circumcenter and Triangle Type Explorer
     </span>
   </a>
   
@@ -974,9 +868,7 @@
           <li class="md-nav__item">
   <a href="#the-circumradius-formula" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Circumradius Formula
-      
+      The Circumradius Formula
     </span>
   </a>
   
@@ -985,9 +877,7 @@
           <li class="md-nav__item">
   <a href="#real-world-applications-of-circumcenters" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Real-World Applications of Circumcenters
-      
+      Real-World Applications of Circumcenters
     </span>
   </a>
   
@@ -1001,9 +891,7 @@
         <li class="md-nav__item">
   <a href="#the-orthocenter-where-altitudes-meet" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Orthocenter: Where Altitudes Meet
-      
+      The Orthocenter: Where Altitudes Meet
     </span>
   </a>
   
@@ -1013,9 +901,7 @@
           <li class="md-nav__item">
   <a href="#what-is-the-orthocenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        What is the Orthocenter?
-      
+      What is the Orthocenter?
     </span>
   </a>
   
@@ -1025,9 +911,7 @@
           <li class="md-nav__item">
   <a href="#diagram-triangle-with-three-altitudes-and-orthocenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Triangle with Three Altitudes and Orthocenter
-      
+      Diagram: Triangle with Three Altitudes and Orthocenter
     </span>
   </a>
   
@@ -1041,9 +925,7 @@
           <li class="md-nav__item">
   <a href="#properties-of-the-orthocenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Properties of the Orthocenter
-      
+      Properties of the Orthocenter
     </span>
   </a>
   
@@ -1053,9 +935,7 @@
           <li class="md-nav__item">
   <a href="#diagram-orthocenter-location-in-different-triangle-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Orthocenter Location in Different Triangle Types
-      
+      Diagram: Orthocenter Location in Different Triangle Types
     </span>
   </a>
   
@@ -1069,9 +949,7 @@
           <li class="md-nav__item">
   <a href="#the-euler-line" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Euler Line
-      
+      The Euler Line
     </span>
   </a>
   
@@ -1081,9 +959,7 @@
           <li class="md-nav__item">
   <a href="#diagram-the-euler-line" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: The Euler Line
-      
+      Diagram: The Euler Line
     </span>
   </a>
   
@@ -1092,9 +968,7 @@
           <li class="md-nav__item">
   <a href="#drawing-euler-line-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Euler Line Explorer
-      
+      Drawing: Euler Line Explorer
     </span>
   </a>
   
@@ -1108,9 +982,7 @@
           <li class="md-nav__item">
   <a href="#real-world-applications-of-orthocenters" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Real-World Applications of Orthocenters
-      
+      Real-World Applications of Orthocenters
     </span>
   </a>
   
@@ -1124,9 +996,7 @@
         <li class="md-nav__item">
   <a href="#the-incenter-the-circle-within" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Incenter: The Circle Within
-      
+      The Incenter: The Circle Within
     </span>
   </a>
   
@@ -1136,9 +1006,7 @@
           <li class="md-nav__item">
   <a href="#what-is-the-incenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        What is the Incenter?
-      
+      What is the Incenter?
     </span>
   </a>
   
@@ -1148,9 +1016,7 @@
           <li class="md-nav__item">
   <a href="#diagram-triangle-with-angle-bisectors-and-incenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Triangle with Angle Bisectors and Incenter
-      
+      Diagram: Triangle with Angle Bisectors and Incenter
     </span>
   </a>
   
@@ -1164,9 +1030,7 @@
           <li class="md-nav__item">
   <a href="#properties-of-the-incenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Properties of the Incenter
-      
+      Properties of the Incenter
     </span>
   </a>
   
@@ -1176,9 +1040,7 @@
           <li class="md-nav__item">
   <a href="#formula-inradius" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Formula: Inradius
-      
+      Formula: Inradius
     </span>
   </a>
   
@@ -1187,9 +1049,7 @@
           <li class="md-nav__item">
   <a href="#drawing-interactive-incircle-and-area-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Interactive Incircle and Area Explorer
-      
+      Drawing: Interactive Incircle and Area Explorer
     </span>
   </a>
   
@@ -1203,9 +1063,7 @@
           <li class="md-nav__item">
   <a href="#comparing-all-four-centers" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Comparing All Four Centers
-      
+      Comparing All Four Centers
     </span>
   </a>
   
@@ -1215,9 +1073,7 @@
           <li class="md-nav__item">
   <a href="#diagram-all-four-centers-in-one-triangle" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: All Four Centers in One Triangle
-      
+      Diagram: All Four Centers in One Triangle
     </span>
   </a>
   
@@ -1226,9 +1082,7 @@
           <li class="md-nav__item">
   <a href="#drawing-complete-triangle-centers-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Complete Triangle Centers Explorer
-      
+      Drawing: Complete Triangle Centers Explorer
     </span>
   </a>
   
@@ -1242,9 +1096,7 @@
           <li class="md-nav__item">
   <a href="#real-world-applications-of-incenters" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Real-World Applications of Incenters
-      
+      Real-World Applications of Incenters
     </span>
   </a>
   
@@ -1258,9 +1110,7 @@
         <li class="md-nav__item">
   <a href="#special-triangles-and-their-centers" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Special Triangles and Their Centers
-      
+      Special Triangles and Their Centers
     </span>
   </a>
   
@@ -1270,9 +1120,7 @@
           <li class="md-nav__item">
   <a href="#the-equilateral-triangle-where-all-centers-meet" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Equilateral Triangle: Where All Centers Meet
-      
+      The Equilateral Triangle: Where All Centers Meet
     </span>
   </a>
   
@@ -1282,9 +1130,7 @@
           <li class="md-nav__item">
   <a href="#diagram-equilateral-triangle-with-coinciding-centers" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Equilateral Triangle with Coinciding Centers
-      
+      Diagram: Equilateral Triangle with Coinciding Centers
     </span>
   </a>
   
@@ -1298,9 +1144,7 @@
           <li class="md-nav__item">
   <a href="#the-isosceles-triangle-symmetry-on-the-axis" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Isosceles Triangle: Symmetry on the Axis
-      
+      The Isosceles Triangle: Symmetry on the Axis
     </span>
   </a>
   
@@ -1309,9 +1153,7 @@
           <li class="md-nav__item">
   <a href="#the-right-triangle-centers-on-the-hypotenuse" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Right Triangle: Centers on the Hypotenuse
-      
+      The Right Triangle: Centers on the Hypotenuse
     </span>
   </a>
   
@@ -1325,9 +1167,7 @@
         <li class="md-nav__item">
   <a href="#advanced-topics-and-extensions" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Advanced Topics and Extensions
-      
+      Advanced Topics and Extensions
     </span>
   </a>
   
@@ -1337,9 +1177,7 @@
           <li class="md-nav__item">
   <a href="#the-nine-point-circle" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Nine-Point Circle
-      
+      The Nine-Point Circle
     </span>
   </a>
   
@@ -1349,9 +1187,7 @@
           <li class="md-nav__item">
   <a href="#diagram-the-nine-point-circle" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: The Nine-Point Circle
-      
+      Diagram: The Nine-Point Circle
     </span>
   </a>
   
@@ -1365,9 +1201,7 @@
           <li class="md-nav__item">
   <a href="#the-fermat-point-minimizing-total-distance" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Fermat Point: Minimizing Total Distance
-      
+      The Fermat Point: Minimizing Total Distance
     </span>
   </a>
   
@@ -1381,9 +1215,7 @@
         <li class="md-nav__item">
   <a href="#summary-and-key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Summary and Key Takeaways
-      
+      Summary and Key Takeaways
     </span>
   </a>
   
@@ -1392,9 +1224,7 @@
         <li class="md-nav__item">
   <a href="#practice-problems" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Practice Problems
-      
+      Practice Problems
     </span>
   </a>
   
@@ -1419,16 +1249,9 @@
       <a href="../09-polygons-quadrilaterals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     9. Polygons and Quadrilaterals
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1447,16 +1270,9 @@
       <a href="../10-similarity-trigonometry/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     10. Similarity and Right Triangle Trigonometry
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1475,16 +1291,9 @@
       <a href="../11-circles/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     11. Circles
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1503,16 +1312,9 @@
       <a href="../12-area-volume-applications/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     12. Area, Volume, and Applications
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1542,44 +1344,633 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -1593,20 +1984,12 @@
         
   
   
-  
     <a href="../../sims/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
-    
-  
     MicroSims
-  
-
-    
   </span>
-  
   
 
       
@@ -1672,6 +2055,54 @@
     
     
     
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
     
       
         
@@ -1683,20 +2114,12 @@
         
   
   
-  
-    <a href="../../prompts/" class="md-nav__link">
+    <a href="../../instructors-guide/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
-    
-  
-    Sample Prompts
-  
-
-    
+    Instructor's Guide
   </span>
-  
   
 
       
@@ -1717,19 +2140,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../glossary/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
+    FAQs
+  </span>
   
-    Glossary
+
+      </a>
+    </li>
   
 
     
-  </span>
+      
+      
   
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
   
 
       </a>
@@ -1747,16 +2183,9 @@
       <a href="../../license/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     License
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1774,16 +2203,9 @@
       <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     How We Built This Site
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1801,16 +2223,9 @@
       <a href="../../references/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     References
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1828,16 +2243,9 @@
       <a href="../../contact/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Contact
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1874,9 +2282,7 @@
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Summary
-      
+      Summary
     </span>
   </a>
   
@@ -1885,9 +2291,7 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Concepts Covered
-      
+      Concepts Covered
     </span>
   </a>
   
@@ -1896,9 +2300,7 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Prerequisites
-      
+      Prerequisites
     </span>
   </a>
   
@@ -1907,9 +2309,7 @@
         <li class="md-nav__item">
   <a href="#introduction-to-triangle-centers" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Introduction to Triangle Centers
-      
+      Introduction to Triangle Centers
     </span>
   </a>
   
@@ -1918,9 +2318,7 @@
         <li class="md-nav__item">
   <a href="#the-centroid-the-balance-point" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Centroid: The Balance Point
-      
+      The Centroid: The Balance Point
     </span>
   </a>
   
@@ -1930,9 +2328,7 @@
           <li class="md-nav__item">
   <a href="#what-is-the-centroid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        What is the Centroid?
-      
+      What is the Centroid?
     </span>
   </a>
   
@@ -1942,9 +2338,7 @@
           <li class="md-nav__item">
   <a href="#diagram-triangle-with-three-medians-and-centroid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Triangle with Three Medians and Centroid
-      
+      Diagram: Triangle with Three Medians and Centroid
     </span>
   </a>
   
@@ -1958,9 +2352,7 @@
           <li class="md-nav__item">
   <a href="#properties-of-the-centroid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Properties of the Centroid
-      
+      Properties of the Centroid
     </span>
   </a>
   
@@ -1970,9 +2362,7 @@
           <li class="md-nav__item">
   <a href="#formula-distance-to-centroid" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Formula: Distance to Centroid
-      
+      Formula: Distance to Centroid
     </span>
   </a>
   
@@ -1981,9 +2371,7 @@
           <li class="md-nav__item">
   <a href="#drawing-interactive-centroid-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Interactive Centroid Explorer
-      
+      Drawing: Interactive Centroid Explorer
     </span>
   </a>
   
@@ -1997,9 +2385,7 @@
           <li class="md-nav__item">
   <a href="#real-world-applications-of-centroids" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Real-World Applications of Centroids
-      
+      Real-World Applications of Centroids
     </span>
   </a>
   
@@ -2013,9 +2399,7 @@
         <li class="md-nav__item">
   <a href="#the-circumcenter-the-circle-through-three-points" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Circumcenter: The Circle Through Three Points
-      
+      The Circumcenter: The Circle Through Three Points
     </span>
   </a>
   
@@ -2025,9 +2409,7 @@
           <li class="md-nav__item">
   <a href="#what-is-the-circumcenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        What is the Circumcenter?
-      
+      What is the Circumcenter?
     </span>
   </a>
   
@@ -2037,9 +2419,7 @@
           <li class="md-nav__item">
   <a href="#diagram-triangle-with-perpendicular-bisectors-and-circumcenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Triangle with Perpendicular Bisectors and Circumcenter
-      
+      Diagram: Triangle with Perpendicular Bisectors and Circumcenter
     </span>
   </a>
   
@@ -2053,9 +2433,7 @@
           <li class="md-nav__item">
   <a href="#properties-of-the-circumcenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Properties of the Circumcenter
-      
+      Properties of the Circumcenter
     </span>
   </a>
   
@@ -2065,9 +2443,7 @@
           <li class="md-nav__item">
   <a href="#comparison-table-circumcenter-location-by-triangle-type" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Comparison Table: Circumcenter Location by Triangle Type
-      
+      Comparison Table: Circumcenter Location by Triangle Type
     </span>
   </a>
   
@@ -2076,9 +2452,7 @@
           <li class="md-nav__item">
   <a href="#drawing-circumcenter-and-triangle-type-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Circumcenter and Triangle Type Explorer
-      
+      Drawing: Circumcenter and Triangle Type Explorer
     </span>
   </a>
   
@@ -2092,9 +2466,7 @@
           <li class="md-nav__item">
   <a href="#the-circumradius-formula" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Circumradius Formula
-      
+      The Circumradius Formula
     </span>
   </a>
   
@@ -2103,9 +2475,7 @@
           <li class="md-nav__item">
   <a href="#real-world-applications-of-circumcenters" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Real-World Applications of Circumcenters
-      
+      Real-World Applications of Circumcenters
     </span>
   </a>
   
@@ -2119,9 +2489,7 @@
         <li class="md-nav__item">
   <a href="#the-orthocenter-where-altitudes-meet" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Orthocenter: Where Altitudes Meet
-      
+      The Orthocenter: Where Altitudes Meet
     </span>
   </a>
   
@@ -2131,9 +2499,7 @@
           <li class="md-nav__item">
   <a href="#what-is-the-orthocenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        What is the Orthocenter?
-      
+      What is the Orthocenter?
     </span>
   </a>
   
@@ -2143,9 +2509,7 @@
           <li class="md-nav__item">
   <a href="#diagram-triangle-with-three-altitudes-and-orthocenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Triangle with Three Altitudes and Orthocenter
-      
+      Diagram: Triangle with Three Altitudes and Orthocenter
     </span>
   </a>
   
@@ -2159,9 +2523,7 @@
           <li class="md-nav__item">
   <a href="#properties-of-the-orthocenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Properties of the Orthocenter
-      
+      Properties of the Orthocenter
     </span>
   </a>
   
@@ -2171,9 +2533,7 @@
           <li class="md-nav__item">
   <a href="#diagram-orthocenter-location-in-different-triangle-types" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Orthocenter Location in Different Triangle Types
-      
+      Diagram: Orthocenter Location in Different Triangle Types
     </span>
   </a>
   
@@ -2187,9 +2547,7 @@
           <li class="md-nav__item">
   <a href="#the-euler-line" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Euler Line
-      
+      The Euler Line
     </span>
   </a>
   
@@ -2199,9 +2557,7 @@
           <li class="md-nav__item">
   <a href="#diagram-the-euler-line" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: The Euler Line
-      
+      Diagram: The Euler Line
     </span>
   </a>
   
@@ -2210,9 +2566,7 @@
           <li class="md-nav__item">
   <a href="#drawing-euler-line-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Euler Line Explorer
-      
+      Drawing: Euler Line Explorer
     </span>
   </a>
   
@@ -2226,9 +2580,7 @@
           <li class="md-nav__item">
   <a href="#real-world-applications-of-orthocenters" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Real-World Applications of Orthocenters
-      
+      Real-World Applications of Orthocenters
     </span>
   </a>
   
@@ -2242,9 +2594,7 @@
         <li class="md-nav__item">
   <a href="#the-incenter-the-circle-within" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Incenter: The Circle Within
-      
+      The Incenter: The Circle Within
     </span>
   </a>
   
@@ -2254,9 +2604,7 @@
           <li class="md-nav__item">
   <a href="#what-is-the-incenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        What is the Incenter?
-      
+      What is the Incenter?
     </span>
   </a>
   
@@ -2266,9 +2614,7 @@
           <li class="md-nav__item">
   <a href="#diagram-triangle-with-angle-bisectors-and-incenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Triangle with Angle Bisectors and Incenter
-      
+      Diagram: Triangle with Angle Bisectors and Incenter
     </span>
   </a>
   
@@ -2282,9 +2628,7 @@
           <li class="md-nav__item">
   <a href="#properties-of-the-incenter" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Properties of the Incenter
-      
+      Properties of the Incenter
     </span>
   </a>
   
@@ -2294,9 +2638,7 @@
           <li class="md-nav__item">
   <a href="#formula-inradius" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Formula: Inradius
-      
+      Formula: Inradius
     </span>
   </a>
   
@@ -2305,9 +2647,7 @@
           <li class="md-nav__item">
   <a href="#drawing-interactive-incircle-and-area-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Interactive Incircle and Area Explorer
-      
+      Drawing: Interactive Incircle and Area Explorer
     </span>
   </a>
   
@@ -2321,9 +2661,7 @@
           <li class="md-nav__item">
   <a href="#comparing-all-four-centers" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Comparing All Four Centers
-      
+      Comparing All Four Centers
     </span>
   </a>
   
@@ -2333,9 +2671,7 @@
           <li class="md-nav__item">
   <a href="#diagram-all-four-centers-in-one-triangle" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: All Four Centers in One Triangle
-      
+      Diagram: All Four Centers in One Triangle
     </span>
   </a>
   
@@ -2344,9 +2680,7 @@
           <li class="md-nav__item">
   <a href="#drawing-complete-triangle-centers-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Drawing: Complete Triangle Centers Explorer
-      
+      Drawing: Complete Triangle Centers Explorer
     </span>
   </a>
   
@@ -2360,9 +2694,7 @@
           <li class="md-nav__item">
   <a href="#real-world-applications-of-incenters" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Real-World Applications of Incenters
-      
+      Real-World Applications of Incenters
     </span>
   </a>
   
@@ -2376,9 +2708,7 @@
         <li class="md-nav__item">
   <a href="#special-triangles-and-their-centers" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Special Triangles and Their Centers
-      
+      Special Triangles and Their Centers
     </span>
   </a>
   
@@ -2388,9 +2718,7 @@
           <li class="md-nav__item">
   <a href="#the-equilateral-triangle-where-all-centers-meet" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Equilateral Triangle: Where All Centers Meet
-      
+      The Equilateral Triangle: Where All Centers Meet
     </span>
   </a>
   
@@ -2400,9 +2728,7 @@
           <li class="md-nav__item">
   <a href="#diagram-equilateral-triangle-with-coinciding-centers" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: Equilateral Triangle with Coinciding Centers
-      
+      Diagram: Equilateral Triangle with Coinciding Centers
     </span>
   </a>
   
@@ -2416,9 +2742,7 @@
           <li class="md-nav__item">
   <a href="#the-isosceles-triangle-symmetry-on-the-axis" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Isosceles Triangle: Symmetry on the Axis
-      
+      The Isosceles Triangle: Symmetry on the Axis
     </span>
   </a>
   
@@ -2427,9 +2751,7 @@
           <li class="md-nav__item">
   <a href="#the-right-triangle-centers-on-the-hypotenuse" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Right Triangle: Centers on the Hypotenuse
-      
+      The Right Triangle: Centers on the Hypotenuse
     </span>
   </a>
   
@@ -2443,9 +2765,7 @@
         <li class="md-nav__item">
   <a href="#advanced-topics-and-extensions" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Advanced Topics and Extensions
-      
+      Advanced Topics and Extensions
     </span>
   </a>
   
@@ -2455,9 +2775,7 @@
           <li class="md-nav__item">
   <a href="#the-nine-point-circle" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Nine-Point Circle
-      
+      The Nine-Point Circle
     </span>
   </a>
   
@@ -2467,9 +2785,7 @@
           <li class="md-nav__item">
   <a href="#diagram-the-nine-point-circle" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Diagram: The Nine-Point Circle
-      
+      Diagram: The Nine-Point Circle
     </span>
   </a>
   
@@ -2483,9 +2799,7 @@
           <li class="md-nav__item">
   <a href="#the-fermat-point-minimizing-total-distance" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        The Fermat Point: Minimizing Total Distance
-      
+      The Fermat Point: Minimizing Total Distance
     </span>
   </a>
   
@@ -2499,9 +2813,7 @@
         <li class="md-nav__item">
   <a href="#summary-and-key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Summary and Key Takeaways
-      
+      Summary and Key Takeaways
     </span>
   </a>
   
@@ -2510,9 +2822,7 @@
         <li class="md-nav__item">
   <a href="#practice-problems" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Practice Problems
-      
+      Practice Problems
     </span>
   </a>
   
@@ -2528,62 +2838,12 @@
           
           
             <div class="md-content" data-md-component="content">
-              
-                
-
-
-
-  
-
-
-  <nav class="md-path" aria-label="Navigation" >
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Chapters
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
-              
               <article class="md-content__inner md-typeset">
                 
                   
 
-
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/chapters/08-triangle-centers/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/chapters/08-triangle-centers/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2609,6 +2869,10 @@
 </ul>
 <hr />
 <h2 id="introduction-to-triangle-centers">Introduction to Triangle Centers</h2>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Let's Figure This Out Together!</p>
+<p>Welcome to one of the most elegant topics in geometry! We're about to discover four hidden points that every triangle carries inside it. Let's explore these triangle centers together.</p>
+</div>
 <p>Every triangle, no matter what shape it takes, contains four remarkable points called <strong>centers</strong>. These centers are special locations formed by the intersection of lines drawn according to specific geometric rules. Ancient Greek mathematicians discovered these centers thousands of years ago, and they continue to fascinate geometry students today because of their elegant properties and surprising applications.</p>
 <p>Think about finding the "middle" of a triangle. Where exactly is that middle point? The answer depends on what you mean by "middle." If you want to balance the triangle on your finger, you need one kind of center. If you want to draw the smallest circle that fits around the triangle, you need a different center. Each of the four classical triangle centers answers a different question about balance, distance, or angles within triangles.</p>
 <p>In this chapter, you'll explore:</p>
@@ -2623,6 +2887,10 @@
 <h3 id="what-is-the-centroid">What is the Centroid?</h3>
 <p>The <strong>centroid</strong> is the point where a triangle would balance perfectly if it were made of a uniform material like cardboard. Imagine cutting a triangle out of cardboard and trying to balance it on the tip of a pencil — the centroid is exactly where you'd place the pencil for perfect balance.</p>
 <p>To find the centroid, we draw the three <strong>medians</strong> of the triangle. A median is a line segment that connects a vertex (corner) of the triangle to the midpoint of the opposite side. Every triangle has exactly three medians, and these three medians always intersect at a single point: the centroid.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Here's a Neat Pattern!</p>
+<p>The centroid always splits each median into two pieces with a 2:1 ratio. The piece from the vertex to the centroid is always twice as long as the piece from the centroid to the midpoint. Try it on any triangle -- it always works!</p>
+</div>
 <p>The centroid has a fascinating property: it divides each median in a 2:1 ratio. This means that the distance from any vertex to the centroid is exactly twice the distance from the centroid to the midpoint of the opposite side.</p>
 <h4 id="diagram-triangle-with-three-medians-and-centroid">Diagram: Triangle with Three Medians and Centroid</h4>
 <details>
@@ -2649,6 +2917,8 @@
 - Arrow indicating "This distance is twice this distance"</p>
 <p>Implementation: Can be created using p5.js or as a static SVG diagram</p>
 </details>
+<iframe src="../../sims/centroid-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h3 id="properties-of-the-centroid">Properties of the Centroid</h3>
 <p>The centroid has several important properties that make it useful:</p>
 <ol>
@@ -2717,6 +2987,10 @@
 <p>The <strong>circumcenter</strong> is the center of the circle that passes through all three vertices of a triangle. This circle is called the <strong>circumscribed circle</strong> or <strong>circumcircle</strong>, and the circumcenter is equidistant (the same distance) from all three vertices.</p>
 <p>To find the circumcenter, we construct the <strong>perpendicular bisectors</strong> of the triangle's three sides. A perpendicular bisector is a line that passes through the midpoint of a side and is perpendicular (at a 90° angle) to that side. The three perpendicular bisectors of a triangle always meet at a single point: the circumcenter.</p>
 <p>Unlike the centroid, the circumcenter may lie inside, outside, or on the triangle itself, depending on the triangle's shape:</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Watch Out!</p>
+<p>Don't assume every triangle center sits inside the triangle! The circumcenter can wander outside for obtuse triangles. When you see an angle greater than 90 degrees, check your work carefully.</p>
+</div>
 <ul>
 <li><strong>Acute triangle</strong>: Circumcenter is inside the triangle</li>
 <li><strong>Right triangle</strong>: Circumcenter is on the hypotenuse (at its midpoint)</li>
@@ -2751,6 +3025,8 @@
 - Label: "Circumcircle passes through all three vertices"</p>
 <p>Implementation: Can be created using p5.js with circle() and line() functions, or as static SVG</p>
 </details>
+<iframe src="../../sims/circumcenter-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h3 id="properties-of-the-circumcenter">Properties of the Circumcenter</h3>
 <p>The circumcenter has these distinctive properties:</p>
 <ol>
@@ -2838,6 +3114,8 @@
 - Determine triangle type by checking if any angle &gt; 90° (obtuse), = 90° (right), or all &lt; 90° (acute)
 - Use atan2() for angle calculations</p>
 </details>
+<iframe src="../../sims/circumcenter-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h3 id="the-circumradius-formula">The Circumradius Formula</h3>
 <p>For a triangle with sides of length <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span>, and area <span class="arithmatex">\(A\)</span>, the circumradius <span class="arithmatex">\(R\)</span> can be calculated using:</p>
 <p><span class="arithmatex">\(R = \frac{abc}{4A}\)</span></p>
@@ -2894,6 +3172,8 @@
 <p>Visual note: Show both an acute triangle example (orthocenter inside) and an obtuse triangle example (orthocenter outside) as two separate diagrams side by side</p>
 <p>Implementation: Static diagram or interactive p5.js sketch showing both cases</p>
 </details>
+<iframe src="../../sims/orthocenter-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h3 id="properties-of-the-orthocenter">Properties of the Orthocenter</h3>
 <p>The orthocenter has these notable properties:</p>
 <ol>
@@ -2936,7 +3216,13 @@
 - Background: light gradient to separate the three panels</p>
 <p>Implementation: Static diagram ideal for clear comparison, or SVG with hover effects</p>
 </details>
+<iframe src="../../sims/orthocenter-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h3 id="the-euler-line">The Euler Line</h3>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">This is Amazing!</p>
+<p>Three of the four triangle centers always line up on a single straight line. When we first see this, it feels almost magical -- but we can prove it! Drag the vertices in the explorer below and watch the Euler line hold steady.</p>
+</div>
 <p>One of the most beautiful discoveries in triangle geometry is the <strong>Euler line</strong>, named after Swiss mathematician Leonhard Euler. For most triangles, three of the four triangle centers—the centroid, circumcenter, and orthocenter—always lie on the same straight line. This line is called the Euler line.</p>
 <p>The centroid divides the Euler line in a special way: the distance from the centroid to the orthocenter is exactly twice the distance from the centroid to the circumcenter.</p>
 <p>The only exception is the equilateral triangle, where the centroid, circumcenter, orthocenter, and incenter all coincide at the exact same point!</p>
@@ -2969,6 +3255,8 @@
 - Note: "These three centers are always collinear (except in equilateral triangles where they coincide)"</p>
 <p>Implementation: Static diagram or p5.js sketch that can be used in textbook</p>
 </details>
+<iframe src="../../sims/euler-line-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h4 id="drawing-euler-line-explorer">Drawing: Euler Line Explorer</h4>
 <details>
 <summary>Euler Line Explorer</summary>
@@ -3022,6 +3310,8 @@
 - Highlight the 2:1 ratio visually with different colored line segments
 - Add smooth transitions when using preset buttons</p>
 </details>
+<iframe src="../../sims/euler-line-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h3 id="real-world-applications-of-orthocenters">Real-World Applications of Orthocenters</h3>
 <p>Orthocenters appear in:</p>
 <ul>
@@ -3031,6 +3321,10 @@
 <li><strong>Physics</strong>: Calculating perpendicular components in vector problems</li>
 </ul>
 <h2 id="the-incenter-the-circle-within">The Incenter: The Circle Within</h2>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">You're Doing Great!</p>
+<p>We've covered three centers so far -- that's a lot of new geometry! This last center, the incenter, is especially satisfying because it always stays inside the triangle, no matter how you stretch it. Let's finish strong.</p>
+</div>
 <h3 id="what-is-the-incenter">What is the Incenter?</h3>
 <p>The <strong>incenter</strong> is the center of the circle that fits perfectly inside a triangle, touching all three sides. This circle is called the <strong>inscribed circle</strong> or <strong>incircle</strong>, and it is the largest circle that can fit entirely within the triangle.</p>
 <p>To find the incenter, we construct the three <strong>angle bisectors</strong> of the triangle. An angle bisector is a line that divides an angle into two equal parts. The three angle bisectors of a triangle always intersect at a single point: the incenter.</p>
@@ -3066,6 +3360,8 @@
 - Label: "Incircle touches all three sides"</p>
 <p>Implementation: Can be created using p5.js or as static SVG diagram</p>
 </details>
+<iframe src="../../sims/incircle-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h3 id="properties-of-the-incenter">Properties of the Incenter</h3>
 <p>The incenter has these special properties:</p>
 <ol>
@@ -3139,6 +3435,8 @@
 - Draw incircle using circle() with radius r centered at incenter
 - Find tangency points by dropping perpendiculars from incenter to each side</p>
 </details>
+<iframe src="../../sims/incircle-explorer/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
 <h3 id="comparing-all-four-centers">Comparing All Four Centers</h3>
 <p>Now that we've explored all four triangle centers, let's compare their key characteristics:</p>
 <table>
@@ -3222,6 +3520,8 @@
 - Note: "Four centers in one triangle"</p>
 <p>Implementation: Static diagram ideal for reference, or interactive p5.js version</p>
 </details>
+<iframe src="../../sims/triangle-centers-comparison/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <h4 id="drawing-complete-triangle-centers-explorer">Drawing: Complete Triangle Centers Explorer</h4>
 <details>
 <summary>Complete Triangle Centers Explorer</summary>
@@ -3299,6 +3599,8 @@
 - Detect equilateral triangle (all sides equal within tolerance)
 - Calculate and display Euler line as line through any two of {G, O, H}</p>
 </details>
+<iframe src="../../sims/triangle-centers-comparison/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <h3 id="real-world-applications-of-incenters">Real-World Applications of Incenters</h3>
 <p>Incenters are used in:</p>
 <ul>
@@ -3340,6 +3642,8 @@
 - Labels showing equal sides: "a = b = c"</p>
 <p>Implementation: Static diagram perfect for highlighting this special case</p>
 </details>
+<iframe src="../../sims/triangle-centers-comparison/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <h3 id="the-isosceles-triangle-symmetry-on-the-axis">The Isosceles Triangle: Symmetry on the Axis</h3>
 <p>In an isosceles triangle (a triangle with two equal sides), all four centers lie on the same line: the axis of symmetry. This axis runs from the vertex angle (the angle between the two equal sides) to the midpoint of the base (the side that is different).</p>
 <p>While the centers don't coincide like in an equilateral triangle, their alignment on the symmetry axis makes certain calculations easier and reveals the triangle's inherent balance.</p>
@@ -3407,10 +3711,16 @@
 - Note: "Radius = (1/2) × Circumradius"</p>
 <p>Implementation: Static diagram for textbook, with potential interactive version highlighting each group of three points</p>
 </details>
+<iframe src="../../sims/nine-point-circle/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <h3 id="the-fermat-point-minimizing-total-distance">The Fermat Point: Minimizing Total Distance</h3>
 <p>Another special point in a triangle is the <strong>Fermat point</strong> (also called the Torricelli point). This is the point inside the triangle where the sum of distances to the three vertices is minimized. For most triangles, the Fermat point is located where three lines meet, each making 120° angles with the others.</p>
 <p>Engineers use the Fermat point to find optimal locations for facilities that serve three cities, minimizing total transportation distance.</p>
 <h2 id="summary-and-key-takeaways">Summary and Key Takeaways</h2>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Excellent Work!</p>
+<p>We explored all four triangle centers and the Euler line that connects three of them. These ideas have fascinated mathematicians for thousands of years -- and now you understand them too. Well done!</p>
+</div>
 <p>In this chapter, you explored the four classical triangle centers and discovered their unique properties and applications:</p>
 <p><strong>The Four Classical Centers:</strong></p>
 <ol>
@@ -3458,6 +3768,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -3528,11 +3841,10 @@
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
   
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
@@ -3546,13 +3858,12 @@
     </div>
     
     
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-      
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+        <script src="../../js/extra.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

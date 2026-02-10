@@ -1,0 +1,78 @@
+{
+  "title": "Parallel Lines Construction Challenge",
+  "description": "Interactive practice for constructing parallel lines using the corresponding angles method.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
+  "type": "Interactive Tutorial",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Construct parallel lines using the corresponding angles method",
+    "Verify parallelism through angle congruence",
+    "Apply the corresponding angles theorem"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Parallel lines",
+    "Corresponding angles",
+    "Angle copying"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Step navigation"
+    },
+    {
+      "type": "button",
+      "label": "Auto play"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "demonstrate",
+      "implement",
+      "use"
+    ],
+    "pacing": "step-through",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

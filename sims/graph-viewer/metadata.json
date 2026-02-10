@@ -1,0 +1,75 @@
+{
+  "title": "Learning Graph Viewer",
+  "description": "An interactive vis.js network graph viewer for exploring geometry concepts and their dependencies with search, filtering, and statistics.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Education",
+    "Learning Graph"
+  ],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "visualization",
+  "audience": "Students, Educators",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Concept Dependencies",
+    "Knowledge Graph",
+    "Taxonomy",
+    "Learning Progression"
+  ],
+  "prerequisites": [
+    "None"
+  ],
+  "library": "vis.js",
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of learning graph viewer",
+    "Apply learning graph viewer to solve problems",
+    "Visualize and interpret learning graph viewer relationships",
+    "Experiment with parameters to observe their effects on learning graph viewer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "remember",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "identify",
+      "list",
+      "recognize",
+      "state",
+      "apply"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "observe"
+  }
+}

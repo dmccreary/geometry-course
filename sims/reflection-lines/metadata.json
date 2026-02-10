@@ -1,0 +1,71 @@
+{
+  "title": "Reflections Over Different Lines",
+  "description": "Interactive diagram showing reflections over x-axis, y-axis, and y=x line.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Reflections",
+  "learningObjectives": [
+    "Understand reflection coordinate rules",
+    "Apply reflections over common lines"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Coordinate plane basics"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x420",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Select line of reflection"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "calculate",
+      "illustrate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "none"
+    ],
+    "interactionStyle": "respond"
+  }
+}

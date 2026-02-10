@@ -1,0 +1,70 @@
+{
+  "title": "Coordinate Plane and Quadrants",
+  "description": "Interactive diagram showing the coordinate plane with axes, origin, quadrants, and sample points.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Coordinate Plane",
+  "learningObjectives": [
+    "Identify the parts of the coordinate plane",
+    "Locate points using ordered pairs",
+    "Determine the quadrant based on coordinate signs"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Number line"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x650",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Quadrant highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "illustrate",
+      "implement",
+      "use",
+      "assess"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "construct"
+  }
+}

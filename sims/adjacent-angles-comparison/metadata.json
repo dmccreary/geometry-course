@@ -1,0 +1,68 @@
+{
+  "title": "Adjacent vs Non-Adjacent Angles",
+  "description": "Three-panel comparison showing what makes angles adjacent - common vertex AND common side required.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Identify adjacent angles by checking requirements",
+    "Distinguish adjacent from non-adjacent angle pairs",
+    "Understand both requirements must be met"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Understanding of angles and rays"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "900x400",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Hover over panels"
+    }
+  ],
+  "visualizationType": [
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "classify",
+      "compare",
+      "describe",
+      "illustrate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "title": "Angle Relationships Summary",
+  "description": "Visual summary chart showing all four angle relationships formed when parallel lines are cut by a transversal.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles",
+    "Parallel Lines"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Recognize all four angle relationship types at a glance",
+    "Compare the properties of different angle pairs",
+    "Understand the pattern of congruent vs supplementary relationships"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Parallel lines",
+    "Transversal",
+    "Angle measurement"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "900x550",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "classify",
+      "compare",
+      "describe",
+      "calculate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "none"
+    ],
+    "interactionStyle": "construct"
+  }
+}

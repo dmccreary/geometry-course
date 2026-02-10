@@ -1,0 +1,90 @@
+{
+  "title": "Chapter 03 Concept Map",
+  "description": "Interactive concept map showing the relationships between all 14 angle concepts in Chapter 03.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles",
+    "Concept Mapping"
+  ],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Analyze hierarchical relationships between angle concepts",
+    "Evaluate prerequisite dependencies",
+    "Understand how chapter concepts interconnect"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Chapter 03 content"
+  ],
+  "library": "vis-network",
+  "canvasDimensions": "950x680",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Show All"
+    },
+    {
+      "type": "button",
+      "label": "Classifications"
+    },
+    {
+      "type": "button",
+      "label": "Relationships"
+    },
+    {
+      "type": "button",
+      "label": "Advanced"
+    },
+    {
+      "type": "click",
+      "label": "Node selection"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "classify",
+      "interpret",
+      "illustrate",
+      "implement",
+      "use"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
+  }
+}

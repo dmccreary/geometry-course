@@ -1,0 +1,88 @@
+{
+  "title": "Point-Slope Form Builder",
+  "description": "Interactive tool for building line equations using point-slope form with draggable point and slope slider.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry",
+    "Linear Equations"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Point-Slope Form",
+  "learningObjectives": [
+    "Write equations in point-slope form",
+    "Convert between point-slope and slope-intercept forms"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Slope",
+    "Slope-intercept form"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "850x700",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "draggable",
+      "label": "Point P"
+    },
+    {
+      "type": "slider",
+      "label": "Slope (m)",
+      "min": -3,
+      "max": 3
+    },
+    {
+      "type": "button",
+      "label": "Random"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Triangle"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Snap"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "calculate",
+      "demonstrate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective"
+    ],
+    "interactionStyle": "construct"
+  }
+}

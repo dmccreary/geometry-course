@@ -1,0 +1,70 @@
+{
+  "title": "Quadrilateral Family Hierarchy",
+  "description": "Interactive visualization showing the classification hierarchy of quadrilaterals from general to specific types.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Quadrilaterals"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Quadrilateral Classification",
+  "learningObjectives": [
+    "Understand the hierarchy of quadrilateral classifications",
+    "Recognize inheritance of properties from general to specific types",
+    "Identify that a Square has all properties of both Rectangle and Rhombus"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Basic quadrilaterals",
+    "Parallel lines"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x600",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Hover to see properties"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "remember",
+      "understand",
+      "apply"
+    ],
+    "bloomVerbs": [
+      "define",
+      "identify",
+      "recognize",
+      "classify",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "construct"
+  }
+}

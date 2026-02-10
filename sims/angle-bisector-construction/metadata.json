@@ -1,0 +1,86 @@
+{
+  "title": "Angle Bisector Construction",
+  "description": "Step-by-step interactive tutorial for constructing an angle bisector with compass and straightedge.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Perform angle bisection construction",
+    "Verify that resulting angles are congruent",
+    "Apply the construction to any angle"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Compass usage",
+    "Angle concepts"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "750x650",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Previous"
+    },
+    {
+      "type": "button",
+      "label": "Next"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    },
+    {
+      "type": "button",
+      "label": "Auto Play"
+    },
+    {
+      "type": "slider",
+      "label": "Angle size"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "calculate",
+      "demonstrate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

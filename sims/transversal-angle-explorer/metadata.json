@@ -1,0 +1,102 @@
+{
+  "title": "Transversal Angle Explorer",
+  "description": "Interactive exploration of the four angle relationships formed when a transversal crosses two parallel lines. Students drag a handle to rotate the transversal and click buttons to highlight corresponding, alternate interior, alternate exterior, and same-side interior angle pairs.",
+  "creator": "Claude AI",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles",
+    "Parallel Lines",
+    "Transversals"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Identify corresponding, alternate interior, alternate exterior, and same-side interior angles",
+    "Verify that corresponding, alternate interior, and alternate exterior angles are congruent",
+    "Verify that same-side interior angles are supplementary",
+    "Evaluate how angle relationships hold as the transversal angle changes"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Parallel lines",
+    "Angle measurement",
+    "Supplementary angles",
+    "Congruent angles"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x650",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "drag-handle",
+      "label": "Rotate transversal"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Corresponding"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Alt Interior"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Alt Exterior"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Same-Side Int"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Reset"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo"
+  ],
+  "educational": {
+    "standard": "CCSS.Math.Content.HSG.CO.C.9",
+    "standardDescription": "Prove theorems about lines and angles, including when parallel lines are cut by a transversal",
+    "keyVocabulary": [
+      "transversal",
+      "corresponding angles",
+      "alternate interior angles",
+      "alternate exterior angles",
+      "same-side interior angles",
+      "congruent",
+      "supplementary"
+    ]
+  },
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "identify",
+      "classify",
+      "verify",
+      "compare",
+      "evaluate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "visual",
+      "corrective"
+    ],
+    "interactionStyle": "explore"
+  }
+}

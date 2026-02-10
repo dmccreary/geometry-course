@@ -1,0 +1,74 @@
+{
+  "title": "Geometry Word Cloud",
+  "description": "A word cloud visualization of key geometry concepts weighted by their importance and frequency in the curriculum.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Vocabulary",
+    "Visualization"
+  ],
+  "type": "Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "visualization",
+  "audience": "Students, Educators",
+  "bloomLevel": [
+    "Remember",
+    "Understand"
+  ],
+  "concepts": [
+    "Geometry Vocabulary",
+    "Key Concepts",
+    "Topic Overview"
+  ],
+  "prerequisites": [
+    "None"
+  ],
+  "library": "wordcloud2.js",
+  "visualizationType": [
+    "3d-model",
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of geometry word cloud",
+    "Apply geometry word cloud to solve problems",
+    "Visualize and interpret geometry word cloud relationships",
+    "Experiment with parameters to observe their effects on geometry word cloud"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "apply",
+      "analyze",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "illustrate",
+      "implement",
+      "solve",
+      "use",
+      "experiment"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
+}

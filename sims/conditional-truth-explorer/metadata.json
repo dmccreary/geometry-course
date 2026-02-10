@@ -1,0 +1,75 @@
+{
+  "title": "Conditional Statement Truth Explorer",
+  "description": "Interactive exploration of when conditional statements are true or false based on hypothesis and conclusion truth values. Students toggle hypothesis and conclusion states to observe how the conditional's truth value changes.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Logic",
+    "Conditional Statements"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Evaluate the truth value of conditional statements by testing different combinations of hypothesis and conclusion truth values",
+    "Identify counterexamples where a true hypothesis leads to a false conclusion",
+    "Understand the truth table for conditional statements"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Understanding of conditional statement structure (hypothesis and conclusion)",
+    "Familiarity with if-then language in geometry"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x500",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "canvas-button",
+      "label": "Hypothesis: TRUE/FALSE",
+      "description": "Toggle button that switches hypothesis truth value between TRUE and FALSE"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Conclusion: TRUE/FALSE",
+      "description": "Toggle button that switches conclusion truth value between TRUE and FALSE"
+    },
+    {
+      "type": "canvas-button",
+      "label": "Random Example",
+      "description": "Cycles through 10 geometric conditional statement examples"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "truth-table"
+  ],
+  "pedagogical": {
+    "pattern": "parameter-exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply"
+    ],
+    "bloomVerbs": [
+      "evaluate",
+      "identify",
+      "apply",
+      "test"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "visual",
+      "corrective"
+    ],
+    "interactionStyle": "toggle"
+  }
+}

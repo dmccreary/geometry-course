@@ -1,0 +1,70 @@
+{
+  "title": "Straightedge vs Ruler",
+  "description": "Visual comparison showing why constructions use straightedges instead of rulers.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions",
+    "Tools"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Understand the difference between a straightedge and a ruler",
+    "Analyze why constructions use straightedges",
+    "Recognize geometric relationships are unit-independent"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Basic geometry concepts"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x400",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "illustrate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

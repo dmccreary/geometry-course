@@ -1,0 +1,91 @@
+{
+  "title": "Midpoint Explorer with Verification",
+  "description": "Interactive exploration of the midpoint formula with draggable points and distance verification.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Midpoint Formula",
+  "learningObjectives": [
+    "Apply the midpoint formula interactively",
+    "Verify midpoint by checking equal distances"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Coordinate plane",
+    "Distance formula"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x700",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "draggable",
+      "label": "Point A"
+    },
+    {
+      "type": "draggable",
+      "label": "Point B"
+    },
+    {
+      "type": "button",
+      "label": "Random Points"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Distances"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Steps"
+    },
+    {
+      "type": "button",
+      "label": "Toggle Snap"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "calculate",
+      "implement",
+      "use"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective"
+    ],
+    "interactionStyle": "construct"
+  }
+}

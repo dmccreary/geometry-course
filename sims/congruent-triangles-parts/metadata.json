@@ -1,0 +1,74 @@
+{
+  "title": "Congruent Triangles with Corresponding Parts",
+  "description": "Interactive diagram showing congruent triangles and their corresponding sides and angles.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Congruence"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Congruent Triangles",
+  "learningObjectives": [
+    "Identify corresponding parts",
+    "Apply CPCTC"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Triangle basics",
+    "Congruence definition"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x480",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "click",
+      "label": "Highlight corresponding parts"
+    },
+    {
+      "type": "button",
+      "label": "Toggle correspondence"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "reference",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "illustrate",
+      "implement",
+      "assess"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "respond"
+  }
+}

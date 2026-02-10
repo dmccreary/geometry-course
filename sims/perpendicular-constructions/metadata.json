@@ -1,0 +1,71 @@
+{
+  "title": "Two Types of Perpendicular Constructions",
+  "description": "Comparison diagram showing perpendicular through a point ON a line vs FROM a point to a line.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Distinguish between two perpendicular construction methods",
+    "Apply the appropriate construction based on point location",
+    "Analyze why each construction produces a perpendicular"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "8 minutes",
+  "prerequisites": [
+    "Compass usage",
+    "Perpendicular concepts"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "900x500",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Panel highlight"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "apply",
+      "illustrate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

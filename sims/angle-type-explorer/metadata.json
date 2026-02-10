@@ -1,0 +1,80 @@
+{
+  "title": "Angle Type Explorer",
+  "description": "An interactive MicroSim that allows students to classify angles as acute, right, obtuse, or straight by adjusting a slider from 0\u00b0 to 180\u00b0.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Angles"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "educationalLevel": "High School (Grades 9-12)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "bloomLevel": [
+    "Remember",
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Acute Angle",
+    "Right Angle",
+    "Obtuse Angle",
+    "Straight Angle",
+    "Angle Classification"
+  ],
+  "prerequisites": [
+    "Basic understanding of angles",
+    "Knowledge of degree measurement"
+  ],
+  "library": "p5.js",
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of angle type explorer",
+    "Apply angle type explorer to solve problems",
+    "Visualize and interpret angle type explorer relationships",
+    "Experiment with parameters to observe their effects on angle type explorer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "classify",
+      "compare",
+      "explain",
+      "apply",
+      "calculate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
+  }
+}

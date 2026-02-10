@@ -3,7 +3,7 @@
   "title": "Triangle Area Explorer",
   "creator": "Claude Code with microsim-p5 skill",
   "subject": "Geometry",
-  "description": "An interactive exploration tool for understanding how base and height affect triangle area through the formula A = ½bh. Students manipulate sliders to adjust dimensions and observe real-time area calculations.",
+  "description": "An interactive exploration tool for understanding how base and height affect triangle area through the formula A = \u00bdbh. Students manipulate sliders to adjust dimensions and observe real-time area calculations.",
   "date": "2025-11-13",
   "type": "Interactive Simulation",
   "format": "text/html",
@@ -13,7 +13,7 @@
   "subjectArea": "Mathematics",
   "topic": "Triangle Area",
   "learningObjectives": [
-    "Students will apply the triangle area formula A = ½bh to calculate areas with different dimensions",
+    "Students will apply the triangle area formula A = \u00bdbh to calculate areas with different dimensions",
     "Students will analyze the relationship between base, height, and area",
     "Students will understand that height must be perpendicular to the base",
     "Students will predict how changing dimensions affects area"
@@ -30,7 +30,7 @@
     "Concept of perpendicular lines"
   ],
   "framework": "p5.js",
-  "canvasDimensions": "responsive width × 620px",
+  "canvasDimensions": "responsive width \u00d7 620px",
   "responsive": "Width-responsive",
   "dependencies": [
     "p5.js 1.11.10 CDN"
@@ -86,8 +86,8 @@
     "baseY"
   ],
   "equations": [
-    "Area = (base × height) / 2",
-    "A = ½bh"
+    "Area = (base \u00d7 height) / 2",
+    "A = \u00bdbh"
   ],
   "assumptions": [
     "Triangle is drawn in 2D plane",
@@ -119,10 +119,10 @@
       "Height can be measured at any angle (must be perpendicular)",
       "Area equals perimeter",
       "Doubling both dimensions doubles area (actually quadruples)",
-      "Formula is bh instead of ½bh"
+      "Formula is bh instead of \u00bdbh"
     ],
     "discussionQuestions": [
-      "Why is the formula ½bh instead of just bh?",
+      "Why is the formula \u00bdbh instead of just bh?",
       "What happens to area if you double both base and height?",
       "Can two triangles with different dimensions have the same area?",
       "How is triangle area related to rectangle area?"
@@ -161,5 +161,43 @@
     "measurement",
     "interactive",
     "exploration"
-  ]
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "simulation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "apply",
+      "calculate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
 }

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 1 Concept Map</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #network-container {
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(135deg, #ffffff 0%, #E3F2FD 100%);
+        }
+        #tooltip {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            border: 2px solid #1976D2;
+            border-radius: 8px;
+            padding: 12px;
+            max-width: 300px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 1000;
+            font-size: 14px;
+        }
+        #tooltip h3 {
+            margin: 0 0 8px 0;
+            color: #1565C0;
+        }
+        #legend {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 4px 0;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        #title {
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1565C0;
+            background: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <div id="title">Foundations of Geometry - Concept Map</div>
+    <div id="network-container"></div>
+    <div id="tooltip"></div>
+    <div id="legend">
+        <div class="legend-item"><div class="legend-color" style="background: #1565C0;"></div>Center Hub</div>
+        <div class="legend-item"><div class="legend-color" style="background: #E53935;"></div>Undefined Terms</div>
+        <div class="legend-item"><div class="legend-color" style="background: #1976D2;"></div>Basic Objects</div>
+        <div class="legend-item"><div class="legend-color" style="background: #43A047;"></div>Relationships</div>
+        <div class="legend-item"><div class="legend-color" style="background: #FF9800;"></div>Reasoning</div>
+    </div>
+    <br/>
+    <a href=".">Back to Documentation</a>
+
+    <script>
+        // Concept definitions
+        const definitions = {
+            'hub': 'The foundation of geometry includes undefined terms, basic objects, relationships, and reasoning methods.',
+            'point': 'A location in space with no size or dimension. Represented by a dot and named with a capital letter.',
+            'line': 'An infinite set of points extending in two opposite directions. Represented with arrows on both ends.',
+            'plane': 'A flat, two-dimensional surface that extends infinitely in all directions.',
+            'ray': 'Part of a line that has one endpoint and extends infinitely in one direction.',
+            'segment': 'Part of a line with two endpoints. Has a definite, measurable length.',
+            'angle': 'Formed by two rays that share a common endpoint (vertex). Measured in degrees.',
+            'vertex': 'The common endpoint where two rays meet to form an angle.',
+            'midpoint': 'The point that divides a line segment into two equal parts.',
+            'intersection': 'The point or set of points where two or more geometric figures meet.',
+            'collinear': 'Points that lie on the same line.',
+            'coplanar': 'Points that lie on the same plane.',
+            'parallel': 'Lines in the same plane that never intersect. They have the same slope.',
+            'perpendicular': 'Lines that intersect at a 90° angle (right angle).',
+            'skew': 'Lines that are not in the same plane and do not intersect.',
+            'inductive': 'Reasoning that uses patterns in specific examples to make a general conclusion (conjecture).',
+            'deductive': 'Reasoning that uses logic and accepted facts to reach a guaranteed conclusion.',
+            'conjecture': 'An unproven statement believed to be true based on observations.',
+            'counterexample': 'A specific example that proves a conjecture is false.'
+        };
+
+        // Create nodes
+        const nodes = new vis.DataSet([
+            // Center hub
+            {id: 'hub', label: 'Foundations of\nGeometry', color: {background: '#1565C0', border: '#0D47A1'}, font: {color: 'white', size: 16, bold: true}, size: 40},
+
+            // Undefined terms (red)
+            {id: 'point', label: 'Point', color: {background: '#E53935', border: '#C62828'}, font: {color: 'white', size: 14}, size: 30},
+            {id: 'line', label: 'Line', color: {background: '#E53935', border: '#C62828'}, font: {color: 'white', size: 14}, size: 30},
+            {id: 'plane', label: 'Plane', color: {background: '#E53935', border: '#C62828'}, font: {color: 'white', size: 14}, size: 30},
+
+            // Basic objects (blue)
+            {id: 'ray', label: 'Ray', color: {background: '#1976D2', border: '#1565C0'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'segment', label: 'Line\nSegment', color: {background: '#1976D2', border: '#1565C0'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'angle', label: 'Angle', color: {background: '#1976D2', border: '#1565C0'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'vertex', label: 'Vertex', color: {background: '#1976D2', border: '#1565C0'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'midpoint', label: 'Midpoint', color: {background: '#1976D2', border: '#1565C0'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'intersection', label: 'Intersection', color: {background: '#1976D2', border: '#1565C0'}, font: {color: 'white', size: 14}, size: 25},
+
+            // Relationships (green)
+            {id: 'collinear', label: 'Collinear\nPoints', color: {background: '#43A047', border: '#2E7D32'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'coplanar', label: 'Coplanar\nPoints', color: {background: '#43A047', border: '#2E7D32'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'parallel', label: 'Parallel\nLines', color: {background: '#43A047', border: '#2E7D32'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'perpendicular', label: 'Perpendicular\nLines', color: {background: '#43A047', border: '#2E7D32'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'skew', label: 'Skew\nLines', color: {background: '#43A047', border: '#2E7D32'}, font: {color: 'white', size: 14}, size: 25},
+
+            // Reasoning (orange)
+            {id: 'inductive', label: 'Inductive\nReasoning', color: {background: '#FF9800', border: '#F57C00'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'deductive', label: 'Deductive\nReasoning', color: {background: '#FF9800', border: '#F57C00'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'conjecture', label: 'Conjecture', color: {background: '#FF9800', border: '#F57C00'}, font: {color: 'white', size: 14}, size: 25},
+            {id: 'counterexample', label: 'Counter-\nexample', color: {background: '#FF9800', border: '#F57C00'}, font: {color: 'white', size: 14}, size: 25}
+        ]);
+
+        // Create edges
+        const edges = new vis.DataSet([
+            // Hub to undefined terms
+            {from: 'hub', to: 'point', color: {color: '#888'}, width: 2},
+            {from: 'hub', to: 'line', color: {color: '#888'}, width: 2},
+            {from: 'hub', to: 'plane', color: {color: '#888'}, width: 2},
+
+            // Line to its derived objects
+            {from: 'line', to: 'ray', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'line', to: 'segment', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'ray', to: 'angle', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'angle', to: 'vertex', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'segment', to: 'midpoint', color: {color: '#aaa'}, arrows: 'to'},
+
+            // Intersection connections
+            {from: 'line', to: 'intersection', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'plane', to: 'intersection', color: {color: '#aaa'}, arrows: 'to'},
+
+            // Point relationships
+            {from: 'point', to: 'collinear', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'line', to: 'collinear', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'point', to: 'coplanar', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'plane', to: 'coplanar', color: {color: '#aaa'}, arrows: 'to'},
+
+            // Line relationships
+            {from: 'line', to: 'parallel', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'line', to: 'perpendicular', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'angle', to: 'perpendicular', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'line', to: 'skew', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'plane', to: 'skew', color: {color: '#aaa'}, arrows: 'to'},
+
+            // Reasoning connections
+            {from: 'hub', to: 'inductive', color: {color: '#888'}, width: 2},
+            {from: 'hub', to: 'deductive', color: {color: '#888'}, width: 2},
+            {from: 'inductive', to: 'conjecture', color: {color: '#aaa'}, arrows: 'to'},
+            {from: 'conjecture', to: 'counterexample', color: {color: '#aaa'}, arrows: 'to'}
+        ]);
+
+        // Create the network
+        const container = document.getElementById('network-container');
+        const data = { nodes: nodes, edges: edges };
+        const options = {
+            physics: {
+                enabled: true,
+                solver: 'forceAtlas2Based',
+                forceAtlas2Based: {
+                    gravitationalConstant: -50,
+                    centralGravity: 0.01,
+                    springLength: 120,
+                    springConstant: 0.08
+                },
+                stabilization: {
+                    iterations: 150
+                }
+            },
+            nodes: {
+                shape: 'circle',
+                borderWidth: 3,
+                shadow: true
+            },
+            edges: {
+                smooth: {
+                    type: 'continuous'
+                }
+            },
+            interaction: {
+                hover: true,
+                tooltipDelay: 200
+            }
+        };
+
+        const network = new vis.Network(container, data, options);
+
+        // Tooltip handling
+        const tooltip = document.getElementById('tooltip');
+
+        network.on('hoverNode', function(params) {
+            const nodeId = params.node;
+            const def = definitions[nodeId];
+            if (def) {
+                const node = nodes.get(nodeId);
+                tooltip.innerHTML = `<h3>${node.label.replace(/\n/g, ' ')}</h3><p>${def}</p>`;
+                tooltip.style.display = 'block';
+                tooltip.style.left = (params.event.center.x + 20) + 'px';
+                tooltip.style.top = (params.event.center.y + 20) + 'px';
+            }
+        });
+
+        network.on('blurNode', function() {
+            tooltip.style.display = 'none';
+        });
+
+        // Keep tooltip following mouse
+        container.addEventListener('mousemove', function(e) {
+            if (tooltip.style.display === 'block') {
+                tooltip.style.left = (e.clientX + 20) + 'px';
+                tooltip.style.top = (e.clientY + 20) + 'px';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "title": "Postulate Visualization Gallery",
+  "description": "Gallery-style diagram illustrating five fundamental geometric postulates with labeled visual examples.",
+  "creator": "Claude AI",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Postulates",
+    "Logic and Proof"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Recognize and recall five fundamental geometric postulates",
+    "Connect visual representations to formal postulate statements",
+    "Build a foundation for constructing geometric proofs"
+  ],
+  "bloomsLevel": "Remembering",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Basic understanding of points, lines, and planes"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x450",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Hover to highlight panels"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "gallery"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "remember"
+    ],
+    "bloomVerbs": [
+      "recognize",
+      "recall",
+      "identify"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "visual"
+    ],
+    "interactionStyle": "observe"
+  }
+}

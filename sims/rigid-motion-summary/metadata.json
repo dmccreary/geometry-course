@@ -1,0 +1,75 @@
+{
+  "title": "Rigid Motion Summary",
+  "description": "Interactive comparison of the three rigid motions showing what each preserves.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Rigid Motions",
+  "learningObjectives": [
+    "Understand rigid motion properties",
+    "Compare transformation types"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Translation",
+    "Rotation",
+    "Reflection basics"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x500",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "click",
+      "label": "Select transformation type"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "illustrate",
+      "implement",
+      "analyze"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
+  }
+}

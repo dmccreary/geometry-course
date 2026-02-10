@@ -1,0 +1,86 @@
+{
+  "title": "Flow Chart Proof",
+  "description": "Interactive flow chart proof of the Vertical Angles Theorem with step-by-step reveal and auto-play. Demonstrates how a proof can be organized as a flow chart with boxes and arrows.",
+  "creator": "Claude AI",
+  "date": "2026-02-10",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Proofs",
+    "Flow Chart Proofs"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Interpret flow chart proofs with branching logic",
+    "Trace logical dependencies between statements",
+    "Create flow chart proofs showing logical dependencies between statements"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Basic understanding of vertical angles",
+    "Linear pair concept",
+    "Supplementary angles"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x800",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Prev",
+      "implementation": "canvas-based"
+    },
+    {
+      "type": "button",
+      "label": "Next",
+      "implementation": "canvas-based"
+    },
+    {
+      "type": "button",
+      "label": "Auto Play",
+      "implementation": "canvas-based"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "implementation": "canvas-based"
+    },
+    {
+      "type": "slider",
+      "label": "Speed",
+      "implementation": "canvas-based"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "animation",
+    "interactive-demo"
+  ],
+  "pedagogical": {
+    "pattern": "reference",
+    "bloomAlignment": [
+      "understand",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "interpret",
+      "trace",
+      "analyze",
+      "identify"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "visual"
+    ],
+    "interactionStyle": "explore"
+  }
+}

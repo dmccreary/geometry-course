@@ -1,0 +1,77 @@
+{
+  "title": "Four Triangle Centers",
+  "description": "Interactive comparison of all four classical triangle centers - centroid, circumcenter, orthocenter, and incenter.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Centers"
+  ],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Triangle Centers Comparison",
+  "learningObjectives": [
+    "Compare the four classical triangle centers",
+    "Recognize which centers lie on the Euler line",
+    "Understand how center locations depend on triangle type"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Centroid",
+    "Circumcenter",
+    "Orthocenter",
+    "Incenter"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x600",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "drag",
+      "label": "Drag vertices to reshape"
+    },
+    {
+      "type": "button",
+      "label": "Toggle centers on/off"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "calculate",
+      "illustrate",
+      "analyze",
+      "test"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "respond"
+  }
+}

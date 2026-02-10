@@ -3,10 +3,18 @@
   "title": "Line Relationships in 3D",
   "description": "A 3D WebGL visualization demonstrating parallel, perpendicular, and skew line relationships in three-dimensional space using an interactive rotating box.",
   "creator": "Claude Code with microsim-p5 skill",
-  "subject": ["Mathematics", "Geometry", "Spatial Reasoning"],
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Spatial Reasoning"
+  ],
   "topic": "3D Line Relationships",
   "gradeLevel": "9-12",
-  "bloomsLevel": ["Understanding", "Analyzing", "Applying"],
+  "bloomsLevel": [
+    "Understanding",
+    "Analyzing",
+    "Applying"
+  ],
   "language": "en",
   "format": "text/html",
   "type": "Interactive Simulation",
@@ -29,7 +37,9 @@
   "canvasWidth": 800,
   "canvasHeight": 600,
   "responsive": "Width-responsive",
-  "dependencies": ["p5.js 1.11.10 from CDN"],
+  "dependencies": [
+    "p5.js 1.11.10 from CDN"
+  ],
   "accessibility": {
     "keyboardNavigation": false,
     "screenReaderSupport": true,
@@ -108,7 +118,7 @@
   "visualElements": [
     "3D rectangular prism (box) with transparent faces",
     "Blue highlighted edges showing parallel lines with || symbol",
-    "Red highlighted edges showing perpendicular lines with ⊥ symbol and right angle indicator",
+    "Red highlighted edges showing perpendicular lines with \u22a5 symbol and right angle indicator",
     "Green highlighted edges showing skew lines with dashed distance line",
     "Legend explaining all three line relationships",
     "Text labels identifying each line (m, n, p, q, r, s)"
@@ -129,5 +139,45 @@
     "line-relationships",
     "coplanar",
     "non-coplanar"
-  ]
+  ],
+  "visualizationType": [
+    "3d-model",
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "assessment",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "calculate",
+      "demonstrate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
 }

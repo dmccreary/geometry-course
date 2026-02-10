@@ -1,0 +1,71 @@
+{
+  "title": "Construction Techniques Reference Chart",
+  "description": "Summary reference chart of all eight compass and straightedge construction techniques.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
+  "type": "Interactive Reference",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Recall all construction techniques at a glance",
+    "Identify the correct technique for a given problem",
+    "Apply the appropriate construction method"
+  ],
+  "bloomsLevel": "Understanding",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Individual construction techniques"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "950x650",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "hover",
+      "label": "Technique details"
+    }
+  ],
+  "visualizationType": [
+    "chart",
+    "diagram",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "reference",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "summarize",
+      "apply",
+      "demonstrate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "construct"
+  }
+}

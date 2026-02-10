@@ -1,0 +1,80 @@
+{
+  "title": "Construction Design Challenge",
+  "description": "Apply geometric construction techniques to design a symmetric bridge structure.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Engineering Design"
+  ],
+  "type": "Interactive Project",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Apply multiple construction techniques in one project",
+    "Analyze how constructions create symmetry",
+    "Create a structurally symmetric design"
+  ],
+  "bloomsLevel": "Creating",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Segment bisection",
+    "Perpendicular construction",
+    "Parallel lines"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "850x650",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Next step"
+    },
+    {
+      "type": "toggle",
+      "label": "Construction lines"
+    },
+    {
+      "type": "button",
+      "label": "Reset"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "calculate",
+      "demonstrate",
+      "implement"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "construct"
+  }
+}

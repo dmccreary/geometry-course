@@ -1,0 +1,77 @@
+{
+  "title": "Four Related Conditional Statements",
+  "description": "Interactive diagram showing the Original, Converse, Inverse, and Contrapositive forms of conditional statements with hover interactions.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Logic"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Logic and Proof",
+  "learningObjectives": [
+    "Analyze the relationships between conditional forms",
+    "Construct converse, inverse, and contrapositive statements",
+    "Evaluate which forms are logically equivalent"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Understanding of conditional statements"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x620",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Next Example"
+    },
+    {
+      "type": "hover",
+      "label": "Hover to highlight equivalents"
+    }
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "calculate",
+      "illustrate",
+      "implement",
+      "use"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Angle Pair Finder",
+  "description": "Interactive tool to find complementary and supplementary angle pairs using a slider.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Angles"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Angles and Angle Relationships",
+  "learningObjectives": [
+    "Calculate complementary and supplementary angles",
+    "Understand the relationship between angle pairs",
+    "Recognize when complements exist vs don't exist"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Understanding of angle measurement"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x500",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Angle (1-179\u00b0)"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "assessment",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "explain",
+      "calculate",
+      "implement",
+      "use"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
+}

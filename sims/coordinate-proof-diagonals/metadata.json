@@ -1,0 +1,83 @@
+{
+  "title": "Coordinate Proof - Rectangle Diagonals",
+  "description": "Interactive coordinate proof showing that rectangle diagonals are congruent using the distance formula.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Coordinate Geometry",
+    "Proofs"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Coordinate Proofs",
+  "learningObjectives": [
+    "Apply the distance formula in proofs",
+    "Understand strategic placement of figures",
+    "Connect geometry and algebra",
+    "Generalize proofs using variables"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "10 minutes",
+  "prerequisites": [
+    "Distance formula",
+    "Coordinate plane basics"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "850x550",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "slider",
+      "label": "a (width)"
+    },
+    {
+      "type": "slider",
+      "label": "b (height)"
+    },
+    {
+      "type": "hover",
+      "label": "Vertex coordinates"
+    }
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "apply",
+      "calculate",
+      "demonstrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
+}

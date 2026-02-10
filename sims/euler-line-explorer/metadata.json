@@ -1,0 +1,72 @@
+{
+  "title": "Euler Line Explorer",
+  "description": "Interactive visualization of the Euler line connecting centroid, circumcenter, and orthocenter.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Centers"
+  ],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Euler Line",
+  "learningObjectives": [
+    "Understand that G, O, and H are always collinear",
+    "Apply the 2:1 ratio property of the Euler line",
+    "Recognize how center positions change while maintaining collinearity",
+    "Appreciate the elegant mathematical relationship"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Centroid",
+    "Circumcenter",
+    "Orthocenter"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "drag",
+      "label": "Drag vertices to reshape triangle"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "apply",
+      "calculate",
+      "demonstrate",
+      "illustrate",
+      "analyze"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "respond"
+  }
+}

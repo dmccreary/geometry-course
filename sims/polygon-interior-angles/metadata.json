@@ -1,0 +1,77 @@
+{
+  "title": "Polygon Interior Angles Explorer",
+  "description": "Interactive visualization of polygon interior angles showing the triangulation method and angle formulas.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Polygons"
+  ],
+  "type": "Interactive Visualization",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Interior Angles of Polygons",
+  "learningObjectives": [
+    "Apply the interior angle sum formula",
+    "Understand why the formula works through triangulation",
+    "Calculate individual angles in regular polygons"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Triangles",
+    "Angle measure"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "700x550",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Number of sides (3-12)"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show Triangulation"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show Angles"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "remember",
+      "understand",
+      "apply"
+    ],
+    "bloomVerbs": [
+      "list",
+      "apply",
+      "calculate",
+      "demonstrate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

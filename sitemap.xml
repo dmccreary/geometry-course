@@ -2,358 +2,990 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/geometry-course/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/about/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/contact/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/course-description/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/faq/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/glossary/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/how-we-built-this-site/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/license/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/references/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/01-foundations-of-geometry/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/01-foundations-of-geometry/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/02-logic-and-proof/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/02-logic-and-proof/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/03-angles-and-relationships/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/03-angles-and-relationships/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/04-geometric-constructions/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/04-geometric-constructions/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/05-coordinate-geometry/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/05-coordinate-geometry/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/06-transformations-congruence/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/06-transformations-congruence/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/07-triangle-congruence/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/07-triangle-congruence/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/08-triangle-centers/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/08-triangle-centers/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/09-polygons-quadrilaterals/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/09-polygons-quadrilaterals/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/10-similarity-trigonometry/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/10-similarity-trigonometry/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/11-circles/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/11-circles/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/12-area-volume-applications/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/chapters/12-area-volume-applications/quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/areas-and-perimeters/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/circles/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/circles/cords/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/congruent-triangles/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/intro/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/intro/angle-explorer/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/intro/comp-and-sup-angles/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/lines/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/polygons/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/proofs/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/properties-of-triangles/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/similarity/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/surface-area-and-volume/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/transformations/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/trigonometry/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/chapters/trigonometry/pythagorean-theorem/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
-         <loc>https://dmccreary.github.io/geometry-course/instructors-guide.md/microsims-for-geometry/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <loc>https://dmccreary.github.io/geometry-course/instructors-guide/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/instructors-guide/comparison-table/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/instructors-guide/key-features-list/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/instructors-guide/microsims-for-geometry/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/learning-graph/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/learning-graph/concept-list/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/learning-graph/concept-taxonomy/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/learning-graph/diagram-details/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/learning-graph/diagram-table/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
-         <loc>https://dmccreary.github.io/geometry-course/learning-graph/mascot-test/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <loc>https://dmccreary.github.io/geometry-course/learning-graph/faq-coverage-gaps/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/learning-graph/faq-quality-report/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/learning-graph/quality-metrics/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/learning-graph/style-guide/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/learning-graph/taxonomy-distribution/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/01-course-description/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/02-concept-enumerations/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/03-concept-dependency/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/04-taxonomy/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/05-glossary/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/06-word-cloud/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/07-equations/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/08-microsims/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/09-100-microsims/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/09-individual-microsim/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/10-chapter-design/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/11-sims-gallery/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/12-readme/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/13%3Dangle-pairs/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/14-cover-image/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/15-resort-microsims-by-name/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/prompts/30-make-lines-parallel/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/ch-01-content-generation-skill/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/prompts/ch-02-content/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/prompts/geowise-mascot/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/prompts/microsim-generator/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/prompts/use-the-python-programs/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/acute-angle-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/adjacent-angles-comparison/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/anatomy-of-proof/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-bisector/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-bisector-construction/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-builder/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-classification/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-classification-quiz/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-pair-finder/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/angle-pairs/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-parts-notation/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-problem-solver/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angle-relationships-summary/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/angle-type-explorer/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/angles-real-world/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/arc-types-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/area-formulas-quadrilaterals/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/barnsleys-fern/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/bisect-angle-steps/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/bisect-segment-steps/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/centroid-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/cesaro-curve/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/ch1-concept-map/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/chapter-01-concept-map/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/chapter-03-concept-map/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/chords-in-circle/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/circle-angle-theorems/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/circle-area-calculator/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/circle-area-explorer/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/circle-circle-intersection/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/circle-equation-grapher/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/circle-parts-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/circle-segment-vs-sector/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/circumcenter-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/collinear-coplanar-points/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/comp-and-sup-angles/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/compass-parts/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/complementary-angles-visual/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/completing-square-circles/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/composition-transformations/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/conditional-statement-structure/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/conditional-statement-transformer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/conditional-transformer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/conditional-truth-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/congruence-criteria-reference/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/congruent-triangles-parts/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/construction-design-challenge/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/construction-practice-workbench/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/construction-reference-chart/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/coordinate-plane-quadrants/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/coordinate-proof-diagonals/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/coordinate-proof-lab/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/coordinate-proof-setup/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/copy-angle/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/copy-segment/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/copy-segment-steps/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/cords/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/cosine/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/degrees-vs-radians/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/dilation-scale-factors/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/distance-formula/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/distance-formula-visualization/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/euler-line-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/exterior-angle-theorem/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/flow-chart-proof/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/four-conditionals/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/four-related-conditionals/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/graph-viewer/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/hinge-theorem/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/impossible-constructions/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/incircle-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/indirect-proof-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/inscribed-angle-theorem/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/inscribed-circumscribed-polygons/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/inscribed-quadrilateral-angles/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/isosceles-triangle-properties/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/koch-fractal/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/koch-snowflake/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/levy-c-curve/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/line-circle-intersection/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/line-relationships-3d/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/linear-pair-structure/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/make-lines-parallel/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/midpoint-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/midpoint-formula-visualization/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/nine-point-circle/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/orthocenter-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/parallel-lines-challenge/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/parallel-lines-construction/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/parallel-lines-coordinate/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/parallel-perpendicular-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/parallel-postulate-history/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/parallel-transversal-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/peano-gosper-fractal/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/perpendicular-bisector-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/perpendicular-construction-selector/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/perpendicular-constructions/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/perpendicular-lines-slopes/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/point-line-explorer/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/point-line-plane/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/point-slope-builder/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/polygon-interior-angles/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/postulate-gallery/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/postulate-visualization/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/power-of-a-point/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/preimage-image-notation/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/proof-anatomy/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/pythagorean-theorem/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/quadrilateral-hierarchy/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/rays-and-segments/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/reasoning-detective/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/reflection-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/reflection-lines/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/regular-polygon-explorer/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/regular-polygon-explorer-quiz/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/right-angle-contexts/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/rigid-motion-summary/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/rolling-wheel-distance/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/rotation-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/rotation-origin/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/sas-congruence/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/secants-and-tangents/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/sierpinski-carpet/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/sierpinski-triangles/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/similar-triangles-comparison/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/sine-and-cosine-circle/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/slope-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/slope-intercept-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/slope-intercept-form/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/slope-types/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/soccer-ball/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/special-segments/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/sss-congruence/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/straightedge-vs-ruler/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/templates/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/templates/TODO/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/tessellation-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/translation-examples/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/translation-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/transversal-angle-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/transversal-coordinate-analysis/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/transversal-eight-angles/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/triangle-area-explorer/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/triangle-centers-comparison/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/triangle-classification-angles/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/triangle-classification-sides/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/triangle-classifier/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/triangle-congruence/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/triangle-congruence-criteria/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/triangle-congruence-identifier/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/triangle-inequality-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/triangle-sum-theorem/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/trig-ratios-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/two-column-proof-builder/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/vertical-angles-explorer/</loc>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/vertical-angles-intersection/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/word-cloud/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/geometry-course/sims/workflow/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-10</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/geometry-course/sims/workflow/TODO/</loc>
+         <lastmod>2026-02-10</lastmod>
     </url>
 </urlset>

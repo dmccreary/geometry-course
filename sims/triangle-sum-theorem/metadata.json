@@ -1,0 +1,69 @@
+{
+  "title": "Triangle Sum Theorem Proof",
+  "description": "Visual step-by-step proof that triangle angles sum to 180\u00b0.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Theorems"
+  ],
+  "type": "Interactive Proof",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Triangle Sum Theorem",
+  "learningObjectives": [
+    "Understand why triangle angles sum to 180\u00b0",
+    "Apply parallel line properties in proofs"
+  ],
+  "bloomsLevel": "Analyzing",
+  "duration": "4 minutes",
+  "prerequisites": [
+    "Parallel lines",
+    "Alternate interior angles"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x500",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "click",
+      "label": "Advance proof step"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "explain",
+      "apply",
+      "demonstrate",
+      "illustrate"
+    ],
+    "pacing": "step-through",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

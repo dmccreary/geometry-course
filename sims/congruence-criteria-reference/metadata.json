@@ -1,0 +1,71 @@
+{
+  "title": "Triangle Congruence Criteria Reference",
+  "description": "Complete visual reference for all triangle congruence criteria.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Triangle Congruence"
+  ],
+  "type": "Interactive Reference",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Triangle Congruence Criteria",
+  "learningObjectives": [
+    "Identify all five valid congruence criteria",
+    "Distinguish valid from invalid criteria",
+    "Apply appropriate criterion to problems"
+  ],
+  "bloomsLevel": "Evaluating",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Triangle basics",
+    "Congruence concept"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x700",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "click",
+      "label": "Highlight criterion"
+    }
+  ],
+  "visualizationType": [
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "reference",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "implement",
+      "assess",
+      "evaluate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

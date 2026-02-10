@@ -1,0 +1,129 @@
+{
+  "title": "Peano-Gosper Fractal",
+  "description": "An interactive MicroSim demonstrating the Peano-Gosper curve (Gosper curve or flowsnake) with adjustable recursion depth and size controls.",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Mathematics",
+    "Geometry",
+    "Fractals",
+    "L-Systems"
+  ],
+  "date": "2025-12-10",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "subjectArea": "Mathematics",
+  "topic": "Fractals, L-Systems, and Space-Filling Curves",
+  "learningObjectives": [
+    "Understand how L-systems generate complex fractals from simple rules",
+    "Explore the relationship between recursion and visual complexity",
+    "Recognize hexagonal symmetry in mathematical patterns",
+    "Understand the concept of space-filling curves"
+  ],
+  "bloomsTaxonomyLevels": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Basic geometry",
+    "Understanding of angles",
+    "Familiarity with recursion concepts"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 550",
+  "responsive": true,
+  "dependencies": [
+    "p5.js CDN"
+  ],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "name": "recursionSlider",
+      "label": "Recursion Level",
+      "min": 1,
+      "max": 5,
+      "default": 1,
+      "step": 1,
+      "description": "Controls the depth of L-system iterations. Higher values create more detailed, space-filling patterns."
+    },
+    {
+      "type": "slider",
+      "name": "sizeSlider",
+      "label": "Size",
+      "min": 30,
+      "max": 100,
+      "default": 60,
+      "step": 1,
+      "unit": "%",
+      "description": "Adjusts the overall size of the curve within the canvas."
+    }
+  ],
+  "modelType": "L-system-fractal",
+  "variables": [
+    "recursionLevel",
+    "curveSize",
+    "lSystemString"
+  ],
+  "equations": [
+    "L-System Axiom: A",
+    "Rule A: A-B--B+A++AA+B-",
+    "Rule B: +A-BB--B-A++A+B",
+    "Turn angle: 60 degrees",
+    "Growth factor per iteration: sqrt(7) \u2248 2.646",
+    "Fractal dimension: 2 (space-filling)"
+  ],
+  "assumptions": [
+    "Perfect geometric construction",
+    "Fixed 60-degree turn angle",
+    "Discrete recursion levels (not continuous)"
+  ],
+  "limitations": [
+    "Maximum recursion level of 5 to prevent performance issues",
+    "Cannot visualize infinite recursion",
+    "Turn angle is fixed (not adjustable in this version)"
+  ],
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "interpret",
+      "apply"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
+}

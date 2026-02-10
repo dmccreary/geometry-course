@@ -1,0 +1,78 @@
+{
+  "title": "Perpendicular Construction Selector",
+  "description": "Interactive tool showing both perpendicular construction methods based on point location.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Constructions"
+  ],
+  "type": "Interactive Tutorial",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Geometric Constructions",
+  "learningObjectives": [
+    "Choose the correct perpendicular construction based on point position",
+    "Execute both perpendicular construction methods",
+    "Analyze why each method works geometrically"
+  ],
+  "bloomsLevel": "Applying",
+  "duration": "5 minutes",
+  "prerequisites": [
+    "Perpendicular lines",
+    "Right angles"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x600",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "button",
+      "label": "Mode selection"
+    },
+    {
+      "type": "button",
+      "label": "Step navigation"
+    },
+    {
+      "type": "button",
+      "label": "Auto play"
+    }
+  ],
+  "visualizationType": [
+    "interactive-demo",
+    "map"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "demonstrate",
+      "implement",
+      "use"
+    ],
+    "pacing": "step-through",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
+}

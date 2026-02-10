@@ -1,0 +1,69 @@
+{
+  "title": "Pre-Image and Image Notation",
+  "description": "Diagram introducing pre-image, image, and prime notation for geometric transformations.",
+  "creator": "Claude AI",
+  "date": "2026-01-07",
+  "subject": [
+    "Geometry",
+    "Mathematics",
+    "Transformations"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC 4.0",
+  "gradeLevel": "9-12",
+  "topic": "Transformation Notation",
+  "learningObjectives": [
+    "Identify pre-images and images",
+    "Use prime notation correctly"
+  ],
+  "bloomsLevel": "Remembering",
+  "duration": "3 minutes",
+  "prerequisites": [
+    "Basic geometry concepts"
+  ],
+  "library": "p5.js",
+  "canvasDimensions": "800x400",
+  "responsive": true,
+  "controls": [
+    {
+      "type": "click",
+      "label": "Animate transformation"
+    }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "map",
+    "network"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "illustrate",
+      "implement",
+      "assess"
+    ],
+    "pacing": "continuous",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "construct"
+  }
+}
