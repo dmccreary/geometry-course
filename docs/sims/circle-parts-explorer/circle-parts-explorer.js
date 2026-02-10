@@ -1,47 +1,69 @@
 // Circle Parts Explorer MicroSim
 // Interactive visualization of basic circle components
 
-let canvasWidth = 700;
+let canvasWidth = 710;
 let drawHeight = 400;
-let controlHeight = 100;
+let controlHeight = 50;
 let canvasHeight = drawHeight + controlHeight;
 
 // Circle parameters
 let radiusSlider;
+let radiusValueSpan;
 let circleRadius = 120;
 let centerX, centerY;
-
-// Colors
-let bgColor;
 
 function setup() {
     updateCanvasSize();
     const canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent(document.querySelector('main'));
 
-    bgColor = color(248, 250, 252);
     centerX = canvasWidth / 3;
     centerY = drawHeight / 2 + 20;
 
-    // Create slider
-    radiusSlider = createSlider(50, 180, 120, 10);
-    radiusSlider.position(canvasWidth/2 - 100, drawHeight + 55);
-    radiusSlider.size(200);
-    radiusSlider.parent(document.querySelector('main'));
+    // Radius slider row
+    let radiusRow = createDiv();
+    radiusRow.parent(document.querySelector('main'));
+    radiusRow.position(10, drawHeight + 10);
+
+    let radiusLabel = createSpan('Radius: ');
+    radiusLabel.parent(radiusRow);
+    styleLabel(radiusLabel, 55);
+
+    radiusValueSpan = createSpan('120');
+    radiusValueSpan.parent(radiusRow);
+    styleValue(radiusValueSpan, 30);
+
+    radiusSlider = createSlider(50, 180, 120, 5);
+    radiusSlider.parent(radiusRow);
+    radiusSlider.size(150);
 
     textFont('Arial');
 }
 
 function draw() {
-    background(bgColor);
+    // Drawing region
+    fill(240, 248, 255);
+    noStroke();
+    rect(0, 0, canvasWidth, drawHeight);
+
+    // Control region
+    fill(245);
+    rect(0, drawHeight, canvasWidth, controlHeight);
+    stroke(220);
+    strokeWeight(1);
+    line(0, drawHeight, canvasWidth, drawHeight);
+
     circleRadius = radiusSlider.value();
+    radiusValueSpan.html(circleRadius);
 
     // Title
     fill(40);
     noStroke();
     textAlign(CENTER, TOP);
-    textSize(20);
-    text("Parts of a Circle", canvasWidth/2, 12);
+    textSize(18);
+    textStyle(BOLD);
+    text("Parts of a Circle", canvasWidth / 2, 10);
+    textStyle(NORMAL);
 
     // Draw circle
     stroke(30, 136, 229);
@@ -93,6 +115,7 @@ function draw() {
     // Labels
     noStroke();
     textSize(14);
+    textAlign(CENTER, TOP);
 
     // Center label
     fill(220, 20, 60);
@@ -100,78 +123,74 @@ function draw() {
 
     // Radius labels
     fill(76, 175, 80);
-    text("Radius (r)", (centerX + radiusEndX)/2, centerY - 15);
+    text("Radius (r)", (centerX + radiusEndX) / 2, centerY - 15);
 
     fill(156, 39, 176);
-    text("r", (centerX + radiusEndX2)/2 - 20, (centerY + radiusEndY2)/2 - 10);
+    text("r", (centerX + radiusEndX2) / 2 - 20, (centerY + radiusEndY2) / 2 - 10);
 
     // Diameter label
     fill(255, 152, 0);
-    text("Diameter (d = 2r)", (diamEndX1 + diamEndX2)/2 + 30, (diamEndY1 + diamEndY2)/2 - 25);
+    text("Diameter (d = 2r)", (diamEndX1 + diamEndX2) / 2 + 30, (diamEndY1 + diamEndY2) / 2 - 25);
 
     // Chord label
     fill(33, 150, 243);
-    text("Chord", (chordX1 + chordX2)/2 - 40, (chordY1 + chordY2)/2);
+    textAlign(LEFT, CENTER);
+    text("Chord", (chordX1 + chordX2) / 2 - 60, (chordY1 + chordY2) / 2);
 
     // Draw info panel
     drawInfoPanel();
-
-    // Control label
-    fill(60);
-    textSize(14);
-    textAlign(CENTER, CENTER);
-    text("Radius: " + circleRadius + " units", canvasWidth/2, drawHeight + 35);
 }
 
 function drawInfoPanel() {
     let panelX = canvasWidth - 230;
-    let panelY = 50;
+    let panelY = 45;
     let panelW = 210;
     let panelH = 280;
 
     fill(255, 255, 255, 240);
-    stroke(200);
+    stroke(180);
     strokeWeight(1);
-    rect(panelX, panelY, panelW, panelH, 10);
+    rect(panelX, panelY, panelW, panelH, 8);
 
     fill(40);
     noStroke();
     textAlign(LEFT, TOP);
     textSize(14);
-    text("Circle Measurements", panelX + 15, panelY + 15);
+    textStyle(BOLD);
+    text("Circle Measurements", panelX + 15, panelY + 12);
+    textStyle(NORMAL);
 
     textSize(13);
-    fill(80);
-    let y = panelY + 45;
+    let y = panelY + 40;
 
     // Radius
     fill(76, 175, 80);
-    text("● Radius (r):", panelX + 15, y);
+    text("\u25cf Radius (r):", panelX + 15, y);
     fill(60);
     text("  " + circleRadius + " units", panelX + 15, y + 18);
     y += 45;
 
     // Diameter
     fill(255, 152, 0);
-    text("● Diameter (d):", panelX + 15, y);
+    text("\u25cf Diameter (d):", panelX + 15, y);
     fill(60);
     text("  d = 2r = " + (circleRadius * 2) + " units", panelX + 15, y + 18);
     y += 45;
 
     // Circumference
     fill(30, 136, 229);
-    text("● Circumference (C):", panelX + 15, y);
+    text("\u25cf Circumference (C):", panelX + 15, y);
     fill(60);
     let circumference = 2 * PI * circleRadius;
-    text("  C = 2πr = " + circumference.toFixed(1), panelX + 15, y + 18);
+    text("  C = 2\u03c0r = " + circumference.toFixed(1), panelX + 15, y + 18);
     y += 45;
 
     // Area
     fill(220, 20, 60);
-    text("● Area (A):", panelX + 15, y);
+    text("\u25cf Area (A):", panelX + 15, y);
     fill(60);
     let area = PI * circleRadius * circleRadius;
-    text("  A = πr² = " + area.toFixed(1), panelX + 15, y + 18);
+    text("  A = \u03c0r\u00b2 = " + area.toFixed(1), panelX + 15, y + 18);
     y += 50;
 
     // Key relationships
@@ -179,21 +198,31 @@ function drawInfoPanel() {
     textSize(11);
     text("Key Relationships:", panelX + 15, y);
     y += 18;
-    text("• Diameter is longest chord", panelX + 15, y);
+    text("\u2022 Diameter is longest chord", panelX + 15, y);
     y += 15;
-    text("• d = 2r", panelX + 15, y);
+    text("\u2022 d = 2r", panelX + 15, y);
+}
+
+function styleLabel(el, w) {
+    el.style('display', 'inline-block');
+    el.style('width', (w || 60) + 'px');
+}
+
+function styleValue(el, w) {
+    el.style('display', 'inline-block');
+    el.style('width', (w || 35) + 'px');
 }
 
 function windowResized() {
     updateCanvasSize();
+    resizeCanvas(canvasWidth, canvasHeight);
+    centerX = canvasWidth / 3;
 }
 
 function updateCanvasSize() {
-    let containerWidth = select('main').width;
-    if (containerWidth > 0) {
-        canvasWidth = min(containerWidth, 750);
-        resizeCanvas(canvasWidth, canvasHeight);
-        centerX = canvasWidth / 3;
-        radiusSlider.position(canvasWidth/2 - 100, drawHeight + 55);
+    const container = document.querySelector('main');
+    if (container) {
+        canvasWidth = min(container.offsetWidth, 710);
+        canvasWidth = max(canvasWidth, 500);
     }
 }

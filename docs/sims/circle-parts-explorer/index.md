@@ -11,7 +11,7 @@ quality_score: 0
 
 # Parts of a Circle
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="480px" width="100%" scrolling="no"></iframe>
 
 [Run the Parts of a Circle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -29,7 +29,7 @@ TODO: Describe how students should interact with this MicroSim.
 
 ```html
 <iframe src="main.html"
-        height="450px"
+        height="480px"
         width="100%"
         scrolling="no"></iframe>
 ```
