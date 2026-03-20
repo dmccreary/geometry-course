@@ -11,31 +11,44 @@ nav:
   - About: about.md
   - Course Description: course-description.md
   
-  - Learning Graph:
-    - Introduction: learning-graph/index.md
-    - Concept List: learning-graph/concept-list.md
-    - Graph Quality Analysis: learning-graph/quality-metrics.md
-    - Concept Taxonomy: learning-graph/concept-taxonomy.md
-    - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
-    - Diagrams Table: learning-graph/diagram-table.md
-    - Diagrams Details: learning-graph/diagram-details.md
-    - FAQ Quality Report: learning-graph/faq-quality-report.md
-    - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
-  
   - Chapters:
-    - Overview: chapters/index.md
-    - 1. Foundations of Geometry: chapters/01-foundations-of-geometry/index.md
-    - 2. Logic and Proof: chapters/02-logic-and-proof/index.md
-    - 3. Angles and Angle Relationships: chapters/03-angles-and-relationships/index.md
-    - 4. Geometric Constructions: chapters/04-geometric-constructions/index.md
-    - 5. Coordinate Geometry and Lines: chapters/05-coordinate-geometry/index.md
-    - 6. Transformations and Congruence: chapters/06-transformations-congruence/index.md
-    - 7. Triangle Congruence and Properties: chapters/07-triangle-congruence/index.md
-    - 8. Triangle Centers and Advanced Topics: chapters/08-triangle-centers/index.md
-    - 9. Polygons and Quadrilaterals: chapters/09-polygons-quadrilaterals/index.md
-    - 10. Similarity and Right Triangle Trigonometry: chapters/10-similarity-trigonometry/index.md
-    - 11. Circles: chapters/11-circles/index.md
-    - 12. Area, Volume, and Applications: chapters/12-area-volume-applications/index.md
+    - List of Chapters: chapters/index.md
+    - 1. Foundations of Geometry: 
+      - Content: chapters/01-foundations-of-geometry/index.md
+      - Quiz: chapters/01-foundations-of-geometry/quiz.md
+    - 2. Logic and Proof:
+      - Content: chapters/02-logic-and-proof/index.md
+      - Quiz: chapters/02-logic-and-proof/quiz.md
+    - 3. Angles and Angle Relationships:
+      - Content: chapters/03-angles-and-relationships/index.md
+      - Quiz: chapters/03-angles-and-relationships/quiz.md
+    - 4. Geometric Constructions:
+      - Content: chapters/04-geometric-constructions/index.md
+      - Quiz: chapters/04-geometric-constructions/quiz.md
+    - 5. Coordinate Geometry and Lines:
+      - Content: chapters/05-coordinate-geometry/index.md
+      - Quiz: chapters/05-coordinate-geometry/quiz.md
+    - 6. Transformations and Congruence:
+      - Content: chapters/06-transformations-congruence/index.md
+      - Quiz: chapters/06-transformations-congruence/quiz.md
+    - 7. Triangle Congruence and Properties:
+      - Content: chapters/07-triangle-congruence/index.md
+      - Quiz: chapters/07-triangle-congruence/quiz.md
+    - 8. Triangle Centers and Advanced Topics:
+      - Content: chapters/08-triangle-centers/index.md
+      - Quiz: chapters/08-triangle-centers/quiz.md
+    - 9. Polygons and Quadrilaterals:
+      - Content: chapters/09-polygons-quadrilaterals/index.md
+      - Quiz: chapters/09-polygons-quadrilaterals/quiz.md
+    - 10. Similarity and Right Triangle Trigonometry:
+      - Content: chapters/10-similarity-trigonometry/index.md
+      - Quiz: chapters/10-similarity-trigonometry/quiz.md
+    - 11. Circles:
+      - Content: chapters/11-circles/index.md
+      - Quiz: chapters/11-circles/quiz.md
+    - 12. Area, Volume, and Applications:
+      - Content: chapters/12-area-volume-applications/index.md
+      - Quiz: chapters/12-area-volume-applications/quiz.md
   
   # sort these by the name of the microsim after the List of MicroSims which should always be first
   - MicroSims:
@@ -217,8 +230,18 @@ nav:
 
 
 
-
-
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+    - Concept List: learning-graph/concept-list.md
+    - Graph Quality Analysis: learning-graph/quality-metrics.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Diagrams Table: learning-graph/diagram-table.md
+    - Diagrams Details: learning-graph/diagram-details.md
+    - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
+  
+ 
   - Sample Prompts:
     - Introduction: prompts/index.md
     - Course Description: prompts/01-course-description.md
@@ -240,6 +263,7 @@ nav:
     - prompts/ch-01-content-generation-skill.md
     - prompts/ch-02-content.md
   
+
   - Instructor's Guide:
     - Introduction: instructors-guide/index.md
     - MicroSims Philosophy: instructors-guide/microsims-for-geometry.md
