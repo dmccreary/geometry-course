@@ -4,7 +4,7 @@ during microsim generation and if we could instead call python programs.
 You said yes and you created the python programs.  The log of this
 work is here: 
 
-@../claude-skills/logs/refactor-microsim-generator-for-token-efficiency.md
+@../ibook-skills/logs/refactor-microsim-generator-for-token-efficiency.md
 
 However, when I asked you to log your use of the python programs you 
 indicated you are NOT using them.  That log is here.
@@ -15,7 +15,7 @@ Please continue to refactor the microsim-generator skill to actually use the pyt
 
 The microsim-generator skill is here:
 
-@../claude-skills/skills/microsim-generator
+@../ibook-skills/skills/microsim-generator
 
 After you change the skill to use the python programs properly, please test it on chapter 11 here:
 

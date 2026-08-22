@@ -1,7 +1,7 @@
 # Concept Enumerations
 
 !!! note
-    All of these steps are now done by the Claude Skill [learning-graph-generator](https://dmccreary.github.io/claude-skills/skill-descriptions/learning-graph-generator/)
+    All of these steps are now done by the Claude Skill [learning-graph-generator](https://dmccreary.github.io/ibook-skills/skill-descriptions/learning-graph-generator/)
 
 To be run right after the [Course Description](./01-course-description.md)
 

@@ -1,7 +1,7 @@
 # Chapter Design
 
 !!! note
-    This step has now been automated by the [book-chapter-generator](https://dmccreary.github.io/claude-skills/skill-descriptions/book-chapter-generator/)
+    This step has now been automated by the [book-chapter-generator](https://dmccreary.github.io/ibook-skills/skill-descriptions/book-chapter-generator/)
 
 !!! prompt
     You are an expert at designing interactive textbooks for high-school students.

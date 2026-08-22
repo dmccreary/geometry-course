@@ -1,7 +1,7 @@
 # Generating a Glossary of Terms
 
 !!! note
-    All of these steps are now done by the Claude Skill [glossary-generator](https://dmccreary.github.io/claude-skills/skill-descriptions/glossary-generator/)
+    All of these steps are now done by the Claude Skill [glossary-generator](https://dmccreary.github.io/ibook-skills/skill-descriptions/glossary-generator/)
 
 See the actual glossary of terms here: [Glossary](../glossary.md)
 

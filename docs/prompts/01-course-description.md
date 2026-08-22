@@ -1,7 +1,7 @@
 # Course Description
 
 !!! note
-    All of these steps are now done by the Claude Skill [course-description-analyzer](https://dmccreary.github.io/claude-skills/skill-descriptions/course-description-analyzer/) which will prompt you for content and then score your document on a 1-100 scale based on quality.
+    All of these steps are now done by the Claude Skill [course-description-analyzer](https://dmccreary.github.io/ibook-skills/skill-descriptions/course-description-analyzer/) which will prompt you for content and then score your document on a 1-100 scale based on quality.
 
 ## Sample Prompt
 
