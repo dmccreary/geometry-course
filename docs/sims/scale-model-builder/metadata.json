@@ -2,7 +2,7 @@
   "title": "Scale Model Builder",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for scale model builder",
+  "description": "Pick a real object and a scale, then see how the lengths, floor area, and volume of the scale model compare with the original.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Scale Model Builder",
+    "topic": "Scale factor and its effect on length, area, and volume",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to apply a scale factor to find the dimensions of a scale model and analyze how the scale affects length, area, and volume."
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Apply",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Ratios and proportions",
+      "Metric unit conversion",
+      "Area and volume of a rectangular prism"
+    ],
+    "standards": [],
+    "bloomVerb": "Use"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 580
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Real-world modeling with familiar size references",
+    "keyQuestions": [
+      "Why does the volume shrink so much faster than the length?",
+      "If a model uses 200 cm² of card for the floor at 1:50, how much floor does the real building have?",
+      "Which scale would you choose for a model of a basketball court, and why?"
+    ],
+    "commonMisconceptions": [
+      "Area and volume scale by the same factor as length.",
+      "A 1:10 model uses one tenth of the material (it has one thousandth of the volume).",
+      "A larger k means a larger model."
+    ],
+    "assessmentOpportunities": [
+      "A model car is 18 cm long and the real car is 4.5 m long. Students find the scale, then determine how many times greater the real car's volume is than the model's."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "scale-model-builder",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

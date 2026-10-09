@@ -2,7 +2,7 @@
   "title": "Surface Area Calculator",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for surface area calculator",
+  "description": "Choose a prism, cube, cylinder, pyramid, cone, or sphere, set its dimensions, and follow the surface area calculation step by step.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Surface Area Calculator",
+    "topic": "Surface area of three-dimensional solids",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to calculate the surface area of prisms, cylinders, pyramids, cones, and spheres and analyze how changing a dimension affects the surface area."
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Apply",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Area of plane figures",
+      "Parts of solids: base, lateral face, slant height",
+      "Order of operations"
+    ],
+    "standards": [],
+    "bloomVerb": "Calculate"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 580
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Worked examples with the solution steps that can be hidden for self-checking",
+    "keyQuestions": [
+      "Which term of the cylinder formula is the curved side?",
+      "Why does a cone's formula use the slant height and not the vertical height?",
+      "How does the surface area change when every dimension doubles?"
+    ],
+    "commonMisconceptions": [
+      "Slant height and vertical height are the same.",
+      "Surface area and volume grow at the same rate.",
+      "A cylinder's surface area is just 2πrh (that omits the two circular bases)."
+    ],
+    "assessmentOpportunities": [
+      "Students compute the surface area of a cone with radius 6 and slant height 10 by hand, then decide whether a cone with radius 6 and slant height 5 can exist and justify the answer."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "surface-area-calculator",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

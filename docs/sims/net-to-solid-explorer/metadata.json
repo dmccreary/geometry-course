@@ -2,7 +2,7 @@
   "title": "Net to Solid Explorer",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for net to solid explorer",
+  "description": "Fold the net of a cube, prism, or pyramid into its solid with a slider, and click a face of the net to follow it into place.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Net to Solid Explorer",
+    "topic": "Nets of polyhedra and Euler's formula",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to explain how a two-dimensional net folds into a three-dimensional solid and identify which face of the net becomes which face of the solid."
     ],
-    "bloomsTaxonomy": "Create",
+    "bloomsTaxonomy": "Understand",
     "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "prerequisites": [
+      "Prisms and pyramids",
+      "Faces, edges, and vertices",
+      "Congruent polygons"
+    ],
+    "standards": [],
+    "bloomVerb": "Explain"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 530
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Learner-controlled folding with color-matched faces across a 2D and a 3D view",
+    "keyQuestions": [
+      "Which faces of the net share an edge on the solid but not in the net?",
+      "Why does the top of the cube travel farther than the other faces?",
+      "Does Euler's formula hold for every solid here?"
+    ],
+    "commonMisconceptions": [
+      "Every arrangement of six squares folds into a cube.",
+      "A solid has only one net.",
+      "Faces next to each other in the net are the only faces that touch on the solid."
+    ],
+    "assessmentOpportunities": [
+      "Students are given three patterns of six squares and decide which fold into a cube, justifying each decision by naming the faces that would overlap or leave a gap."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "net-to-solid-explorer",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

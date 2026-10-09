@@ -2,7 +2,7 @@
   "title": "Circle Area and Circumference Calculator",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for circle area and circumference calculator",
+  "description": "Adjust the radius of a circle and watch the circumference and area formulas update with the values substituted, then compare what happens to each measurement when the radius doubles.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Circle Area and Circumference Calculator",
+    "topic": "Circumference and area of a circle",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to calculate the circumference and area of a circle from its radius and analyze how a change in radius affects each measurement."
     ],
-    "bloomsTaxonomy": "Create",
+    "bloomsTaxonomy": "Apply",
     "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "prerequisites": [
+      "Radius and diameter",
+      "The constant π",
+      "Exponents"
+    ],
+    "standards": [],
+    "bloomVerb": "Calculate"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 500
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Parameter exploration with worked substitution into the formulas",
+    "keyQuestions": [
+      "Why does doubling the radius double the circumference but quadruple the area?",
+      "How are the radius and the diameter related?",
+      "Which grows faster as the radius increases, C or A?"
+    ],
+    "commonMisconceptions": [
+      "Doubling the radius doubles the area (it multiplies the area by four).",
+      "Circumference and area use the same units (one is a length, the other is a square measure).",
+      "πr² means (πr)² (only the radius is squared)."
+    ],
+    "assessmentOpportunities": [
+      "Students find the circumference and area of a circle with a radius the MicroSim cannot show (for example r = 25 cm) and explain, without recalculating, how the area compares with the area at r = 12.5 cm."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "circle-area-and-circumference-calculator",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

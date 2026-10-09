@@ -288,7 +288,7 @@ where $n$ is the number of sides and $s$ is the side length.
 #### Drawing: Regular Polygon Area Explorer
 
 
-<iframe src="../../sims/regular-polygon-area-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/regular-polygon-area-explorer/main.html" width="100%" height="557px" scrolling="no"></iframe>
 [Run Regular Polygon Area Explorer Fullscreen](../../sims/regular-polygon-area-explorer/main.html)
 
 <details markdown="1">
@@ -552,7 +552,7 @@ Create a colorful diagram showing circle components and formulas.
 #### Drawing: Circle Area and Circumference Calculator
 
 
-<iframe src="../../sims/circle-area-and-circumference-calculator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/circle-area-and-circumference-calculator/main.html" width="100%" height="502px" scrolling="no"></iframe>
 [Run Circle Area and Circumference Calculator Fullscreen](../../sims/circle-area-and-circumference-calculator/main.html)
 
 <details markdown="1">
@@ -742,7 +742,7 @@ A **net** is a two-dimensional pattern that can be folded to form a three-dimens
 #### Drawing: Net to Solid Explorer
 
 
-<iframe src="../../sims/net-to-solid-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/net-to-solid-explorer/main.html" width="100%" height="532px" scrolling="no"></iframe>
 [Run Net to Solid Explorer Fullscreen](../../sims/net-to-solid-explorer/main.html)
 
 <details markdown="1">
@@ -945,7 +945,7 @@ Create a colorful reference sheet for surface area formulas.
 #### Drawing: Surface Area Calculator
 
 
-<iframe src="../../sims/surface-area-calculator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/surface-area-calculator/main.html" width="100%" height="582px" scrolling="no"></iframe>
 [Run Surface Area Calculator Fullscreen](../../sims/surface-area-calculator/main.html)
 
 <details markdown="1">
@@ -1091,7 +1091,7 @@ A **cross-section** is the 2D shape formed when a plane intersects a 3D solid. U
 #### Drawing: Cross-Section Explorer
 
 
-<iframe src="../../sims/cross-section-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/cross-section-explorer/main.html" width="100%" height="582px" scrolling="no"></iframe>
 [Run Cross-Section Explorer Fullscreen](../../sims/cross-section-explorer/main.html)
 
 <details markdown="1">
@@ -1243,7 +1243,7 @@ Create an interactive p5.js simulation showing cross-sections of 3D solids.
 #### Drawing: Cavalieri's Principle Demonstration
 
 
-<iframe src="../../sims/cavalieris-principle-demonstration/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/cavalieris-principle-demonstration/main.html" width="100%" height="597px" scrolling="no"></iframe>
 [Run Cavalieri's Principle Demonstration Fullscreen](../../sims/cavalieris-principle-demonstration/main.html)
 
 <details markdown="1">
@@ -1447,7 +1447,7 @@ Create a colorful diagram comparing prism/cylinder volumes with pyramid/cone vol
 #### Drawing: Volume Explorer
 
 
-<iframe src="../../sims/volume-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/volume-explorer/main.html" width="100%" height="587px" scrolling="no"></iframe>
 [Run Volume Explorer Fullscreen](../../sims/volume-explorer/main.html)
 
 <details markdown="1">
@@ -1584,7 +1584,7 @@ If a model is made at $1:10$ scale, then areas are reduced by $(1/10)^2 = 1/100$
 #### Drawing: Scale Model Builder
 
 
-<iframe src="../../sims/scale-model-builder/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/scale-model-builder/main.html" width="100%" height="582px" scrolling="no"></iframe>
 [Run Scale Model Builder Fullscreen](../../sims/scale-model-builder/main.html)
 
 <details markdown="1">
@@ -1850,7 +1850,7 @@ These problems often require:
 #### Drawing: Optimization Challenge - Maximum Volume Box
 
 
-<iframe src="../../sims/optimization-challenge-maximum-volume-box/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/optimization-challenge-maximum-volume-box/main.html" width="100%" height="582px" scrolling="no"></iframe>
 [Run Optimization Challenge - Maximum Volume Box Fullscreen](../../sims/optimization-challenge-maximum-volume-box/main.html)
 
 <details markdown="1">
