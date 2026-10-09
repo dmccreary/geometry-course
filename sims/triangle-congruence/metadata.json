@@ -38,10 +38,10 @@
     "interactive-demo"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of triangle congruence",
-    "Apply triangle congruence to solve problems",
-    "Visualize and interpret triangle congruence relationships",
-    "Experiment with parameters to observe their effects on triangle congruence"
+    "Explain the SSS postulate: triangles with three pairs of equal corresponding sides are congruent",
+    "Explain the SAS postulate: triangles with two equal sides and an equal included angle are congruent",
+    "Predict whether two triangles remain congruent as the sliders change side lengths and the included angle",
+    "Distinguish which measurements, sides versus the included angle, each congruence postulate requires"
   ],
   "bloomsTaxonomy": [
     "Remember",

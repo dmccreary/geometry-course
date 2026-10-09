@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for net to solid explorer.">
+        <meta name="description" content="Fold the net of a cube, prism, or pyramid into its solid with a slider, and click a face of the net to follow it into place.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -75,7 +75,7 @@
       
         <meta  property="og:title"  content="Net to Solid Explorer - AI Assisted Geometry" >
       
-        <meta  property="og:description"  content="Interactive p5.js MicroSim for net to solid explorer." >
+        <meta  property="og:description"  content="Fold the net of a cube, prism, or pyramid into its solid with a slider, and click a face of the net to follow it into place." >
       
         <meta property="og:image" content="https://dmccreary.github.io/geometry-course/sims/net-to-solid-explorer/net-to-solid-explorer.png">
       
@@ -91,7 +91,7 @@
       
         <meta  name="twitter:title"  content="Net to Solid Explorer - AI Assisted Geometry" >
       
-        <meta  name="twitter:description"  content="Interactive p5.js MicroSim for net to solid explorer." >
+        <meta  name="twitter:description"  content="Fold the net of a cube, prism, or pyramid into its solid with a slider, and click a face of the net to follow it into place." >
       
         <meta name="twitter:image" content="https://dmccreary.github.io/geometry-course/sims/net-to-solid-explorer/net-to-solid-explorer.png">
       
@@ -3183,6 +3183,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5312,6 +5330,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5358,7 +5394,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/net-to-solid-explorer/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/sims/net-to-solid-explorer/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5367,20 +5403,28 @@
 
 
 <h1 id="net-to-solid-explorer">Net to Solid Explorer</h1>
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="532" width="100%" scrolling="no"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Net to Solid Explorer MicroSim Fullscreen</a>
 <br/>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>A <strong>net</strong> is a flat pattern that folds into a solid. The left panel shows the net with every face labeled and colored, and the fold lines dashed. The right panel shows the same net folding as you move the slider, from completely flat at 0% to a closed solid at 100%.</p>
+<p>Click any face in the net and it is outlined in red in both panels, so you can follow one face from the flat pattern to its place on the solid.</p>
+<p>The strip below counts the faces, edges, and vertices of the finished solid and checks <strong>Euler's formula</strong>, <span class="arithmatex">\(V - E + F = 2\)</span>, which is true for every solid in this MicroSim.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Choose a solid from the <strong>Solid</strong> menu.</li>
+<li>Drag <strong>Fold</strong> slowly from 0% to 100% and watch each face turn about its dashed fold line.</li>
+<li>Click a face of the net to highlight it on the folding solid. Click it again to clear the highlight.</li>
+<li>Turn on <strong>Auto-rotate</strong> and keep the pointer over the MicroSim to view the solid from all sides.</li>
+<li>Check the counts of faces, edges, and vertices against the closed solid.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;main.html&quot;</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">&quot;450px&quot;</span>
-        <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
-        <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"main.html"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"532"</span>
+        <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
+        <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
@@ -5388,18 +5432,24 @@
 <h3 id="duration">Duration</h3>
 <p>10-15 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<p>Names of prisms and pyramids, and the terms face, edge, and vertex.</p>
+<h3 id="blooms-taxonomy-level">Bloom's Taxonomy Level</h3>
+<p>Understand (L2)</p>
+<h3 id="learning-objective">Learning Objective</h3>
+<p>Students will be able to explain how a two-dimensional net folds into a three-dimensional solid and identify which face of the net becomes which face of the solid.</p>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Predict</strong> (4 min): With the fold at 0%, students predict which face of the cube net will end up opposite the base, then fold to check.</li>
+<li><strong>Trace</strong> (5 min): Students click each face of the square pyramid net in turn and describe the path it takes as the slider moves.</li>
+<li><strong>Count</strong> (5 min): Students count faces, edges, and vertices on each closed solid, compare with the display, and verify Euler's formula.</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<p>Students are given three patterns of six squares and decide which fold into a cube, justifying each decision by naming the faces that would overlap or leave a gap.</p>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Wikipedia. <a href="https://en.wikipedia.org/wiki/Net_(polyhedron)">Net (polyhedron)</a>.</li>
+<li>Wikipedia. <a href="https://en.wikipedia.org/wiki/Euler_characteristic">Euler characteristic</a>.</li>
+<li>Common Core State Standards Initiative. Grade 6 Geometry (6.G.A.4) and High School Geometry: Geometric Measurement and Dimension (HSG-GMD.B.4).</li>
 </ol>
 
 

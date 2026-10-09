@@ -2569,7 +2569,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/chapters/11-circles/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/chapters/11-circles/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2647,7 +2647,7 @@ and I think you'll be amazed at how elegant these shapes really are.</p>
 Type: microsim
 
 **Learning Objective:** Students will identify and label the basic components of a circle (center, radius, diameter) by interacting with a visual representation.
-**Bloom&#39;s Taxonomy Level:** Remembering - Recalling facts and basic concepts about circle terminology.
+**Bloom's Taxonomy Level:** Remembering - Recalling facts and basic concepts about circle terminology.
 
 Purpose: Help students identify and understand the fundamental parts of a circle through interactive visualization.
 
@@ -2657,15 +2657,15 @@ Canvas layout (620x420px):
 
 Visual elements:
 - Large circle (radius 120px) centered in the canvas
-- Center point marked with a small red dot and labeled &quot;Center&quot;
+- Center point marked with a small red dot and labeled "Center"
 - Two radius lines drawn from center to circle edge (different colors: blue and green)
-- Labels &quot;Radius r&quot; on radius lines
+- Labels "Radius r" on radius lines
 - One diameter line passing through center (orange color)
-- Label &quot;Diameter d = 2r&quot; on diameter
+- Label "Diameter d = 2r" on diameter
 - Measurements displayed numerically
 
 Interactive controls:
-- Slider: &quot;Circle Size&quot; (radius from 50 to 180, default 120, step 10)
+- Slider: "Circle Size" (radius from 50 to 180, default 120, step 10)
 - Label showing current radius value
 - Label showing current diameter value (automatically calculated)
 
@@ -2694,7 +2694,7 @@ Implementation: p5.js with createSlider for interactive control
 Type: microsim
 
 **Learning Objective:** Students will distinguish between different types of chords and recognize that the diameter is the longest chord.
-**Bloom&#39;s Taxonomy Level:** Understanding - Explaining the relationship between chords and the diameter.
+**Bloom's Taxonomy Level:** Understanding - Explaining the relationship between chords and the diameter.
 
 Purpose: Demonstrate various chords of different lengths within a circle, emphasizing that the diameter is the longest chord.
 
@@ -2714,9 +2714,9 @@ Visual elements:
 - Perpendicular distances from center to each chord shown as dotted lines
 
 Interactive controls:
-- Button: &quot;Show New Chords&quot; - generates random chord positions
-- Checkbox: &quot;Show Perpendicular Distances&quot; (default: on)
-- Display: &quot;Longest chord = Diameter&quot;
+- Button: "Show New Chords" - generates random chord positions
+- Checkbox: "Show Perpendicular Distances" (default: on)
+- Display: "Longest chord = Diameter"
 
 Default parameters:
 - Circle radius: 140px
@@ -2742,7 +2742,7 @@ Implementation: p5.js with random chord generation and distance calculations
 Type: microsim
 
 **Learning Objective:** Students will differentiate between secants and tangents and verify that a tangent is perpendicular to the radius at the point of tangency.
-**Bloom&#39;s Taxonomy Level:** Applying - Using knowledge of perpendicularity to verify tangent properties.
+**Bloom's Taxonomy Level:** Applying - Using knowledge of perpendicularity to verify tangent properties.
 
 Purpose: Illustrate the difference between secant and tangent lines and demonstrate the perpendicular relationship between tangent and radius.
 
@@ -2756,13 +2756,13 @@ Visual elements:
 - One tangent line (red) touching circle at one point
 - Radius line (green) drawn to point of tangency
 - Small right-angle indicator at point of tangency
-- Labels: &quot;Secant&quot;, &quot;Tangent&quot;, &quot;Radius&quot;, &quot;Point of Tangency&quot;
+- Labels: "Secant", "Tangent", "Radius", "Point of Tangency"
 - Intersection points marked with dots
 
 Interactive controls:
-- Slider: &quot;Rotate Tangent&quot; (0-360 degrees, default 45)
-- Slider: &quot;Rotate Secant&quot; (0-360 degrees, default 135)
-- Checkbox: &quot;Show Right Angle&quot; (default: on)
+- Slider: "Rotate Tangent" (0-360 degrees, default 45)
+- Slider: "Rotate Secant" (0-360 degrees, default 135)
+- Checkbox: "Show Right Angle" (default: on)
 
 Default parameters:
 - Circle radius: 120px
@@ -2772,7 +2772,7 @@ Default parameters:
 
 Behavior:
 - Tangent slider rotates the tangent line around the circle
-- Radius always points to tangent&#39;s point of contact
+- Radius always points to tangent's point of contact
 - Right angle indicator always shows 90° between tangent and radius
 - Secant slider changes secant line position and angle
 - Secant always intersects at two points
@@ -2807,7 +2807,7 @@ the inscribed angle stays the same -- try it in the sim below!</p>
 Type: microsim
 
 **Learning Objective:** Students will analyze the relationship between central and inscribed angles that intercept the same arc, discovering that the inscribed angle measures half the central angle.
-**Bloom&#39;s Taxonomy Level:** Analyzing - Breaking down the relationship between different angle types and drawing comparisons.
+**Bloom's Taxonomy Level:** Analyzing - Breaking down the relationship between different angle types and drawing comparisons.
 
 Purpose: Demonstrate the inscribed angle theorem by showing a central angle and inscribed angle intercepting the same arc.
 
@@ -2821,14 +2821,14 @@ Visual elements:
 - Inscribed angle with vertex on circle, intercepting same arc (red)
 - Arc between the two intersection points highlighted (yellow/gold)
 - Angle measurements displayed inside each angle
-- Labels: &quot;Central Angle&quot;, &quot;Inscribed Angle&quot;, &quot;Intercepted Arc&quot;
-- Relationship equation displayed: &quot;Inscribed = ½ × Central&quot;
+- Labels: "Central Angle", "Inscribed Angle", "Intercepted Arc"
+- Relationship equation displayed: "Inscribed = ½ × Central"
 
 Interactive controls:
-- Slider: &quot;Central Angle&quot; (30-180 degrees, default 90, step 10)
-- Display: &quot;Central Angle = [value]°&quot;
-- Display: &quot;Inscribed Angle = [calculated]°&quot;
-- Button: &quot;Move Inscribed Vertex&quot; - changes position on circle
+- Slider: "Central Angle" (30-180 degrees, default 90, step 10)
+- Display: "Central Angle = [value]°"
+- Display: "Inscribed Angle = [calculated]°"
+- Button: "Move Inscribed Vertex" - changes position on circle
 
 Default parameters:
 - Circle radius: 140px
@@ -2861,7 +2861,7 @@ Implementation: p5.js with angle calculations and dynamic arc highlighting
 Type: microsim
 
 **Learning Objective:** Students will classify arcs as minor, major, or semicircles based on their degree measure.
-**Bloom&#39;s Taxonomy Level:** Understanding - Classifying arcs into categories based on their properties.
+**Bloom's Taxonomy Level:** Understanding - Classifying arcs into categories based on their properties.
 
 Purpose: Help students distinguish between minor arcs, major arcs, and semicircles through visual representation.
 
@@ -2875,15 +2875,15 @@ Visual elements:
 - Minor arc highlighted in one color (green)
 - Major arc highlighted in another color (orange)
 - Arc measures displayed on each arc
-- Labels showing arc notation: &quot;Arc AB&quot; and &quot;Arc ACB&quot; (using intermediate point C)
+- Labels showing arc notation: "Arc AB" and "Arc ACB" (using intermediate point C)
 - Center marked with small dot
 - Radii to points A and B shown as dashed lines
 
 Interactive controls:
-- Slider: &quot;Central Angle&quot; (30-180 degrees, default 120, step 10)
-- Display: &quot;Minor Arc = [angle]°&quot;
-- Display: &quot;Major Arc = [360-angle]°&quot;
-- Checkbox: &quot;Show as Semicircle&quot; - locks angle at 180°
+- Slider: "Central Angle" (30-180 degrees, default 120, step 10)
+- Display: "Minor Arc = [angle]°"
+- Display: "Major Arc = [360-angle]°"
+- Checkbox: "Show as Semicircle" - locks angle at 180°
 
 Default parameters:
 - Circle radius: 130px
@@ -2893,7 +2893,7 @@ Default parameters:
 Behavior:
 - Slider adjusts central angle
 - Minor arc and major arc measures update automatically (sum = 360°)
-- When central angle = 180°, both arcs are labeled &quot;Semicircle&quot;
+- When central angle = 180°, both arcs are labeled "Semicircle"
 - Color coding helps distinguish arc types
 - Arc notation updates based on type
 
@@ -2935,7 +2935,7 @@ Implementation: p5.js with arc drawing and trigonometric positioning
 Type: microsim
 
 **Learning Objective:** Students will apply formulas for arc length and sector area to calculate measurements for various central angles and radii.
-**Bloom&#39;s Taxonomy Level:** Applying - Using formulas to solve problems in new situations.
+**Bloom's Taxonomy Level:** Applying - Using formulas to solve problems in new situations.
 
 Purpose: Allow students to experiment with different radii and central angles to see how arc length and sector area change.
 
@@ -2953,14 +2953,14 @@ Visual elements:
 - Angle measure displayed at center
 
 Interactive controls:
-- Slider: &quot;Radius (r)&quot; (50-200px, default 120, step 10)
-- Slider: &quot;Central Angle (θ)&quot; (10-360 degrees, default 90, step 5)
+- Slider: "Radius (r)" (50-200px, default 120, step 10)
+- Slider: "Central Angle (θ)" (10-360 degrees, default 90, step 5)
 - Display panel showing:
-  - &quot;Radius: [r] units&quot;
-  - &quot;Angle: [θ]°&quot;
-  - &quot;Arc Length: [calculated] units&quot;
-  - &quot;Sector Area: [calculated] square units&quot;
-- Button: &quot;Show Formulas&quot; - reveals equations used
+  - "Radius: [r] units"
+  - "Angle: [θ]°"
+  - "Arc Length: [calculated] units"
+  - "Sector Area: [calculated] square units"
+- Button: "Show Formulas" - reveals equations used
 
 Default parameters:
 - Radius: 120px
@@ -2972,7 +2972,7 @@ Behavior:
 - Circle and sector resize/reshape accordingly
 - Arc length and sector area calculate automatically
 - Values displayed with 2 decimal places
-- When &quot;Show Formulas&quot; clicked, equations appear below calculations
+- When "Show Formulas" clicked, equations appear below calculations
 - Sector fill becomes more/less visible based on angle size
 
 Implementation: p5.js with arc length = (θ/360) × 2πr and area = (θ/360) × πr²
@@ -2987,30 +2987,30 @@ Implementation: p5.js with arc length = (θ/360) × 2πr and area = (θ/360) × 
 Type: diagram
 
 **Learning Objective:** Students will differentiate between sectors and segments of a circle by analyzing their boundaries and components.
-**Bloom&#39;s Taxonomy Level:** Analyzing - Comparing and contrasting two related geometric regions.
+**Bloom's Taxonomy Level:** Analyzing - Comparing and contrasting two related geometric regions.
 
 Purpose: Clarify the difference between a sector (bounded by two radii and an arc) and a segment (bounded by a chord and an arc).
 
 Layout: Side-by-side comparison, 800x400px
 
 Left side (400x400px):
-- Title: &quot;Sector&quot;
+- Title: "Sector"
 - Circle with radius 120px
 - Sector highlighted in light blue
 - Two radii shown as solid lines (blue)
 - Arc shown in bold (red)
-- Labels: &quot;Radius&quot;, &quot;Radius&quot;, &quot;Arc&quot;
-- Annotation: &quot;Bounded by 2 radii + arc&quot;
+- Labels: "Radius", "Radius", "Arc"
+- Annotation: "Bounded by 2 radii + arc"
 
 Right side (400x400px):
-- Title: &quot;Segment&quot;
+- Title: "Segment"
 - Same circle with radius 120px
 - Segment highlighted in light green
 - Chord shown as solid line (green)
 - Arc shown in bold (red)
 - Two radii shown as dashed lines (gray, for reference)
-- Labels: &quot;Chord&quot;, &quot;Arc&quot;
-- Annotation: &quot;Bounded by chord + arc&quot;
+- Labels: "Chord", "Arc"
+- Annotation: "Bounded by chord + arc"
 
 Visual style: Clean, educational diagram with clear color coding
 
@@ -3045,7 +3045,7 @@ common mistakes on tests!</p>
 Type: microsim
 
 **Learning Objective:** Students will evaluate angle measures using theorems for angles formed by chords, tangents, and secants.
-**Bloom&#39;s Taxonomy Level:** Evaluating - Making judgments about which theorem applies and checking calculations.
+**Bloom's Taxonomy Level:** Evaluating - Making judgments about which theorem applies and checking calculations.
 
 Purpose: Demonstrate three important angle relationships: chord-chord, tangent-chord, and secant-secant angles.
 
@@ -3057,28 +3057,28 @@ Panel 1: Chord-Chord Angle
 - Circle with two intersecting chords inside
 - Angle at intersection highlighted
 - Two intercepted arcs marked and labeled with measures
-- Formula displayed: &quot;Angle = ½(arc₁ + arc₂)&quot;
+- Formula displayed: "Angle = ½(arc₁ + arc₂)"
 - Calculation shown
 
 Panel 2: Tangent-Chord Angle
 - Circle with tangent line and chord meeting at point on circle
 - Angle between them highlighted
 - Intercepted arc marked and labeled
-- Formula displayed: &quot;Angle = ½(arc)&quot;
+- Formula displayed: "Angle = ½(arc)"
 - Calculation shown
 
 Panel 3: Secant-Secant Angle
 - Circle with two secants intersecting outside
 - Angle at intersection highlighted
 - Two intercepted arcs marked (near and far)
-- Formula displayed: &quot;Angle = ½(far arc - near arc)&quot;
+- Formula displayed: "Angle = ½(far arc - near arc)"
 - Calculation shown
 
 Interactive controls:
-- Dropdown: &quot;Select Theorem&quot; (Chord-Chord, Tangent-Chord, Secant-Secant)
-- Slider: &quot;Arc Measure 1&quot; (20-160 degrees, step 10)
-- Slider: &quot;Arc Measure 2&quot; (20-160 degrees, step 10) [disabled for tangent-chord]
-- Display: &quot;Calculated Angle = [value]°&quot;
+- Dropdown: "Select Theorem" (Chord-Chord, Tangent-Chord, Secant-Secant)
+- Slider: "Arc Measure 1" (20-160 degrees, step 10)
+- Slider: "Arc Measure 2" (20-160 degrees, step 10) [disabled for tangent-chord]
+- Display: "Calculated Angle = [value]°"
 
 Default parameters:
 - Arc 1: 80 degrees
@@ -3124,7 +3124,7 @@ Implementation: p5.js with conditional rendering based on selected theorem
 Type: microsim
 
 **Learning Objective:** Students will verify the power of a point theorem by observing that segment products remain equal as geometric configurations change.
-**Bloom&#39;s Taxonomy Level:** Evaluating - Assessing the validity of the theorem through multiple test cases.
+**Bloom's Taxonomy Level:** Evaluating - Assessing the validity of the theorem through multiple test cases.
 
 Purpose: Demonstrate the power of a point theorem with interactive manipulation.
 
@@ -3138,15 +3138,15 @@ Visual elements:
 - Two secants drawn from P through circle (blue and green)
 - Segments labeled with lengths
 - Product calculations displayed near each secant
-- Verification message: &quot;PA × PC = PB × PD&quot; with values
+- Verification message: "PA × PC = PB × PD" with values
 
 Interactive controls:
-- Slider: &quot;Move Point P&quot; (horizontal position, 50-300px from center, step 10)
-- Slider: &quot;Rotate Secant 1&quot; (0-360 degrees, step 5)
-- Slider: &quot;Rotate Secant 2&quot; (0-360 degrees, step 5)
-- Display: &quot;Product 1 = [PA × PC]&quot;
-- Display: &quot;Product 2 = [PB × PD]&quot;
-- Display: &quot;Difference = [abs difference]&quot; (should be ≈ 0)
+- Slider: "Move Point P" (horizontal position, 50-300px from center, step 10)
+- Slider: "Rotate Secant 1" (0-360 degrees, step 5)
+- Slider: "Rotate Secant 2" (0-360 degrees, step 5)
+- Display: "Product 1 = [PA × PC]"
+- Display: "Product 2 = [PB × PD]"
+- Display: "Difference = [abs difference]" (should be ≈ 0)
 
 Default parameters:
 - Point P: 200px from center
@@ -3176,7 +3176,7 @@ Implementation: p5.js with line-circle intersection calculations and distance fo
 Type: microsim
 
 **Learning Objective:** Students will distinguish between inscribed polygons (vertices on circle) and circumscribed polygons (sides tangent to circle) through interactive visualization.
-**Bloom&#39;s Taxonomy Level:** Understanding - Explaining the difference between two related concepts.
+**Bloom's Taxonomy Level:** Understanding - Explaining the difference between two related concepts.
 
 Purpose: Clarify the difference between inscribed and circumscribed polygons with side-by-side comparison.
 
@@ -3189,20 +3189,20 @@ Left Panel - Inscribed Polygon:
 - Circle (radius 140px)
 - Regular polygon with vertices ON the circle
 - Vertices marked with dots
-- Label: &quot;Inscribed Polygon (vertices on circle)&quot;
-- Label: &quot;Circle is circumscribed&quot;
+- Label: "Inscribed Polygon (vertices on circle)"
+- Label: "Circle is circumscribed"
 
 Right Panel - Circumscribed Polygon:
 - Circle (radius 100px)
 - Regular polygon with sides TANGENT to circle
 - Tangent points marked with small dots
 - Perpendicular radii to tangent points shown (dashed)
-- Label: &quot;Circumscribed Polygon (sides tangent)&quot;
-- Label: &quot;Circle is inscribed&quot;
+- Label: "Circumscribed Polygon (sides tangent)"
+- Label: "Circle is inscribed"
 
 Interactive controls:
-- Slider: &quot;Number of Sides&quot; (3-8, default 5, step 1)
-- Display: &quot;Regular [n]-gon&quot;
+- Slider: "Number of Sides" (3-8, default 5, step 1)
+- Display: "Regular [n]-gon"
 
 Default parameters:
 - Number of sides: 5 (pentagon)
@@ -3236,7 +3236,7 @@ Implementation: p5.js with trigonometric calculations for regular polygon vertic
 Type: microsim
 
 **Learning Objective:** Students will verify that opposite angles in an inscribed quadrilateral are supplementary by manipulating the quadrilateral and observing angle sums.
-**Bloom&#39;s Taxonomy Level:** Analyzing - Examining the relationship between opposite angles and testing the theorem.
+**Bloom's Taxonomy Level:** Analyzing - Examining the relationship between opposite angles and testing the theorem.
 
 Purpose: Demonstrate that opposite angles in an inscribed quadrilateral always sum to 180°.
 
@@ -3251,19 +3251,19 @@ Visual elements:
 - All four angles marked and measured
 - Angle arcs drawn at each vertex (color-coded)
 - Display boxes showing:
-  - &quot;∠A = [value]°&quot;
-  - &quot;∠B = [value]°&quot;
-  - &quot;∠C = [value]°&quot;
-  - &quot;∠D = [value]°&quot;
-  - &quot;∠A + ∠C = [sum]°&quot;
-  - &quot;∠B + ∠D = [sum]°&quot;
+  - "∠A = [value]°"
+  - "∠B = [value]°"
+  - "∠C = [value]°"
+  - "∠D = [value]°"
+  - "∠A + ∠C = [sum]°"
+  - "∠B + ∠D = [sum]°"
 - Opposite angle pairs color-matched (A &amp; C in red, B &amp; D in blue)
 
 Interactive controls:
-- Slider: &quot;Move Vertex A&quot; (angle position 0-360°, default 20)
-- Slider: &quot;Move Vertex B&quot; (angle position 0-360°, default 110)
-- Slider: &quot;Move Vertex C&quot; (angle position 0-360°, default 200)
-- Slider: &quot;Move Vertex D&quot; (angle position 0-360°, default 290)
+- Slider: "Move Vertex A" (angle position 0-360°, default 20)
+- Slider: "Move Vertex B" (angle position 0-360°, default 110)
+- Slider: "Move Vertex C" (angle position 0-360°, default 200)
+- Slider: "Move Vertex D" (angle position 0-360°, default 290)
 - Constraint: Sliders maintain clockwise order
 
 Default parameters:
@@ -3306,7 +3306,7 @@ Implementation: p5.js with angle calculations using vertex positions and arc mea
 Type: microsim
 
 **Learning Objective:** Students will create the equation of a circle given its center and radius, and verify points lie on the circle by testing the equation.
-**Bloom&#39;s Taxonomy Level:** Creating - Producing equations for circles with different parameters and testing their validity.
+**Bloom's Taxonomy Level:** Creating - Producing equations for circles with different parameters and testing their validity.
 
 Purpose: Allow students to manipulate circle parameters and see how the equation and graph change together.
 
@@ -3324,12 +3324,12 @@ Visual elements:
 - Several test points plotted (some on circle, some not)
 
 Interactive controls:
-- Slider: &quot;Center x (h)&quot; (-5 to 5, default 0, step 0.5)
-- Slider: &quot;Center y (k)&quot; (-5 to 5, default 0, step 0.5)
-- Slider: &quot;Radius (r)&quot; (1 to 5, default 2, step 0.5)
+- Slider: "Center x (h)" (-5 to 5, default 0, step 0.5)
+- Slider: "Center y (k)" (-5 to 5, default 0, step 0.5)
+- Slider: "Radius (r)" (1 to 5, default 2, step 0.5)
 - Display: Current equation with actual values substituted
-- Button: &quot;Add Test Point&quot; - click to place point on graph
-- Display: &quot;Point [x, y]: &quot; with &quot;ON circle&quot; or &quot;NOT on circle&quot; indicator
+- Button: "Add Test Point" - click to place point on graph
+- Display: "Point [x, y]: " with "ON circle" or "NOT on circle" indicator
 
 Default parameters:
 - Center: (0, 0)
@@ -3374,7 +3374,7 @@ the center is <span class="arithmatex">\((2, -3)\)</span>. The plus-three become
 Type: microsim
 
 **Learning Objective:** Students will apply the completing-the-square method to convert circle equations from general form to standard form.
-**Bloom&#39;s Taxonomy Level:** Applying - Using a learned procedure to transform equations into a more useful form.
+**Bloom's Taxonomy Level:** Applying - Using a learned procedure to transform equations into a more useful form.
 
 Purpose: Guide students through the process of completing the square to find center and radius from expanded form.
 
@@ -3398,11 +3398,11 @@ Right Side - Visual:
 - Equation in standard form displayed
 
 Interactive controls:
-- Slider: &quot;Coefficient D&quot; (-10 to 10, default -4, step 2)
-- Slider: &quot;Coefficient E&quot; (-10 to 10, default 6, step 2)
-- Slider: &quot;Constant F&quot; (-20 to 20, default -12, step 2)
-- Button: &quot;Generate New Equation&quot;
-- Checkbox: &quot;Show Step-by-Step&quot; (default: on)
+- Slider: "Coefficient D" (-10 to 10, default -4, step 2)
+- Slider: "Coefficient E" (-10 to 10, default 6, step 2)
+- Slider: "Constant F" (-20 to 20, default -12, step 2)
+- Button: "Generate New Equation"
+- Checkbox: "Show Step-by-Step" (default: on)
 
 Default parameters:
 - D = -4, E = 6, F = -12
@@ -3413,7 +3413,7 @@ Behavior:
 - Sliders change equation coefficients
 - All steps recalculate automatically
 - Visual circle updates to match solution
-- If &quot;Show Step-by-Step&quot; unchecked, only show original and final
+- If "Show Step-by-Step" unchecked, only show original and final
 - Button generates random valid circle equation
 - Invalid equations (imaginary radius) flagged with warning
 
@@ -3437,7 +3437,7 @@ Implementation: p5.js with algebraic manipulation and step display
 Type: microsim
 
 **Learning Objective:** Students will analyze line-circle intersection scenarios to determine the number of intersection points based on geometric configuration.
-**Bloom&#39;s Taxonomy Level:** Analyzing - Examining different cases and determining intersection count.
+**Bloom's Taxonomy Level:** Analyzing - Examining different cases and determining intersection count.
 
 Purpose: Explore the three cases of line-circle intersection: no intersection, tangent (1 point), and secant (2 points).
 
@@ -3453,14 +3453,14 @@ Visual elements:
 - Labels showing:
   - Number of intersection points
   - Distance from center to line
-  - Relationship: &quot;Distance &lt; r&quot;, &quot;Distance = r&quot;, or &quot;Distance &gt; r&quot;
+  - Relationship: "Distance &lt; r", "Distance = r", or "Distance &gt; r"
 
 Interactive controls:
-- Slider: &quot;Circle Radius (r)&quot; (1-4 units, default 2.5, step 0.1)
-- Slider: &quot;Line Slope (m)&quot; (-3 to 3, default 0.5, step 0.1)
-- Slider: &quot;Line Intercept (b)&quot; (-4 to 4, default 1, step 0.1)
-- Display: &quot;Intersection Points: [0, 1, or 2]&quot;
-- Display: &quot;Distance to Line: [value] units&quot;
+- Slider: "Circle Radius (r)" (1-4 units, default 2.5, step 0.1)
+- Slider: "Line Slope (m)" (-3 to 3, default 0.5, step 0.1)
+- Slider: "Line Intercept (b)" (-4 to 4, default 1, step 0.1)
+- Display: "Intersection Points: [0, 1, or 2]"
+- Display: "Distance to Line: [value] units"
 
 Default parameters:
 - Circle radius: 2.5 units
@@ -3496,7 +3496,7 @@ Implementation: p5.js with quadratic formula for intersection calculation
 Type: microsim
 
 **Learning Objective:** Students will evaluate different configurations of two circles to determine intersection count based on center distance and radii.
-**Bloom&#39;s Taxonomy Level:** Evaluating - Making judgments about intersection cases based on distance criteria.
+**Bloom's Taxonomy Level:** Evaluating - Making judgments about intersection cases based on distance criteria.
 
 Purpose: Demonstrate all possible intersection cases for two circles.
 
@@ -3511,17 +3511,17 @@ Visual elements:
 - Distance between centers labeled
 - Intersection points marked with red dots (if they exist)
 - Labels showing:
-  - &quot;Distance between centers: d&quot;
-  - &quot;r₁ + r₂ = [sum]&quot;
-  - &quot;|r₁ - r₂| = [difference]&quot;
-  - &quot;Number of intersections: [0, 1, or 2]&quot;
+  - "Distance between centers: d"
+  - "r₁ + r₂ = [sum]"
+  - "|r₁ - r₂| = [difference]"
+  - "Number of intersections: [0, 1, or 2]"
 
 Interactive controls:
-- Slider: &quot;Circle 1 Radius&quot; (50-150px, default 100, step 10)
-- Slider: &quot;Circle 2 Radius&quot; (50-150px, default 80, step 10)
-- Slider: &quot;Circle 2 X Position&quot; (-200 to 200, default 120, step 10)
-- Slider: &quot;Circle 2 Y Position&quot; (-100 to 100, default 0, step 10)
-- Display: &quot;Case: [Separate/External Tangent/Intersecting/Internal Tangent/One Inside Other]&quot;
+- Slider: "Circle 1 Radius" (50-150px, default 100, step 10)
+- Slider: "Circle 2 Radius" (50-150px, default 80, step 10)
+- Slider: "Circle 2 X Position" (-200 to 200, default 120, step 10)
+- Slider: "Circle 2 Y Position" (-100 to 100, default 0, step 10)
+- Display: "Case: [Separate/External Tangent/Intersecting/Internal Tangent/One Inside Other]"
 
 Default parameters:
 - Circle 1: center (300, 280), radius 100
@@ -3561,7 +3561,7 @@ Implementation: p5.js with circle-circle intersection algorithm using system of 
 Type: microsim
 
 **Learning Objective:** Students will apply the relationship between arc length and distance traveled by a rolling wheel to solve real-world motion problems.
-**Bloom&#39;s Taxonomy Level:** Applying - Using arc length concepts in practical contexts.
+**Bloom's Taxonomy Level:** Applying - Using arc length concepts in practical contexts.
 
 Purpose: Demonstrate how arc length relates to distance traveled when a wheel rolls without slipping.
 
@@ -3579,16 +3579,16 @@ Visual elements:
 - Angle of rotation displayed at wheel center
 
 Interactive controls:
-- Slider: &quot;Wheel Radius&quot; (20-80px, default 50, step 5)
-- Slider: &quot;Rotation Angle&quot; (0-720 degrees, default 180, step 30)
-- Button: &quot;Animate Rolling&quot; - wheel rolls to show distance
-- Button: &quot;Reset&quot;
+- Slider: "Wheel Radius" (20-80px, default 50, step 5)
+- Slider: "Rotation Angle" (0-720 degrees, default 180, step 30)
+- Button: "Animate Rolling" - wheel rolls to show distance
+- Button: "Reset"
 - Display panel:
-  - &quot;Radius: [r] units&quot;
-  - &quot;Rotation: [θ]°&quot;
-  - &quot;Arc Length: [L] units&quot;
-  - &quot;Distance Traveled: [L] units&quot;
-  - &quot;Number of Full Rotations: [θ/360]&quot;
+  - "Radius: [r] units"
+  - "Rotation: [θ]°"
+  - "Arc Length: [L] units"
+  - "Distance Traveled: [L] units"
+  - "Number of Full Rotations: [θ/360]"
 
 Default parameters:
 - Radius: 50px (representing 50 cm)

@@ -5448,7 +5448,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/word-cloud/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/sims/word-cloud/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5461,7 +5461,7 @@
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Word Cloud MicroSim Fullscreen</a></p>
 <p><strong>Copy this iframe to embed in your website:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/geometry-course/sims/word-cloud/main.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;600px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/geometry-course/sims/word-cloud/main.html"</span> <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span> <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="description">Description</h2>
 <p>This word cloud displays key geometry concepts with their sizes weighted by importance in the curriculum. It provides a visual overview of the main topics covered in the geometry course.</p>
@@ -5475,7 +5475,7 @@
 <p><strong>Using a Predefined Shape:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">WordCloud</span><span class="p">(</span><span class="nx">wordCloudElement</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// ... other options ...</span>
-<span class="w">    </span><span class="nx">shape</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;circle&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Options include &#39;circle&#39;, &#39;cardioid&#39;, &#39;diamond&#39;, &#39;square&#39;, &#39;triangle-forward&#39;, etc.</span>
+<span class="w">    </span><span class="nx">shape</span><span class="o">:</span><span class="w"> </span><span class="s1">'circle'</span><span class="p">,</span><span class="w"> </span><span class="c1">// Options include 'circle', 'cardioid', 'diamond', 'square', 'triangle-forward', etc.</span>
 <span class="p">});</span>
 </code></pre></div>
 <p><strong>Using a Custom Mask Image:</strong></p>
@@ -5485,7 +5485,7 @@
 <div class="highlight"><pre><span></span><code>html
 Copy code
 
-`&lt;img id=&quot;mask-image&quot; src=&quot;path-to-your-mask-image.png&quot; style=&quot;display: none;&quot;&gt;
+`&lt;img id="mask-image" src="path-to-your-mask-image.png" style="display: none;"&gt;
 `
 </code></pre></div>
 </li>
@@ -5496,7 +5496,7 @@ Copy code
 
 `WordCloud(wordCloudElement, {
     // ... other options ...
-    maskImage: document.getElementById(&#39;mask-image&#39;),
+    maskImage: document.getElementById('mask-image'),
 });
 `
 </code></pre></div>
@@ -5506,8 +5506,8 @@ Copy code
 <hr />
 <h3 id="2-change-the-font-and-styling"><strong>2. Change the Font and Styling</strong></h3>
 <p><strong>Change Font Family and Weight:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nx">fontFamily</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Arial, sans-serif&#39;</span><span class="p">,</span>
-<span class="nx">fontWeight</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bold&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Options: &#39;normal&#39;, &#39;bold&#39;, &#39;bolder&#39;, &#39;lighter&#39;, or numeric value (100-900)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">fontFamily</span><span class="o">:</span><span class="w"> </span><span class="s1">'Arial, sans-serif'</span><span class="p">,</span>
+<span class="nx">fontWeight</span><span class="o">:</span><span class="w"> </span><span class="s1">'bold'</span><span class="p">,</span><span class="w"> </span><span class="c1">// Options: 'normal', 'bold', 'bolder', 'lighter', or numeric value (100-900)</span>
 </code></pre></div>
 <p><strong>Use a Custom Font from Google Fonts:</strong></p>
 <ol>
@@ -5516,7 +5516,7 @@ Copy code
 <div class="highlight"><pre><span></span><code>html
 Copy code
 
-`&lt;link href=&quot;https://fonts.googleapis.com/css?family=Roboto&quot; rel=&quot;stylesheet&quot;&gt;
+`&lt;link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"&gt;
 `
 </code></pre></div>
 </li>
@@ -5525,7 +5525,7 @@ Copy code
 <div class="highlight"><pre><span></span><code>javascript
 Copy code
 
-`fontFamily: &#39;Roboto, sans-serif&#39;,
+`fontFamily: 'Roboto, sans-serif',
 `
 </code></pre></div>
 </li>
@@ -5533,21 +5533,21 @@ Copy code
 <hr />
 <h3 id="3-customize-colors"><strong>3. Customize Colors</strong></h3>
 <p><strong>Use a Fixed Color Palette:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;#e6194b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#3cb44b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#ffe119&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#4363d8&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#f58231&#39;</span><span class="p">];</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">'#e6194b'</span><span class="p">,</span><span class="w"> </span><span class="s1">'#3cb44b'</span><span class="p">,</span><span class="w"> </span><span class="s1">'#ffe119'</span><span class="p">,</span><span class="w"> </span><span class="s1">'#4363d8'</span><span class="p">,</span><span class="w"> </span><span class="s1">'#f58231'</span><span class="p">];</span>
 <span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">word</span><span class="p">,</span><span class="w"> </span><span class="nx">weight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">colors</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">colors</span><span class="p">.</span><span class="nx">length</span><span class="p">)];</span>
 <span class="p">},</span>
 </code></pre></div>
 <p><strong>Color Based on Word Frequency (Weight):</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">word</span><span class="p">,</span><span class="w"> </span><span class="nx">weight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">weight</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">50</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">&#39;#ff0000&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#0000ff&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Red for high weights, blue for lower</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">weight</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">50</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">'#ff0000'</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">'#0000ff'</span><span class="p">;</span><span class="w"> </span><span class="c1">// Red for high weights, blue for lower</span>
 <span class="p">},</span>
 </code></pre></div>
 <p><strong>Random Colors:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;rgb(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;,&#39;</span><span class="w"> </span><span class="o">+</span>
-<span class="w">                     </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;,&#39;</span><span class="w"> </span><span class="o">+</span>
-<span class="w">                     </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;)&#39;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">'rgb('</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">','</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                     </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">','</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                     </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">255</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">')'</span><span class="p">;</span>
 <span class="p">},</span>
 </code></pre></div>
 <hr />
@@ -5575,7 +5575,7 @@ Copy code
 </code></pre></div>
 <hr />
 <h3 id="6-set-the-background-color"><strong>6. Set the Background Color</strong></h3>
-<div class="highlight"><pre><span></span><code><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#f0f0f0&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Light gray background</span>
+<div class="highlight"><pre><span></span><code><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="s1">'#f0f0f0'</span><span class="p">,</span><span class="w"> </span><span class="c1">// Light gray background</span>
 </code></pre></div>
 <hr />
 <h3 id="7-implement-interactive-features"><strong>7. Implement Interactive Features</strong></h3>
@@ -5586,7 +5586,7 @@ Copy code
 <div class="highlight"><pre><span></span><code>html
 Copy code
 
-`&lt;div id=&quot;tooltip&quot; style=&quot;position: absolute; display: none; background: #333; color: #fff; padding: 5px; border-radius: 3px; pointer-events: none;&quot;&gt;&lt;/div&gt;
+`&lt;div id="tooltip" style="position: absolute; display: none; background: #333; color: #fff; padding: 5px; border-radius: 3px; pointer-events: none;"&gt;&lt;/div&gt;
 `
 </code></pre></div>
 </li>
@@ -5597,12 +5597,12 @@ Copy code
 
 `hover: function (item, dimension, event) {
     if (item) {
-        tooltip.style.left = event.pageX + 10 + &#39;px&#39;;
-        tooltip.style.top = event.pageY + 10 + &#39;px&#39;;
-        tooltip.style.display = &#39;block&#39;;
+        tooltip.style.left = event.pageX + 10 + 'px';
+        tooltip.style.top = event.pageY + 10 + 'px';
+        tooltip.style.display = 'block';
         tooltip.textContent = `${item[0]} (${item[1]})`;
     } else {
-        tooltip.style.display = &#39;none&#39;;
+        tooltip.style.display = 'none';
     }
 },
 `
@@ -5628,15 +5628,15 @@ Copy code
 <hr />
 <h3 id="10-change-the-canvas-size"><strong>10. Change the Canvas Size</strong></h3>
 <p>Adjust the size of the container div to change the overall size of the word cloud.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;word-cloud&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 1000px; height: 500px;&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"word-cloud"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 1000px; height: 500px;"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
 <hr />
 <h3 id="example-implementation-with-changes"><strong>Example Implementation with Changes</strong></h3>
 <p>Here is a revised version of your HTML file incorporating some of these suggestions:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Geometry Word Cloud<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
 <span class="w">        </span><span class="p">#</span><span class="nn">word-cloud</span><span class="w"> </span><span class="p">{</span>
@@ -5659,30 +5659,30 @@ Copy code
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.googleapis.com/css?family=Montserrat:400,700&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://fonts.googleapis.com/css?family=Montserrat:400,700"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;text-align: center;&quot;</span><span class="p">&gt;</span>Geometry Word Cloud<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;word-cloud&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;tooltip&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"text-align: center;"</span><span class="p">&gt;</span>Geometry Word Cloud<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"word-cloud"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"tooltip"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
 
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.min.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 
 
     <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="w">        </span><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">geometryConcepts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">                </span><span class="p">[</span><span class="s2">&quot;Triangle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">70</span><span class="p">],</span>
-<span class="w">                </span><span class="p">[</span><span class="s2">&quot;Circle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">68</span><span class="p">],</span>
-<span class="w">                </span><span class="p">[</span><span class="s2">&quot;Angle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">67</span><span class="p">],</span>
-<span class="w">                </span><span class="p">[</span><span class="s2">&quot;Line&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">65</span><span class="p">],</span>
-<span class="w">                </span><span class="p">[</span><span class="s2">&quot;Quadrilateral&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">63</span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">"Triangle"</span><span class="p">,</span><span class="w"> </span><span class="mf">70</span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">"Circle"</span><span class="p">,</span><span class="w"> </span><span class="mf">68</span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">"Angle"</span><span class="p">,</span><span class="w"> </span><span class="mf">67</span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">"Line"</span><span class="p">,</span><span class="w"> </span><span class="mf">65</span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">"Quadrilateral"</span><span class="p">,</span><span class="w"> </span><span class="mf">63</span><span class="p">],</span>
 <span class="w">                </span><span class="c1">// ... rest of your data ...</span>
 <span class="w">            </span><span class="p">];</span>
 
-<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">wordCloudElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;word-cloud&quot;</span><span class="p">);</span>
-<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">tooltip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;tooltip&#39;</span><span class="p">);</span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">wordCloudElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"word-cloud"</span><span class="p">);</span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">tooltip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'tooltip'</span><span class="p">);</span>
 
 <span class="w">            </span><span class="nx">WordCloud</span><span class="p">(</span><span class="nx">wordCloudElement</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="nx">list</span><span class="o">:</span><span class="w"> </span><span class="nx">geometryConcepts</span><span class="p">,</span>
@@ -5690,8 +5690,8 @@ Copy code
 <span class="w">                </span><span class="nx">weightFactor</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="nx">size</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">70</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">80</span><span class="p">;</span><span class="w"> </span><span class="c1">// Adjust the 80 to scale overall word sizes</span>
 <span class="w">                </span><span class="p">},</span>
-<span class="w">                </span><span class="nx">fontFamily</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Montserrat, sans-serif&#39;</span><span class="p">,</span>
-<span class="w">                </span><span class="nx">fontWeight</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bold&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">fontFamily</span><span class="o">:</span><span class="w"> </span><span class="s1">'Montserrat, sans-serif'</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">fontWeight</span><span class="o">:</span><span class="w"> </span><span class="s1">'bold'</span><span class="p">,</span>
 <span class="w">                </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">word</span><span class="p">,</span><span class="w"> </span><span class="nx">weight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                    </span><span class="c1">// Gradient from blue to red based on weight</span>
 <span class="w">                    </span><span class="kd">const</span><span class="w"> </span><span class="nx">maxWeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">70</span><span class="p">;</span>
@@ -5705,18 +5705,18 @@ Copy code
 <span class="w">                </span><span class="nx">rotationSteps</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span>
 <span class="w">                </span><span class="nx">minRotation</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span>
 <span class="w">                </span><span class="nx">maxRotation</span><span class="o">:</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span>
-<span class="w">                </span><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#f0f0f0&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">backgroundColor</span><span class="o">:</span><span class="w"> </span><span class="s2">"#f0f0f0"</span><span class="p">,</span>
 <span class="w">                </span><span class="nx">shuffle</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">                </span><span class="nx">minSize</span><span class="o">:</span><span class="w"> </span><span class="mf">14</span><span class="p">,</span>
 <span class="w">                </span><span class="nx">ellipticity</span><span class="o">:</span><span class="w"> </span><span class="mf">0.8</span><span class="p">,</span>
 <span class="w">                </span><span class="nx">hover</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span><span class="w"> </span><span class="nx">dimension</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">item</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">pageX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;px&#39;</span><span class="p">;</span>
-<span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">pageY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;px&#39;</span><span class="p">;</span>
-<span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">pageX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">'px'</span><span class="p">;</span>
+<span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">pageY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">'px'</span><span class="p">;</span>
+<span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'block'</span><span class="p">;</span>
 <span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">item</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="si">}</span><span class="sb"> (</span><span class="si">${</span><span class="nx">item</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="si">}</span><span class="sb">)`</span><span class="p">;</span>
 <span class="w">                    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="w">                        </span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'none'</span><span class="p">;</span>
 <span class="w">                    </span><span class="p">}</span>
 <span class="w">                </span><span class="p">},</span>
 <span class="w">            </span><span class="p">});</span>

@@ -43,10 +43,10 @@
     "simulation"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of regular polygon explorer",
-    "Apply regular polygon explorer to solve problems",
-    "Visualize and interpret regular polygon explorer relationships",
-    "Experiment with parameters to observe their effects on regular polygon explorer"
+    "Identify regular polygons by their number of sides, from triangle and square through pentagon, hexagon, and beyond",
+    "Explain why every side and interior angle of a regular polygon is equal",
+    "Predict how the polygon's shape changes as the sides slider increases the vertex count",
+    "Explain how a regular polygon approaches a circle as its number of sides grows large"
   ],
   "bloomsTaxonomy": [
     "Remember",

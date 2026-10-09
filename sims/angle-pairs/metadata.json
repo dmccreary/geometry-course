@@ -37,10 +37,10 @@
     "simulation"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of angle pairs",
-    "Apply angle pairs to solve problems",
-    "Visualize and interpret angle pairs relationships",
-    "Experiment with parameters to observe their effects on angle pairs"
+    "Identify complementary, supplementary, vertical, and adjacent angle pairs from their defining properties",
+    "Explain why complementary angles sum to 90 degrees and supplementary angles sum to 180 degrees",
+    "Calculate the measure of a missing angle when its complement or supplement is known",
+    "Distinguish vertical angles, which are opposite and equal, from adjacent angles that share a common side and vertex"
   ],
   "bloomsTaxonomy": [
     "Remember",

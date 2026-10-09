@@ -155,18 +155,16 @@
     "simulation"
   ],
   "learningObjectives": [
-    "Understand the key concepts of this concept",
-    "Explore this concept through interactive visualization",
-    "Apply knowledge of this concept to solve problems",
-    "Experiment with parameters to observe their effects on this concept"
+    "Trace the recursive rule that replaces each triangle with three self-similar copies at every depth level",
+    "Calculate the number of triangles at recursion depth n using 3^n and verify it with the triangle counter",
+    "Predict how the fractal pattern changes as the recursion depth slider moves from 0 to 7",
+    "Identify self-similarity by comparing the Sierpinski pattern at different scales",
+    "Explain why the shaded area of the Sierpinski triangle approaches zero as recursion depth increases"
   ],
   "bloomsTaxonomy": [
-    "Remember",
     "Understand",
     "Apply",
-    "Analyze",
-    "Evaluate",
-    "Create"
+    "Analyze"
   ],
   "pedagogical": {
     "pattern": "exploration",

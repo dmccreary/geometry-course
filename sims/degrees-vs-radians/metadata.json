@@ -38,10 +38,10 @@
     "interactive-demo"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of degrees vs radians",
-    "Apply degrees vs radians to solve problems",
-    "Visualize and interpret degrees vs radians relationships",
-    "Experiment with parameters to observe their effects on degrees vs radians"
+    "Explain why a full circle measures 360 degrees and 2π (about 6.28) radians",
+    "Identify one radian as the angle whose arc length equals the circle's radius, shown by the alternating colored arcs",
+    "Convert an angle between degrees and radians by comparing the two readouts as the slider rotates the line",
+    "Estimate an angle's radian measure by counting the colored arc segments it spans on the circumference"
   ],
   "bloomsTaxonomy": [
     "Remember",

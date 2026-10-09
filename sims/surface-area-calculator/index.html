@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for surface area calculator.">
+        <meta name="description" content="Choose a prism, cube, cylinder, pyramid, cone, or sphere, set its dimensions, and follow the surface area calculation step by step.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -75,7 +75,7 @@
       
         <meta  property="og:title"  content="Surface Area Calculator - AI Assisted Geometry" >
       
-        <meta  property="og:description"  content="Interactive p5.js MicroSim for surface area calculator." >
+        <meta  property="og:description"  content="Choose a prism, cube, cylinder, pyramid, cone, or sphere, set its dimensions, and follow the surface area calculation step by step." >
       
         <meta property="og:image" content="https://dmccreary.github.io/geometry-course/sims/surface-area-calculator/surface-area-calculator.png">
       
@@ -91,7 +91,7 @@
       
         <meta  name="twitter:title"  content="Surface Area Calculator - AI Assisted Geometry" >
       
-        <meta  name="twitter:description"  content="Interactive p5.js MicroSim for surface area calculator." >
+        <meta  name="twitter:description"  content="Choose a prism, cube, cylinder, pyramid, cone, or sphere, set its dimensions, and follow the surface area calculation step by step." >
       
         <meta name="twitter:image" content="https://dmccreary.github.io/geometry-course/sims/surface-area-calculator/surface-area-calculator.png">
       
@@ -4296,6 +4296,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5312,6 +5330,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5358,7 +5394,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/surface-area-calculator/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/sims/surface-area-calculator/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5367,39 +5403,85 @@
 
 
 <h1 id="surface-area-calculator">Surface Area Calculator</h1>
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="582" width="100%" scrolling="no"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Surface Area Calculator MicroSim Fullscreen</a>
 <br/>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>The <strong>surface area</strong> of a solid is the total area of all its faces and curved surfaces. This MicroSim draws the selected solid with its dimensions labeled and shows three things beside it: the formula, the calculation with the current values substituted, and the result.</p>
+<table>
+<thead>
+<tr>
+<th>Solid</th>
+<th>Surface area</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rectangular prism</td>
+<td><span class="arithmatex">\(2(lw + lh + wh)\)</span></td>
+</tr>
+<tr>
+<td>Cube</td>
+<td><span class="arithmatex">\(6s^2\)</span></td>
+</tr>
+<tr>
+<td>Cylinder</td>
+<td><span class="arithmatex">\(2\pi r^2 + 2\pi rh\)</span></td>
+</tr>
+<tr>
+<td>Square pyramid</td>
+<td><span class="arithmatex">\(s^2 + 2sl\)</span></td>
+</tr>
+<tr>
+<td>Cone</td>
+<td><span class="arithmatex">\(\pi r^2 + \pi rl\)</span></td>
+</tr>
+<tr>
+<td>Sphere</td>
+<td><span class="arithmatex">\(4\pi r^2\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>For the pyramid and the cone, <span class="arithmatex">\(l\)</span> is the <strong>slant height</strong>, measured along the surface, not the vertical height. If you choose a slant height too short to reach the apex, the MicroSim explains why no such solid exists.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Choose a solid from the <strong>Solid</strong> menu. The sliders change to match its dimensions.</li>
+<li>Drag the dimension sliders and watch the drawing, the substitution steps, and the result update.</li>
+<li>Turn <strong>Show work</strong> off to hide the steps, calculate the answer yourself, and turn it back on to check.</li>
+<li>Read the gray line under the steps to see how the total splits into bases and lateral surface.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;main.html&quot;</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">&quot;450px&quot;</span>
-        <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
-        <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"main.html"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"582"</span>
+        <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
+        <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
 <p>9-12 (High School Geometry)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<p>Area of rectangles, triangles, and circles, and the names and parts of common solids.</p>
+<h3 id="blooms-taxonomy-level">Bloom's Taxonomy Level</h3>
+<p>Apply (L3)</p>
+<h3 id="learning-objective">Learning Objective</h3>
+<p>Students will be able to calculate the surface area of prisms, cylinders, pyramids, cones, and spheres and analyze how changing a dimension affects the surface area.</p>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Practice</strong> (6 min): With Show work off, students compute the surface area of three solids at dimensions of their choice and then check each answer.</li>
+<li><strong>Analyze</strong> (5 min): For the cylinder, students double the radius and then double the height instead, and compare the two effects on the surface area.</li>
+<li><strong>Connect</strong> (4 min): Students explain what each term of a formula represents on the drawing, for example the two circles and the wrapped rectangle of a cylinder.</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<p>Students compute the surface area of a cone with radius 6 and slant height 10 by hand, then decide whether a cone with radius 6 and slant height 5 can exist and justify the answer.</p>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Wikipedia. <a href="https://en.wikipedia.org/wiki/Surface_area">Surface area</a>.</li>
+<li>Common Core State Standards Initiative. High School Geometry: Geometric Measurement and Dimension (HSG-GMD) and Modeling with Geometry (HSG-MG.A.1).</li>
+<li>Wikipedia. <a href="https://en.wikipedia.org/wiki/Cone">Cone</a>.</li>
 </ol>
 
 

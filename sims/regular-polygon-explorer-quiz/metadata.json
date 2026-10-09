@@ -44,10 +44,10 @@
     "simulation"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of regular polygon explorer quiz",
-    "Apply regular polygon explorer quiz to solve problems",
-    "Visualize and interpret regular polygon explorer quiz relationships",
-    "Experiment with parameters to observe their effects on regular polygon explorer quiz"
+    "Recall the names of regular polygons such as triangle, square, pentagon, and hexagon from their side counts",
+    "Match a prompted polygon name to the correct number of sides by constructing the shape",
+    "Identify a regular polygon from its rendered shape without counting each side individually",
+    "Evaluate your own polygon-naming accuracy using the quiz's immediate feedback"
   ],
   "bloomsTaxonomy": [
     "Remember",

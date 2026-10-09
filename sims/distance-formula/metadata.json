@@ -191,18 +191,16 @@
     "timeline"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of distance formula explorer",
-    "Apply distance formula explorer to solve problems",
-    "Visualize and interpret distance formula explorer relationships",
-    "Experiment with parameters to observe their effects on distance formula explorer"
+    "Apply the distance formula to find distances between two points on a coordinate plane",
+    "Understand the connection between the distance formula and the Pythagorean theorem",
+    "Visualize the geometric relationship between horizontal distance, vertical distance, and diagonal distance",
+    "Calculate distances using both algebraic formulas and visual representations",
+    "Analyze how changing point positions affects distance and triangle dimensions"
   ],
   "bloomsTaxonomy": [
-    "Remember",
     "Understand",
     "Apply",
-    "Analyze",
-    "Evaluate",
-    "Create"
+    "Analyze"
   ],
   "pedagogical": {
     "pattern": "demonstration",

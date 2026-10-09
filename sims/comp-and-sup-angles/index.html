@@ -5340,7 +5340,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/comp-and-sup-angles/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/sims/comp-and-sup-angles/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5354,7 +5354,7 @@
 <p><a class="md-button md-button--primary" href="main.html">Run the Complementary and Supplementary MicroSim Fullscreen</a></p>
 <p><a class="md-button" href="https://editor.p5js.org/dmccreary/sketches/NnFw96a9w">Edit this MicroSim in the p5.js Editor</a></p>
 <p><strong>Copy this iframe to embed in your website:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/geometry-course/sims/comp-and-sup-angles/main.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/geometry-course/sims/comp-and-sup-angles/main.html"</span> <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span> <span class="na">height</span><span class="o">=</span><span class="s">"400px"</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="description">Description</h2>
 <p>This MicroSim helps students understand the relationship between complementary and supplementary angles. As users adjust the angle slider from 0° to 180°, they can observe:</p>
@@ -5390,7 +5390,7 @@ Use the following p5.js template
 <div class="highlight"><pre><span></span><code><span class="c1">// Complementary and Supplementary Angles</span>
 
 <span class="c1">// MicroSim Template for 2D geometry with region drawing parameters</span>
-<span class="c1">// Use for an instructor standing in front of a &quot;smart white board&quot; with controls on the bottom</span>
+<span class="c1">// Use for an instructor standing in front of a "smart white board" with controls on the bottom</span>
 <span class="c1">// Author: Dan McCreary</span>
 <span class="c1">// Version geometry-1</span>
 <span class="c1">// This template puts a control region below the active drawing region of the canvas</span>
@@ -5416,7 +5416,7 @@ Use the following p5.js template
 
 <span class="kd">function</span><span class="w"> </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">canvas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createCanvas</span><span class="p">(</span><span class="nx">canvasWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">canvasHeight</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">mainElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;main&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">mainElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'main'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">canvas</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="nx">mainElement</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">textSize</span><span class="p">(</span><span class="nx">defaultTextSize</span><span class="p">);</span>
 
@@ -5430,12 +5430,12 @@ Use the following p5.js template
 
 <span class="kd">function</span><span class="w"> </span><span class="nx">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// make the background drawing region a very light blue</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;aliceblue&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'aliceblue'</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// draw a thin light gray outline for the region borders</span>
-<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;silver&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'silver'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">rect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">canvasWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// make the background of the controls area white</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'white'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">rect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="p">,</span><span class="w"> </span><span class="nx">canvasWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">controlHeight</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">noStroke</span><span class="p">();</span>
 
@@ -5455,18 +5455,18 @@ Use the following p5.js template
 <span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">y_end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cy</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">rayLength</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">sin</span><span class="p">(</span><span class="nx">theta</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// Draw fixed ray along x-axis</span>
-<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'black'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">line</span><span class="p">(</span><span class="nx">cx</span><span class="p">,</span><span class="w"> </span><span class="nx">cy</span><span class="p">,</span><span class="w"> </span><span class="nx">cx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">rayLength</span><span class="p">,</span><span class="w"> </span><span class="nx">cy</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// Draw moving ray</span>
 <span class="w">    </span><span class="nx">line</span><span class="p">(</span><span class="nx">cx</span><span class="p">,</span><span class="w"> </span><span class="nx">cy</span><span class="p">,</span><span class="w"> </span><span class="nx">x_end</span><span class="p">,</span><span class="w"> </span><span class="nx">y_end</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;orange&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'orange'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">circle</span><span class="p">(</span><span class="nx">x_end</span><span class="p">,</span><span class="w"> </span><span class="nx">y_end</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// Draw primary angle arc in red from 0 to theta</span>
 <span class="w">    </span><span class="nx">noFill</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'red'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">4</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// 0 to theta</span>
 <span class="w">    </span><span class="nx">arc</span><span class="p">(</span><span class="nx">cx</span><span class="p">,</span><span class="w"> </span><span class="nx">cy</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nx">theta</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">OPEN</span><span class="p">);</span>
@@ -5474,14 +5474,14 @@ Use the following p5.js template
 <span class="w">    </span><span class="c1">// Draw complementary angle arc in green if applicable</span>
 <span class="w">    </span><span class="c1">//.Go from theta to 90</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">90</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'green'</span><span class="p">);</span>
 <span class="w">        </span><span class="nx">arc</span><span class="p">(</span><span class="nx">cx</span><span class="p">,</span><span class="w"> </span><span class="nx">cy</span><span class="p">,</span><span class="w"> </span><span class="mf">190</span><span class="p">,</span><span class="w"> </span><span class="mf">190</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nx">PI</span><span class="o">/</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nx">theta</span><span class="p">,</span><span class="w"> </span><span class="nx">OPEN</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="c1">// Draw supplementary angle arc in purple if applicable</span>
 <span class="w">    </span><span class="c1">// draw from theta to 180</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">180</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;purple&#39;</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'purple'</span><span class="p">);</span>
 <span class="w">        </span><span class="nx">arc</span><span class="p">(</span><span class="nx">cx</span><span class="p">,</span><span class="w"> </span><span class="nx">cy</span><span class="p">,</span><span class="w"> </span><span class="mf">300</span><span class="p">,</span><span class="w"> </span><span class="mf">300</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nx">PI</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nx">theta</span><span class="p">,</span><span class="w"> </span><span class="nx">OPEN</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -5489,64 +5489,64 @@ Use the following p5.js template
 <span class="w">    </span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// Display angle value</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'black'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">noStroke</span><span class="p">();</span>
 <span class="w">    </span><span class="nx">textSize</span><span class="p">(</span><span class="mf">24</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// Place the text near the ray endpoint circle but opposite the center</span>
 <span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// Adjust the distance of the text from the circle</span>
 <span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">textX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x_end</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">cos</span><span class="p">(</span><span class="o">-</span><span class="nx">theta</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">offset</span><span class="p">;</span><span class="w"> </span><span class="c1">// Offset along the angle</span>
 <span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">textY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y_end</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">sin</span><span class="p">(</span><span class="o">-</span><span class="nx">theta</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">offset</span><span class="w"> </span><span class="o">*</span><span class="mf">1.1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">7</span><span class="p">;</span><span class="w"> </span><span class="c1">// Offset along the angle</span>
-<span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;°&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">textX</span><span class="p">,</span><span class="w"> </span><span class="nx">textY</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"°"</span><span class="p">,</span><span class="w"> </span><span class="nx">textX</span><span class="p">,</span><span class="w"> </span><span class="nx">textY</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// Determine angle name</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Zero Angle&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Zero Angle"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">90</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Acute Angle&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Acute Angle"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">90</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Right Angle&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Right Angle"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">180</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Obtuse Angle&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Obtuse Angle"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">180</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Straight Angle&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">angleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Straight Angle"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="c1">// Display angle name in upper right</span>
 <span class="w">    </span><span class="nx">textSize</span><span class="p">(</span><span class="mf">16</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="nx">angleName</span><span class="p">,</span><span class="w"> </span><span class="nx">drawWidth</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">130</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">);</span>
 
-<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'green'</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// Compute and display complement</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">complementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">complementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">90</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">complement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">90</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">mySliderValue</span><span class="p">;</span>
-<span class="w">        </span><span class="nx">complementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Complement: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">complement</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;°&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">complementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Complement: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">complement</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"°"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">90</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">complementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Complement: None&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">complementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Complement: None"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">complementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Complement: N/A&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">complementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Complement: N/A"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="nx">textSize</span><span class="p">(</span><span class="mf">20</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="nx">complementText</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span>
 
-<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;purple&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'purple'</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// Compute and display supplement</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">supplementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">supplementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">180</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">supplement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">180</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">mySliderValue</span><span class="p">;</span>
-<span class="w">        </span><span class="nx">supplementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Supplement: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">supplement</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;°&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">supplementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Supplement: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">supplement</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"°"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">180</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">supplementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Supplement: None&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">supplementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Supplement: None"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">supplementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Supplement: N/A&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">supplementText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Supplement: N/A"</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="nx">supplementText</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">60</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// Draw label and value</span>
 <span class="w">    </span><span class="nx">noStroke</span><span class="p">();</span>
 <span class="w">    </span><span class="nx">textSize</span><span class="p">(</span><span class="mf">16</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="s2">&quot;Angle: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;°&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'black'</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="s2">"Angle: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">mySliderValue</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"°"</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="description_1">Description</h2>

@@ -2,7 +2,7 @@
   "title": "Cavalieri's Principle Demonstration",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for cavalieri's principle demonstration",
+  "description": "Compare a right solid with an oblique solid that has the same base and height, move a cutting plane through both, and see why their volumes are equal.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Cavalieri's Principle Demonstration",
+    "topic": "Cavalieri's Principle and the volume of oblique solids",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to explain Cavalieri's Principle by comparing right and oblique solids with identical cross-sections, and justify why their volumes are equal."
     ],
-    "bloomsTaxonomy": "Create",
+    "bloomsTaxonomy": "Understand",
     "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "prerequisites": [
+      "Volume of prisms and cylinders",
+      "Cross-sections",
+      "Right versus oblique solids"
+    ],
+    "standards": [],
+    "bloomVerb": "Explain"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 595
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Learner-controlled comparison of two solids with a concrete stack-of-slices model",
+    "keyQuestions": [
+      "What stays the same when the stack is pushed sideways?",
+      "Which height matters for an oblique solid, the slanted edge or the vertical height?",
+      "Would the principle still hold if the slices had different shapes but equal areas?"
+    ],
+    "commonMisconceptions": [
+      "A slanted solid has a larger volume because its edges are longer.",
+      "The height of an oblique solid is measured along its slanted edge.",
+      "Cavalieri's Principle applies only to prisms."
+    ],
+    "assessmentOpportunities": [
+      "Students are shown an oblique cylinder with radius 4 cm and vertical height 10 cm and asked for its volume, with a justification that names Cavalieri's Principle and states what must be equal at every height."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "cavalieris-principle-demonstration",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

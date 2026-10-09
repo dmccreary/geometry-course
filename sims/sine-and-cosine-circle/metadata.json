@@ -41,10 +41,11 @@
     "network"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of sine and cosine circle",
-    "Apply sine and cosine circle to solve problems",
-    "Visualize and interpret sine and cosine circle relationships",
-    "Experiment with parameters to observe their effects on sine and cosine circle"
+    "Identify sin(θ) and cos(θ) as the y- and x-coordinates of a point on the unit circle",
+    "Trace how a point moving around the unit circle generates the sine and cosine curves on the accompanying graph",
+    "Predict the sign of sine and cosine in each quadrant of the unit circle",
+    "Explain why sine and cosine are periodic, repeating every 360 degrees (2π radians)",
+    "Compare the sine and cosine curves to recognize that they differ by a 90-degree phase shift"
   ],
   "bloomsTaxonomy": [
     "Remember",

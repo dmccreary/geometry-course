@@ -5238,7 +5238,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/sine-and-cosine-circle/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/sims/sine-and-cosine-circle/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5251,7 +5251,7 @@
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Sine and Cosine Circle MicroSim Fullscreen</a></p>
 <p><strong>Copy this iframe to embed in your website:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/geometry-course/sims/sine-and-cosine-circle/main.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;450px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/geometry-course/sims/sine-and-cosine-circle/main.html"</span> <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span> <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="description">Description</h2>
 <p>This MicroSim demonstrates the relationship between a point moving around the unit circle and the corresponding sine and cosine values. Students can observe how the x-coordinate (cosine) and y-coordinate (sine) of a point on the circle create the familiar sine and cosine wave patterns.</p>
@@ -5272,7 +5272,7 @@
 <span class="w">  </span><span class="nx">createCanvas</span><span class="p">(</span><span class="mf">400</span><span class="p">,</span><span class="w"> </span><span class="mf">400</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">angleMode</span><span class="p">(</span><span class="nx">DEGREES</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">describe</span><span class="p">(</span>
-<span class="w">    </span><span class="s1">&#39;Animated demonstration of a point moving around the unit circle, together with the corresponding sine and cosine values moving along their graphs.&#39;</span>
+<span class="w">    </span><span class="s1">'Animated demonstration of a point moving around the unit circle, together with the corresponding sine and cosine values moving along their graphs.'</span>
 <span class="w">  </span><span class="p">);</span>
 <span class="p">}</span>
 
@@ -5306,18 +5306,18 @@
 
 <span class="w">  </span><span class="nx">noStroke</span><span class="p">();</span>
 
-<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'white'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">circle</span><span class="p">(</span><span class="nx">pointX</span><span class="p">,</span><span class="w"> </span><span class="nx">pointY</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
 
-<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;orange&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'orange'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">circle</span><span class="p">(</span><span class="nx">pointX</span><span class="p">,</span><span class="w"> </span><span class="nx">circleY</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
 
-<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'red'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">circle</span><span class="p">(</span><span class="nx">circleX</span><span class="p">,</span><span class="w"> </span><span class="nx">pointY</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
 
 <span class="w">  </span><span class="c1">// Draw graph</span>
 
-<span class="w">  </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'grey'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">3</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">line</span><span class="p">(</span><span class="nx">graphX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">300</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">line</span><span class="p">(</span><span class="nx">graphX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">);</span>
@@ -5328,24 +5328,24 @@
 <span class="w">    </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span>
 <span class="w">  </span><span class="p">);</span>
 
-<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'grey'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">textAlign</span><span class="p">(</span><span class="nx">CENTER</span><span class="p">,</span><span class="w"> </span><span class="nx">CENTER</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">20</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;360&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">20</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;-1&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">'0'</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">20</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">'360'</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">20</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">'1'</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">'0'</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">'-1'</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">);</span>
 
-<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;orange&#39;</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;cos&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;sin&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'orange'</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">'cos'</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'red'</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">text</span><span class="p">(</span><span class="s1">'sin'</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="p">);</span>
 
 <span class="w">  </span><span class="c1">// Draw cosine curve</span>
 
 <span class="w">  </span><span class="nx">noFill</span><span class="p">();</span>
-<span class="w">  </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;orange&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'orange'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">beginShape</span><span class="p">();</span>
 <span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">360</span><span class="p">;</span><span class="w"> </span><span class="nx">t</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">360</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="p">);</span>
@@ -5357,7 +5357,7 @@
 <span class="w">  </span><span class="c1">// Draw sine curve</span>
 
 <span class="w">  </span><span class="nx">noFill</span><span class="p">();</span>
-<span class="w">  </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'red'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">beginShape</span><span class="p">();</span>
 <span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">360</span><span class="p">;</span><span class="w"> </span><span class="nx">t</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">360</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="p">);</span>
@@ -5369,7 +5369,7 @@
 <span class="w">  </span><span class="c1">// Draw moving line</span>
 
 <span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">lineX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">map</span><span class="p">(</span><span class="nx">angle</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">360</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphPeriod</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'grey'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">line</span><span class="p">(</span><span class="nx">lineX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">,</span><span class="w"> </span><span class="nx">lineX</span><span class="p">,</span><span class="w"> </span><span class="nx">graphY</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">graphAmplitude</span><span class="p">);</span>
 
 <span class="w">  </span><span class="c1">// Draw moving points on graph</span>
@@ -5379,10 +5379,10 @@
 
 <span class="w">  </span><span class="nx">noStroke</span><span class="p">();</span>
 
-<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;orange&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'orange'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">circle</span><span class="p">(</span><span class="nx">lineX</span><span class="p">,</span><span class="w"> </span><span class="nx">orangeY</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
 
-<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'red'</span><span class="p">);</span>
 <span class="w">  </span><span class="nx">circle</span><span class="p">(</span><span class="nx">lineX</span><span class="p">,</span><span class="w"> </span><span class="nx">redY</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -5390,7 +5390,7 @@
 <div class="highlight"><pre><span></span><code><span class="c1">// Sample MicroSim Template for 2D Geometry</span>
 
 <span class="c1">// MicroSim Template for 2D geometry with region drawing parameters</span>
-<span class="c1">// Use for an instructor standing in front of a &quot;smart white board&quot; with conrols on the bottom</span>
+<span class="c1">// Use for an instructor standing in front of a "smart white board" with conrols on the bottom</span>
 <span class="c1">// Author: Dan McCreary</span>
 <span class="c1">// Version geometry-1</span>
 <span class="c1">// This template puts a control region below the active drawing region of the canvas</span>
@@ -5414,8 +5414,8 @@
 
 <span class="kd">function</span><span class="w"> </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">canvas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createCanvas</span><span class="p">(</span><span class="nx">canvasWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">canvasHeight</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">// canvas.parent(&#39;canvas-container&#39;);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">mainElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;main&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// canvas.parent('canvas-container');</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">mainElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'main'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">canvas</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="nx">mainElement</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">textSize</span><span class="p">(</span><span class="nx">defaultTextSize</span><span class="p">);</span>
 
@@ -5429,12 +5429,12 @@
 
 <span class="kd">function</span><span class="w"> </span><span class="nx">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// make the background drawing region a very light blue</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;aliceblue&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'aliceblue'</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// draw a thin light gray outline for the region borders</span>
-<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;silver&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">'silver'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">rect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">canvasWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="p">);</span>
 <span class="w">    </span><span class="c1">// make the background of the controls area white</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'white'</span><span class="p">)</span>
 <span class="w">    </span><span class="nx">rect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="p">,</span><span class="w"> </span><span class="nx">canvasWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">controlHeight</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// get the updated slider value</span>
@@ -5442,14 +5442,14 @@
 
 <span class="w">    </span><span class="c1">// put any drawing code here</span>
 <span class="w">    </span><span class="c1">// draw a blue circle</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'blue'</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">circle</span><span class="p">(</span><span class="nx">canvasWidth</span><span class="o">/</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="o">/</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">mySliderValue</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// put your custom code here</span>
 
 <span class="w">    </span><span class="c1">// draw label and value</span>
-<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="s2">&quot;MySlider: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">mySliderValue</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">25</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">fill</span><span class="p">(</span><span class="s1">'black'</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">text</span><span class="p">(</span><span class="s2">"MySlider: "</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">mySliderValue</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="nx">drawHeight</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">25</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="references">References</h2>

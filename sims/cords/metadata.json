@@ -34,10 +34,10 @@
     "interactive-demo"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of chords",
-    "Apply chords to solve problems",
-    "Visualize and interpret chords relationships",
-    "Experiment with parameters to observe their effects on chords"
+    "Identify a chord as a line segment whose two endpoints both lie on a circle's circumference",
+    "Distinguish the diameter as the longest possible chord, the one passing through the circle's center",
+    "Compare chord lengths as the endpoints are dragged to different positions on the circle",
+    "Explain how a chord's length decreases as its distance from the circle's center increases"
   ],
   "bloomsTaxonomy": [
     "Remember",

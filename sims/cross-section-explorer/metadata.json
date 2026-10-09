@@ -2,7 +2,7 @@
   "title": "Cross-Section Explorer",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for cross-section explorer",
+  "description": "Slide a horizontal plane through six solids to see the shape and area of each cross-section and how the area changes with height.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Cross-Section Explorer",
+    "topic": "Cross-sections of three-dimensional solids",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to identify the cross-sections that a horizontal plane makes with common solids and analyze how the cross-sectional area changes with height."
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Analyze",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Three-dimensional solids",
+      "Area of plane figures",
+      "Pythagorean theorem"
+    ],
+    "standards": [],
+    "bloomVerb": "Compare"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 580
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Side-by-side linked representations: solid, cross-section, measurements, and graph",
+    "keyQuestions": [
+      "Which solids have the same cross-section at every height?",
+      "Why is the cone's area graph curved rather than straight?",
+      "Where is the sphere's cross-section largest, and why?"
+    ],
+    "commonMisconceptions": [
+      "A cone's cross-sectional area decreases at a steady rate (the radius does, the area does not).",
+      "Every cross-section of a sphere has the same size.",
+      "The cross-section of a pyramid is a triangle (a horizontal cut of a square pyramid is a square)."
+    ],
+    "assessmentOpportunities": [
+      "Students sketch the area-versus-height graph for a solid not in the MicroSim, such as a hemisphere resting on its flat face, and justify the shape of the graph."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "cross-section-explorer",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

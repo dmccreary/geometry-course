@@ -40,10 +40,10 @@
     "network"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of cosine as a ratio",
-    "Apply cosine as a ratio to solve problems",
-    "Visualize and interpret cosine as a ratio relationships",
-    "Experiment with parameters to observe their effects on cosine as a ratio"
+    "Explain cosine as the ratio of the adjacent side to the hypotenuse in a right triangle",
+    "Calculate cos(θ) for a given angle from the displayed adjacent and hypotenuse lengths",
+    "Predict whether the cosine value increases or decreases as the angle grows from 0 to 90 degrees",
+    "Trace how adjusting the angle reshapes the right triangle and changes the adjacent-to-hypotenuse ratio"
   ],
   "bloomsTaxonomy": [
     "Remember",

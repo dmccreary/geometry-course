@@ -174,18 +174,16 @@
     "timeline"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of make lines parallel",
-    "Apply make lines parallel to solve problems",
-    "Visualize and interpret make lines parallel relationships",
-    "Experiment with parameters to observe their effects on make lines parallel"
+    "Understand that parallel lines have equal slopes",
+    "Apply the slope formula to determine if lines are parallel",
+    "Analyze how changing point positions affects line slope",
+    "Create parallel lines by manipulating coordinates on a grid",
+    "Evaluate whether two lines are parallel by comparing their slopes"
   ],
   "bloomsTaxonomy": [
-    "Remember",
     "Understand",
     "Apply",
-    "Analyze",
-    "Evaluate",
-    "Create"
+    "Analyze"
   ],
   "pedagogical": {
     "pattern": "assessment",

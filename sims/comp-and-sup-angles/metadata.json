@@ -37,10 +37,10 @@
     "interactive-demo"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of complementary and supplementary angles",
-    "Apply complementary and supplementary angles to solve problems",
-    "Visualize and interpret complementary and supplementary angles relationships",
-    "Experiment with parameters to observe their effects on complementary and supplementary angles"
+    "Distinguish complementary angles, which sum to 90 degrees, from supplementary angles, which sum to 180 degrees",
+    "Calculate the complement or supplement of a given angle and verify it against the real-time display",
+    "Interpret the visual arcs to explain why the two angle measures always sum to 90 or 180 degrees",
+    "Predict the second angle's measure before adjusting the first angle and check the prediction with the calculation shown"
   ],
   "bloomsTaxonomy": [
     "Remember",

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for cavalieri's principle demonstration.">
+        <meta name="description" content="Compare a right solid with an oblique solid that has the same base and height, move a cutting plane through both, and see why their volumes are equal.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -75,7 +75,7 @@
       
         <meta  property="og:title"  content="Cavalieri's Principle Demonstration - AI Assisted Geometry" >
       
-        <meta  property="og:description"  content="Interactive p5.js MicroSim for cavalieri's principle demonstration." >
+        <meta  property="og:description"  content="Compare a right solid with an oblique solid that has the same base and height, move a cutting plane through both, and see why their volumes are equal." >
       
         <meta property="og:image" content="https://dmccreary.github.io/geometry-course/sims/cavalieris-principle-demonstration/cavalieris-principle-demonstration.png">
       
@@ -91,7 +91,7 @@
       
         <meta  name="twitter:title"  content="Cavalieri's Principle Demonstration - AI Assisted Geometry" >
       
-        <meta  name="twitter:description"  content="Interactive p5.js MicroSim for cavalieri's principle demonstration." >
+        <meta  name="twitter:description"  content="Compare a right solid with an oblique solid that has the same base and height, move a cutting plane through both, and see why their volumes are equal." >
       
         <meta name="twitter:image" content="https://dmccreary.github.io/geometry-course/sims/cavalieris-principle-demonstration/cavalieris-principle-demonstration.png">
       
@@ -1707,6 +1707,24 @@
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
     </span>
   </a>
   
@@ -5312,6 +5330,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5358,7 +5394,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/cavalieris-principle-demonstration/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/sims/cavalieris-principle-demonstration/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5367,20 +5403,27 @@
 
 
 <h1 id="cavalieris-principle-demonstration">Cavalieri's Principle Demonstration</h1>
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="597" width="100%" scrolling="no"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Cavalieri's Principle Demonstration MicroSim Fullscreen</a>
 <br/>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p><strong>Cavalieri's Principle</strong> says that if two solids have the same height and equal cross-sectional areas at every level, they have equal volumes.</p>
+<p>The left panel shows a right solid. The right panel shows an oblique solid with the same base and the same vertical height. One cutting plane passes through both at the height you choose, and the measurements below confirm that the two slices have the same area.</p>
+<p>With <strong>Show slices</strong> on, each solid is drawn as a stack of thin slices, like a stack of coins or a deck of cards. Pushing the stack sideways changes its shape, but it does not add or remove any slices, so the volume cannot change. That is the whole argument.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Drag <strong>Plane height</strong> to move the cutting plane through both solids at once and compare the two highlighted slices.</li>
+<li>Drag <strong>Tilt angle</strong> from 0° to 45° and check that the slice area and the volume do not change.</li>
+<li>Switch <strong>Solid</strong> between the rectangular prism and the cylinder (a stack of coins).</li>
+<li>Turn <strong>Show slices</strong> off to see the smooth oblique solid.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;main.html&quot;</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">&quot;450px&quot;</span>
-        <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
-        <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"main.html"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"597"</span>
+        <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
+        <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
@@ -5388,18 +5431,24 @@
 <h3 id="duration">Duration</h3>
 <p>10-15 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<p>Volume of a right prism and a right cylinder, and the idea of a cross-section.</p>
+<h3 id="blooms-taxonomy-level">Bloom's Taxonomy Level</h3>
+<p>Understand (L2)</p>
+<h3 id="learning-objective">Learning Objective</h3>
+<p>Students will be able to explain Cavalieri's Principle by comparing right and oblique solids with identical cross-sections, and justify why their volumes are equal.</p>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Predict</strong> (3 min): With the tilt at 0°, students predict whether tilting the solid to 45° will increase, decrease, or keep the volume.</li>
+<li><strong>Test</strong> (5 min): Students move the plane to five heights at three tilt angles and record the slice area each time.</li>
+<li><strong>Explain</strong> (5 min): Using a real stack of coins or index cards, students explain the principle to a partner in their own words.</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<p>Students are shown an oblique cylinder with radius 4 cm and vertical height 10 cm and asked for its volume, with a justification that names Cavalieri's Principle and states what must be equal at every height.</p>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Wikipedia. <a href="https://en.wikipedia.org/wiki/Cavalieri%27s_principle">Cavalieri's principle</a>.</li>
+<li>Common Core State Standards Initiative. High School Geometry: Geometric Measurement and Dimension (HSG-GMD.A.1, HSG-GMD.A.2).</li>
+<li>Eves, H. (1991). Two Surprising Theorems on Cavalieri Congruence. <em>The College Mathematics Journal</em>, 22(2), 118-124.</li>
 </ol>
 
 

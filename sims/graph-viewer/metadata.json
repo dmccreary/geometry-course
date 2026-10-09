@@ -38,10 +38,11 @@
     "simulation"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of learning graph viewer",
-    "Apply learning graph viewer to solve problems",
-    "Visualize and interpret learning graph viewer relationships",
-    "Experiment with parameters to observe their effects on learning graph viewer"
+    "Identify the taxonomy categories of the geometry learning graph using the color-coded legend",
+    "Trace prerequisite dependencies between geometry concepts by following the directed edges of the network",
+    "Locate a specific geometry concept with the type-ahead search and inspect its prerequisite connections",
+    "Evaluate the graph's structure using the node, edge, and orphan statistics as category filters are toggled",
+    "Design a study sequence by filtering categories so foundational concepts are covered before dependent ones"
   ],
   "bloomsTaxonomy": [
     "Remember",

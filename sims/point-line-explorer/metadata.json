@@ -124,18 +124,16 @@
     "simulation"
   ],
   "learningObjectives": [
-    "Understand the key concepts of points and lines explorer",
-    "Explore points and lines explorer through interactive visualization",
-    "Apply knowledge of points and lines explorer to solve problems",
-    "Experiment with parameters to observe their effects on points and lines explorer"
+    "Understand that a point represents a specific location in space",
+    "Recognize that two points determine exactly one line",
+    "Apply geometric notation for naming lines (e.g., line AB)",
+    "Explore properties of collinear and non-collinear points",
+    "Manipulate geometric objects to observe changing relationships"
   ],
   "bloomsTaxonomy": [
-    "Remember",
     "Understand",
     "Apply",
-    "Analyze",
-    "Evaluate",
-    "Create"
+    "Analyze"
   ],
   "pedagogical": {
     "pattern": "exploration",

@@ -38,10 +38,10 @@
     "interactive-demo"
   ],
   "learningObjectives": [
-    "Understand the mathematical concept of pythagorean theorem",
-    "Apply pythagorean theorem to solve problems",
-    "Visualize and interpret pythagorean theorem relationships",
-    "Experiment with parameters to observe their effects on pythagorean theorem"
+    "Calculate the hypotenuse c of a right triangle from legs a and b using c² = a² + b²",
+    "Explain the visual proof in which the squares built on legs a and b have combined area equal to the square on the hypotenuse",
+    "Predict how adjusting side a or side b with the sliders changes the length of the hypotenuse",
+    "Identify the legs and hypotenuse of a right triangle and relate their displayed squares to the theorem's equation"
   ],
   "bloomsTaxonomy": [
     "Remember",

@@ -2,7 +2,7 @@
   "title": "Volume Explorer",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for volume explorer",
+  "description": "Compare the volumes of two solids that share one width and one height, and discover the one-third relationship between pyramids and prisms and between cones and cylinders.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Volume Explorer",
+    "topic": "Volume formulas and volume relationships between solids",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to apply volume formulas to prisms, cylinders, pyramids, cones, and spheres, and evaluate the volume relationships between related solids."
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Analyze",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Area of squares and circles",
+      "Concept of volume",
+      "Exponents"
+    ],
+    "standards": [],
+    "bloomVerb": "Compare"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 585
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Controlled comparison: two solids constrained to share their dimensions",
+    "keyQuestions": [
+      "Which pairs of solids have a constant ratio of volumes?",
+      "Why is the ratio 3 for a cylinder and its cone at every size?",
+      "What happens to a volume when the width doubles but the height stays fixed?"
+    ],
+    "commonMisconceptions": [
+      "A cone is half of a cylinder (it is one third).",
+      "Doubling the width doubles the volume (it multiplies the volume by four).",
+      "A sphere fills most of the cube that contains it (it fills about half)."
+    ],
+    "assessmentOpportunities": [
+      "A cone and a cylinder have the same base and height, and the cylinder holds 540 cubic centimeters. Students state the cone's volume, then explain what happens to both volumes when the radius is doubled."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "volume-explorer",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for optimization challenge - maximum volume box.">
+        <meta name="description" content="Choose the size of the square cut from each corner of a cardboard sheet and find the cut that folds into the open box with the greatest volume.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -75,7 +75,7 @@
       
         <meta  property="og:title"  content="Optimization Challenge - Maximum Volume Box - AI Assisted Geometry" >
       
-        <meta  property="og:description"  content="Interactive p5.js MicroSim for optimization challenge - maximum volume box." >
+        <meta  property="og:description"  content="Choose the size of the square cut from each corner of a cardboard sheet and find the cut that folds into the open box with the greatest volume." >
       
         <meta property="og:image" content="https://dmccreary.github.io/geometry-course/sims/optimization-challenge-maximum-volume-box/optimization-challenge-maximum-volume-box.png">
       
@@ -91,7 +91,7 @@
       
         <meta  name="twitter:title"  content="Optimization Challenge - Maximum Volume Box - AI Assisted Geometry" >
       
-        <meta  name="twitter:description"  content="Interactive p5.js MicroSim for optimization challenge - maximum volume box." >
+        <meta  name="twitter:description"  content="Choose the size of the square cut from each corner of a cardboard sheet and find the cut that folds into the open box with the greatest volume." >
       
         <meta name="twitter:image" content="https://dmccreary.github.io/geometry-course/sims/optimization-challenge-maximum-volume-box/optimization-challenge-maximum-volume-box.png">
       
@@ -3225,6 +3225,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5312,6 +5330,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5358,7 +5394,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/optimization-challenge-maximum-volume-box/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/sims/optimization-challenge-maximum-volume-box/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5367,39 +5403,53 @@
 
 
 <h1 id="optimization-challenge-maximum-volume-box">Optimization Challenge - Maximum Volume Box</h1>
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="582" width="100%" scrolling="no"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Optimization Challenge - Maximum Volume Box MicroSim Fullscreen</a>
 <br/>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>A square sheet of cardboard has a square of side <span class="arithmatex">\(x\)</span> cut from each corner. Folding up the four flaps makes an open box with a square base of side <span class="arithmatex">\(L - 2x\)</span> and a height of <span class="arithmatex">\(x\)</span>, so its volume is</p>
+<div class="arithmatex">\[V(x) = (L - 2x)^2 \, x\]</div>
+<p>A small cut gives a wide, shallow box. A large cut gives a tall box with almost no base. Somewhere between is the cut with the greatest volume.</p>
+<p>The MicroSim shows the flat pattern, the folded box, the volume calculation, and a graph of volume against cut size. The <strong>percent of the largest possible volume</strong> tells you how close you are without giving the answer away. Press <strong>Show Maximum</strong> only after you have made your best attempt.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Drag <strong>Cut size x</strong> and watch the pattern, the box, the calculation, and the red point on the graph move together.</li>
+<li>Use the percent readout to home in on the largest volume.</li>
+<li>Press <strong>Show Maximum</strong> to mark the true maximum on the graph, and <strong>Hide Maximum</strong> to remove it.</li>
+<li>Press <strong>New Sheet Size</strong> to try the same problem with a different sheet.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;main.html&quot;</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">&quot;450px&quot;</span>
-        <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
-        <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"main.html"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"582"</span>
+        <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
+        <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
 <p>9-12 (High School Geometry)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<p>Volume of a rectangular prism, evaluating an expression for a given value, and reading a graph.</p>
+<h3 id="blooms-taxonomy-level">Bloom's Taxonomy Level</h3>
+<p>Analyze (L4)</p>
+<h3 id="learning-objective">Learning Objective</h3>
+<p>Students will be able to analyze how the cut size changes the volume of an open box made from a square sheet, and determine the cut size that maximizes the volume.</p>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Explore</strong> (5 min): Students try x = 1, 3, 5, 7, and 9 on the 30 cm sheet, record the volumes, and describe the shape of the box in each case.</li>
+<li><strong>Optimize</strong> (5 min): Without pressing Show Maximum, students find the cut size that gives 100% of the largest volume, to the nearest tenth of a centimeter.</li>
+<li><strong>Generalize</strong> (5 min): Students repeat for three other sheet sizes, tabulate the sheet size and the best cut, and conjecture a rule (the best cut is one sixth of the side).</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<p>A sheet measures 42 cm on each side. Students predict the best cut size from their conjecture, write the volume expression, compute the maximum volume, and explain why both very small and very large cuts give small volumes.</p>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Wikipedia. <a href="https://en.wikipedia.org/wiki/Mathematical_optimization">Mathematical optimization</a>.</li>
+<li>Common Core State Standards Initiative. High School Geometry: Modeling with Geometry (HSG-MG.A.3).</li>
+<li>Stewart, J. (2015). <em>Calculus: Early Transcendentals</em> (8th ed.), Section 4.7, Optimization Problems. Cengage Learning.</li>
 </ol>
 
 

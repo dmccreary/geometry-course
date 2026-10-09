@@ -2,7 +2,7 @@
   "title": "Regular Polygon Area Explorer",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for regular polygon area explorer",
+  "description": "Change the number of sides and the size of a regular polygon to see how its apothem, perimeter, and area are related by A = ½aP, and how the polygon approaches a circle.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Regular Polygon Area Explorer",
+    "topic": "Area of regular polygons, apothem, and perimeter",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to calculate the area of a regular polygon with A = ½aP and analyze how the apothem, the perimeter, and the number of sides affect the area."
     ],
-    "bloomsTaxonomy": "Create",
+    "bloomsTaxonomy": "Apply",
     "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "prerequisites": [
+      "Area of a triangle",
+      "Perimeter",
+      "Regular polygons"
+    ],
+    "standards": [],
+    "bloomVerb": "Calculate"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 555
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Parameter exploration with a visual derivation of the formula from congruent triangles",
+    "keyQuestions": [
+      "Why is the apothem the height of each triangle?",
+      "What happens to the apothem as the number of sides increases while the radius stays fixed?",
+      "Why does the polygon's area approach πr²?"
+    ],
+    "commonMisconceptions": [
+      "The apothem and the radius are the same segment (the apothem ends at the midpoint of a side, the radius at a vertex).",
+      "More sides always means a much larger area (for a fixed radius the area is bounded by the circle).",
+      "The formula works for any polygon (it requires a regular polygon)."
+    ],
+    "assessmentOpportunities": [
+      "Given a regular octagon with apothem 6.93 units and side length 5.74 units, students compute the perimeter and the area, then predict whether a regular 12-gon with the same radius has a larger or smaller area and justify the prediction."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "regular-polygon-area-explorer",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

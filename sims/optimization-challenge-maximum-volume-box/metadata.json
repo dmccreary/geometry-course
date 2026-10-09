@@ -2,7 +2,7 @@
   "title": "Optimization Challenge - Maximum Volume Box",
   "creator": "Dan McCreary",
   "subject": "High School Geometry",
-  "description": "Interactive MicroSim for optimization challenge - maximum volume box",
+  "description": "Choose the size of the square cut from each corner of a cardboard sheet and find the cut that folds into the open box with the greatest volume.",
   "date": "2026-02-10",
   "educational": {
     "gradeLevel": [
@@ -12,34 +12,57 @@
       "12"
     ],
     "subjectArea": "Mathematics",
-    "topic": "Optimization Challenge - Maximum Volume Box",
+    "topic": "Optimization of volume under a constraint",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Students will be able to analyze how the cut size changes the volume of an open box made from a square sheet, and determine the cut size that maximizes the volume."
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Analyze",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Volume of a rectangular prism",
+      "Evaluating algebraic expressions",
+      "Reading graphs of functions"
+    ],
+    "standards": [],
+    "bloomVerb": "Optimize"
   },
   "technical": {
     "framework": "p5.js",
-    "version": "1.0",
+    "version": "1.11.10",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 580
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Guided discovery with a hidden answer and graduated feedback",
+    "keyQuestions": [
+      "Why does the volume fall to zero at both ends of the slider?",
+      "How does the best cut size change when the sheet gets larger?",
+      "What fraction of the sheet's side is the best cut?"
+    ],
+    "commonMisconceptions": [
+      "The largest base gives the largest volume (that box has no height).",
+      "The best cut is one quarter of the side, halfway along the slider (it is one sixth).",
+      "A taller box always holds more."
+    ],
+    "assessmentOpportunities": [
+      "A sheet measures 42 cm on each side. Students predict the best cut size from their conjecture, write the volume expression, compute the maximum volume, and explain why both very small and very large cuts give small volumes."
+    ]
   },
-  "chapter": "12-area-volume-applications"
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "optimization-challenge-maximum-volume-box",
+  "chapter": "12-area-volume-applications",
+  "completion_status": "implemented"
 }

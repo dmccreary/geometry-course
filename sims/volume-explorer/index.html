@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for volume explorer.">
+        <meta name="description" content="Compare the volumes of two solids that share one width and one height, and discover the one-third relationship between pyramids and prisms and between cones and cylinders.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -75,7 +75,7 @@
       
         <meta  property="og:title"  content="Volume Explorer - AI Assisted Geometry" >
       
-        <meta  property="og:description"  content="Interactive p5.js MicroSim for volume explorer." >
+        <meta  property="og:description"  content="Compare the volumes of two solids that share one width and one height, and discover the one-third relationship between pyramids and prisms and between cones and cylinders." >
       
         <meta property="og:image" content="https://dmccreary.github.io/geometry-course/sims/volume-explorer/volume-explorer.png">
       
@@ -91,7 +91,7 @@
       
         <meta  name="twitter:title"  content="Volume Explorer - AI Assisted Geometry" >
       
-        <meta  name="twitter:description"  content="Interactive p5.js MicroSim for volume explorer." >
+        <meta  name="twitter:description"  content="Compare the volumes of two solids that share one width and one height, and discover the one-third relationship between pyramids and prisms and between cones and cylinders." >
       
         <meta name="twitter:image" content="https://dmccreary.github.io/geometry-course/sims/volume-explorer/volume-explorer.png">
       
@@ -4821,6 +4821,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5312,6 +5330,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blooms-taxonomy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloom's Taxonomy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#activities" class="md-nav__link">
     <span class="md-ellipsis">
       Activities
@@ -5358,7 +5394,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/geometry-course/blob/master/docs/sims/volume-explorer/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/geometry-course/blob/main/docs/sims/volume-explorer/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -5367,39 +5403,58 @@
 
 
 <h1 id="volume-explorer">Volume Explorer</h1>
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="587" width="100%" scrolling="no"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Volume Explorer MicroSim Fullscreen</a>
 <br/>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>Two solids are drawn side by side to the same scale. Both use the same <strong>width</strong> (the side of a square base or the diameter of a round one) and the same <strong>height</strong>, so the comparison is always fair.</p>
+<p>Below each solid, its volume formula is shown with the current values substituted. The green panel divides the first volume by the second.</p>
+<p>Some pairs give a ratio that never changes, no matter how you move the sliders:</p>
+<ul>
+<li><strong>Square prism and square pyramid:</strong> the pyramid holds exactly one third of the prism.</li>
+<li><strong>Cylinder and cone:</strong> the cone holds exactly one third of the cylinder.</li>
+<li><strong>Cylinder and sphere,</strong> when the height equals the diameter: the sphere fills exactly two thirds of the cylinder.</li>
+<li><strong>Cube and sphere:</strong> the sphere fills <span class="arithmatex">\(\pi/6\)</span>, about 52.4%, of the cube.</li>
+</ul>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Choose <strong>Solid 1</strong> and <strong>Solid 2</strong> from the two menus.</li>
+<li>Drag <strong>Width or diameter</strong> and <strong>Height</strong> and watch both volumes and their ratio.</li>
+<li>Find a pair of solids whose ratio stays the same for every width and height.</li>
+<li>Choose a cylinder and a sphere, then set the height equal to the diameter.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;main.html&quot;</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">&quot;450px&quot;</span>
-        <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
-        <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"main.html"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"587"</span>
+        <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
+        <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
 <p>9-12 (High School Geometry)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<p>Area of squares and circles, and the idea of volume as the amount of space a solid occupies.</p>
+<h3 id="blooms-taxonomy-level">Bloom's Taxonomy Level</h3>
+<p>Analyze (L4)</p>
+<h3 id="learning-objective">Learning Objective</h3>
+<p>Students will be able to apply volume formulas to prisms, cylinders, pyramids, cones, and spheres, and evaluate the volume relationships between related solids.</p>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Calculate</strong> (5 min): Students compute the volume of each of the six solids for a width of 10 and a height of 12 and check against the MicroSim.</li>
+<li><strong>Investigate</strong> (6 min): Students test all pairs to find which have a ratio that does not depend on the sliders, and record the constant ratios.</li>
+<li><strong>Justify</strong> (4 min): Students explain the cylinder-to-cone ratio using cross-sections, referring to the Cross-Section Explorer if needed.</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<p>A cone and a cylinder have the same base and height, and the cylinder holds 540 cubic centimeters. Students state the cone's volume, then explain what happens to both volumes when the radius is doubled.</p>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Wikipedia. <a href="https://en.wikipedia.org/wiki/Volume">Volume</a>.</li>
+<li>Wikipedia. <a href="https://en.wikipedia.org/wiki/On_the_Sphere_and_Cylinder">On the Sphere and Cylinder</a>.</li>
+<li>Common Core State Standards Initiative. High School Geometry: Geometric Measurement and Dimension (HSG-GMD.A.1, HSG-GMD.A.3).</li>
 </ol>
 
 
